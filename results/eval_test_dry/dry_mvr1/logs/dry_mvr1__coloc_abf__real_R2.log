@@ -1,0 +1,2 @@
+22:19:19 [harness] run dry_mvr1__coloc_abf__real_R2: 8 loci (8 to run), mode=cpu, workers=3
+22:19:23 [harness] done dry_mvr1__coloc_abf__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 4.4s

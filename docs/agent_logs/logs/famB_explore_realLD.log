@@ -1,0 +1,7 @@
+L0 coloc None ok 1.0 AUROC s 1.0 AUROC s_pp 1.0 falseS(P_S>.8|D) 0.0 S recall(P_S>.8) 0.811 eta>1e-3 frac 0.0 time/locus 0.101
+L0 gaussian 50 ok 1.0 AUROC s 1.0 AUROC s_pp 1.0 falseS(P_S>.8|D) 0.0 S recall(P_S>.8) 0.961 eta>1e-3 frac 0.0 time/locus 0.023
+L0 gaussian 100 ok 1.0 AUROC s 1.0 AUROC s_pp 1.0 falseS(P_S>.8|D) 0.0 S recall(P_S>.8) 0.961 eta>1e-3 frac 0.0 time/locus 0.199
+L2 coloc None ok 1.0 AUROC s 1.0 AUROC s_pp 1.0 falseS(P_S>.8|D) 0.0 S recall(P_S>.8) 0.811 eta>1e-3 frac 0.0 time/locus 0.096
+L2 gaussian 50 ok 1.0 AUROC s 0.996 AUROC s_pp 0.997 falseS(P_S>.8|D) 0.0 S recall(P_S>.8) 0.95 eta>1e-3 frac 1.0 time/locus 0.018
+L2 gaussian 100 ok 1.0 AUROC s 0.996 AUROC s_pp 0.997 falseS(P_S>.8|D) 0.0 S recall(P_S>.8) 0.933 eta>1e-3 frac 1.0 time/locus 0.191
+EXIT

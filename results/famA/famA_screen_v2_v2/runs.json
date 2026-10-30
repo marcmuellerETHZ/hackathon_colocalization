@@ -1,0 +1,137 @@
+{
+ "runs": {
+  "famA_joint_susie_rho_eta_ms": [
+   {
+    "cells": [
+     "L0_P1_r_p=0.0"
+    ],
+    "components": "rho+eta+multistart",
+    "counts": {
+     "expected": 2000,
+     "failed": 0,
+     "nonconverged": 1,
+     "ok": 1999,
+     "timeout": 0
+    },
+    "group": "screen_L0P1",
+    "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+    "n": 2000,
+    "n_per_trait_ld": 0,
+    "n_with_ld2": 2000,
+    "orch_commit": "37da481d857cb07178411fd9fd26f0586ae2da40",
+    "orch_job": "famA_p5_A1_primary_r2",
+    "predictions_sha256": "2d90fe07489c49ac73745da4eea3871a104b08d9796c4b049d1ecd859fff1836",
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T142758Z_famA_joint_susie_rho_eta_ms_screen_v2_5ca348",
+    "run_id": "20261027T142758Z_famA_joint_susie_rho_eta_ms_screen_v2_5ca348",
+    "rung": "rho+eta+multistart",
+    "wall_s": 1862.8928634799959
+   }
+  ],
+  "famA_joint_susie_rho_eta_ms_ptld": [
+   {
+    "cells": [
+     "L0_P1_r_p=0.0"
+    ],
+    "components": "rho+eta+multistart+perTraitLD",
+    "counts": {
+     "expected": 2000,
+     "failed": 0,
+     "nonconverged": 1,
+     "ok": 1999,
+     "timeout": 0
+    },
+    "group": "screen_L0P1",
+    "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+    "n": 2000,
+    "n_per_trait_ld": 848,
+    "n_with_ld2": 2000,
+    "orch_commit": "37da481d857cb07178411fd9fd26f0586ae2da40",
+    "orch_job": "famA_p5_A1_primary_r2",
+    "predictions_sha256": "dac7451ace092de555a390f6675a6c017e2516a4cfa63f0d75605ad86e945b50",
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_fb9518",
+    "run_id": "20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_fb9518",
+    "rung": "primary",
+    "wall_s": 2862.0223513679957
+   },
+   {
+    "cells": [
+     "L0_P3_rho=0.5"
+    ],
+    "components": "rho+eta+multistart+perTraitLD",
+    "counts": {
+     "expected": 2000,
+     "failed": 40,
+     "nonconverged": 0,
+     "ok": 1960,
+     "timeout": 0
+    },
+    "group": "screen_L0P3",
+    "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+    "n": 2000,
+    "n_per_trait_ld": 0,
+    "n_with_ld2": 0,
+    "orch_commit": "37da481d857cb07178411fd9fd26f0586ae2da40",
+    "orch_job": "famA_p5_scrL0P3_primary_r2",
+    "predictions_sha256": "fce34526710ae81096e7c855672a6032aa11760d866a3ce1174b39b722dd9e12",
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037",
+    "run_id": "20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037",
+    "rung": "primary",
+    "wall_s": 1739.0242127529928
+   },
+   {
+    "cells": [
+     "L0_P3_rho=0.5"
+    ],
+    "components": "rho+eta+multistart+perTraitLD",
+    "counts": {
+     "expected": 40,
+     "failed": 0,
+     "nonconverged": 0,
+     "ok": 40,
+     "timeout": 0
+    },
+    "group": "screen_L0P3__retry",
+    "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+    "n": 40,
+    "n_per_trait_ld": 0,
+    "n_with_ld2": 0,
+    "orch_commit": "695a1207aeb5e64ca9307d02279bf96940d58f4f",
+    "orch_job": "famA_p5_scrL0P3_retry_r3",
+    "predictions_sha256": "a750f79fea3686af6ed99925da63583f345ca3229300789eadd72be0b2ba0a4a",
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T151941Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_2f5e6c",
+    "run_id": "20261027T151941Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_2f5e6c",
+    "rung": "primary",
+    "wall_s": 184.59207900699403
+   },
+   {
+    "cells": [
+     "L2_P1_r_p=0.0",
+     "L2_P3_rho=0.5",
+     "L4_P1_r_p=0.0",
+     "L4_P3_rho=0.5"
+    ],
+    "components": "rho+eta+multistart+perTraitLD",
+    "counts": {
+     "expected": 8000,
+     "failed": 0,
+     "nonconverged": 31,
+     "ok": 7969,
+     "timeout": 0
+    },
+    "group": "screen_L24",
+    "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+    "n": 8000,
+    "n_per_trait_ld": 0,
+    "n_with_ld2": 0,
+    "orch_commit": "4b9c79437d786402771ef73906839447131bf698",
+    "orch_job": "famA_p5_scrL24_primary",
+    "predictions_sha256": "1315ed7bed96a25748da9252efc6ddb6cd0f0c947ccb206a8329cbcb3e564131",
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T111133Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_d9a380",
+    "run_id": "20261027T111133Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_d9a380",
+    "rung": "primary",
+    "wall_s": 1735.9371827090072
+   }
+  ]
+ },
+ "superseded": []
+}

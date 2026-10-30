@@ -1,0 +1,32 @@
+{
+ "n_loci": 48,
+ "cells": [
+  "L0_P1_r_p=0.0",
+  "L0_P3_rho=0.5"
+ ],
+ "commit_reviewed": "47ceb97",
+ "fit_s_rho_eta": 24.62835669517517,
+ "max_abs_PD_A_vs_ie": 1.1102230246251565e-16,
+ "max_abs_PD_A_vs_dp": 2.220446049250313e-16,
+ "max_abs_PS_A_vs_ie": 0.0,
+ "max_abs_PD_A_vs_mc": 0.002155330415303469,
+ "max_z_PD_A_vs_mc": 3.700922845881772,
+ "max_abs_PS_A_vs_mc": 0.0013770003438704492,
+ "max_abs_E1_A_vs_mc": 0.00048215212548552433,
+ "max_abs_E2_A_vs_mc": 0.001051678297149583,
+ "max_dalpha_indep": 2.210731597784843e-14,
+ "effect_events_max_abs": 0.0013652375132205963,
+ "effect_events_max_absz": 2.849490733448238,
+ "n_effect_events": 1920,
+ "n_loci_PD_gt_0_05": 15,
+ "n_loci_PS_gt_0_05": 22,
+ "mc_draws": 400000,
+ "rho_eta_E_max_abs_PD_vs_ie": 2.220446049250313e-16,
+ "rho_eta_E_max_abs_PD_vs_dp": 2.1698728209723178e-16,
+ "rho_eta_E_fit_s": 243.41404366493225,
+ "rho_eta_E_n_PD_gt_0_05": 15,
+ "rho_eta_pifix_max_abs_PD_vs_ie": 1.1102230246251565e-16,
+ "rho_eta_pifix_max_abs_PD_vs_dp": 1.6653345369377348e-16,
+ "rho_eta_pifix_fit_s": 23.145013570785522,
+ "rho_eta_pifix_n_PD_gt_0_05": 15
+}

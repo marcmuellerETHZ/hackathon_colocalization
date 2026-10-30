@@ -1,0 +1,15 @@
+[orch] job famB_killtest_B1 start 2026-10-27T19:24:11+01:00 host eu-g6-001 commit 1f62d4c84a pid 1574617
+[orch] cmd: mkdir -p results/famB/killtest_B1 && python scripts/famB_eval/killtest_B1.py --b results/famB/screen_v2/M50/predictions.parquet --baselines results/baselines_screen_v2/collected_v1 --sets data/processed/sets/screen_v2/*.h5 --abf-name coloc_abf_W0.15_p12_5e-06 --n-boot 2000 --n-jobs 16 --out results/famB/killtest_B1/killtest_B1.json > $ORCH_OUT/stdout.json
+Traceback (most recent call last):
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_killtest_B1/code/scripts/famB_eval/killtest_B1.py", line 295, in <module>
+    main()
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_killtest_B1/code/scripts/famB_eval/killtest_B1.py", line 259, in main
+    fr = frame([B, cm], mode)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_killtest_B1/code/scripts/famB_eval/killtest_B1.py", line 150, in frame
+    return M.build_eval_frame(tr, {m: preds[m] for m in ms}, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_killtest_B1/code/src/eval/metrics.py", line 306, in build_eval_frame
+    raise ValueError(f"{m}: {len(unknown)} predicted loci not in the expected list, e.g. {unknown[:3]}")
+ValueError: exactcoloc_gaussian_M50: 9000 predicted loci not in the expected list, e.g. ['screen_v2__L0_P3_rho=0.5__W__0000000', 'screen_v2__L0_P3_rho=0.5__W__0000001', 'screen_v2__L0_P3_rho=0.5__W__0000003']
+[orch] exit 1 at 2026-10-27T19:24:34+01:00

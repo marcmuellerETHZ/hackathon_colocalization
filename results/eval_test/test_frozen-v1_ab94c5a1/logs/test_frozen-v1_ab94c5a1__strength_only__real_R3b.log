@@ -1,0 +1,2 @@
+23:46:45 [harness] run test_frozen-v1_ab94c5a1__strength_only__real_R3b: 1237 loci (1237 to run), mode=cpu, workers=1
+23:47:12 [harness] done test_frozen-v1_ab94c5a1__strength_only__real_R3b: {'ok': 1237, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1237} in 28.4s

@@ -1,0 +1,142 @@
+{
+ "config": {
+  "baseline": "coloc_abf",
+  "frozen_timeouts_file": null,
+  "max_cpus": 24,
+  "mem_budget_gb": 40.0,
+  "mem_model_gb": {
+   "a": 0.4,
+   "at_p_max": 1.0891380000000002,
+   "b": 0.02
+  },
+  "n_workers": 24,
+  "p_max": 5870,
+  "r_timeout_s": 54.0,
+  "timeout_s": 60.0
+ },
+ "counts": {
+  "expected": 200,
+  "failed": 0,
+  "nonconverged": 0,
+  "ok": 200,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-26T18:19:12.252904Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": false,
+  "commit": "e285fe2c715db4f211d16ceb727e130f86943eb3",
+  "modified_tracked": [
+   " M logs/redo_chr7.log"
+  ],
+  "tags": [],
+  "untracked_code": [
+   "configs/FROZEN_SHA256",
+   "configs/test_methods_v1.yaml",
+   "configs/testset_v1.yaml",
+   "src/baselines/benchmarks/controls_screen_v1_runs.json",
+   "src/baselines/benchmarks/pilot200_screen_v1_ids.txt",
+   "src/baselines/benchmarks/pilot200_screen_v1_runs.json",
+   "src/baselines/benchmarks/pilot200_screen_v1_summary.tsv",
+   "src/baselines/benchmarks/pilot200_screen_v2_ids.txt"
+  ]
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 24,
+  "timeout_s_per_locus": 60.0,
+  "timing": false
+ },
+ "label": "M3.5 pilot200_screen_v2 coloc_abf",
+ "locus_set": {
+  "ids_sha256": "f805a62b80fc290853b3bd9408fc26b3db807a1bb7accfa9748a71538a4665f0",
+  "n_expected": 200,
+  "n_loci_in_file": 12000,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+  "sha256": "6cc05e1c8ae75ff5b96c8293bddd881e355fe015db3ee931670f9bbefe9769fe"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "100, 19261",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   27.044921875,
+   31.53955078125,
+   33.2783203125
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 54.0
+  },
+  "name": "coloc_abf",
+  "target": "baselines.methods:ColocABF"
+ },
+ "method_name": "coloc_abf",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": null,
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "d1f0fc8bf188f8cd64a5ca07a4ec475630ed29d19ea2038d1c95e3ae3adf80bc",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 122780,
+  "rule": "D6(h)"
+ },
+ "run_id": "20261026T181905Z_coloc_abf_screen_v2_004030",
+ "runtime_s": {
+  "median": 0.15061113299816498,
+  "p95": 0.3050723902499158,
+  "sum": 30.92864648005343
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-26T18:19:05.998620Z",
+ "test_access": false,
+ "truth": null,
+ "wall_s": 6.254267304997484
+}

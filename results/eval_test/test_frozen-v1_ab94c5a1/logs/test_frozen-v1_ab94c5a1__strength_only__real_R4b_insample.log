@@ -1,0 +1,2 @@
+23:47:40 [harness] run test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample: 600 loci (600 to run), mode=cpu, workers=1
+23:47:59 [harness] done test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample: {'ok': 600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 600} in 22.1s

@@ -1,0 +1,28 @@
+[orch] job p2rw_tests_eval_cfg start 2026-10-27T10:34:26+01:00 host eu-g6-001 commit 20d70450ca pid 929772
+[orch] cmd: set -o pipefail; cp -a '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_eval_cfg/code' '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_eval_cfg/out/proj' && for d in renv rlib_hyprcoloc rlib_hypr_dep rlib_mvsusie rlib_susie016 src; do ln -s '/cluster/scratch/mumarc/hackathon_eqtl_gwas/env/' '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_eval_cfg/out/proj/env/'; done && cd '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_eval_cfg/out/proj' && PYTHONPATH=src python -m pytest tests/eval tests/sim/test_testset.py -q -p no:cacheprovider -rs
+.............................................................s....F..... [ 92%]
+.....s                                                                   [100%]
+=================================== FAILURES ===================================
+_____________________ test_method_code_never_touches_truth _____________________
+
+    def test_method_code_never_touches_truth():
+        bad = {str(f.relative_to(ROOT)): v for f in method_files() if (v := violations(f))}
+>       assert not bad, f"method code references truth files: {bad}"
+E       AssertionError: method code references truth files: {'src/famC/c1.py': ["string '.truth.parquet'"]}
+E       assert not {'src/famC/c1.py': ["string '.truth.parquet'"]}
+
+tests/eval/test_truth_isolation.py:46: AssertionError
+=============================== warnings summary ===============================
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=929810) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/eval/test_eval_v4.py:309: could not import 'baselines.adapters': No module named 'baselines.adapters'
+SKIPPED [1] tests/sim/test_testset.py:110: needs CUDA
+1 failed, 75 passed, 2 skipped, 4 warnings in 113.89s (0:01:53)
+[orch] exit 1 at 2026-10-27T10:36:24+01:00

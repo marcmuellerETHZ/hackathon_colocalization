@@ -1,0 +1,6 @@
+........................................x............................... [ 66%]
+.....................................                                    [100%]
+=========================== short test summary info ============================
+XFAIL tests/baselines/test_controls.py::test_distinct[1-sharepro] - SharePro false sharing on distinct control (s = 1); matches CLI
+108 passed, 1 xfailed in 133.53s (0:02:13)
+EXIT 0

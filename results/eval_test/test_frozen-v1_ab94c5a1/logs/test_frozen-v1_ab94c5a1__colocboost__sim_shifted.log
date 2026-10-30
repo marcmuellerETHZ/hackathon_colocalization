@@ -1,0 +1,13 @@
+03:34:32 [harness] run test_frozen-v1_ab94c5a1__colocboost__sim_shifted: 387 loci (387 to run), mode=cpu, workers=4
+03:35:33 [harness] colocboost: 11/387 loci done
+03:36:34 [harness] colocboost: 32/387 loci done
+03:37:35 [harness] colocboost: 49/387 loci done
+03:38:37 [harness] colocboost: 72/387 loci done
+03:39:37 [harness] colocboost: 102/387 loci done
+03:40:40 [harness] colocboost: 134/387 loci done
+03:41:41 [harness] colocboost: 173/387 loci done
+03:42:41 [harness] colocboost: 206/387 loci done
+03:43:43 [harness] colocboost: 251/387 loci done
+03:44:45 [harness] colocboost: 299/387 loci done
+03:45:45 [harness] colocboost: 370/387 loci done
+03:45:58 [harness] done test_frozen-v1_ab94c5a1__colocboost__sim_shifted: {'ok': 387, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 387} in 683.9s

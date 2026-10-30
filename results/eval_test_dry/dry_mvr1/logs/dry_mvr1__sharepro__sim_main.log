@@ -1,0 +1,2 @@
+22:22:43 [harness] run dry_mvr1__sharepro__sim_main: 147 loci (147 to run), mode=cpu, workers=5
+22:23:38 [harness] done dry_mvr1__sharepro__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 52.8s

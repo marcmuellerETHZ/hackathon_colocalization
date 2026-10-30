@@ -1,0 +1,52 @@
+{
+ "coloc_abf": {
+  "DRY": true,
+  "rate_D_on_W": 0.025,
+  "rate_S_on_W": 0.0125,
+  "recal_a_D": -12.040616159106794,
+  "recal_a_S": 0.768687203654792,
+  "setting": "realistic",
+  "t_D": 0.2651710588715436,
+  "t_S": 0.9311421325413486
+ },
+ "coloc_susie_mm": {
+  "DRY": true,
+  "rate_D_on_W": 0.025,
+  "rate_S_on_W": 0.0125,
+  "recal_a_D": -8.103046587582039,
+  "recal_a_S": -2.013573687990858,
+  "setting": "realistic",
+  "t_D": 0.2651710588715436,
+  "t_S": 0.9311421325413486
+ },
+ "colocboost_m1": {
+  "DRY": true,
+  "rate_D_on_W": 0.0,
+  "rate_S_on_W": 0.016666666666666666,
+  "recal_a_D": -12.817276120776324,
+  "recal_a_S": 11.970360206830618,
+  "setting": "realistic",
+  "t_D": 1.0000000000000002,
+  "t_S": 0.6966000000000001
+ },
+ "lead_snp": {
+  "DRY": true,
+  "rate_D_on_W": null,
+  "rate_S_on_W": null,
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "strength_only": {
+  "DRY": true,
+  "rate_D_on_W": 0.025,
+  "rate_S_on_W": 0.0,
+  "recal_a_D": 0.0032768238273360017,
+  "recal_a_S": -0.02047225040130139,
+  "setting": "realistic",
+  "t_D": 0.23569023569023573,
+  "t_S": 0.23569023569023573
+ }
+}

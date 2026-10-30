@@ -1,0 +1,131 @@
+{
+ "config": {},
+ "counts": {
+  "expected": 2000,
+  "failed": 5,
+  "nonconverged": 452,
+  "ok": 1543,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-28T17:04:35.144695Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "bcc841ffa46eb7f593729247216be9e9cc9b60eb",
+  "modified_tracked": [],
+  "orch_job": "famG_mm_timing_v1",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_v1/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "exclusive",
+  "mode": "cpu",
+  "n_workers": 40,
+  "timeout_s_per_locus": 600.0,
+  "timing": true
+ },
+ "label": "famG_mm timing cs rep 1",
+ "locus_set": {
+  "ids_sha256": "c3cf580670cf8137b2744a4c382fe063f6454a5057a62e7651143e6b3608f55e",
+  "n_expected": 2000,
+  "n_loci_in_file": 35086,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5",
+  "sha256": null
+ },
+ "machine_end": {
+  "cpu_affinity": 64,
+  "gpu": "0, 1",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   37.1298828125,
+   45.71044921875,
+   46.89453125
+  ]
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "0, 1",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   30.09765625,
+   44.08154296875,
+   46.18896484375
+  ]
+ },
+ "method": {
+  "kwargs": {},
+  "name": "coloc_susie",
+  "target": "baselines.methods:ColocSusie"
+ },
+ "method_name": "coloc_susie",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": "93e2ab7ac1ae6e44429057f66c7361e378ae42c23dc6816431cb3950a48d15ab",
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "3353fbc5b9b1b763d658d838862a4449afdd3b43b62439302ba521877b47cf9d",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 1964291,
+  "rule": "D6(h)"
+ },
+ "run_id": "20261028T164734Z_coloc_susie_valid_grid_v1_1ee355",
+ "runtime_s": {
+  "median": 7.691096475507948,
+  "p95": 83.76359682015608,
+  "sum": 39723.25377350548
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-28T16:47:34.670325Z",
+ "test_access": false,
+ "truth": {
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.truth.parquet",
+  "sha256": null
+ },
+ "wall_s": 1020.4743488040112
+}

@@ -1,0 +1,72 @@
+{
+ "coloc_abf": {
+  "recal_a_D": -10.557788736137317,
+  "recal_a_S": -1.2676051861969808,
+  "setting": "realistic",
+  "t_D": 0.18206735638553428,
+  "t_S": 0.8574510081113149
+ },
+ "coloc_prop_test": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "coloc_susie": {
+  "recal_a_D": -3.828952214144679,
+  "recal_a_S": -4.4471188140837175,
+  "setting": "realistic",
+  "t_D": 0.18206735638553428,
+  "t_S": 0.8904632775574971
+ },
+ "coloc_susie_mm": {
+  "recal_a_D": -5.631181145837632,
+  "recal_a_S": -2.866767126260849,
+  "setting": "realistic",
+  "t_D": 0.18206735638553428,
+  "t_S": 0.8866549147753109
+ },
+ "famA_joint_susie_rho_ms_ptld": {
+  "recal_a_D": 6.805715762259762,
+  "recal_a_S": -2.3011422818065213,
+  "setting": "realistic",
+  "t_D": 0.004246635079101947,
+  "t_S": 0.018726944154557782
+ },
+ "famB_exactcoloc_gaussian_M50": {
+  "recal_a_D": -1.8428307763779697,
+  "recal_a_S": 1.1564861566937965,
+  "setting": "realistic",
+  "t_D": 0.14898681640625003,
+  "t_S": 0.008117675781250002
+ },
+ "lead_snp": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "prop_coloc": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "sharepro": {
+  "recal_a_D": 2.7776546223470455,
+  "recal_a_S": -13.044059891326324,
+  "setting": "realistic",
+  "t_D": 0.27325940065568155,
+  "t_S": 0.7054795392655949
+ },
+ "strength_only": {
+  "recal_a_D": -0.00520268170511605,
+  "recal_a_S": -0.02175923013644268,
+  "setting": "realistic",
+  "t_D": 0.22522522522522526,
+  "t_S": 0.22522522522522526
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "R2": {
+  "arm": "R2",
+  "trainvalid_check": {
+   "n_candidates": 11325,
+   "candidates_file_byte_identical": true,
+   "sha256": "d71d43e22894c95bf8ed670674c57ccc44803b734d93908264b470c0a1050f9e"
+  },
+  "full": {
+   "n": 2674,
+   "sha256": "546b139b8f9706c974899a8f5d34c239b55098552769f86527e2dcc41bcd6b7b",
+   "frozen": "546b139b8f9706c974899a8f5d34c239b55098552769f86527e2dcc41bcd6b7b"
+  },
+  "sub": {
+   "n": 800,
+   "sha256": "9f1501a9549cc04a8d8b71dbf2cfc5b708703c1da560d4e8868f3247634e21e6",
+   "frozen": "9f1501a9549cc04a8d8b71dbf2cfc5b708703c1da560d4e8868f3247634e21e6"
+  },
+  "meta": {
+   "n": 800,
+   "columns": [
+    "locus_id",
+    "arm",
+    "dataset1",
+    "dataset2",
+    "gene_id",
+    "split",
+    "chr",
+    "win_lo",
+    "win_hi",
+    "gene_name",
+    "tss",
+    "block_id",
+    "lead1",
+    "lead2"
+   ],
+   "sha256": "0a4fd349b0318f0307fc22cb511e30c3447e6d4e3040b0a25a811c1a430ea26e"
+  }
+ },
+ "R3b": {
+  "arm": "R3b",
+  "trainvalid_check": {
+   "n_candidates": 5151,
+   "n_rebuilt_prefilter_trainvalid": 7316,
+   "prefilter_columns_identical": true
+  },
+  "n_test_prefilter": 1643,
+  "full": {
+   "n": 1237,
+   "sha256": "769060f63d8c8a937f09e37590ee95505f081c0f23f5d4f6b85ed7af1e67f50b",
+   "frozen": "769060f63d8c8a937f09e37590ee95505f081c0f23f5d4f6b85ed7af1e67f50b"
+  },
+  "sub": {
+   "n": 1237,
+   "sha256": "769060f63d8c8a937f09e37590ee95505f081c0f23f5d4f6b85ed7af1e67f50b",
+   "frozen": "769060f63d8c8a937f09e37590ee95505f081c0f23f5d4f6b85ed7af1e67f50b"
+  },
+  "meta": {
+   "n": 1237,
+   "columns": [
+    "locus_id",
+    "arm",
+    "dataset1",
+    "dataset2",
+    "gene_id",
+    "split",
+    "chr",
+    "win_lo",
+    "win_hi",
+    "gene_name",
+    "tss",
+    "block_id",
+    "lead1",
+    "lead2",
+    "fg_region",
+    "fg_cs"
+   ],
+   "sha256": "6c653dfd8dd1c30a710615ac57b477a4be7024f09300d7df294a76533780f3b9"
+  }
+ },
+ "R4b": {
+  "arm": "R4b",
+  "trainvalid_check": {
+   "n_candidates": 5340,
+   "candidates_file_byte_identical": true,
+   "sha256": "7b6530fbeeb38b072ff744c87f25e613cd171671dcc07ea4021860a68d5ffe73"
+  },
+  "full": {
+   "n": 1279,
+   "sha256": "71ebdc4816b6e7c01a5bd54b36db12d5cb5de8c097aab35a3a484d7b7ec7b780",
+   "frozen": "71ebdc4816b6e7c01a5bd54b36db12d5cb5de8c097aab35a3a484d7b7ec7b780"
+  },
+  "sub": {
+   "n": 600,
+   "sha256": "44c4e1a25003e4ace631e0f0d91e4030b9cd8a20d5f9fc9ab8dc8c178119fe60",
+   "frozen": "44c4e1a25003e4ace631e0f0d91e4030b9cd8a20d5f9fc9ab8dc8c178119fe60"
+  },
+  "meta": {
+   "n": 600,
+   "columns": [
+    "locus_id",
+    "arm",
+    "dataset1",
+    "dataset2",
+    "gene_id",
+    "split",
+    "chr",
+    "win_lo",
+    "win_hi",
+    "gene_name",
+    "tss",
+    "block_id",
+    "lead1",
+    "lead2"
+   ],
+   "sha256": "e83cd444a92f7063bcd008d34958acb249fdca062734ac34149a0492fd9fdbfd"
+  }
+ }
+}

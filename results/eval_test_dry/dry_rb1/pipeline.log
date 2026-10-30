@@ -1,0 +1,2 @@
+[eval_test 19:25:28] real-data arms ready: real_R2 n=32, real_R3b n=50, real_R4b_insample n=24, real_R4b_reference n=24
+[eval_test 19:25:28] stages = real only: done

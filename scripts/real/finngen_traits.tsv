@@ -1,0 +1,9 @@
+pheno	kind	label	sumstats_prefix	susie_prefix
+3001308	lab	LDL cholesterol (Kanta, IRN)	lab_values/summary_stats	lab_values/finemap/full/susie
+3006140	lab	Total bilirubin (Kanta, IRN)	lab_values/summary_stats	lab_values/finemap/full/susie
+3026493	lab	Urate (Kanta, IRN)	lab_values/summary_stats	lab_values/finemap/full/susie
+3001122	lab	Ferritin (Kanta, IRN)	lab_values/summary_stats	lab_values/finemap/full/susie
+3007461	lab	Platelet count (Kanta, IRN)	lab_values/summary_stats	lab_values/finemap/full/susie
+T2D	endpoint	Type 2 diabetes	summary_stats/release	finemap/full/susie
+K11_IBD_STRICT	endpoint	Inflammatory bowel disease (strict)	summary_stats/release	finemap/full/susie
+E4_HYTHY_AI_STRICT	endpoint	Autoimmune hypothyroidism (strict)	summary_stats/release	finemap/full/susie

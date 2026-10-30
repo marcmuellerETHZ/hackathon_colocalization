@@ -1,0 +1,73 @@
+{
+ "files": {
+  "L0P1_all.txt": {
+   "by_cell_class": {
+    "L0|P1|r_p=0.0|D": 1000,
+    "L0|P1|r_p=0.0|S": 500,
+    "L0|P1|r_p=0.0|W": 500
+   },
+   "by_class": {
+    "D": 1000,
+    "S": 500,
+    "W": 500
+   },
+   "ids_sha256": "45631898dbe633dee09db863034bb59a2fd4df5e535776e57e5ee9f3fd27d154",
+   "n": 2000
+  },
+  "rest_all.txt": {
+   "by_cell_class": {
+    "L0|P3|rho=0.5|D": 1000,
+    "L0|P3|rho=0.5|S": 500,
+    "L0|P3|rho=0.5|W": 500,
+    "L2|P1|r_p=0.0|D": 1000,
+    "L2|P1|r_p=0.0|S": 500,
+    "L2|P1|r_p=0.0|W": 500,
+    "L2|P3|rho=0.5|D": 1000,
+    "L2|P3|rho=0.5|S": 500,
+    "L2|P3|rho=0.5|W": 500,
+    "L4|P1|r_p=0.0|D": 1000,
+    "L4|P1|r_p=0.0|S": 500,
+    "L4|P1|r_p=0.0|W": 500,
+    "L4|P3|rho=0.5|D": 1000,
+    "L4|P3|rho=0.5|S": 500,
+    "L4|P3|rho=0.5|W": 500
+   },
+   "by_class": {
+    "D": 5000,
+    "S": 2500,
+    "W": 2500
+   },
+   "ids_sha256": "1a93684052c44e87fa513525e915b00d80eafc4a7db2347cd84775bc86173204",
+   "n": 10000
+  },
+  "rest_slow.txt": {
+   "by_cell_class": {
+    "L0|P3|rho=0.5|D": 100,
+    "L0|P3|rho=0.5|S": 50,
+    "L0|P3|rho=0.5|W": 50,
+    "L2|P1|r_p=0.0|D": 100,
+    "L2|P1|r_p=0.0|S": 50,
+    "L2|P1|r_p=0.0|W": 50,
+    "L2|P3|rho=0.5|D": 100,
+    "L2|P3|rho=0.5|S": 50,
+    "L2|P3|rho=0.5|W": 50,
+    "L4|P1|r_p=0.0|D": 100,
+    "L4|P1|r_p=0.0|S": 50,
+    "L4|P1|r_p=0.0|W": 50,
+    "L4|P3|rho=0.5|D": 100,
+    "L4|P3|rho=0.5|S": 50,
+    "L4|P3|rho=0.5|W": 50
+   },
+   "by_class": {
+    "D": 500,
+    "S": 250,
+    "W": 250
+   },
+   "ids_sha256": "6bf377ec77b0d37187f29fb30c018d47084b7c7fc7f8f864a8a5ad1070e166d0",
+   "n": 1000
+  }
+ },
+ "locus_set": "data/processed/sets/screen_v2.h5",
+ "n_loci_in_set": 12000,
+ "rule": "slow methods (mvsusie, colocboost, colocboost_m1): all loci of L0|P1|r_p=0.0 + 200 per other cell, equal over generation buckets (50 each), seed derive(20261027, 'screen_slow_subsample'), draw in src/baselines/subsample.py; fast methods: all loci"
+}

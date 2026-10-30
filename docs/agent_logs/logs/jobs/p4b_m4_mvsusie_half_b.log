@@ -1,0 +1,4 @@
+[orch] job p4b_m4_mvsusie_half_b start 2026-10-27T19:10:07+01:00 host eu-g6-001 commit df23941e6e pid 1564444
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method mvsusie --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/ids_split/mvsusie_half_b.txt --workers 12 --pilot-timeout --results-dir results/baselines_m4/runs --label 'p4 M4 valid_grid_v1 m4_subsample@1 mvsusie half b'
+[baselines.run] mvsusie: 1020 loci, p_max=5371, workers=12, timeout=1080s
+[harness] run 20261027T182327Z_mvsusie_valid_grid_v1_f68cac: 1020 loci, mode=cpu, workers=12

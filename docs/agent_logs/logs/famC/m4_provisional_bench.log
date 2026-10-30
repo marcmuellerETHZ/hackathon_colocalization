@@ -1,0 +1,106 @@
+[benchmark 19:44:12] benchmark 20261027T184412Z_famC_m4_provisional: 34 locus set(s), 0 method(s) + reuse ['neuralcoloc_main_snap1_full']
+[benchmark 19:58:38] run strength_only on L0_P1_r_p=0.0.h5 (350 loci)
+[benchmark 19:58:41] [harness] run 20261027T185840Z_strength_only_L0_P1_r_p=0.0_b50f31: 350 loci, mode=cpu, workers=8
+[benchmark 19:58:54] [harness] done 20261027T185840Z_strength_only_L0_P1_r_p=0.0_b50f31: {'ok': 350, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 350} in 12.9s
+[benchmark 19:58:54] run strength_only on L0_P1_r_p=0.6.h5 (357 loci)
+[benchmark 19:58:56] [harness] run 20261027T185856Z_strength_only_L0_P1_r_p=0.6_ec9752: 357 loci, mode=cpu, workers=8
+[benchmark 19:59:05] [harness] done 20261027T185856Z_strength_only_L0_P1_r_p=0.6_ec9752: {'ok': 357, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 357} in 9.0s
+[benchmark 19:59:05] run strength_only on L0_P2_rho=0.0.h5 (360 loci)
+[benchmark 19:59:11] [harness] run 20261027T185911Z_strength_only_L0_P2_rho=0.0_a91e1f: 360 loci, mode=cpu, workers=8
+[benchmark 19:59:19] [harness] done 20261027T185911Z_strength_only_L0_P2_rho=0.0_a91e1f: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 7.8s
+[benchmark 19:59:19] run strength_only on L0_P2_rho=0.3.h5 (360 loci)
+[benchmark 19:59:21] [harness] run 20261027T185921Z_strength_only_L0_P2_rho=0.3_d3e200: 360 loci, mode=cpu, workers=8
+[benchmark 19:59:28] [harness] done 20261027T185921Z_strength_only_L0_P2_rho=0.3_d3e200: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 6.7s
+[benchmark 19:59:28] run strength_only on L0_P3_rho=0.0.h5 (360 loci)
+[benchmark 19:59:30] [harness] run 20261027T185929Z_strength_only_L0_P3_rho=0.0_8591e4: 360 loci, mode=cpu, workers=8
+[benchmark 19:59:37] [harness] done 20261027T185929Z_strength_only_L0_P3_rho=0.0_8591e4: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 7.4s
+[benchmark 19:59:37] run strength_only on L0_P3_rho=0.5.h5 (360 loci)
+[benchmark 19:59:39] [harness] run 20261027T185939Z_strength_only_L0_P3_rho=0.5_71f3f3: 360 loci, mode=cpu, workers=8
+[benchmark 19:59:47] [harness] done 20261027T185939Z_strength_only_L0_P3_rho=0.5_71f3f3: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 8.2s
+[benchmark 19:59:47] run strength_only on L0_P3_rho=0.8.h5 (346 loci)
+[benchmark 19:59:50] [harness] run 20261027T185949Z_strength_only_L0_P3_rho=0.8_d4aa77: 346 loci, mode=cpu, workers=8
+[benchmark 19:59:57] [harness] done 20261027T185949Z_strength_only_L0_P3_rho=0.8_d4aa77: {'ok': 346, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 346} in 7.5s
+[benchmark 19:59:57] run strength_only on L1_P1_r_p=0.0.h5 (360 loci)
+[benchmark 20:00:04] [harness] run 20261027T190003Z_strength_only_L1_P1_r_p=0.0_e42127: 360 loci, mode=cpu, workers=8
+[benchmark 20:00:16] [harness] done 20261027T190003Z_strength_only_L1_P1_r_p=0.0_e42127: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 12.3s
+[benchmark 20:00:16] run strength_only on L1_P1_r_p=0.6.h5 (358 loci)
+[benchmark 20:00:21] [harness] run 20261027T190021Z_strength_only_L1_P1_r_p=0.6_3153b4: 358 loci, mode=cpu, workers=8
+[benchmark 20:00:36] [harness] done 20261027T190021Z_strength_only_L1_P1_r_p=0.6_3153b4: {'ok': 358, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 358} in 14.8s
+[benchmark 20:00:36] run strength_only on L1_P2_rho=0.0.h5 (360 loci)
+[benchmark 20:00:38] [harness] run 20261027T190037Z_strength_only_L1_P2_rho=0.0_08f853: 360 loci, mode=cpu, workers=8
+[benchmark 20:00:46] [harness] done 20261027T190037Z_strength_only_L1_P2_rho=0.0_08f853: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 8.5s
+[benchmark 20:00:46] run strength_only on L1_P2_rho=0.3.h5 (360 loci)
+[benchmark 20:00:48] [harness] run 20261027T190048Z_strength_only_L1_P2_rho=0.3_b4a1ac: 360 loci, mode=cpu, workers=8
+[benchmark 20:00:54] [harness] done 20261027T190048Z_strength_only_L1_P2_rho=0.3_b4a1ac: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 6.1s
+[benchmark 20:00:54] run strength_only on L1_P3_rho=0.0.h5 (356 loci)
+[benchmark 20:00:56] [harness] run 20261027T190056Z_strength_only_L1_P3_rho=0.0_10a710: 356 loci, mode=cpu, workers=8
+[benchmark 20:01:06] [harness] done 20261027T190056Z_strength_only_L1_P3_rho=0.0_10a710: {'ok': 356, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 356} in 9.9s
+[benchmark 20:01:06] run strength_only on L1_P3_rho=0.5.h5 (360 loci)
+[benchmark 20:01:08] [harness] run 20261027T190108Z_strength_only_L1_P3_rho=0.5_eb00df: 360 loci, mode=cpu, workers=8
+[benchmark 20:01:16] [harness] done 20261027T190108Z_strength_only_L1_P3_rho=0.5_eb00df: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 7.8s
+[benchmark 20:01:16] run strength_only on L1_P3_rho=0.8.h5 (360 loci)
+[benchmark 20:01:18] [harness] run 20261027T190118Z_strength_only_L1_P3_rho=0.8_07386e: 360 loci, mode=cpu, workers=8
+[benchmark 20:01:29] [harness] done 20261027T190118Z_strength_only_L1_P3_rho=0.8_07386e: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 10.5s
+[benchmark 20:01:29] run strength_only on L2_P1_r_p=0.0.h5 (350 loci)
+[benchmark 20:01:36] [harness] run 20261027T190135Z_strength_only_L2_P1_r_p=0.0_c3693a: 350 loci, mode=cpu, workers=8
+[benchmark 20:01:44] [harness] done 20261027T190135Z_strength_only_L2_P1_r_p=0.0_c3693a: {'ok': 350, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 350} in 8.6s
+[benchmark 20:01:44] run strength_only on L2_P1_r_p=0.6.h5 (360 loci)
+[benchmark 20:01:47] [harness] run 20261027T190147Z_strength_only_L2_P1_r_p=0.6_119915: 360 loci, mode=cpu, workers=8
+[benchmark 20:01:54] [harness] done 20261027T190147Z_strength_only_L2_P1_r_p=0.6_119915: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 6.6s
+[benchmark 20:01:54] run strength_only on L2_P2_rho=0.0.h5 (360 loci)
+[benchmark 20:02:01] [harness] run 20261027T190200Z_strength_only_L2_P2_rho=0.0_2179a8: 360 loci, mode=cpu, workers=8
+[benchmark 20:02:07] [harness] done 20261027T190200Z_strength_only_L2_P2_rho=0.0_2179a8: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 6.7s
+[benchmark 20:02:07] run strength_only on L2_P2_rho=0.3.h5 (360 loci)
+[benchmark 20:02:10] [harness] run 20261027T190210Z_strength_only_L2_P2_rho=0.3_2b6cda: 360 loci, mode=cpu, workers=8
+[benchmark 20:02:15] [harness] done 20261027T190210Z_strength_only_L2_P2_rho=0.3_2b6cda: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 5.1s
+[benchmark 20:02:15] run strength_only on L2_P3_rho=0.0.h5 (360 loci)
+[benchmark 20:02:18] [harness] run 20261027T190217Z_strength_only_L2_P3_rho=0.0_735d7f: 360 loci, mode=cpu, workers=8
+[benchmark 20:02:24] [harness] done 20261027T190217Z_strength_only_L2_P3_rho=0.0_735d7f: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 6.0s
+[benchmark 20:02:24] run strength_only on L2_P3_rho=0.5.h5 (360 loci)
+[benchmark 20:02:26] [harness] run 20261027T190225Z_strength_only_L2_P3_rho=0.5_60081e: 360 loci, mode=cpu, workers=8
+[benchmark 20:02:32] [harness] done 20261027T190225Z_strength_only_L2_P3_rho=0.5_60081e: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 6.7s
+[benchmark 20:02:32] run strength_only on L2_P3_rho=0.8.h5 (357 loci)
+[benchmark 20:02:35] [harness] run 20261027T190234Z_strength_only_L2_P3_rho=0.8_9bdc92: 357 loci, mode=cpu, workers=8
+[benchmark 20:02:43] [harness] done 20261027T190234Z_strength_only_L2_P3_rho=0.8_9bdc92: {'ok': 357, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 357} in 7.9s
+[benchmark 20:02:43] run strength_only on L3_P1_r_p=0.0.h5 (360 loci)
+[benchmark 20:02:46] [harness] run 20261027T190245Z_strength_only_L3_P1_r_p=0.0_c19ba6: 360 loci, mode=cpu, workers=8
+[benchmark 20:02:55] [harness] done 20261027T190245Z_strength_only_L3_P1_r_p=0.0_c19ba6: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 9.2s
+[benchmark 20:02:55] run strength_only on L3_P2_rho=0.0.h5 (360 loci)
+[benchmark 20:02:57] [harness] run 20261027T190257Z_strength_only_L3_P2_rho=0.0_49ad2e: 360 loci, mode=cpu, workers=8
+[benchmark 20:03:05] [harness] done 20261027T190257Z_strength_only_L3_P2_rho=0.0_49ad2e: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 7.3s
+[benchmark 20:03:05] run strength_only on L3_P3_rho=0.0.h5 (360 loci)
+[benchmark 20:03:10] [harness] run 20261027T190310Z_strength_only_L3_P3_rho=0.0_14b237: 360 loci, mode=cpu, workers=8
+[benchmark 20:03:15] [harness] done 20261027T190310Z_strength_only_L3_P3_rho=0.0_14b237: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 5.2s
+[benchmark 20:03:15] run strength_only on L4_P1_r_p=0.0.h5 (357 loci)
+[benchmark 20:03:21] [harness] run 20261027T190321Z_strength_only_L4_P1_r_p=0.0_995c51: 357 loci, mode=cpu, workers=8
+[benchmark 20:03:26] [harness] done 20261027T190321Z_strength_only_L4_P1_r_p=0.0_995c51: {'ok': 357, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 357} in 5.2s
+[benchmark 20:03:26] run strength_only on L4_P1_r_p=0.6.h5 (349 loci)
+[benchmark 20:03:34] [harness] run 20261027T190334Z_strength_only_L4_P1_r_p=0.6_cf20a3: 349 loci, mode=cpu, workers=8
+[benchmark 20:03:41] [harness] done 20261027T190334Z_strength_only_L4_P1_r_p=0.6_cf20a3: {'ok': 349, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 349} in 6.9s
+[benchmark 20:03:41] run strength_only on L4_P2_rho=0.0.h5 (360 loci)
+[benchmark 20:03:46] [harness] run 20261027T190346Z_strength_only_L4_P2_rho=0.0_fdc433: 360 loci, mode=cpu, workers=8
+[benchmark 20:03:55] [harness] done 20261027T190346Z_strength_only_L4_P2_rho=0.0_fdc433: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 8.9s
+[benchmark 20:03:55] run strength_only on L4_P2_rho=0.3.h5 (360 loci)
+[benchmark 20:03:57] [harness] run 20261027T190357Z_strength_only_L4_P2_rho=0.3_9b7fbb: 360 loci, mode=cpu, workers=8
+[benchmark 20:04:04] [harness] done 20261027T190357Z_strength_only_L4_P2_rho=0.3_9b7fbb: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 7.0s
+[benchmark 20:04:04] run strength_only on L4_P3_rho=0.0.h5 (359 loci)
+[benchmark 20:04:08] [harness] run 20261027T190408Z_strength_only_L4_P3_rho=0.0_b9afa7: 359 loci, mode=cpu, workers=8
+[benchmark 20:04:18] [harness] done 20261027T190408Z_strength_only_L4_P3_rho=0.0_b9afa7: {'ok': 359, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 359} in 9.5s
+[benchmark 20:04:18] run strength_only on L4_P3_rho=0.5.h5 (355 loci)
+[benchmark 20:04:22] [harness] run 20261027T190422Z_strength_only_L4_P3_rho=0.5_fb02d5: 355 loci, mode=cpu, workers=8
+[benchmark 20:04:29] [harness] done 20261027T190422Z_strength_only_L4_P3_rho=0.5_fb02d5: {'ok': 355, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 355} in 7.0s
+[benchmark 20:04:29] run strength_only on L4_P3_rho=0.8.h5 (360 loci)
+[benchmark 20:04:33] [harness] run 20261027T190432Z_strength_only_L4_P3_rho=0.8_6759cc: 360 loci, mode=cpu, workers=8
+[benchmark 20:04:41] [harness] done 20261027T190432Z_strength_only_L4_P3_rho=0.8_6759cc: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 7.9s
+[benchmark 20:04:41] run strength_only on L6_P1_r_p=0.0.h5 (356 loci)
+[benchmark 20:04:46] [harness] run 20261027T190445Z_strength_only_L6_P1_r_p=0.0_cb49b1: 356 loci, mode=cpu, workers=8
+[benchmark 20:04:58] [harness] done 20261027T190445Z_strength_only_L6_P1_r_p=0.0_cb49b1: {'ok': 356, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 356} in 12.0s
+[benchmark 20:04:58] run strength_only on L6_P2_rho=0.0.h5 (360 loci)
+[benchmark 20:05:38] [harness] run 20261027T190537Z_strength_only_L6_P2_rho=0.0_712543: 360 loci, mode=cpu, workers=8
+[benchmark 20:05:52] [harness] done 20261027T190537Z_strength_only_L6_P2_rho=0.0_712543: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 14.2s
+[benchmark 20:05:52] run strength_only on L6_P3_rho=0.0.h5 (360 loci)
+[benchmark 20:05:54] [harness] run 20261027T190554Z_strength_only_L6_P3_rho=0.0_d801b7: 360 loci, mode=cpu, workers=8
+[benchmark 20:06:06] [harness] done 20261027T190554Z_strength_only_L6_P3_rho=0.0_d801b7: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 10.7s
+[benchmark 20:06:21] [least_favourable] bootstrap (2000 x block, 2 methods, settings ['realistic', 'ideal'])
+[benchmark 20:06:37] [excluded] bootstrap (2000 x block, 2 methods, settings ['realistic', 'ideal'])
+[benchmark 20:06:50] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/benchmarks/20261027T184412Z_famC_m4_provisional (12170 loci, 2 methods)

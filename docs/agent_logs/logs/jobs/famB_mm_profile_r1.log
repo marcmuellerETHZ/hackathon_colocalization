@@ -1,0 +1,5 @@
+[orch] job famB_mm_profile_r1 start 2026-10-28T09:53:15+01:00 host eu-g6-001 commit 7d7a8296e6 pid 2121626
+[orch] cmd: python scripts/famB_eval/profile_bmm.py --set "data/processed/sets/valid_grid_v1/L2_P1_r_p=0.0.h5" --n 48
+exactcoloc_gaussian_M50 total 1.23s for 48 loci = 0.026 s/locus; {'eb_select_phase1': 0.46, 'enumerate_iter_and_final': 0.43, 'events': 0.06} status {'ok': 48, 'failed': 0} peak GB 2.24
+exactcoloc_mm_gaussian_M50 total 16.51s for 48 loci = 0.344 s/locus; {'eb_select_phase1': 0.18, 'enumerate_iter_and_final': 1.14, 'second_moments': 13.92, 'enum_inside_eb_mm': 0.26, 'eb_select_mm': 0.94, 'phi_b': 0.01, 'events': 0.05} status {'ok': 48, 'failed': 0} peak GB 2.25
+[orch] exit 0 at 2026-10-28T09:53:41+01:00

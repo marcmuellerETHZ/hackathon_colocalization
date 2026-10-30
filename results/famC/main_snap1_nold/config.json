@@ -1,0 +1,27 @@
+{
+ "run": "main_snap1_nold",
+ "train_set": "train_dev_snap1",
+ "valid_set": "valid_dev",
+ "variant": "nold",
+ "steps": 8000,
+ "batch": 128,
+ "lr": 0.0003,
+ "warmup": 1000,
+ "d": 128,
+ "layers": 4,
+ "K": 16,
+ "dropout": 0.0,
+ "energy": "free",
+ "eval_every": 1000,
+ "n_valid": 15000,
+ "max_train_shards": null,
+ "seed_key": "main",
+ "start": "2026-10-26 19:01:31",
+ "class_w": [
+  1.0,
+  1.0,
+  0.11999999731779099,
+  0.4000000059604645,
+  1.0
+ ]
+}

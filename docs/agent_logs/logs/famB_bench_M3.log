@@ -1,0 +1,25 @@
+# rep 1 gpu before: 614 MiB, 0 %
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 1.087, "loci_per_s": 58.858, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 13.56, "loci_per_s": 4.72, "ok": 64, "mean_cpu_prep_s": 0.0018, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 0.659, "loci_per_s": 97.165, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 5.761, "loci_per_s": 11.109, "ok": 64, "mean_cpu_prep_s": 0.0018, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float32", "eb": 1, "n_mc": 16384, "wall_s": 0.592, "loci_per_s": 108.159, "ok": 64, "mean_cpu_prep_s": 0.0013, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float32", "eb": 1, "n_mc": 16384, "wall_s": 3.494, "loci_per_s": 18.319, "ok": 64, "mean_cpu_prep_s": 0.0021, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "coloc", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 1.804, "loci_per_s": 35.48, "ok": 64, "mean_cpu_prep_s": 0.0, "gpu": "NVIDIA GeForce RTX 4090"}
+# rep 2 gpu before: 1 MiB, 48 %
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 0.924, "loci_per_s": 69.289, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 14.281, "loci_per_s": 4.481, "ok": 64, "mean_cpu_prep_s": 0.002, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 0.706, "loci_per_s": 90.661, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 5.314, "loci_per_s": 12.044, "ok": 64, "mean_cpu_prep_s": 0.0022, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float32", "eb": 1, "n_mc": 16384, "wall_s": 0.536, "loci_per_s": 119.3, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float32", "eb": 1, "n_mc": 16384, "wall_s": 3.158, "loci_per_s": 20.269, "ok": 64, "mean_cpu_prep_s": 0.0018, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "coloc", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 1.72, "loci_per_s": 37.209, "ok": 64, "mean_cpu_prep_s": 0.0, "gpu": "NVIDIA GeForce RTX 4090"}
+# rep 3 gpu before: 1 MiB, 11 %
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 0.877, "loci_per_s": 72.959, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 11.62, "loci_per_s": 5.508, "ok": 64, "mean_cpu_prep_s": 0.0018, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 0.619, "loci_per_s": 103.42, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 5.069, "loci_per_s": 12.625, "ok": 64, "mean_cpu_prep_s": 0.0018, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 50, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float32", "eb": 1, "n_mc": 16384, "wall_s": 0.533, "loci_per_s": 120.09, "ok": 64, "mean_cpu_prep_s": 0.0012, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "gaussian", "compile": true, "dtype": "float32", "eb": 1, "n_mc": 16384, "wall_s": 2.996, "loci_per_s": 21.363, "ok": 64, "mean_cpu_prep_s": 0.0019, "gpu": "NVIDIA GeForce RTX 4090"}
+{"M": 100, "p": 2000, "n": 64, "mode": "coloc", "compile": false, "dtype": "float64", "eb": 1, "n_mc": 16384, "wall_s": 1.822, "loci_per_s": 35.126, "ok": 64, "mean_cpu_prep_s": 0.0, "gpu": "NVIDIA GeForce RTX 4090"}
+EXIT 0

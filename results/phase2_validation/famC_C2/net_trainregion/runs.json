@@ -1,0 +1,34 @@
+{
+ "method": "neuralcoloc_p9_600k",
+ "kwargs": {
+  "checkpoint": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famC/p9_main_600k/model.pt",
+  "class_w": "main",
+  "batch": 32,
+  "variant": "full"
+ },
+ "runs": [
+  {
+   "set": "data/processed/famC/sets/trainregion_m4_v1.h5",
+   "run_id": "20261028T142538Z_neuralcoloc_p9_600k_trainregion_m4_v1_beda97",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T142538Z_neuralcoloc_p9_600k_trainregion_m4_v1_beda97",
+   "n": 11599,
+   "counts": {
+    "ok": 11599,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 11599
+   },
+   "wall_s": 370.81711053848267,
+   "loci_per_s": 31.279570630267017,
+   "predictions_sha256": "a6781a320fcd76ee5775a97b2f5e999a8d1f6a4d0938054632899ab07d793960"
+  }
+ ],
+ "n_loci": 11599,
+ "ids_file": null,
+ "status_counts": {
+  "ok": 11599
+ },
+ "commit": "f7cf358173ab737150437a415a7ee9996f0a848b",
+ "job": "famC_p9_c2_harness_net"
+}

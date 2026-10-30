@@ -1,0 +1,125 @@
+{
+ "methods": {
+  "coloc_abf_W0.15_p12_1e-05": {
+   "recal_a_D": -7.775325801235586,
+   "recal_a_S": -1.8814125374338675,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.5381672901893849,
+   "t_S": 0.9083312563327388
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "recal_a_D": -8.17201947526052,
+   "recal_a_S": -1.1882687542279422,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.5665021967221262,
+   "t_S": 0.8320575830369603
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "recal_a_D": -6.72602147431751,
+   "recal_a_S": -1.7606431734677253,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.5543438544172188,
+   "t_S": 0.9199035254003043
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "recal_a_D": -7.153881632671756,
+   "recal_a_S": -1.0674990377452143,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.5953574066158972,
+   "t_S": 0.8516864437884993
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "recal_a_D": -8.359000335791691,
+   "recal_a_S": -1.9211867143668921,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.5325704441250746,
+   "t_S": 0.9078034225018711
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "recal_a_D": -8.731448932324927,
+   "recal_a_S": -1.2280431639752656,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.5803111143879112,
+   "t_S": 0.8311721911648525
+  },
+  "coloc_prop_test": {
+   "recal_a_D": null,
+   "recal_a_S": null,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": "inf",
+   "t_S": "inf"
+  },
+  "coloc_susie": {
+   "recal_a_D": -3.249584767969364,
+   "recal_a_S": -2.8538447050360407,
+   "source": "M4 main sample (oppoints on runs p4b_m4_coloc_susie_half_a/b; finished 22:17)",
+   "t_D": 0.8036174141574123,
+   "t_S": 0.8784511379171775
+  },
+  "coloc_susie_mm": {
+   "recal_a_D": 0.047819203830938385,
+   "recal_a_S": -1.0278543592233402,
+   "source": "screen_fallback (P3-27): M4 runs unfinished at 22:20",
+   "t_D": 0.6920740371206827,
+   "t_S": 0.8198729398321837
+  },
+  "colocboost": {
+   "recal_a_D": 4.885883464161857,
+   "recal_a_S": -148354662.92393252,
+   "source": "M4 slow benchmark 20261027T185341Z_p4_m4_slow_partial",
+   "t_D": 5e-324,
+   "t_S": 0.46620000000000006
+  },
+  "colocboost_m1": {
+   "recal_a_D": -9.309151763771357,
+   "recal_a_S": 10.036747145928384,
+   "source": "M4 slow benchmark 20261027T185341Z_p4_m4_slow_partial",
+   "t_D": 0.37810000000000005,
+   "t_S": 0.8836000000000002
+  },
+  "lead_snp": {
+   "recal_a_D": null,
+   "recal_a_S": null,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": "inf",
+   "t_S": "inf"
+  },
+  "mvsusie": {
+   "recal_a_D": 332999.6669980676,
+   "recal_a_S": -347000.15299419576,
+   "source": "screen_fallback (P3-27): M4 runs unfinished at 22:20",
+   "t_D": 5e-324,
+   "t_S": 1.0000000000000002
+  },
+  "prop_coloc": {
+   "recal_a_D": null,
+   "recal_a_S": null,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": "inf",
+   "t_S": "inf"
+  },
+  "sharepro": {
+   "recal_a_D": 3.717009480847768,
+   "recal_a_S": 446.097934680271,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.23149745386910034,
+   "t_S": 0.8021643891632574
+  },
+  "strength_only": {
+   "recal_a_D": -0.0073992313228411315,
+   "recal_a_S": -0.007132558540755564,
+   "source": "M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+   "t_D": 0.19962158544105324,
+   "t_S": 0.19396712638528904
+  }
+ },
+ "rule": "C3 operating points (t_S, then t_D with S precedence; weighted W->S and W->D <= 2.5%) and logit-intercept recalibration, fitted on validation (run_benchmark._op_points). Source M4 = valid_grid_v1 m4_subsample@1 (main 12170 / slow 4080 loci); screen_fallback = P3-27 fallback fitted on screen_v2@2 (baselines_screen_v2@1; realistic setting = pooled L2/L4 x P1/P3 cells).",
+ "screen_fallback_also_computed_for": {
+  "coloc_susie": {
+   "recal_a_D": 0.27169713827863556,
+   "recal_a_S": -1.8012098424201033,
+   "t_D": 0.844220822891119,
+   "t_S": 0.8616268145520847
+  }
+ }
+}

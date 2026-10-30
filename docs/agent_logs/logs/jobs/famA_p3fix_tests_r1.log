@@ -1,0 +1,27 @@
+[orch] job famA_p3fix_tests_r1 start 2026-10-27T10:43:52+01:00 host eu-g6-001 commit ac2ae93e65 pid 939250
+[orch] cmd: R_PROFILE_USER=/dev/null python -m pytest tests/famA tests/famG -q -x -p no:cacheprovider 2>&1 | tail -40
+........F
+=================================== FAILURES ===================================
+_____________________ test_eta_detects_reference_mismatch ______________________
+
+    @needs_cuda
+    def test_eta_detects_reference_mismatch():
+        """eta ~ 0 with the in-sample genotype factor; eta > 0 when z comes from a different sample."""
+        rng = np.random.default_rng(9)
+        p, n = 300, 150
+        Xin = ar_genotypes(rng, n, p)
+        Xother = ar_genotypes(rng, n, p)
+        _, _, z1, z2 = toy_locus(rng, n, p, (50,), (10.0,), (50,), (8.0,), X=Xin)
+        _, _, w1, w2 = toy_locus(rng, n, p, (50,), (10.0,), (50,), (8.0,), X=Xother)
+        cfg = JointConfig(estimate_eta=True)
+        out = joint_susie_batch([z1, w1], [z2, w2], [Xin.astype(np.float32)] * 2, [1e5] * 2, [1e5] * 2, [0.0] * 2, "factor",
+                                cfg, n_refs=[n, n])
+>       assert out[0]["eta"] < 1e-3
+E       assert 0.001 < 0.001
+
+tests/famA/test_joint_susie.py:161: AssertionError
+=========================== short test summary info ============================
+FAILED tests/famA/test_joint_susie.py::test_eta_detects_reference_mismatch - ...
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 8 passed in 14.56s
+[orch] exit 0 at 2026-10-27T10:44:08+01:00

@@ -1,0 +1,538 @@
+{
+ "definition": "D16: pre-declared descriptive entries (no claims). Three-way calls (unweighted confusion, true class x\n        call) and weighted recalls at BOTH the matched-W operating point in use and the fixed 0.8 / 0.8\n        thresholds, least-favourable failures, on the main benchmark (realistic setting) -- and the same for every\n        other method in the benchmark for comparison.",
+ "descriptive": [
+  "famB_exactcoloc_gaussian_M50",
+  "famG_coloc_susie_gpu"
+ ],
+ "methods": {
+  "coloc_abf": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 2971,
+      "S": 255,
+      "insufficient": 288
+     },
+     "G": {
+      "D": 328,
+      "S": 419,
+      "insufficient": 489
+     },
+     "S": {
+      "D": 951,
+      "S": 2406,
+      "insufficient": 156
+     },
+     "U": {
+      "D": 99,
+      "S": 204,
+      "insufficient": 86
+     },
+     "W": {
+      "D": 52,
+      "S": 163,
+      "insufficient": 4340
+     }
+    },
+    "recall": {
+     "W_called_D": 0.012916666666666667,
+     "W_called_S": 0.036250000000000004,
+     "recall_D": 0.8436666666666668,
+     "recall_S": 0.6933333333333334
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 3072,
+      "S": 237,
+      "insufficient": 205
+     },
+     "G": {
+      "D": 386,
+      "S": 396,
+      "insufficient": 454
+     },
+     "S": {
+      "D": 976,
+      "S": 2366,
+      "insufficient": 171
+     },
+     "U": {
+      "D": 106,
+      "S": 188,
+      "insufficient": 95
+     },
+     "W": {
+      "D": 97,
+      "S": 148,
+      "insufficient": 4310
+     }
+    },
+    "recall": {
+     "W_called_D": 0.022166666666666668,
+     "W_called_S": 0.0325,
+     "recall_D": 0.8734166666666667,
+     "recall_S": 0.6805833333333333
+    },
+    "t_D": 0.5803111143879112,
+    "t_S": 0.8311721911648525
+   }
+  },
+  "coloc_susie": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 2618,
+      "S": 591,
+      "insufficient": 305
+     },
+     "G": {
+      "D": 335,
+      "S": 465,
+      "insufficient": 436
+     },
+     "S": {
+      "D": 584,
+      "S": 2784,
+      "insufficient": 145
+     },
+     "U": {
+      "D": 88,
+      "S": 215,
+      "insufficient": 86
+     },
+     "W": {
+      "D": 95,
+      "S": 177,
+      "insufficient": 4283
+     }
+    },
+    "recall": {
+     "W_called_D": 0.02275,
+     "W_called_S": 0.03916666666666667,
+     "recall_D": 0.7135,
+     "recall_S": 0.7561666666666667
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 2618,
+      "S": 544,
+      "insufficient": 352
+     },
+     "G": {
+      "D": 334,
+      "S": 410,
+      "insufficient": 492
+     },
+     "S": {
+      "D": 583,
+      "S": 2673,
+      "insufficient": 257
+     },
+     "U": {
+      "D": 88,
+      "S": 177,
+      "insufficient": 124
+     },
+     "W": {
+      "D": 95,
+      "S": 134,
+      "insufficient": 4326
+     }
+    },
+    "recall": {
+     "W_called_D": 0.02275,
+     "W_called_S": 0.0275,
+     "recall_D": 0.7135,
+     "recall_S": 0.7273333333333334
+    },
+    "t_D": 0.8036174141574123,
+    "t_S": 0.8784511379171775
+   }
+  },
+  "coloc_susie_mm": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 2815,
+      "S": 349,
+      "insufficient": 350
+     },
+     "G": {
+      "D": 329,
+      "S": 458,
+      "insufficient": 449
+     },
+     "S": {
+      "D": 389,
+      "S": 2952,
+      "insufficient": 172
+     },
+     "U": {
+      "D": 60,
+      "S": 235,
+      "insufficient": 94
+     },
+     "W": {
+      "D": 81,
+      "S": 168,
+      "insufficient": 4306
+     }
+    },
+    "recall": {
+     "W_called_D": 0.018666666666666665,
+     "W_called_S": 0.036750000000000005,
+     "recall_D": 0.7969166666666667,
+     "recall_S": 0.8198333333333334
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 2867,
+      "S": 334,
+      "insufficient": 313
+     },
+     "G": {
+      "D": 353,
+      "S": 448,
+      "insufficient": 435
+     },
+     "S": {
+      "D": 401,
+      "S": 2929,
+      "insufficient": 183
+     },
+     "U": {
+      "D": 61,
+      "S": 218,
+      "insufficient": 110
+     },
+     "W": {
+      "D": 104,
+      "S": 161,
+      "insufficient": 4290
+     }
+    },
+    "recall": {
+     "W_called_D": 0.024,
+     "W_called_S": 0.036166666666666666,
+     "recall_D": 0.8125000000000001,
+     "recall_S": 0.8130000000000002
+    },
+    "t_D": 0.6920740371206827,
+    "t_S": 0.8198729398321837
+   }
+  },
+  "famB_exactcoloc_gaussian_M50": {
+   "descriptive": true,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 2188,
+      "S": 236,
+      "insufficient": 1090
+     },
+     "G": {
+      "D": 98,
+      "S": 26,
+      "insufficient": 1112
+     },
+     "S": {
+      "D": 453,
+      "S": 2175,
+      "insufficient": 885
+     },
+     "U": {
+      "D": 78,
+      "S": 86,
+      "insufficient": 225
+     },
+     "W": {
+      "D": 67,
+      "insufficient": 4488
+     }
+    },
+    "recall": {
+     "W_called_D": 0.016583333333333332,
+     "W_called_S": 0.0,
+     "recall_D": 0.5914166666666667,
+     "recall_S": 0.6055833333333334
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 2436,
+      "S": 794,
+      "insufficient": 284
+     },
+     "G": {
+      "D": 247,
+      "S": 502,
+      "insufficient": 487
+     },
+     "S": {
+      "D": 473,
+      "S": 2955,
+      "insufficient": 85
+     },
+     "U": {
+      "D": 82,
+      "S": 293,
+      "insufficient": 14
+     },
+     "W": {
+      "D": 109,
+      "S": 143,
+      "insufficient": 4303
+     }
+    },
+    "recall": {
+     "W_called_D": 0.025833333333333333,
+     "W_called_S": 0.0305,
+     "recall_D": 0.6651666666666667,
+     "recall_S": 0.8387500000000001
+    },
+    "t_D": 0.24871826171875003,
+    "t_S": 0.013366699218750002
+   }
+  },
+  "famG_coloc_susie_gpu": {
+   "descriptive": true,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 2620,
+      "S": 589,
+      "insufficient": 305
+     },
+     "G": {
+      "D": 335,
+      "S": 465,
+      "insufficient": 436
+     },
+     "S": {
+      "D": 579,
+      "S": 2789,
+      "insufficient": 145
+     },
+     "U": {
+      "D": 88,
+      "S": 215,
+      "insufficient": 86
+     },
+     "W": {
+      "D": 94,
+      "S": 174,
+      "insufficient": 4287
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0225,
+     "W_called_S": 0.03891666666666667,
+     "recall_D": 0.71425,
+     "recall_S": 0.7569166666666667
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 2620,
+      "S": 542,
+      "insufficient": 352
+     },
+     "G": {
+      "D": 334,
+      "S": 410,
+      "insufficient": 492
+     },
+     "S": {
+      "D": 578,
+      "S": 2678,
+      "insufficient": 257
+     },
+     "U": {
+      "D": 88,
+      "S": 177,
+      "insufficient": 124
+     },
+     "W": {
+      "D": 94,
+      "S": 131,
+      "insufficient": 4330
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0225,
+     "W_called_S": 0.02725,
+     "recall_D": 0.71425,
+     "recall_S": 0.7280833333333334
+    },
+    "t_D": 0.8036174141574123,
+    "t_S": 0.8784511379171775
+   }
+  },
+  "sharepro": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 1015,
+      "S": 1982,
+      "insufficient": 517
+     },
+     "G": {
+      "D": 104,
+      "S": 534,
+      "insufficient": 598
+     },
+     "S": {
+      "D": 33,
+      "S": 3350,
+      "insufficient": 130
+     },
+     "U": {
+      "D": 11,
+      "S": 349,
+      "insufficient": 29
+     },
+     "W": {
+      "D": 12,
+      "S": 145,
+      "insufficient": 4398
+     }
+    },
+    "recall": {
+     "W_called_D": 0.00275,
+     "W_called_S": 0.03383333333333333,
+     "recall_D": 0.21983333333333333,
+     "recall_S": 0.9487500000000002
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 1130,
+      "S": 1982,
+      "insufficient": 402
+     },
+     "G": {
+      "D": 240,
+      "S": 533,
+      "insufficient": 463
+     },
+     "S": {
+      "D": 47,
+      "S": 3350,
+      "insufficient": 116
+     },
+     "U": {
+      "D": 16,
+      "S": 349,
+      "insufficient": 24
+     },
+     "W": {
+      "D": 124,
+      "S": 145,
+      "insufficient": 4286
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0245,
+     "W_called_S": 0.03383333333333333,
+     "recall_D": 0.2563333333333333,
+     "recall_S": 0.9487500000000002
+    },
+    "t_D": 0.23149745386910034,
+    "t_S": 0.8021643891632574
+   }
+  },
+  "strength_only": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "insufficient": 3514
+     },
+     "G": {
+      "insufficient": 1236
+     },
+     "S": {
+      "insufficient": 3513
+     },
+     "U": {
+      "insufficient": 389
+     },
+     "W": {
+      "insufficient": 4555
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 83,
+      "S": 3282,
+      "insufficient": 149
+     },
+     "G": {
+      "D": 153,
+      "S": 394,
+      "insufficient": 689
+     },
+     "S": {
+      "D": 82,
+      "S": 3319,
+      "insufficient": 112
+     },
+     "U": {
+      "D": 29,
+      "S": 329,
+      "insufficient": 31
+     },
+     "W": {
+      "D": 186,
+      "S": 48,
+      "insufficient": 4321
+     }
+    },
+    "recall": {
+     "W_called_D": 0.04,
+     "W_called_S": 0.011083333333333334,
+     "recall_D": 0.028000000000000004,
+     "recall_S": 0.9468333333333335
+    },
+    "t_D": 0.19962158544105324,
+    "t_S": 0.19396712638528904
+   }
+  }
+ },
+ "setting": "realistic"
+}

@@ -1,0 +1,23 @@
+[orch] job famG_mm_perf_v3 start 2026-10-28T14:07:06+01:00 host eu-g6-001 commit d8f581573d pid 2399325
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH R_PROFILE_USER=/dev/null; python -m pytest tests/famG/test_susie_mm.py -q -rs -p no:cacheprovider 2>&1 | tail -5; mkdir -p results/famG_mm/bench_v3; python -m famG.validation.bench_mm --n 512 --batch 512 --mem-gb 2.0 --dtype float64 --sweep 1024:8:1.5:1,1024:8:1.5:4,512:4:1.5:4 --out results/famG_mm/bench_v3/fp64_sweep.json 2>&1 | grep "^{"; W=$ORCH_HOME/runs/famG_mm_identity_ref_v2/out/loci; O=results/famG_mm/identity_v2; python -m famG.validation.compare_mm --work $W --rdir $O/r016 --out $O/cmp_final --mem-gb 1.5 --dtype float64 | grep -E "max_dpip|niter_agree|conv_agree|fail_agree|g_seconds"; python -m famG.validation.sens_mm --r0 $O/r016 --pert $O/pert --gfits $O/cmp_final/fits_float64_cuda.tsv --gpairs $O/cmp_final/pairs_float64_cuda.tsv --ids $O/nonconv_ids.txt --out $O/sens_final | tail -12
+......                                                                   [100%]
+6 passed in 63.18s (0:01:03)
+{"n": 512, "io_s": 34.555790185928345, "block": 1024, "num_warps": 8, "bucket_ratio": 1.5, "streams": 1, "dtype": "float64", "mem_budget_gb": 2.0, "fit_s": 132.7350308895111, "fit_loci_per_s": 3.857308779520229, "status": {"ok": 484, "nonconverged": 28}, "niter_max_mean": 10.466796875, "max_mem_gb": 4.118100992}
+ "g_seconds": 42.09265995025635,
+ "fail_agree": 200,
+ "max_dpip": 0.9999373896146205,
+ "conv_agree": 200,
+ "niter_agree": 200,
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__S__0007218",
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__S__0014002",
+   1
+  ]
+ ]
+}
+[orch] exit 0 at 2026-10-28T14:13:02+01:00

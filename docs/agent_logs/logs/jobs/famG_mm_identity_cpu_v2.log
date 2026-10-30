@@ -1,0 +1,18 @@
+[orch] job famG_mm_identity_cpu_v2 start 2026-10-28T10:00:33+01:00 host eu-g6-001 commit 99c5d46447 pid 2143887
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src OMP_NUM_THREADS=16 CUDA_VISIBLE_DEVICES=""; python -m famG.validation.compare_mm --work runs/famG_mm_identity_ref_v2/out/loci --rdir results/famG_mm/identity_v2/r016 --out results/famG_mm/identity_v2/cmp --device cpu --no-triton
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_identity_cpu_v2/code/src/famG/validation/compare_mm.py", line 136, in <module>
+    main()
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_identity_cpu_v2/code/src/famG/validation/compare_mm.py", line 108, in main
+    ids = [l for l in (work / "ids.txt").read_text().split() if (rdir / f"{l}.json").exists()]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs/famG_mm_identity_ref_v2/out/loci/ids.txt'
+[orch] exit 1 at 2026-10-28T10:00:38+01:00

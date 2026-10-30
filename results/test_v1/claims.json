@@ -1,0 +1,13 @@
+{
+ "C1": "no candidate (D16)",
+ "C2": "no candidate (D16)",
+ "C3": "no candidate (D16)",
+ "C4": "no candidate (D16)",
+ "C5": "benchmark of every listed method (benchmarks/sim, c4.json slopes per method, runtime.json)",
+ "decision": "D16",
+ "descriptive_entries": [
+  "famB_exactcoloc_gaussian_M50",
+  "famG_coloc_susie_gpu"
+ ],
+ "primary": null
+}

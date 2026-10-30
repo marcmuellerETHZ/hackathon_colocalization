@@ -1,0 +1,2 @@
+22:24:03 [harness] run dry_mvr1__coloc_abf__sim_main: 147 loci (147 to run), mode=cpu, workers=4
+22:24:08 [harness] done dry_mvr1__coloc_abf__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 4.1s

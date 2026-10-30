@@ -1,0 +1,49 @@
+mvsusieR 0.3.0  susieR 0.16.6 
+mvsusie_rss args:
+ [1] "Z"                          "R"                         
+ [3] "N"                          "Bhat"                      
+ [5] "Shat"                       "varY"                      
+ [7] "prior_variance"             "residual_variance"         
+ [9] "estimate_residual_variance" "..."                       
+[1] "null_weight" "pi"          "xUlist"     
+Eigendecomposition cache: K=7, common_cov=TRUE [mem: 0.18 GB]
+Model initialized: J=1001, R=2, L=5, K=7 [mem: 0.18 GB]
+iter          ELBO       delta   sigma2      mem      V
+   1    -1600.2690           -   diag[1,1]   0.18 GB  [4.17e-02, 0 x 4]
+   2    -1599.5109    7.58e-01   diag[1,1]   0.18 GB  [4.17e-02, 0 x 4]
+   3    -1599.5109    0.00e+00   diag[1,1]   0.18 GB  [4.17e-02, 0 x 4]  converged
+fit names:
+ [1] "alpha"                     "mu"                       
+ [3] "mu2_diag"                  "KL"                       
+ [5] "lbf"                       "lbf_variable"             
+ [7] "V"                         "V_structure"              
+ [9] "null_weight"               "pi"                       
+[11] "prior_mixture_weights"     "sigma2"                   
+[13] "Xr"                        "elbo"                     
+[15] "niter"                     "converged"                
+[17] "fitted"                    "intercept"                
+[19] "X_column_scale_factors"    "posterior_mixture_weights"
+[21] "lbf_outcome"               "lbf_variable_outcome"     
+[23] "conditional_lfsr"          "lfsr"                     
+[25] "single_effect_lfsr"        "sets"                     
+[27] "pip"                       "outcome_names"            
+[29] "variable_names"           
+causal: 10 60 
+CS:
+$L1
+[1] 10
+
+top PIPs:
+         v10          v36           v2          v28          v52 
+9.503070e-01 4.961437e-02 5.036695e-05 2.195450e-05 3.359731e-06 
+single_effect_lfsr (L x R):
+   outcome1 outcome2
+L1        0    2e-04
+L2        1    1e+00
+L3        1    1e+00
+L4        1    1e+00
+L5        1    1e+00
+lfsr (p x R) at causal:
+    outcome1 outcome2
+v10   0.0497   0.0498
+v60   1.0000   1.0000

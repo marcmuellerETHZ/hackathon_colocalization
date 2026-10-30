@@ -1,0 +1,30 @@
+{
+ "windows": 4,
+ "loci_per_window": 64,
+ "M": 128,
+ "loci": 256,
+ "seconds": 32.43779373168945,
+ "loci_per_s": 7.892028727894213,
+ "t_window_materialise_s": 3.5792667865753174,
+ "t_loci_s": 28.855592250823975,
+ "loci_per_s_excl_window": 8.871763843027338,
+ "peak_gpu_mem_gb": 2.582769152,
+ "class_counts": {
+  "S": 24,
+  "U": 1,
+  "D": 31,
+  "W": 175,
+  "G": 25
+ },
+ "level_counts": {
+  "L0": 59,
+  "L1": 42,
+  "L2": 48,
+  "L3": 56,
+  "L4": 51,
+  "L6": 0
+ },
+ "holdout": [
+  "L6"
+ ]
+}

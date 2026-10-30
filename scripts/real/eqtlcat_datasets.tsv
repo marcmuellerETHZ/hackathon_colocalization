@@ -1,0 +1,10 @@
+dataset_id	study_id	study_label	sample_group	cohort	arms	note
+QTD000356	QTS000015	GTEx	blood	GTEx_v8	R1,R2:blood,R3b	US post-mortem donors; ancestry-mixed (705 EUR/82 AFR of 838 GTEx donors)
+QTD000266	QTS000015	GTEx	liver	GTEx_v8	R1,R3b	US post-mortem donors; same donor pool as GTEx blood (never paired with it)
+QTD000373	QTS000019	Lepik_2017	blood	EstBB	R1,R2:blood,R3b	Estonian Biobank; all EUR
+QTD000549	QTS000029	TwinsUK	blood	TwinsUK	R1,R2:blood,R3b	UK twins; same donor pool as TwinsUK LCL (never paired with it)
+QTD000021	QTS000002	BLUEPRINT	monocyte	BLUEPRINT	R1,R2:monocyte,R3b	UK (NIHR Cambridge BioResource) donors
+QTD000409	QTS000024	Quach_2016	monocyte_naive	Quach_2016	R1,R2:monocyte,R3b	Belgian-resident EUR + African-descent donors (100/100)
+QTD000609	QTS000038	OneK1K	CD14_Mono	OneK1K	R1,R2:monocyte,R3b	Australian (Tasmania) donors; single-cell pseudobulk
+QTD000110	QTS000013	GEUVADIS	LCL	GEUVADIS	R1,R2:LCL,R3b,R4b	1000 Genomes individuals (CEU,FIN,GBR,TSI,YRI); 445 = 358 EUR + 87 AFR
+QTD000539	QTS000029	TwinsUK	LCL	TwinsUK	R1,R2:LCL,R3b	UK twins

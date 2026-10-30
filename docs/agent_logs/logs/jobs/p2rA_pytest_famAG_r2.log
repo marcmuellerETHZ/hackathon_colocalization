@@ -1,0 +1,12 @@
+[orch] job p2rA_pytest_famAG_r2 start 2026-10-27T10:41:33+01:00 host eu-g6-001 commit f3047a765d pid 936635
+[orch] cmd: cp -a /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG_r2/code /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG_r2/out/proj && for d in renv rlib_mvsusie rlib_susie016 rlib_hyprcoloc rlib_hypr_dep; do ln -s /cluster/scratch/mumarc/hackathon_eqtl_gwas/env/ /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG_r2/out/proj/env/; done && mkdir -p /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG_r2/out/tmp && cd /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG_r2/out/proj && git -C /cluster/scratch/mumarc/hackathon_eqtl_gwas rev-parse 47ceb97 && PYTHONPATH=src python -m pytest tests/famA tests/famG -q -rs -p no:cacheprovider --basetemp=/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG_r2/out/tmp --durations=5 2>&1 | tail -30
+47ceb97cc8d19df6f751a5b568ead37cabce7849
+........................................                                 [100%]
+============================= slowest 5 durations ==============================
+59.07s call     tests/famA/test_m35.py::test_layer_E_reduces_spurious_signals
+18.37s call     tests/famA/test_joint_susie.py::test_triton_eb_matches_torch
+11.13s call     tests/famA/test_m35.py::test_eta_triton_matches_torch
+4.69s call     tests/famG/test_susie_rss.py::test_identity_vs_susieR_0142[dtype0]
+4.52s call     tests/famA/test_joint_susie.py::test_identity_vs_mvsusie
+40 passed in 138.95s (0:02:18)
+[orch] exit 0 at 2026-10-27T10:43:55+01:00

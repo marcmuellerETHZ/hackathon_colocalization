@@ -1,0 +1,2 @@
+22:21:39 [harness] run dry_mvr1__sharepro__real_R3b: 13 loci (13 to run), mode=cpu, workers=8
+22:21:45 [harness] done dry_mvr1__sharepro__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 6.6s

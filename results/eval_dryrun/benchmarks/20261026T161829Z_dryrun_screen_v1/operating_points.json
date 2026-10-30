@@ -1,0 +1,29 @@
+{
+ "coloc_abf": {
+  "rate_D_on_W": 0.02260536398467433,
+  "rate_S_on_W": 0.01884920634920635,
+  "recal_a_D": -1.5182442360019952,
+  "recal_a_S": 0.7117526791481653,
+  "setting": "realistic",
+  "t_D": 0.25435675017560216,
+  "t_S": 0.7674130054369174
+ },
+ "lead_snp": {
+  "rate_D_on_W": null,
+  "rate_S_on_W": null,
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "strength_only": {
+  "rate_D_on_W": 0.023802681992337166,
+  "rate_S_on_W": 0.023015873015873017,
+  "recal_a_D": 0.036706042408799294,
+  "recal_a_S": -0.01726846289612965,
+  "setting": "realistic",
+  "t_D": 0.543963254593176,
+  "t_S": 0.4776902887139108
+ }
+}

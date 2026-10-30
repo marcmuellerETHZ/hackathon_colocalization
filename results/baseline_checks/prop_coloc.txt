@@ -1,0 +1,73 @@
+prop.coloc 2.0.0 
+ [1] "b1"     "se1"    "b2"     "se2"    "n"      "ld"     "tau"    "pval"  
+ [9] "alpha"  "clump"  "J"      "figs"   "traits" "seed"  
+List of 13
+ $ atrial_appendage  :'data.frame':	851 obs. of  4 variables:
+ $ caudate           :'data.frame':	851 obs. of  4 variables:
+ $ hypothalamus      :'data.frame':	851 obs. of  4 variables:
+ $ left_ventricle    :'data.frame':	851 obs. of  4 variables:
+ $ lung              :'data.frame':	851 obs. of  4 variables:
+ $ nerve             :'data.frame':	851 obs. of  4 variables:
+ $ pancreas          :'data.frame':	851 obs. of  4 variables:
+ $ stomach           :'data.frame':	851 obs. of  4 variables:
+ $ testis            :'data.frame':	851 obs. of  4 variables:
+ $ thyroid           :'data.frame':	851 obs. of  4 variables:
+ $ n                 :Classes 'tbl_df', 'tbl' and 'data.frame':	10 obs. of  2 variables:
+ $ trait_correlations: num [1:10, 1:10] 1 -0.0431 0.0867 0.0738 0.2657 ...
+  ..- attr(*, "dimnames")=List of 2
+ $ ld                : num [1:851, 1:851] 1 -0.0616 -0.0298 0.0508 -0.181 ...
+  ..- attr(*, "dimnames")=List of 2
+
+Proportional colocalization test
+-----------------------------------
+          Method  eta p_coloc
+ prop-coloc-cond 0.90    0.37
+ prop-coloc-full 0.84    0.22
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+p_coloc = 0.37 indicates proportional colocalization hypothesis is rejected at this significance level.$p_cond
+[1] 0.37
+
+$eta_cond
+[1] 0.9003674
+
+$p_eta
+[1] 6.217106e-06
+
+$p_full
+[1] 0.2230631
+
+$eta_full
+[1] 0.8391327
+
+$p_naive
+[1] 0.08029323
+
+$convergence
+[1] TRUE
+
+$top
+[1] "rs2300614"  "rs80263562"
+
+$variants
+ [1] "rs9470954"  "rs17337012" "rs13201998" "rs80263562" "rs2003132" 
+ [6] "rs9296287"  "rs7451219"  "rs2300614"  "rs2268640"  "rs4714211" 
+[11] "rs7757449"  "rs9470968" 
+
+$gamma
+             gam1         gam2
+ [1,]  0.04899223 -0.070380585
+ [2,] -0.21550212 -0.426625172
+ [3,] -0.30971128  0.072603428
+ [4,] -0.61189145 -0.727388066
+ [5,]  0.33588396  0.480864620
+ [6,]  0.33052983  0.267420114
+ [7,]  0.03733711  0.003230172
+ [8,] -0.31683824 -0.160818092
+ [9,]  0.05051252  0.028032089
+[10,]  0.20169667  0.214171277
+[11,] -0.23395507 -0.158604796
+[12,] -0.06384034 -0.018268378
+

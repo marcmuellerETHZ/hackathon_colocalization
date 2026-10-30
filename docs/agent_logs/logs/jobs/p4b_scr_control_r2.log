@@ -1,0 +1,12 @@
+[orch] job p4b_scr_control_r2 start 2026-10-27T11:24:41+01:00 host eu-g6-001 commit ad021dcdc4 pid 987778
+[orch] cmd: PYTHONPATH=src python scripts/run_benchmark.py --locus-set data/processed/sets/screen_v2.h5 --methods src/baselines/benchmarks/p4_control_only.yaml --label p4_screen_v2_control --results-dir results/baselines_screen_v2/bench --unit locus --n-boot 2000 --n-jobs 8 --control-workers 8
+[benchmark 11:24:43] benchmark 20261027T102443Z_p4_screen_v2_control: 1 locus set(s), 0 method(s) + reuse []
+[benchmark 11:28:40] run strength_only on screen_v2.h5 (12000 loci)
+[benchmark 11:29:59] [harness] run 20261027T102959Z_strength_only_screen_v2_ce9cf8: 12000 loci, mode=cpu, workers=8
+[benchmark 11:30:29] [harness] 1918/12000 tasks done
+[benchmark 11:30:59] [harness] 7638/12000 tasks done
+[benchmark 11:31:26] [harness] done 20261027T102959Z_strength_only_screen_v2_ce9cf8: {'ok': 12000, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12000} in 84.3s
+[benchmark 11:31:28] [least_favourable] bootstrap (2000 x locus, 1 methods, settings ['realistic', 'ideal'])
+[benchmark 11:33:56] [excluded] bootstrap (2000 x locus, 1 methods, settings ['realistic', 'ideal'])
+[benchmark 11:36:54] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/bench/benchmarks/20261027T102443Z_p4_screen_v2_control (12000 loci, 1 methods)
+[orch] exit 0 at 2026-10-27T11:36:56+01:00

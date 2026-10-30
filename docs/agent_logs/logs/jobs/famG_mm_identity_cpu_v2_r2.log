@@ -1,0 +1,28 @@
+[orch] job famG_mm_identity_cpu_v2_r2 start 2026-10-28T10:01:13+01:00 host eu-g6-001 commit 99c5d46447 pid 2145595
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src OMP_NUM_THREADS=16 CUDA_VISIBLE_DEVICES=""; python -m famG.validation.compare_mm --work $ORCH_HOME/runs/famG_mm_identity_ref_v2/out/loci --rdir results/famG_mm/identity_v2/r016 --out results/famG_mm/identity_v2/cmp --device cpu --no-triton
+{
+ "n_loci": 100,
+ "n_fits": 200,
+ "dtype": "float64",
+ "device": "cpu",
+ "triton": false,
+ "g_seconds": 272.3438284397125,
+ "fail_r": 0,
+ "fail_g": 0,
+ "fail_agree": 200,
+ "max_dpip": 0.4272633440845478,
+ "median_dpip": 1.1947992595295887e-10,
+ "n_dpip_ge_1e3": 4,
+ "max_dalpha": 0.9999546911681176,
+ "conv_agree": 200,
+ "n_both_ok": 200,
+ "nonconv_r": 24,
+ "nonconv_g": 24,
+ "niter_agree": 200,
+ "max_dlambda": 0.1821920665416683,
+ "cs_equal": 198,
+ "pairs_presence_agree": 100,
+ "max_dPP_pair": Infinity,
+ "max_dmaxH4": 0.4199158151128269
+}
+[orch] exit 0 at 2026-10-28T10:06:00+01:00

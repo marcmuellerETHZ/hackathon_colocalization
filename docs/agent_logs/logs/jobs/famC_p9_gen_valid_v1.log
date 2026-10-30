@@ -1,0 +1,5 @@
+[orch] job famC_p9_gen_valid_v1 start 2026-10-28T09:49:54+01:00 host eu-g6-001 commit ad2f50972a pid 2113879
+[orch] cmd: python -m famC.gen_shards --set valid_v1 --split valid --n-loci 30000 --accept "{\"S\":1,\"D\":1,\"U\":1,\"G\":0.5,\"W\":0.3}" --device cuda > logs/famC/p9_gen_valid_v1.log 2>&1; tail -n 2 logs/famC/p9_gen_valid_v1.log; grep -q DONE logs/famC/p9_gen_valid_v1.log
+[w0] shard 15 loci 30000 5.8 loci/s stats {'windows': 1003, 'loci': 30016, 'none': 34176, 't_window': 563.280415058136, 't_loci': 4636.963970184326, 'rejected': 34176}
+DONE 30000 {"windows": 1003, "loci": 30016, "none": 34176, "t_window": 563.280415058136, "t_loci": 4636.963970184326, "rejected": 34176}
+[orch] exit 0 at 2026-10-28T11:17:05+01:00

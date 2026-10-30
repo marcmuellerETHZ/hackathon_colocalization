@@ -1,0 +1,118 @@
+[orch] job famB_mm_tests_r2 start 2026-10-28T09:55:37+01:00 host eu-g6-001 commit c0b0a2e700 pid 2127714
+[orch] cmd: cd tests/famB && PYTHONPATH=$ORCH_CODE/src python -m pytest -v -s -rA . > $ORCH_OUT/pytest_famB.log 2>&1; rc=$?; grep -E "PASSED|FAILED|ERROR|max |rel err|passed|failed" $ORCH_OUT/pytest_famB.log; exit $rc
+test_batch_invariance.py::test_same_locus_same_posteriors_in_any_batch[gaussian] PASSED
+test_batch_invariance.py::test_same_locus_same_posteriors_in_any_batch[simulator] PASSED
+test_batch_invariance.py::test_seed_must_come_from_seed_list PASSED
+test_bf.py::test_support_equals_full_form_regular[0.0] rho=0.0: worst rel err 6.88e-14
+PASSED
+test_bf.py::test_support_equals_full_form_regular[0.4] rho=0.4: worst rel err 8.42e-14
+PASSED
+test_bf.py::test_support_equals_full_form_regular[-0.7] rho=-0.7: worst rel err 1.60e-14
+PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985-0.0] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985-0.4] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985--0.7] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15-0.0] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15-0.4] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15--0.7] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate-0.0] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate-0.4] PASSED
+test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate--0.7] PASSED
+test_bf.py::test_negative_control_active_only_b_is_wrong PASSED
+test_bf.py::test_fp32_kernel_close PASSED
+PASSED
+PASSED
+test_coloc_identity.py::test_coloc_mode_matches_R_coloc_abf[1e-05] p12=1e-05: max |dPP| over 200 loci x 5 hypotheses = 3.586e-14
+PASSED
+test_coloc_identity.py::test_coloc_mode_matches_R_coloc_abf[5e-06] p12=5e-06: max |dPP| over 200 loci x 5 hypotheses = 3.286e-14
+PASSED
+test_events.py::test_known_classes PASSED
+PASSED
+test_l0star_ref.py::test_prior_matches_l0star_v2 PASSED
+test_method.py::test_controls[False-gaussian] PASSED
+test_method.py::test_controls[False-coloc] PASSED
+test_method.py::test_controls[True-gaussian] PASSED
+test_method.py::test_controls[True-coloc] PASSED
+test_method.py::test_dense_equals_factor PASSED
+test_method.py::test_compiled_equals_eager PASSED
+test_method.py::test_failure_is_reported_not_raised PASSED
+test_method.py::test_no_truth_file_access PASSED
+test_method.py::test_compiled_equals_eager_mixture PASSED
+test_method.py::test_sampler_never_draws_negligible_terms PASSED
+test_mismatch.py::test_nref_inf_reproduces_phase1_logbf_200_validation_loci max |d log(prior x BF)| over all terms of 200 loci: 4.366e-11
+PASSED
+test_mismatch.py::test_bruteforce_full_likelihood_small_p[0.0-S-True] rho=0.0 kind=S cross=True: max |d log w| = 2.89e-12, eta=0.001, sigma=(12.0, 12.0)
+PASSED
+test_mismatch.py::test_bruteforce_full_likelihood_small_p[0.4-D-True] rho=0.4 kind=D cross=True: max |d log w| = 3.24e-12, eta=0.1, sigma=(12.0, 12.0)
+PASSED
+test_mismatch.py::test_bruteforce_full_likelihood_small_p[-0.6-S-True] rho=-0.6 kind=S cross=True: max |d log w| = 7.28e-12, eta=0.1, sigma=(12.0, 12.0)
+PASSED
+test_mismatch.py::test_bruteforce_full_likelihood_small_p[0.4-S-False] rho=0.4 kind=S cross=False: max |d log w| = 2.02e-12, eta=0.03, sigma=(6.0, 12.0)
+PASSED
+test_mismatch.py::test_inflation_formula_matches_reference_panel_simulation max rel err with cross terms 0.0611364651323187 diagonal only 0.6068953830712162
+PASSED
+test_mismatch.py::test_end_to_end_nref_inf_equals_phase1 PASSED
+test_screen.py::test_identity_when_p_le_M PASSED
+test_screen.py::test_strong_D_pair_r2_099_kept PASSED
+test_screen.py::test_exact_duplicates_collapse_with_multiplicity PASSED
+test_screen.py::test_lead_removed_finds_masked_secondary PASSED
+PASSED
+PASSED
+test_sim_integration.py::test_config_prior_matches_l0star[7] PASSED
+test_sim_integration.py::test_config_prior_matches_l0star[30] PASSED
+PASSED
+PASSED
+test_toy2snp.py::test_hand_rho_nonzero_shared PASSED
+PASSED test_batch_invariance.py::test_same_locus_same_posteriors_in_any_batch[gaussian]
+PASSED test_batch_invariance.py::test_same_locus_same_posteriors_in_any_batch[simulator]
+PASSED test_batch_invariance.py::test_seed_must_come_from_seed_list
+PASSED test_bf.py::test_support_equals_full_form_regular[0.0]
+PASSED test_bf.py::test_support_equals_full_form_regular[0.4]
+PASSED test_bf.py::test_support_equals_full_form_regular[-0.7]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985-0.0]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985-0.4]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985--0.7]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15-0.0]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15-0.4]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15--0.7]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate-0.0]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate-0.4]
+PASSED test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate--0.7]
+PASSED test_bf.py::test_negative_control_active_only_b_is_wrong
+PASSED test_bf.py::test_fp32_kernel_close
+PASSED test_calibration_l0star.py::test_simulator_mode_calibrated
+PASSED test_calibration_l0star.py::test_gaussian_mode_calibrated_and_rho_matters
+PASSED test_coloc_identity.py::test_coloc_mode_matches_R_coloc_abf[1e-05]
+PASSED test_coloc_identity.py::test_coloc_mode_matches_R_coloc_abf[5e-06]
+PASSED test_events.py::test_known_classes
+PASSED test_events.py::test_partition_random
+PASSED test_l0star_ref.py::test_prior_matches_l0star_v2
+PASSED test_method.py::test_controls[False-gaussian]
+PASSED test_method.py::test_controls[False-coloc]
+PASSED test_method.py::test_controls[True-gaussian]
+PASSED test_method.py::test_controls[True-coloc]
+PASSED test_method.py::test_dense_equals_factor
+PASSED test_method.py::test_compiled_equals_eager
+PASSED test_method.py::test_failure_is_reported_not_raised
+PASSED test_method.py::test_no_truth_file_access
+PASSED test_method.py::test_compiled_equals_eager_mixture
+PASSED test_method.py::test_sampler_never_draws_negligible_terms
+PASSED test_mismatch.py::test_nref_inf_reproduces_phase1_logbf_200_validation_loci
+PASSED test_mismatch.py::test_bruteforce_full_likelihood_small_p[0.0-S-True]
+PASSED test_mismatch.py::test_bruteforce_full_likelihood_small_p[0.4-D-True]
+PASSED test_mismatch.py::test_bruteforce_full_likelihood_small_p[-0.6-S-True]
+PASSED test_mismatch.py::test_bruteforce_full_likelihood_small_p[0.4-S-False]
+PASSED test_mismatch.py::test_inflation_formula_matches_reference_panel_simulation
+PASSED test_mismatch.py::test_end_to_end_nref_inf_equals_phase1
+PASSED test_screen.py::test_identity_when_p_le_M
+PASSED test_screen.py::test_strong_D_pair_r2_099_kept
+PASSED test_screen.py::test_exact_duplicates_collapse_with_multiplicity
+PASSED test_screen.py::test_lead_removed_finds_masked_secondary
+PASSED test_screen_recall_1kg.py::test_screen_recall_real_ld
+PASSED test_sim_integration.py::test_oracle_matches_sim
+PASSED test_sim_integration.py::test_config_prior_matches_l0star[7]
+PASSED test_sim_integration.py::test_config_prior_matches_l0star[30]
+PASSED test_sim_integration.py::test_simulator_mode_calibrated_on_sim_l0star
+PASSED test_toy2snp.py::test_hand_computed_two_snp
+PASSED test_toy2snp.py::test_hand_rho_nonzero_shared
+======================== 52 passed in 277.23s (0:04:37) ========================

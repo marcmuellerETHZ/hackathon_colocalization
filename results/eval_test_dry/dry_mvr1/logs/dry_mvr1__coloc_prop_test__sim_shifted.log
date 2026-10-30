@@ -1,0 +1,2 @@
+23:10:49 [harness] run dry_mvr1__coloc_prop_test__sim_shifted: 16 loci (16 to run), mode=cpu, workers=8
+23:11:04 [harness] done dry_mvr1__coloc_prop_test__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 14.4s

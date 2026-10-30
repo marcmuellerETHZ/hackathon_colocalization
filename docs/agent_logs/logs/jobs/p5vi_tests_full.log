@@ -1,0 +1,133 @@
+[orch] job p5vi_tests_full start 2026-10-27T10:45:41+01:00 host eu-g6-001 commit f85dc206b9 pid 941191
+[orch] cmd: bash reviews/p5_verify_infra/run_tests.sh
+commit f85dc206b9d7a53189c6c33ab2a52571cdd1e763
+=================== MODULE baselines
+........................................x............................... [ 70%]
+..............................                                           [100%]
+=========================== short test summary info ============================
+XFAIL tests/baselines/test_controls.py::test_distinct[1-sharepro] - SharePro false sharing on distinct control (s = 1); matches CLI
+101 passed, 1 xfailed in 127.37s (0:02:07)
+MODULE baselines rc=0 seconds=130
+=================== MODULE data
+.....................................................................    [100%]
+69 passed in 57.36s
+MODULE data rc=0 seconds=59
+=================== MODULE data_real
+............................                                             [100%]
+=============================== warnings summary ===============================
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=944440) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+28 passed, 4 warnings in 5.63s
+MODULE data_real rc=0 seconds=6
+=================== MODULE eval
+.....................F.......................................s....F..... [ 98%]
+.                                                                        [100%]
+=================================== FAILURES ===================================
+_____________ test_access_grant_requires_frozen_tag_and_open_nonce _____________
+
+tmp_path = PosixPath('/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p5vi_tests_full/out/tmp/pt_eval/test_access_grant_requires_fro0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x152ecfa9dac0>
+
+    def test_access_grant_requires_frozen_tag_and_open_nonce(tmp_path, monkeypatch):
+        repo = tmp_path / "repo"
+        repo.mkdir()
+        _git(repo, "init", "-q")
+        (repo / "f").write_text("x")
+        _git(repo, "add", "f")
+        _git(repo, "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "init")
+        head = _git(repo, "rev-parse", "HEAD")
+        (repo / "results").mkdir()
+        log = repo / "results" / "test_access.log"
+        log.write_text(f"2026\tstarted\t{head}\tNONCE1\tfrozen-x\t\n")
+        monkeypatch.setenv(eio.ACCESS_ENV, "NONCE1")
+        assert not eio.has_test_access(repo)  # no frozen tag yet
+        _git(repo, "tag", "frozen-x")
+        assert eio.has_test_access(repo)
+        monkeypatch.setenv(eio.ACCESS_ENV, "WRONG")
+        assert not eio.has_test_access(repo)
+        monkeypatch.setenv(eio.ACCESS_ENV, "NONCE1")
+        with open(log, "a") as fh:
+            fh.write(f"2026\tcompleted\t{head}\tNONCE1\tfrozen-x\t\n")
+>       assert not eio.has_test_access(repo)  # closed nonce
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert not True
+E        +  where True = <function has_test_access at 0x152edc8bfb00>(PosixPath('/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p5vi_tests_full/out/tmp/pt_eval/test_access_grant_requires_fro0/repo'))
+E        +    where <function has_test_access at 0x152edc8bfb00> = eio.has_test_access
+
+tests/eval/test_eval_io.py:145: AssertionError
+_____________________ test_method_code_never_touches_truth _____________________
+
+    def test_method_code_never_touches_truth():
+        bad = {str(f.relative_to(ROOT)): v for f in method_files() if (v := violations(f))}
+>       assert not bad, f"method code references truth files: {bad}"
+E       AssertionError: method code references truth files: {'src/famC/c1.py': ["string '.truth.parquet'"]}
+E       assert not {'src/famC/c1.py': ["string '.truth.parquet'"]}
+
+tests/eval/test_truth_isolation.py:46: AssertionError
+=============================== warnings summary ===============================
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+tests/eval/test_eval_metrics.py::test_bootstrap_parallel_equals_serial
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=944693) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/eval/test_eval_io.py::test_access_grant_requires_frozen_tag_and_open_nonce
+FAILED tests/eval/test_truth_isolation.py::test_method_code_never_touches_truth
+SKIPPED [1] tests/eval/test_eval_v4.py:309: could not import 'baselines.adapters': No module named 'baselines.adapters'
+2 failed, 70 passed, 1 skipped, 4 warnings in 100.86s (0:01:40)
+MODULE eval rc=1 seconds=102
+=================== MODULE famA
+............................                                             [100%]
+28 passed in 119.99s (0:01:59)
+MODULE famA rc=0 seconds=122
+=================== MODULE famB
+.........................................                                [100%]
+41 passed in 170.26s (0:02:50)
+MODULE famB rc=0 seconds=178
+=================== MODULE famC
+...............                                                          [100%]
+15 passed in 49.04s
+MODULE famC rc=0 seconds=51
+=================== MODULE famG
+............                                                             [100%]
+12 passed in 29.58s
+MODULE famG rc=0 seconds=31
+=================== MODULE orch
+..........                                                               [100%]
+10 passed in 50.96s
+MODULE orch rc=0 seconds=51
+=================== MODULE sim
+...........................................................              [100%]
+59 passed in 354.46s (0:05:54)
+MODULE sim rc=0 seconds=358
+=================== MODULE stats
+....................                                                     [100%]
+20 passed in 7.93s
+MODULE stats rc=0 seconds=9
+
+=== SUMMARY (module: tests passed failed errors skipped)
+baselines   102  101   0   0   1
+data         69   69   0   0   0
+data_real    28   28   0   0   0
+eval         73   70   2   0   1
+   FAILURE: tests.eval.test_eval_io::test_access_grant_requires_frozen_tag_and_open_nonce :: AssertionError: assert not True
+ +  where True = <function has_test_access at 0x152edc8bfb00>(PosixPath('/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p5vi_tests_full/out/tmp/pt_eval/test_access_gr
+   FAILURE: tests.eval.test_truth_isolation::test_method_code_never_touches_truth :: AssertionError: method code references truth files: {'src/famC/c1.py': ["string '.truth.parquet'"]}
+assert not {'src/famC/c1.py': ["string '.truth.parquet'"]}
+famA         28   28   0   0   0
+famB         41   41   0   0   0
+famC         15   15   0   0   0
+famG         12   12   0   0   0
+orch         10   10   0   0   0
+sim          59   59   0   0   0
+stats        20   20   0   0   0
+[orch] exit 1 at 2026-10-27T11:03:58+01:00

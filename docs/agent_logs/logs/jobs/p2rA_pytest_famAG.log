@@ -1,0 +1,71 @@
+[orch] job p2rA_pytest_famAG start 2026-10-27T10:32:45+01:00 host eu-g6-001 commit 334e1828e8 pid 928027
+[orch] cmd: echo '== snapshot run (R at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/code/env/renv?)'; ls /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/code/env/renv/bin/Rscript 2>&1; PYTHONPATH=src python -m pytest tests/famA tests/famG -q -rs -p no:cacheprovider 2>&1 | tail -25; s1=0; echo '== copy with env/renv linked'; cp -a /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/code /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/out/proj && ln -s /cluster/scratch/mumarc/hackathon_eqtl_gwas/env/renv /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/out/proj/env/renv && cd /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/out/proj && PYTHONPATH=src python -m pytest tests/famA tests/famG -q -rs -p no:cacheprovider --durations=8 2>&1 | tail -40; s2=0; echo 'exit snapshot= copy='; exit 0
+== snapshot run (R at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/code/env/renv?)
+ls: cannot access '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/code/env/renv/bin/Rscript': No such file or directory
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                if err_msg == "noexec:chdir":
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                elif err_msg == "noexec":
+                    err_msg = ""
+                    err_filename = None
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+                if err_filename is not None:
+>                   raise child_exception_type(errno_num, err_msg, err_filename)
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/code/env/renv/bin/Rscript'
+
+/usr/lib/python3.12/subprocess.py:1955: FileNotFoundError
+=========================== short test summary info ============================
+SKIPPED [1] tests/famG/test_coloc.py:21: R not available
+SKIPPED [1] tests/famG/test_coloc.py:58: R not available
+SKIPPED [2] tests/famG/test_susie_rss.py:42: R not available
+SKIPPED [1] tests/famG/test_susie_rss.py:101: R not available
+1 failed, 34 passed, 5 skipped in 115.58s (0:01:55)
+== copy with env/renv linked
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/out/proj/env/renv/bin/Rscript', '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rA_pytest_famAG/out/proj/src/famA/validation/run_mvsusie.R', '/tmp/pytest-of-mumarc/pytest-47/test_identity_vs_mvsusie0', '/tmp/pytest-of-mumarc/pytest-47/test_identity_vs_mvsusie0/mvs/c0', '1,2,3,4', '25', '25', '0', '0.375', '0.375', '0.25', '1e-4']' returned non-zero exit status 1.
+
+/usr/lib/python3.12/subprocess.py:571: CalledProcessError
+============================= slowest 8 durations ==============================
+61.46s call     tests/famA/test_m35.py::test_layer_E_reduces_spurious_signals
+11.76s call     tests/famA/test_joint_susie.py::test_triton_eb_matches_torch
+11.25s call     tests/famA/test_m35.py::test_eta_triton_matches_torch
+4.54s call     tests/famG/test_susie_rss.py::test_identity_vs_susieR_0142[dtype0]
+4.24s call     tests/famA/test_bvn.py::test_rect_vs_quadrature
+3.65s call     tests/famA/test_power_events.py::test_bvn_set_prob_vs_quadrature
+3.56s call     tests/famA/test_m35.py::test_continuous_batching_equals_single_fits[dense]
+3.47s call     tests/famA/test_m35.py::test_continuous_batching_equals_single_fits[factor]
+1 failed, 39 passed in 123.09s (0:02:03)
+exit snapshot=1 copy=1

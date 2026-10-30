@@ -1,0 +1,2 @@
+22:19:13 [harness] run dry_mvr1__coloc_susie__real_R3b: 13 loci (13 to run), mode=cpu, workers=6
+22:19:44 [harness] done dry_mvr1__coloc_susie__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 31.1s

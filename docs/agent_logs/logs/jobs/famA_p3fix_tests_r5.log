@@ -1,0 +1,5 @@
+[orch] job famA_p3fix_tests_r5 start 2026-10-27T11:09:17+01:00 host eu-g6-001 commit fb8dfb0bd8 pid 965099
+[orch] cmd: set -o pipefail; R_PROFILE_USER=/dev/null python -m pytest tests/famA tests/famG -q -p no:cacheprovider --basetemp=/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r5/out/pytest 2>&1 | tail -60
+.................................................                        [100%]
+49 passed in 422.58s (0:07:02)
+[orch] exit 0 at 2026-10-27T11:16:22+01:00

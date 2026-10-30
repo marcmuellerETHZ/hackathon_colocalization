@@ -1,0 +1,2 @@
+19:28:05 [harness] run dry_v4__famA_joint_susie_rho_ms_ptld__real_R4b_insample: 24 loci (24 to run), mode=batch, workers=1
+19:28:40 [harness] done dry_v4__famA_joint_susie_rho_ms_ptld__real_R4b_insample: {'ok': 23, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 24} in 39.2s

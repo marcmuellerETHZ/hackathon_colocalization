@@ -1,0 +1,4 @@
+rung	method	n	wall_s	loci_per_s	failed	nonconverged	median_niter	max_niter	noshare_chosen	per_trait_ld	nonconv[L0|P3|rho=0.5]	noshare[L0|P3|rho=0.5]	nonconv[L2|P1|r_p=0.0]	noshare[L2|P1|r_p=0.0]	nonconv[L2|P3|rho=0.5]	noshare[L2|P3|rho=0.5]	nonconv[L4|P1|r_p=0.0]	noshare[L4|P1|r_p=0.0]	nonconv[L4|P3|rho=0.5]	noshare[L4|P3|rho=0.5]
++eta	famA_joint_susie_rho_eta	300	179.82	1.668	0	1	10.0	100	0	0	1	0	0	0	0	0	0	0	0	0
+rho+eta+multistart	famA_joint_susie_rho_eta_ms	300	181.17	1.656	0	0	12.0	91	114	0	0	19	0	21	0	15	0	34	0	25
+rho+eta+multistart+perTraitLD	famA_joint_susie_rho_eta_ms_ptld	300	150.08	1.999	0	0	12.0	91	114	0	0	19	0	21	0	15	0	34	0	25

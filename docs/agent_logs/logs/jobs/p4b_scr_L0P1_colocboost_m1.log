@@ -1,0 +1,14 @@
+[orch] job p4b_scr_L0P1_colocboost_m1 start 2026-10-27T11:09:08+01:00 host eu-g6-001 commit 30ad06acb3 pid 964674
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method colocboost_m1 --set data/processed/sets/screen_v2.h5 --ids-file results/baselines_screen_v2/ids/L0P1_all.txt --workers 4 --pilot-timeout --results-dir results/baselines_screen_v2/runs --label 'p4 screen_v2 L0|P1|r_p=0.0'
+[baselines.run] colocboost_m1: 2000 loci, p_max=6250, workers=4, timeout=60s
+[harness] run 20261027T101128Z_colocboost_m1_screen_v2_63c613: 2000 loci, mode=cpu, workers=4
+[harness] 272/2000 tasks done
+[harness] 602/2000 tasks done
+[harness] 933/2000 tasks done
+[harness] 1253/2000 tasks done
+[harness] 1509/2000 tasks done
+[harness] 1635/2000 tasks done
+[harness] 1835/2000 tasks done
+[harness] done 20261027T101128Z_colocboost_m1_screen_v2_63c613: {'ok': 2000, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 2000} in 224.0s
+{"run_id": "20261027T101128Z_colocboost_m1_screen_v2_63c613", "run_dir": "results/baselines_screen_v2/runs/20261027T101128Z_colocboost_m1_screen_v2_63c613", "counts": {"ok": 2000, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 2000}}
+[orch] exit 0 at 2026-10-27T11:15:13+01:00

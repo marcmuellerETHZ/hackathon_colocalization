@@ -1,0 +1,3 @@
+00:41:13 [harness] run test_frozen-v1_ab94c5a1__strength_only__sim_shifted: 1600 loci (1600 to run), mode=cpu, workers=2
+00:42:13 [harness] strength_only: 30/1600 loci done
+00:43:20 [harness] done test_frozen-v1_ab94c5a1__strength_only__sim_shifted: {'ok': 1600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1600} in 123.0s

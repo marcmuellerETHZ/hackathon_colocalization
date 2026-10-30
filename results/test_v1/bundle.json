@@ -1,0 +1,1036 @@
+{
+ "DRY": false,
+ "config": {
+  "accept_failed_units": false,
+  "bundle": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1",
+  "cores": 64,
+  "data_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/data/processed/testset_v1/test_frozen-v1_ab94c5a1",
+  "dry_real_builder": false,
+  "gen_workers": 4,
+  "label": "test_frozen-v1_ab94c5a1",
+  "methods_only": null,
+  "mode": "test",
+  "n_boot": 2000,
+  "n_jobs": 16,
+  "ram_gb": 120.0,
+  "retry_failed_units": 1,
+  "scale": 1.0,
+  "stages": [
+   "real",
+   "sim",
+   "methods",
+   "evaluate",
+   "verify"
+  ],
+  "unit": "block"
+ },
+ "end_utc": "2026-10-28T03:43:38Z",
+ "evaluate": {
+  "benchmark": {
+   "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim",
+   "evaluate_wall_s": 103.89485597610474,
+   "not_run": [],
+   "parts": {
+    "main": {
+     "benchmark_sha256": "1a2f71cd97470d59bcefdd2ebc9e2c610287c72d16c05ee044603157899a1a3b",
+     "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim",
+     "methods": [
+      "coloc_abf",
+      "coloc_prop_test",
+      "coloc_susie",
+      "coloc_susie_mm",
+      "famB_exactcoloc_gaussian_M50",
+      "famG_coloc_susie_gpu",
+      "lead_snp",
+      "prop_coloc",
+      "sharepro",
+      "strength_only"
+     ],
+     "n_loci": 13207
+    },
+    "subsample_8685f328": {
+     "benchmark_sha256": "2610ebc5e7eea232708e943138d8080cd8077eb2227efdda0c36d366800f8bd0",
+     "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/subsample_8685f328",
+     "methods": [
+      "coloc_abf",
+      "coloc_prop_test",
+      "coloc_susie",
+      "coloc_susie_mm",
+      "colocboost",
+      "colocboost_m1",
+      "famB_exactcoloc_gaussian_M50",
+      "famG_coloc_susie_gpu",
+      "lead_snp",
+      "prop_coloc",
+      "sharepro",
+      "strength_only"
+     ],
+     "n_loci": 4467
+    }
+   }
+  },
+  "claims": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/claims.json",
+  "descriptive": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/descriptive.json",
+  "operating_points": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/operating_points_used.json",
+  "operating_points_source": "frozen (methods file metric_config)",
+  "real_arms": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/real_arms.json",
+  "runtime": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runtime.json",
+  "strength_table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/m4_valid_v2/main/strength_table_full.json"
+ },
+ "extra": {
+  "commit": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+  "methods_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/configs/test_methods_v1_d17cut1.yaml",
+  "methods_file_sha256": "469e8afb68359d6e931f7d7377825b2ac0418e64ca484b659e56af1e1ffb3bea",
+  "nonce": "ab94c5a1c097449db8d1d1f4bd18c168",
+  "tag": "frozen-v1",
+  "test_run": true
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+  "modified_tracked": [],
+  "orch_job": "test_run_v1_r1",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code",
+  "tags": [
+   "frozen-v1"
+  ],
+  "untracked_code": []
+ },
+ "input_sha256": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R2_test.h5": "5784c3f3153696f617508e67ac94701060b08d92a34dd4e281c738bc06a59922",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R2_test.truth.parquet": "28f525c642ba3372ec5dfdc951d8931f95fd8592e8aced58db57d98bd913d213",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R3b_test.h5": "efae1fc7bd14206838bcfa03e02688cb198ff57777caee92960d16c40b63ae13",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R3b_test.truth.parquet": "ff3a48fe7a92c9f1148084fb54e6e1cd7ff22121d7c72c22ff8ee35f3025ed86",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.geuv_insample_pcadj.h5": "f5272834c1428b0987df43b0f9a0eb1399af33b574e7229e66c66725a914c8ed",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.geuv_insample_pcadj.truth.parquet": "d8b1a5d75a2c20d41e5570c825f16a4d576a3fa7a5d1e64d0875b060f97e2e12",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.nfe_minus_geuv.h5": "c0957a0bd4830467fd3a6c7f093002c3fc70537bab315f5e1aebdbc28f399dc4",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.nfe_minus_geuv.truth.parquet": "d8b1a5d75a2c20d41e5570c825f16a4d576a3fa7a5d1e64d0875b060f97e2e12",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1.h5": "b55403fccfcee8d4d93e5425fa108a576bf7b115c18d672c6270eb33e64584e5",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1.truth.parquet": "0ce26af8fba1ed7c3b18cb6cfd1538a58842c2efbf24f7f3afcf89c1c0ecb765",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P1_r_p=0.0.h5": "9ac1aeb0c12303da4e3771d25763bd646b115179fcb1e33a09c62921020cf334",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P1_r_p=0.0.truth.parquet": "5450bdee8245d8a329d13b9b3a3256e78979c3dc0b0221641dc382fe5684c594",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P1_r_p=0.6.h5": "51a16310b6b239ad4c76d3fdb5eeb4e432fabda611dcfddcb4d710634927f245",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P1_r_p=0.6.truth.parquet": "50f57924956c0822bd714046641f8aa5dbc0c0d3fe49f046299cf4358238aa63",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P2_rho=0.0.h5": "8e5267922eb33d3e46f43fbb3a736d2054f879d2c674481f9a3c16dd0b0371a4",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P2_rho=0.0.truth.parquet": "a721c73b8ef780bf609c9621765b68dec518852ad43b0b4658bc0a3b090e8e5e",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P2_rho=0.3.h5": "0e42f4b752e4b2957448fa207fdbb671fd9f0fdc820901d01642534e1bcf1dd8",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P2_rho=0.3.truth.parquet": "2510c34f79fc2ac26cf9fe7887482a2189b9849fd4e3a8edd8897537fa6e2727",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P3_rho=0.0.h5": "396404ccaad2422fbacb3692db1fb6b8fa32efed76caa53995bd43fbaef73c6f",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P3_rho=0.0.truth.parquet": "05c6450cd2d581eae5f2ba39b5350f6bf8a22fc2c6ccc024d662bd77800d8fd4",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P3_rho=0.5.h5": "173c05e4a51c5de1a6fbc9cf6f92755a5aae8948d50935e7b90e74987a67c08a",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P3_rho=0.5.truth.parquet": "b0010d642e597656c3f1a3bad5f5a7ca96299a9e605544af0d9a16937a0d9e8d",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P3_rho=0.8.h5": "a0c8d013fbe4fbcf8f0bd28d0dc9ed94266869bfb29f6f329507819869b7cc5c",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L0_P3_rho=0.8.truth.parquet": "344d7017d00cbaa7fde791df687a3503a6c8799d7d01ec7184c407f3c245489e",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P1_r_p=0.0.h5": "a5518f132f49d97f9477c9e8f684cebacdd9c887709c8515743232637ee2f695",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P1_r_p=0.0.truth.parquet": "b7e2a44792b0490fbf81c3a63b3534612b49fce22b15bc7a1d025562b09aadfd",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P1_r_p=0.6.h5": "68902817f4e4190115830af9989c7b70c8fb0e7dfcff5ac1d609d3c840baa2b7",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P1_r_p=0.6.truth.parquet": "a375f8ff3d2626113725143feee945c725e91a5508b713547fc53e8c254a9e15",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P2_rho=0.0.h5": "4e80532227748e88fe776696d1bceac412ef5b968a5cbde9fff1cc978623c1af",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P2_rho=0.0.truth.parquet": "4f89c7037e9d647af2ee06823d38a9bb3c95fc538d367b04260dbcd2d6626aac",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P2_rho=0.3.h5": "2a6cdbf3e0c55dcf9fe782e622b1d11d56d98dec59148f29e359f2a1ddaa5df4",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P2_rho=0.3.truth.parquet": "a9b38b336a8ee3cef8ad560f28fe5cf3a403462d1df34c4da33a812bbeb2dd85",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P3_rho=0.0.h5": "acdfa5bf71417705685a18a001bc75c307e7b0251f3df843dd90536d489ab909",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P3_rho=0.0.truth.parquet": "65100dff2b1b929565a8f2411c109b628024a81884db3cb4842b2e2a7ba6df42",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P3_rho=0.5.h5": "478ae97103bb3cfe98b30635208afd8fc2b7919a51f01ec1e22f3fa28f2d9fe1",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P3_rho=0.5.truth.parquet": "7857d0373b71fb03fd4266706f7f221a5a782143d27d9ab20b3934c734ebd3c7",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P3_rho=0.8.h5": "cdfc940e0ad7866deba15d813816da6bcdfecec736630c9a3773292af1d05aae",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L1_P3_rho=0.8.truth.parquet": "007af17410aca1a2c6652f7b00f7a53e3916f716c9eef789ff14b50c1a40e12b",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P1_r_p=0.0.h5": "1fee21e282d601733701a13e4c8a745ccf78043bd8d83502c855d086a383e73b",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P1_r_p=0.0.truth.parquet": "5e3ebc4c7baee0eef2b9e0b440a47cb05b9fb76ef0c5f50af15a18d8329ebd29",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P1_r_p=0.6.h5": "ede5ae7e887c1846a0f15a913ebf6abb70a188a7b9e74ac029c0ffa665a3159d",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P1_r_p=0.6.truth.parquet": "92a10996c0af9c3da8a402a25aed043fd25833ade5ef06f79e1796bb79db1a8c",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P2_rho=0.0.h5": "9bdfa7d838883f5f71006b2fcdec092e2e1c714ad9ee4b1ed4cc6aa4341df2a3",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P2_rho=0.0.truth.parquet": "290bf3f534c1bb1f858339c014c74920711f1cc6906ca1d57486eca58e3f4d41",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P2_rho=0.3.h5": "ab2b470ede5293c6c23c313283b2591a7aa600c542f6bc90cf61e8bddaa92a44",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P2_rho=0.3.truth.parquet": "f1fde53f29a69255de612408e806eab776cbbeef1e09d0e5ae4b88046067de55",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P3_rho=0.0.h5": "a650320cf9fe8aae21304becad1a83867799b8912a22eb6f0f553aca182cbd99",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P3_rho=0.0.truth.parquet": "189dccde48eb165dddeec9d406584dd7deaab9890b4a4fc6ae31a2a2deea7c37",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P3_rho=0.5.h5": "146de12b233522d5d515332d72b521848db2213ecc304f3965995e0615de8974",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P3_rho=0.5.truth.parquet": "863db26eee832fc24720802d0393c2664f1f8149cc35e41da02147117654cea5",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P3_rho=0.8.h5": "3b6e1b191b62eacac08d46a9d4fd88d0fcf1ffb0130f47342e8eb7d3b66fde84",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L2_P3_rho=0.8.truth.parquet": "1f24139d598f6573042ae2aa3f6362ff41f2b0b2ee9c3e6ba2e876286ac9935c",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L3_P1_r_p=0.0.h5": "c470d669eaa6b4aad3a1dcc72c0b6069173ae07472d29e82f82a0737748ba106",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L3_P1_r_p=0.0.truth.parquet": "812de1b1dbfe866d5e328da83f3e718dd67c9e5a684f1712a51ca3aefefd3f68",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L3_P2_rho=0.0.h5": "619340bc69bf58c9d9e9e5e465f274a371ad27306c928979a73abb44130d146e",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L3_P2_rho=0.0.truth.parquet": "ecdeffe5f3a2dafc5933ac63f41aa83b0254074681f7be81cbcb9d2dcc36c774",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L3_P3_rho=0.0.h5": "e960f016a654e52aee02fa6a01da80542a77fc3c6d37ade3509a68e1b3861808",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L3_P3_rho=0.0.truth.parquet": "31392ee64599d3f233e1e1caad456e2dfd6de54ebc4d1405920746bb05805f86",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P1_r_p=0.0.h5": "aefb836b074536480a8cdbfc0b1c6046a7258e13471247920b0d7f3206fe8c81",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P1_r_p=0.0.truth.parquet": "b96b4098a4fa8f34ac4e69f48917aa435e19cb72c5c8e46120f6ccd3cbd6cd60",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P1_r_p=0.6.h5": "b486bac3de4550d822c72584329447caf6e7deb49640f30fccd7987eb25b04ca",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P1_r_p=0.6.truth.parquet": "31db501e2d2e3ca2598185603c28716780be77eb265f9733afc2e545ccf27f69",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P2_rho=0.0.h5": "2a43d7906d73268a7acba2a4740132d98969f2ea7c3ea165c034f936ee9b677b",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P2_rho=0.0.truth.parquet": "870794b6767a8b2a39b6446a7e014a4c50957084d0225e949a19859efc6e1c70",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P2_rho=0.3.h5": "8175ea6a68c71bbdf3c3a4dc1ef1f7014ff8351e8a929295b66fd1fa5e2831e3",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P2_rho=0.3.truth.parquet": "806edf698b0993dcb84fa45e4b3433971ccc058c865d1c8c796c8507cc8adac7",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P3_rho=0.0.h5": "9562d82a74a14ae4f76594b68f9e1461a201a97f8e118d3157fc2e34645db92a",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P3_rho=0.0.truth.parquet": "934206fad37e7c5949a6107e7d8199087261a5f4208b01ddc7ddb6f8415f1aaf",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P3_rho=0.5.h5": "4e2436d567f867a7a626f1f83c6be03a7cef85cea3470962e53c800b8066f14d",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P3_rho=0.5.truth.parquet": "355d5520cfa4709739877b0d626d73c9225db09a6cb685355a87db70ce453d89",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P3_rho=0.8.h5": "122e3756111cdd302b293ea65f059eb787b7c69cbf2bf7849dde28cc21222303",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L4_P3_rho=0.8.truth.parquet": "8c40525122220ba3ca3ab32be11780f87de98cda2df58d11bee24fd83a752525",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L6_P1_r_p=0.0.h5": "e082d42f1fa50f390ee69674887752f80cbdffc7f24f26a299c65068d8e95182",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L6_P1_r_p=0.0.truth.parquet": "96cc09cbb62bad55a3a37677a1e2862935536e364328e99e29e7b616d3bc56f7",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L6_P2_rho=0.0.h5": "519c4435359b420163c68ed03b2f8af6d16e10aa46f5e3d1b306f2028609fb95",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L6_P2_rho=0.0.truth.parquet": "5478bf5f807644ea39eaf5aa2da71bb3442bbe5a2e2a265effcbcddd3cb7e47a",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L6_P3_rho=0.0.h5": "b4e5be28b6889ff44626e81f8be1004afaf2897fce8ab8811b503ccac5f732da",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1/L6_P3_rho=0.0.truth.parquet": "e2ae185867ef993e8a0dd4e4e397c24cb5ceb3243ce87a44af180f290e33c599",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted.h5": "aa833e048f14543ba1b5fe7b8218e661e2bb5b748c493be8af76d1107a8ac55e",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted.truth.parquet": "7c5ceb8d0c6992af40b53b9ee57e01c947c64cd6194bc453e4de3c8e147efb1e",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L1swap_P1_r_p=0.0.h5": "8da1218d6693518b5e7b00cba43a37c4c551cc6d18a04b15a0907da40a16b06c",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L1swap_P1_r_p=0.0.truth.parquet": "d03d710dbf2af40cd926a8516217e8a9a50d77fdfdd11e9abbedd9fb3cc85205",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L1swap_P1_r_p=0.6.h5": "61c636930cf48a3f6f83d1b21d2fa922f90362ce576a20660452d0ffc669484e",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L1swap_P1_r_p=0.6.truth.parquet": "d8e3f5d220109e30e058f7e31dd83cf0cc1af65d6f8dfeffde7f1a38e0d0ee43",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L2swap_P1_r_p=0.0.h5": "ce6536ba8a80a332551cd353a225360efdcdcb84fe65c1bf9fadf40a4f31d74a",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L2swap_P1_r_p=0.0.truth.parquet": "d6ef93c696020b401aa9b80716c878ed92a8bb1695ee8a3da8c09c1345646ca5",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L2swap_P1_r_p=0.6.h5": "9ad12e6054ad7aa39facd22b9eb044b4def90ec8e1eac09f4140e294f1e77904",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted/L2swap_P1_r_p=0.6.truth.parquet": "2456fe56781fcf1e55bf6e595b21cd2dd300c836d4136dd8f56c9bea9a3cdc4f"
+ },
+ "label": "test_frozen-v1_ab94c5a1",
+ "mode": "test",
+ "scale": 1.0,
+ "sets": {
+  "real_R2": {
+   "ids_sha256": "c755454d3f9dc146ba432abc6bc31b01e30437ba78549b6b0e98fa3d363f1aad",
+   "n": 800,
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R2_test.h5"
+  },
+  "real_R3b": {
+   "ids_sha256": "b0debdcad092874274d6ca5825ea60d3f331042164e341e11a3822f960b227c0",
+   "n": 1237,
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R3b_test.h5"
+  },
+  "real_R4b_insample": {
+   "ids_sha256": "e6a8ac6eda2d069df9ee23c51c267b504b4aa070caf0dff0614f7969fa42ccf4",
+   "n": 600,
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.geuv_insample_pcadj.h5"
+  },
+  "real_R4b_reference": {
+   "ids_sha256": "e6a8ac6eda2d069df9ee23c51c267b504b4aa070caf0dff0614f7969fa42ccf4",
+   "n": 600,
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.nfe_minus_geuv.h5"
+  },
+  "sim_main": {
+   "ids_sha256": "3cf8fae26cdf6f1674168c5e51fcce07f414f40be095b7e979006c688be57ab0",
+   "n": 11607,
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1.h5"
+  },
+  "sim_shifted": {
+   "ids_sha256": "8706f05fe97b054b530b8fb12630117a467959843c7a287254cf6766903139f3",
+   "n": 1600,
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1_shifted.h5"
+  }
+ },
+ "units": {
+  "test_frozen-v1_ab94c5a1__coloc_abf__real_R2": {
+   "counts": {
+    "expected": 800,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 800,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:45:39Z",
+   "error": null,
+   "method": "coloc_abf",
+   "n": 800,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R2",
+   "set": "real_R2",
+   "start_utc": "2026-10-27T22:45:15Z",
+   "status": "done",
+   "wall_s": 24.19023323059082
+  },
+  "test_frozen-v1_ab94c5a1__coloc_abf__real_R3b": {
+   "counts": {
+    "expected": 1237,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1237,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:45:14Z",
+   "error": null,
+   "method": "coloc_abf",
+   "n": 1237,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R3b",
+   "set": "real_R3b",
+   "start_utc": "2026-10-27T22:44:37Z",
+   "status": "done",
+   "wall_s": 37.3903923034668
+  },
+  "test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:46:06Z",
+   "error": null,
+   "method": "coloc_abf",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample",
+   "set": "real_R4b_insample",
+   "start_utc": "2026-10-27T22:45:41Z",
+   "status": "done",
+   "wall_s": 24.924291372299194
+  },
+  "test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:46:41Z",
+   "error": null,
+   "method": "coloc_abf",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference",
+   "set": "real_R4b_reference",
+   "start_utc": "2026-10-27T22:46:07Z",
+   "status": "done",
+   "wall_s": 33.34873628616333
+  },
+  "test_frozen-v1_ab94c5a1__coloc_abf__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 11607,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:36:11Z",
+   "error": null,
+   "method": "coloc_abf",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-27T23:26:55Z",
+   "status": "done",
+   "wall_s": 555.3545668125153
+  },
+  "test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:38:26Z",
+   "error": null,
+   "method": "coloc_abf",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-27T23:36:11Z",
+   "status": "done",
+   "wall_s": 135.0070698261261
+  },
+  "test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 6,
+    "nonconverged": 0,
+    "ok": 11601,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:44:14Z",
+   "error": null,
+   "method": "coloc_prop_test",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T01:01:43Z",
+   "status": "done",
+   "wall_s": 6151.171398639679
+  },
+  "test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:38:11Z",
+   "error": null,
+   "method": "coloc_prop_test",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T02:30:12Z",
+   "status": "done",
+   "wall_s": 479.0421543121338
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie__real_R2": {
+   "counts": {
+    "expected": 800,
+    "failed": 2,
+    "nonconverged": 137,
+    "ok": 661,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:05:35Z",
+   "error": null,
+   "method": "coloc_susie",
+   "n": 800,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R2",
+   "set": "real_R2",
+   "start_utc": "2026-10-27T22:57:32Z",
+   "status": "done",
+   "wall_s": 482.57151675224304
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie__real_R3b": {
+   "counts": {
+    "expected": 1237,
+    "failed": 0,
+    "nonconverged": 108,
+    "ok": 1129,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:57:31Z",
+   "error": null,
+   "method": "coloc_susie",
+   "n": 1237,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R3b",
+   "set": "real_R3b",
+   "start_utc": "2026-10-27T22:44:37Z",
+   "status": "done",
+   "wall_s": 773.5960648059845
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 4,
+    "ok": 596,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:09:01Z",
+   "error": null,
+   "method": "coloc_susie",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample",
+   "set": "real_R4b_insample",
+   "start_utc": "2026-10-27T23:05:36Z",
+   "status": "done",
+   "wall_s": 204.62862730026245
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_reference": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 94,
+    "ok": 506,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:17:44Z",
+   "error": null,
+   "method": "coloc_susie",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_reference",
+   "set": "real_R4b_reference",
+   "start_utc": "2026-10-27T23:09:02Z",
+   "status": "done",
+   "wall_s": 522.2848680019379
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 31,
+    "nonconverged": 2331,
+    "ok": 9245,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:25:45Z",
+   "error": null,
+   "method": "coloc_susie",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T00:57:21Z",
+   "status": "done",
+   "wall_s": 5304.592599153519
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 58,
+    "ok": 1542,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:43:37Z",
+   "error": null,
+   "method": "coloc_susie",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T02:25:46Z",
+   "status": "done",
+   "wall_s": 1071.8757197856903
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2": {
+   "counts": {
+    "expected": 800,
+    "failed": 0,
+    "nonconverged": 34,
+    "ok": 766,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:11:37Z",
+   "error": null,
+   "method": "coloc_susie_mm",
+   "n": 800,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2",
+   "set": "real_R2",
+   "start_utc": "2026-10-27T23:03:34Z",
+   "status": "done",
+   "wall_s": 482.98002314567566
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b": {
+   "counts": {
+    "expected": 1237,
+    "failed": 0,
+    "nonconverged": 62,
+    "ok": 1175,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:03:33Z",
+   "error": null,
+   "method": "coloc_susie_mm",
+   "n": 1237,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b",
+   "set": "real_R3b",
+   "start_utc": "2026-10-27T22:44:37Z",
+   "status": "done",
+   "wall_s": 1135.6026227474213
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_insample": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 27,
+    "ok": 573,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:20:31Z",
+   "error": null,
+   "method": "coloc_susie_mm",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_insample",
+   "set": "real_R4b_insample",
+   "start_utc": "2026-10-27T23:11:38Z",
+   "status": "done",
+   "wall_s": 532.7062447071075
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_reference": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 32,
+    "ok": 568,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:24:57Z",
+   "error": null,
+   "method": "coloc_susie_mm",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_reference",
+   "set": "real_R4b_reference",
+   "start_utc": "2026-10-27T23:17:47Z",
+   "status": "done",
+   "wall_s": 430.4015941619873
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 0,
+    "nonconverged": 1225,
+    "ok": 10382,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:30:19Z",
+   "error": null,
+   "method": "coloc_susie_mm",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T00:57:21Z",
+   "status": "done",
+   "wall_s": 9178.993380308151
+  },
+  "test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 53,
+    "ok": 1547,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:14:20Z",
+   "error": null,
+   "method": "coloc_susie_mm",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T02:43:39Z",
+   "status": "done",
+   "wall_s": 1840.934071302414
+  },
+  "test_frozen-v1_ab94c5a1__colocboost__sim_main": {
+   "counts": {
+    "expected": 4080,
+    "failed": 12,
+    "nonconverged": 0,
+    "ok": 4067,
+    "timeout": 1
+   },
+   "end_utc": "2026-10-28T02:30:11Z",
+   "error": null,
+   "method": "colocboost",
+   "n": 4080,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T02:25:46Z",
+   "status": "done",
+   "wall_s": 265.2119827270508
+  },
+  "test_frozen-v1_ab94c5a1__colocboost__sim_shifted": {
+   "counts": {
+    "expected": 387,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 387,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:45:58Z",
+   "error": null,
+   "method": "colocboost",
+   "n": 387,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T02:34:31Z",
+   "status": "done",
+   "wall_s": 687.115571975708
+  },
+  "test_frozen-v1_ab94c5a1__colocboost_m1__sim_main": {
+   "counts": {
+    "expected": 4080,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 4080,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T00:15:37Z",
+   "error": null,
+   "method": "colocboost_m1",
+   "n": 4080,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-27T23:45:52Z",
+   "status": "done",
+   "wall_s": 1784.8453114032745
+  },
+  "test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted": {
+   "counts": {
+    "expected": 387,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 387,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T00:19:03Z",
+   "error": null,
+   "method": "colocboost_m1",
+   "n": 387,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T00:15:38Z",
+   "status": "done",
+   "wall_s": 204.28921937942505
+  },
+  "test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 11607,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:25:24Z",
+   "error": null,
+   "method": "famB_exactcoloc_gaussian_M50",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T03:12:39Z",
+   "status": "done",
+   "wall_s": 764.7070467472076
+  },
+  "test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:35:56Z",
+   "error": null,
+   "method": "famB_exactcoloc_gaussian_M50",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T03:33:33Z",
+   "status": "done",
+   "wall_s": 142.6085240840912
+  },
+  "test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 17,
+    "nonconverged": 2192,
+    "ok": 9398,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:12:37Z",
+   "error": null,
+   "method": "famG_coloc_susie_gpu",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T02:25:46Z",
+   "status": "done",
+   "wall_s": 2811.4909570217133
+  },
+  "test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 54,
+    "ok": 1546,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:33:33Z",
+   "error": null,
+   "method": "famG_coloc_susie_gpu",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T03:25:25Z",
+   "status": "done",
+   "wall_s": 487.9972152709961
+  },
+  "test_frozen-v1_ab94c5a1__lead_snp__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 11607,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:36:06Z",
+   "error": null,
+   "method": "lead_snp",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-27T23:26:55Z",
+   "status": "done",
+   "wall_s": 550.705902338028
+  },
+  "test_frozen-v1_ab94c5a1__lead_snp__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:41:10Z",
+   "error": null,
+   "method": "lead_snp",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-27T23:38:27Z",
+   "status": "done",
+   "wall_s": 162.51023983955383
+  },
+  "test_frozen-v1_ab94c5a1__mvsusie__sim_main": {
+   "method": "mvsusie",
+   "n": 2040,
+   "set": "sim_main",
+   "start_utc": "2026-10-27T23:26:55Z",
+   "status": "running"
+  },
+  "test_frozen-v1_ab94c5a1__prop_coloc__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 369,
+    "nonconverged": 0,
+    "ok": 11238,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T03:05:34Z",
+   "error": null,
+   "method": "prop_coloc",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T02:25:46Z",
+   "status": "done",
+   "wall_s": 2388.5145020484924
+  },
+  "test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 25,
+    "nonconverged": 0,
+    "ok": 1575,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:43:27Z",
+   "error": null,
+   "method": "prop_coloc",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T02:38:13Z",
+   "status": "done",
+   "wall_s": 314.8417112827301
+  },
+  "test_frozen-v1_ab94c5a1__sharepro__real_R2": {
+   "counts": {
+    "expected": 800,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 800,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:55:07Z",
+   "error": null,
+   "method": "sharepro",
+   "n": 800,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R2",
+   "set": "real_R2",
+   "start_utc": "2026-10-27T22:50:04Z",
+   "status": "done",
+   "wall_s": 303.1740520000458
+  },
+  "test_frozen-v1_ab94c5a1__sharepro__real_R3b": {
+   "counts": {
+    "expected": 1237,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1237,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:50:03Z",
+   "error": null,
+   "method": "sharepro",
+   "n": 1237,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R3b",
+   "set": "real_R3b",
+   "start_utc": "2026-10-27T22:44:37Z",
+   "status": "done",
+   "wall_s": 325.69953894615173
+  },
+  "test_frozen-v1_ab94c5a1__sharepro__real_R4b_insample": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:57:31Z",
+   "error": null,
+   "method": "sharepro",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_insample",
+   "set": "real_R4b_insample",
+   "start_utc": "2026-10-27T22:55:08Z",
+   "status": "done",
+   "wall_s": 142.646790266037
+  },
+  "test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:01:25Z",
+   "error": null,
+   "method": "sharepro",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference",
+   "set": "real_R4b_reference",
+   "start_utc": "2026-10-27T22:57:32Z",
+   "status": "done",
+   "wall_s": 233.26543426513672
+  },
+  "test_frozen-v1_ab94c5a1__sharepro__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 9,
+    "nonconverged": 0,
+    "ok": 11590,
+    "timeout": 8
+   },
+   "end_utc": "2026-10-28T01:01:41Z",
+   "error": null,
+   "method": "sharepro",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-28T00:57:21Z",
+   "status": "done",
+   "wall_s": 260.41837334632874
+  },
+  "test_frozen-v1_ab94c5a1__sharepro__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-28T02:34:29Z",
+   "error": null,
+   "method": "sharepro",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-28T02:25:46Z",
+   "status": "done",
+   "wall_s": 523.4659714698792
+  },
+  "test_frozen-v1_ab94c5a1__strength_only__real_R2": {
+   "counts": {
+    "expected": 800,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 800,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:47:35Z",
+   "error": null,
+   "method": "strength_only",
+   "n": 800,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R2",
+   "set": "real_R2",
+   "start_utc": "2026-10-27T22:47:14Z",
+   "status": "done",
+   "wall_s": 20.781993627548218
+  },
+  "test_frozen-v1_ab94c5a1__strength_only__real_R3b": {
+   "counts": {
+    "expected": 1237,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1237,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:47:12Z",
+   "error": null,
+   "method": "strength_only",
+   "n": 1237,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R3b",
+   "set": "real_R3b",
+   "start_utc": "2026-10-27T22:46:42Z",
+   "status": "done",
+   "wall_s": 30.144846439361572
+  },
+  "test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:47:59Z",
+   "error": null,
+   "method": "strength_only",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample",
+   "set": "real_R4b_insample",
+   "start_utc": "2026-10-27T22:47:36Z",
+   "status": "done",
+   "wall_s": 22.79293394088745
+  },
+  "test_frozen-v1_ab94c5a1__strength_only__real_R4b_reference": {
+   "counts": {
+    "expected": 600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T22:48:19Z",
+   "error": null,
+   "method": "strength_only",
+   "n": 600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_reference",
+   "set": "real_R4b_reference",
+   "start_utc": "2026-10-27T22:48:00Z",
+   "status": "done",
+   "wall_s": 18.677862644195557
+  },
+  "test_frozen-v1_ab94c5a1__strength_only__sim_main": {
+   "counts": {
+    "expected": 11607,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 11607,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:45:51Z",
+   "error": null,
+   "method": "strength_only",
+   "n": 11607,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main",
+   "set": "sim_main",
+   "start_utc": "2026-10-27T23:36:07Z",
+   "status": "done",
+   "wall_s": 583.6483509540558
+  },
+  "test_frozen-v1_ab94c5a1__strength_only__sim_shifted": {
+   "counts": {
+    "expected": 1600,
+    "failed": 0,
+    "nonconverged": 0,
+    "ok": 1600,
+    "timeout": 0
+   },
+   "end_utc": "2026-10-27T23:43:20Z",
+   "error": null,
+   "method": "strength_only",
+   "n": 1600,
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted",
+   "set": "sim_shifted",
+   "start_utc": "2026-10-27T23:41:12Z",
+   "status": "done",
+   "wall_s": 128.55557537078857
+  }
+ },
+ "verify": {
+  "ok": true,
+  "problems": {
+   "benchmark": [],
+   "orphan_sim_runs": [],
+   "real_runs": [],
+   "units_not_done": []
+  }
+ },
+ "wall_s_this_invocation": 10181.881770849228
+}

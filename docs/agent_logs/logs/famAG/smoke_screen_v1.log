@@ -1,0 +1,21 @@
+loci 96 kinds {'factor': 69, 'dense': 27} p 2738 types {'gwas/mol': 48, 'gwas/gwas': 35, 'mol/mol': 13}
+[W1026 17:29:44.868062455 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1688207360 bytes (free: 946995200, total: 25250627584).
+[W1026 17:29:54.815671931 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2237661184 bytes (free: 2169634816, total: 25250627584).
+A_rho_eta 0.87 loci/s {'ok': 88, 'nonconverged': 8}
+A_rho_eta_pifix 1.02 loci/s {'ok': 88, 'nonconverged': 8}
+A_rho_eta_E 0.08 loci/s {'ok': 94, 'nonconverged': 2}
+G 2.07 loci/s {'ok': 75, 'nonconverged': 20, 'failed': 1}
+                                P_S    P_D    P_W      s
+run             oracle_class                            
+A_rho_eta       D             0.043  0.016  0.450  0.757
+                S             0.995  0.000  0.005  1.000
+                W             0.000  0.000  1.000  0.500
+A_rho_eta_E     D             0.039  0.025  0.274  0.436
+                S             0.989  0.000  0.011  1.000
+                W             0.000  0.000  1.000  0.500
+A_rho_eta_pifix D             0.046  0.016  0.456  0.719
+                S             0.995  0.000  0.005  1.000
+                W             0.000  0.000  1.000  0.500
+G               D             0.000  1.000  0.000  0.000
+                S             0.999  0.000  0.000  0.999
+                W             0.015  0.091  0.856  0.126

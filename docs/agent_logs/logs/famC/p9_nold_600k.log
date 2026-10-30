@@ -1,0 +1,105 @@
+valid 30000 loci; train-eval 6144
+params 1038450
+step 200 seen 51200 ce 1.1827 pip 2.4615 gn 121.82 lr 6.03e-05 1217 loci/s epoch 0 read 61440
+step 400 seen 102400 ce 0.7393 pip 0.6576 gn 48.65 lr 1.20e-04 1361 loci/s epoch 0 read 110592
+step 600 seen 153600 ce 0.6722 pip 0.5681 gn 61.02 lr 1.80e-04 1277 loci/s epoch 0 read 163840
+step 800 seen 204800 ce 0.6358 pip 0.6857 gn 28.73 lr 2.39e-04 1410 loci/s epoch 0 read 213488
+step 1000 seen 256000 ce 0.6148 pip 0.6326 gn 66.48 lr 2.98e-04 1375 loci/s epoch 0 read 266736
+step 1200 seen 307200 ce 0.5883 pip 0.6730 gn 38.89 lr 2.97e-04 1422 loci/s epoch 0 read 317936
+step 1400 seen 358400 ce 0.5744 pip 0.5931 gn 111.73 lr 2.96e-04 1470 loci/s epoch 0 read 367088
+step 1600 seen 409600 ce 0.5725 pip 0.6010 gn 68.65 lr 2.95e-04 1352 loci/s epoch 0 read 420832
+step 1800 seen 460800 ce 0.5724 pip 0.4898 gn 52.33 lr 2.93e-04 1448 loci/s epoch 0 read 469984
+step 2000 seen 512000 ce 0.5488 pip 0.4626 gn 63.56 lr 2.92e-04 1331 loci/s epoch 0 read 525280
+step 2200 seen 563200 ce 0.5334 pip 0.4913 gn 19.33 lr 2.90e-04 1552 loci/s epoch 0 read 570832
+EVAL step 2343: all: sd_pm 0.9448 dw 0.9944 | realistic_L1-L4: sd_pm 0.9477 dw 0.9942 | L6: sd_pm 0.9227 dw 0.9940 | train-region sd_pm 0.9673 | ll 0.4753 | infer 4385 loci/s
+step 2400 seen 614400 ce 0.5127 pip 0.4450 gn 25.30 lr 2.88e-04 1131 loci/s epoch 1 read 626624
+step 2600 seen 665600 ce 0.5029 pip 0.4149 gn 18.64 lr 2.86e-04 1473 loci/s epoch 1 read 675776
+step 2800 seen 716800 ce 0.4932 pip 0.4071 gn 30.32 lr 2.84e-04 1348 loci/s epoch 1 read 731072
+step 3000 seen 768000 ce 0.5063 pip 0.4061 gn 64.29 lr 2.82e-04 1429 loci/s epoch 1 read 778672
+step 3200 seen 819200 ce 0.4939 pip 0.3892 gn 57.27 lr 2.79e-04 1358 loci/s epoch 1 read 828816
+step 3400 seen 870400 ce 0.4904 pip 0.3889 gn 8.25 lr 2.77e-04 1566 loci/s epoch 1 read 882064
+step 3600 seen 921600 ce 0.4794 pip 0.3677 gn 13.90 lr 2.74e-04 1430 loci/s epoch 1 read 937360
+step 3800 seen 972800 ce 0.4838 pip 0.3506 gn 24.30 lr 2.71e-04 1410 loci/s epoch 1 read 986512
+step 4000 seen 1024000 ce 0.4821 pip 0.3749 gn 57.60 lr 2.68e-04 1346 loci/s epoch 1 read 1040256
+step 4200 seen 1075200 ce 0.4745 pip 0.3544 gn 34.30 lr 2.65e-04 1394 loci/s epoch 1 read 1089408
+step 4400 seen 1126400 ce 0.4687 pip 0.3502 gn 53.87 lr 2.62e-04 1427 loci/s epoch 1 read 1140608
+step 4600 seen 1177600 ce 0.4734 pip 0.3829 gn 69.00 lr 2.58e-04 1626 loci/s epoch 1 read 1193856
+EVAL step 4686: all: sd_pm 0.9587 dw 0.9982 | realistic_L1-L4: sd_pm 0.9622 dw 0.9981 | L6: sd_pm 0.9327 dw 0.9977 | train-region sd_pm 0.9791 | ll 0.4483 | infer 4496 loci/s
+step 4800 seen 1228800 ce 0.4702 pip 0.3544 gn 66.97 lr 2.55e-04 1217 loci/s epoch 2 read 1241952
+step 5000 seen 1280000 ce 0.4680 pip 0.3414 gn 10.84 lr 2.51e-04 1526 loci/s epoch 2 read 1295200
+step 5200 seen 1331200 ce 0.4573 pip 0.3292 gn 11.96 lr 2.48e-04 1480 loci/s epoch 2 read 1344352
+step 5400 seen 1382400 ce 0.4550 pip 0.3079 gn 11.95 lr 2.44e-04 1438 loci/s epoch 2 read 1398096
+step 5600 seen 1433600 ce 0.4427 pip 0.3030 gn 40.25 lr 2.40e-04 1522 loci/s epoch 2 read 1447248
+step 5800 seen 1484800 ce 0.4405 pip 0.3089 gn 13.46 lr 2.36e-04 1433 loci/s epoch 2 read 1502544
+step 6000 seen 1536000 ce 0.4407 pip 0.3087 gn 22.81 lr 2.32e-04 1519 loci/s epoch 2 read 1551696
+step 6200 seen 1587200 ce 0.4566 pip 0.3084 gn 26.43 lr 2.28e-04 1552 loci/s epoch 2 read 1602896
+step 6400 seen 1638400 ce 0.4290 pip 0.2925 gn 16.49 lr 2.23e-04 1487 loci/s epoch 2 read 1654592
+step 6600 seen 1689600 ce 0.4420 pip 0.2998 gn 19.66 lr 2.19e-04 1509 loci/s epoch 2 read 1705792
+step 6800 seen 1740800 ce 0.4430 pip 0.2986 gn 19.45 lr 2.14e-04 1575 loci/s epoch 2 read 1759040
+step 7000 seen 1792000 ce 0.4404 pip 0.2807 gn 17.77 lr 2.10e-04 1579 loci/s epoch 3 read 1808192
+EVAL step 7029: all: sd_pm 0.9710 dw 0.9983 | realistic_L1-L4: sd_pm 0.9732 dw 0.9982 | L6: sd_pm 0.9528 dw 0.9981 | train-region sd_pm 0.9864 | ll 0.4318 | infer 4034 loci/s
+step 7200 seen 1843200 ce 0.4269 pip 0.2753 gn 29.85 lr 2.05e-04 1270 loci/s epoch 3 read 1859392
+step 7400 seen 1894400 ce 0.4374 pip 0.3049 gn 12.31 lr 2.01e-04 1490 loci/s epoch 3 read 1912640
+step 7600 seen 1945600 ce 0.4381 pip 0.2930 gn 20.85 lr 1.96e-04 1436 loci/s epoch 3 read 1961792
+step 7800 seen 1996800 ce 0.4261 pip 0.2765 gn 20.06 lr 1.91e-04 1438 loci/s epoch 3 read 2015536
+step 8000 seen 2048000 ce 0.4156 pip 0.2741 gn 31.26 lr 1.87e-04 1472 loci/s epoch 3 read 2065184
+step 8200 seen 2099200 ce 0.4260 pip 0.2664 gn 10.49 lr 1.82e-04 1429 loci/s epoch 3 read 2117376
+step 8400 seen 2150400 ce 0.4178 pip 0.2458 gn 33.04 lr 1.77e-04 1524 loci/s epoch 3 read 2168576
+step 8600 seen 2201600 ce 0.4126 pip 0.2643 gn 22.25 lr 1.72e-04 1487 loci/s epoch 3 read 2221824
+step 8800 seen 2252800 ce 0.4110 pip 0.2718 gn 10.92 lr 1.67e-04 1559 loci/s epoch 3 read 2270976
+step 9000 seen 2304000 ce 0.4139 pip 0.2547 gn 15.13 lr 1.62e-04 1468 loci/s epoch 3 read 2322176
+step 9200 seen 2355200 ce 0.4152 pip 0.2514 gn 9.97 lr 1.57e-04 1316 loci/s epoch 3 read 2375424
+EVAL step 9372: all: sd_pm 0.9744 dw 0.9978 | realistic_L1-L4: sd_pm 0.9767 dw 0.9978 | L6: sd_pm 0.9575 dw 0.9973 | train-region sd_pm 0.9911 | ll 0.3965 | infer 4669 loci/s
+step 9400 seen 2406400 ce 0.4231 pip 0.2543 gn 24.95 lr 1.52e-04 1123 loci/s epoch 4 read 2424576
+step 9600 seen 2457600 ce 0.4138 pip 0.2414 gn 6.43 lr 1.47e-04 1278 loci/s epoch 4 read 2475776
+step 9800 seen 2508800 ce 0.4136 pip 0.2398 gn 13.55 lr 1.43e-04 1296 loci/s epoch 4 read 2527472
+step 10000 seen 2560000 ce 0.4034 pip 0.2336 gn 10.06 lr 1.38e-04 1453 loci/s epoch 4 read 2578672
+step 10200 seen 2611200 ce 0.4052 pip 0.2434 gn 13.21 lr 1.33e-04 1570 loci/s epoch 4 read 2631920
+step 10400 seen 2662400 ce 0.4135 pip 0.2434 gn 13.59 lr 1.28e-04 1537 loci/s epoch 4 read 2681072
+step 10600 seen 2713600 ce 0.4025 pip 0.2292 gn 15.03 lr 1.23e-04 1548 loci/s epoch 4 read 2730224
+step 10800 seen 2764800 ce 0.3904 pip 0.2303 gn 16.41 lr 1.18e-04 1507 loci/s epoch 4 read 2783968
+step 11000 seen 2816000 ce 0.4070 pip 0.2353 gn 24.07 lr 1.13e-04 1494 loci/s epoch 4 read 2835168
+step 11200 seen 2867200 ce 0.3916 pip 0.2311 gn 6.37 lr 1.09e-04 1363 loci/s epoch 4 read 2886864
+step 11400 seen 2918400 ce 0.3964 pip 0.2276 gn 10.51 lr 1.04e-04 1340 loci/s epoch 4 read 2936512
+step 11600 seen 2969600 ce 0.4083 pip 0.2226 gn 11.69 lr 9.95e-05 1373 loci/s epoch 4 read 2989760
+EVAL step 11715: all: sd_pm 0.9798 dw 0.9985 | realistic_L1-L4: sd_pm 0.9824 dw 0.9985 | L6: sd_pm 0.9612 dw 0.9982 | train-region sd_pm 0.9922 | ll 0.3787 | infer 3657 loci/s
+step 11800 seen 3020800 ce 0.3981 pip 0.2207 gn 15.40 lr 9.49e-05 1118 loci/s epoch 5 read 3043008
+step 12000 seen 3072000 ce 0.3863 pip 0.2169 gn 46.45 lr 9.04e-05 1505 loci/s epoch 5 read 3092160
+step 12200 seen 3123200 ce 0.3973 pip 0.2137 gn 9.93 lr 8.60e-05 1448 loci/s epoch 5 read 3143360
+step 12400 seen 3174400 ce 0.3893 pip 0.2161 gn 12.01 lr 8.16e-05 1550 loci/s epoch 5 read 3196608
+step 12600 seen 3225600 ce 0.3909 pip 0.2122 gn 9.37 lr 7.74e-05 1516 loci/s epoch 5 read 3245760
+step 12800 seen 3276800 ce 0.3825 pip 0.2057 gn 6.43 lr 7.32e-05 1512 loci/s epoch 5 read 3296960
+step 13000 seen 3328000 ce 0.3954 pip 0.2068 gn 9.62 lr 6.91e-05 1466 loci/s epoch 5 read 3348656
+step 13200 seen 3379200 ce 0.4005 pip 0.2084 gn 29.71 lr 6.51e-05 1421 loci/s epoch 5 read 3400848
+step 13400 seen 3430400 ce 0.3827 pip 0.2105 gn 14.08 lr 6.12e-05 1426 loci/s epoch 5 read 3452048
+step 13600 seen 3481600 ce 0.3914 pip 0.2098 gn 15.42 lr 5.74e-05 1516 loci/s epoch 5 read 3505296
+step 13800 seen 3532800 ce 0.3830 pip 0.2054 gn 17.21 lr 5.37e-05 1662 loci/s epoch 5 read 3554448
+step 14000 seen 3584000 ce 0.3780 pip 0.1975 gn 17.95 lr 5.01e-05 1471 loci/s epoch 6 read 3608192
+EVAL step 14058: all: sd_pm 0.9812 dw 0.9986 | realistic_L1-L4: sd_pm 0.9844 dw 0.9986 | L6: sd_pm 0.9616 dw 0.9983 | train-region sd_pm 0.9930 | ll 0.3836 | infer 5017 loci/s
+step 14200 seen 3635200 ce 0.3755 pip 0.1911 gn 9.90 lr 4.67e-05 1259 loci/s epoch 6 read 3655792
+step 14400 seen 3686400 ce 0.3815 pip 0.2009 gn 10.75 lr 4.33e-05 1317 loci/s epoch 6 read 3711584
+step 14600 seen 3737600 ce 0.3827 pip 0.2020 gn 16.66 lr 4.01e-05 1560 loci/s epoch 6 read 3760736
+step 14800 seen 3788800 ce 0.3700 pip 0.1869 gn 10.63 lr 3.70e-05 1402 loci/s epoch 6 read 3816032
+step 15000 seen 3840000 ce 0.3929 pip 0.2012 gn 11.24 lr 3.41e-05 1509 loci/s epoch 6 read 3865680
+step 15200 seen 3891200 ce 0.3851 pip 0.2062 gn 11.18 lr 3.12e-05 1589 loci/s epoch 6 read 3914832
+step 15400 seen 3942400 ce 0.3744 pip 0.1962 gn 8.27 lr 2.86e-05 1517 loci/s epoch 6 read 3970624
+step 15600 seen 3993600 ce 0.3724 pip 0.1940 gn 14.12 lr 2.60e-05 1507 loci/s epoch 6 read 4019776
+step 15800 seen 4044800 ce 0.3725 pip 0.1942 gn 11.74 lr 2.36e-05 1571 loci/s epoch 6 read 4068928
+step 16000 seen 4096000 ce 0.3722 pip 0.1954 gn 10.41 lr 2.13e-05 1433 loci/s epoch 6 read 4124224
+step 16200 seen 4147200 ce 0.3825 pip 0.1886 gn 18.69 lr 1.92e-05 1529 loci/s epoch 6 read 4173376
+step 16400 seen 4198400 ce 0.3855 pip 0.1865 gn 7.33 lr 1.72e-05 1527 loci/s epoch 7 read 4222528
+EVAL step 16401: all: sd_pm 0.9821 dw 0.9985 | realistic_L1-L4: sd_pm 0.9853 dw 0.9985 | L6: sd_pm 0.9611 dw 0.9978 | train-region sd_pm 0.9949 | ll 0.3748 | infer 3999 loci/s
+step 16600 seen 4249600 ce 0.3669 pip 0.1866 gn 10.70 lr 1.54e-05 1247 loci/s epoch 7 read 4277824
+step 16800 seen 4300800 ce 0.3672 pip 0.1838 gn 5.33 lr 1.38e-05 1528 loci/s epoch 7 read 4326976
+step 17000 seen 4352000 ce 0.3877 pip 0.1942 gn 24.46 lr 1.23e-05 1482 loci/s epoch 7 read 4376128
+step 17200 seen 4403200 ce 0.3708 pip 0.1863 gn 11.19 lr 1.09e-05 1502 loci/s epoch 7 read 4429872
+step 17400 seen 4454400 ce 0.3696 pip 0.1856 gn 8.02 lr 9.74e-06 1588 loci/s epoch 7 read 4481072
+step 17600 seen 4505600 ce 0.3649 pip 0.1889 gn 21.44 lr 8.72e-06 1480 loci/s epoch 7 read 4534320
+step 17800 seen 4556800 ce 0.3761 pip 0.1859 gn 10.03 lr 7.86e-06 1600 loci/s epoch 7 read 4583472
+step 18000 seen 4608000 ce 0.3737 pip 0.1921 gn 7.56 lr 7.16e-06 1436 loci/s epoch 7 read 4637216
+step 18200 seen 4659200 ce 0.3697 pip 0.1882 gn 9.07 lr 6.62e-06 1712 loci/s epoch 7 read 4686864
+step 18400 seen 4710400 ce 0.3680 pip 0.1902 gn 5.64 lr 6.25e-06 1776 loci/s epoch 7 read 4736512
+step 18600 seen 4761600 ce 0.3804 pip 0.1927 gn 10.97 lr 6.05e-06 1395 loci/s epoch 7 read 4789760
+EVAL step 18744: all: sd_pm 0.9825 dw 0.9982 | realistic_L1-L4: sd_pm 0.9856 dw 0.9983 | L6: sd_pm 0.9629 dw 0.9974 | train-region sd_pm 0.9955 | ll 0.3678 | infer 5420 loci/s
+EVAL step 18750: all: sd_pm 0.9825 dw 0.9982 | realistic_L1-L4: sd_pm 0.9856 dw 0.9983 | L6: sd_pm 0.9629 dw 0.9974 | train-region sd_pm 0.9955 | ll 0.3686 | infer 6326 loci/s
+DONE

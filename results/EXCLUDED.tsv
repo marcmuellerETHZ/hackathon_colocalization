@@ -1,0 +1,267 @@
+source_path	size_bytes	reason
+results/eval_test/test_frozen-v1_ab94c5a1/checkpoints/	158797093	harness checkpoints of the test run; row-by-row duplicates of runs/*/predictions.parquet (released as results/test_v1/runs/)
+results/eval_test/test_frozen-v1_ab94c5a1/state/	422287	harness state of the test run; pipeline state files (released as results/test_v1/runs/)
+results/.machine.lock	0	empty harness lock file
+results/20261028T134655Z_famC_floor_p9_600k_valid_grid_v1_ae571d/predictions.parquet	1256319	duplicate: already released as results/phase2_validation/famC_C2/floor_m4/predictions.parquet
+results/20261028T141727Z_neuralcoloc_p9_600k_valid_grid_v1_8a641e/predictions.parquet	1377018	duplicate: already released as results/phase2_validation/famC_C2/net_m4/predictions.parquet
+results/20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c/predictions.parquet	1375485	duplicate: already released as results/phase2_validation/famC_C2/nold_m4/predictions.parquet
+results/20261028T142538Z_neuralcoloc_p9_600k_trainregion_m4_v1_beda97/predictions.parquet	1280475	duplicate: already released as results/phase2_validation/famC_C2/net_trainregion/predictions.parquet
+results/baselines_m4/bench/.machine.lock	0	empty harness lock file
+results/baselines_m4/bench/benchmarks/20261027T182437Z_p4_m4_main_partial/expected_ids.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/baselines_m4/bench/benchmarks/20261027T182437Z_p4_m4_main_partial/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/baselines_m4/bench/benchmarks/20261027T182437Z_p4_m4_main_partial/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/baselines_m4/bench/benchmarks/20261027T185341Z_p4_m4_slow_partial/benchmark.json	737300	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/benchmark.json
+results/baselines_m4/bench/benchmarks/20261027T185341Z_p4_m4_slow_partial/expected_ids.txt	178160	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/expected_ids.txt
+results/baselines_m4/bench/benchmarks/20261027T185341Z_p4_m4_slow_partial/manifest.json	5054	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/manifest.json
+results/baselines_m4/bench/benchmarks/20261027T185341Z_p4_m4_slow_partial/strength_table_full.json	7635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/strength_table_full.json
+results/baselines_m4/bench/benchmarks/20261027T185341Z_p4_m4_slow_partial/summary.md	19146	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/summary.md
+results/baselines_m4/bench_p9/.machine.lock	0	empty harness lock file
+results/baselines_m4/bench_p9/benchmarks/20261028T084150Z_p9_m4_main_full/benchmark.json	746827	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/benchmark.json
+results/baselines_m4/bench_p9/benchmarks/20261028T084150Z_p9_m4_main_full/expected_ids.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/baselines_m4/bench_p9/benchmarks/20261028T084150Z_p9_m4_main_full/manifest.json	5350	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/manifest.json
+results/baselines_m4/bench_p9/benchmarks/20261028T084150Z_p9_m4_main_full/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/baselines_m4/bench_p9/benchmarks/20261028T084150Z_p9_m4_main_full/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/baselines_m4/bench_p9/benchmarks/20261028T084150Z_p9_m4_main_full/summary.md	19221	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/summary.md
+results/baselines_m4/m4_subsample_v1/main.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/baselines_m4/m4_subsample_v1/slow.txt	178160	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/expected_ids.txt
+results/baselines_m4/m4_valid_v1/main/expected_ids.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/baselines_m4/m4_valid_v1/main/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/baselines_m4/m4_valid_v1/main/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/baselines_m4/m4_valid_v1/slow/benchmark.json	737300	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/benchmark.json
+results/baselines_m4/m4_valid_v1/slow/expected_ids.txt	178160	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/expected_ids.txt
+results/baselines_m4/m4_valid_v1/slow/manifest.json	5054	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/manifest.json
+results/baselines_m4/m4_valid_v1/slow/strength_table_full.json	7635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/strength_table_full.json
+results/baselines_m4/m4_valid_v1/slow/summary.md	19146	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/summary.md
+results/baselines_m4/m4_valid_v2/main/expected_ids.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/baselines_m4/m4_valid_v2/main/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/baselines_m4/m4_valid_v2/main/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/baselines_m4/m4_valid_v2/slow/benchmark.json	737300	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/benchmark.json
+results/baselines_m4/m4_valid_v2/slow/expected_ids.txt	178160	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/expected_ids.txt
+results/baselines_m4/m4_valid_v2/slow/manifest.json	5054	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/manifest.json
+results/baselines_m4/m4_valid_v2/slow/strength_table_full.json	7635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/strength_table_full.json
+results/baselines_m4/m4_valid_v2/slow/summary.md	19146	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/summary.md
+results/baselines_m4/m4_valid_v3/m4summary.json	23100	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/m4summary.json
+results/baselines_m4/m4_valid_v3/m4summary.md	3832	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/m4summary.md
+results/baselines_m4/m4_valid_v3/main/SOURCE_BENCHMARK_DIR	74	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/SOURCE_BENCHMARK_DIR
+results/baselines_m4/m4_valid_v3/main/benchmark.json	746827	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/benchmark.json
+results/baselines_m4/m4_valid_v3/main/expected_ids.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/baselines_m4/m4_valid_v3/main/manifest.json	5350	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/manifest.json
+results/baselines_m4/m4_valid_v3/main/operating_points.json	2984	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/operating_points.json
+results/baselines_m4/m4_valid_v3/main/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/baselines_m4/m4_valid_v3/main/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/baselines_m4/m4_valid_v3/main/summary.md	19221	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/summary.md
+results/baselines_m4/m4_valid_v3/op2_m4_main.json	21560	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/op2_m4_main.json
+results/baselines_m4/m4_valid_v3/op2_m4_slow.json	6971	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/op2_m4_slow.json
+results/baselines_m4/m4_valid_v3/operating_points_p2.json	21110	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/operating_points_p2.json
+results/baselines_m4/m4_valid_v3/operating_points_p2.md	2859	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/operating_points_p2.md
+results/baselines_m4/m4_valid_v3/slow/SOURCE_BENCHMARK_DIR	53	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/SOURCE_BENCHMARK_DIR
+results/baselines_m4/m4_valid_v3/slow/benchmark.json	737300	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/benchmark.json
+results/baselines_m4/m4_valid_v3/slow/expected_ids.txt	178160	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/expected_ids.txt
+results/baselines_m4/m4_valid_v3/slow/manifest.json	5054	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/manifest.json
+results/baselines_m4/m4_valid_v3/slow/operating_points.json	2981	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/operating_points.json
+results/baselines_m4/m4_valid_v3/slow/strength_table_full.json	7635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/strength_table_full.json
+results/baselines_m4/m4_valid_v3/slow/summary.md	19146	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/slow/summary.md
+results/baselines_m4/runs/.machine.lock	0	empty harness lock file
+results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_1e-05_valid_grid_v1_f3a6c7/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_5e-06_valid_grid_v1_33c808/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T130106Z_coloc_abf_W0.15_p12_5e-06_valid_grid_v1_83518d/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.15_p12_1e-05_valid_grid_v1_fee4fd/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_1e-05_valid_grid_v1_c54f85/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T182327Z_coloc_susie_valid_grid_v1_e782c9/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T182327Z_coloc_susie_valid_grid_v1_feecd5/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_m4/runs/20261027T192144Z_coloc_susie_mm_valid_grid_v1_977229/manifest.json	3030	duplicate: already released as results/phase2_validation/coloc_susie_mm_M4/20261027T192144Z_coloc_susie_mm_valid_grid_v1_977229/manifest.json
+results/baselines_m4/runs/20261027T192144Z_coloc_susie_mm_valid_grid_v1_977229/predictions.parquet	3530075	duplicate: already released as results/phase2_validation/coloc_susie_mm_M4/20261027T192144Z_coloc_susie_mm_valid_grid_v1_977229/predictions.parquet
+results/baselines_m4/runs/20261027T192145Z_coloc_susie_mm_valid_grid_v1_9ee9eb/manifest.json	3032	duplicate: already released as results/phase2_validation/coloc_susie_mm_M4/20261027T192145Z_coloc_susie_mm_valid_grid_v1_9ee9eb/manifest.json
+results/baselines_m4/runs/20261027T192145Z_coloc_susie_mm_valid_grid_v1_9ee9eb/predictions.parquet	3449780	duplicate: already released as results/phase2_validation/coloc_susie_mm_M4/20261027T192145Z_coloc_susie_mm_valid_grid_v1_9ee9eb/predictions.parquet
+results/baselines_p9/m4_valid_v3_parts/op2_m4_main.json	21560	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/op2_m4_main.json
+results/baselines_p9/m4_valid_v3_parts/op2_m4_slow.json	6971	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/op2_m4_slow.json
+results/baselines_pilot/.machine.lock	0	empty harness lock file
+results/baselines_screen_v2/bench/.machine.lock	0	empty harness lock file
+results/baselines_screen_v2/collected_v1/predictions.parquet	67968203	file >= 50 MB (GitHub limit; no LFS)
+results/baselines_screen_v2/runs/.machine.lock	0	empty harness lock file
+results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.15_p12_5e-06_screen_v2_754ca0/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.1_p12_1e-05_screen_v2_b16a4a/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T111010Z_coloc_abf_W0.15_p12_1e-05_screen_v2_0ea8a6/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T111010Z_coloc_abf_W0.2_p12_5e-06_screen_v2_fcd486/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T111258Z_coloc_abf_W0.2_p12_1e-05_screen_v2_835bff/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T131112Z_coloc_susie_screen_v2_de5de7/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/baselines_screen_v2/runs/20261027T132204Z_coloc_susie_screen_v2_70173e/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/benchmarks/20261027T184412Z_famC_m4_provisional/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/benchmarks/20261027T184412Z_famC_m4_provisional/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/benchmarks/20261028T143030Z_famC_C2_m4/expected_ids.txt	526170	duplicate: already released as results/phase2_validation/m4_subsample_v1_main_ids.txt
+results/benchmarks/20261028T143030Z_famC_C2_m4/strength_table_crossfit.json	39635	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_crossfit.json
+results/benchmarks/20261028T143030Z_famC_C2_m4/strength_table_full.json	7965	duplicate: already released as results/phase2_validation/m4_valid_baselines_v3/main/strength_table_full.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/benchmark.json	597071	duplicate: already released as results/test_v1/benchmarks/sim/benchmark.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/c4.json	13721	duplicate: already released as results/test_v1/benchmarks/sim/c4.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/expected_ids.txt	548266	duplicate: already released as results/test_v1/benchmarks/sim/expected_ids.txt
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/ids_subsample40.txt	185270	duplicate: already released as results/test_v1/benchmarks/sim/ids_subsample40.txt
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/manifest.json	10579	duplicate: already released as results/test_v1/benchmarks/sim/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/operating_points.json	1563	duplicate: already released as results/test_v1/benchmarks/sim/operating_points.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/subsample_8685f328/benchmark.json	720805	duplicate: already released as results/test_v1/benchmarks/sim/subsample_8685f328/benchmark.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/subsample_8685f328/c4.json	17442	duplicate: already released as results/test_v1/benchmarks/sim/subsample_8685f328/c4.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/subsample_8685f328/expected_ids.txt	185270	duplicate: already released as results/test_v1/benchmarks/sim/ids_subsample40.txt
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/subsample_8685f328/operating_points.json	1875	duplicate: already released as results/test_v1/benchmarks/sim/subsample_8685f328/operating_points.json
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/subsample_8685f328/summary.md	19701	duplicate: already released as results/test_v1/benchmarks/sim/subsample_8685f328/summary.md
+results/eval_test/test_frozen-v1_ab94c5a1/benchmarks/sim/summary.md	16914	duplicate: already released as results/test_v1/benchmarks/sim/summary.md
+results/eval_test/test_frozen-v1_ab94c5a1/bundle.json	49336	duplicate: already released as results/test_v1/bundle.json
+results/eval_test/test_frozen-v1_ab94c5a1/claims.json	346	duplicate: already released as results/test_v1/claims.json
+results/eval_test/test_frozen-v1_ab94c5a1/descriptive.json	9707	duplicate: already released as results/test_v1/descriptive.json
+results/eval_test/test_frozen-v1_ab94c5a1/operating_points_used.json	1869	duplicate: already released as results/test_v1/operating_points_used.json
+results/eval_test/test_frozen-v1_ab94c5a1/real_arms.json	2837	duplicate: already released as results/test_v1/real_arms.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/.machine.lock	0	empty harness lock file
+results/eval_test/test_frozen-v1_ab94c5a1/runs/LEDGER.tsv	22173	duplicate: already released as results/test_v1/runs/LEDGER.tsv
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R2/manifest.json	3967	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R2/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R2/predictions.parquet	512125	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R2/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R3b/manifest.json	3970	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R3b/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R3b/predictions.parquet	744469	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R3b/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample/manifest.json	4029	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample/predictions.parquet	373738	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference/manifest.json	4030	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference/predictions.parquet	374064	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/manifest.json	4262	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/metrics.json	57074	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/predictions.parquet	6285616	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted/manifest.json	4279	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted/metrics.json	16026	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted/predictions.parquet	912698	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main/manifest.json	4200	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main/metrics.json	30854	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main/predictions.parquet	1062907	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted/manifest.json	4216	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted/metrics.json	10429	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted/predictions.parquet	134703	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R2/manifest.json	3952	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R2/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R2/predictions.parquet	765986	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R2/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R3b/manifest.json	3953	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R3b/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R3b/predictions.parquet	1034804	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R3b/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample/manifest.json	4006	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample/predictions.parquet	312306	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_reference/manifest.json	4005	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_reference/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_reference/predictions.parquet	911905	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_reference/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/manifest.json	4453	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/metrics.json	57467	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/predictions.parquet	11593721	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted/manifest.json	4259	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted/metrics.json	16343	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted/predictions.parquet	787990	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2/manifest.json	3968	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2/predictions.parquet	419284	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b/manifest.json	3971	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b/predictions.parquet	644467	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_insample/manifest.json	4028	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_insample/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_insample/predictions.parquet	310066	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_insample/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_reference/manifest.json	4022	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_reference/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_reference/predictions.parquet	332149	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R4b_reference/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/manifest.json	4259	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/metrics.json	57353	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/predictions.parquet	6333138	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted/manifest.json	4286	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted/metrics.json	16212	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted/predictions.parquet	741656	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main/manifest.json	4408	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main/metrics.json	50495	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main/predictions.parquet	513972	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted/manifest.json	4218	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted/metrics.json	14809	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted/predictions.parquet	52561	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main/manifest.json	4229	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main/metrics.json	50028	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main/predictions.parquet	403024	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted/manifest.json	4250	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted/metrics.json	14817	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted/predictions.parquet	43338	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main/manifest.json	4329	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main/metrics.json	44877	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main/predictions.parquet	4201124	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted/manifest.json	4345	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted/metrics.json	14431	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted/predictions.parquet	596218	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main/manifest.json	4255	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main/metrics.json	45122	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main/predictions.parquet	1778040	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted/manifest.json	4276	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted/metrics.json	14567	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted/predictions.parquet	259598	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main/manifest.json	4153	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main/metrics.json	30616	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main/predictions.parquet	983694	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted/manifest.json	4177	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted/metrics.json	10348	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted/predictions.parquet	140916	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__lead_snp__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main/manifest.json	4170	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main/metrics.json	31112	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main/predictions.parquet	2026750	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted/manifest.json	4197	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted/metrics.json	10434	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted/predictions.parquet	273113	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R2/manifest.json	3911	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R2/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R2/predictions.parquet	244353	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R2/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R3b/manifest.json	3917	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R3b/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R3b/predictions.parquet	450455	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R3b/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_insample/manifest.json	3975	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_insample/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_insample/predictions.parquet	201542	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_insample/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference/manifest.json	3976	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference/predictions.parquet	207936	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main/manifest.json	4418	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main/metrics.json	51454	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main/predictions.parquet	3042424	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted/manifest.json	4222	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted/metrics.json	15180	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted/predictions.parquet	480337	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__sharepro__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R2/manifest.json	4079	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R2/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R2/predictions.parquet	56170	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R2/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R3b/manifest.json	4091	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R3b/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R3b/predictions.parquet	65602	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R3b/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample/manifest.json	4141	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample/predictions.parquet	41484	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_insample/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_reference/manifest.json	4138	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_reference/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_reference/predictions.parquet	41378	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__real_R4b_reference/predictions.parquet (stripped)
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main/manifest.json	4366	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main/metrics.json	57130	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main/predictions.parquet	723174	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_main/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted/manifest.json	4393	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted/manifest.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted/metrics.json	15838	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted/metrics.json
+results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted/predictions.parquet	101755	duplicate: already released as results/test_v1/runs/test_frozen-v1_ab94c5a1__strength_only__sim_shifted/predictions.parquet
+results/eval_test/test_frozen-v1_ab94c5a1/runtime.json	22982	duplicate: already released as results/test_v1/runtime.json
+results/eval_test_dry/dry_mvr1/runs/.machine.lock	0	empty harness lock file
+results/eval_test_dry/dry_p9_v2/runs/.machine.lock	0	empty harness lock file
+results/eval_test_dry/dry_v4/runs/.machine.lock	0	empty harness lock file
+results/famA/runs/.machine.lock	0	empty harness lock file
+results/famA/runs/20261027T111509Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_8d09a3/.gitignore	93	harness .gitignore of a run folder (would hide its predictions from git)
+results/famB/p9_m4_eval/m4_Bmm_v2.json	6300	duplicate: already released as results/phase2_validation/famB_mm_M4/m4_Bmm_v2.json
+results/famB/p9_m4_valid/B1_M50/predictions.parquet	4380613	duplicate: already released as results/phase2_validation/famB_M4/predictions.parquet
+results/famB/p9_m4_valid/B1_M50/runs.json	19706	duplicate: already released as results/phase2_validation/famB_M4/runs.json
+results/famB/p9_m4_valid/Bmm_M50/predictions.parquet	7561644	duplicate: already released as results/phase2_validation/famB_mm_M4/predictions.parquet
+results/famB/p9_m4_valid/Bmm_M50/runs.json	19992	duplicate: already released as results/phase2_validation/famB_mm_M4/runs.json
+results/famC/c2_v1/c2.json	17806	duplicate: already released as results/phase2_validation/famC_C2/c2.json
+results/famC/c2_v1/floor_m4/predictions.parquet	1256319	duplicate: already released as results/phase2_validation/famC_C2/floor_m4/predictions.parquet
+results/famC/c2_v1/floor_m4/runs.json	964	duplicate: already released as results/phase2_validation/famC_C2/floor_m4/runs.json
+results/famC/c2_v1/net_m4/predictions.parquet	1377018	duplicate: already released as results/phase2_validation/famC_C2/net_m4/predictions.parquet
+results/famC/c2_v1/net_m4/runs.json	981	duplicate: already released as results/phase2_validation/famC_C2/net_m4/runs.json
+results/famC/c2_v1/net_trainregion/predictions.parquet	1280475	duplicate: already released as results/phase2_validation/famC_C2/net_trainregion/predictions.parquet
+results/famC/c2_v1/net_trainregion/runs.json	957	duplicate: already released as results/phase2_validation/famC_C2/net_trainregion/runs.json
+results/famC/c2_v1/nold_m4/predictions.parquet	1375485	duplicate: already released as results/phase2_validation/famC_C2/nold_m4/predictions.parquet
+results/famC/c2_v1/nold_m4/runs.json	998	duplicate: already released as results/phase2_validation/famC_C2/nold_m4/runs.json
+results/famC/p9_floor_600k/config.json	1047	duplicate: already released as results/models/famC/p9_floor_600k/config.json
+results/famC/p9_floor_600k/metrics.json	3102	duplicate: already released as results/models/famC/p9_floor_600k/metrics.json
+results/famC/p9_floor_600k/model.txt	13469397	duplicate: already released as results/models/famC/p9_floor_600k/model.txt
+results/famC/p9_main_600k/config.json	7098	duplicate: already released as results/models/famC/p9_main_600k/config.json
+results/famC/p9_main_600k/curve.json	36308	duplicate: already released as results/models/famC/p9_main_600k/curve.json
+results/famC/p9_main_600k/metrics.json	4123	duplicate: already released as results/models/famC/p9_main_600k/metrics.json
+results/famC/p9_main_600k/model.pt	4178212	duplicate: already released as results/models/famC/p9_main_600k/model.pt
+results/famC/p9_nold_600k/config.json	7098	duplicate: already released as results/models/famC/p9_nold_600k/config.json
+results/famC/p9_nold_600k/curve.json	36275	duplicate: already released as results/models/famC/p9_nold_600k/curve.json
+results/famC/p9_nold_600k/metrics.json	4125	duplicate: already released as results/models/famC/p9_nold_600k/metrics.json
+results/famC/p9_nold_600k/model.pt	4176568	duplicate: already released as results/models/famC/p9_nold_600k/model.pt
+results/famG_mm/timing_diag_v1/.machine.lock	0	empty harness lock file
+results/famG_mm/timing_diag_v1/.timing.lock	0	empty harness lock file
+results/famG_mm/timing_dry_v1/.machine.lock	0	empty harness lock file
+results/famG_mm/timing_dry_v1/.timing.lock	0	empty harness lock file
+results/famG_mm/timing_v1/.machine.lock	0	empty harness lock file
+results/famG_mm/timing_v1/.timing.lock	0	empty harness lock file
+results/test_access.log	1240	duplicate: already released as results/test_v1/test_access.log

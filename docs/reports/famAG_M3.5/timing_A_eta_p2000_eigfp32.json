@@ -1,0 +1,33 @@
+{
+ "loadavg_start": [
+  26.634765625,
+  28.890625,
+  32.53173828125
+ ],
+ "gpu_util_start": "0 %, 13435 MiB",
+ "eta": true,
+ "cfg": "JointConfig(L=10, pi=(0.25, 0.25, 0.25, 0.25), pi_mode='eb', pi_prior_strength=4.0, prior='optim', sigma2_init=(50.0, 50.0), U_fixed=None, rho_u=0.0, estimate_eta=True, eta_init=0.0, eta_bounds=(1e-08, 0.95), eig_dtype=torch.float32, eig_chunk=4, eig_rel_tol=1e-10, eig_rel_tol_fp32=1e-06, eta_min_fp32=0.001, ref_var=False, ref_var_table='/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famA/ref_ld_var_v1.json', ref_var_topk=32, z_adjust=True, rho_clip=0.95, check_null_threshold=0.0, prior_tol=1e-09, max_iter=100, tol=0.001, tol_alpha=0.0001, convergence='susie014', default_types=('gwas', 'mol'), tau=None, weak=None, power_marginal=True, nonweak_own=True, bvn_gather_tol=1e-13, coverage=0.95, min_abs_corr=0.5, powered_cs_min=0.5, ld_dtype=torch.float32, mem_budget_bytes=6000000000.0, bucket_ratio=1.1, max_batch=4096, compact_fraction=0.5, refill_fraction=0.25, return_details=True, use_triton=True, eb_fast_exp=False)",
+ "runs": [
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_d2000",
+   "p": 2000,
+   "ld_kind": "dense",
+   "n_loci": 256,
+   "replicate": 4,
+   "rep": 0,
+   "t_io": 3.1723194122314453,
+   "t_fit": 18.481780767440796,
+   "loci_per_s_fit": 13.851479098323313,
+   "loci_per_s_with_io": 11.822241417369986,
+   "median_niter": 7.0,
+   "max_niter": 36,
+   "gpu_util": "96 %, 18746 MiB",
+   "loadavg": 25.6875
+  }
+ ],
+ "loadavg_end": [
+  25.6875,
+  28.46923828125,
+  32.2939453125
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "split_overlap": {
+  "m4_anchor_blocks": 80,
+  "m4_touched_blocks": 83,
+  "m4_touched_split_counts": {
+   "valid": 83
+  },
+  "m4_truth_split_col": {
+   "valid": 12170
+  },
+  "train_window_blocks": 773,
+  "train_window_split_counts": {
+   "train": 773
+  },
+  "overlap_blocks": [],
+  "m4_windows_overlapping_train_window_bp": 0
+ },
+ "cue_auprc_realistic": {
+  "N1": 0.5166215434469449,
+  "N2": 0.502188749840039,
+  "N_s": 0.502188749840039,
+  "p": 0.5149781321912181,
+  "rho_hat": 0.5056814409462673,
+  "rho_se": 0.5038172543883142,
+  "lead_abs_z1": 0.516844819693619,
+  "lead_abs_z2": 0.5227758959377676,
+  "n_ref": 0.5061982959970186,
+  "type_pair": 0.49974238084121747,
+  "_random_baseline": 0.4993461696016278
+ },
+ "ldfree_abs_z_corr_auprc_realistic": 0.6085700451650701,
+ "ldfree_n_nan": 0,
+ "ldfree_by_level": {
+  "L1": 0.6254148234598486,
+  "L2": 0.6196255865939557,
+  "L3": 0.5941961347525575,
+  "L4": 0.6147515622194042,
+  "L6": 0.5964812817048457
+ },
+ "floor_gain_share_top12": {
+  "susie_fallback": 0.1915,
+  "PP3": 0.1606,
+  "susie_PP4": 0.0955,
+  "lead_z1": 0.076,
+  "PP4": 0.0756,
+  "lead_z2": 0.066,
+  "z1_at_lead2": 0.0464,
+  "r12_sq": 0.0292,
+  "logPP4_PP3": 0.0286,
+  "z2_at_lead1": 0.0255,
+  "zc2_at_lead1": 0.0244,
+  "zc1_at_lead2": 0.022
+ },
+ "floor_gain_share_meta_feats": 0.04302789856237489
+}

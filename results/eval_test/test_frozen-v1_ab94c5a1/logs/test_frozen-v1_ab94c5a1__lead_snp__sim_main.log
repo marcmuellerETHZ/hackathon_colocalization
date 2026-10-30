@@ -1,0 +1,10 @@
+00:27:06 [harness] run test_frozen-v1_ab94c5a1__lead_snp__sim_main: 11607 loci (11607 to run), mode=cpu, workers=2
+00:28:06 [harness] lead_snp: 809/11607 loci done
+00:29:08 [harness] lead_snp: 2004/11607 loci done
+00:30:08 [harness] lead_snp: 3072/11607 loci done
+00:31:08 [harness] lead_snp: 4563/11607 loci done
+00:32:08 [harness] lead_snp: 6232/11607 loci done
+00:33:08 [harness] lead_snp: 7967/11607 loci done
+00:34:08 [harness] lead_snp: 8803/11607 loci done
+00:35:08 [harness] lead_snp: 10578/11607 loci done
+00:36:06 [harness] done test_frozen-v1_ab94c5a1__lead_snp__sim_main: {'ok': 11607, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 11607} in 513.3s

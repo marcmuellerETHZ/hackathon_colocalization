@@ -1,0 +1,63 @@
+[orch] job famA_p3fix_tests_r3 start 2026-10-27T10:49:51+01:00 host eu-g6-001 commit 9daa45a616 pid 946660
+[orch] cmd: set -o pipefail; R_PROFILE_USER=/dev/null python -m pytest tests/famA tests/famG -q -p no:cacheprovider --basetemp=/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r3/out/pytest 2>&1 | tail -60
+
+tests/famA/conftest.py:18: Failed
+____________________ ERROR at setup of test_bf_bf_matches_r ____________________
+
+    @pytest.fixture(scope="session")
+    def has_r():
+        if not RSCRIPT.exists():
+            if os.environ.get("ORCH_JOB_ID"):       # inside an orch job the identity gates must run (review p2)
+>               pytest.fail(f"R not available at {RSCRIPT} inside orch job {os.environ['ORCH_JOB_ID']}")
+E               Failed: R not available at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r3/code/env/renv/bin/Rscript inside orch job famA_p3fix_tests_r3
+
+tests/famG/conftest.py:18: Failed
+__________________ ERROR at setup of test_coloc_abf_matches_r __________________
+
+    @pytest.fixture(scope="session")
+    def has_r():
+        if not RSCRIPT.exists():
+            if os.environ.get("ORCH_JOB_ID"):       # inside an orch job the identity gates must run (review p2)
+>               pytest.fail(f"R not available at {RSCRIPT} inside orch job {os.environ['ORCH_JOB_ID']}")
+E               Failed: R not available at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r3/code/env/renv/bin/Rscript inside orch job famA_p3fix_tests_r3
+
+tests/famG/conftest.py:18: Failed
+____________ ERROR at setup of test_identity_vs_susieR_0142[dtype0] ____________
+
+    @pytest.fixture(scope="session")
+    def has_r():
+        if not RSCRIPT.exists():
+            if os.environ.get("ORCH_JOB_ID"):       # inside an orch job the identity gates must run (review p2)
+>               pytest.fail(f"R not available at {RSCRIPT} inside orch job {os.environ['ORCH_JOB_ID']}")
+E               Failed: R not available at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r3/code/env/renv/bin/Rscript inside orch job famA_p3fix_tests_r3
+
+tests/famG/conftest.py:18: Failed
+____________ ERROR at setup of test_identity_vs_susieR_0142[dtype1] ____________
+
+    @pytest.fixture(scope="session")
+    def has_r():
+        if not RSCRIPT.exists():
+            if os.environ.get("ORCH_JOB_ID"):       # inside an orch job the identity gates must run (review p2)
+>               pytest.fail(f"R not available at {RSCRIPT} inside orch job {os.environ['ORCH_JOB_ID']}")
+E               Failed: R not available at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r3/code/env/renv/bin/Rscript inside orch job famA_p3fix_tests_r3
+
+tests/famG/conftest.py:18: Failed
+_______________ ERROR at setup of test_brent_matches_r_optimize ________________
+
+    @pytest.fixture(scope="session")
+    def has_r():
+        if not RSCRIPT.exists():
+            if os.environ.get("ORCH_JOB_ID"):       # inside an orch job the identity gates must run (review p2)
+>               pytest.fail(f"R not available at {RSCRIPT} inside orch job {os.environ['ORCH_JOB_ID']}")
+E               Failed: R not available at /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p3fix_tests_r3/code/env/renv/bin/Rscript inside orch job famA_p3fix_tests_r3
+
+tests/famG/conftest.py:18: Failed
+=========================== short test summary info ============================
+ERROR tests/famA/test_joint_susie.py::test_identity_vs_mvsusie - Failed: R no...
+ERROR tests/famG/test_coloc.py::test_bf_bf_matches_r - Failed: R not availabl...
+ERROR tests/famG/test_coloc.py::test_coloc_abf_matches_r - Failed: R not avai...
+ERROR tests/famG/test_susie_rss.py::test_identity_vs_susieR_0142[dtype0] - Fa...
+ERROR tests/famG/test_susie_rss.py::test_identity_vs_susieR_0142[dtype1] - Fa...
+ERROR tests/famG/test_susie_rss.py::test_brent_matches_r_optimize - Failed: R...
+42 passed, 6 errors in 256.15s (0:04:16)
+[orch] exit 1 at 2026-10-27T10:54:09+01:00

@@ -1,0 +1,9 @@
+[orch] job famC_p9_bench_gpu1 start 2026-10-28T09:37:55+01:00 host eu-g6-001 commit ad2f50972a pid 2097148
+[orch] cmd: t0=$(date +%s); python -m famC.gen_shards --set bench --split train --n-loci 1024 --worker 0 --n-workers 1 --step-offset 60000000 --lpw 128 --n-noise 2 --device cuda --shard-size 256 --out-dir $ORCH_OUT/gpu; t1=$(date +%s); echo WALL $((t1-t0)) s for 1024 loci
+[w0] shard 1 loci 256 27.4 loci/s stats {'windows': 1, 'loci': 128, 'none': 0, 't_window': 2.157816171646118, 't_loci': 7.050371408462524, 'rejected': 0}
+[w0] shard 2 loci 512 33.4 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 3.129439115524292, 't_loci': 11.95788049697876, 'rejected': 0}
+[w0] shard 3 loci 768 34.3 loci/s stats {'windows': 3, 'loci': 384, 'none': 0, 't_window': 3.5194091796875, 't_loci': 18.57493305206299, 'rejected': 0}
+[w0] shard 4 loci 1024 36.3 loci/s stats {'windows': 4, 'loci': 512, 'none': 0, 't_window': 4.315550088882446, 't_loci': 23.51793122291565, 'rejected': 0}
+DONE 1024 {"windows": 4, "loci": 512, "none": 0, "t_window": 4.315550088882446, "t_loci": 23.51793122291565, "rejected": 0}
+WALL 63 s for 1024 loci
+[orch] exit 0 at 2026-10-28T09:38:58+01:00

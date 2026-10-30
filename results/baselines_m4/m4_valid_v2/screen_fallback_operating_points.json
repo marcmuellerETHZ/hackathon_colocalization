@@ -1,0 +1,73 @@
+{
+ "label": "P3-27 fallback: screen_v2-derived (baselines_screen_v2@1)",
+ "methods": {
+  "coloc_susie": {
+   "cells": 6,
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "n_loci": 12000,
+   "rate_D_on_W": 0.025,
+   "rate_S_on_W": 0.025000000000000012,
+   "recal_a_D": 0.27169713827863556,
+   "recal_a_S": -1.8012098424201033,
+   "setting": "realistic",
+   "status": {
+    "failed": 51,
+    "nonconverged": 3288,
+    "ok": 8657,
+    "timeout": 4
+   },
+   "t_D": 0.844220822891119,
+   "t_S": 0.8616268145520847
+  },
+  "coloc_susie_mm": {
+   "cells": 6,
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "n_loci": 12000,
+   "rate_D_on_W": 0.025,
+   "rate_S_on_W": 0.024666666666666667,
+   "recal_a_D": 0.047819203830938385,
+   "recal_a_S": -1.0278543592233402,
+   "setting": "realistic",
+   "status": {
+    "nonconverged": 1912,
+    "ok": 10070,
+    "timeout": 18
+   },
+   "t_D": 0.6920740371206827,
+   "t_S": 0.8198729398321837
+  },
+  "mvsusie": {
+   "cells": 6,
+   "class_counts": {
+    "D": 1500,
+    "S": 750,
+    "W": 750
+   },
+   "n_loci": 3000,
+   "rate_D_on_W": 0.0,
+   "rate_S_on_W": 0.0,
+   "recal_a_D": 332999.6669980676,
+   "recal_a_S": -347000.15299419576,
+   "setting": "realistic",
+   "status": {
+    "failed": 1,
+    "nonconverged": 364,
+    "ok": 2635
+   },
+   "t_D": 5e-324,
+   "t_S": 1.0000000000000002
+  }
+ },
+ "pred_files": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/collected_v1/predictions.parquet"
+ ],
+ "set": "data/processed/sets/screen_v2.h5"
+}

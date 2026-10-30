@@ -1,0 +1,23 @@
+[orch] job famG_mm_timing_dry_v1 start 2026-10-28T15:14:38+01:00 host eu-g6-001 commit 73e867883f pid 2443110
+[orch] cmd: set -euo pipefail; export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH; O=results/famG_mm/timing_dry_v1; mkdir -p $O; python -c "ids=open(\"results/famG_mm/slice2000_v1/ids.txt\").read().split(); open(\"$O/ids60.txt\",\"w\").write(\"\\n\".join(ids[::33][:60])+\"\\n\")"; python -m famG.validation.timing_mm run --ids $O/ids60.txt --plan gmm:1,mm:1,cs:1 --out $O --overrides "{\"gmm\": {\"n_workers\": 1, \"batch_size\": 2000, \"kwargs\": {\"streams\": 3, \"mem_budget_gb\": 1.5}}, \"mm\": {\"n_workers\": 8}, \"cs\": {\"n_workers\": 8}}" 2>&1 | grep -v "^\[harness\]" | tail -20
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+{"method": "mm", "target": "baselines.methods:ColocSusieMM", "kwargs": {}, "mode": "cpu", "n_workers": 8, "batch_size": 1, "rep": 0, "n_loci": 60, "harness_wall_s": 121.0809161879879, "driver_wall_s": 142.67731857299805, "loci_per_hour": 1783.9310008576626, "counts": {"expected": 60, "failed": 0, "nonconverged": 7, "ok": 53, "timeout": 0}, "run_dir": "results/famG_mm/timing_dry_v1/20261028T141806Z_coloc_susie_mm_valid_grid_v1_77afc0", "machine_state": null}
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_dry_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+{"method": "cs", "target": "baselines.methods:ColocSusie", "kwargs": {}, "mode": "cpu", "n_workers": 8, "batch_size": 1, "rep": 0, "n_loci": 60, "harness_wall_s": 146.13579032299458, "driver_wall_s": 167.33128213882446, "loci_per_hour": 1478.0773383617322, "counts": {"expected": 60, "failed": 0, "nonconverged": 16, "ok": 44, "timeout": 0}, "run_dir": "results/famG_mm/timing_dry_v1/20261028T142029Z_coloc_susie_valid_grid_v1_f234ce", "machine_state": null}
+[orch] exit 0 at 2026-10-28T15:22:58+01:00

@@ -1,0 +1,71 @@
+{
+ "benchmark": {
+  "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/benchmarks/sim",
+  "evaluate_wall_s": 142.02355885505676,
+  "not_run": [],
+  "parts": {
+   "main": {
+    "benchmark_sha256": "df8eabaeba3511169e52494210a57afe894c1bfe3dcf991e2439d33c263d7bdd",
+    "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/benchmarks/sim",
+    "methods": [
+     "coloc_abf",
+     "coloc_prop_test",
+     "coloc_susie",
+     "coloc_susie_mm",
+     "famA_joint_susie_rho_ms_ptld",
+     "famB_exactcoloc_gaussian_M50",
+     "lead_snp",
+     "prop_coloc",
+     "sharepro",
+     "strength_only"
+    ],
+    "n_loci": 566
+   },
+   "subsample_9a475bf8": {
+    "benchmark_sha256": "0946a79656871fd53beb63affe769a3a23ca3585500f4f12e75817498ddbc867",
+    "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/benchmarks/sim/subsample_9a475bf8",
+    "methods": [
+     "coloc_abf",
+     "coloc_prop_test",
+     "coloc_susie",
+     "coloc_susie_mm",
+     "colocboost",
+     "colocboost_m1",
+     "famA_joint_susie_rho_ms_ptld",
+     "famB_exactcoloc_gaussian_M50",
+     "lead_snp",
+     "prop_coloc",
+     "sharepro",
+     "strength_only"
+    ],
+    "n_loci": 219
+   },
+   "subsample_c5b9c96f": {
+    "benchmark_sha256": "881aef3e65768cda63731a7547b68b1177d179dc66cc781709782b29d790b72a",
+    "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/benchmarks/sim/subsample_c5b9c96f",
+    "methods": [
+     "coloc_abf",
+     "coloc_prop_test",
+     "coloc_susie",
+     "coloc_susie_mm",
+     "colocboost",
+     "colocboost_m1",
+     "famA_joint_susie_rho_ms_ptld",
+     "famB_exactcoloc_gaussian_M50",
+     "lead_snp",
+     "mvsusie",
+     "prop_coloc",
+     "sharepro",
+     "strength_only"
+    ],
+    "n_loci": 111
+   }
+  }
+ },
+ "done_utc": "2026-10-27T19:26:28Z",
+ "operating_points": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/DRY_operating_points_in_sample.json",
+ "operating_points_source": "DRY placeholders fitted in-sample on the dry-run set (not validation values)",
+ "real_arms": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/real_arms.json",
+ "runtime": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runtime.json",
+ "strength_table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/DRY_strength_table_in_sample.json"
+}

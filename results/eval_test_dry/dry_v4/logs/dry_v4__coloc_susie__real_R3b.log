@@ -1,0 +1,3 @@
+19:11:33 [harness] run dry_v4__coloc_susie__real_R3b: 50 loci (50 to run), mode=cpu, workers=5
+19:12:34 [harness] coloc_susie: 33/50 loci done
+19:12:51 [harness] done dry_v4__coloc_susie__real_R3b: {'ok': 44, 'nonconverged': 6, 'failed': 0, 'timeout': 0, 'expected': 50} in 78.2s

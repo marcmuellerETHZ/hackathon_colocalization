@@ -1,0 +1,28 @@
+[orch] job famC_p9_tests_r1 start 2026-10-28T10:00:23+01:00 host eu-g6-001 commit 001d9be69e pid 2143380
+[orch] cmd: python -m pytest -q tests/famC tests/eval/test_truth_isolation.py 2>&1 | tail -n 25
+E       Mismatch at index:
+E        [36, 21]: 0.02072859587866763 (ACTUAL), 0.020729940356898027 (DESIRED)
+E       Max absolute difference among violations: 1.34447823e-06
+E       Max relative difference among violations: 6.48568306e-05
+E        ACTUAL: array([[ 3.164745,  9.973868,  6.604657, ...,  0.143236,  0.098023,
+E                0.080842],
+E              [ 3.962613, 11.389295,  0.903499, ...,  0.143209,  0.103511,...
+E        DESIRED: array([[ 3.164745,  9.973868,  6.604657, ...,  0.143236,  0.098023,
+E                0.080842],
+E              [ 3.962613, 11.389295,  0.903499, ...,  0.143209,  0.103511,...
+
+tests/famC/test_floor_p9.py:33: AssertionError
+_____________________ test_method_code_never_touches_truth _____________________
+
+    def test_method_code_never_touches_truth():
+        bad = {str(f.relative_to(ROOT)): v for f in method_files() if (v := violations(f))}
+>       assert not bad, f"method code references truth files: {bad}"
+E       AssertionError: method code references truth files: {'src/famA/validation/killtest_a1.py': ['from eval.truth import ...', 'read_truth', "string 'data/processed/sets/screen_v2.truth.parquet'"]}
+E       assert not {'src/famA/validation/killtest_a1.py': ['from eval.truth import ...', 'read_truth', "string 'data/processed/sets/screen_v2.truth.parquet'"]}
+
+tests/eval/test_truth_isolation.py:46: AssertionError
+=========================== short test summary info ============================
+FAILED tests/famC/test_floor_p9.py::test_features_cpu_equals_gpu - AssertionE...
+FAILED tests/eval/test_truth_isolation.py::test_method_code_never_touches_truth
+2 failed, 26 passed in 103.55s (0:01:43)
+[orch] exit 0 at 2026-10-28T10:02:08+01:00

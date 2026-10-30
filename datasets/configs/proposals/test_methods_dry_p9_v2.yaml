@@ -1,0 +1,32 @@
+# DRY-RUN methods file for the test set v2 path (task p9.testset_v2; DESIGN_P2 §6): exercises
+# `scripts/eval_test.py --testset configs/testset_v2.yaml --dry-run-valid` on VALIDATION blocks only, small scale.
+# NOT the v2 methods file (configs/test_methods_v2.yaml is the PI's). Method entries copied from
+# configs/proposals/test_methods_dry_v2_mvr.yaml (pilot timeouts / memory models); one slow-subsample method
+# (colocboost_m1) keeps the slow-method subsample path covered. metric_config empty: DRY placeholder operating points.
+version: 1
+status: dry
+design_ref: "DESIGN_P2.md §6; DESIGN.md v4 §7.3, §8"
+
+candidates:
+  primary: null
+  decision: "p9.testset_v2 dry run (no candidate; plumbing only)"
+  secondary: []
+c3_eligible_baselines: [coloc_abf, coloc_susie_mm, colocboost_m1]
+
+real_data_arms:
+  R2:  {n: 800}
+  R3b: {n: 1237}
+  R4b: {n: 600, ld_conditions: [in_sample, reference]}
+  methods: [coloc_abf, coloc_susie_mm, strength_only]
+
+methods:
+  - {name: coloc_abf, target: "baselines.methods:ColocABF", kwargs: {timeout: 54}, mode: cpu, n_workers: 4,
+     timeout_s: 60, mem_gb_per_worker: 0.7, expected_s_per_locus: 0.155}
+  - {name: lead_snp, target: "eval.reference_methods:LeadSNPRule", kwargs: {}, mode: cpu, n_workers: 2,
+     timeout_s: 60, mem_gb_per_worker: 0.7, expected_s_per_locus: 0.139}
+  - {name: coloc_susie_mm, target: "baselines.methods:ColocSusieMM", kwargs: {timeout: 216}, mode: cpu,
+     n_workers: 8, timeout_s: 240, mem_gb_per_worker: 3.6, expected_s_per_locus: 16.1}
+  - {name: colocboost_m1, target: "baselines.methods:ColocBoostM1", kwargs: {timeout: 54}, mode: cpu, n_workers: 4,
+     timeout_s: 60, mem_gb_per_worker: 1.7, expected_s_per_locus: 0.42, subsample: slow_method_subsample}
+  - {name: strength_only, target: "eval.reference_methods:StrengthOnly", kwargs: {table: DRY}, mode: cpu,
+     n_workers: 2, timeout_s: 60, mem_gb_per_worker: 0.5, expected_s_per_locus: 0.05}

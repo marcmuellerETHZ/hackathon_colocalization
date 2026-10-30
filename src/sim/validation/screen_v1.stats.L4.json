@@ -1,0 +1,67 @@
+{
+ "set": "screen_v1",
+ "seed": 20261027,
+ "split": "valid",
+ "K": 200,
+ "M": 3,
+ "per_bucket": 500,
+ "windows_available": 3769,
+ "visits": 292,
+ "skipped_small_windows": 0,
+ "runtime_s": 1666.332291841507,
+ "world_version": "sim_v1",
+ "cells": {
+  "L4|P1|r_p=0.0": {
+   "filled": {
+    "W": 500,
+    "S": 500,
+    "D_r2lt0.5": 500,
+    "D_r2_0.5-0.8": 500
+   },
+   "n_candidates": 58400,
+   "n_none": 0,
+   "candidate_class_counts": {
+    "W": 42683,
+    "G": 7659,
+    "S": 3545,
+    "D": 4435,
+    "U": 78
+   },
+   "candidate_bucket_counts": {
+    "W": 42683,
+    "S": 3545,
+    "D_r2lt0.5": 3575,
+    "D_r2_0.5-0.8": 551
+   },
+   "t_candidates_s": 862.6986830234528,
+   "t_finalize_write_s": 50.074609994888306,
+   "complete": true
+  },
+  "L4|P3|rho=0.5": {
+   "filled": {
+    "W": 500,
+    "D_r2lt0.5": 500,
+    "D_r2_0.5-0.8": 500,
+    "S": 500
+   },
+   "n_candidates": 55800,
+   "n_none": 0,
+   "candidate_class_counts": {
+    "G": 7190,
+    "W": 39804,
+    "D": 5055,
+    "S": 3673,
+    "U": 78
+   },
+   "candidate_bucket_counts": {
+    "W": 39804,
+    "D_r2lt0.5": 4166,
+    "D_r2_0.5-0.8": 562,
+    "S": 3673
+   },
+   "t_candidates_s": 671.1415023803711,
+   "t_finalize_write_s": 46.627439737319946,
+   "complete": true
+  }
+ }
+}

@@ -1,0 +1,117 @@
+[eval_test 22:19:10] real-data arms ready: real_R2 n=8, real_R3b n=13, real_R4b_insample n=6, real_R4b_reference n=6
+[eval_test 22:19:10] status: running []; pending []
+[eval_test 22:19:10] generating main grid: 34/34 cells to do (segment 0)
+[eval_test 22:19:12] start dry_mvr1__coloc_susie__real_R3b: 13 loci, 6 workers (busy 8/11 cores, 22/24 GB; 15 pending)
+[eval_test 22:19:12] start dry_mvr1__coloc_abf__real_R3b: 13 loci, 3 workers (busy 11/11 cores, 24/24 GB; 14 pending)
+[eval_test 22:19:17] unit done dry_mvr1__coloc_abf__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 5s
+[eval_test 22:19:18] start dry_mvr1__coloc_abf__real_R2: 8 loci, 3 workers (busy 11/11 cores, 24/24 GB; 13 pending)
+[eval_test 22:19:23] unit done dry_mvr1__coloc_abf__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 5s
+[eval_test 22:19:24] start dry_mvr1__coloc_abf__real_R4b_insample: 6 loci, 3 workers (busy 11/11 cores, 24/24 GB; 12 pending)
+[eval_test 22:19:28] unit done dry_mvr1__coloc_abf__real_R4b_insample: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 3s
+[eval_test 22:19:28] start dry_mvr1__coloc_abf__real_R4b_reference: 6 loci, 3 workers (busy 11/11 cores, 24/24 GB; 11 pending)
+[eval_test 22:19:33] unit done dry_mvr1__coloc_abf__real_R4b_reference: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 4s
+[eval_test 22:19:44] unit done dry_mvr1__coloc_susie__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 31s
+[eval_test 22:19:44] start dry_mvr1__coloc_susie_mm__real_R3b: 13 loci, 6 workers (busy 8/11 cores, 22/24 GB; 10 pending)
+[eval_test 22:20:22] unit done dry_mvr1__coloc_susie_mm__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 38s
+[eval_test 22:20:24] start dry_mvr1__coloc_susie__real_R2: 8 loci, 6 workers (busy 8/11 cores, 22/24 GB; 9 pending)
+[eval_test 22:21:02] unit done dry_mvr1__coloc_susie__real_R2: {'ok': 7, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 8} in 37s
+[eval_test 22:21:02] start dry_mvr1__coloc_susie_mm__real_R2: 8 loci, 6 workers (busy 8/11 cores, 22/24 GB; 8 pending)
+[eval_test 22:21:31] main grid: 34 cells -> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_mvr_v1/code/data/processed/eval_test_dry/dry_mvr1/sets/dry_mvr1.h5 (140s)
+[eval_test 22:21:31] generating shifted arm
+[eval_test 22:21:36] unit done dry_mvr1__coloc_susie_mm__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 34s
+[eval_test 22:21:38] start dry_mvr1__sharepro__real_R3b: 13 loci, 8 workers (busy 10/11 cores, 9/24 GB; 7 pending)
+[eval_test 22:21:45] unit done dry_mvr1__sharepro__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 7s
+[eval_test 22:21:46] start dry_mvr1__coloc_susie__real_R4b_insample: 6 loci, 6 workers (busy 8/11 cores, 22/24 GB; 6 pending)
+[eval_test 22:21:49] shifted arm -> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_mvr_v1/code/data/processed/eval_test_dry/dry_mvr1/sets/dry_mvr1_shifted.h5 (18s)
+[eval_test 22:21:50] simulated sets ready: main n=147, shifted n=16
+[eval_test 22:21:50] start dry_mvr1__famG_coloc_susie_gpu__sim_main: 147 loci, GPU (busy 7/11 cores, 28/24 GB; 35 pending)
+[eval_test 22:21:59] unit done dry_mvr1__coloc_susie__real_R4b_insample: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 13s
+[eval_test 22:22:00] start dry_mvr1__mvsusie__sim_main: 102 loci, 5 workers (busy 6/11 cores, 24/24 GB; 34 pending)
+[eval_test 22:22:42] unit done dry_mvr1__famG_coloc_susie_gpu__sim_main: {'ok': 103, 'nonconverged': 42, 'failed': 2, 'timeout': 0, 'expected': 147} in 51s
+[eval_test 22:22:42] start dry_mvr1__sharepro__sim_main: 147 loci, 5 workers (busy 10/11 cores, 23/24 GB; 33 pending)
+[eval_test 22:22:42] start dry_mvr1__famB_exactcoloc_gaussian_M50__sim_main: 147 loci, GPU (busy 11/11 cores, 29/24 GB; 32 pending)
+[eval_test 22:23:11] unit done dry_mvr1__famB_exactcoloc_gaussian_M50__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 28s
+[eval_test 22:23:12] start dry_mvr1__famG_coloc_susie_gpu__sim_shifted: 16 loci, GPU (busy 11/11 cores, 29/24 GB; 31 pending)
+[eval_test 22:23:32] unit done dry_mvr1__famG_coloc_susie_gpu__sim_shifted: {'ok': 15, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 16} in 20s
+[eval_test 22:23:32] start dry_mvr1__famB_exactcoloc_gaussian_M50__sim_shifted: 16 loci, GPU (busy 11/11 cores, 29/24 GB; 30 pending)
+[eval_test 22:23:38] unit done dry_mvr1__sharepro__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 55s
+[eval_test 22:23:46] unit done dry_mvr1__famB_exactcoloc_gaussian_M50__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 13s
+[eval_test 22:23:46] start dry_mvr1__colocboost_m1__sim_main: 102 loci, 3 workers (busy 8/11 cores, 23/24 GB; 29 pending)
+[eval_test 22:23:46] start dry_mvr1__strength_only__sim_main: 147 loci, 2 workers (busy 10/11 cores, 24/24 GB; 28 pending)
+[eval_test 22:23:53] unit done dry_mvr1__strength_only__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 6s
+[eval_test 22:23:54] start dry_mvr1__strength_only__sim_shifted: 16 loci, 2 workers (busy 10/11 cores, 24/24 GB; 27 pending)
+[eval_test 22:23:58] unit done dry_mvr1__strength_only__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 4s
+[eval_test 22:24:00] start dry_mvr1__strength_only__real_R3b: 13 loci, 2 workers (busy 10/11 cores, 24/24 GB; 26 pending)
+[eval_test 22:24:02] unit done dry_mvr1__colocboost_m1__sim_main: {'ok': 102, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 102} in 15s
+[eval_test 22:24:02] start dry_mvr1__coloc_abf__sim_main: 147 loci, 4 workers (busy 11/11 cores, 21/24 GB; 25 pending)
+[eval_test 22:24:04] unit done dry_mvr1__strength_only__real_R3b: {'ok': 13, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 13} in 4s
+[eval_test 22:24:04] start dry_mvr1__lead_snp__sim_main: 147 loci, 2 workers (busy 11/11 cores, 22/24 GB; 24 pending)
+[eval_test 22:24:08] unit done dry_mvr1__coloc_abf__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 5s
+[eval_test 22:24:08] start dry_mvr1__sharepro__sim_shifted: 16 loci, 4 workers (busy 11/11 cores, 23/24 GB; 23 pending)
+[eval_test 22:24:10] unit done dry_mvr1__lead_snp__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 6s
+[eval_test 22:24:10] start dry_mvr1__coloc_abf__sim_shifted: 16 loci, 2 workers (busy 11/11 cores, 23/24 GB; 22 pending)
+[eval_test 22:24:14] unit done dry_mvr1__coloc_abf__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 4s
+[eval_test 22:24:14] start dry_mvr1__lead_snp__sim_shifted: 16 loci, 2 workers (busy 11/11 cores, 23/24 GB; 21 pending)
+[eval_test 22:24:18] unit done dry_mvr1__lead_snp__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 4s
+[eval_test 22:24:18] start dry_mvr1__strength_only__real_R2: 8 loci, 2 workers (busy 11/11 cores, 23/24 GB; 20 pending)
+[eval_test 22:24:22] unit done dry_mvr1__strength_only__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 4s
+[eval_test 22:24:22] start dry_mvr1__strength_only__real_R4b_insample: 6 loci, 2 workers (busy 11/11 cores, 23/24 GB; 19 pending)
+[eval_test 22:24:26] unit done dry_mvr1__strength_only__real_R4b_insample: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 4s
+[eval_test 22:24:27] unit done dry_mvr1__sharepro__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 19s
+[eval_test 22:24:28] start dry_mvr1__sharepro__real_R2: 8 loci, 5 workers (busy 10/11 cores, 23/24 GB; 18 pending)
+[eval_test 22:24:38] unit done dry_mvr1__sharepro__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 10s
+[eval_test 22:24:38] start dry_mvr1__sharepro__real_R4b_insample: 6 loci, 5 workers (busy 10/11 cores, 23/24 GB; 17 pending)
+[eval_test 22:24:44] unit done dry_mvr1__sharepro__real_R4b_insample: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 5s
+[eval_test 22:24:44] start dry_mvr1__sharepro__real_R4b_reference: 6 loci, 5 workers (busy 10/11 cores, 23/24 GB; 16 pending)
+[eval_test 22:24:50] unit done dry_mvr1__sharepro__real_R4b_reference: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 5s
+[eval_test 22:24:50] start dry_mvr1__colocboost_m1__sim_shifted: 4 loci, 3 workers (busy 8/11 cores, 23/24 GB; 15 pending)
+[eval_test 22:24:50] start dry_mvr1__strength_only__real_R4b_reference: 6 loci, 2 workers (busy 10/11 cores, 24/24 GB; 14 pending)
+[eval_test 22:24:54] unit done dry_mvr1__strength_only__real_R4b_reference: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 4s
+[eval_test 22:24:58] unit done dry_mvr1__colocboost_m1__sim_shifted: {'ok': 4, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 4} in 7s
+[eval_test 22:29:10] status: running ['dry_mvr1__mvsusie__sim_main']; pending ['dry_mvr1__coloc_susie__sim_main', 'dry_mvr1__colocboost__sim_main', 'dry_mvr1__coloc_susie_mm__sim_main', 'dry_mvr1__coloc_prop_test__sim_main', 'dry_mvr1__mvsusie__sim_shifted', 'dry_mvr1__prop_coloc__sim_main', 'dry_mvr1__coloc_susie__sim_shifted', 'dry_mvr1__coloc_susie_mm__sim_shifted', 'dry_mvr1__coloc_susie__real_R4b_reference', 'dry_mvr1__coloc_susie_mm__real_R4b_insample', 'dry_mvr1__coloc_susie_mm__real_R4b_reference', 'dry_mvr1__colocboost__sim_shifted', 'dry_mvr1__coloc_prop_test__sim_shifted', 'dry_mvr1__prop_coloc__sim_shifted']
+[eval_test 22:39:11] status: running ['dry_mvr1__mvsusie__sim_main']; pending ['dry_mvr1__coloc_susie__sim_main', 'dry_mvr1__colocboost__sim_main', 'dry_mvr1__coloc_susie_mm__sim_main', 'dry_mvr1__coloc_prop_test__sim_main', 'dry_mvr1__mvsusie__sim_shifted', 'dry_mvr1__prop_coloc__sim_main', 'dry_mvr1__coloc_susie__sim_shifted', 'dry_mvr1__coloc_susie_mm__sim_shifted', 'dry_mvr1__coloc_susie__real_R4b_reference', 'dry_mvr1__coloc_susie_mm__real_R4b_insample', 'dry_mvr1__coloc_susie_mm__real_R4b_reference', 'dry_mvr1__colocboost__sim_shifted', 'dry_mvr1__coloc_prop_test__sim_shifted', 'dry_mvr1__prop_coloc__sim_shifted']
+[eval_test 22:49:11] status: running ['dry_mvr1__mvsusie__sim_main']; pending ['dry_mvr1__coloc_susie__sim_main', 'dry_mvr1__colocboost__sim_main', 'dry_mvr1__coloc_susie_mm__sim_main', 'dry_mvr1__coloc_prop_test__sim_main', 'dry_mvr1__mvsusie__sim_shifted', 'dry_mvr1__prop_coloc__sim_main', 'dry_mvr1__coloc_susie__sim_shifted', 'dry_mvr1__coloc_susie_mm__sim_shifted', 'dry_mvr1__coloc_susie__real_R4b_reference', 'dry_mvr1__coloc_susie_mm__real_R4b_insample', 'dry_mvr1__coloc_susie_mm__real_R4b_reference', 'dry_mvr1__colocboost__sim_shifted', 'dry_mvr1__coloc_prop_test__sim_shifted', 'dry_mvr1__prop_coloc__sim_shifted']
+[eval_test 22:52:43] unit done dry_mvr1__mvsusie__sim_main: {'ok': 69, 'nonconverged': 33, 'failed': 0, 'timeout': 0, 'expected': 102} in 1842s
+[eval_test 22:52:43] start dry_mvr1__coloc_susie__sim_main: 147 loci, 6 workers (busy 6/11 cores, 22/24 GB; 13 pending)
+[eval_test 22:58:44] unit done dry_mvr1__coloc_susie__sim_main: {'ok': 102, 'nonconverged': 43, 'failed': 2, 'timeout': 0, 'expected': 147} in 362s
+[eval_test 22:58:45] start dry_mvr1__colocboost__sim_main: 102 loci, 8 workers (busy 8/11 cores, 16/24 GB; 12 pending)
+[eval_test 22:59:11] status: running ['dry_mvr1__colocboost__sim_main']; pending ['dry_mvr1__coloc_susie_mm__sim_main', 'dry_mvr1__coloc_prop_test__sim_main', 'dry_mvr1__mvsusie__sim_shifted', 'dry_mvr1__prop_coloc__sim_main', 'dry_mvr1__coloc_susie__sim_shifted', 'dry_mvr1__coloc_susie_mm__sim_shifted', 'dry_mvr1__coloc_susie__real_R4b_reference', 'dry_mvr1__coloc_susie_mm__real_R4b_insample', 'dry_mvr1__coloc_susie_mm__real_R4b_reference', 'dry_mvr1__colocboost__sim_shifted', 'dry_mvr1__coloc_prop_test__sim_shifted', 'dry_mvr1__prop_coloc__sim_shifted']
+[eval_test 23:00:02] unit done dry_mvr1__colocboost__sim_main: {'ok': 102, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 102} in 77s
+[eval_test 23:00:03] start dry_mvr1__coloc_susie_mm__sim_main: 147 loci, 6 workers (busy 6/11 cores, 22/24 GB; 11 pending)
+[eval_test 23:03:54] unit done dry_mvr1__coloc_susie_mm__sim_main: {'ok': 124, 'nonconverged': 23, 'failed': 0, 'timeout': 0, 'expected': 147} in 231s
+[eval_test 23:03:55] start dry_mvr1__coloc_prop_test__sim_main: 147 loci, 8 workers (busy 8/11 cores, 18/24 GB; 10 pending)
+[eval_test 23:04:20] unit done dry_mvr1__coloc_prop_test__sim_main: {'ok': 147, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 147} in 25s
+[eval_test 23:04:21] start dry_mvr1__mvsusie__sim_shifted: 4 loci, 6 workers (busy 6/11 cores, 21/24 GB; 9 pending)
+[eval_test 23:05:33] unit done dry_mvr1__mvsusie__sim_shifted: {'ok': 4, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 4} in 72s
+[eval_test 23:05:33] start dry_mvr1__prop_coloc__sim_main: 147 loci, 8 workers (busy 8/11 cores, 17/24 GB; 8 pending)
+[eval_test 23:05:56] unit done dry_mvr1__prop_coloc__sim_main: {'ok': 142, 'nonconverged': 0, 'failed': 5, 'timeout': 0, 'expected': 147} in 23s
+[eval_test 23:05:57] start dry_mvr1__coloc_susie__sim_shifted: 16 loci, 6 workers (busy 6/11 cores, 22/24 GB; 7 pending)
+[eval_test 23:06:58] unit done dry_mvr1__coloc_susie__sim_shifted: {'ok': 15, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 16} in 61s
+[eval_test 23:06:59] start dry_mvr1__coloc_susie_mm__sim_shifted: 16 loci, 6 workers (busy 6/11 cores, 22/24 GB; 6 pending)
+[eval_test 23:08:36] unit done dry_mvr1__coloc_susie_mm__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 97s
+[eval_test 23:08:37] start dry_mvr1__coloc_susie__real_R4b_reference: 6 loci, 6 workers (busy 6/11 cores, 22/24 GB; 5 pending)
+[eval_test 23:09:11] status: running ['dry_mvr1__coloc_susie__real_R4b_reference']; pending ['dry_mvr1__coloc_susie_mm__real_R4b_insample', 'dry_mvr1__coloc_susie_mm__real_R4b_reference', 'dry_mvr1__colocboost__sim_shifted', 'dry_mvr1__coloc_prop_test__sim_shifted', 'dry_mvr1__prop_coloc__sim_shifted']
+[eval_test 23:09:32] unit done dry_mvr1__coloc_susie__real_R4b_reference: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 55s
+[eval_test 23:09:33] start dry_mvr1__coloc_susie_mm__real_R4b_insample: 6 loci, 6 workers (busy 6/11 cores, 22/24 GB; 4 pending)
+[eval_test 23:10:07] unit done dry_mvr1__coloc_susie_mm__real_R4b_insample: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 34s
+[eval_test 23:10:07] start dry_mvr1__coloc_susie_mm__real_R4b_reference: 6 loci, 6 workers (busy 6/11 cores, 22/24 GB; 3 pending)
+[eval_test 23:10:38] unit done dry_mvr1__coloc_susie_mm__real_R4b_reference: {'ok': 5, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 6} in 31s
+[eval_test 23:10:39] start dry_mvr1__colocboost__sim_shifted: 4 loci, 8 workers (busy 8/11 cores, 16/24 GB; 2 pending)
+[eval_test 23:10:47] unit done dry_mvr1__colocboost__sim_shifted: {'ok': 4, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 4} in 8s
+[eval_test 23:10:49] start dry_mvr1__coloc_prop_test__sim_shifted: 16 loci, 8 workers (busy 8/11 cores, 18/24 GB; 1 pending)
+[eval_test 23:11:04] unit done dry_mvr1__coloc_prop_test__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 15s
+[eval_test 23:11:05] start dry_mvr1__prop_coloc__sim_shifted: 16 loci, 8 workers (busy 8/11 cores, 17/24 GB; 0 pending)
+[eval_test 23:11:32] unit done dry_mvr1__prop_coloc__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 27s
+[eval_test 23:11:34] evaluate sim benchmark: 163 loci, 13 methods, per-method id lists ['colocboost', 'colocboost_m1', 'mvsusie']
+[eval_test 23:24:23] real-data arms ready: real_R2 n=8, real_R3b n=13, real_R4b_insample n=6, real_R4b_reference n=6
+[eval_test 23:24:23] status: running []; pending []
+[eval_test 23:24:27] simulated sets ready: main n=147, shifted n=16
+[eval_test 23:24:29] evaluate sim benchmark: 163 loci, 13 methods, per-method id lists ['colocboost', 'colocboost_m1', 'mvsusie']
+[eval_test 23:26:15] verify sim benchmark (every harness run re-verified, every (sub-)benchmark recomputed)
+[eval_test 23:28:05] bundle written: /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_mvr_v1_resume2/code/results/eval_test_dry/dry_mvr1/bundle.json (verify ok: True)
+[eval_test 23:35:37] real-data arms ready: real_R2 n=8, real_R3b n=13, real_R4b_insample n=6, real_R4b_reference n=6
+[eval_test 23:35:37] status: running []; pending []
+[eval_test 23:35:40] simulated sets ready: main n=147, shifted n=16
+[eval_test 23:35:43] evaluate sim benchmark: 163 loci, 13 methods, per-method id lists ['colocboost', 'colocboost_m1', 'mvsusie']
+[eval_test 23:37:01] verify sim benchmark (every harness run re-verified, every (sub-)benchmark recomputed)
+[eval_test 23:38:32] bundle written: /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_mvr_v1_resume3/code/results/eval_test_dry/dry_mvr1/bundle.json (verify ok: True)

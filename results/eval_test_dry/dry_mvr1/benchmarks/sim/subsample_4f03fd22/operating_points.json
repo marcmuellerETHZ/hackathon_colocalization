@@ -1,0 +1,93 @@
+{
+ "coloc_abf": {
+  "recal_a_D": -12.457108524264434,
+  "recal_a_S": -1.6611992173901624,
+  "setting": "realistic",
+  "t_D": 0.9370584492629197,
+  "t_S": 0.38029311431054874
+ },
+ "coloc_prop_test": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "coloc_susie": {
+  "recal_a_D": -10.839197636313708,
+  "recal_a_S": -2.604422367322341,
+  "setting": "realistic",
+  "t_D": 1.0000000000000002,
+  "t_S": 1.0000000000000002
+ },
+ "coloc_susie_mm": {
+  "recal_a_D": -10.375478383218976,
+  "recal_a_S": -2.635392446620041,
+  "setting": "realistic",
+  "t_D": 0.998866973129257,
+  "t_S": 0.38029311431054874
+ },
+ "colocboost": {
+  "recal_a_D": -0.19783536931601275,
+  "recal_a_S": -16450114994.468578,
+  "setting": "realistic",
+  "t_D": 1.0000000000000002,
+  "t_S": 0.33180000000000004
+ },
+ "colocboost_m1": {
+  "recal_a_D": -12.687049192018451,
+  "recal_a_S": 85.68461864542044,
+  "setting": "realistic",
+  "t_D": 1.0000000000000002,
+  "t_S": 0.25630000000000003
+ },
+ "famB_exactcoloc_gaussian_M50": {
+  "recal_a_D": -2.741420164149279,
+  "recal_a_S": 0.5815878312199658,
+  "setting": "realistic",
+  "t_D": 0.7967529296875001,
+  "t_S": 0.004272460937500001
+ },
+ "famG_coloc_susie_gpu": {
+  "recal_a_D": -10.841221694904975,
+  "recal_a_S": -2.5857361239596615,
+  "setting": "realistic",
+  "t_D": 1.0000000000000002,
+  "t_S": 1.0000000000000002
+ },
+ "lead_snp": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "mvsusie": {
+  "recal_a_D": 160376.83962138285,
+  "recal_a_S": -188679.41509174532,
+  "setting": "realistic",
+  "t_D": 5e-324,
+  "t_S": 1.0000000000000002
+ },
+ "prop_coloc": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "sharepro": {
+  "recal_a_D": 0.33101778895406225,
+  "recal_a_S": -12.399999310112038,
+  "setting": "realistic",
+  "t_D": 0.22566572877914354,
+  "t_S": 0.18880000000000002
+ },
+ "strength_only": {
+  "recal_a_D": 0.008379346812516446,
+  "recal_a_S": 0.0037094694473777277,
+  "setting": "realistic",
+  "t_D": 0.19444444444444448,
+  "t_S": 0.19444444444444448
+ }
+}

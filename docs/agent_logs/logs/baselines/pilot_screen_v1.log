@@ -1,0 +1,193 @@
+[2026-10-26T17:01:17Z] sample 200 pilot ids
+200 ids -> src/baselines/benchmarks/pilot200_screen_v1_ids.txt
+[2026-10-26T17:02:51Z] select control ids
+L0|P1|r_p=0.0        distinct_strong    6 of 25
+L0|P1|r_p=0.0        null_trait         6 of 22
+L0|P1|r_p=0.0        shared_strong      6 of 31
+L0|P3|rho=0.5        distinct_strong    6 of 17
+L0|P3|rho=0.5        null_trait         6 of 17
+L0|P3|rho=0.5        shared_strong      6 of 24
+L2|P1|r_p=0.0        distinct_strong    6 of 29
+L2|P1|r_p=0.0        null_trait         6 of 20
+L2|P1|r_p=0.0        shared_strong      6 of 33
+L2|P3|rho=0.5        distinct_strong    6 of 15
+L2|P3|rho=0.5        null_trait         6 of 18
+L2|P3|rho=0.5        shared_strong      6 of 22
+L4|P1|r_p=0.0        distinct_strong    6 of 18
+L4|P1|r_p=0.0        null_trait         6 of 15
+L4|P1|r_p=0.0        shared_strong      6 of 34
+L4|P3|rho=0.5        distinct_strong    6 of 18
+L4|P3|rho=0.5        null_trait         6 of 19
+L4|P3|rho=0.5        shared_strong      6 of 25
+108 control ids -> tests/baselines/pilot/controls_screen_v1_ids.txt
+[2026-10-26T17:02:52Z] pilot runs
+[baselines.run] coloc_abf: 200 loci, p_max=5146, workers=24, timeout=60s
+[harness] run 20261026T170336Z_coloc_abf_screen_v1_dbffb3: 200 loci, mode=cpu, workers=24
+[harness] done 20261026T170336Z_coloc_abf_screen_v1_dbffb3: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 8.3s
+[pilot] coloc_abf: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 51s
+[baselines.run] lead_snp: 200 loci, p_max=5146, workers=24, timeout=60s
+[harness] run 20261026T170425Z_lead_snp_screen_v1_a7f492: 200 loci, mode=cpu, workers=24
+[harness] done 20261026T170425Z_lead_snp_screen_v1_a7f492: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 5.1s
+[pilot] lead_snp: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 46s
+[baselines.run] sharepro: 200 loci, p_max=5146, workers=24, timeout=300s
+[harness] run 20261026T170512Z_sharepro_screen_v1_7b2fdf: 200 loci, mode=cpu, workers=24
+[harness] 189/200 tasks done
+[harness] done 20261026T170512Z_sharepro_screen_v1_7b2fdf: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 44.0s
+[pilot] sharepro: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 86s
+[baselines.run] coloc_susie: 200 loci, p_max=5146, workers=13, timeout=600s
+[harness] run 20261026T170911Z_coloc_susie_screen_v1_ff43b4: 200 loci, mode=cpu, workers=13
+[harness] 74/200 tasks done
+[harness] 113/200 tasks done
+[harness] 136/200 tasks done
+[harness] 153/200 tasks done
+[harness] 165/200 tasks done
+[harness] 178/200 tasks done
+[harness] 194/200 tasks done
+[harness] 200/200 tasks done
+[harness] done 20261026T170911Z_coloc_susie_screen_v1_ff43b4: {'ok': 150, 'nonconverged': 48, 'failed': 2, 'timeout': 0, 'expected': 200} in 265.7s
+[pilot] coloc_susie: {'ok': 150, 'nonconverged': 48, 'failed': 2, 'timeout': 0, 'expected': 200} in 460s
+[baselines.run] coloc_susie_mm: 200 loci, p_max=5146, workers=13, timeout=900s
+[harness] run 20261026T171535Z_coloc_susie_mm_screen_v1_cdb3ca: 200 loci, mode=cpu, workers=13
+[harness] 31/200 tasks done
+[harness] 74/200 tasks done
+[harness] 108/200 tasks done
+[harness] 140/200 tasks done
+[harness] 169/200 tasks done
+[harness] 197/200 tasks done
+[harness] done 20261026T171535Z_coloc_susie_mm_screen_v1_cdb3ca: {'ok': 171, 'nonconverged': 29, 'failed': 0, 'timeout': 0, 'expected': 200} in 203.1s
+[pilot] coloc_susie_mm: {'ok': 171, 'nonconverged': 29, 'failed': 0, 'timeout': 0, 'expected': 200} in 321s
+[baselines.run] colocboost: 200 loci, p_max=5146, workers=20, timeout=900s
+[harness] run 20261026T172033Z_colocboost_screen_v1_136f94: 200 loci, mode=cpu, workers=20
+[harness] 119/200 tasks done
+[harness] 184/200 tasks done
+[harness] done 20261026T172033Z_colocboost_screen_v1_136f94: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 79.3s
+[pilot] colocboost: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 175s
+[baselines.run] colocboost_m1: 200 loci, p_max=5146, workers=20, timeout=120s
+[harness] run 20261026T172333Z_colocboost_m1_screen_v1_658b4f: 200 loci, mode=cpu, workers=20
+[harness] done 20261026T172333Z_colocboost_m1_screen_v1_658b4f: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 11.0s
+[pilot] colocboost_m1: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 111s
+[baselines.run] mvsusie: 200 loci, p_max=5146, workers=16, timeout=1800s
+[harness] run 20261026T172505Z_mvsusie_screen_v1_1746d2: 200 loci, mode=cpu, workers=16
+[harness] 21/200 tasks done
+[harness] 47/200 tasks done
+[harness] 66/200 tasks done
+[harness] 76/200 tasks done
+[harness] 83/200 tasks done
+[harness] 90/200 tasks done
+[harness] 94/200 tasks done
+[harness] 100/200 tasks done
+[harness] 108/200 tasks done
+[harness] 115/200 tasks done
+[harness] 125/200 tasks done
+[harness] 130/200 tasks done
+[harness] 135/200 tasks done
+[harness] 139/200 tasks done
+[harness] 141/200 tasks done
+[harness] 149/200 tasks done
+[harness] 156/200 tasks done
+[harness] 160/200 tasks done
+[harness] 163/200 tasks done
+[harness] 166/200 tasks done
+[harness] 169/200 tasks done
+[harness] 173/200 tasks done
+[harness] 179/200 tasks done
+[harness] 186/200 tasks done
+[harness] 189/200 tasks done
+[harness] 194/200 tasks done
+[harness] 197/200 tasks done
+[harness] 199/200 tasks done
+[harness] done 20261026T172505Z_mvsusie_screen_v1_1746d2: {'ok': 137, 'nonconverged': 56, 'failed': 7, 'timeout': 0, 'expected': 200} in 1026.0s
+[pilot] mvsusie: {'ok': 137, 'nonconverged': 56, 'failed': 7, 'timeout': 0, 'expected': 200} in 1107s
+[baselines.run] prop_coloc: 200 loci, p_max=5146, workers=22, timeout=300s
+[harness] run 20261026T174635Z_prop_coloc_screen_v1_e9b04a: 200 loci, mode=cpu, workers=22
+[harness] done 20261026T174635Z_prop_coloc_screen_v1_e9b04a: {'ok': 189, 'nonconverged': 0, 'failed': 11, 'timeout': 0, 'expected': 200} in 14.9s
+[pilot] prop_coloc: {'ok': 189, 'nonconverged': 0, 'failed': 11, 'timeout': 0, 'expected': 200} in 279s
+[baselines.run] coloc_prop_test: 200 loci, p_max=5146, workers=22, timeout=300s
+[harness] run 20261026T174837Z_coloc_prop_test_screen_v1_4d6e97: 200 loci, mode=cpu, workers=22
+[harness] done 20261026T174837Z_coloc_prop_test_screen_v1_4d6e97: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 22.1s
+[pilot] coloc_prop_test: {'ok': 200, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 200} in 129s
+         method   n  ok  nonconverged  failed  timeout_final  timeout_first_pass  fail_rate  nonconv_rate  rt_median  rt_p95  rt_max  rt_mean_all  mem_peak_gb  mem_b_fit  timeout_provisional  timeout_frozen  mem_a_frozen  mem_b_frozen  workers_at_machine  m4_wall_h  slow_subsample
+      coloc_abf 200 200             0       0              0                   0          0             0      0.137    2.83    2.94        0.447        0.175  -4.04e-18                   60              60           0.3          0.01                  60      0.124           False
+       lead_snp 200 200             0       0              0                   0          0             0    0.00798  0.0989   0.203       0.0246        0.237   0.000289                   60              60           0.3          0.01                  60    0.00684           False
+       sharepro 200 200             0       0              0                   0          0             0      0.735    10.2    25.2         2.33         0.64    0.00867                  300              90           0.3         0.025                  60      0.646           False
+    coloc_susie 200 150            48       2              0                   0       0.01          0.24       5.41    48.6     130         14.1         2.69     0.0363                  600             420          2.03          0.05                  32       7.33           False
+ coloc_susie_mm 200 171            29       0              0                   0          0         0.145       9.76    29.7    70.3           12         3.01     0.0383                  900             240          2.44          0.05                  29       6.88           False
+     colocboost 200 200             0       0              0                   0          0             0       2.46      22    26.6         5.98         1.25     0.0204                  900              90         0.774          0.03                  60       1.66           False
+  colocboost_m1 200 200             0       0              0                   0          0             0      0.345   0.921    1.19        0.418         1.16     0.0153                  120              60         0.655          0.03                  60      0.116           False
+        mvsusie 200 137            56       7              0                   0      0.035          0.28       39.3     227     364         71.9         2.43     0.0255                 1800        1.11e+03          1.98          0.04                  36       33.3            True
+     prop_coloc 200 189             0      11              0                   0      0.055             0      0.983    2.02    2.32        0.889         1.37     0.0178                  300              60          1.05         0.025                  60      0.247           False
+coloc_prop_test 200 200             0       0              0                   0          0             0       1.06    3.97    6.02         1.39         1.57       0.02                  300              60           1.3         0.025                  56      0.414           False
+table -> src/baselines/benchmarks/pilot200_screen_v1_summary.tsv
+[2026-10-26T17:49:21Z] control runs
+[baselines.run] coloc_abf: 108 loci, p_max=5085, workers=24, timeout=60s
+[harness] run 20261026T175023Z_coloc_abf_screen_v1_53a71b: 108 loci, mode=cpu, workers=24
+[harness] done 20261026T175023Z_coloc_abf_screen_v1_53a71b: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 5.7s
+[pilot] coloc_abf: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 67s
+[baselines.run] lead_snp: 108 loci, p_max=5085, workers=24, timeout=60s
+[harness] run 20261026T175200Z_lead_snp_screen_v1_f8b835: 108 loci, mode=cpu, workers=24
+[harness] done 20261026T175200Z_lead_snp_screen_v1_f8b835: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 6.1s
+[pilot] lead_snp: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 97s
+[baselines.run] sharepro: 108 loci, p_max=5085, workers=24, timeout=300s
+[harness] run 20261026T175253Z_sharepro_screen_v1_f87009: 108 loci, mode=cpu, workers=24
+[harness] 108/108 tasks done
+[harness] done 20261026T175253Z_sharepro_screen_v1_f87009: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 36.2s
+[pilot] sharepro: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 82s
+[baselines.run] coloc_susie: 108 loci, p_max=5085, workers=14, timeout=600s
+[harness] run 20261026T175433Z_coloc_susie_screen_v1_e34528: 108 loci, mode=cpu, workers=14
+[harness] 47/108 tasks done
+[harness] 67/108 tasks done
+[harness] 83/108 tasks done
+[harness] 101/108 tasks done
+[harness] 107/108 tasks done
+[harness] 108/108 tasks done
+[harness] done 20261026T175433Z_coloc_susie_screen_v1_e34528: {'ok': 74, 'nonconverged': 34, 'failed': 0, 'timeout': 0, 'expected': 108} in 265.8s
+[pilot] coloc_susie: {'ok': 74, 'nonconverged': 34, 'failed': 0, 'timeout': 0, 'expected': 108} in 330s
+[baselines.run] coloc_susie_mm: 108 loci, p_max=5085, workers=14, timeout=900s
+[harness] run 20261026T180025Z_coloc_susie_mm_screen_v1_ba1fb4: 108 loci, mode=cpu, workers=14
+[harness] 23/108 tasks done
+[harness] 55/108 tasks done
+[harness] 88/108 tasks done
+[harness] 108/108 tasks done
+[harness] done 20261026T180025Z_coloc_susie_mm_screen_v1_ba1fb4: {'ok': 93, 'nonconverged': 15, 'failed': 0, 'timeout': 0, 'expected': 108} in 174.5s
+[pilot] coloc_susie_mm: {'ok': 93, 'nonconverged': 15, 'failed': 0, 'timeout': 0, 'expected': 108} in 261s
+[baselines.run] colocboost: 108 loci, p_max=5085, workers=20, timeout=900s
+[harness] run 20261026T180506Z_colocboost_screen_v1_57cbb8: 108 loci, mode=cpu, workers=20
+[harness] 57/108 tasks done
+[harness] 106/108 tasks done
+[harness] done 20261026T180506Z_colocboost_screen_v1_57cbb8: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 88.1s
+[pilot] colocboost: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 195s
+[baselines.run] colocboost_m1: 108 loci, p_max=5085, workers=20, timeout=120s
+[harness] run 20261026T180856Z_colocboost_m1_screen_v1_425c0c: 108 loci, mode=cpu, workers=20
+[harness] done 20261026T180856Z_colocboost_m1_screen_v1_425c0c: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 10.4s
+[pilot] colocboost_m1: {'ok': 108, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 108} in 152s
+[baselines.run] mvsusie: 108 loci, p_max=5085, workers=16, timeout=1800s
+[harness] run 20261026T181113Z_mvsusie_screen_v1_e6ccfb: 108 loci, mode=cpu, workers=16
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/baselines/pilot.py", line 259, in <module>
+    _main()
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/baselines/pilot.py", line 234, in _main
+    run_pilot(a.set, ids, [m for m in a.methods.split(",") if m], a.tag, a.mem_budget_gb, a.max_cpus,
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/baselines/pilot.py", line 119, in run_pilot
+    r = BR.run_baseline(m, locus_set, ids=ids, mem_budget_gb=mem_budget_gb, max_cpus=max_cpus,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/baselines/run.py", line 129, in run_baseline
+    return run_method(method_spec(name, t), locus_set, ids=ids, mode="cpu", n_workers=nw, timeout_s=t,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/eval/harness.py", line 454, in run_method
+    rows = execute(method, locus_set, ids, method_name, mode=mode, n_workers=n_workers, batch_size=batch_size,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/eval/harness.py", line 226, in execute
+    ready = mp_wait([w.parent for w in busy], timeout=wait_t)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 1136, in wait
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[harness] 18/108 tasks done
+[harness] 36/108 tasks done
+[harness] 43/108 tasks done

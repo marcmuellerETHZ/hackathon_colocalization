@@ -1,0 +1,58 @@
+[orch] job famA_refldvar_v2 start 2026-10-27T10:49:49+01:00 host eu-g6-001 commit 9daa45a616 pid 946533
+[orch] cmd: mkdir -p results/famA && OMP_NUM_THREADS=4 python -m famA.validation.calibrate_ref_ld_var --out results/famA/ref_ld_var_v2.json --n-windows 40 --p 300 --draws 200 --n-list 100,150,254
+window 1/40 chr4_0024
+window 2/40 chr21_0005
+window 3/40 chr10_0051
+window 4/40 chr2_0021
+window 5/40 chr8_0052
+window 6/40 chr7_0017
+window 7/40 chr16_0002
+window 8/40 chr3_0022
+window 9/40 chr4_0043
+window 10/40 chr1_0055
+window 11/40 chr3_0075
+window 12/40 chr8_0023
+window 13/40 chr8_0051
+window 14/40 chr20_0020
+window 15/40 chr9_0030
+window 16/40 chr14_0031
+window 17/40 chr2_0018
+window 18/40 chr8_0055
+window 19/40 chr1_0061
+window 20/40 chr20_0024
+window 21/40 chr11_0049
+window 22/40 chr13_0049
+window 23/40 chr3_0009
+window 24/40 chr7_0039
+window 25/40 chr22_0002
+window 26/40 chr5_0014
+window 27/40 chr8_0052
+window 28/40 chr9_0007
+window 29/40 chr10_0032
+window 30/40 chr7_0079
+window 31/40 chr11_0021
+window 32/40 chr5_0006
+window 33/40 chr17_0028
+window 34/40 chr1_0078
+window 35/40 chr7_0038
+window 36/40 chr2_0059
+window 37/40 chr12_0050
+window 38/40 chr16_0015
+window 39/40 chr1_0026
+window 40/40 chr15_0002
+| r² bin | min MAF [0,0.05) | min MAF [0.05,0.2) | min MAF [0.2,0.5) | normal theory (1−r²)² (pooled) | pairs |
+|---|---|---|---|---|---|
+| [0,0.01) | 0.659 | 0.876 | 1.01 | 0.994 | 769046 |
+| [0.01,0.05) | 0.739 | 0.678 | 0.935 | 0.952 | 440906 |
+| [0.05,0.1) | 1.06 | 0.663 | 0.789 | 0.862 | 149627 |
+| [0.1,0.2) | 1.42 | 0.693 | 0.651 | 0.736 | 116046 |
+| [0.2,0.3) | 1.91 | 0.667 | 0.579 | 0.574 | 64095 |
+| [0.3,0.5) | 2.19 | 0.616 | 0.433 | 0.372 | 68160 |
+| [0.5,0.7) | 1.87 | 0.528 | 0.275 | 0.165 | 44292 |
+| [0.7,0.8) | 1.4 | 0.341 | 0.155 | 0.063 | 17974 |
+| [0.8,0.9) | 1.03 | 0.235 | 0.0888 | 0.0236 | 21636 |
+| [0.9,0.95) | 0.38 | 0.114 | 0.0435 | 0.00574 | 20692 |
+| [0.95,0.98) | 0.0902 | 0.0543 | 0.0194 | 0.00104 | 23137 |
+| [0.98,0.995) | -1 | 0.0194 | 0.00641 | 0.000159 | 16029 |
+| [0.995,1) | 2.43e-14 | -8.15e-14 | 0.000161 | 3.41e-07 | 42360 |
+[orch] exit 0 at 2026-10-27T10:50:27+01:00

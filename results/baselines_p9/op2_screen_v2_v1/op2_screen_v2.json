@@ -1,0 +1,861 @@
+{
+ "d_limit": 0.1,
+ "definition": {
+  "OP1": "C3 thresholds (DESIGN v4 \u00a70, \u00a78.2), set on a validation run:\n      t_S = the smallest threshold with confident-S rate on W <= w_limit (2.5%);\n      then, with t_S fixed and S precedence (a locus with P_S >= t_S is called S, never D), t_D = the smallest\n      threshold with confident-D rate on W <= w_limit, where a W locus is called D iff P_S < t_S, P_D >= t_D and\n      the E gate passes (E1, E2 >= e_gate where reported).\n    W rates are weighted with the D-vs-W cell pooling weights restricted to W. A method without P_S gets only\n    t_D (no S calls); without P_D only t_S.",
+  "OP2": "OP2 (DESIGN_P2 \u00a73, phase-2 amendment; eval.metrics.matched_w_thresholds (OP1) is unchanged):\n      t_S = the smallest threshold with weighted confident-S on W <= w_limit (2.5%; the OP1 W weights) AND\n            unweighted confident-S on D <= d_limit (10%), the D share taken over all power-matched D loci of the\n            fit set (class D with S-vs-D weight > 0 in `setting`). Both rates fall monotonically in t, so the\n            smallest feasible t is the max of the two one-sided matched thresholds. A threshold is a probability:\n            if the smallest feasible t exceeds 1 (only \"no S calls\" satisfies both), t_S = 1 and op2_feasible =\n            False; S calls are then NOT made (t_S_call = inf), and consumers must treat t_S = 1 as \"no S calls\".\n      t_D = as OP1, after S precedence at the OP2 S rule: the smallest threshold with weighted confident-D on W\n            <= w_limit, a W locus being called D iff not called S, P_D >= t_D and the E gate passes.\n    NaN scores (excluded/raw frames) are never called, as in calls_from_arrays."
+ },
+ "ids_file": null,
+ "label": "OP1+OP2 screen_v2 L2+L4 (realistic), baselines_screen_v2@1",
+ "methods": {
+  "coloc_abf_W0.15_p12_1e-05": {
+   "OP1": {
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_W": 0.025000000000000005,
+    "recal_a_D": -0.8483851908704028,
+    "recal_a_S": -0.2031127773667641,
+    "setting": "realistic",
+    "t_D": 0.481169631918913,
+    "t_S": 0.8749274190050399
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_D": 0.04325,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "t_D": 0.481169631918913,
+    "t_S": 0.8749274190050399,
+    "t_S_D_side": 0.4362722287699571,
+    "t_S_W_side": 0.8749274190050399,
+    "t_S_call": 0.8749274190050399,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0425,
+    "false_S_on_D_matched_unweighted": 0.04325,
+    "false_S_on_D_setting_unweighted": 0.04325,
+    "recall_D": 0.8811666666666667,
+    "recall_S": 0.7016666666666668
+   },
+   "at_OP2": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0425,
+    "false_S_on_D_matched_unweighted": 0.04325,
+    "false_S_on_D_setting_unweighted": 0.04325,
+    "recall_D": 0.8811666666666667,
+    "recall_S": 0.7016666666666668
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "OP1": {
+    "rate_D_on_W": 0.025,
+    "rate_S_on_W": 0.025000000000000005,
+    "recal_a_D": -1.2214983605443885,
+    "recal_a_S": 0.4900252668024528,
+    "setting": "realistic",
+    "t_D": 0.5164087601733496,
+    "t_S": 0.7776630892837979
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.04325,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "t_D": 0.5164087601733496,
+    "t_S": 0.7776630892837979,
+    "t_S_D_side": 0.2789949995111878,
+    "t_S_W_side": 0.7776630892837979,
+    "t_S_call": 0.7776630892837979,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024999999999999994,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0425,
+    "false_S_on_D_matched_unweighted": 0.04325,
+    "false_S_on_D_setting_unweighted": 0.04325,
+    "recall_D": 0.8948333333333334,
+    "recall_S": 0.7016666666666668
+   },
+   "at_OP2": {
+    "W_called_D": 0.024999999999999994,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0425,
+    "false_S_on_D_matched_unweighted": 0.04325,
+    "false_S_on_D_setting_unweighted": 0.04325,
+    "recall_D": 0.8948333333333334,
+    "recall_S": 0.7016666666666668
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "OP1": {
+    "rate_D_on_W": 0.025,
+    "rate_S_on_W": 0.02500000000000001,
+    "recal_a_D": -0.22660585146681161,
+    "recal_a_S": -0.26230889766234766,
+    "setting": "realistic",
+    "t_D": 0.42688051887656303,
+    "t_S": 0.8553941294251534
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.0455,
+    "rate_S_on_W": 0.024999999999999998,
+    "setting": "realistic",
+    "t_D": 0.42688051887656303,
+    "t_S": 0.8553941294251534,
+    "t_S_D_side": 0.49971028164904,
+    "t_S_W_side": 0.8553941294251534,
+    "t_S_call": 0.8553941294251534,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.024999999999999998,
+    "false_S_on_D_all_unweighted": 0.04683333333333333,
+    "false_S_on_D_matched_unweighted": 0.0455,
+    "false_S_on_D_setting_unweighted": 0.0455,
+    "recall_D": 0.8500000000000001,
+    "recall_S": 0.6893333333333334
+   },
+   "at_OP2": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.024999999999999998,
+    "false_S_on_D_all_unweighted": 0.04683333333333333,
+    "false_S_on_D_matched_unweighted": 0.0455,
+    "false_S_on_D_setting_unweighted": 0.0455,
+    "recall_D": 0.8500000000000001,
+    "recall_S": 0.6893333333333334
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "OP1": {
+    "rate_D_on_W": 0.025,
+    "rate_S_on_W": 0.02500000000000001,
+    "recal_a_D": -0.5419611651618209,
+    "recal_a_S": 0.4308312594365484,
+    "setting": "realistic",
+    "t_D": 0.4695718295852799,
+    "t_S": 0.747326351729749
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.0455,
+    "rate_S_on_W": 0.024999999999999998,
+    "setting": "realistic",
+    "t_D": 0.4695718295852799,
+    "t_S": 0.747326351729749,
+    "t_S_D_side": 0.3330758556409339,
+    "t_S_W_side": 0.747326351729749,
+    "t_S_call": 0.747326351729749,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.024999999999999998,
+    "false_S_on_D_all_unweighted": 0.04683333333333333,
+    "false_S_on_D_matched_unweighted": 0.0455,
+    "false_S_on_D_setting_unweighted": 0.0455,
+    "recall_D": 0.8601666666666667,
+    "recall_S": 0.6893333333333334
+   },
+   "at_OP2": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.024999999999999998,
+    "false_S_on_D_all_unweighted": 0.04683333333333333,
+    "false_S_on_D_matched_unweighted": 0.0455,
+    "false_S_on_D_setting_unweighted": 0.0455,
+    "recall_D": 0.8601666666666667,
+    "recall_S": 0.6893333333333334
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "OP1": {
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_W": 0.025,
+    "recal_a_D": -1.2341705221154418,
+    "recal_a_S": -0.11234295390580351,
+    "setting": "realistic",
+    "t_D": 0.5328289015439339,
+    "t_S": 0.9047808497127254
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_D": 0.0375,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "t_D": 0.5328289015439339,
+    "t_S": 0.9047808497127254,
+    "t_S_D_side": 0.3589272013606851,
+    "t_S_W_side": 0.9047808497127254,
+    "t_S_call": 0.9047808497127254,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0365,
+    "false_S_on_D_matched_unweighted": 0.0375,
+    "false_S_on_D_setting_unweighted": 0.0375,
+    "recall_D": 0.8941666666666668,
+    "recall_S": 0.6926666666666668
+   },
+   "at_OP2": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0365,
+    "false_S_on_D_matched_unweighted": 0.0375,
+    "false_S_on_D_setting_unweighted": 0.0375,
+    "recall_D": 0.8941666666666668,
+    "recall_S": 0.6926666666666668
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "OP1": {
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_W": 0.025,
+    "recal_a_D": -1.6465928010731823,
+    "recal_a_S": 0.5807933324586336,
+    "setting": "realistic",
+    "t_D": 0.5635502164115583,
+    "t_S": 0.8261185439237457
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_D": 0.0375,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "t_D": 0.5635502164115583,
+    "t_S": 0.8261185439237457,
+    "t_S_D_side": 0.218714978188834,
+    "t_S_W_side": 0.8261185439237457,
+    "t_S_call": 0.8261185439237457,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024666666666666667,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0365,
+    "false_S_on_D_matched_unweighted": 0.0375,
+    "false_S_on_D_setting_unweighted": 0.0375,
+    "recall_D": 0.9056666666666668,
+    "recall_S": 0.6926666666666668
+   },
+   "at_OP2": {
+    "W_called_D": 0.024666666666666667,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.0365,
+    "false_S_on_D_matched_unweighted": 0.0375,
+    "false_S_on_D_setting_unweighted": 0.0375,
+    "recall_D": 0.9056666666666668,
+    "recall_S": 0.6926666666666668
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "coloc_prop_test": {
+   "OP1": {
+    "rate_D_on_W": null,
+    "rate_S_on_W": null,
+    "recal_a_D": null,
+    "recal_a_S": null,
+    "setting": "realistic",
+    "t_D": "inf",
+    "t_S": "inf"
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "setting": "realistic",
+    "w_limit": 0.025
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": false,
+   "has_P_S": false,
+   "n_failed": 4,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "failed": 4,
+    "ok": 11996
+   }
+  },
+  "coloc_susie": {
+   "OP1": {
+    "rate_D_on_W": 0.025,
+    "rate_S_on_W": 0.025000000000000012,
+    "recal_a_D": 0.27169713827863556,
+    "recal_a_S": -1.8012098424201033,
+    "setting": "realistic",
+    "t_D": 0.844220822891119,
+    "t_S": 0.8616268145520847
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.1,
+    "rate_S_on_W": 0.007333333333333333,
+    "setting": "realistic",
+    "t_D": 0.844220822891119,
+    "t_S": 0.9999057078604806,
+    "t_S_D_side": 0.9999057078604806,
+    "t_S_W_side": 0.8616268145520847,
+    "t_S_call": 0.9999057078604806,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.12716666666666668,
+    "false_S_on_D_matched_unweighted": 0.171,
+    "false_S_on_D_setting_unweighted": 0.171,
+    "recall_D": 0.7385000000000002,
+    "recall_S": 0.6493333333333334
+   },
+   "at_OP2": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.007333333333333333,
+    "false_S_on_D_all_unweighted": 0.06683333333333333,
+    "false_S_on_D_matched_unweighted": 0.1,
+    "false_S_on_D_setting_unweighted": 0.1,
+    "recall_D": 0.7385000000000002,
+    "recall_S": 0.29100000000000004
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 55,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "failed": 51,
+    "nonconverged": 3288,
+    "ok": 8657,
+    "timeout": 4
+   }
+  },
+  "coloc_susie_mm": {
+   "OP1": {
+    "rate_D_on_W": 0.025,
+    "rate_S_on_W": 0.024666666666666667,
+    "recal_a_D": 0.047819203830938385,
+    "recal_a_S": -1.0278543592233402,
+    "setting": "realistic",
+    "t_D": 0.6920740371206827,
+    "t_S": 0.8198729398321837
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.0705,
+    "rate_S_on_W": 0.024666666666666663,
+    "setting": "realistic",
+    "t_D": 0.6920740371206827,
+    "t_S": 0.8198729398321837,
+    "t_S_D_side": 0.6093640882821539,
+    "t_S_W_side": 0.8198729398321837,
+    "t_S_call": 0.8198729398321837,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.024666666666666663,
+    "false_S_on_D_all_unweighted": 0.06183333333333333,
+    "false_S_on_D_matched_unweighted": 0.0705,
+    "false_S_on_D_setting_unweighted": 0.0705,
+    "recall_D": 0.8453333333333335,
+    "recall_S": 0.7706666666666668
+   },
+   "at_OP2": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.024666666666666663,
+    "false_S_on_D_all_unweighted": 0.06183333333333333,
+    "false_S_on_D_matched_unweighted": 0.0705,
+    "false_S_on_D_setting_unweighted": 0.0705,
+    "recall_D": 0.8453333333333335,
+    "recall_S": 0.7706666666666668
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 18,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "nonconverged": 1912,
+    "ok": 10070,
+    "timeout": 18
+   }
+  },
+  "colocboost": {
+   "OP1": {
+    "rate_D_on_W": 0.013333333333333332,
+    "rate_S_on_W": 0.02,
+    "recal_a_D": 5.139355449335572,
+    "recal_a_S": -1.0772812702886354,
+    "setting": "realistic",
+    "t_D": 5e-324,
+    "t_S": 5e-324
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 367,
+    "n_W": 200,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.023333333333333334,
+    "rate_S_on_D": 0.09809264305177112,
+    "rate_S_on_W": 0.003333333333333333,
+    "setting": "realistic",
+    "t_D": 0.2992000000000001,
+    "t_S": 0.9278000000000001,
+    "t_S_D_side": 0.9278000000000001,
+    "t_S_W_side": 5e-324,
+    "t_S_call": 0.9278000000000001,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.013333333333333332,
+    "W_called_S": 0.019999999999999997,
+    "false_S_on_D_all_unweighted": 0.21066666666666667,
+    "false_S_on_D_matched_unweighted": 0.16621253405994552,
+    "false_S_on_D_setting_unweighted": 0.17,
+    "recall_D": 0.2783333333333333,
+    "recall_S": 0.5433333333333333
+   },
+   "at_OP2": {
+    "W_called_D": 0.02333333333333333,
+    "W_called_S": 0.003333333333333333,
+    "false_S_on_D_all_unweighted": 0.092,
+    "false_S_on_D_matched_unweighted": 0.09809264305177112,
+    "false_S_on_D_setting_unweighted": 0.105,
+    "recall_D": 0.31166666666666665,
+    "recall_S": 0.3933333333333333
+   },
+   "class_counts": {
+    "D": 1500,
+    "S": 750,
+    "W": 750
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 3000,
+   "setting": "realistic",
+   "status": {
+    "ok": 3000
+   }
+  },
+  "colocboost_m1": {
+   "OP1": {
+    "rate_D_on_W": 0.02,
+    "rate_S_on_W": 0.02,
+    "recal_a_D": 0.28859652549617915,
+    "recal_a_S": 4.220659573507866,
+    "setting": "realistic",
+    "t_D": 0.4342000000000001,
+    "t_S": 0.5860000000000001
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 367,
+    "n_W": 200,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.02,
+    "rate_S_on_D": 0.04632152588555858,
+    "rate_S_on_W": 0.019999999999999997,
+    "setting": "realistic",
+    "t_D": 0.4342000000000001,
+    "t_S": 0.5860000000000001,
+    "t_S_D_side": 0.027300000000000005,
+    "t_S_W_side": 0.5860000000000001,
+    "t_S_call": 0.5860000000000001,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.019999999999999997,
+    "W_called_S": 0.019999999999999997,
+    "false_S_on_D_all_unweighted": 0.07,
+    "false_S_on_D_matched_unweighted": 0.04632152588555858,
+    "false_S_on_D_setting_unweighted": 0.0475,
+    "recall_D": 0.855,
+    "recall_S": 0.7000000000000001
+   },
+   "at_OP2": {
+    "W_called_D": 0.019999999999999997,
+    "W_called_S": 0.019999999999999997,
+    "false_S_on_D_all_unweighted": 0.07,
+    "false_S_on_D_matched_unweighted": 0.04632152588555858,
+    "false_S_on_D_setting_unweighted": 0.0475,
+    "recall_D": 0.855,
+    "recall_S": 0.7000000000000001
+   },
+   "class_counts": {
+    "D": 1500,
+    "S": 750,
+    "W": 750
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 3000,
+   "setting": "realistic",
+   "status": {
+    "ok": 3000
+   }
+  },
+  "lead_snp": {
+   "OP1": {
+    "rate_D_on_W": null,
+    "rate_S_on_W": null,
+    "recal_a_D": null,
+    "recal_a_S": null,
+    "setting": "realistic",
+    "t_D": "inf",
+    "t_S": "inf"
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "setting": "realistic",
+    "w_limit": 0.025
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": false,
+   "has_P_S": false,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  },
+  "prop_coloc": {
+   "OP1": {
+    "rate_D_on_W": null,
+    "rate_S_on_W": null,
+    "recal_a_D": null,
+    "recal_a_S": null,
+    "setting": "realistic",
+    "t_D": "inf",
+    "t_S": "inf"
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "setting": "realistic",
+    "w_limit": 0.025
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": false,
+   "has_P_S": false,
+   "n_failed": 513,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "failed": 513,
+    "ok": 11487
+   }
+  },
+  "sharepro": {
+   "OP1": {
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_W": 0.024666666666666667,
+    "recal_a_D": 5.576430107840621e+105,
+    "recal_a_S": 2181.54814764214,
+    "setting": "realistic",
+    "t_D": 0.20895500626873478,
+    "t_S": 0.6561000000000001
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": false,
+    "rate_D_on_W": 0.024666666666666667,
+    "rate_S_on_D": 0.0,
+    "rate_S_on_W": 0.0,
+    "setting": "realistic",
+    "t_D": 0.21649238120156308,
+    "t_S": 1.0,
+    "t_S_D_side": 1.0000000000000002,
+    "t_S_W_side": 0.6561000000000001,
+    "t_S_call": "inf",
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.024666666666666663,
+    "false_S_on_D_all_unweighted": 0.541,
+    "false_S_on_D_matched_unweighted": 0.57675,
+    "false_S_on_D_setting_unweighted": 0.57675,
+    "recall_D": 0.2046666666666667,
+    "recall_S": 0.9166666666666667
+   },
+   "at_OP2": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.0,
+    "false_S_on_D_all_unweighted": 0.0,
+    "false_S_on_D_matched_unweighted": 0.0,
+    "false_S_on_D_setting_unweighted": 0.0,
+    "recall_D": 0.20816666666666667,
+    "recall_S": 0.0
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 6,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 11994,
+    "timeout": 6
+   }
+  },
+  "strength_only": {
+   "OP1": {
+    "rate_D_on_W": 0.025000000000000005,
+    "rate_S_on_W": 0.023333333333333334,
+    "recal_a_D": -0.004047823463751486,
+    "recal_a_S": -0.005941226773747546,
+    "setting": "realistic",
+    "t_D": 0.5922835279903345,
+    "t_S": 0.3105471253820567
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 4000,
+    "n_W": 2000,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.02466666666666667,
+    "rate_S_on_D": 0.09725,
+    "rate_S_on_W": 0.003,
+    "setting": "realistic",
+    "t_D": 0.5942999841446014,
+    "t_S": 0.40066322315644815,
+    "t_S_D_side": 0.40066322315644815,
+    "t_S_W_side": 0.3105471253820567,
+    "t_S_call": 0.40066322315644815,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024999999999999998,
+    "W_called_S": 0.023333333333333334,
+    "false_S_on_D_all_unweighted": 0.5536666666666666,
+    "false_S_on_D_matched_unweighted": 0.55325,
+    "false_S_on_D_setting_unweighted": 0.55325,
+    "recall_D": 0.33466666666666667,
+    "recall_S": 0.6086666666666667
+   },
+   "at_OP2": {
+    "W_called_D": 0.024666666666666663,
+    "W_called_S": 0.003,
+    "false_S_on_D_all_unweighted": 0.09866666666666667,
+    "false_S_on_D_matched_unweighted": 0.09725,
+    "false_S_on_D_setting_unweighted": 0.09725,
+    "recall_D": 0.7540000000000002,
+    "recall_S": 0.12233333333333332
+   },
+   "class_counts": {
+    "D": 6000,
+    "S": 3000,
+    "W": 3000
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 12000,
+   "setting": "realistic",
+   "status": {
+    "ok": 12000
+   }
+  }
+ },
+ "sets": [
+  "data/processed/sets/screen_v2.h5"
+ ],
+ "sources": {
+  "coloc_abf_W0.15_p12_1e-05": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_abf_W0.15_p12_5e-06": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_abf_W0.1_p12_1e-05": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_abf_W0.1_p12_5e-06": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_abf_W0.2_p12_1e-05": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_abf_W0.2_p12_5e-06": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_prop_test": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_susie": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "coloc_susie_mm": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "colocboost": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "colocboost_m1": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "lead_snp": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "mvsusie": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "prop_coloc": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "sharepro": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ],
+  "strength_only": [
+   "results/baselines_screen_v2/collected_v1/predictions.parquet"
+  ]
+ }
+}

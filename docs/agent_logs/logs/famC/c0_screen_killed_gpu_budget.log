@@ -1,0 +1,21 @@
+[ldbank train] 0/3000 windows
+[ldbank train] 200/3000 windows
+[ldbank train] 400/3000 windows
+[ldbank train] 600/3000 windows
+[ldbank train] 800/3000 windows
+[ldbank train] 1000/3000 windows
+[ldbank train] 1200/3000 windows
+[ldbank train] 1400/3000 windows
+[ldbank train] 1600/3000 windows
+[ldbank train] 1800/3000 windows
+[ldbank train] 2000/3000 windows
+[ldbank train] 2200/3000 windows
+[ldbank train] 2400/3000 windows
+[ldbank train] 2600/3000 windows
+[ldbank train] 2800/3000 windows
+[ldbank valid] 0/400 windows
+[ldbank valid] 200/400 windows
+banks: train 2998 windows (2.17 GB), valid 400; 37s
+params 1019638
+EVAL seen 50176: uniform E_KL 0.10581 dPP4_q99 0.5817 | coloc E_KL 0.05136 dPP4_q99 0.3148 | train E_KL 0.10930
+step 200 seen 51200 KL 0.42010 pip 0.1929 gn 15.90 lr 1.00e-04 876 loci/s mem 5.1GB

@@ -1,0 +1,18 @@
+[orch] job famB_mm_ladder_dry start 2026-10-28T09:57:58+01:00 host eu-g6-001 commit c0b0a2e700 pid 2136046
+[orch] cmd: python scripts/famB_eval/ladder_Bmm.py --bmm /tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/fake_bmm.parquet --b1 results/famB/screen_v2/M50/predictions.parquet --baselines results/baselines_screen_v2/collected_v1 --sets data/processed/sets/screen_v2/*.h5 --n-boot 20 --n-jobs 16 --out /tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/ladder_dry.json
+{"auprc_realistic_Bmm": 0.8216324918057627, "auprc_realistic_B1": 0.8216324918057627, "auroc_realistic_Bmm": 0.8098479809921609, "auroc_realistic_B1": 0.8098479809921609, "per_level": {"L2": {"exactcoloc_mm_gaussian_M50": 0.8836718206538609, "exactcoloc_gaussian_M50": 0.8836718206538609}, "L4": {"exactcoloc_mm_gaussian_M50": 0.7597836488345859, "exactcoloc_gaussian_M50": 0.7597836488345859}}, "contrast": {"locus": {"diff": 0.0, "se": 0.0, "ci95": [0.0, 0.0], "p_greater": 0.5, "p_less": 0.5, "estimates": [0.8216324918057627, 0.8216324918057627]}, "block": {"diff": 0.0, "se": 0.0, "ci95": [0.0, 0.0], "p_greater": 0.5, "p_less": 0.5, "estimates": [0.8216324918057629, 0.8216324918057629]}, "primary_unit": "block"}, "pass": false}
+{
+ "new_method_gate_pass": false,
+ "rule_a_kill": false,
+ "rule_b_kill": false,
+ "rule_d_kill": false,
+ "rule_c_kill_OP2_prereg_lowest_falseS": true,
+ "rule_c_kill_OP2_best_auprc": true,
+ "rule_c_kill_OP2_lowest_nondegenerate": true,
+ "B1_usefulness_pass_OP2": false,
+ "rule_c_kill_OP1_prereg_lowest_falseS": true,
+ "rule_c_kill_OP1_best_auprc": true,
+ "rule_c_kill_OP1_lowest_nondegenerate": true,
+ "B1_usefulness_pass_OP1": false
+}
+[orch] exit 0 at 2026-10-28T09:58:17+01:00

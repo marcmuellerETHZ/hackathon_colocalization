@@ -1,0 +1,4 @@
+[     26s] visit 10 L1swap|P1|r_p=0.0: S=9,W=64,G=19,U=0,D=8,k=100
+[     40s] visit 20 L1swap|P1|r_p=0.0: S=16,W=143,G=28,U=0,D=13,k=200
+[     54s] visit 30 L1swap|P1|r_p=0.0: S=24,W=216,G=42,U=0,D=18,k=300
+[     65s] visit 40 L1swap|P1|r_p=0.0: S=27,W=292,G=57,U=0,D=24,k=400

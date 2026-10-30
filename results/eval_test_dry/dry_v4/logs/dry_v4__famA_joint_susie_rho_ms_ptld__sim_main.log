@@ -1,0 +1,6 @@
+19:14:53 [harness] run dry_v4__famA_joint_susie_rho_ms_ptld__sim_main: 502 loci (502 to run), mode=batch, workers=1
+19:15:55 [harness] famA_joint_susie_rho_ms_ptld: 120/502 loci done
+19:16:57 [harness] famA_joint_susie_rho_ms_ptld: 240/502 loci done
+19:18:04 [harness] famA_joint_susie_rho_ms_ptld: 408/502 loci done
+19:19:12 [harness] famA_joint_susie_rho_ms_ptld: 472/502 loci done
+19:19:39 [harness] done dry_v4__famA_joint_susie_rho_ms_ptld__sim_main: {'ok': 452, 'nonconverged': 50, 'failed': 0, 'timeout': 0, 'expected': 502} in 284.9s

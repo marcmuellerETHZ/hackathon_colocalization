@@ -1,0 +1,166 @@
+{
+ "checkpoint": {
+  "resumed": false,
+  "rows_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_mvr_v1/code/results/eval_test_dry/dry_mvr1/checkpoints/dry_mvr1__mvsusie__sim_shifted.rows.jsonl",
+  "rows_from_checkpoint": 0,
+  "rows_this_segment": 4,
+  "segments": [
+   {
+    "git": "54f9b924d0016a4a87ccc5371333afd1000e7d27",
+    "host": "eu-g6-001",
+    "n_todo": 4,
+    "pid": 1721202,
+    "rows_from_checkpoint": 0,
+    "start_utc": "2026-10-27T22:04:21.416769Z"
+   }
+  ]
+ },
+ "config": {
+  "DRY": true,
+  "commit": "54f9b924d0016a4a87ccc5371333afd1000e7d27",
+  "methods_file": "configs/proposals/test_methods_dry_v2_mvr.yaml",
+  "methods_file_sha256": "08bb8d4f1936a108eff7711fe474765ce93c4795d3083464a926b8e5fdb4aefd",
+  "mode": "dry",
+  "note": "validation blocks only; operating points / recalibration / strength table are DRY placeholders",
+  "orch_snapshot": true,
+  "set_key": "sim_shifted",
+  "subsample_per_class": 20,
+  "test_mode_lock_refusals_observed": [
+   "the running commit 54f9b924d0 carries no frozen-* tag",
+   "check_frozen failed: ['CHANGED  configs/testset_v1.yaml', 'CHANGED  configs/test_methods_v1.yaml']",
+   "methods file status is 'dry', not 'frozen'",
+   "coloc_abf: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "sharepro: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "coloc_susie: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "coloc_susie_mm: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "colocboost: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "colocboost_m1: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "mvsusie: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "strength_only: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "famB_exactcoloc_gaussian_M50: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "famG_coloc_susie_gpu: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "strength_only: frozen strength table 'DRY' missing"
+  ],
+  "unit": "dry_mvr1__mvsusie__sim_shifted"
+ },
+ "counts": {
+  "expected": 4,
+  "failed": 0,
+  "nonconverged": 0,
+  "ok": 4,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-27T22:05:32.408887Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "54f9b924d0016a4a87ccc5371333afd1000e7d27",
+  "modified_tracked": [],
+  "orch_job": "p6dr_mvr_v1",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_mvr_v1/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 6,
+  "timeout_s_per_locus": 1080.0,
+  "timing": false
+ },
+ "label": "DRY dry_mvr1",
+ "locus_set": {
+  "ids_sha256": "70a523d6ae84402e348d4c26b857bce09e8ee36cef8f3a5cca815abd7b718574",
+  "n_expected": 4,
+  "n_loci_in_file": 16,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_mvr1/sets/dry_mvr1_shifted.h5",
+  "sha256": "9bce847be60b0d8b31d2f993a9fe0cc813f106eb0a5aac8f88101cdae265f588"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "0, 1",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   49.54443359375,
+   49.7685546875,
+   54.39453125
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 972
+  },
+  "name": "mvsusie",
+  "target": "baselines.methods:MvSusie"
+ },
+ "method_name": "mvsusie",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": "35efaa419f41e53ceb9969f52d8f76a248e67ac5423a28fdc258a0f1bda315c2",
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "1f61cdce6c13ac29f4fc57fe5dec1fbe74f4b805f22e3582fd38ed2ccb350fcd",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 9958,
+  "rule": "D6(h)"
+ },
+ "run_id": "dry_mvr1__mvsusie__sim_shifted",
+ "runtime_s": {
+  "median": 50.15872520400444,
+  "p95": 66.2108532745071,
+  "sum": 189.1584548910323
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T22:04:21.416769Z",
+ "test_access": false,
+ "truth": {
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_mvr1/sets/dry_mvr1_shifted.truth.parquet",
+  "sha256": "9b07857de03287f5370bb2a65974881df23232cbf449c6209762d429219e9424"
+ },
+ "wall_s": 70.99209254200105
+}

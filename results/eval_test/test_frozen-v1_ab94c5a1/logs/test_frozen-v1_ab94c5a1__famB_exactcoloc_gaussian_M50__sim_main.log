@@ -1,0 +1,13 @@
+04:12:47 [harness] run test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main: 11607 loci (11607 to run), mode=batch, workers=1
+04:13:49 [harness] famB_exactcoloc_gaussian_M50: 832/11607 loci done
+04:14:51 [harness] famB_exactcoloc_gaussian_M50: 2560/11607 loci done
+04:15:53 [harness] famB_exactcoloc_gaussian_M50: 3776/11607 loci done
+04:16:55 [harness] famB_exactcoloc_gaussian_M50: 4992/11607 loci done
+04:18:00 [harness] famB_exactcoloc_gaussian_M50: 6016/11607 loci done
+04:19:00 [harness] famB_exactcoloc_gaussian_M50: 6976/11607 loci done
+04:20:04 [harness] famB_exactcoloc_gaussian_M50: 7744/11607 loci done
+04:21:06 [harness] famB_exactcoloc_gaussian_M50: 8704/11607 loci done
+04:22:09 [harness] famB_exactcoloc_gaussian_M50: 9536/11607 loci done
+04:23:12 [harness] famB_exactcoloc_gaussian_M50: 10304/11607 loci done
+04:24:18 [harness] famB_exactcoloc_gaussian_M50: 11136/11607 loci done
+04:25:24 [harness] done test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_main: {'ok': 11607, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 11607} in 743.3s

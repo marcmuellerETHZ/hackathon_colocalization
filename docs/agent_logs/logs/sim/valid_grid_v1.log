@@ -1,0 +1,5 @@
+[W1026 19:07:16.683792810 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 408944640 bytes (free: 101842944, total: 25250627584).
+[W1026 19:07:20.818464350 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 408944640 bytes (free: 57802752, total: 25250627584).
+[W1026 19:07:20.828589044 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 408944640 bytes (free: 215089152, total: 25250627584).
+main grid: 34 cells -> /cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5 (8090s)
+["/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5"]

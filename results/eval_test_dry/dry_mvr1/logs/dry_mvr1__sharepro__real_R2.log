@@ -1,0 +1,2 @@
+22:24:29 [harness] run dry_mvr1__sharepro__real_R2: 8 loci (8 to run), mode=cpu, workers=5
+22:24:38 [harness] done dry_mvr1__sharepro__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 9.5s

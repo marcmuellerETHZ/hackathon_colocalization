@@ -1,0 +1,76 @@
+[orch] job p4b_scr_L0P1_coloc_susie_mm_r2 start 2026-10-27T11:46:58+01:00 host eu-g6-001 commit ad021dcdc4 pid 1012443
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method coloc_susie_mm --set data/processed/sets/screen_v2.h5 --ids-file results/baselines_screen_v2/ids/L0P1_all.txt --workers 16 --pilot-timeout --results-dir results/baselines_screen_v2/runs --label 'p4 screen_v2 L0|P1|r_p=0.0'
+[baselines.run] coloc_susie_mm: 2000 loci, p_max=6250, workers=16, timeout=240s
+[harness] run 20261027T104844Z_coloc_susie_mm_screen_v2_4ef05f: 2000 loci, mode=cpu, workers=16
+[harness] 21/2000 tasks done
+[harness] 55/2000 tasks done
+[harness] 78/2000 tasks done
+[harness] 112/2000 tasks done
+[harness] 141/2000 tasks done
+[harness] 164/2000 tasks done
+[harness] 191/2000 tasks done
+[harness] 218/2000 tasks done
+[harness] 246/2000 tasks done
+[harness] 268/2000 tasks done
+[harness] 295/2000 tasks done
+[harness] 317/2000 tasks done
+[harness] 342/2000 tasks done
+[harness] 372/2000 tasks done
+[harness] 405/2000 tasks done
+[harness] 429/2000 tasks done
+[harness] 455/2000 tasks done
+[harness] 484/2000 tasks done
+[harness] 531/2000 tasks done
+[harness] 556/2000 tasks done
+[harness] 580/2000 tasks done
+[harness] 598/2000 tasks done
+[harness] 613/2000 tasks done
+[harness] 632/2000 tasks done
+[harness] 659/2000 tasks done
+[harness] 701/2000 tasks done
+[harness] 741/2000 tasks done
+[harness] 763/2000 tasks done
+[harness] 794/2000 tasks done
+[harness] 823/2000 tasks done
+[harness] 854/2000 tasks done
+[harness] 881/2000 tasks done
+[harness] 921/2000 tasks done
+[harness] 952/2000 tasks done
+[harness] 987/2000 tasks done
+[harness] 1033/2000 tasks done
+[harness] 1058/2000 tasks done
+[harness] 1084/2000 tasks done
+[harness] 1104/2000 tasks done
+[harness] 1127/2000 tasks done
+[harness] 1154/2000 tasks done
+[harness] 1189/2000 tasks done
+[harness] 1225/2000 tasks done
+[harness] 1257/2000 tasks done
+[harness] 1284/2000 tasks done
+[harness] 1308/2000 tasks done
+[harness] 1344/2000 tasks done
+[harness] 1361/2000 tasks done
+[harness] 1400/2000 tasks done
+[harness] 1442/2000 tasks done
+[harness] 1479/2000 tasks done
+[harness] 1524/2000 tasks done
+[harness] 1553/2000 tasks done
+[harness] 1579/2000 tasks done
+[harness] 1600/2000 tasks done
+[harness] 1622/2000 tasks done
+[harness] 1649/2000 tasks done
+[harness] 1677/2000 tasks done
+[harness] 1706/2000 tasks done
+[harness] 1741/2000 tasks done
+[harness] 1763/2000 tasks done
+[harness] 1787/2000 tasks done
+[harness] 1810/2000 tasks done
+[harness] 1845/2000 tasks done
+[harness] 1860/2000 tasks done
+[harness] 1901/2000 tasks done
+[harness] 1935/2000 tasks done
+[harness] 1964/2000 tasks done
+[harness] 1990/2000 tasks done
+[harness] done 20261027T104844Z_coloc_susie_mm_screen_v2_4ef05f: {'ok': 1979, 'nonconverged': 21, 'failed': 0, 'timeout': 0, 'expected': 2000} in 2202.6s
+{"run_id": "20261027T104844Z_coloc_susie_mm_screen_v2_4ef05f", "run_dir": "results/baselines_screen_v2/runs/20261027T104844Z_coloc_susie_mm_screen_v2_4ef05f", "counts": {"ok": 1979, "nonconverged": 21, "failed": 0, "timeout": 0, "expected": 2000}}
+[orch] exit 0 at 2026-10-27T12:25:27+01:00

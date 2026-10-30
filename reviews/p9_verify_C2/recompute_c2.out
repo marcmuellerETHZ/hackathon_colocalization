@@ -1,0 +1,155 @@
+{
+ "pred_sha256": {
+  "net": "4e041ba0f36b33dbb61bf678f1bf8963ef3c4febfc11a450e590f343bfaace74",
+  "nold": "1335d8710689947d5597b523f251b3d4d66cae793d741703a0e40121271a5fa8",
+  "floor": "421788402fc98aca81cb53101b43c67248c5134bc71d47fbd881d45a75a785ca",
+  "B": "423a21903b5bd297e065c0421982fb21b727ced95201dcae0ef41fe2cbeefd44",
+  "A": "b02b275197ec61a6c7b8d8331294d3efae28ce81bc892503cfa9537284432d6c"
+ },
+ "artifact_manifest": {
+  "famC_C2@1": {
+   "recomputed": "f2245e6f92cc59112ba5b42e33cd52558ec765466c315ad0c78b7490d0561cd2",
+   "registered": "f2245e6f92cc59112ba5b42e33cd52558ec765466c315ad0c78b7490d0561cd2",
+   "match": true
+  },
+  "famC_C2_model@1": {
+   "recomputed": "13162e8f5128e9d391e5ec26c921be49b96c46571c429cfa88559c73b425b1f0",
+   "registered": "13162e8f5128e9d391e5ec26c921be49b96c46571c429cfa88559c73b425b1f0",
+   "match": true
+  },
+  "famC_nold_600k@1": {
+   "recomputed": "85141ba58a9fcbbe82bb90eb8e6b731f88f7f634d5885d96af5df01e0dfd68b7",
+   "registered": "85141ba58a9fcbbe82bb90eb8e6b731f88f7f634d5885d96af5df01e0dfd68b7",
+   "match": true
+  },
+  "famC_floor_600k@1": {
+   "recomputed": "89d9c92bf130dd63751af231569e5d7a9404383ceea93bb03e03221d8bdb38f1",
+   "registered": "89d9c92bf130dd63751af231569e5d7a9404383ceea93bb03e03221d8bdb38f1",
+   "match": true
+  },
+  "famB_m4_valid@1": {
+   "recomputed": "f1de8d6694d530f0bdc045520f3a6142e3103297d0af04f9621bde6569bd2336",
+   "registered": "f1de8d6694d530f0bdc045520f3a6142e3103297d0af04f9621bde6569bd2336",
+   "match": true
+  },
+  "famA_m4_valid@1": {
+   "recomputed": "1c2a6c2454977cf8c78819e21addaf69df613462475b901c22904d26948398ba",
+   "registered": "1c2a6c2454977cf8c78819e21addaf69df613462475b901c22904d26948398ba",
+   "match": true
+  }
+ },
+ "runs_json_sha_match": {
+  "net": true,
+  "nold": true,
+  "floor": true
+ },
+ "runs_json_ckpt": {
+  "net": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famC/p9_main_600k/model.pt",
+  "nold": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famC/p9_nold_600k/model.pt",
+  "floor": {
+   "model_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famC/p9_floor_600k",
+   "device": "cpu",
+   "batch": 64,
+   "threads": 1
+  }
+ },
+ "failures": {
+  "net": {
+   "n_rows": 12170,
+   "n_fail_all": 0,
+   "n_fail_realistic_SD": 0,
+   "status": {
+    "ok": 12170
+   }
+  },
+  "nold": {
+   "n_rows": 12170,
+   "n_fail_all": 0,
+   "n_fail_realistic_SD": 0,
+   "status": {
+    "ok": 12170
+   }
+  },
+  "floor": {
+   "n_rows": 12170,
+   "n_fail_all": 0,
+   "n_fail_realistic_SD": 0,
+   "status": {
+    "ok": 12170
+   }
+  },
+  "B": {
+   "n_rows": 12170,
+   "n_fail_all": 0,
+   "n_fail_realistic_SD": 0,
+   "status": {
+    "ok": 12170
+   }
+  },
+  "A": {
+   "n_rows": 9677,
+   "n_fail_all": 2493,
+   "n_fail_realistic_SD": 0,
+   "status": {
+    "ok": 9636,
+    "missing": 2493,
+    "nonconverged": 41
+   }
+  }
+ },
+ "n_realistic_SD_weighted_loci": 5347,
+ "auprc_realistic": {
+  "net": 0.964092151929656,
+  "nold": 0.9653735777604454,
+  "floor": 0.958794571088916,
+  "B": 0.833917088202963,
+  "A": 0.6750135916062922
+ },
+ "auprc_realistic_unweighted": {
+  "net": 0.97014388529406,
+  "nold": 0.970155962493886,
+  "floor": 0.9617794710027604,
+  "B": 0.8164123570556014,
+  "A": 0.676492049679187
+ },
+ "sklearn_check_weighted": {
+  "net": 0.964092151929656,
+  "nold": 0.9653735777604454,
+  "floor": 0.958794571088916,
+  "B": 0.833917088202963,
+  "A": 0.675013591606292
+ },
+ "n_blocks": 80,
+ "paired": {
+  "net-nold": {
+   "diff": -0.0012814258307893844,
+   "se": 0.0022770284460637423,
+   "n_nan": 0,
+   "ci95_pct": [
+    -0.005269694129192451,
+    0.00354961003830968
+   ],
+   "beats_by_gt_1SE": false
+  },
+  "net-floor": {
+   "diff": 0.005297580840740057,
+   "se": 0.003309507331311738,
+   "n_nan": 0,
+   "ci95_pct": [
+    0.0003497170752616491,
+    0.013588965590470885
+   ],
+   "beats_by_gt_1SE": true
+  },
+  "net-B": {
+   "diff": 0.13017506372669307,
+   "se": 0.007504857586384367,
+   "n_nan": 0,
+   "ci95_pct": [
+    0.1178553071960014,
+    0.14702949168554885
+   ],
+   "beats_by_gt_1SE": true
+  }
+ }
+}

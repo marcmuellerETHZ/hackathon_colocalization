@@ -1,0 +1,72 @@
+{
+ "coloc_abf": {
+  "recal_a_D": -8.731448932324927,
+  "recal_a_S": -1.2280431639752656,
+  "setting": "realistic",
+  "t_D": 0.5803111143879112,
+  "t_S": 0.8311721911648525
+ },
+ "coloc_prop_test": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "coloc_susie": {
+  "recal_a_D": -3.249584767969364,
+  "recal_a_S": -2.8538447050360407,
+  "setting": "realistic",
+  "t_D": 0.8036174141574123,
+  "t_S": 0.8784511379171775
+ },
+ "coloc_susie_mm": {
+  "recal_a_D": 0.047819203830938385,
+  "recal_a_S": -1.0278543592233402,
+  "setting": "realistic",
+  "t_D": 0.6920740371206827,
+  "t_S": 0.8198729398321837
+ },
+ "famB_exactcoloc_gaussian_M50": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": 0.24871826171875003,
+  "t_S": 0.013366699218750002
+ },
+ "famG_coloc_susie_gpu": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": 0.8036174141574123,
+  "t_S": 0.8784511379171775
+ },
+ "lead_snp": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "prop_coloc": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "sharepro": {
+  "recal_a_D": 3.717009480847768,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": 0.23149745386910034,
+  "t_S": 0.8021643891632574
+ },
+ "strength_only": {
+  "recal_a_D": -0.0073992313228411315,
+  "recal_a_S": -0.007132558540755564,
+  "setting": "realistic",
+  "t_D": 0.19962158544105324,
+  "t_S": 0.19396712638528904
+ }
+}

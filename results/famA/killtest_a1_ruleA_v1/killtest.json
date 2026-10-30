@@ -1,0 +1,303 @@
+{
+ "a_method": "famA_joint_susie_rho_eta_ms_ptld",
+ "baselines_present": [
+  "coloc_abf_W0.15_p12_1e-05",
+  "coloc_abf_W0.15_p12_5e-06",
+  "coloc_abf_W0.1_p12_1e-05",
+  "coloc_abf_W0.1_p12_5e-06",
+  "coloc_abf_W0.2_p12_1e-05",
+  "coloc_abf_W0.2_p12_5e-06",
+  "coloc_prop_test",
+  "coloc_susie",
+  "coloc_susie_mm",
+  "colocboost",
+  "colocboost_m1",
+  "famA_joint_susie_rho_eta_ms_ptld",
+  "lead_snp",
+  "mvsusie",
+  "prop_coloc",
+  "sharepro",
+  "strength_only"
+ ],
+ "tier1_present": [
+  "coloc_abf_W0.15_p12_5e-06",
+  "coloc_abf_W0.1_p12_5e-06",
+  "coloc_abf_W0.2_p12_5e-06",
+  "coloc_susie",
+  "coloc_susie_mm",
+  "sharepro",
+  "colocboost",
+  "mvsusie"
+ ],
+ "n_rows": {
+  "coloc_abf_W0.15_p12_1e-05": 2000,
+  "coloc_abf_W0.15_p12_5e-06": 2000,
+  "coloc_abf_W0.1_p12_1e-05": 2000,
+  "coloc_abf_W0.1_p12_5e-06": 2000,
+  "coloc_abf_W0.2_p12_1e-05": 2000,
+  "coloc_abf_W0.2_p12_5e-06": 2000,
+  "coloc_prop_test": 2000,
+  "coloc_susie": 2000,
+  "coloc_susie_mm": 2000,
+  "colocboost": 2000,
+  "colocboost_m1": 2000,
+  "lead_snp": 2000,
+  "mvsusie": 2000,
+  "prop_coloc": 2000,
+  "sharepro": 2000,
+  "strength_only": 2000,
+  "famA_joint_susie_rho_eta_ms_ptld": 2000
+ },
+ "readings": "Kill test A1 and screening kill rules (a)-(d) for Family A (DESIGN v4 \u00a75 A, \u00a76.2). Metrics: src/eval/metrics.py only.\n\npython -m famA.validation.killtest_a1 --a-dir results/famA/famA_screen_v2_v2 --a-method famA_joint_susie_rho_eta_ms_ptld     --baseline-dir results/baselines_screen_v2/runs --out results/famA/killtest_a1_v1 [--cells ...] [--n-boot 2000]\n\nReadings (fixed before looking at A1; written to the report):\n  * A1 / rule (a): cell L0|P1|r_p=0.0, AUPRC(S vs D) with the \u00a78.6 power-matched weights (setting \"ideal\"),\n    least-favourable failures; best = baseline with the highest point AUPRC; paired locus-level bootstrap\n    (unit \"locus\", 2,000 replicates, seed derive(20261029, 'killtest_A1', ...)); SE = sd of the paired difference\n    replicates. PASS iff AUPRC_A >= AUPRC_best - 1 SE. A1 compares with max(coloc-SuSiE, SharePro, mvSuSiE-RSS);\n    rule (a) with the best tier-1 baseline that has an S-vs-D score.\n  * (b) confident calls on W (fixed 0.8 thresholds, S precedence, E gate where reported) pooled over the screening\n    cells, unweighted; vs coloc.abf (W = 0.15, p12 = 5e-6). FAIL iff rate_A > 2 rate_abf AND rate_A > rate_abf + 0.02\n    AND one-sided p < 0.05 for H0: rate_A - max(2 rate_abf, rate_abf + 0.02) <= 0 (paired locus bootstrap).\n  * (c) false-S (P_S >= 0.8) on D loci, unweighted, pooled over the L4 cells and over the rho = 0.5 cells\n    separately; vs the best tier-1 baseline of rule (a)'s definition evaluated on the screening cells (highest\n    AUPRC macro over cells). FAIL iff on either subset rate_A > 2 rate_best AND rate_A > rate_best + 0.02.\n  * (d) median per-locus harness runtime (same cells) > 10x coloc-SuSiE's without an accuracy gain (A's\n    AUPRC macro over cells not above coloc-SuSiE's).\nPaired comparisons use the loci both methods were run on (slow baselines ran a 200-per-cell subsample outside A1).\n",
+ "inputs": {
+  "baseline_pred": [
+   "results/baselines_screen_v2/collected_L0P1_v1b/predictions.parquet"
+  ],
+  "baseline_dir": null,
+  "a_dir": [
+   "results/famA/killtest_inputs/a1_primary_v1"
+  ]
+ },
+ "per_cell": [
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "famA_joint_susie_rho_eta_ms_ptld",
+   "n": 2000,
+   "auprc_sd": 0.8932466475862072,
+   "auroc_sd": 0.9356711991804509,
+   "confident_W": 0.0,
+   "false_S_D": 0.036,
+   "n_failed": 0,
+   "runtime_median_s": 1.2559883196669641,
+   "runtime_mean_s": 1.409489498934483
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "coloc_abf_W0.15_p12_5e-06",
+   "n": 2000,
+   "auprc_sd": 0.8718922612642637,
+   "auroc_sd": 0.813957240325657,
+   "confident_W": 0.048,
+   "false_S_D": 0.034,
+   "n_failed": 0,
+   "runtime_median_s": 0.04719660899718292,
+   "runtime_mean_s": 0.0530738262754312
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "coloc_abf_W0.1_p12_5e-06",
+   "n": 2000,
+   "auprc_sd": 0.869249603832727,
+   "auroc_sd": 0.8123267067023473,
+   "confident_W": 0.04,
+   "false_S_D": 0.041,
+   "n_failed": 0,
+   "runtime_median_s": 0.04770134150021477,
+   "runtime_mean_s": 0.04776760499539523
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "coloc_abf_W0.2_p12_5e-06",
+   "n": 2000,
+   "auprc_sd": 0.873936976246499,
+   "auroc_sd": 0.8155605393502463,
+   "confident_W": 0.054,
+   "false_S_D": 0.036,
+   "n_failed": 0,
+   "runtime_median_s": 0.05442530150321545,
+   "runtime_mean_s": 0.05886820265999995
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "coloc_susie",
+   "n": 2000,
+   "auprc_sd": 0.9783517307167242,
+   "auroc_sd": 0.9793649464805215,
+   "confident_W": 0.054,
+   "false_S_D": 0.054,
+   "n_failed": 0,
+   "runtime_median_s": 3.307517856497725,
+   "runtime_mean_s": 4.269551384809463
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "coloc_susie_mm",
+   "n": 2000,
+   "auprc_sd": 0.9717079505105843,
+   "auroc_sd": 0.9671282961820449,
+   "confident_W": 0.054,
+   "false_S_D": 0.051,
+   "n_failed": 0,
+   "runtime_median_s": 12.249757093493827,
+   "runtime_mean_s": 17.311865487153046
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "sharepro",
+   "n": 2000,
+   "auprc_sd": 0.7339343806898627,
+   "auroc_sd": 0.8140911497617336,
+   "confident_W": 0.03,
+   "false_S_D": 0.461,
+   "n_failed": 0,
+   "runtime_median_s": 0.35655415750079555,
+   "runtime_mean_s": 0.4549481161169679
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "colocboost",
+   "n": 2000,
+   "auprc_sd": 0.8728731522658506,
+   "auroc_sd": 0.893022181641532,
+   "confident_W": 0.02,
+   "false_S_D": 0.123,
+   "n_failed": 0,
+   "runtime_median_s": 0.9609546725041582,
+   "runtime_mean_s": 1.46632459939806
+  },
+  {
+   "cell": "L0|P1|r_p=0.0",
+   "method": "mvsusie",
+   "n": 2000,
+   "auprc_sd": 0.6424317748499618,
+   "auroc_sd": 0.7217070303938063,
+   "confident_W": 0.2,
+   "false_S_D": 0.556,
+   "n_failed": 1,
+   "runtime_median_s": 18.511003343497578,
+   "runtime_mean_s": 28.051146910951967
+  }
+ ],
+ "A1": {
+  "cell": "L0|P1|r_p=0.0",
+  "n_loci": 2000,
+  "auprc": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+   "coloc_susie": 0.9783517307167242,
+   "sharepro": 0.7339343806898627,
+   "mvsusie": 0.6424317748499618
+  },
+  "best_baseline": "coloc_susie",
+  "diff": -0.08510508313051701,
+  "paired_se": 0.010379380963913151,
+  "ci95": [
+   -0.10521110253305793,
+   -0.06428115029305348
+  ],
+  "verdict": "FAIL",
+  "excluded_mode": {
+   "n_loci": 1999,
+   "auprc": {
+    "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+    "coloc_susie": 0.9783517307167242,
+    "sharepro": 0.7339343806898627,
+    "mvsusie": 0.6424317748499618
+   }
+  },
+  "failures": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0,
+   "coloc_susie": 0,
+   "sharepro": 0,
+   "mvsusie": 1
+  },
+  "runtime": {
+   "A_median_s": 1.2559883196669641,
+   "A_mean_s": 1.409489498934483,
+   "coloc_susie_median_s": 3.307517856497725,
+   "coloc_susie_mean_s": 4.269551384809463,
+   "verdict": "PASS"
+  }
+ },
+ "rule_a": {
+  "cell": "L0|P1|r_p=0.0",
+  "n_loci": 2000,
+  "auprc": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+   "coloc_abf_W0.15_p12_5e-06": 0.8718922612642637,
+   "coloc_abf_W0.1_p12_5e-06": 0.869249603832727,
+   "coloc_abf_W0.2_p12_5e-06": 0.873936976246499,
+   "coloc_susie": 0.9783517307167242,
+   "coloc_susie_mm": 0.9717079505105843,
+   "sharepro": 0.7339343806898627,
+   "colocboost": 0.8728731522658506,
+   "mvsusie": 0.6424317748499618
+  },
+  "best_baseline": "coloc_susie",
+  "diff": -0.08510508313051701,
+  "paired_se": 0.009857064261227025,
+  "ci95": [
+   -0.1045961695523871,
+   -0.06603691770497237
+  ],
+  "verdict": "FAIL",
+  "excluded_mode": {
+   "n_loci": 1999,
+   "auprc": {
+    "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+    "coloc_abf_W0.15_p12_5e-06": 0.8718922612642637,
+    "coloc_abf_W0.1_p12_5e-06": 0.869249603832727,
+    "coloc_abf_W0.2_p12_5e-06": 0.873936976246499,
+    "coloc_susie": 0.9783517307167242,
+    "coloc_susie_mm": 0.9717079505105843,
+    "sharepro": 0.7339343806898627,
+    "colocboost": 0.8728731522658506,
+    "mvsusie": 0.6424317748499618
+   }
+  },
+  "failures": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0,
+   "coloc_abf_W0.15_p12_5e-06": 0,
+   "coloc_abf_W0.1_p12_5e-06": 0,
+   "coloc_abf_W0.2_p12_5e-06": 0,
+   "coloc_susie": 0,
+   "coloc_susie_mm": 0,
+   "sharepro": 0,
+   "colocboost": 0,
+   "mvsusie": 1
+  }
+ },
+ "rule_b": {
+  "cells": [
+   "L0|P1|r_p=0.0"
+  ],
+  "n_W": 500,
+  "rate_A": 0.0,
+  "rate_abf": 0.048,
+  "p_margin": 0.999962197788637,
+  "p_diff_gt0": 0.999962197788637,
+  "per_cell": {
+   "L0|P1|r_p=0.0": {
+    "A": 0.0,
+    "abf": 0.048
+   }
+  },
+  "verdict": "PASS"
+ },
+ "macro_auprc": {
+  "coloc_abf_W0.15_p12_5e-06": 0.8718922612642637,
+  "coloc_abf_W0.1_p12_5e-06": 0.869249603832727,
+  "coloc_abf_W0.2_p12_5e-06": 0.873936976246499,
+  "coloc_susie": 0.9783517307167242,
+  "coloc_susie_mm": 0.9717079505105843,
+  "colocboost": 0.8728731522658506,
+  "mvsusie": 0.6424317748499618,
+  "sharepro": 0.7339343806898627,
+  "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+  "best_tier1": "coloc_susie"
+ },
+ "rule_c": {
+  "subsets_evaluated": [],
+  "verdict": "not evaluated (no L4 / rho=0.5 cells in this run)"
+ },
+ "rule_d": {
+  "cells": [
+   "L0|P1|r_p=0.0"
+  ],
+  "A_median_s": 1.2559883196669641,
+  "coloc_susie_median_s": 3.307517856497725,
+  "ratio": 0.3797374267230439,
+  "A_macro_auprc": 0.8932466475862072,
+  "coloc_susie_macro_auprc": 0.9783517307167242,
+  "verdict": "PASS"
+ }
+}

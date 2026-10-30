@@ -1,0 +1,167 @@
+{
+ "checkpoint": {
+  "resumed": false,
+  "rows_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/checkpoints/dry_v4__prop_coloc__sim_shifted.rows.jsonl",
+  "rows_from_checkpoint": 0,
+  "rows_this_segment": 64,
+  "segments": [
+   {
+    "git": "df33fb53466f02599caf6cbcbfd872aad36c8de5",
+    "host": "eu-g6-001",
+    "n_todo": 64,
+    "pid": 1602857,
+    "rows_from_checkpoint": 0,
+    "start_utc": "2026-10-27T19:23:18.569985Z"
+   }
+  ]
+ },
+ "config": {
+  "DRY": true,
+  "commit": "df33fb53466f02599caf6cbcbfd872aad36c8de5",
+  "methods_file": "configs/proposals/test_methods_dry_v1.yaml",
+  "methods_file_sha256": "13c12e45b8303ae93b5acac0730e2bd71f1493f2736740f760cab45aa6f5d4a1",
+  "mode": "dry",
+  "note": "validation blocks only; operating points / recalibration / strength table are DRY placeholders",
+  "orch_snapshot": true,
+  "set_key": "sim_shifted",
+  "subsample_per_class": null,
+  "test_mode_lock_refusals_observed": [
+   "the running commit df33fb5346 carries no frozen-* tag",
+   "check_frozen failed: ['CHANGED  configs/testset_v1.yaml', 'CHANGED  configs/test_methods_v1.yaml']",
+   "methods file status is 'dry', not 'frozen'",
+   "coloc_abf: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "sharepro: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "coloc_susie: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "coloc_susie_mm: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "colocboost: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "colocboost_m1: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "mvsusie: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "strength_only: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "famA_joint_susie_rho_ms_ptld: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "famB_exactcoloc_gaussian_M50: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "strength_only: frozen strength table 'DRY' missing",
+   "real_data_arms.builder (entry point building the test arms from the frozen ID lists) is not set"
+  ],
+  "unit": "dry_v4__prop_coloc__sim_shifted"
+ },
+ "counts": {
+  "expected": 64,
+  "failed": 2,
+  "nonconverged": 0,
+  "ok": 62,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-27T19:23:47.325302Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "df33fb53466f02599caf6cbcbfd872aad36c8de5",
+  "modified_tracked": [],
+  "orch_job": "p6dr_dry_v4",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 7,
+  "timeout_s_per_locus": 60.0,
+  "timing": false
+ },
+ "label": "DRY dry_v4",
+ "locus_set": {
+  "ids_sha256": "6d587a9eba8863190fd503dfab6c3976ad12481219d660686d0ae689da32d64d",
+  "n_expected": 64,
+  "n_loci_in_file": 64,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5",
+  "sha256": "2aac79f1416583b343356fbc692f1b20dd91ccb3e79b6af752665c8ae9a95fab"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "0, 1",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   63.7158203125,
+   54.05908203125,
+   48.412109375
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 54
+  },
+  "name": "prop_coloc",
+  "target": "baselines.methods:PropColoc"
+ },
+ "method_name": "prop_coloc",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": "9d6fe2a3d7a6c3e97fc34b024e06be11da68c05501ff390b53402b935472fd36",
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "a7f27e1760db2dc7ae1cf60e16eb8ebd55b09a54e82b7ac1c518c86889b53cd6",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 18710,
+  "rule": "D6(h)"
+ },
+ "run_id": "dry_v4__prop_coloc__sim_shifted",
+ "runtime_s": {
+  "median": 1.6236553125054343,
+  "p95": 4.465205475241235,
+  "sum": 125.3695067531662
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T19:23:18.569985Z",
+ "test_access": false,
+ "truth": {
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.truth.parquet",
+  "sha256": "817390cc43a944ce4eb28a6c2fab0c5c8cc5da0fde208c50e71aec8af8ef8534"
+ },
+ "wall_s": 28.755215618002694
+}

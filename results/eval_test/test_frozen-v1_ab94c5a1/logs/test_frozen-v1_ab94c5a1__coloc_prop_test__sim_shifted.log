@@ -1,0 +1,9 @@
+03:30:13 [harness] run test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted: 1600 loci (1600 to run), mode=cpu, workers=6
+03:31:14 [harness] coloc_prop_test: 108/1600 loci done
+03:32:14 [harness] coloc_prop_test: 290/1600 loci done
+03:33:15 [harness] coloc_prop_test: 458/1600 loci done
+03:34:15 [harness] coloc_prop_test: 491/1600 loci done
+03:35:15 [harness] coloc_prop_test: 736/1600 loci done
+03:36:16 [harness] coloc_prop_test: 1005/1600 loci done
+03:37:16 [harness] coloc_prop_test: 1363/1600 loci done
+03:38:11 [harness] done test_frozen-v1_ab94c5a1__coloc_prop_test__sim_shifted: {'ok': 1600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1600} in 475.3s

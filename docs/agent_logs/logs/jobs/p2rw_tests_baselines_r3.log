@@ -1,0 +1,6 @@
+[orch] job p2rw_tests_baselines_r3 start 2026-10-27T10:34:24+01:00 host eu-g6-001 commit 20d70450ca pid 929696
+[orch] cmd: set -o pipefail; cp -a '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_baselines_r3/code' '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_baselines_r3/out/proj' && for d in renv rlib_hyprcoloc rlib_hypr_dep rlib_mvsusie rlib_susie016 src; do ln -s '/cluster/scratch/mumarc/hackathon_eqtl_gwas/env/' '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_baselines_r3/out/proj/env/'; done && cd '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rw_tests_baselines_r3/out/proj' && PYTHONPATH=src python -m pytest tests/baselines -q -p no:cacheprovider -rs
+........................................x............................... [ 70%]
+..............................                                           [100%]
+101 passed, 1 xfailed in 152.62s (0:02:32)
+[orch] exit 0 at 2026-10-27T10:37:00+01:00

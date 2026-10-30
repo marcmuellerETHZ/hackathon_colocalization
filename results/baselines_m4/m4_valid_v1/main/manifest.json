@@ -1,0 +1,99 @@
+{
+ "argv": [
+  "scripts/baselines_p4.py",
+  "bench",
+  "--ids-file",
+  "results/baselines_m4/m4_subsample_v1/main.txt",
+  "--reuse-from",
+  "results/baselines_m4/runs",
+  "--locus-set",
+  "data/processed/sets/valid_grid_v1.h5",
+  "--label",
+  "p4_m4_main_partial",
+  "--results-dir",
+  "results/baselines_m4/bench",
+  "--unit",
+  "block",
+  "--n-boot",
+  "2000",
+  "--n-jobs",
+  "8",
+  "--control-workers",
+  "8"
+ ],
+ "bench_id": "20261027T182437Z_p4_m4_main_partial",
+ "boot_seed": [
+  20261029,
+  "run_benchmark",
+  "bootstrap",
+  "20261027T182437Z_p4_m4_main_partial"
+ ],
+ "c3_baselines": null,
+ "candidate": null,
+ "evaluate_wall_s": 109.96784447900427,
+ "git": {
+  "clean": true,
+  "commit": "7bf3cf7b19cd85d7ed91c0875784e5c82bd2c5e6",
+  "modified_tracked": [],
+  "tags": [],
+  "untracked_code": []
+ },
+ "ids_sha256": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "dce496fab52520c7b4e22ce509d6ef64514f2991e896e542ae2f928b995698c8"
+ },
+ "label": "p4_m4_main_partial",
+ "locus_sets": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5"
+ ],
+ "n_boot": 2000,
+ "n_expected": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": 12170
+ },
+ "n_jobs": 8,
+ "operating_points_in": null,
+ "operating_points_in_sha256": null,
+ "per_cell": null,
+ "runs": {
+  "coloc_abf_W0.15_p12_1e-05": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.15_p12_1e-05_valid_grid_v1_fee4fd"
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T130106Z_coloc_abf_W0.15_p12_5e-06_valid_grid_v1_83518d"
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_1e-05_valid_grid_v1_f3a6c7"
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_5e-06_valid_grid_v1_33c808"
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_1e-05_valid_grid_v1_c54f85"
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c"
+  },
+  "coloc_prop_test": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T122018Z_coloc_prop_test_valid_grid_v1_f3e772"
+  },
+  "lead_snp": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T112359Z_lead_snp_valid_grid_v1_a0bc69"
+  },
+  "prop_coloc": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T130107Z_prop_coloc_valid_grid_v1_b390f1"
+  },
+  "sharepro": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T112359Z_sharepro_valid_grid_v1_5a802a"
+  },
+  "strength_only": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/bench/20261027T185001Z_strength_only_valid_grid_v1_817022"
+  }
+ },
+ "start_utc": "20261027T182437Z",
+ "strength_control": {
+  "folds": 5,
+  "mode": "crossfit_k5",
+  "sha256": "85ec781d173571385caba6c6e4d3fbd25550ee04ce951f419bd4cff7bb652b64",
+  "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/bench/benchmarks/20261027T182437Z_p4_m4_main_partial/strength_table_crossfit.json"
+ },
+ "unit": "block"
+}

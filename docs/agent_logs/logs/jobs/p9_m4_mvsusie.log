@@ -1,0 +1,2 @@
+[orch] job p9_m4_mvsusie start 2026-10-28T09:41:45+01:00 host eu-g6-001 commit 432bd49465 pid 2104337
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method mvsusie --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/m4_subsample_v1/mvsusie.txt --workers 24 --pilot-timeout --results-dir results/baselines_m4/runs_p9 --label 'p9 M4 valid_grid_v1 m4_subsample@1 mvsusie (complete)'

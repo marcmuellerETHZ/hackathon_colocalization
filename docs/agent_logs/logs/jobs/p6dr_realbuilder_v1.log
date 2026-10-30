@@ -1,0 +1,31 @@
+[orch] job p6dr_realbuilder_v1 start 2026-10-27T19:24:34+01:00 host eu-g6-001 commit abec7388ae pid 1575056
+[orch] cmd: set -e; python scripts/eval_test.py --dry-run-valid --dry-real-builder --stages real --methods configs/proposals/test_methods_dry_v1.yaml --scale 0.04 --label dry_rb1 --cores 8 --ram-gb 16; python -c "
+import json; from eval.io import read_locus_attrs
+st = json.load(open(\"results/eval_test_dry/dry_rb1/state/real.json\"))
+for k, v in st[\"sets\"].items():
+    a = read_locus_attrs(v[\"path\"]); a = a[a.locus_id.isin(v[\"ids\"])]
+    print(k, len(v[\"ids\"]), \"failed\", v.get(\"failed_ids\"), {c: (c in a) for c in (\"rho_hat\", \"rho_hat_pair\", \"rho_sens_zero\", \"donor_disjoint\", \"boot_unit\")}, \"split\", sorted(set(a.split)))
+"
+test-mode lock checks (informational in a dry run):
+  - would refuse: the running commit abec7388ae carries no frozen-* tag
+  - would refuse: check_frozen failed: ['CHANGED  configs/testset_v1.yaml', 'CHANGED  configs/test_methods_v1.yaml']
+  - would refuse: methods file status is 'dry', not 'frozen'
+  - would refuse: coloc_abf: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: sharepro: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: coloc_susie: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: coloc_susie_mm: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: colocboost: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: colocboost_m1: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: mvsusie: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: strength_only: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: famA_joint_susie_rho_ms_ptld: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: famB_exactcoloc_gaussian_M50: metric_config lacks the validation-fixed t_S / t_D (C3)
+  - would refuse: strength_only: frozen strength table 'DRY' missing
+[eval_test 19:25:28] real-data arms ready: real_R2 n=32, real_R3b n=50, real_R4b_insample n=24, real_R4b_reference n=24
+[eval_test 19:25:28] stages = real only: done
+DRY RUN OK: [] bundle /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_realbuilder_v1/code/results/eval_test_dry/dry_rb1
+real_R2 32 failed [] {'rho_hat': True, 'rho_hat_pair': True, 'rho_sens_zero': True, 'donor_disjoint': True, 'boot_unit': True} split ['valid']
+real_R3b 50 failed [] {'rho_hat': True, 'rho_hat_pair': True, 'rho_sens_zero': True, 'donor_disjoint': True, 'boot_unit': True} split ['valid']
+real_R4b_insample 24 failed [] {'rho_hat': True, 'rho_hat_pair': True, 'rho_sens_zero': True, 'donor_disjoint': True, 'boot_unit': True} split ['valid']
+real_R4b_reference 24 failed [] {'rho_hat': True, 'rho_hat_pair': True, 'rho_sens_zero': True, 'donor_disjoint': True, 'boot_unit': True} split ['valid']
+[orch] exit 0 at 2026-10-27T19:25:33+01:00

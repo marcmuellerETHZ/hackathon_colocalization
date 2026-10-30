@@ -1,0 +1,4 @@
+[orch] job p4b_subsample_m4 start 2026-10-27T10:56:09+01:00 host eu-g6-001 commit 13754339ae pid 953355
+[orch] cmd: PYTHONPATH=src python scripts/baselines_p4.py subsample m4 --set data/processed/sets/valid_grid_v1.h5 --out results/baselines_m4/m4_subsample_v1
+{"main.txt": 12170, "slow.txt": 4080, "mvsusie.txt": 2040}
+[orch] exit 0 at 2026-10-27T11:00:07+01:00

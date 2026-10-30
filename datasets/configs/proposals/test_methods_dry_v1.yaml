@@ -1,0 +1,52 @@
+# DRY-RUN methods file for `scripts/eval_test.py --dry-run-valid` (p6.dryrun_testpipeline). NOT the test methods
+# file: same layout as configs/test_methods_v1.yaml (the PI's frozen file uses the same keys), with the methods
+# available on master at 2026-10-27 ~11:30. metric_config is left empty: the dry run fits DRY placeholder
+# operating points on the dry set itself. Timeouts = the pilot-frozen values (configs/test_methods_v1.yaml
+# provisional_timeouts_s); baseline `timeout` kwarg = 0.9 x timeout_s (baselines.run.R_TIMEOUT_FRACTION).
+# mem_gb_per_worker = pilot memory model a + b (p/1000)^2 at p = 5,400 (valid_grid_v1 max p 5,371), rounded up.
+# expected_s_per_locus = pilot mean per-locus runtime (src/baselines/benchmarks/pilot200_screen_v2_summary.tsv);
+# it only orders the scheduler (longest units first).
+version: 1
+status: dry
+design_ref: "DESIGN.md v4 §7.3, §8; DECISIONS.md P3-12, P3-14, P3-17; RESEARCH_TREE D9"
+
+candidates:
+  primary: famA_joint_susie_rho_ms_ptld      # DRY: exercises the candidate / C3 code path only (no decision)
+  secondary: [famB_exactcoloc_gaussian_M50]
+c3_eligible_baselines: [coloc_abf, coloc_susie, coloc_susie_mm, sharepro, colocboost, colocboost_m1, mvsusie]
+
+real_data_arms:                              # P3-14 sizes; the dry run uses scale x n validation pairs
+  R2:  {n: 800}
+  R3b: {n: 1237}
+  R4b: {n: 600, ld_conditions: [in_sample, reference]}
+  methods: [primary_candidate, coloc_abf, coloc_susie, coloc_susie_mm, sharepro, strength_only]
+  builder: "data.real.extract:build_test_arm"   # P3-28; dry: used with --dry-real-builder (mode "valid")
+
+methods:
+  - {name: coloc_abf, target: "baselines.methods:ColocABF", kwargs: {timeout: 54}, mode: cpu, n_workers: 4,
+     timeout_s: 60, mem_gb_per_worker: 0.7, expected_s_per_locus: 0.155}
+  - {name: lead_snp, target: "eval.reference_methods:LeadSNPRule", kwargs: {}, mode: cpu, n_workers: 4,
+     timeout_s: 60, mem_gb_per_worker: 0.7, expected_s_per_locus: 0.139}
+  - {name: sharepro, target: "baselines.methods:SharePro", kwargs: {timeout: 54}, mode: cpu, n_workers: 8,
+     timeout_s: 60, mem_gb_per_worker: 1.1, expected_s_per_locus: 2.39}
+  - {name: coloc_susie, target: "baselines.methods:ColocSusie", kwargs: {timeout: 324}, mode: cpu, n_workers: 24,
+     timeout_s: 360, mem_gb_per_worker: 3.6, expected_s_per_locus: 14.75}
+  - {name: coloc_susie_mm, target: "baselines.methods:ColocSusieMM", kwargs: {timeout: 216}, mode: cpu,
+     n_workers: 24, timeout_s: 240, mem_gb_per_worker: 3.6, expected_s_per_locus: 13.44}
+  - {name: colocboost, target: "baselines.methods:ColocBoost", kwargs: {timeout: 108}, mode: cpu, n_workers: 8,
+     timeout_s: 120, mem_gb_per_worker: 2.0, expected_s_per_locus: 6.71, subsample: slow_method_subsample}
+  - {name: colocboost_m1, target: "baselines.methods:ColocBoostM1", kwargs: {timeout: 54}, mode: cpu, n_workers: 4,
+     timeout_s: 60, mem_gb_per_worker: 1.7, expected_s_per_locus: 0.42, subsample: slow_method_subsample}
+  - {name: mvsusie, target: "baselines.methods:MvSusie", kwargs: {timeout: 972}, mode: cpu, n_workers: 16,
+     timeout_s: 1080, mem_gb_per_worker: 3.5, expected_s_per_locus: 70.35, subsample: slow_method_subsample}
+  - {name: prop_coloc, target: "baselines.methods:PropColoc", kwargs: {timeout: 54}, mode: cpu, n_workers: 8,
+     timeout_s: 60, mem_gb_per_worker: 2.1, expected_s_per_locus: 0.88}
+  - {name: coloc_prop_test, target: "baselines.methods:ColocPropTest", kwargs: {timeout: 54}, mode: cpu,
+     n_workers: 8, timeout_s: 60, mem_gb_per_worker: 2.3, expected_s_per_locus: 1.32}
+  - {name: strength_only, target: "eval.reference_methods:StrengthOnly", kwargs: {table: DRY}, mode: cpu,
+     n_workers: 4, timeout_s: 60, mem_gb_per_worker: 0.5, expected_s_per_locus: 0.05}
+  # candidates (GPU, one at a time): famA JointSusieMethod default config (master e1ad8a9), famB primary (P3-7)
+  - {name: famA_joint_susie_rho_ms_ptld, target: "famA.method:JointSusieMethod", kwargs: {}, mode: batch, gpu: true,
+     batch_size: 8, timeout_s: 120, mem_gb_per_worker: 6.0, expected_s_per_locus: 0.5}
+  - {name: famB_exactcoloc_gaussian_M50, target: "famB.method:ExactColoc", kwargs: {mode: gaussian, M: 50},
+     mode: batch, gpu: true, batch_size: 64, timeout_s: 60, mem_gb_per_worker: 6.0, expected_s_per_locus: 0.05}

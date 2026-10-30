@@ -1,0 +1,4 @@
+20:13:38 [harness] run dry_v4__coloc_susie_mm__sim_shifted: 64 loci (64 to run), mode=cpu, workers=6
+20:14:40 [harness] coloc_susie_mm: 12/64 loci done
+20:15:44 [harness] coloc_susie_mm: 48/64 loci done
+20:16:05 [harness] done dry_v4__coloc_susie_mm__sim_shifted: {'ok': 62, 'nonconverged': 2, 'failed': 0, 'timeout': 0, 'expected': 64} in 146.8s

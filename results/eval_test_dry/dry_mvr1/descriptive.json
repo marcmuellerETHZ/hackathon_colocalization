@@ -1,0 +1,489 @@
+{
+ "definition": "D16: pre-declared descriptive entries (no claims). Three-way calls (unweighted confusion, true class x\n        call) and weighted recalls at BOTH the matched-W operating point in use and the fixed 0.8 / 0.8\n        thresholds, least-favourable failures, on the main benchmark (realistic setting) -- and the same for every\n        other method in the benchmark for comparison.",
+ "descriptive": [
+  "famB_exactcoloc_gaussian_M50",
+  "famG_coloc_susie_gpu"
+ ],
+ "methods": {
+  "coloc_abf": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 32,
+      "insufficient": 2
+     },
+     "G": {
+      "D": 10,
+      "S": 11,
+      "insufficient": 14
+     },
+     "S": {
+      "D": 9,
+      "S": 24,
+      "insufficient": 1
+     },
+     "U": {
+      "D": 6,
+      "S": 2,
+      "insufficient": 3
+     },
+     "W": {
+      "D": 2,
+      "insufficient": 47
+     }
+    },
+    "recall": {
+     "W_called_D": 0.05,
+     "W_called_S": 0.0,
+     "recall_D": 0.9333333333333335,
+     "recall_S": 0.8
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 32,
+      "insufficient": 2
+     },
+     "G": {
+      "D": 7,
+      "S": 15,
+      "insufficient": 13
+     },
+     "S": {
+      "D": 9,
+      "S": 25
+     },
+     "U": {
+      "D": 6,
+      "S": 5
+     },
+     "W": {
+      "D": 1,
+      "S": 4,
+      "insufficient": 44
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.025,
+     "recall_D": 0.9333333333333335,
+     "recall_S": 0.8
+    },
+    "t_D": 0.9370584492629197,
+    "t_S": 0.38029311431054874
+   }
+  },
+  "coloc_susie": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 33,
+      "insufficient": 1
+     },
+     "G": {
+      "D": 9,
+      "S": 12,
+      "insufficient": 14
+     },
+     "S": {
+      "D": 5,
+      "S": 27,
+      "insufficient": 2
+     },
+     "U": {
+      "D": 4,
+      "S": 7
+     },
+     "W": {
+      "D": 2,
+      "S": 1,
+      "insufficient": 46
+     }
+    },
+    "recall": {
+     "W_called_D": 0.05,
+     "W_called_S": 0.05,
+     "recall_D": 0.9500000000000001,
+     "recall_S": 0.8250000000000001
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "insufficient": 34
+     },
+     "G": {
+      "insufficient": 35
+     },
+     "S": {
+      "insufficient": 34
+     },
+     "U": {
+      "insufficient": 11
+     },
+     "W": {
+      "insufficient": 49
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "t_D": 1.0000000000000002,
+    "t_S": 1.0000000000000002
+   }
+  },
+  "coloc_susie_mm": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 34
+     },
+     "G": {
+      "D": 8,
+      "S": 13,
+      "insufficient": 14
+     },
+     "S": {
+      "D": 4,
+      "S": 29,
+      "insufficient": 1
+     },
+     "U": {
+      "D": 4,
+      "S": 7
+     },
+     "W": {
+      "D": 3,
+      "insufficient": 46
+     }
+    },
+    "recall": {
+     "W_called_D": 0.1,
+     "W_called_S": 0.0,
+     "recall_D": 1.0,
+     "recall_S": 0.8916666666666667
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 33,
+      "insufficient": 1
+     },
+     "G": {
+      "D": 3,
+      "S": 18,
+      "insufficient": 14
+     },
+     "S": {
+      "D": 4,
+      "S": 30
+     },
+     "U": {
+      "D": 3,
+      "S": 7,
+      "insufficient": 1
+     },
+     "W": {
+      "S": 4,
+      "insufficient": 45
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.025,
+     "recall_D": 0.9500000000000001,
+     "recall_S": 0.8916666666666667
+    },
+    "t_D": 0.998866973129257,
+    "t_S": 0.38029311431054874
+   }
+  },
+  "famB_exactcoloc_gaussian_M50": {
+   "descriptive": true,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 27,
+      "insufficient": 7
+     },
+     "G": {
+      "D": 2,
+      "S": 1,
+      "insufficient": 32
+     },
+     "S": {
+      "D": 5,
+      "S": 21,
+      "insufficient": 8
+     },
+     "U": {
+      "D": 2,
+      "S": 3,
+      "insufficient": 6
+     },
+     "W": {
+      "D": 1,
+      "insufficient": 48
+     }
+    },
+    "recall": {
+     "W_called_D": 0.025,
+     "W_called_S": 0.0,
+     "recall_D": 0.8166666666666668,
+     "recall_S": 0.6333333333333334
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 27,
+      "insufficient": 7
+     },
+     "G": {
+      "D": 2,
+      "S": 15,
+      "insufficient": 18
+     },
+     "S": {
+      "D": 5,
+      "S": 28,
+      "insufficient": 1
+     },
+     "U": {
+      "D": 2,
+      "S": 9
+     },
+     "W": {
+      "D": 1,
+      "S": 2,
+      "insufficient": 46
+     }
+    },
+    "recall": {
+     "W_called_D": 0.025,
+     "W_called_S": 0.0,
+     "recall_D": 0.8166666666666668,
+     "recall_S": 0.7916666666666666
+    },
+    "t_D": 0.7967529296875001,
+    "t_S": 0.004272460937500001
+   }
+  },
+  "famG_coloc_susie_gpu": {
+   "descriptive": true,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 33,
+      "insufficient": 1
+     },
+     "G": {
+      "D": 9,
+      "S": 12,
+      "insufficient": 14
+     },
+     "S": {
+      "D": 6,
+      "S": 27,
+      "insufficient": 1
+     },
+     "U": {
+      "D": 4,
+      "S": 7
+     },
+     "W": {
+      "D": 2,
+      "S": 1,
+      "insufficient": 46
+     }
+    },
+    "recall": {
+     "W_called_D": 0.05,
+     "W_called_S": 0.05,
+     "recall_D": 0.9500000000000001,
+     "recall_S": 0.8250000000000001
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "insufficient": 34
+     },
+     "G": {
+      "insufficient": 35
+     },
+     "S": {
+      "insufficient": 34
+     },
+     "U": {
+      "insufficient": 11
+     },
+     "W": {
+      "insufficient": 49
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "t_D": 1.0000000000000002,
+    "t_S": 1.0000000000000002
+   }
+  },
+  "sharepro": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "D": 21,
+      "S": 1,
+      "insufficient": 12
+     },
+     "G": {
+      "D": 3,
+      "S": 16,
+      "insufficient": 16
+     },
+     "S": {
+      "S": 32,
+      "insufficient": 2
+     },
+     "U": {
+      "S": 10,
+      "insufficient": 1
+     },
+     "W": {
+      "S": 1,
+      "insufficient": 48
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.016666666666666666,
+     "recall_D": 0.425,
+     "recall_S": 0.9333333333333335
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 24,
+      "S": 2,
+      "insufficient": 8
+     },
+     "G": {
+      "D": 5,
+      "S": 18,
+      "insufficient": 12
+     },
+     "S": {
+      "S": 32,
+      "insufficient": 2
+     },
+     "U": {
+      "S": 10,
+      "insufficient": 1
+     },
+     "W": {
+      "D": 2,
+      "S": 2,
+      "insufficient": 45
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.016666666666666666,
+     "recall_D": 0.5416666666666667,
+     "recall_S": 0.9333333333333335
+    },
+    "t_D": 0.22566572877914354,
+    "t_S": 0.18880000000000002
+   }
+  },
+  "strength_only": {
+   "descriptive": false,
+   "fixed_0.8": {
+    "confusion": {
+     "D": {
+      "insufficient": 34
+     },
+     "G": {
+      "insufficient": 35
+     },
+     "S": {
+      "insufficient": 34
+     },
+     "U": {
+      "insufficient": 11
+     },
+     "W": {
+      "insufficient": 49
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "t_D": 0.8,
+    "t_S": 0.8
+   },
+   "matched_w": {
+    "confusion": {
+     "D": {
+      "D": 28,
+      "S": 6
+     },
+     "G": {
+      "D": 1,
+      "S": 3,
+      "insufficient": 31
+     },
+     "S": {
+      "S": 34
+     },
+     "U": {
+      "D": 1,
+      "S": 1,
+      "insufficient": 9
+     },
+     "W": {
+      "insufficient": 49
+     }
+    },
+    "recall": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.7916666666666667,
+     "recall_S": 1.0
+    },
+    "t_D": 0.19444444444444448,
+    "t_S": 0.19444444444444448
+   }
+  }
+ },
+ "setting": "realistic"
+}

@@ -1,0 +1,20 @@
+[orch] job famB_mm_ladder start 2026-10-28T11:59:26+01:00 host eu-g6-001 commit bcf1f6436f pid 2319472
+[orch] cmd: python scripts/famB_eval/ladder_Bmm.py --bmm results/famB/p9_screen_v2/Bmm_M50/predictions.parquet --b1 results/famB/screen_v2/M50/predictions.parquet --baselines results/baselines_screen_v2/collected_v1 --sets data/processed/sets/screen_v2/*.h5 --n-boot 2000 --n-jobs 16 --out results/famB/p9_ladder/ladder_Bmm.json
+{"auprc_realistic_Bmm": 0.8614054286491144, "auprc_realistic_B1": 0.8216324918057627, "auroc_realistic_Bmm": 0.8721759488403645, "auroc_realistic_B1": 0.8098479809921609, "per_level": {"L2": {"exactcoloc_mm_gaussian_M50": 0.9140874613072797, "exactcoloc_gaussian_M50": 0.8836718206538609}, "L4": {"exactcoloc_mm_gaussian_M50": 0.8086542110087049, "exactcoloc_gaussian_M50": 0.7597836488345859}}, "contrast": {"locus": {"diff": 0.0397729368433517, "se": 0.005696927156375131, "ci95": [0.0292536023160654, 0.05110916133827557], "p_greater": 0.00025, "p_less": 0.99975, "estimates": [0.8614054286491144, 0.8216324918057627]}, "block": {"diff": 0.03977293684335148, "se": 0.00567850611298112, "ci95": [0.02847541838767212, 0.050935499013694006], "p_greater": 0.00025, "p_less": 0.99975, "estimates": [0.8614054286491144, 0.8216324918057629]}, "primary_unit": "block"}, "pass": true}
+{
+ "new_method_gate_pass": true,
+ "rule_a_kill": false,
+ "rule_b_kill": false,
+ "rule_d_kill": false,
+ "rule_c_kill_OP2_prereg_lowest_falseS": true,
+ "rule_c_kill_OP2_best_auprc": true,
+ "rule_c_kill_OP2_lowest_nondegenerate": true,
+ "rule_c_kill_OP2_BINDING_P4-1": true,
+ "B1_usefulness_pass_OP2": false,
+ "rule_c_kill_OP1_prereg_lowest_falseS": true,
+ "rule_c_kill_OP1_best_auprc": true,
+ "rule_c_kill_OP1_lowest_nondegenerate": true,
+ "rule_c_kill_OP1_BINDING_P4-1": true,
+ "B1_usefulness_pass_OP1": false
+}
+[orch] exit 0 at 2026-10-28T12:00:29+01:00

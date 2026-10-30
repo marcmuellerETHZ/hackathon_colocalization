@@ -1,0 +1,43 @@
+[orch] job p6dr_tests_eval start 2026-10-27T14:05:44+01:00 host eu-g6-001 commit d3399987e6 pid 1163908
+[orch] cmd: cd tests/eval && python -m pytest -q -p no:cacheprovider . 2>&1 | tail -40
+E       assert not {'src/famC/c1.py': ["string '.truth.parquet'"]}
+
+test_truth_isolation.py:46: AssertionError
+=============================== warnings summary ===============================
+test_eval_metrics.py: 4 warnings
+test_eval_testrun.py: 16 warnings
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=1163916) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_tests_eval/code/src/eval/metrics.py:855: RuntimeWarning: Mean of empty slice
+    dlt = jj.mean() - jj
+
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+  /cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+    ret = ret.dtype.type(ret / rcount)
+
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+test_eval_testrun.py::test_run_benchmark_method_ids
+  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_tests_eval/code/src/eval/metrics.py:944: RuntimeWarning: Mean of empty slice
+    dlt = jk.mean() - jk
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test_truth_isolation.py::test_method_code_never_touches_truth - Assert...
+1 failed, 79 passed, 1 skipped, 38 warnings in 260.20s (0:04:20)
+[orch] exit 0 at 2026-10-27T14:10:09+01:00

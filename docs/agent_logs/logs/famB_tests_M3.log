@@ -1,0 +1,131 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/bin/python
+rootdir: /cluster/scratch/mumarc/hackathon_eqtl_gwas
+collecting ... collected 41 items
+
+tests/famB/test_bf.py::test_support_equals_full_form_regular[0.0] rho=0.0: worst rel err 6.88e-14
+PASSED
+tests/famB/test_bf.py::test_support_equals_full_form_regular[0.4] rho=0.4: worst rel err 8.42e-14
+PASSED
+tests/famB/test_bf.py::test_support_equals_full_form_regular[-0.7] rho=-0.7: worst rel err 1.60e-14
+PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985-0.0] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985-0.4] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[near_singular_r2_0.985--0.7] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15-0.0] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15-0.4] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[rank_deficient_n15--0.7] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate-0.0] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate-0.4] PASSED
+tests/famB/test_bf.py::test_support_equals_mpmath_near_singular[exact_duplicate--0.7] PASSED
+tests/famB/test_bf.py::test_negative_control_active_only_b_is_wrong PASSED
+tests/famB/test_bf.py::test_fp32_kernel_close PASSED
+tests/famB/test_calibration_l0star.py::test_simulator_mode_calibrated simulator {'H0': (38.8, 30, -1.66), 'H1': (68.2, 78, 1.39), 'H2': (81.0, 95, 1.85), 'H3': (287.7, 275, -1.11), 'H4': (156.0, 152, -0.41), 'H34': (168.3, 170, 0.17), 'S': (69.2, 71, 0.64), 'S[0.0,0.1)': (715, 0.002, 0.003, 0.64), 'S[0.9,1.01)': (54, 0.996, 1.0, 0.49), 'D': (95.5, 91, -0.99), 'D[0.0,0.1)': (664, 0.002, 0.003, 0.89), 'D[0.1,0.5)': (35, 0.302, 0.343, 0.54), 'D[0.5,0.9)': (67, 0.76, 0.672, -1.76), 'D[0.9,1.01)': (34, 0.967, 0.941, -0.85), 'W': (555.9, 548, -1.72), 'W[0.0,0.1)': (203, 0.007, 0.005, -0.35), 'W[0.1,0.5)': (34, 0.29, 0.265, -0.34), 'W[0.5,0.9)': (58, 0.738, 0.603, -2.42), 'W[0.9,1.01)': (505, 0.994, 0.996, 0.65), 'U': (0.3, 1, 1.59), 'U[0.0,0.1)': (799, 0.0, 0.0, -0.26), 'G': (79.1, 89, 1.49), 'G[0.0,0.1)': (594, 0.008, 0.007, -0.26), 'G[0.1,0.5)': (147, 0.261, 0.333, 2.08), 'G[0.5,0.9)': (59, 0.614, 0.61, -0.05), 'E1': (692.1, 688, -0.93), 'E1[0.0,0.1)': (77, 0.011, 0.0, -0.96), 'E1[0.5,0.9)': (63, 0.773, 0.683, -1.79), 'E1[0.9,1.01)': (642, 0.992, 0.992, 0.11), 'E2': (692.0, 687, -1.13), 'E2[0.0,0.1)': (77, 0.009, 0.0, -0.83), 'E2[0.5,0.9)': (68, 0.779, 0.721, -1.21), 'E2[0.9,1.01)': (638, 0.992, 0.994, 0.4)}
+PASSED
+tests/famB/test_calibration_l0star.py::test_gaussian_mode_calibrated_and_rho_matters gaussian {'H0': (440.1, 454, 1.58), 'H1': (157.6, 144, -1.72), 'H2': (164.5, 165, 0.06), 'H3': (45.6, 47, 0.27), 'H4': (122.7, 134, 1.5), 'H34': (69.5, 56, -2.23), 'S': (51.6, 50, -0.6), 'S[0.0,0.1)': (934, 0.001, 0.004, 2.6), 'S[0.5,0.9)': (21, 0.729, 0.667, -0.66), 'S[0.9,1.01)': (32, 0.991, 1.0, 0.55), 'D': (14.8, 14, -0.38), 'D[0.0,0.1)': (975, 0.001, 0.0, -0.87), 'W': (890.5, 894, 0.95), 'W[0.0,0.1)': (80, 0.009, 0.0, -0.85), 'W[0.1,0.5)': (27, 0.305, 0.259, -0.53), 'W[0.5,0.9)': (31, 0.68, 0.806, 1.55), 'W[0.9,1.01)': (862, 0.998, 1.0, 1.28), 'U': (0.1, 0, -0.34), 'U[0.0,0.1)': (1000, 0.0, 0.0, -0.34), 'G': (43.0, 42, -0.21), 'G[0.0,0.1)': (899, 0.002, 0.0, -1.44), 'G[0.1,0.5)': (67, 0.3, 0.284, -0.31), 'G[0.5,0.9)': (34, 0.615, 0.676, 0.75), 'E1': (916.3, 919, 0.72), 'E1[0.0,0.1)': (57, 0.009, 0.0, -0.72), 'E1[0.1,0.5)': (22, 0.318, 0.318, -0.0), 'E1[0.5,0.9)': (38, 0.729, 0.789, 0.87), 'E1[0.9,1.01)': (883, 0.998, 0.999, 0.64), 'E2': (915.4, 920, 1.27), 'E2[0.0,0.1)': (58, 0.011, 0.0, -0.84), 'E2[0.1,0.5)': (24, 0.311, 0.333, 0.25), 'E2[0.5,0.9)': (33, 0.724, 0.818, 1.26), 'E2[0.9,1.01)': (885, 0.998, 1.0, 1.31)}
+Brier (rho != 0 loci): correct rho 0.3127  vs rho ignored 0.3429
+PASSED
+tests/famB/test_coloc_identity.py::test_coloc_mode_matches_R_coloc_abf[1e-05] p12=1e-05: max |dPP| over 200 loci x 5 hypotheses = 3.586e-14
+PASSED
+tests/famB/test_coloc_identity.py::test_coloc_mode_matches_R_coloc_abf[5e-06] p12=5e-06: max |dPP| over 200 loci x 5 hypotheses = 3.286e-14
+PASSED
+tests/famB/test_events.py::test_known_classes PASSED
+tests/famB/test_events.py::test_partition_random {'S': 0.025900000000000003, 'U': 0.005200000000000001, 'D': 0.11945, 'W': 0.7671, 'G': 0.08235}
+PASSED
+tests/famB/test_method.py::test_controls[False-gaussian] PASSED
+tests/famB/test_method.py::test_controls[False-coloc] PASSED
+tests/famB/test_method.py::test_controls[True-gaussian] PASSED
+tests/famB/test_method.py::test_controls[True-coloc] PASSED
+tests/famB/test_method.py::test_dense_equals_factor PASSED
+tests/famB/test_method.py::test_compiled_equals_eager PASSED
+tests/famB/test_method.py::test_failure_is_reported_not_raised PASSED
+tests/famB/test_method.py::test_no_truth_file_access PASSED
+tests/famB/test_method.py::test_compiled_equals_eager_mixture PASSED
+tests/famB/test_method.py::test_sampler_never_draws_negligible_terms PASSED
+tests/famB/test_screen.py::test_identity_when_p_le_M PASSED
+tests/famB/test_screen.py::test_strong_D_pair_r2_099_kept PASSED
+tests/famB/test_screen.py::test_exact_duplicates_collapse_with_multiplicity PASSED
+tests/famB/test_screen.py::test_lead_removed_finds_masked_secondary PASSED
+tests/famB/test_screen_recall_1kg.py::test_screen_recall_real_ld 
+windows: 40 median p: 3143
+   arm   M  trait       lam_bin     mean  size
+    L0  50      1  [10.0, 20.0) 1.000000   239
+    L0  50      1  [20.0, 50.0) 1.000000   298
+    L0  50      1    [3.0, 4.0) 0.820225    89
+    L0  50      1   [4.0, 6.29) 0.986755   151
+    L0  50      1 [50.0, 151.0) 0.997312   372
+    L0  50      1  [6.29, 10.0) 0.993289   149
+    L0  50      2  [10.0, 20.0) 0.996390   277
+    L0  50      2  [20.0, 50.0) 0.997494   399
+    L0  50      2    [3.0, 4.0) 0.811966   117
+    L0  50      2   [4.0, 6.29) 0.960000   200
+    L0  50      2 [50.0, 151.0) 1.000000    90
+    L0  50      2  [6.29, 10.0) 1.000000   199
+    L0 100      1  [10.0, 20.0) 1.000000   239
+    L0 100      1  [20.0, 50.0) 1.000000   298
+    L0 100      1    [3.0, 4.0) 0.898876    89
+    L0 100      1   [4.0, 6.29) 0.993377   151
+    L0 100      1 [50.0, 151.0) 1.000000   372
+    L0 100      1  [6.29, 10.0) 0.993289   149
+    L0 100      2  [10.0, 20.0) 0.996390   277
+    L0 100      2  [20.0, 50.0) 0.997494   399
+    L0 100      2    [3.0, 4.0) 0.837607   117
+    L0 100      2   [4.0, 6.29) 0.985000   200
+    L0 100      2 [50.0, 151.0) 1.000000    90
+    L0 100      2  [6.29, 10.0) 1.000000   199
+L2like  50      1  [10.0, 20.0) 0.903766   239
+L2like  50      1  [20.0, 50.0) 0.966443   298
+L2like  50      1    [3.0, 4.0) 0.696629    89
+L2like  50      1   [4.0, 6.29) 0.814570   151
+L2like  50      1 [50.0, 151.0) 0.994624   372
+L2like  50      1  [6.29, 10.0) 0.825503   149
+L2like  50      2  [10.0, 20.0) 0.971119   277
+L2like  50      2  [20.0, 50.0) 0.989975   399
+L2like  50      2    [3.0, 4.0) 0.709402   117
+L2like  50      2   [4.0, 6.29) 0.830000   200
+L2like  50      2 [50.0, 151.0) 1.000000    90
+L2like  50      2  [6.29, 10.0) 0.904523   199
+L2like 100      1  [10.0, 20.0) 0.941423   239
+L2like 100      1  [20.0, 50.0) 0.976510   298
+L2like 100      1    [3.0, 4.0) 0.752809    89
+L2like 100      1   [4.0, 6.29) 0.847682   151
+L2like 100      1 [50.0, 151.0) 0.997312   372
+L2like 100      1  [6.29, 10.0) 0.859060   149
+L2like 100      2  [10.0, 20.0) 0.978339   277
+L2like 100      2  [20.0, 50.0) 0.989975   399
+L2like 100      2    [3.0, 4.0) 0.735043   117
+L2like 100      2   [4.0, 6.29) 0.865000   200
+L2like 100      2 [50.0, 151.0) 1.000000    90
+L2like 100      2  [6.29, 10.0) 0.934673   199
+powered causal variants:
+    arm   M  trait     mean  size
+    L0  50      1 0.998068  1035
+    L0  50      2 0.998028  1014
+    L0 100      1 0.999034  1035
+    L0 100      2 0.998028  1014
+L2like  50      1 0.955556  1035
+L2like  50      2 0.968442  1014
+L2like 100      1 0.971014  1035
+L2like 100      2 0.975345  1014
+missed powered (L0):
+ arm   M  trait        lam        mu  powered  kept     window    p       lam_bin
+ L0 100      1   7.243788  7.199732     True False chr16_0041 4011  [6.29, 10.0)
+ L0  50      1   7.243788  7.199732     True False chr16_0041 4011  [6.29, 10.0)
+ L0  50      1 103.566015 40.145691     True False chr15_0037 3892 [50.0, 151.0)
+ L0 100      2  22.603774 18.718350     True False chr18_0037 3494  [20.0, 50.0)
+ L0  50      2  22.603774 18.718350     True False chr18_0037 3494  [20.0, 50.0)
+ L0 100      2  15.639350  8.827181     True False chr18_0033 4056  [10.0, 20.0)
+ L0  50      2  15.639350  8.827181     True False chr18_0033 4056  [10.0, 20.0)
+PASSED
+tests/famB/test_sim_integration.py::test_oracle_matches_sim class shares {'S': 0.02532, 'U': 0.00558, 'D': 0.11472, 'W': 0.76714, 'G': 0.08724}
+PASSED
+tests/famB/test_sim_integration.py::test_config_prior_matches_l0star[7] PASSED
+tests/famB/test_sim_integration.py::test_config_prior_matches_l0star[30] PASSED
+tests/famB/test_sim_integration.py::test_simulator_mode_calibrated_on_sim_l0star L0* (sim generator) calibration {'S': (50.4, 48, -0.83), 'D': (42.2, 43, 0.23), 'W': (579.7, 574, -1.09), 'U': (0.0, 0, 0.0), 'G': (77.8, 85, 1.1)} mean log score posterior -0.203 vs prior -0.791
+PASSED
+tests/famB/test_toy2snp.py::test_hand_computed_two_snp {'H0': 0.000302, 'H1': 0.007357, 'H2': 0.000163, 'H3': 7e-06, 'H4': 0.989605, 'H34': 0.002565}
+PASSED
+tests/famB/test_toy2snp.py::test_hand_rho_nonzero_shared PASSED
+
+======================== 41 passed in 146.86s (0:02:26) ========================
+EXIT 0

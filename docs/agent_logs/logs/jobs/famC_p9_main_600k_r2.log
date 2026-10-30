@@ -1,0 +1,4 @@
+[orch] job famC_p9_main_600k_r2 start 2026-10-28T14:07:17+01:00 host eu-g6-001 commit f7cf358173 pid 2399506
+[orch] cmd: python -m famC.train_main --run p9_main_600k --variant full --train-set train_v1 --valid-set valid_v1 --max-train-shards 296 --steps 18750 --warmup 1000 --eval-every 2343 --seed-key main > logs/famC/p9_main_600k.log 2>&1; rc=$?; tail -n 2 logs/famC/p9_main_600k.log | cut -c1-400; exit $rc
+EVAL step 18750: all: sd_pm 0.9839 dw 0.9984 | realistic_L1-L4: sd_pm 0.9865 dw 0.9984 | L6: sd_pm 0.9619 dw 0.9976 | train-region sd_pm 0.9963 | ll 0.3672 | infer 4063 loci/s
+DONE

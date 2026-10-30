@@ -1,0 +1,7 @@
+[orch] job famB_mm_profile_r2 start 2026-10-28T09:54:07+01:00 host eu-g6-001 commit 4f095d9876 pid 2123982
+[orch] cmd: python scripts/famB_eval/profile_bmm.py --set "data/processed/sets/valid_grid_v1/L2_P1_r_p=0.0.h5" --n 48 && python scripts/famB_eval/profile_bmm.py --set "data/processed/sets/valid_grid_v1/L2_P1_r_p=0.0.h5" --n 48 --compile
+exactcoloc_gaussian_M50 total 1.00s for 48 loci = 0.021 s/locus; {'eb_select_phase1': 0.23, 'enumerate_iter_and_final': 0.44, 'events': 0.05} status {'ok': 48, 'failed': 0} peak GB 2.24
+exactcoloc_mm_gaussian_M50 total 3.97s for 48 loci = 0.083 s/locus; {'eb_select_phase1': 0.2, 'logz_and_moments': 2.52, 'enum_inside_eb_mm': 0.26, 'eb_select_mm': 0.5, 'phi_b': 0.01, 'enumerate_iter_and_final': 0.43, 'events': 0.05} status {'ok': 48, 'failed': 0} peak GB 2.26
+exactcoloc_gaussian_M50 total 0.72s for 48 loci = 0.015 s/locus; {'eb_select_phase1': 0.17, 'enumerate_iter_and_final': 0.22, 'events': 0.05} status {'ok': 48, 'failed': 0} peak GB 2.16
+exactcoloc_mm_gaussian_M50 total 4.71s for 48 loci = 0.098 s/locus; {'eb_select_phase1': 0.58, 'logz_and_moments': 2.81, 'enum_inside_eb_mm': 0.26, 'eb_select_mm': 0.74, 'phi_b': 0.01, 'enumerate_iter_and_final': 0.21, 'events': 0.06} status {'ok': 48, 'failed': 0} peak GB 2.26
+[orch] exit 0 at 2026-10-28T09:54:48+01:00

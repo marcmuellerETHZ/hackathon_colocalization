@@ -1,0 +1,30 @@
+{
+ "coloc_abf": {
+  "recal_a_D": -12.040616159106794,
+  "recal_a_S": 0.768687203654792,
+  "setting": "realistic",
+  "t_D": 0.2651710588715436,
+  "t_S": 0.9311421325413486
+ },
+ "coloc_susie_mm": {
+  "recal_a_D": -8.103046587582039,
+  "recal_a_S": -2.013573687990858,
+  "setting": "realistic",
+  "t_D": 0.2651710588715436,
+  "t_S": 0.9311421325413486
+ },
+ "lead_snp": {
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "strength_only": {
+  "recal_a_D": 0.0032768238273360017,
+  "recal_a_S": -0.02047225040130139,
+  "setting": "realistic",
+  "t_D": 0.23569023569023573,
+  "t_S": 0.23569023569023573
+ }
+}

@@ -1,0 +1,2 @@
+22:24:39 [harness] run dry_mvr1__sharepro__real_R4b_insample: 6 loci (6 to run), mode=cpu, workers=5
+22:24:44 [harness] done dry_mvr1__sharepro__real_R4b_insample: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 5.4s

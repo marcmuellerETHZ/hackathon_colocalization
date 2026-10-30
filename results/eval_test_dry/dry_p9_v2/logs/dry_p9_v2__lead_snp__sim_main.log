@@ -1,0 +1,2 @@
+10:06:23 [harness] run dry_p9_v2__lead_snp__sim_main: 241 loci (241 to run), mode=cpu, workers=2
+10:06:27 [harness] done dry_p9_v2__lead_snp__sim_main: {'ok': 241, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 241} in 3.3s

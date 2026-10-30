@@ -1,0 +1,62 @@
+
+Proportional colocalization test
+-----------------------------------
+          Method   eta p_coloc
+ prop-coloc-cond -0.29    TRUE
+ prop-coloc-full -0.24    0.00
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+p_coloc = TRUE indicates proportional colocalization hypothesis is rejected at an alpha = 0.05 significance level.
+Proportional colocalization test
+-----------------------------------
+          Method   eta p_coloc
+ prop-coloc-cond -0.49   FALSE
+ prop-coloc-full -0.95    0.00
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+p_coloc = FALSE indicates proportional colocalization hypothesis is not rejected at an alpha = 0.05 significance level.
+Proportional colocalization test
+-----------------------------------
+          Method   eta p_coloc
+ prop-coloc-cond  0.09    TRUE
+ prop-coloc-full -0.01    0.00
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+p_coloc = TRUE indicates proportional colocalization hypothesis is rejected at an alpha = 0.05 significance level.
+Proportional colocalization test
+-----------------------------------
+          Method  eta p_coloc
+ prop-coloc-cond 0.16    TRUE
+ prop-coloc-full 0.09    0.00
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+p_coloc = TRUE indicates proportional colocalization hypothesis is rejected at an alpha = 0.05 significance level.
+Proportional colocalization test
+-----------------------------------
+          Method   eta p_coloc
+ prop-coloc-cond    NA      NA
+ prop-coloc-full -0.23    0.00
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+A model of proportional colocalization based on lead variants is rejected. 
+Therefore, prop-coloc-cond rejects the null hypothesis of proportional colocalization.
+Proportional colocalization test
+-----------------------------------
+          Method   eta p_coloc
+ prop-coloc-cond -0.50   FALSE
+ prop-coloc-full -0.28    0.00
+-----------------------------------
+
+p_coloc assesses proportional colocalization hypothesis (rejection indicates failure to colocalize).
+Proportional colocalization is suggested when the proportional colocalization hypothesis is not rejected.
+p_coloc = FALSE indicates proportional colocalization hypothesis is not rejected at an alpha = 0.05 significance level.

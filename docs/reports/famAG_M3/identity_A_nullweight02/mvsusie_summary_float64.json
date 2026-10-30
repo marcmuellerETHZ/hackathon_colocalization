@@ -1,0 +1,21 @@
+{
+ "n": 60,
+ "n_compared": 60,
+ "max_dpip": 0.5355053321205201,
+ "max_dalpha": 0.6241885526459251,
+ "max_dstate": 0.603875315317552,
+ "median_dpip": 0.035488179415649745,
+ "n_dpip_ge_1em2": 60,
+ "n_dstate_ge_1em2": 57,
+ "niter_equal_frac": 0.03333333333333333,
+ "converged_equal_frac": 1.0,
+ "gpu_s": 8.012393474578857,
+ "r_s_single_thread": 58.253,
+ "dtype": "float64",
+ "pi": [
+  0.2,
+  0.3,
+  0.3,
+  0.2
+ ]
+}

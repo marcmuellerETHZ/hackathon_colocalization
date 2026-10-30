@@ -1,0 +1,6 @@
+[orch] job famG_mm_identity_ref_v2 start 2026-10-28T09:55:41+01:00 host eu-g6-001 commit a55e82654e pid 2128034
+[orch] cmd: set -euo pipefail; export PYTHONPATH=$ORCH_CODE/src R_PROFILE_USER=/dev/null; W=$ORCH_OUT/loci; O=results/famG_mm/identity_v2; mkdir -p $O/r016; python -m famG.validation.mm_loci --out $W --n-per-cell 25 --key identity; cp $W/ids.txt $O/ids.txt; cat $W/ids.txt | xargs -P 32 -n 1 env R_LIBS=$ORCH_HOME/env/rlib_susie016 Rscript $ORCH_CODE/src/famG/validation/run_susie016_mm.R $W $O/r016; ls $O/r016 | wc -l; grep -L "\"niter\"" $O/r016/*.json | wc -l
+exported 100 loci to /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_identity_ref_v2/out/loci
+100
+0
+[orch] exit 0 at 2026-10-28T09:57:56+01:00

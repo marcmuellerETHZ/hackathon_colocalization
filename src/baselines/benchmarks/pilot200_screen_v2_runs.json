@@ -1,0 +1,136 @@
+{
+ "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+ "n_ids": 200,
+ "runs": {
+  "coloc_abf": {
+   "run_dir": "results/baselines_pilot/20261026T181905Z_coloc_abf_screen_v2_004030",
+   "counts": {
+    "ok": 200,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 61.435954332351685,
+   "rerun": null,
+   "done": true
+  },
+  "lead_snp": {
+   "run_dir": "results/baselines_pilot/20261026T182041Z_lead_snp_screen_v2_54f39d",
+   "counts": {
+    "ok": 200,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 96.42864108085632,
+   "rerun": null,
+   "done": true
+  },
+  "sharepro": {
+   "run_dir": "results/baselines_pilot/20261026T182250Z_sharepro_screen_v2_e0991a",
+   "counts": {
+    "ok": 200,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 161.25021028518677,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_susie": {
+   "run_dir": "results/baselines_pilot/20261026T182519Z_coloc_susie_screen_v2_c72f89",
+   "counts": {
+    "ok": 143,
+    "nonconverged": 56,
+    "failed": 1,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 464.05380606651306,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_susie_mm": {
+   "run_dir": "results/baselines_pilot/20261026T183319Z_coloc_susie_mm_screen_v2_d3b445",
+   "counts": {
+    "ok": 167,
+    "nonconverged": 33,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 447.3396031856537,
+   "rerun": null,
+   "done": true
+  },
+  "colocboost": {
+   "run_dir": "results/baselines_pilot/20261026T184034Z_colocboost_screen_v2_bdb0c3",
+   "counts": {
+    "ok": 200,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 229.87971830368042,
+   "rerun": null,
+   "done": true
+  },
+  "colocboost_m1": {
+   "run_dir": "results/baselines_pilot/20261026T184643Z_colocboost_m1_screen_v2_4e1b15",
+   "counts": {
+    "ok": 200,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 266.37033438682556,
+   "rerun": null,
+   "done": true
+  },
+  "mvsusie": {
+   "run_dir": "results/baselines_pilot/20261026T184757Z_mvsusie_screen_v2_01f0cd",
+   "counts": {
+    "ok": 142,
+    "nonconverged": 58,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 1404.3763210773468,
+   "rerun": null,
+   "done": true
+  },
+  "prop_coloc": {
+   "run_dir": "results/baselines_pilot/20261026T191211Z_prop_coloc_screen_v2_d64cdd",
+   "counts": {
+    "ok": 193,
+    "nonconverged": 0,
+    "failed": 7,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 130.70760941505432,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_prop_test": {
+   "run_dir": "results/baselines_pilot/20261026T191407Z_coloc_prop_test_screen_v2_9d5242",
+   "counts": {
+    "ok": 200,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 200
+   },
+   "wall_s": 118.79705238342285,
+   "rerun": null,
+   "done": true
+  }
+ }
+}

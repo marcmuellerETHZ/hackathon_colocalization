@@ -1,0 +1,10 @@
+03:25:47 [harness] run test_frozen-v1_ab94c5a1__sharepro__sim_shifted: 1600 loci (1600 to run), mode=cpu, workers=4
+03:26:47 [harness] sharepro: 76/1600 loci done
+03:27:48 [harness] sharepro: 179/1600 loci done
+03:28:48 [harness] sharepro: 302/1600 loci done
+03:29:48 [harness] sharepro: 471/1600 loci done
+03:30:48 [harness] sharepro: 687/1600 loci done
+03:31:49 [harness] sharepro: 924/1600 loci done
+03:32:49 [harness] sharepro: 1136/1600 loci done
+03:34:07 [harness] sharepro: 1365/1600 loci done
+03:34:29 [harness] done test_frozen-v1_ab94c5a1__sharepro__sim_shifted: {'ok': 1600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1600} in 519.6s

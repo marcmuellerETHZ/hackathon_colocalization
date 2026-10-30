@@ -1,0 +1,99 @@
+16:42 # reconcile 2026-10-27T16:42:07+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 5 flag(s), 12 note(s); jobs runn | running=6
+16:54 # reconcile 2026-10-27T16:54:27+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 5 flag(s), 12 note(s); jobs runn | running=6
+17:06 # reconcile 2026-10-27T17:06:44+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 7 flag(s), 12 note(s); jobs runn | running=5
+17:07 # reconcile 2026-10-27T17:07:15+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 12 note(s); jobs runn | running=5
+17:19 # reconcile 2026-10-27T17:19:36+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 3 flag(s), 10 note(s); jobs runn | running=4
+17:31 # reconcile 2026-10-27T17:31:50+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 3 flag(s), 10 note(s); jobs runn | running=3
+17:44 # reconcile 2026-10-27T17:44:04+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 4 flag(s), 10 note(s); jobs runn | running=1
+17:56 # reconcile 2026-10-27T17:56:17+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 3 flag(s), 10 note(s); jobs runn | running=0
+18:08 # reconcile 2026-10-27T18:08:33+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 10 note(s); jobs runn | running=0
+18:20 # reconcile 2026-10-27T18:20:45+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 10 note(s); jobs runn | running=0
+18:32 # reconcile 2026-10-27T18:32:58+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 10 note(s); jobs runn | running=0
+18:45 # reconcile 2026-10-27T18:45:11+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 10 note(s); jobs runn | running=0
+18:57 # reconcile 2026-10-27T18:57:25+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 10 note(s); jobs runn | running=0
+19:09 # reconcile 2026-10-27T19:09:40+01:00 home=/cluster/scratch/mumarc/hackathon_eqtl_gwas: 2 flag(s), 10 note(s); jobs runn | running=0
+23:41 test_run_v1=running preconditions OK
+23:54 test_run_v1=running [eval_test 23:50:04] start test_frozen-v1_ab94c5a1__sharepro__real_R2: 800 loci, 5 workers (busy 49/
+00:06 test_run_v1=running [eval_test 00:05:36] start test_frozen-v1_ab94c5a1__coloc_susie__real_R4b_insample: 600 loci, 20 wor
+00:19 test_run_v1=running [eval_test 00:18:05] generating shifted arm
+00:31 test_run_v1=running [eval_test 00:26:55] start test_frozen-v1_ab94c5a1__lead_snp__sim_main: 11607 loci, 2 workers (busy 
+00:44 test_run_v1=running [eval_test 00:43:20] unit done test_frozen-v1_ab94c5a1__strength_only__sim_shifted: {'ok': 1600, 'no
+00:44 test_run_v1=running [eval_test 00:44:40] status: running ['test_frozen-v1_ab94c5a1__coloc_susie__sim_main', 'test_frozen-v1_ab94c5
+00:57 test_run_v1=running [eval_test 00:54:40] status: running ['test_frozen-v1_ab94c5a1__coloc_susie__sim_main', 'test_frozen-v1_ab94c5
+01:09 test_run_v1=running [eval_test 01:04:40] status: running ['test_frozen-v1_ab94c5a1__coloc_susie__sim_main', 'test_frozen-v1_ab94c5
+01:22 test_run_v1=running [eval_test 01:19:03] unit done test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted: {'ok': 387, 'nonconverged'
+01:34 test_run_v1=running [eval_test 01:24:40] status: running ['test_frozen-v1_ab94c5a1__coloc_susie__sim_main', 'test_frozen-v1_ab94c5
+01:46 test_run_v1=running [eval_test 01:44:41] status: running ['test_frozen-v1_ab94c5a1__coloc_susie__sim_main', 'test_frozen-v1_ab94c5
+01:59 test_run_v1_r1=running [eval_test 01:57:21] start test_frozen-v1_ab94c5a1__sharepro__sim_main: 11607 loci, 5 workers (busy 45/63 core
+02:11 test_run_v1_r1=running [eval_test 02:03:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+02:24 test_run_v1_r1=running [eval_test 02:23:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+02:36 test_run_v1_r1=running [eval_test 02:33:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+02:49 test_run_v1_r1=running [eval_test 02:43:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+03:01 test_run_v1_r1=running [eval_test 02:53:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+03:02 test_run_v1_r1=running [eval_test 02:53:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+03:14 test_run_v1_r1=running [eval_test 03:13:57] status: running ['test_frozen-v1_ab94c5a1__coloc_prop_test__sim_main', 'test_frozen-v1_ab
+03:26 test_run_v1_r1=running [eval_test 03:25:46] start test_frozen-v1_ab94c5a1__sharepro__sim_shifted: 1600 loci, 4 workers (busy 53/63 co
+03:38 test_run_v1_r1=running [eval_test 03:38:13] start test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted: 1600 loci, 6 workers (busy 51/63 
+03:51 test_run_v1_r1=running [eval_test 03:45:58] unit done test_frozen-v1_ab94c5a1__colocboost__sim_shifted: {'ok': 387, 'nonconverged': 0
+04:03 test_run_v1_r1=running [eval_test 03:54:01] status: running ['test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main', 'test_frozen-v1_ab9
+04:04 test_run_v1_r1=running [eval_test 04:04:01] status: running ['test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_main', 'test_frozen-v1_ab9
+04:16 test_run_v1_r1=running [eval_test 04:14:20] unit done test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted: {'ok': 1547, 'nonconverge
+04:28 test_run_v1_r1=running [eval_test 04:25:25] start test_frozen-v1_ab94c5a1__famG_coloc_susie_gpu__sim_shifted: 1600 loci, GPU (busy 21
+04:41 test_run_v1_r1=running   q = 1.0 / (1.0 + np.exp(-(x + a)))
+04:53 test_run_v1_r1=done [orch] exit 0 at 2026-10-28T04:43:45+01:00
+09:35 phase2 running=1 queued=0 /mumarc/hackathon_eqtl_gwas: 7 flag(s), 10 note(s); jobs running=0 queued=0
+09:47 phase2 running=2 queued=0 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 12 note(s); jobs running=1 queued=0
+09:59 phase2 running=6 queued=8 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 17 note(s); jobs running=4 queued=8
+10:12 phase2 running=8 queued=6 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 14 note(s); jobs running=7 queued=6
+10:24 phase2 running=6 queued=6 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 15 note(s); jobs running=5 queued=6
+10:36 phase2 running=6 queued=6 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 15 note(s); jobs running=5 queued=6
+10:36 phase2 running=6 queued=6 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 15 note(s); jobs running=5 queued=6
+10:49 phase2 running=6 queued=6 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 15 note(s); jobs running=5 queued=6
+11:01 phase2 running=7 queued=5 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 16 note(s); jobs running=6 queued=5
+11:13 phase2 running=7 queued=5 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 16 note(s); jobs running=6 queued=5
+11:19 phase2 running=6 queued=4 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 15 note(s); jobs running=5 queued=4
+11:31 phase2 running=7 queued=3 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 15 note(s); jobs running=6 queued=3
+11:43 phase2 running=7 queued=3 /mumarc/hackathon_eqtl_gwas: 5 flag(s), 15 note(s); jobs running=6 queued=3
+11:44 phase2 running=7 queued=3 /mumarc/hackathon_eqtl_gwas: 5 flag(s), 15 note(s); jobs running=6 queued=3
+11:44 phase2 running=7 queued=3 /mumarc/hackathon_eqtl_gwas: 5 flag(s), 15 note(s); jobs running=6 queued=3
+11:56 phase2 running=7 queued=4 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 15 note(s); jobs running=6 queued=4
+12:09 phase2 running=6 queued=4 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 15 note(s); jobs running=5 queued=4
+12:21 phase2 running=8 queued=4 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 15 note(s); jobs running=6 queued=4
+12:33 phase2 running=8 queued=8 /mumarc/hackathon_eqtl_gwas: 7 flag(s), 19 note(s); jobs running=6 queued=8
+12:45 phase2 running=8 queued=7 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 19 note(s); jobs running=6 queued=7
+12:46 phase2 running=8 queued=7 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 19 note(s); jobs running=6 queued=7
+12:58 phase2 running=8 queued=7 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 19 note(s); jobs running=6 queued=7
+13:10 phase2 running=7 queued=7 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 19 note(s); jobs running=5 queued=7
+13:22 phase2 running=7 queued=7 /mumarc/hackathon_eqtl_gwas: 8 flag(s), 19 note(s); jobs running=5 queued=7
+13:35 phase2 running=8 queued=5 /mumarc/hackathon_eqtl_gwas: 9 flag(s), 19 note(s); jobs running=6 queued=5
+13:47 phase2 running=8 queued=5 /mumarc/hackathon_eqtl_gwas: 9 flag(s), 20 note(s); jobs running=6 queued=5
+13:47 phase2 running=8 queued=5 /mumarc/hackathon_eqtl_gwas: 9 flag(s), 20 note(s); jobs running=6 queued=5
+13:59 phase2 running=6 queued=4 /mumarc/hackathon_eqtl_gwas: 10 flag(s), 15 note(s); jobs running=4 queued=4
+14:12 phase2 running=5 queued=4 /mumarc/hackathon_eqtl_gwas: 11 flag(s), 15 note(s); jobs running=3 queued=4
+14:24 phase2 running=5 queued=3 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 14 note(s); jobs running=3 queued=3
+14:36 phase2 running=5 queued=3 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 14 note(s); jobs running=3 queued=3
+14:48 phase2 running=5 queued=5 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 14 note(s); jobs running=3 queued=5
+14:49 phase2 running=5 queued=5 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 14 note(s); jobs running=3 queued=5
+15:01 phase2 running=4 queued=5 /mumarc/hackathon_eqtl_gwas: 6 flag(s), 14 note(s); jobs running=2 queued=5
+15:13 phase2 running=4 queued=2 /mumarc/hackathon_eqtl_gwas: 11 flag(s), 15 note(s); jobs running=2 queued=2
+15:25 phase2 running=4 queued=2 /mumarc/hackathon_eqtl_gwas: 9 flag(s), 14 note(s); jobs running=2 queued=2
+15:38 phase2 running=5 queued=1 /mumarc/hackathon_eqtl_gwas: 9 flag(s), 14 note(s); jobs running=3 queued=1
+15:50 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 15 flag(s), 14 note(s); jobs running=1 queued=0
+15:50 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 12 flag(s), 15 note(s); jobs running=1 queued=0
+16:03 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 12 flag(s), 14 note(s); jobs running=1 queued=0
+16:15 phase2 running=2 queued=0 /mumarc/hackathon_eqtl_gwas: 5 flag(s), 13 note(s); jobs running=0 queued=0
+16:27 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+16:39 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+16:52 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+16:52 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+17:04 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+17:17 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+17:29 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+17:42 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+17:54 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+17:54 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+18:07 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+18:19 phase2 running=3 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 13 note(s); jobs running=1 queued=0
+18:31 phase2 running=2 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 12 note(s); jobs running=0 queued=0
+18:43 phase2 running=2 queued=0 /mumarc/hackathon_eqtl_gwas: 4 flag(s), 12 note(s); jobs running=0 queued=0
+18:56 phase2 running=2 queued=0 /mumarc/hackathon_eqtl_gwas: 3 flag(s), 12 note(s); jobs running=0 queued=0

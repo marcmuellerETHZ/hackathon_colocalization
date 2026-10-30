@@ -1,0 +1,160 @@
+{
+ "checkpoint": {
+  "resumed": true,
+  "rows_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code/results/eval_test/test_frozen-v1_ab94c5a1/checkpoints/test_frozen-v1_ab94c5a1__sharepro__sim_main.rows.jsonl",
+  "rows_from_checkpoint": 10389,
+  "rows_this_segment": 1218,
+  "segments": [
+   {
+    "git": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+    "host": "eu-g6-001",
+    "n_todo": 11607,
+    "pid": 1826033,
+    "rows_from_checkpoint": 0,
+    "start_utc": "2026-10-27T23:27:04.335192Z"
+   },
+   {
+    "git": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+    "host": "eu-g6-001",
+    "n_todo": 1218,
+    "pid": 1878735,
+    "rows_from_checkpoint": 10389,
+    "start_utc": "2026-10-28T00:57:25.927294Z"
+   }
+  ]
+ },
+ "config": {
+  "commit": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+  "methods_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/configs/test_methods_v1_d17cut1.yaml",
+  "methods_file_sha256": "469e8afb68359d6e931f7d7377825b2ac0418e64ca484b659e56af1e1ffb3bea",
+  "mode": "test",
+  "nonce": "ab94c5a1c097449db8d1d1f4bd18c168",
+  "set_key": "sim_main",
+  "subsample_per_class": null,
+  "tag": "frozen-v1",
+  "test_run": true,
+  "unit": "test_frozen-v1_ab94c5a1__sharepro__sim_main"
+ },
+ "counts": {
+  "expected": 11607,
+  "failed": 9,
+  "nonconverged": 0,
+  "ok": 11590,
+  "timeout": 8
+ },
+ "end_utc": "2026-10-28T01:01:25.290461Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+  "modified_tracked": [],
+  "orch_job": "test_run_v1_r1",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1_r1/code",
+  "tags": [
+   "frozen-v1"
+  ],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 5,
+  "timeout_s_per_locus": 60.0,
+  "timing": false
+ },
+ "label": "TEST test_frozen-v1_ab94c5a1",
+ "locus_set": {
+  "ids_sha256": "3cf8fae26cdf6f1674168c5e51fcce07f414f40be095b7e979006c688be57ab0",
+  "n_expected": 11607,
+  "n_loci_in_file": 11607,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1.h5",
+  "sha256": "b55403fccfcee8d4d93e5425fa108a576bf7b115c18d672c6270eb33e64584e5"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "0, 1",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   8.67919921875,
+   29.349609375,
+   45.84423828125
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 54
+  },
+  "name": "sharepro",
+  "target": "baselines.methods:SharePro"
+ },
+ "method_name": "sharepro",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": 3.717009480847768,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.23149745386910034,
+  "t_S": 0.8021643891632574,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": "2795ebd34602acc7cb761049413ea23121e821b038ecf00ea94d834f5060f6ac",
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "7a9224c623cbbd44ccf9c00ab04a7973ecf3b96abd7515039a2fc9e470e69f9c",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 3042424,
+  "rule": "D6(h)"
+ },
+ "run_id": "test_frozen-v1_ab94c5a1__sharepro__sim_main",
+ "runtime_s": {
+  "median": 1.0119109389925143,
+  "p95": 19.520644348702618,
+  "sum": 41973.56780879715
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T23:27:04.335192Z",
+ "test_access": true,
+ "truth": {
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/sets/testset_v1.truth.parquet",
+  "sha256": "0ce26af8fba1ed7c3b18cb6cfd1538a58842c2efbf24f7f3afcf89c1c0ecb765"
+ },
+ "wall_s": 239.36312444400392
+}

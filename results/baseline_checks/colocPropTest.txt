@@ -1,0 +1,25 @@
+colocPropTest 0.9.3 
+PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+ 0.00e+00 6.94e-252 8.39e-270  3.59e-10  1.00e+00 
+[1] "PP abf for shared variant: 100%"
+        nsnps     PP.H0.abf     PP.H1.abf     PP.H2.abf     PP.H3.abf 
+ 1.000000e+02  0.000000e+00 6.942836e-252 8.393641e-270  3.594319e-10 
+    PP.H4.abf 
+ 1.000000e+00 
+PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+ 0.00e+00 6.92e-249 4.11e-250  9.97e-01  3.24e-03 
+[1] "PP abf for shared variant: 0.324%"
+        nsnps     PP.H0.abf     PP.H1.abf     PP.H2.abf     PP.H3.abf 
+ 1.000000e+02  0.000000e+00 6.920396e-249 4.113926e-250  9.967646e-01 
+    PP.H4.abf 
+ 3.235374e-03 
+after tagging, unique topsnps: 100
+possible tests: 4950
+tests to run: 4950
+original: min fdr = 0.2186533 
+ [1] "eta.hat"   "chisquare" "n"         "marg1"     "marg2"     "snp1"     
+ [7] "snp2"      "p"         "logp"      "fdr"      
+after tagging, unique topsnps: 100
+possible tests: 4950
+tests to run: 4950
+modified: min fdr = 0.2186533 

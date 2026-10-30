@@ -1,0 +1,42 @@
+[orch] job p4b_scr_L0P1_coloc_susie_r2 start 2026-10-27T11:24:38+01:00 host eu-g6-001 commit ad021dcdc4 pid 987724
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method coloc_susie --set data/processed/sets/screen_v2.h5 --ids-file results/baselines_screen_v2/ids/L0P1_all.txt --workers 8 --pilot-timeout --results-dir results/baselines_screen_v2/runs --label 'p4 screen_v2 L0|P1|r_p=0.0'
+[baselines.run] coloc_susie: 2000 loci, p_max=6250, workers=8, timeout=360s
+[harness] run 20261027T102636Z_coloc_susie_screen_v2_617536: 2000 loci, mode=cpu, workers=8
+[harness] 50/2000 tasks done
+[harness] 115/2000 tasks done
+[harness] 172/2000 tasks done
+[harness] 233/2000 tasks done
+[harness] 292/2000 tasks done
+[harness] 354/2000 tasks done
+[harness] 419/2000 tasks done
+[harness] 469/2000 tasks done
+[harness] 537/2000 tasks done
+[harness] 569/2000 tasks done
+[harness] 616/2000 tasks done
+[harness] 668/2000 tasks done
+[harness] 723/2000 tasks done
+[harness] 771/2000 tasks done
+[harness] 829/2000 tasks done
+[harness] 880/2000 tasks done
+[harness] 942/2000 tasks done
+[harness] 993/2000 tasks done
+[harness] 1051/2000 tasks done
+[harness] 1104/2000 tasks done
+[harness] 1142/2000 tasks done
+[harness] 1195/2000 tasks done
+[harness] 1244/2000 tasks done
+[harness] 1285/2000 tasks done
+[harness] 1336/2000 tasks done
+[harness] 1383/2000 tasks done
+[harness] 1446/2000 tasks done
+[harness] 1501/2000 tasks done
+[harness] 1559/2000 tasks done
+[harness] 1623/2000 tasks done
+[harness] 1695/2000 tasks done
+[harness] 1771/2000 tasks done
+[harness] 1846/2000 tasks done
+[harness] 1919/2000 tasks done
+[harness] 1994/2000 tasks done
+[harness] done 20261027T102636Z_coloc_susie_screen_v2_617536: {'ok': 1994, 'nonconverged': 6, 'failed': 0, 'timeout': 0, 'expected': 2000} in 1079.0s
+{"run_id": "20261027T102636Z_coloc_susie_screen_v2_617536", "run_dir": "results/baselines_screen_v2/runs/20261027T102636Z_coloc_susie_screen_v2_617536", "counts": {"ok": 1994, "nonconverged": 6, "failed": 0, "timeout": 0, "expected": 2000}}
+[orch] exit 0 at 2026-10-27T11:44:36+01:00

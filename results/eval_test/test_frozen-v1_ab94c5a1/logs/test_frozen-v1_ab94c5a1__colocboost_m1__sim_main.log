@@ -1,0 +1,31 @@
+00:46:03 [harness] run test_frozen-v1_ab94c5a1__colocboost_m1__sim_main: 4080 loci (4080 to run), mode=cpu, workers=2
+00:47:04 [harness] colocboost_m1: 22/4080 loci done
+00:48:04 [harness] colocboost_m1: 102/4080 loci done
+00:49:04 [harness] colocboost_m1: 204/4080 loci done
+00:50:04 [harness] colocboost_m1: 311/4080 loci done
+00:51:05 [harness] colocboost_m1: 419/4080 loci done
+00:52:06 [harness] colocboost_m1: 514/4080 loci done
+00:53:06 [harness] colocboost_m1: 627/4080 loci done
+00:54:06 [harness] colocboost_m1: 727/4080 loci done
+00:55:06 [harness] colocboost_m1: 830/4080 loci done
+00:56:06 [harness] colocboost_m1: 951/4080 loci done
+00:57:07 [harness] colocboost_m1: 1036/4080 loci done
+00:58:07 [harness] colocboost_m1: 1180/4080 loci done
+00:59:07 [harness] colocboost_m1: 1287/4080 loci done
+01:00:07 [harness] colocboost_m1: 1403/4080 loci done
+01:01:07 [harness] colocboost_m1: 1513/4080 loci done
+01:02:08 [harness] colocboost_m1: 1630/4080 loci done
+01:03:08 [harness] colocboost_m1: 1735/4080 loci done
+01:04:08 [harness] colocboost_m1: 1875/4080 loci done
+01:05:09 [harness] colocboost_m1: 2019/4080 loci done
+01:06:10 [harness] colocboost_m1: 2181/4080 loci done
+01:07:10 [harness] colocboost_m1: 2340/4080 loci done
+01:08:10 [harness] colocboost_m1: 2490/4080 loci done
+01:09:10 [harness] colocboost_m1: 2648/4080 loci done
+01:10:11 [harness] colocboost_m1: 2804/4080 loci done
+01:11:11 [harness] colocboost_m1: 3002/4080 loci done
+01:12:11 [harness] colocboost_m1: 3222/4080 loci done
+01:13:11 [harness] colocboost_m1: 3441/4080 loci done
+01:14:11 [harness] colocboost_m1: 3687/4080 loci done
+01:15:11 [harness] colocboost_m1: 4042/4080 loci done
+01:15:37 [harness] done test_frozen-v1_ab94c5a1__colocboost_m1__sim_main: {'ok': 4080, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 4080} in 1756.5s

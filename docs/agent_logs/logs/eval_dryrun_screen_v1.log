@@ -1,0 +1,13 @@
+[benchmark 17:18:29] benchmark 20261026T161829Z_dryrun_screen_v1: 1 locus set(s), 2 method(s) + reuse []
+[benchmark 17:20:37] run coloc_abf on screen_v1.h5 (600 loci)
+[benchmark 17:20:58] [harness] run 20261026T162058Z_coloc_abf_screen_v1_6ff53e: 600 loci, mode=cpu, workers=24
+[benchmark 17:21:09] [harness] done 20261026T162058Z_coloc_abf_screen_v1_6ff53e: {'ok': 600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 600} in 10.9s
+[benchmark 17:21:09] run lead_snp on screen_v1.h5 (600 loci)
+[benchmark 17:22:36] [harness] run 20261026T162236Z_lead_snp_screen_v1_071c38: 600 loci, mode=cpu, workers=24
+[benchmark 17:22:43] [harness] done 20261026T162236Z_lead_snp_screen_v1_071c38: {'ok': 600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 600} in 6.9s
+[benchmark 17:22:43] run strength_only on screen_v1.h5 (600 loci)
+[benchmark 17:23:48] [harness] run 20261026T162348Z_strength_only_screen_v1_d510ab: 600 loci, mode=cpu, workers=16
+[benchmark 17:23:59] [harness] done 20261026T162348Z_strength_only_screen_v1_d510ab: {'ok': 600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 600} in 10.8s
+[benchmark 17:24:00] [least_favourable] bootstrap (2000 x locus, 3 methods, settings ['realistic', 'ideal'])
+[benchmark 17:24:03] [excluded] bootstrap (2000 x locus, 3 methods, settings ['realistic', 'ideal'])
+[benchmark 17:24:06] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_dryrun/benchmarks/20261026T161829Z_dryrun_screen_v1 (600 loci, 3 methods)

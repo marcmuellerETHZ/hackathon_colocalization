@@ -1,0 +1,157 @@
+.....................                                                    [100%]
+21 passed in 4.61s
+QTD000356 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000266 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000373 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000549 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000021 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000409 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000609 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000110 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000539 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+FG_3001308 0.99706 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3006140 0.99718 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3026493 0.99748 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3001122 0.99718 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3007461 0.997 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_T2D 0.99665 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+FG_K11_IBD_STRICT 0.99665 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+FG_E4_HYTHY_AI_STRICT 0.99665 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+{
+ "gate": {
+  "QTD000356": {
+   "n_genes_with_cs": 4310,
+   "gate_train": 2579,
+   "gate_valid": 855,
+   "gate_test": 820
+  },
+  "QTD000266": {
+   "n_genes_with_cs": 1864,
+   "gate_train": 1126,
+   "gate_valid": 355,
+   "gate_test": 343
+  },
+  "QTD000373": {
+   "n_genes_with_cs": 6584,
+   "gate_train": 3899,
+   "gate_valid": 1326,
+   "gate_test": 1270
+  },
+  "QTD000549": {
+   "n_genes_with_cs": 2730,
+   "gate_train": 1620,
+   "gate_valid": 540,
+   "gate_test": 523
+  },
+  "QTD000021": {
+   "n_genes_with_cs": 5658,
+   "gate_train": 3338,
+   "gate_valid": 1131,
+   "gate_test": 1107
+  },
+  "QTD000409": {
+   "n_genes_with_cs": 4129,
+   "gate_train": 2480,
+   "gate_valid": 800,
+   "gate_test": 789
+  },
+  "QTD000609": {
+   "n_genes_with_cs": 301,
+   "gate_train": 173,
+   "gate_valid": 66,
+   "gate_test": 50
+  },
+  "QTD000110": {
+   "n_genes_with_cs": 4358,
+   "gate_train": 2619,
+   "gate_valid": 872,
+   "gate_test": 806
+  },
+  "QTD000539": {
+   "n_genes_with_cs": 5577,
+   "gate_train": 3323,
+   "gate_valid": 1114,
+   "gate_test": 1024
+  }
+ },
+ "R2": {
+  "train": 8518,
+  "valid": 2807,
+  "test": 2674
+ },
+ "R2_by_pair": {
+  "QTD000021xQTD000409": {
+   "train": 1507,
+   "test": 489,
+   "valid": 486
+  },
+  "QTD000021xQTD000609": {
+   "train": 153,
+   "valid": 50,
+   "test": 42
+  },
+  "QTD000110xQTD000539": {
+   "train": 2025,
+   "valid": 660,
+   "test": 624
+  },
+  "QTD000356xQTD000373": {
+   "train": 2031,
+   "valid": 690,
+   "test": 644
+  },
+  "QTD000356xQTD000549": {
+   "train": 1247,
+   "valid": 398,
+   "test": 382
+  },
+  "QTD000373xQTD000549": {
+   "train": 1437,
+   "valid": 487,
+   "test": 462
+  },
+  "QTD000409xQTD000609": {
+   "train": 118,
+   "valid": 36,
+   "test": 31
+  }
+ },
+ "R3b_prefilter": {
+  "train": 5514,
+  "valid": 1802,
+  "test": 1643
+ },
+ "R3b": {
+  "train": 3948,
+  "valid": 1203,
+  "test": 1237
+ },
+ "R3b_ld_status": {
+  "below_0.01": 4204,
+  "found": 2405,
+  "not_queried": 2350
+ },
+ "R3b_poolB_nan": 1373,
+ "R4b": {
+  "train": 4081,
+  "valid": 1259,
+  "test": 1279
+ }
+}
+{"arm": "R2", "split": "train", "n_candidates": 8518, "n_written": {"poolB": 8513}, "status_counts": {"ok": 8513, "too_few_variants": 5}, "wall_s": 269.6, "p_median": 2371.0, "files": {"poolB": "processed/real/locus_sets/R2_train.h5"}}
+{"arm": "R2", "split": "valid", "n_candidates": 2807, "n_written": {"poolB": 2806}, "status_counts": {"ok": 2806, "too_few_variants": 1}, "wall_s": 91.6, "p_median": 2284.0, "files": {"poolB": "processed/real/locus_sets/R2_valid.h5"}}
+{"arm": "R3b", "split": "train", "n_candidates": 3948, "n_written": {"poolB": 3948}, "status_counts": {"ok": 3948}, "wall_s": 129.8, "p_median": 2409.5, "files": {"poolB": "processed/real/locus_sets/R3b_train.h5"}}
+{"arm": "R3b", "split": "valid", "n_candidates": 1203, "n_written": {"poolB": 1203}, "status_counts": {"ok": 1203}, "wall_s": 41.4, "p_median": 2382.0, "files": {"poolB": "processed/real/locus_sets/R3b_valid.h5"}}
+{"arm": "R4b", "split": "train", "n_candidates": 4081, "n_written": {"nfe_minus_geuv": 4081, "geuv_insample_pcadj": 4081, "geuv_insample_raw": 4081}, "status_counts": {"ok": 4081}, "wall_s": 731.6, "p_median": 2512.0, "files": {"nfe_minus_geuv": "processed/real/locus_sets/R4b_train.nfe_minus_geuv.h5", "geuv_insample_pcadj": "processed/real/locus_sets/R4b_train.geuv_insample_pcadj.h5", "geuv_insample_raw": "processed/real/locus_sets/R4b_train.geuv_insample_raw.h5"}}
+{"arm": "R4b", "split": "valid", "n_candidates": 1259, "n_written": {"nfe_minus_geuv": 1259, "geuv_insample_pcadj": 1259, "geuv_insample_raw": 1259}, "status_counts": {"ok": 1259}, "wall_s": 226.0, "p_median": 2440.0, "files": {"nfe_minus_geuv": "processed/real/locus_sets/R4b_valid.nfe_minus_geuv.h5", "geuv_insample_pcadj": "processed/real/locus_sets/R4b_valid.geuv_insample_pcadj.h5", "geuv_insample_raw": "processed/real/locus_sets/R4b_valid.geuv_insample_raw.h5"}}
+R2_train.h5 {"n_loci": 8513, "max_abs_diag_minus_1": 1.0743971057269874e-07, "min_maf_ref": 0.01, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7898508163984495, "frac_lead2_present": 0.7203101139433807, "R2_sign_concordance": {"n": 6809, "frac_same_sign": 0.9977970333382288}, "corr_af1_poolB": 0.9875911830298222, "frac_af_flag1": 0.0010683923223713866, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9773871339756321, "frac_af_flag2": 0.012296629341297776, "frac_flipped2": 0.0, "failures": []}
+R2_valid.h5 {"n_loci": 2806, "max_abs_diag_minus_1": 1.0743971079474335e-07, "min_maf_ref": 0.01, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7990021382751248, "frac_lead2_present": 0.7266571632216678, "R2_sign_concordance": {"n": 2257, "frac_same_sign": 0.997341603898981}, "corr_af1_poolB": 0.9879078692700507, "frac_af_flag1": 0.0008467348660077008, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9772451506799441, "frac_af_flag2": 0.012310391366413091, "frac_flipped2": 0.0, "failures": []}
+R3b_train.h5 {"n_loci": 3948, "max_abs_diag_minus_1": 1.0743971057269874e-07, "min_maf_ref": 0.01, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7720364741641338, "frac_lead2_present": 0.7700101317122594, "corr_af1_poolB": 0.9812761674566741, "frac_af_flag1": 0.0007038635810619011, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9831552629946745, "frac_af_flag2": 0.006758114255750195, "frac_flipped2": 0.0, "failures": []}
+R3b_valid.h5 {"n_loci": 1203, "max_abs_diag_minus_1": 1.0743971035065414e-07, "min_maf_ref": 0.01, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.8536990856192851, "frac_lead2_present": 0.7339983374896093, "corr_af1_poolB": 0.9825660558086675, "frac_af_flag1": 0.0005026335065750462, "frac_flipped1": 0.0, "corr_af2_poolB": 0.984212963263653, "frac_af_flag2": 0.005287941679165649, "frac_flipped2": 0.0, "failures": []}
+R4b_train.geuv_insample_pcadj.h5 {"n_loci": 4081, "max_abs_diag_minus_1": 6.05022889565987e-08, "min_maf_ref": 0.010112359550561778, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7103651065915216, "frac_lead2_present": 0.7111002205341828, "corr_af1_poolB": 0.9869014681646472, "frac_af_flag1": 0.0004589409270080104, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9847204456240718, "frac_af_flag2": 3.5010580704605975e-05, "frac_flipped2": 0.0, "failures": []}
+R4b_train.geuv_insample_raw.h5 {"n_loci": 4081, "max_abs_diag_minus_1": 1.0562155849935806e-07, "min_maf_ref": 0.010112359550561778, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7103651065915216, "frac_lead2_present": 0.7111002205341828, "corr_af1_poolB": 0.9869014681646472, "frac_af_flag1": 0.0004589409270080104, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9847204456240718, "frac_af_flag2": 3.5010580704605975e-05, "frac_flipped2": 0.0, "failures": []}
+R4b_train.nfe_minus_geuv.h5 {"n_loci": 4081, "max_abs_diag_minus_1": 9.761030006494309e-08, "min_maf_ref": 0.010869565217391304, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7103651065915216, "frac_lead2_present": 0.7111002205341828, "corr_af1_poolB": 0.9869014681646472, "frac_af_flag1": 0.0004589409270080104, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9847204456240718, "frac_af_flag2": 3.5010580704605975e-05, "frac_flipped2": 0.0, "failures": []}
+R4b_valid.geuv_insample_pcadj.h5 {"n_loci": 1259, "max_abs_diag_minus_1": 6.67385240404883e-08, "min_maf_ref": 0.010112359550561778, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7212073073868149, "frac_lead2_present": 0.7331215250198571, "corr_af1_poolB": 0.9875327451115625, "frac_af_flag1": 0.0003630818625934664, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9851803188432365, "frac_af_flag2": 1.2201661140743193e-05, "frac_flipped2": 0.0, "failures": []}
+R4b_valid.geuv_insample_raw.h5 {"n_loci": 1259, "max_abs_diag_minus_1": 9.875811479709284e-08, "min_maf_ref": 0.010112359550561778, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7212073073868149, "frac_lead2_present": 0.7331215250198571, "corr_af1_poolB": 0.9875327451115625, "frac_af_flag1": 0.0003630818625934664, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9851803188432365, "frac_af_flag2": 1.2201661140743193e-05, "frac_flipped2": 0.0, "failures": []}
+R4b_valid.nfe_minus_geuv.h5 {"n_loci": 1259, "max_abs_diag_minus_1": 1.0600434074969911e-07, "min_maf_ref": 0.010869565217391304, "max_abs_z_vs_source": 0.0, "frac_lead1_present": 0.7212073073868149, "frac_lead2_present": 0.7331215250198571, "corr_af1_poolB": 0.9875327451115625, "frac_af_flag1": 0.0003630818625934664, "frac_flipped1": 0.0, "corr_af2_poolB": 0.9851803188432365, "frac_af_flag2": 1.2201661140743193e-05, "frac_flipped2": 0.0, "failures": []}
+exit 0

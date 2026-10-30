@@ -1,0 +1,10 @@
+{
+ "C1": "no candidate (p9.testset_v2 dry run (no candidate; plumbing only))",
+ "C2": "no candidate (p9.testset_v2 dry run (no candidate; plumbing only))",
+ "C3": "no candidate (p9.testset_v2 dry run (no candidate; plumbing only))",
+ "C4": "no candidate (p9.testset_v2 dry run (no candidate; plumbing only))",
+ "C5": "benchmark of every listed method (benchmarks/sim, c4.json slopes per method, runtime.json)",
+ "decision": "p9.testset_v2 dry run (no candidate; plumbing only)",
+ "descriptive_entries": [],
+ "primary": null
+}

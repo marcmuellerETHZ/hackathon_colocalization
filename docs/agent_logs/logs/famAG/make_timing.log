@@ -1,0 +1,25 @@
+ld_kind  scenario  
+dense    consistent    30
+         mismatch       2
+dtype: int64
+ld_kind  scenario  
+factor   consistent    26
+         mismatch       6
+dtype: int64
+ld_kind  scenario  
+dense    consistent    61
+         mismatch       3
+dtype: int64
+ld_kind  scenario  
+factor   consistent    59
+         mismatch       5
+dtype: int64
+ld_kind  scenario  
+factor   consistent    20
+         mismatch       4
+dtype: int64
+ld_kind  scenario  
+dense    consistent    22
+         mismatch       2
+dtype: int64
+DONE

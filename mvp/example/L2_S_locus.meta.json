@@ -1,0 +1,15 @@
+{
+ "locus_id": "valid_grid_v1__L2_P3_rho=0.8__S__0009230",
+ "cell_id": "L2|P3|rho=0.8",
+ "split": "valid",
+ "oracle_class": "S",
+ "mismatch_level": "L2",
+ "pairing_type": "P3",
+ "rho_hat": 0.3959701144286405,
+ "rho_true": 0.8,
+ "n_ref": 150,
+ "n_variants": 1000,
+ "n1": 1000.0,
+ "n2": 1000.0,
+ "window": "chr8:41866032-42396762"
+}

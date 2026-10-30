@@ -1,0 +1,4 @@
+Error in cat("@@RESP ", toJSON(x, auto_unbox = TRUE, digits = I(17), na = "null",  : 
+  ignoring SIGPIPE signal
+Calls: respond -> cat
+Execution halted

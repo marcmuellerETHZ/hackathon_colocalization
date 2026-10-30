@@ -1,0 +1,123 @@
+{
+ "config": {
+  "benchmark": "20261027T184412Z_famC_m4_provisional",
+  "strength_table_mode": "crossfit_k5"
+ },
+ "counts": {
+  "expected": 357,
+  "failed": 0,
+  "nonconverged": 0,
+  "ok": 357,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-27T19:03:26.425248Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "commit": "e5e2e9b288c51a122f933181f067325764aadf12",
+  "modified_tracked": [],
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 8,
+  "timeout_s_per_locus": 120.0,
+  "timing": false
+ },
+ "label": "benchmark 20261027T184412Z_famC_m4_provisional",
+ "locus_set": {
+  "ids_sha256": "32979b4f1e435f2767643f95fa809266fdff9c2aa0aa760b0312369a751e2b83",
+  "n_expected": 357,
+  "n_loci_in_file": 1027,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1/L4_P1_r_p=0.0.h5",
+  "sha256": null
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "0, 1",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   44.7255859375,
+   43.06298828125,
+   41.19921875
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/benchmarks/20261027T184412Z_famC_m4_provisional/strength_table_crossfit.json"
+  },
+  "name": "strength_only",
+  "target": "eval.reference_methods:StrengthOnly"
+ },
+ "method_name": "strength_only",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": "385c1c4f5c31732aa7890503ec2deec8ed55eac88a4cd1de6471d50b1ad2f844",
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "71e2e5e15d2a29c7d4b91d1369cbb10831786880e077d60b00b1abe4829d4c93",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 35451,
+  "rule": "D6(h)"
+ },
+ "run_id": "20261027T190321Z_strength_only_L4_P1_r_p=0.0_995c51",
+ "runtime_s": {
+  "median": 0.03589432899025269,
+  "p95": 0.07930985600105486,
+  "sum": 13.833468773722416
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T19:03:21.220750Z",
+ "test_access": false,
+ "truth": {
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1/L4_P1_r_p=0.0.truth.parquet",
+  "sha256": null
+ },
+ "wall_s": 5.204473604011582
+}

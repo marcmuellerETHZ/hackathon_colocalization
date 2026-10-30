@@ -1,0 +1,5 @@
+[orch] job famC_p9_floor_600k start 2026-10-28T14:36:53+01:00 host eu-g6-001 commit f7cf358173 pid 2423508
+[orch] cmd: python -m famC.floor --run p9_floor_600k --train-set train_v1 --valid-set valid_v1 --max-train-shards 296 --n-valid 30000 --device cpu --threads 16 > logs/famC/p9_floor_600k.log 2>&1; rc=$?; tail -n 3 logs/famC/p9_floor_600k.log | cut -c1-600; exit $rc
+Early stopping, best iteration is:
+[388]	valid_0's multi_logloss: 0.381622
+FLOOR {"all": {"auprc_sd_pm": 0.9801992429982853, "auroc_dw": 0.9985001830808828, "logloss_nat": 0.38967395183320647}, "realistic_L1-L4": {"auprc_sd_pm": 0.9801174190691698, "auroc_dw": 0.9984580295686881, "logloss_nat": 0.39138655746454076}, "L0": {"auprc_sd_pm": 0.9924204445736778, "auroc_dw": 0.9990580217637928, "logloss_nat": 0.3528142605611977}, "L1": {"auprc_sd_pm": 0.9895786871945671, "auroc_dw": 0.99803857829518, "logloss_nat": 0.3590754341181771}, "L2": {"auprc_sd_pm": 0.9760473733796102, "auroc_dw": 0.9983693404180853, "logloss_nat": 0.39338458687653305}, "L3": {"auprc_sd_pm": 0.9821

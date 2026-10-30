@@ -1,0 +1,17 @@
+QTD000356 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000266 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000373 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000549 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000021 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000409 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000609 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000110 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+QTD000539 1.0 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+FG_3001308 0.99706 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3006140 0.99718 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3026493 0.99748 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3001122 0.99718 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_3007461 0.997 {'rs429358': 'no_rsid_column', 'rs7412': 'no_rsid_column', 'rs12740374': 'no_rsid_column', 'rs4149056': 'no_rsid_column'} PASS
+FG_T2D 0.99665 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+FG_K11_IBD_STRICT 0.99665 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS
+FG_E4_HYTHY_AI_STRICT 0.99665 {'rs429358': True, 'rs7412': True, 'rs12740374': True, 'rs4149056': True} PASS

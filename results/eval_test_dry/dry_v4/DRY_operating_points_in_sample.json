@@ -1,0 +1,132 @@
+{
+ "coloc_abf": {
+  "DRY": true,
+  "rate_D_on_W": 0.022916666666666672,
+  "rate_S_on_W": 0.022916666666666672,
+  "recal_a_D": -10.557788736137317,
+  "recal_a_S": -1.2676051861969808,
+  "setting": "realistic",
+  "t_D": 0.18206735638553428,
+  "t_S": 0.8574510081113149
+ },
+ "coloc_prop_test": {
+  "DRY": true,
+  "rate_D_on_W": null,
+  "rate_S_on_W": null,
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "coloc_susie": {
+  "DRY": true,
+  "rate_D_on_W": 0.022916666666666672,
+  "rate_S_on_W": 0.020833333333333336,
+  "recal_a_D": -3.828952214144679,
+  "recal_a_S": -4.4471188140837175,
+  "setting": "realistic",
+  "t_D": 0.18206735638553428,
+  "t_S": 0.8904632775574971
+ },
+ "coloc_susie_mm": {
+  "DRY": true,
+  "rate_D_on_W": 0.022916666666666672,
+  "rate_S_on_W": 0.022916666666666672,
+  "recal_a_D": -5.631181145837632,
+  "recal_a_S": -2.866767126260849,
+  "setting": "realistic",
+  "t_D": 0.18206735638553428,
+  "t_S": 0.8866549147753109
+ },
+ "colocboost": {
+  "DRY": true,
+  "rate_D_on_W": 0.025,
+  "rate_S_on_W": 0.025,
+  "recal_a_D": 8.546729836092547,
+  "recal_a_S": 143.73719564259585,
+  "setting": "realistic",
+  "t_D": 0.7823000000000001,
+  "t_S": 0.21770000000000003
+ },
+ "colocboost_m1": {
+  "DRY": true,
+  "rate_D_on_W": 0.025,
+  "rate_S_on_W": 0.0125,
+  "recal_a_D": 139566742.34631455,
+  "recal_a_S": -5598.004716532313,
+  "setting": "realistic",
+  "t_D": 0.2696,
+  "t_S": 0.8216000000000001
+ },
+ "famA_joint_susie_rho_ms_ptld": {
+  "DRY": true,
+  "rate_D_on_W": 0.012500000000000004,
+  "rate_S_on_W": 0.02083333333333334,
+  "recal_a_D": 6.805715762259762,
+  "recal_a_S": -2.3011422818065213,
+  "setting": "realistic",
+  "t_D": 0.004246635079101947,
+  "t_S": 0.018726944154557782
+ },
+ "famB_exactcoloc_gaussian_M50": {
+  "DRY": true,
+  "rate_D_on_W": 0.01666666666666667,
+  "rate_S_on_W": 0.022916666666666672,
+  "recal_a_D": -1.8428307763779697,
+  "recal_a_S": 1.1564861566937965,
+  "setting": "realistic",
+  "t_D": 0.14898681640625003,
+  "t_S": 0.008117675781250002
+ },
+ "lead_snp": {
+  "DRY": true,
+  "rate_D_on_W": null,
+  "rate_S_on_W": null,
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "mvsusie": {
+  "DRY": true,
+  "rate_D_on_W": 0.0,
+  "rate_S_on_W": 0.0,
+  "recal_a_D": 60.74077927648252,
+  "recal_a_S": 14803023.35089541,
+  "setting": "realistic",
+  "t_D": 1.1102230246251568e-16,
+  "t_S": 1.0000000000000002
+ },
+ "prop_coloc": {
+  "DRY": true,
+  "rate_D_on_W": null,
+  "rate_S_on_W": null,
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "setting": "realistic",
+  "t_D": "inf",
+  "t_S": "inf"
+ },
+ "sharepro": {
+  "DRY": true,
+  "rate_D_on_W": 0.012500000000000004,
+  "rate_S_on_W": 0.022916666666666672,
+  "recal_a_D": 2.7776546223470455,
+  "recal_a_S": -13.044059891326324,
+  "setting": "realistic",
+  "t_D": 0.27325940065568155,
+  "t_S": 0.7054795392655949
+ },
+ "strength_only": {
+  "DRY": true,
+  "rate_D_on_W": 0.012500000000000004,
+  "rate_S_on_W": 0.02500000000000001,
+  "recal_a_D": -0.00520268170511605,
+  "recal_a_S": -0.02175923013644268,
+  "setting": "realistic",
+  "t_D": 0.22522522522522526,
+  "t_S": 0.22522522522522526
+ }
+}

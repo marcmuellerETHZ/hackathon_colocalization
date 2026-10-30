@@ -1,0 +1,2 @@
+[orch] job p4b_scr_L0P1_colocboost_r2 start 2026-10-27T11:23:30+01:00 host eu-g6-001 commit ad021dcdc4 pid 986986
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method colocboost --set data/processed/sets/screen_v2.h5 --ids-file results/baselines_screen_v2/ids/L0P1_all.txt --workers 6 --pilot-timeout --results-dir results/baselines_screen_v2/runs --label 'p4 screen_v2 L0|P1|r_p=0.0'

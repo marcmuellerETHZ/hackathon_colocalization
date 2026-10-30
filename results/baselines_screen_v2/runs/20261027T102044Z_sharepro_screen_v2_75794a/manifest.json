@@ -1,0 +1,133 @@
+{
+ "config": {
+  "baseline": "sharepro",
+  "frozen_timeouts_file": null,
+  "kwargs": {},
+  "max_cpus": 24,
+  "mem_budget_gb": 48.0,
+  "mem_model_gb": {
+   "a": 0.5,
+   "at_p_max": 2.453125,
+   "b": 0.05
+  },
+  "n_workers": 4,
+  "p_max": 6250,
+  "r_timeout_s": 54.0,
+  "run_name": "sharepro",
+  "timeout_s": 60.0
+ },
+ "counts": {
+  "expected": 2000,
+  "failed": 0,
+  "nonconverged": 0,
+  "ok": 2000,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-27T10:24:36.131332Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+  "modified_tracked": [],
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 4,
+  "timeout_s_per_locus": 60.0,
+  "timing": false
+ },
+ "label": "p4 screen_v2 L0|P1|r_p=0.0",
+ "locus_set": {
+  "ids_sha256": "45631898dbe633dee09db863034bb59a2fd4df5e535776e57e5ee9f3fd27d154",
+  "n_expected": 2000,
+  "n_loci_in_file": 12000,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+  "sha256": "6cc05e1c8ae75ff5b96c8293bddd881e355fe015db3ee931670f9bbefe9769fe"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "0, 672",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   62.63330078125,
+   55.9228515625,
+   43.1162109375
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 54.0
+  },
+  "name": "sharepro",
+  "target": "baselines.methods:SharePro"
+ },
+ "method_name": "sharepro",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": null,
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "d3517e8fe725a7bb154819999d1fb9c30bafeeb967a63d7d143f2c3b72b56bca",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 527320,
+  "rule": "D6(h)"
+ },
+ "run_id": "20261027T102044Z_sharepro_screen_v2_75794a",
+ "runtime_s": {
+  "median": 0.35655415750079555,
+  "p95": 1.053470455747447,
+  "sum": 909.8962322339357
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T10:20:44.680403Z",
+ "test_access": false,
+ "truth": null,
+ "wall_s": 231.45090889401035
+}

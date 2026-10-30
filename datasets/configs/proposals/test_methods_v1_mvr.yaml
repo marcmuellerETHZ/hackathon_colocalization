@@ -1,0 +1,167 @@
+# PROPOSAL for configs/test_methods_v1.yaml (D16 MVR route) from p6.dryrun_testpipeline. Worker counts and memory per
+# worker are tuned for 64 cores / 120 GB using the dry-run peaks measured in dry_v4 (coloc_susie 2.85 GB, coloc_susie_mm
+# 2.56 GB, mvsusie 1.86 GB (pilot 2.9 GB), ColocBoost 1.16 GB). The PI must still fill in:
+#   * metric_config {t_S, t_D, recal_a_S, recal_a_D} for every method with P_S / P_D, from the M4 operating points;
+#   * strength_only kwargs.table (the frozen M4 table);
+#   * coloc_abf kwargs W (M4 choice) and p12;
+#   * real_data_arms.builder (P3-28: data.real.extract:build_test_arm);
+# and then set status: frozen. Until then eval_test.py refuses it, which is the intended guard.
+version: 1
+status: proposal
+design_ref: "DESIGN.md v4 \xA77.3, \xA78; DECISIONS.md P3-12, P3-14, P3-17; RESEARCH_TREE D9"
+candidates:
+  primary: null
+  decision: D16
+  secondary: []
+c3_eligible_baselines:
+- coloc_abf
+- coloc_susie
+- coloc_susie_mm
+- sharepro
+- colocboost
+- colocboost_m1
+- mvsusie
+real_data_arms:
+  R2:
+    n: 800
+  R3b:
+    n: 1237
+  R4b:
+    n: 600
+    ld_conditions:
+    - in_sample
+    - reference
+  methods:
+  - primary_candidate
+  - coloc_abf
+  - coloc_susie
+  - coloc_susie_mm
+  - sharepro
+  - strength_only
+  builder: data.real.extract:build_test_arm
+methods:
+- name: coloc_abf
+  target: baselines.methods:ColocABF
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 2
+  timeout_s: 60
+  mem_gb_per_worker: 0.5
+  expected_s_per_locus: 0.155
+- name: lead_snp
+  target: eval.reference_methods:LeadSNPRule
+  kwargs: {}
+  mode: cpu
+  n_workers: 2
+  timeout_s: 60
+  mem_gb_per_worker: 0.5
+  expected_s_per_locus: 0.139
+- name: sharepro
+  target: baselines.methods:SharePro
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 8
+  timeout_s: 60
+  mem_gb_per_worker: 0.7
+  expected_s_per_locus: 2.39
+- name: coloc_susie
+  target: baselines.methods:ColocSusie
+  kwargs:
+    timeout: 324
+  mode: cpu
+  n_workers: 20
+  timeout_s: 360
+  mem_gb_per_worker: 3.0
+  expected_s_per_locus: 14.75
+- name: coloc_susie_mm
+  target: baselines.methods:ColocSusieMM
+  kwargs:
+    timeout: 216
+  mode: cpu
+  n_workers: 20
+  timeout_s: 240
+  mem_gb_per_worker: 2.8
+  expected_s_per_locus: 13.44
+- name: colocboost
+  target: baselines.methods:ColocBoost
+  kwargs:
+    timeout: 108
+  mode: cpu
+  n_workers: 8
+  timeout_s: 120
+  mem_gb_per_worker: 1.3
+  expected_s_per_locus: 6.71
+  subsample: slow_method_subsample
+- name: colocboost_m1
+  target: baselines.methods:ColocBoostM1
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 4
+  timeout_s: 60
+  mem_gb_per_worker: 1.0
+  expected_s_per_locus: 0.42
+  subsample: slow_method_subsample
+- name: mvsusie
+  target: baselines.methods:MvSusie
+  kwargs:
+    timeout: 972
+  mode: cpu
+  n_workers: 14
+  timeout_s: 1080
+  mem_gb_per_worker: 3.0
+  expected_s_per_locus: 70.35
+  subsample: slow_method_subsample
+- name: prop_coloc
+  target: baselines.methods:PropColoc
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 6
+  timeout_s: 60
+  mem_gb_per_worker: 1.3
+  expected_s_per_locus: 0.88
+- name: coloc_prop_test
+  target: baselines.methods:ColocPropTest
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 6
+  timeout_s: 60
+  mem_gb_per_worker: 1.3
+  expected_s_per_locus: 1.32
+- name: strength_only
+  target: eval.reference_methods:StrengthOnly
+  kwargs:
+    table: null
+  mode: cpu
+  n_workers: 2
+  timeout_s: 60
+  mem_gb_per_worker: 0.5
+  expected_s_per_locus: 0.05
+- name: famB_exactcoloc_gaussian_M50
+  target: famB.method:ExactColoc
+  kwargs:
+    mode: gaussian
+    M: 50
+    p12: 5.0e-06
+  mode: batch
+  gpu: true
+  batch_size: 64
+  timeout_s: 60
+  mem_gb_per_worker: 6.0
+  expected_s_per_locus: 0.05
+  descriptive: true
+- name: famG_coloc_susie_gpu
+  target: famG.method:GPUColocSusie
+  kwargs:
+    p12: 5.0e-06
+  mode: batch
+  gpu: true
+  batch_size: 32
+  timeout_s: 120
+  mem_gb_per_worker: 6.0
+  expected_s_per_locus: 0.2
+  descriptive: true

@@ -1,0 +1,6 @@
+[orch] job famG_mm_identity_ref_v1 start 2026-10-28T09:51:48+01:00 host eu-g6-001 commit a2533fec94 pid 2116111
+[orch] cmd: set -euo pipefail; export PYTHONPATH=$ORCH_CODE/src R_PROFILE_USER=/dev/null; W=$ORCH_OUT/loci; O=results/famG_mm/identity_v1; mkdir -p $O/r016; python -m famG.validation.mm_loci --out $W --n-per-cell 25 --key identity; cp $W/ids.txt $O/ids.txt; cat $W/ids.txt | xargs -P 32 -n 1 env R_LIBS=$ORCH_HOME/env/rlib_susie016 Rscript $ORCH_CODE/src/famG/validation/run_susie016_mm.R $W $O/r016; ls $O/r016 | wc -l; python -m famG.validation.run_wrapper_mm --ids $W/ids.txt --out $O/wrapper_coloc_susie_mm.parquet --workers 32
+exported 100 loci to /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_identity_ref_v1/out/loci
+100
+wrote 100 rows to results/famG_mm/identity_v1/wrapper_coloc_susie_mm.parquet
+[orch] exit 0 at 2026-10-28T09:53:51+01:00

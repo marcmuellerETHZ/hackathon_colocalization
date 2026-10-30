@@ -1,0 +1,82 @@
+{
+ "argv": [
+  "scripts/famC_eval/bench_m4.py",
+  "--ids-file",
+  "results/baselines_m4/m4_subsample_v1/main.txt",
+  "--runs-json",
+  "results/famC/c2_v1/net_m4/runs.json",
+  "--",
+  "--reuse",
+  "neuralcoloc_p9_nold_600k=/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c",
+  "--reuse",
+  "famC_floor_p9_600k=/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T134655Z_famC_floor_p9_600k_valid_grid_v1_ae571d",
+  "--label",
+  "famC_C2_m4",
+  "--unit",
+  "block",
+  "--n-boot",
+  "2000",
+  "--n-jobs",
+  "16",
+  "--candidate",
+  "neuralcoloc_p9_600k"
+ ],
+ "bench_id": "20261028T143030Z_famC_C2_m4",
+ "boot_seed": [
+  20261029,
+  "run_benchmark",
+  "bootstrap",
+  "20261028T143030Z_famC_C2_m4"
+ ],
+ "c3_baselines": null,
+ "candidate": "neuralcoloc_p9_600k",
+ "evaluate_wall_s": 37.13571957600652,
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "45921a837f9dfd2623be22c8095782a4d47358ef",
+  "modified_tracked": [],
+  "orch_job": "famC_p9_c2_bench",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_c2_bench/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "ids_sha256": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "dce496fab52520c7b4e22ce509d6ef64514f2991e896e542ae2f928b995698c8"
+ },
+ "label": "famC_C2_m4",
+ "locus_sets": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5"
+ ],
+ "method_ids": {},
+ "n_boot": 2000,
+ "n_expected": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": 12170
+ },
+ "n_jobs": 16,
+ "operating_points_in": null,
+ "operating_points_in_sha256": null,
+ "per_cell": null,
+ "runs": {
+  "famC_floor_p9_600k": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T134655Z_famC_floor_p9_600k_valid_grid_v1_ae571d"
+  },
+  "neuralcoloc_p9_600k": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T141727Z_neuralcoloc_p9_600k_valid_grid_v1_8a641e"
+  },
+  "neuralcoloc_p9_nold_600k": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c"
+  },
+  "strength_only": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T144341Z_strength_only_valid_grid_v1_6de0a3"
+  }
+ },
+ "start_utc": "20261028T143030Z",
+ "strength_control": {
+  "folds": 5,
+  "mode": "crossfit_k5",
+  "sha256": "85ec781d173571385caba6c6e4d3fbd25550ee04ce951f419bd4cff7bb652b64",
+  "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/benchmarks/20261028T143030Z_famC_C2_m4/strength_table_crossfit.json"
+ },
+ "unit": "block"
+}

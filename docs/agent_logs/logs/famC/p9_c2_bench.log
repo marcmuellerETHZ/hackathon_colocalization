@@ -1,0 +1,8 @@
+[benchmark 15:30:30] benchmark 20261028T143030Z_famC_C2_m4: 1 locus set(s), 0 method(s) + reuse ['famC_floor_p9_600k', 'neuralcoloc_p9_600k', 'neuralcoloc_p9_nold_600k']
+[benchmark 15:43:23] run strength_only on valid_grid_v1.h5 (12170 loci)
+[benchmark 15:43:41] [harness] run 20261028T144341Z_strength_only_valid_grid_v1_6de0a3: 12170 loci (12170 to run), mode=cpu, workers=8
+[benchmark 15:44:41] [harness] strength_only: 8598/12170 loci done
+[benchmark 15:44:58] [harness] done 20261028T144341Z_strength_only_valid_grid_v1_6de0a3: {'ok': 12170, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12170} in 73.1s
+[benchmark 15:45:05] [least_favourable] bootstrap (2000 x block, 4 methods, settings ['realistic', 'ideal'])
+[benchmark 15:45:23] [excluded] bootstrap (2000 x block, 4 methods, settings ['realistic', 'ideal'])
+[benchmark 15:45:35] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/benchmarks/20261028T143030Z_famC_C2_m4 (12170 loci, 4 methods)

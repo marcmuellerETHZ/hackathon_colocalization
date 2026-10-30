@@ -1,0 +1,77 @@
+step 200 seen 51200 ce 0.3871 518 loci/s
+step 400 seen 102400 ce 0.2740 544 loci/s
+step 600 seen 153600 ce 0.2629 556 loci/s
+[W1026 18:32:39.316552837 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 404750336 bytes (free: 250740736, total: 25250627584).
+[W1026 18:32:40.299733561 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 333447168 bytes (free: 164757504, total: 25250627584).
+step 800 seen 204800 ce 0.3432 553 loci/s
+[W1026 18:34:18.469597158 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 559939584 bytes (free: 176619520, total: 25250627584).
+step 1000 seen 256000 ce 0.1708 556 loci/s
+step 1200 seen 307200 ce 0.2636 554 loci/s
+[W1026 18:37:38.052764186 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 270532608 bytes (free: 85065728, total: 25250627584).
+[W1026 18:38:20.667195809 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 392167424 bytes (free: 338821120, total: 25250627584).
+[W1026 18:38:21.464536780 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 339738624 bytes (free: 229769216, total: 25250627584).
+[W1026 18:38:29.744630426 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 327155712 bytes (free: 112328704, total: 25250627584).
+step 1400 seen 358400 ce 0.2343 553 loci/s
+[W1026 18:38:53.138213832 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 268435456 bytes (free: 259129344, total: 25250627584).
+[W1026 18:39:00.618539102 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 402653184 bytes (free: 47316992, total: 25250627584).
+step 1600 seen 409600 ce 0.2734 555 loci/s
+step 1800 seen 460800 ce 0.2186 561 loci/s
+step 2000 seen 512000 ce 0.2338 563 loci/s
+step 2200 seen 563200 ce 0.2147 562 loci/s
+step 2400 seen 614400 ce 0.2219 567 loci/s
+step 2600 seen 665600 ce 0.2609 569 loci/s
+step 2800 seen 716800 ce 0.2040 569 loci/s
+step 3000 seen 768000 ce 0.1757 573 loci/s
+step 3200 seen 819200 ce 0.2117 574 loci/s
+[W1026 18:53:05.445252926 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 396361728 bytes (free: 298254336, total: 25250627584).
+step 3400 seen 870400 ce 0.3150 574 loci/s
+[W1026 18:53:11.389524058 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 394264576 bytes (free: 298254336, total: 25250627584).
+[W1026 18:53:12.259604518 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 281018368 bytes (free: 166133760, total: 25250627584).
+[W1026 18:53:13.230532213 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 400556032 bytes (free: 159842304, total: 25250627584).
+step 3600 seen 921600 ce 0.2376 574 loci/s
+step 3800 seen 972800 ce 0.2449 573 loci/s
+step 4000 seen 1024000 ce 0.2475 573 loci/s
+step 4200 seen 1075200 ce 0.2279 574 loci/s
+step 4400 seen 1126400 ce 0.2128 575 loci/s
+step 4600 seen 1177600 ce 0.1799 571 loci/s
+step 4800 seen 1228800 ce 0.2046 571 loci/s
+step 5000 seen 1280000 ce 0.2683 573 loci/s
+step 5200 seen 1331200 ce 0.2238 573 loci/s
+[W1026 19:07:15.308373758 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 268435456 bytes (free: 15859712, total: 25250627584).
+[W1026 19:07:16.681717117 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 100663296 bytes (free: 101842944, total: 25250627584).
+[W1026 19:07:17.039734834 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 67108864 bytes (free: 45219840, total: 25250627584).
+[W1026 19:07:17.043909951 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 67108864 bytes (free: 45219840, total: 25250627584).
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famC/c1.py", line 188, in <module>
+    print(ck.stem, json.dumps(res[ck.stem]), flush=True)
+^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famC/c1.py", line 178, in main
+    a = ap.parse_args()
+        ^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famC/c1.py", line 120, in train
+    o = model(f)
+        ^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famC/model.py", line 145, in forward
+    x = blk(x, bias)
+        ^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famC/model.py", line 53, in forward
+    a = F.scaled_dot_product_attention(q, k, v, attn_mask=bias, dropout_p=self.dropout if self.training else 0.0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/torch/_native/registry.py", line 958, in eager_router
+    return _fallback.call_boxed(keyset, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 43.12 MiB is free. Process 599641 has 3.22 GiB memory in use. Process 599640 has 2.00 GiB memory in use. Including non-PyTorch memory, this process has 2.25 GiB memory in use. Process 669402 has 1.25 GiB memory in use. Process 685651 has 5.79 GiB memory in use. Process 691164 has 2.05 GiB memory in use. Process 691162 has 2.00 GiB memory in use. Process 691163 has 2.80 GiB memory in use. Process 691161 has 2.05 GiB memory in use. Of the allocated memory 1.76 GiB is allocated by PyTorch, and 25.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

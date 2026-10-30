@@ -1,0 +1,2 @@
+10:15:23 [harness] run dry_p9_v2__colocboost_m1__sim_main: 102 loci (102 to run), mode=cpu, workers=4
+10:15:37 [harness] done dry_p9_v2__colocboost_m1__sim_main: {'ok': 102, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 102} in 13.3s

@@ -1,0 +1,2 @@
+22:24:51 [harness] run dry_mvr1__colocboost_m1__sim_shifted: 4 loci (4 to run), mode=cpu, workers=3
+22:24:58 [harness] done dry_mvr1__colocboost_m1__sim_shifted: {'ok': 4, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 4} in 7.0s

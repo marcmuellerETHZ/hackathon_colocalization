@@ -1,0 +1,395 @@
+[2s] window 1 L1|P1|r_p=0.0:100 L1|P2|rho=0.0:100 L1|P3|rho=0.0|eqtl:100 L1|P3|rho=0.0|lab:100
+[4s] window 2 L1|P1|r_p=0.0:200 L1|P2|rho=0.0:200 L1|P3|rho=0.0|eqtl:200 L1|P3|rho=0.0|lab:200
+[6s] window 3 L1|P1|r_p=0.0:300 L1|P2|rho=0.0:300 L1|P3|rho=0.0|eqtl:300 L1|P3|rho=0.0|lab:300
+[7s] window 4 L1|P1|r_p=0.0:400 L1|P2|rho=0.0:400 L1|P3|rho=0.0|eqtl:400 L1|P3|rho=0.0|lab:400
+[9s] window 5 L1|P1|r_p=0.0:500 L1|P2|rho=0.0:500 L1|P3|rho=0.0|eqtl:500 L1|P3|rho=0.0|lab:500
+[10s] window 6 L1|P1|r_p=0.0:600 L1|P2|rho=0.0:600 L1|P3|rho=0.0|eqtl:600 L1|P3|rho=0.0|lab:600
+[11s] window 7 L1|P1|r_p=0.0:700 L1|P2|rho=0.0:700 L1|P3|rho=0.0|eqtl:700 L1|P3|rho=0.0|lab:700
+[13s] window 8 L1|P1|r_p=0.0:800 L1|P2|rho=0.0:800 L1|P3|rho=0.0|eqtl:800 L1|P3|rho=0.0|lab:800
+[15s] window 9 L1|P1|r_p=0.0:900 L1|P2|rho=0.0:900 L1|P3|rho=0.0|eqtl:900 L1|P3|rho=0.0|lab:900
+[16s] window 10 L1|P1|r_p=0.0:1000 L1|P2|rho=0.0:1000 L1|P3|rho=0.0|eqtl:1000 L1|P3|rho=0.0|lab:1000
+[17s] window 11 L1|P1|r_p=0.0:1100 L1|P2|rho=0.0:1100 L1|P3|rho=0.0|eqtl:1100 L1|P3|rho=0.0|lab:1100
+[19s] window 12 L1|P1|r_p=0.0:1200 L1|P2|rho=0.0:1200 L1|P3|rho=0.0|eqtl:1200 L1|P3|rho=0.0|lab:1200
+[21s] window 13 L1|P1|r_p=0.0:1300 L1|P2|rho=0.0:1300 L1|P3|rho=0.0|eqtl:1300 L1|P3|rho=0.0|lab:1300
+[22s] window 14 L1|P1|r_p=0.0:1400 L1|P2|rho=0.0:1400 L1|P3|rho=0.0|eqtl:1400 L1|P3|rho=0.0|lab:1400
+[23s] window 15 L1|P1|r_p=0.0:1500 L1|P2|rho=0.0:1500 L1|P3|rho=0.0|eqtl:1500 L1|P3|rho=0.0|lab:1500
+[24s] window 16 L1|P1|r_p=0.0:1600 L1|P2|rho=0.0:1600 L1|P3|rho=0.0|eqtl:1600 L1|P3|rho=0.0|lab:1600
+[26s] window 17 L1|P1|r_p=0.0:1700 L1|P2|rho=0.0:1700 L1|P3|rho=0.0|eqtl:1700 L1|P3|rho=0.0|lab:1700
+[27s] window 18 L1|P1|r_p=0.0:1800 L1|P2|rho=0.0:1800 L1|P3|rho=0.0|eqtl:1800 L1|P3|rho=0.0|lab:1800
+[28s] window 19 L1|P1|r_p=0.0:1900 L1|P2|rho=0.0:1900 L1|P3|rho=0.0|eqtl:1900 L1|P3|rho=0.0|lab:1900
+[30s] window 20 L1|P1|r_p=0.0:2000 L1|P2|rho=0.0:2000 L1|P3|rho=0.0|eqtl:2000 L1|P3|rho=0.0|lab:2000
+[31s] window 21 L1|P1|r_p=0.0:2100 L1|P2|rho=0.0:2100 L1|P3|rho=0.0|eqtl:2100 L1|P3|rho=0.0|lab:2100
+[34s] window 22 L1|P1|r_p=0.0:2200 L1|P2|rho=0.0:2200 L1|P3|rho=0.0|eqtl:2200 L1|P3|rho=0.0|lab:2200
+[35s] window 23 L1|P1|r_p=0.0:2300 L1|P2|rho=0.0:2300 L1|P3|rho=0.0|eqtl:2300 L1|P3|rho=0.0|lab:2300
+[36s] window 24 L1|P1|r_p=0.0:2400 L1|P2|rho=0.0:2400 L1|P3|rho=0.0|eqtl:2400 L1|P3|rho=0.0|lab:2400
+[37s] window 25 L1|P1|r_p=0.0:2500 L1|P2|rho=0.0:2500 L1|P3|rho=0.0|eqtl:2500 L1|P3|rho=0.0|lab:2500
+[39s] window 26 L1|P1|r_p=0.0:2600 L1|P2|rho=0.0:2600 L1|P3|rho=0.0|eqtl:2600 L1|P3|rho=0.0|lab:2600
+[40s] window 27 L1|P1|r_p=0.0:2700 L1|P2|rho=0.0:2700 L1|P3|rho=0.0|eqtl:2700 L1|P3|rho=0.0|lab:2700
+[41s] window 28 L1|P1|r_p=0.0:2800 L1|P2|rho=0.0:2800 L1|P3|rho=0.0|eqtl:2800 L1|P3|rho=0.0|lab:2800
+[42s] window 29 L1|P1|r_p=0.0:2900 L1|P2|rho=0.0:2900 L1|P3|rho=0.0|eqtl:2900 L1|P3|rho=0.0|lab:2900
+[44s] window 30 L1|P1|r_p=0.0:3000 L1|P2|rho=0.0:3000 L1|P3|rho=0.0|eqtl:3000 L1|P3|rho=0.0|lab:3000
+[45s] window 31 L1|P1|r_p=0.0:3100 L1|P2|rho=0.0:3100 L1|P3|rho=0.0|eqtl:3100 L1|P3|rho=0.0|lab:3100
+[46s] window 32 L1|P1|r_p=0.0:3200 L1|P2|rho=0.0:3200 L1|P3|rho=0.0|eqtl:3200 L1|P3|rho=0.0|lab:3200
+[48s] window 33 L1|P1|r_p=0.0:3300 L1|P2|rho=0.0:3300 L1|P3|rho=0.0|eqtl:3300 L1|P3|rho=0.0|lab:3300
+[50s] window 34 L1|P1|r_p=0.0:3400 L1|P2|rho=0.0:3400 L1|P3|rho=0.0|eqtl:3400 L1|P3|rho=0.0|lab:3400
+[51s] window 35 L1|P1|r_p=0.0:3500 L1|P2|rho=0.0:3500 L1|P3|rho=0.0|eqtl:3500 L1|P3|rho=0.0|lab:3500
+[53s] window 36 L1|P1|r_p=0.0:3600 L1|P2|rho=0.0:3600 L1|P3|rho=0.0|eqtl:3600 L1|P3|rho=0.0|lab:3600
+[54s] window 37 L1|P1|r_p=0.0:3700 L1|P2|rho=0.0:3700 L1|P3|rho=0.0|eqtl:3700 L1|P3|rho=0.0|lab:3700
+[56s] window 38 L1|P1|r_p=0.0:3800 L1|P2|rho=0.0:3800 L1|P3|rho=0.0|eqtl:3800 L1|P3|rho=0.0|lab:3800
+[57s] window 39 L1|P1|r_p=0.0:3900 L1|P2|rho=0.0:3900 L1|P3|rho=0.0|eqtl:3900 L1|P3|rho=0.0|lab:3900
+[59s] window 40 L1|P1|r_p=0.0:4000 L1|P2|rho=0.0:4000 L1|P3|rho=0.0|eqtl:4000 L1|P3|rho=0.0|lab:4000
+[60s] window 41 L1|P1|r_p=0.0:4100 L1|P2|rho=0.0:4100 L1|P3|rho=0.0|eqtl:4100 L1|P3|rho=0.0|lab:4100
+[62s] window 42 L1|P1|r_p=0.0:4200 L1|P2|rho=0.0:4200 L1|P3|rho=0.0|eqtl:4200 L1|P3|rho=0.0|lab:4200
+[63s] window 43 L1|P1|r_p=0.0:4300 L1|P2|rho=0.0:4300 L1|P3|rho=0.0|eqtl:4300 L1|P3|rho=0.0|lab:4300
+[65s] window 44 L1|P1|r_p=0.0:4400 L1|P2|rho=0.0:4400 L1|P3|rho=0.0|eqtl:4400 L1|P3|rho=0.0|lab:4400
+[66s] window 45 L1|P1|r_p=0.0:4500 L1|P2|rho=0.0:4500 L1|P3|rho=0.0|eqtl:4500 L1|P3|rho=0.0|lab:4500
+[68s] window 46 L1|P1|r_p=0.0:4600 L1|P2|rho=0.0:4600 L1|P3|rho=0.0|eqtl:4600 L1|P3|rho=0.0|lab:4600
+[69s] window 47 L1|P1|r_p=0.0:4700 L1|P2|rho=0.0:4700 L1|P3|rho=0.0|eqtl:4700 L1|P3|rho=0.0|lab:4700
+[70s] window 48 L1|P1|r_p=0.0:4800 L1|P2|rho=0.0:4800 L1|P3|rho=0.0|eqtl:4800 L1|P3|rho=0.0|lab:4800
+[71s] window 49 L1|P1|r_p=0.0:4900 L1|P2|rho=0.0:4900 L1|P3|rho=0.0|eqtl:4900 L1|P3|rho=0.0|lab:4900
+[72s] window 50 L1|P1|r_p=0.0:5000 L1|P2|rho=0.0:5000 L1|P3|rho=0.0|eqtl:5000 L1|P3|rho=0.0|lab:5000
+[73s] window 51 L1|P1|r_p=0.0:5100 L1|P2|rho=0.0:5100 L1|P3|rho=0.0|eqtl:5100 L1|P3|rho=0.0|lab:5100
+[75s] window 52 L1|P1|r_p=0.0:5200 L1|P2|rho=0.0:5200 L1|P3|rho=0.0|eqtl:5200 L1|P3|rho=0.0|lab:5200
+[77s] window 53 L1|P1|r_p=0.0:5300 L1|P2|rho=0.0:5300 L1|P3|rho=0.0|eqtl:5300 L1|P3|rho=0.0|lab:5300
+[78s] window 54 L1|P1|r_p=0.0:5400 L1|P2|rho=0.0:5400 L1|P3|rho=0.0|eqtl:5400 L1|P3|rho=0.0|lab:5400
+[80s] window 55 L1|P1|r_p=0.0:5500 L1|P2|rho=0.0:5500 L1|P3|rho=0.0|eqtl:5500 L1|P3|rho=0.0|lab:5500
+[81s] window 56 L1|P1|r_p=0.0:5600 L1|P2|rho=0.0:5600 L1|P3|rho=0.0|eqtl:5600 L1|P3|rho=0.0|lab:5600
+[82s] window 57 L1|P1|r_p=0.0:5700 L1|P2|rho=0.0:5700 L1|P3|rho=0.0|eqtl:5700 L1|P3|rho=0.0|lab:5700
+[84s] window 58 L1|P1|r_p=0.0:5800 L1|P2|rho=0.0:5800 L1|P3|rho=0.0|eqtl:5800 L1|P3|rho=0.0|lab:5800
+[86s] window 59 L1|P1|r_p=0.0:5900 L1|P2|rho=0.0:5900 L1|P3|rho=0.0|eqtl:5900 L1|P3|rho=0.0|lab:5900
+[87s] window 60 L1|P1|r_p=0.0:6000 L1|P2|rho=0.0:6000 L1|P3|rho=0.0|eqtl:6000 L1|P3|rho=0.0|lab:6000
+[88s] window 61 L1|P1|r_p=0.0:6100 L1|P2|rho=0.0:6100 L1|P3|rho=0.0|eqtl:6100 L1|P3|rho=0.0|lab:6100
+[89s] window 62 L1|P1|r_p=0.0:6200 L1|P2|rho=0.0:6200 L1|P3|rho=0.0|eqtl:6200 L1|P3|rho=0.0|lab:6200
+[91s] window 63 L1|P1|r_p=0.0:6300 L1|P2|rho=0.0:6300 L1|P3|rho=0.0|eqtl:6300 L1|P3|rho=0.0|lab:6300
+[93s] window 64 L1|P1|r_p=0.0:6400 L1|P2|rho=0.0:6400 L1|P3|rho=0.0|eqtl:6400 L1|P3|rho=0.0|lab:6400
+[97s] window 65 L1|P1|r_p=0.0:6500 L1|P2|rho=0.0:6500 L1|P3|rho=0.0|eqtl:6500 L1|P3|rho=0.0|lab:6500
+[102s] window 66 L1|P1|r_p=0.0:6600 L1|P2|rho=0.0:6600 L1|P3|rho=0.0|eqtl:6600 L1|P3|rho=0.0|lab:6600
+[106s] window 67 L1|P1|r_p=0.0:6700 L1|P2|rho=0.0:6700 L1|P3|rho=0.0|eqtl:6700 L1|P3|rho=0.0|lab:6700
+[111s] window 68 L1|P1|r_p=0.0:6800 L1|P2|rho=0.0:6800 L1|P3|rho=0.0|eqtl:6800 L1|P3|rho=0.0|lab:6800
+[115s] window 69 L1|P1|r_p=0.0:6900 L1|P2|rho=0.0:6900 L1|P3|rho=0.0|eqtl:6900 L1|P3|rho=0.0|lab:6900
+[120s] window 70 L1|P1|r_p=0.0:7000 L1|P2|rho=0.0:7000 L1|P3|rho=0.0|eqtl:7000 L1|P3|rho=0.0|lab:7000
+[124s] window 71 L1|P1|r_p=0.0:7100 L1|P2|rho=0.0:7100 L1|P3|rho=0.0|eqtl:7100 L1|P3|rho=0.0|lab:7100
+[132s] window 72 L1|P1|r_p=0.0:7200 L1|P2|rho=0.0:7200 L1|P3|rho=0.0|eqtl:7200 L1|P3|rho=0.0|lab:7200
+[139s] window 73 L1|P1|r_p=0.0:7300 L1|P2|rho=0.0:7300 L1|P3|rho=0.0|eqtl:7300 L1|P3|rho=0.0|lab:7300
+[142s] window 74 L1|P1|r_p=0.0:7400 L1|P2|rho=0.0:7400 L1|P3|rho=0.0|eqtl:7400 L1|P3|rho=0.0|lab:7400
+[145s] window 75 L1|P1|r_p=0.0:7500 L1|P2|rho=0.0:7500 L1|P3|rho=0.0|eqtl:7500 L1|P3|rho=0.0|lab:7500
+[149s] window 76 L1|P1|r_p=0.0:7600 L1|P2|rho=0.0:7600 L1|P3|rho=0.0|eqtl:7600 L1|P3|rho=0.0|lab:7600
+[150s] window 77 L1|P1|r_p=0.0:7700 L1|P2|rho=0.0:7700 L1|P3|rho=0.0|eqtl:7700 L1|P3|rho=0.0|lab:7700
+[151s] window 78 L1|P1|r_p=0.0:7800 L1|P2|rho=0.0:7800 L1|P3|rho=0.0|eqtl:7800 L1|P3|rho=0.0|lab:7800
+[152s] window 79 L1|P1|r_p=0.0:7900 L1|P2|rho=0.0:7900 L1|P3|rho=0.0|eqtl:7900 L1|P3|rho=0.0|lab:7900
+[154s] window 80 L1|P1|r_p=0.0:8000 L1|P2|rho=0.0:8000 L1|P3|rho=0.0|eqtl:8000 L1|P3|rho=0.0|lab:8000
+[155s] window 81 L1|P1|r_p=0.0:8100 L1|P2|rho=0.0:8100 L1|P3|rho=0.0|eqtl:8100 L1|P3|rho=0.0|lab:8100
+[157s] window 82 L1|P1|r_p=0.0:8200 L1|P2|rho=0.0:8200 L1|P3|rho=0.0|eqtl:8200 L1|P3|rho=0.0|lab:8200
+[158s] window 83 L1|P1|r_p=0.0:8300 L1|P2|rho=0.0:8300 L1|P3|rho=0.0|eqtl:8300 L1|P3|rho=0.0|lab:8300
+[160s] window 84 L1|P1|r_p=0.0:8400 L1|P2|rho=0.0:8400 L1|P3|rho=0.0|eqtl:8400 L1|P3|rho=0.0|lab:8400
+[162s] window 85 L1|P1|r_p=0.0:8500 L1|P2|rho=0.0:8500 L1|P3|rho=0.0|eqtl:8500 L1|P3|rho=0.0|lab:8500
+[164s] window 86 L1|P1|r_p=0.0:8600 L1|P2|rho=0.0:8600 L1|P3|rho=0.0|eqtl:8600 L1|P3|rho=0.0|lab:8600
+[165s] window 87 L1|P1|r_p=0.0:8700 L1|P2|rho=0.0:8700 L1|P3|rho=0.0|eqtl:8700 L1|P3|rho=0.0|lab:8700
+[166s] window 88 L1|P1|r_p=0.0:8800 L1|P2|rho=0.0:8800 L1|P3|rho=0.0|eqtl:8800 L1|P3|rho=0.0|lab:8800
+[167s] window 89 L1|P1|r_p=0.0:8900 L1|P2|rho=0.0:8900 L1|P3|rho=0.0|eqtl:8900 L1|P3|rho=0.0|lab:8900
+[168s] window 90 L1|P1|r_p=0.0:9000 L1|P2|rho=0.0:9000 L1|P3|rho=0.0|eqtl:9000 L1|P3|rho=0.0|lab:9000
+[170s] window 91 L1|P1|r_p=0.0:9100 L1|P2|rho=0.0:9100 L1|P3|rho=0.0|eqtl:9100 L1|P3|rho=0.0|lab:9100
+[171s] window 92 L1|P1|r_p=0.0:9200 L1|P2|rho=0.0:9200 L1|P3|rho=0.0|eqtl:9200 L1|P3|rho=0.0|lab:9200
+[173s] window 93 L1|P1|r_p=0.0:9300 L1|P2|rho=0.0:9300 L1|P3|rho=0.0|eqtl:9300 L1|P3|rho=0.0|lab:9300
+[174s] window 94 L1|P1|r_p=0.0:9400 L1|P2|rho=0.0:9400 L1|P3|rho=0.0|eqtl:9400 L1|P3|rho=0.0|lab:9400
+[176s] window 95 L1|P1|r_p=0.0:9500 L1|P2|rho=0.0:9500 L1|P3|rho=0.0|eqtl:9500 L1|P3|rho=0.0|lab:9500
+[177s] window 96 L1|P1|r_p=0.0:9600 L1|P2|rho=0.0:9600 L1|P3|rho=0.0|eqtl:9600 L1|P3|rho=0.0|lab:9600
+[179s] window 97 L1|P1|r_p=0.0:9700 L1|P2|rho=0.0:9700 L1|P3|rho=0.0|eqtl:9700 L1|P3|rho=0.0|lab:9700
+[180s] window 98 L1|P1|r_p=0.0:9800 L1|P2|rho=0.0:9800 L1|P3|rho=0.0|eqtl:9800 L1|P3|rho=0.0|lab:9800
+[181s] window 99 L1|P1|r_p=0.0:9900 L1|P2|rho=0.0:9900 L1|P3|rho=0.0|eqtl:9900 L1|P3|rho=0.0|lab:9900
+[183s] window 100 L1|P1|r_p=0.0:10000 L1|P2|rho=0.0:10000 L1|P3|rho=0.0|eqtl:10000 L1|P3|rho=0.0|lab:10000
+[184s] window 101 L1|P1|r_p=0.0:10100 L1|P2|rho=0.0:10100 L1|P3|rho=0.0|eqtl:10100 L1|P3|rho=0.0|lab:10100
+[186s] window 102 L1|P1|r_p=0.0:10200 L1|P2|rho=0.0:10200 L1|P3|rho=0.0|eqtl:10200 L1|P3|rho=0.0|lab:10200
+[187s] window 103 L1|P1|r_p=0.0:10300 L1|P2|rho=0.0:10300 L1|P3|rho=0.0|eqtl:10300 L1|P3|rho=0.0|lab:10300
+[189s] window 104 L1|P1|r_p=0.0:10400 L1|P2|rho=0.0:10400 L1|P3|rho=0.0|eqtl:10400 L1|P3|rho=0.0|lab:10400
+[191s] window 105 L1|P1|r_p=0.0:10500 L1|P2|rho=0.0:10500 L1|P3|rho=0.0|eqtl:10500 L1|P3|rho=0.0|lab:10500
+[193s] window 106 L1|P1|r_p=0.0:10600 L1|P2|rho=0.0:10600 L1|P3|rho=0.0|eqtl:10600 L1|P3|rho=0.0|lab:10600
+[195s] window 107 L1|P1|r_p=0.0:10700 L1|P2|rho=0.0:10700 L1|P3|rho=0.0|eqtl:10700 L1|P3|rho=0.0|lab:10700
+[197s] window 108 L1|P1|r_p=0.0:10800 L1|P2|rho=0.0:10800 L1|P3|rho=0.0|eqtl:10800 L1|P3|rho=0.0|lab:10800
+[202s] window 109 L1|P1|r_p=0.0:10900 L1|P2|rho=0.0:10900 L1|P3|rho=0.0|eqtl:10900 L1|P3|rho=0.0|lab:10900
+[208s] window 110 L1|P1|r_p=0.0:11000 L1|P2|rho=0.0:11000 L1|P3|rho=0.0|eqtl:11000 L1|P3|rho=0.0|lab:11000
+[214s] window 111 L1|P1|r_p=0.0:11100 L1|P2|rho=0.0:11100 L1|P3|rho=0.0|eqtl:11100 L1|P3|rho=0.0|lab:11100
+[219s] window 112 L1|P1|r_p=0.0:11200 L1|P2|rho=0.0:11200 L1|P3|rho=0.0|eqtl:11200 L1|P3|rho=0.0|lab:11200
+[225s] window 113 L1|P1|r_p=0.0:11300 L1|P2|rho=0.0:11300 L1|P3|rho=0.0|eqtl:11300 L1|P3|rho=0.0|lab:11300
+[231s] window 114 L1|P1|r_p=0.0:11400 L1|P2|rho=0.0:11400 L1|P3|rho=0.0|eqtl:11400 L1|P3|rho=0.0|lab:11400
+[235s] window 115 L1|P1|r_p=0.0:11500 L1|P2|rho=0.0:11500 L1|P3|rho=0.0|eqtl:11500 L1|P3|rho=0.0|lab:11500
+[240s] window 116 L1|P1|r_p=0.0:11600 L1|P2|rho=0.0:11600 L1|P3|rho=0.0|eqtl:11600 L1|P3|rho=0.0|lab:11600
+[245s] window 117 L1|P1|r_p=0.0:11700 L1|P2|rho=0.0:11700 L1|P3|rho=0.0|eqtl:11700 L1|P3|rho=0.0|lab:11700
+[249s] window 118 L1|P1|r_p=0.0:11800 L1|P2|rho=0.0:11800 L1|P3|rho=0.0|eqtl:11800 L1|P3|rho=0.0|lab:11800
+[252s] window 119 L1|P1|r_p=0.0:11900 L1|P2|rho=0.0:11900 L1|P3|rho=0.0|eqtl:11900 L1|P3|rho=0.0|lab:11900
+[256s] window 120 L1|P1|r_p=0.0:12000 L1|P2|rho=0.0:12000 L1|P3|rho=0.0|eqtl:12000 L1|P3|rho=0.0|lab:12000
+[261s] window 121 L1|P1|r_p=0.0:12100 L1|P2|rho=0.0:12100 L1|P3|rho=0.0|eqtl:12100 L1|P3|rho=0.0|lab:12100
+[267s] window 122 L1|P1|r_p=0.0:12200 L1|P2|rho=0.0:12200 L1|P3|rho=0.0|eqtl:12200 L1|P3|rho=0.0|lab:12200
+[273s] window 123 L1|P1|r_p=0.0:12300 L1|P2|rho=0.0:12300 L1|P3|rho=0.0|eqtl:12300 L1|P3|rho=0.0|lab:12300
+[279s] window 124 L1|P1|r_p=0.0:12400 L1|P2|rho=0.0:12400 L1|P3|rho=0.0|eqtl:12400 L1|P3|rho=0.0|lab:12400
+[285s] window 125 L1|P1|r_p=0.0:12500 L1|P2|rho=0.0:12500 L1|P3|rho=0.0|eqtl:12500 L1|P3|rho=0.0|lab:12500
+[291s] window 126 L1|P1|r_p=0.0:12600 L1|P2|rho=0.0:12600 L1|P3|rho=0.0|eqtl:12600 L1|P3|rho=0.0|lab:12600
+[295s] window 127 L1|P1|r_p=0.0:12700 L1|P2|rho=0.0:12700 L1|P3|rho=0.0|eqtl:12700 L1|P3|rho=0.0|lab:12700
+[300s] window 128 L1|P1|r_p=0.0:12800 L1|P2|rho=0.0:12800 L1|P3|rho=0.0|eqtl:12800 L1|P3|rho=0.0|lab:12800
+[305s] window 129 L1|P1|r_p=0.0:12900 L1|P2|rho=0.0:12900 L1|P3|rho=0.0|eqtl:12900 L1|P3|rho=0.0|lab:12900
+[309s] window 130 L1|P1|r_p=0.0:13000 L1|P2|rho=0.0:13000 L1|P3|rho=0.0|eqtl:13000 L1|P3|rho=0.0|lab:13000
+[311s] window 131 L1|P1|r_p=0.0:13100 L1|P2|rho=0.0:13100 L1|P3|rho=0.0|eqtl:13100 L1|P3|rho=0.0|lab:13100
+[316s] window 132 L1|P1|r_p=0.0:13200 L1|P2|rho=0.0:13200 L1|P3|rho=0.0|eqtl:13200 L1|P3|rho=0.0|lab:13200
+[321s] window 133 L1|P1|r_p=0.0:13300 L1|P2|rho=0.0:13300 L1|P3|rho=0.0|eqtl:13300 L1|P3|rho=0.0|lab:13300
+[324s] window 134 L1|P1|r_p=0.0:13400 L1|P2|rho=0.0:13400 L1|P3|rho=0.0|eqtl:13400 L1|P3|rho=0.0|lab:13400
+[329s] window 135 L1|P1|r_p=0.0:13500 L1|P2|rho=0.0:13500 L1|P3|rho=0.0|eqtl:13500 L1|P3|rho=0.0|lab:13500
+[333s] window 136 L1|P1|r_p=0.0:13600 L1|P2|rho=0.0:13600 L1|P3|rho=0.0|eqtl:13600 L1|P3|rho=0.0|lab:13600
+[337s] window 137 L1|P1|r_p=0.0:13700 L1|P2|rho=0.0:13700 L1|P3|rho=0.0|eqtl:13700 L1|P3|rho=0.0|lab:13700
+[342s] window 138 L1|P1|r_p=0.0:13800 L1|P2|rho=0.0:13800 L1|P3|rho=0.0|eqtl:13800 L1|P3|rho=0.0|lab:13800
+[346s] window 139 L1|P1|r_p=0.0:13900 L1|P2|rho=0.0:13900 L1|P3|rho=0.0|eqtl:13900 L1|P3|rho=0.0|lab:13900
+[350s] window 140 L1|P1|r_p=0.0:14000 L1|P2|rho=0.0:14000 L1|P3|rho=0.0|eqtl:14000 L1|P3|rho=0.0|lab:14000
+[354s] window 141 L1|P1|r_p=0.0:14100 L1|P2|rho=0.0:14100 L1|P3|rho=0.0|eqtl:14100 L1|P3|rho=0.0|lab:14100
+[359s] window 142 L1|P1|r_p=0.0:14200 L1|P2|rho=0.0:14200 L1|P3|rho=0.0|eqtl:14200 L1|P3|rho=0.0|lab:14200
+[378s] window 143 L1|P1|r_p=0.0:14300 L1|P2|rho=0.0:14300 L1|P3|rho=0.0|eqtl:14300 L1|P3|rho=0.0|lab:14300
+[406s] window 144 L1|P1|r_p=0.0:14400 L1|P2|rho=0.0:14400 L1|P3|rho=0.0|eqtl:14400 L1|P3|rho=0.0|lab:14400
+[433s] window 145 L1|P1|r_p=0.0:14500 L1|P2|rho=0.0:14500 L1|P3|rho=0.0|eqtl:14500 L1|P3|rho=0.0|lab:14500
+[461s] window 146 L1|P1|r_p=0.0:14600 L1|P2|rho=0.0:14600 L1|P3|rho=0.0|eqtl:14600 L1|P3|rho=0.0|lab:14600
+[484s] window 147 L1|P1|r_p=0.0:14700 L1|P2|rho=0.0:14700 L1|P3|rho=0.0|eqtl:14700 L1|P3|rho=0.0|lab:14700
+[507s] window 148 L1|P1|r_p=0.0:14800 L1|P2|rho=0.0:14800 L1|P3|rho=0.0|eqtl:14800 L1|P3|rho=0.0|lab:14800
+[538s] window 149 L1|P1|r_p=0.0:14900 L1|P2|rho=0.0:14900 L1|P3|rho=0.0|eqtl:14900 L1|P3|rho=0.0|lab:14900
+[559s] window 150 L1|P1|r_p=0.0:15000 L1|P2|rho=0.0:15000 L1|P3|rho=0.0|eqtl:15000 L1|P3|rho=0.0|lab:15000
+[563s] window 151 L1|P1|r_p=0.0:15100 L1|P2|rho=0.0:15100 L1|P3|rho=0.0|eqtl:15100 L1|P3|rho=0.0|lab:15100
+[567s] window 152 L1|P1|r_p=0.0:15200 L1|P2|rho=0.0:15200 L1|P3|rho=0.0|eqtl:15200 L1|P3|rho=0.0|lab:15200
+[571s] window 153 L1|P1|r_p=0.0:15300 L1|P2|rho=0.0:15300 L1|P3|rho=0.0|eqtl:15300 L1|P3|rho=0.0|lab:15300
+[576s] window 154 L1|P1|r_p=0.0:15400 L1|P2|rho=0.0:15400 L1|P3|rho=0.0|eqtl:15400 L1|P3|rho=0.0|lab:15400
+[580s] window 155 L1|P1|r_p=0.0:15500 L1|P2|rho=0.0:15500 L1|P3|rho=0.0|eqtl:15500 L1|P3|rho=0.0|lab:15500
+[586s] window 156 L1|P1|r_p=0.0:15600 L1|P2|rho=0.0:15600 L1|P3|rho=0.0|eqtl:15600 L1|P3|rho=0.0|lab:15600
+[602s] window 157 L1|P1|r_p=0.0:15700 L1|P2|rho=0.0:15700 L1|P3|rho=0.0|eqtl:15700 L1|P3|rho=0.0|lab:15700
+[607s] window 158 L1|P1|r_p=0.0:15800 L1|P2|rho=0.0:15800 L1|P3|rho=0.0|eqtl:15800 L1|P3|rho=0.0|lab:15800
+[610s] window 159 L1|P1|r_p=0.0:15900 L1|P2|rho=0.0:15900 L1|P3|rho=0.0|eqtl:15900 L1|P3|rho=0.0|lab:15900
+[615s] window 160 L1|P1|r_p=0.0:16000 L1|P2|rho=0.0:16000 L1|P3|rho=0.0|eqtl:16000 L1|P3|rho=0.0|lab:16000
+[626s] window 161 L1|P1|r_p=0.0:16100 L1|P2|rho=0.0:16100 L1|P3|rho=0.0|eqtl:16100 L1|P3|rho=0.0|lab:16100
+[637s] window 162 L1|P1|r_p=0.0:16200 L1|P2|rho=0.0:16200 L1|P3|rho=0.0|eqtl:16200 L1|P3|rho=0.0|lab:16200
+[641s] window 163 L1|P1|r_p=0.0:16300 L1|P2|rho=0.0:16300 L1|P3|rho=0.0|eqtl:16300 L1|P3|rho=0.0|lab:16300
+[645s] window 164 L1|P1|r_p=0.0:16400 L1|P2|rho=0.0:16400 L1|P3|rho=0.0|eqtl:16400 L1|P3|rho=0.0|lab:16400
+[649s] window 165 L1|P1|r_p=0.0:16500 L1|P2|rho=0.0:16500 L1|P3|rho=0.0|eqtl:16500 L1|P3|rho=0.0|lab:16500
+[654s] window 166 L1|P1|r_p=0.0:16600 L1|P2|rho=0.0:16600 L1|P3|rho=0.0|eqtl:16600 L1|P3|rho=0.0|lab:16600
+[658s] window 167 L1|P1|r_p=0.0:16700 L1|P2|rho=0.0:16700 L1|P3|rho=0.0|eqtl:16700 L1|P3|rho=0.0|lab:16700
+[664s] window 168 L1|P1|r_p=0.0:16800 L1|P2|rho=0.0:16800 L1|P3|rho=0.0|eqtl:16800 L1|P3|rho=0.0|lab:16800
+[670s] window 169 L1|P1|r_p=0.0:16900 L1|P2|rho=0.0:16900 L1|P3|rho=0.0|eqtl:16900 L1|P3|rho=0.0|lab:16900
+[679s] window 170 L1|P1|r_p=0.0:17000 L1|P2|rho=0.0:17000 L1|P3|rho=0.0|eqtl:17000 L1|P3|rho=0.0|lab:17000
+[684s] window 171 L1|P1|r_p=0.0:17100 L1|P2|rho=0.0:17100 L1|P3|rho=0.0|eqtl:17100 L1|P3|rho=0.0|lab:17100
+[690s] window 172 L1|P1|r_p=0.0:17200 L1|P2|rho=0.0:17200 L1|P3|rho=0.0|eqtl:17200 L1|P3|rho=0.0|lab:17200
+[694s] window 173 L1|P1|r_p=0.0:17300 L1|P2|rho=0.0:17300 L1|P3|rho=0.0|eqtl:17300 L1|P3|rho=0.0|lab:17300
+[697s] window 174 L1|P1|r_p=0.0:17400 L1|P2|rho=0.0:17400 L1|P3|rho=0.0|eqtl:17400 L1|P3|rho=0.0|lab:17400
+[700s] window 175 L1|P1|r_p=0.0:17500 L1|P2|rho=0.0:17500 L1|P3|rho=0.0|eqtl:17500 L1|P3|rho=0.0|lab:17500
+[703s] window 176 L1|P1|r_p=0.0:17600 L1|P2|rho=0.0:17600 L1|P3|rho=0.0|eqtl:17600 L1|P3|rho=0.0|lab:17600
+[706s] window 177 L1|P1|r_p=0.0:17700 L1|P2|rho=0.0:17700 L1|P3|rho=0.0|eqtl:17700 L1|P3|rho=0.0|lab:17700
+[712s] window 178 L1|P1|r_p=0.0:17800 L1|P2|rho=0.0:17800 L1|P3|rho=0.0|eqtl:17800 L1|P3|rho=0.0|lab:17800
+[716s] window 179 L1|P1|r_p=0.0:17900 L1|P2|rho=0.0:17900 L1|P3|rho=0.0|eqtl:17900 L1|P3|rho=0.0|lab:17900
+[720s] window 180 L1|P1|r_p=0.0:18000 L1|P2|rho=0.0:18000 L1|P3|rho=0.0|eqtl:18000 L1|P3|rho=0.0|lab:18000
+[725s] window 181 L1|P1|r_p=0.0:18100 L1|P2|rho=0.0:18100 L1|P3|rho=0.0|eqtl:18100 L1|P3|rho=0.0|lab:18100
+[729s] window 182 L1|P1|r_p=0.0:18200 L1|P2|rho=0.0:18200 L1|P3|rho=0.0|eqtl:18200 L1|P3|rho=0.0|lab:18200
+[733s] window 183 L1|P1|r_p=0.0:18300 L1|P2|rho=0.0:18300 L1|P3|rho=0.0|eqtl:18300 L1|P3|rho=0.0|lab:18300
+[738s] window 184 L1|P1|r_p=0.0:18400 L1|P2|rho=0.0:18400 L1|P3|rho=0.0|eqtl:18400 L1|P3|rho=0.0|lab:18400
+[743s] window 185 L1|P1|r_p=0.0:18500 L1|P2|rho=0.0:18500 L1|P3|rho=0.0|eqtl:18500 L1|P3|rho=0.0|lab:18500
+[746s] window 186 L1|P1|r_p=0.0:18600 L1|P2|rho=0.0:18600 L1|P3|rho=0.0|eqtl:18600 L1|P3|rho=0.0|lab:18600
+[751s] window 187 L1|P1|r_p=0.0:18700 L1|P2|rho=0.0:18700 L1|P3|rho=0.0|eqtl:18700 L1|P3|rho=0.0|lab:18700
+[755s] window 188 L1|P1|r_p=0.0:18800 L1|P2|rho=0.0:18800 L1|P3|rho=0.0|eqtl:18800 L1|P3|rho=0.0|lab:18800
+[759s] window 189 L1|P1|r_p=0.0:18900 L1|P2|rho=0.0:18900 L1|P3|rho=0.0|eqtl:18900 L1|P3|rho=0.0|lab:18900
+[763s] window 190 L1|P1|r_p=0.0:19000 L1|P2|rho=0.0:19000 L1|P3|rho=0.0|eqtl:19000 L1|P3|rho=0.0|lab:19000
+[768s] window 191 L1|P1|r_p=0.0:19100 L1|P2|rho=0.0:19100 L1|P3|rho=0.0|eqtl:19100 L1|P3|rho=0.0|lab:19100
+[772s] window 192 L1|P1|r_p=0.0:19200 L1|P2|rho=0.0:19200 L1|P3|rho=0.0|eqtl:19200 L1|P3|rho=0.0|lab:19200
+[777s] window 193 L1|P1|r_p=0.0:19300 L1|P2|rho=0.0:19300 L1|P3|rho=0.0|eqtl:19300 L1|P3|rho=0.0|lab:19300
+[782s] window 194 L1|P1|r_p=0.0:19400 L1|P2|rho=0.0:19400 L1|P3|rho=0.0|eqtl:19400 L1|P3|rho=0.0|lab:19400
+[788s] window 195 L1|P1|r_p=0.0:19500 L1|P2|rho=0.0:19500 L1|P3|rho=0.0|eqtl:19500 L1|P3|rho=0.0|lab:19500
+[792s] window 196 L1|P1|r_p=0.0:19600 L1|P2|rho=0.0:19600 L1|P3|rho=0.0|eqtl:19600 L1|P3|rho=0.0|lab:19600
+[797s] window 197 L1|P1|r_p=0.0:19700 L1|P2|rho=0.0:19700 L1|P3|rho=0.0|eqtl:19700 L1|P3|rho=0.0|lab:19700
+[802s] window 198 L1|P1|r_p=0.0:19800 L1|P2|rho=0.0:19800 L1|P3|rho=0.0|eqtl:19800 L1|P3|rho=0.0|lab:19800
+[807s] window 199 L1|P1|r_p=0.0:19900 L1|P2|rho=0.0:19900 L1|P3|rho=0.0|eqtl:19900 L1|P3|rho=0.0|lab:19900
+[810s] window 200 L1|P1|r_p=0.0:20000 L1|P2|rho=0.0:20000 L1|P3|rho=0.0|eqtl:20000 L1|P3|rho=0.0|lab:20000
+{
+ "L1|P1|r_p=0.0": {
+  "n": 20000,
+  "class_rate": {
+   "D": 0.07565,
+   "G": 0.12825,
+   "S": 0.06455,
+   "U": 0.00105,
+   "W": 0.7305
+  },
+  "D_stratum_rate": {
+   "r0_d1": 0.0197,
+   "r0_d2": 0.01745,
+   "r0_d3": 0.0032,
+   "r1_d1": 0.00605,
+   "r1_d2": 0.0043,
+   "r1_d3": 0.00075,
+   "r2_d1": 0.0059,
+   "r2_d2": 0.00295,
+   "r2_d3": 0.00045,
+   "r3_d0": 0.0022,
+   "r3_d1": 0.00515,
+   "r3_d2": 0.00125,
+   "r3_d3": 0.0004,
+   "r4_d0": 0.00445,
+   "r4_d1": 0.00135,
+   "r4_d2": 5e-05,
+   "rge0.95_d0": 5e-05
+  },
+  "D_stratum_count": {
+   "r0_d1": 394,
+   "r0_d2": 349,
+   "r0_d3": 64,
+   "r1_d1": 121,
+   "r1_d2": 86,
+   "r1_d3": 15,
+   "r2_d1": 118,
+   "r2_d2": 59,
+   "r2_d3": 9,
+   "r3_d0": 44,
+   "r3_d1": 103,
+   "r3_d2": 25,
+   "r3_d3": 8,
+   "r4_d0": 89,
+   "r4_d1": 27,
+   "r4_d2": 1,
+   "rge0.95_d0": 1
+  }
+ },
+ "L1|P2|rho=0.0": {
+  "n": 20000,
+  "class_rate": {
+   "D": 0.19115,
+   "G": 0.11955,
+   "S": 0.1846,
+   "U": 0.00135,
+   "W": 0.50335
+  },
+  "D_stratum_rate": {
+   "r0_d1": 0.01955,
+   "r0_d2": 0.0458,
+   "r0_d3": 0.01265,
+   "r1_d1": 0.00995,
+   "r1_d2": 0.0169,
+   "r1_d3": 0.0079,
+   "r2_d1": 0.01175,
+   "r2_d2": 0.0118,
+   "r2_d3": 0.00605,
+   "r3_d0": 0.0022,
+   "r3_d1": 0.01485,
+   "r3_d2": 0.0091,
+   "r3_d3": 0.003,
+   "r4_d0": 0.01025,
+   "r4_d1": 0.00655,
+   "r4_d2": 0.0024,
+   "r4_d3": 0.00015,
+   "rge0.95_d0": 0.00015,
+   "rge0.95_d1": 0.00015
+  },
+  "D_stratum_count": {
+   "r0_d1": 391,
+   "r0_d2": 916,
+   "r0_d3": 253,
+   "r1_d1": 199,
+   "r1_d2": 338,
+   "r1_d3": 158,
+   "r2_d1": 235,
+   "r2_d2": 236,
+   "r2_d3": 121,
+   "r3_d0": 44,
+   "r3_d1": 297,
+   "r3_d2": 182,
+   "r3_d3": 60,
+   "r4_d0": 205,
+   "r4_d1": 131,
+   "r4_d2": 48,
+   "r4_d3": 3,
+   "rge0.95_d0": 3,
+   "rge0.95_d1": 3
+  }
+ },
+ "L1|P3|rho=0.0|eqtl": {
+  "n": 20000,
+  "class_rate": {
+   "D": 0.0744,
+   "G": 0.1359,
+   "S": 0.04815,
+   "U": 0.0011,
+   "W": 0.74045
+  },
+  "D_stratum_rate": {
+   "r0_d1": 0.03145,
+   "r0_d2": 0.016,
+   "r0_d3": 5e-05,
+   "r1_d1": 0.0062,
+   "r1_d2": 0.00305,
+   "r2_d0": 5e-05,
+   "r2_d1": 0.006,
+   "r2_d2": 0.0007,
+   "r3_d0": 0.00315,
+   "r3_d1": 0.0038,
+   "r3_d2": 0.00055,
+   "r4_d0": 0.003,
+   "r4_d1": 0.0003,
+   "rge0.95_d0": 0.0001
+  },
+  "D_stratum_count": {
+   "r0_d1": 629,
+   "r0_d2": 320,
+   "r0_d3": 1,
+   "r1_d1": 124,
+   "r1_d2": 61,
+   "r2_d0": 1,
+   "r2_d1": 120,
+   "r2_d2": 14,
+   "r3_d0": 63,
+   "r3_d1": 76,
+   "r3_d2": 11,
+   "r4_d0": 60,
+   "r4_d1": 6,
+   "rge0.95_d0": 2
+  }
+ },
+ "L1|P3|rho=0.0|lab": {
+  "n": 20000,
+  "class_rate": {
+   "D": 0.10625,
+   "G": 0.11695,
+   "S": 0.0843,
+   "U": 0.00135,
+   "W": 0.69115
+  },
+  "D_stratum_rate": {
+   "r0_d1": 0.01925,
+   "r0_d2": 0.0323,
+   "r0_d3": 0.0032,
+   "r1_d1": 0.00675,
+   "r1_d2": 0.008,
+   "r1_d3": 0.0022,
+   "r2_d1": 0.00685,
+   "r2_d2": 0.0049,
+   "r2_d3": 0.001,
+   "r3_d0": 0.0017,
+   "r3_d1": 0.008,
+   "r3_d2": 0.0028,
+   "r3_d3": 0.00035,
+   "r4_d0": 0.00465,
+   "r4_d1": 0.00335,
+   "r4_d2": 0.00075,
+   "r4_d3": 5e-05,
+   "rge0.95_d0": 0.00015
+  },
+  "D_stratum_count": {
+   "r0_d1": 385,
+   "r0_d2": 646,
+   "r0_d3": 64,
+   "r1_d1": 135,
+   "r1_d2": 160,
+   "r1_d3": 44,
+   "r2_d1": 137,
+   "r2_d2": 98,
+   "r2_d3": 20,
+   "r3_d0": 34,
+   "r3_d1": 160,
+   "r3_d2": 56,
+   "r3_d3": 7,
+   "r4_d0": 93,
+   "r4_d1": 67,
+   "r4_d2": 15,
+   "r4_d3": 1,
+   "rge0.95_d0": 3
+  }
+ },
+ "_runtime_s": 810.4939947128296
+}

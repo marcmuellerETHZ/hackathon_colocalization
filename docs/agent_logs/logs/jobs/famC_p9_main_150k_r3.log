@@ -1,0 +1,4 @@
+[orch] job famC_p9_main_150k_r3 start 2026-10-28T15:22:59+01:00 host eu-g6-001 commit f7cf358173 pid 2446181
+[orch] cmd: python -m famC.train_main --run p9_main_150k --train-set train_v1 --valid-set valid_v1 --max-train-shards 74 --steps 4688 --warmup 468 --eval-every 586 --seed-key main > logs/famC/p9_main_150k.log 2>&1; rc=$?; tail -n 2 logs/famC/p9_main_150k.log | cut -c1-400; exit $rc
+EVAL step 4688: all: sd_pm 0.9749 dw 0.9981 | realistic_L1-L4: sd_pm 0.9754 dw 0.9980 | L6: sd_pm 0.9612 dw 0.9980 | train-region sd_pm 0.9919 | ll 0.3932 | infer 5320 loci/s
+DONE

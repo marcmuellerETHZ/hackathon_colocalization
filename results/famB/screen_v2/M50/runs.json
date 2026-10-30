@@ -1,0 +1,115 @@
+{
+ "method": "exactcoloc_gaussian_M50",
+ "kwargs": {
+  "mode": "gaussian",
+  "M": 50,
+  "p12": 5e-06,
+  "n_mc": 16384,
+  "compile": true
+ },
+ "runs": [
+  {
+   "set": "data/processed/sets/screen_v2/L0_P1_r_p=0.0.h5",
+   "run_id": "20261027T140645Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.0_78e229",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T140645Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.0_78e229",
+   "n": 2000,
+   "counts": {
+    "ok": 2000,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 2000
+   },
+   "wall_s": 276.87781143188477,
+   "loci_per_s": 7.223402950409494,
+   "predictions_sha256": "6178160e38632b82704109278076186d335be29a0fca7269b495d5cecbac523b"
+  },
+  {
+   "set": "data/processed/sets/screen_v2/L0_P3_rho=0.5.h5",
+   "run_id": "20261027T141127Z_exactcoloc_gaussian_M50_L0_P3_rho=0.5_056e54",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T141127Z_exactcoloc_gaussian_M50_L0_P3_rho=0.5_056e54",
+   "n": 2000,
+   "counts": {
+    "ok": 2000,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 2000
+   },
+   "wall_s": 294.47553396224976,
+   "loci_per_s": 6.7917357109076155,
+   "predictions_sha256": "030b218ada398cba98c03529a8b7f1488f321069c2aadef5ca93a48dbc804941"
+  },
+  {
+   "set": "data/processed/sets/screen_v2/L2_P1_r_p=0.0.h5",
+   "run_id": "20261027T141623Z_exactcoloc_gaussian_M50_L2_P1_r_p=0.0_afba87",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T141623Z_exactcoloc_gaussian_M50_L2_P1_r_p=0.0_afba87",
+   "n": 2000,
+   "counts": {
+    "ok": 2000,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 2000
+   },
+   "wall_s": 163.35588884353638,
+   "loci_per_s": 12.243207233965203,
+   "predictions_sha256": "c684ccbccbd8547c2dfcce09f8918a94741f00c8c50ecaf1cf18b6368c8b4822"
+  },
+  {
+   "set": "data/processed/sets/screen_v2/L2_P3_rho=0.5.h5",
+   "run_id": "20261027T141842Z_exactcoloc_gaussian_M50_L2_P3_rho=0.5_498e0a",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T141842Z_exactcoloc_gaussian_M50_L2_P3_rho=0.5_498e0a",
+   "n": 2000,
+   "counts": {
+    "ok": 2000,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 2000
+   },
+   "wall_s": 131.01814246177673,
+   "loci_per_s": 15.265061482484997,
+   "predictions_sha256": "370980f5edbf27503e6fdfc8cc65dcc0abf4941b9f34ee5da4f3a9900c7ecb76"
+  },
+  {
+   "set": "data/processed/sets/screen_v2/L4_P1_r_p=0.0.h5",
+   "run_id": "20261027T142102Z_exactcoloc_gaussian_M50_L4_P1_r_p=0.0_9f399b",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T142102Z_exactcoloc_gaussian_M50_L4_P1_r_p=0.0_9f399b",
+   "n": 2000,
+   "counts": {
+    "ok": 2000,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 2000
+   },
+   "wall_s": 116.93310785293579,
+   "loci_per_s": 17.103795808757226,
+   "predictions_sha256": "f92fa2b63a50cb8bcebb768a9e55ebe16092a2c981d35fdfae22995074038d2c"
+  },
+  {
+   "set": "data/processed/sets/screen_v2/L4_P3_rho=0.5.h5",
+   "run_id": "20261027T142310Z_exactcoloc_gaussian_M50_L4_P3_rho=0.5_40c9ee",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T142310Z_exactcoloc_gaussian_M50_L4_P3_rho=0.5_40c9ee",
+   "n": 2000,
+   "counts": {
+    "ok": 2000,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 2000
+   },
+   "wall_s": 136.59702110290527,
+   "loci_per_s": 14.641607729448955,
+   "predictions_sha256": "cab810650d8d9c560aac75ed4cef2d1b556f3701fc351c0dd609edd5406110a5"
+  }
+ ],
+ "n_loci": 12000,
+ "ids_file": null,
+ "status_counts": {
+  "ok": 12000
+ },
+ "commit": "e4e6a63c06b9173a658e2c9e24c96f4f6b9edb77",
+ "job": "famB_screen_v2_full_r2"
+}

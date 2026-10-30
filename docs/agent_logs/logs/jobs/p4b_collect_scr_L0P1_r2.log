@@ -1,0 +1,23 @@
+[orch] job p4b_collect_scr_L0P1_r2 start 2026-10-27T13:07:38+01:00 host eu-g6-001 commit d70a435e83 pid 1119526
+[orch] cmd: PYTHONPATH=src python scripts/baselines_p4.py collect --runs-dir results/baselines_screen_v2/runs --runs-dir results/baselines_screen_v2/bench --group L0P1=results/baselines_screen_v2/ids/L0P1_all.txt --out results/baselines_screen_v2/collected_L0P1_v1b
+[baselines_p4 bench] coloc_abf_W0.1_p12_5e-06: several runs cover the ids; using the newer 20261027T102044Z_coloc_abf_W0.1_p12_5e-06_screen_v2_b87db0
+[baselines_p4 bench] sharepro: several runs cover the ids; using the newer 20261027T102044Z_sharepro_screen_v2_75794a
+{
+ "coloc_abf_W0.15_p12_1e-05": 2000,
+ "coloc_abf_W0.15_p12_5e-06": 2000,
+ "coloc_abf_W0.1_p12_1e-05": 2000,
+ "coloc_abf_W0.1_p12_5e-06": 2000,
+ "coloc_abf_W0.2_p12_1e-05": 2000,
+ "coloc_abf_W0.2_p12_5e-06": 2000,
+ "coloc_prop_test": 2000,
+ "coloc_susie": 2000,
+ "coloc_susie_mm": 2000,
+ "colocboost": 2000,
+ "colocboost_m1": 2000,
+ "lead_snp": 2000,
+ "mvsusie": 2000,
+ "prop_coloc": 2000,
+ "sharepro": 2000,
+ "strength_only": 2000
+}
+[orch] exit 0 at 2026-10-27T13:07:45+01:00

@@ -1,0 +1,3 @@
+00:36:13 [harness] run test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted: 1600 loci (1600 to run), mode=cpu, workers=2
+00:37:13 [harness] coloc_abf: 321/1600 loci done
+00:38:26 [harness] done test_frozen-v1_ab94c5a1__coloc_abf__sim_shifted: {'ok': 1600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1600} in 128.3s

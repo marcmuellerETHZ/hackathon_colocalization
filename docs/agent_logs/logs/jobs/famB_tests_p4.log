@@ -1,0 +1,69 @@
+[orch] job famB_tests_p4 start 2026-10-27T11:21:51+01:00 host eu-g6-001 commit 0e3d4ac1de pid 985998
+[orch] cmd: python -m pytest tests/famB -q -p no:cacheprovider 2>&1 | tee /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_tests_p4/out/pytest.txt; exit 0
+F..............................F.............                            [100%]
+=================================== FAILURES ===================================
+____________ test_same_locus_same_posteriors_in_any_batch[gaussian] ____________
+
+mode = 'gaussian', device = device(type='cuda')
+
+    @pytest.mark.parametrize("mode", ["gaussian", "simulator"])
+    def test_same_locus_same_posteriors_in_any_batch(mode, device):
+        p = 30 if mode == "gaussian" else 7
+        loci = _loci(6, p, mode)
+        kw = dict(M=20, n_mc=4096) if mode == "gaussian" else \
+            dict(M=20, n_mc=4096, eta=0.0, eta_floor=0.0, sim_prior_fn=lambda _l: toy_l0star_prior(K=3))
+        ref = _by_id(ExactColoc(mode=mode, device=device, **kw).fit_batch(loci))
+        # different composition, order and batch sizes; fresh instance (no shared generator state)
+        rev = _by_id(ExactColoc(mode=mode, device=device, **kw).fit_batch(loci[::-1]))
+        m = ExactColoc(mode=mode, device=device, **kw)
+        single = {}
+        for lo in (loci[3], loci[0]):
+            single.update(_by_id(m.fit_batch([lo])))
+        pair = _by_id(ExactColoc(mode=mode, device=device, **kw).fit_batch([loci[5], loci[3], loci[1]]))
+        for other in (rev, single, pair):
+            for lid, r in other.items():
+                assert r["status"] == "ok"
+>               _assert_same(ref[lid], r)
+
+tests/famB/test_batch_invariance.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+r1 = {'locus_id': 'loc005', 'method': 'exactcoloc_gaussian_M20', 's': 0.003787878787878788, 'P_S': 0.0, ...}
+r2 = {'locus_id': 'loc005', 'method': 'exactcoloc_gaussian_M20', 's': 0.003787878787878788, 'P_S': 0.0, ...}
+
+    def _assert_same(r1, r2):
+        for c in COLS:
+            assert r1[c] == r2[c] or (np.isnan(r1[c]) and np.isnan(r2[c])), (c, r1[c], r2[c])
+        e1, e2 = json.loads(r1["extra"]), json.loads(r2["extra"])
+        for c in EXTRA:
+>           assert e1[c] == e2[c], (c, e1[c], e2[c])
+E           AssertionError: ('max_pip1', 0.9999999999984798, 0.99999999999848)
+E           assert 0.9999999999984798 == 0.99999999999848
+
+tests/famB/test_batch_invariance.py:39: AssertionError
+__________________________ test_no_truth_file_access ___________________________
+
+    def test_no_truth_file_access():
+        import famB
+        import pathlib
+        src = pathlib.Path(famB.__file__).parent
+        for f in src.glob("*.py"):
+            txt = f.read_text()
+>           assert "truth" not in txt.lower(), f
+E           AssertionError: PosixPath('/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_tests_p4/code/src/famB/l0star_ref.py')
+E           assert 'truth' not in '"""family b...    main()\n'
+E             
+E             'truth' is contained here:
+E               summary). truth is never read here.
+E             ?           +++++
+E               """
+E               from __future__ import annotations
+E               ...
+E             
+E             ...Full output truncated (144 lines hidden), use '-vv' to show
+
+tests/famB/test_method.py:98: AssertionError
+=========================== short test summary info ============================
+FAILED tests/famB/test_batch_invariance.py::test_same_locus_same_posteriors_in_any_batch[gaussian]
+FAILED tests/famB/test_method.py::test_no_truth_file_access - AssertionError:...
+2 failed, 43 passed in 176.43s (0:02:56)

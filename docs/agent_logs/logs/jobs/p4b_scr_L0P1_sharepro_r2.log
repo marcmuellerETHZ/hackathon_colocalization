@@ -1,0 +1,14 @@
+[orch] job p4b_scr_L0P1_sharepro_r2 start 2026-10-27T11:17:40+01:00 host eu-g6-001 commit ad021dcdc4 pid 981516
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method sharepro --set data/processed/sets/screen_v2.h5 --ids-file results/baselines_screen_v2/ids/L0P1_all.txt --workers 4 --pilot-timeout --results-dir results/baselines_screen_v2/runs --label 'p4 screen_v2 L0|P1|r_p=0.0'
+[baselines.run] sharepro: 2000 loci, p_max=6250, workers=4, timeout=60s
+[harness] run 20261027T102044Z_sharepro_screen_v2_75794a: 2000 loci, mode=cpu, workers=4
+[harness] 200/2000 tasks done
+[harness] 415/2000 tasks done
+[harness] 657/2000 tasks done
+[harness] 919/2000 tasks done
+[harness] 1196/2000 tasks done
+[harness] 1481/2000 tasks done
+[harness] 1783/2000 tasks done
+[harness] done 20261027T102044Z_sharepro_screen_v2_75794a: {'ok': 2000, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 2000} in 231.5s
+{"run_id": "20261027T102044Z_sharepro_screen_v2_75794a", "run_dir": "results/baselines_screen_v2/runs/20261027T102044Z_sharepro_screen_v2_75794a", "counts": {"ok": 2000, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 2000}}
+[orch] exit 0 at 2026-10-27T11:24:36+01:00

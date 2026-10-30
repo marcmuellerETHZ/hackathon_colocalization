@@ -1,0 +1,25 @@
+[orch] job p7_verify_testrun_vr2 start 2026-10-28T04:57:32+01:00 host eu-g6-001 commit 4b9a51d405 pid 1926433
+[orch] cmd: bash -c 'python scripts/verify_run.py /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/*/ ; echo EXIT=$?'
+OK   /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R2/
+OK   /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R3b/
+OK   /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_insample/
+OK   /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/test_frozen-v1_ab94c5a1__coloc_abf__real_R4b_reference/
+Traceback (most recent call last):
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr2/code/scripts/verify_run.py", line 126, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr2/code/scripts/verify_run.py", line 114, in main
+    probs = verify(d, a.tol)
+            ^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr2/code/scripts/verify_run.py", line 92, in verify
+    truth = read_truth(tpath)
+            ^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr2/code/src/eval/truth.py", line 91, in read_truth
+    _guard(df)
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr2/code/src/eval/truth.py", line 73, in _guard
+    guard_locus(str(lid), str(sp), (str(b),))
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr2/code/src/eval/io.py", line 267, in guard_locus
+    raise TestSplitAccessError(
+eval.io.TestSplitAccessError: locus 'testset_v1__L0_P1_r_p=0.0__W__0000000' belongs to the test split; test data may only be produced/read by scripts/eval_test.py (DESIGN §7.3)
+EXIT=1
+[orch] exit 0 at 2026-10-28T04:57:35+01:00

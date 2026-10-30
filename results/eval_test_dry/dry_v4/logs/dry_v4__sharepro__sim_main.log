@@ -1,0 +1,4 @@
+20:04:34 [harness] run dry_v4__sharepro__sim_main: 502 loci (502 to run), mode=cpu, workers=7
+20:05:39 [harness] sharepro: 69/502 loci done
+20:06:40 [harness] sharepro: 399/502 loci done
+20:06:54 [harness] done dry_v4__sharepro__sim_main: {'ok': 502, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 502} in 138.3s

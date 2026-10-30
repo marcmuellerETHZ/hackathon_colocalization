@@ -1,0 +1,11 @@
+00:36:21 [harness] run test_frozen-v1_ab94c5a1__strength_only__sim_main: 11607 loci (11607 to run), mode=cpu, workers=2
+00:37:22 [harness] strength_only: 495/11607 loci done
+00:38:22 [harness] strength_only: 1661/11607 loci done
+00:39:22 [harness] strength_only: 2604/11607 loci done
+00:40:24 [harness] strength_only: 3332/11607 loci done
+00:41:24 [harness] strength_only: 4139/11607 loci done
+00:42:24 [harness] strength_only: 4912/11607 loci done
+00:43:24 [harness] strength_only: 6499/11607 loci done
+00:44:24 [harness] strength_only: 8978/11607 loci done
+00:45:24 [harness] strength_only: 11254/11607 loci done
+00:45:51 [harness] done test_frozen-v1_ab94c5a1__strength_only__sim_main: {'ok': 11607, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 11607} in 554.2s

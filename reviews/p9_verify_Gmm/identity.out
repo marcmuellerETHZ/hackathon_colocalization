@@ -1,0 +1,33 @@
+R: 24 non-converged, 0 failed; status(conv,fail,niter) agree 200/200
+converged-in-R fits 176: max|dPIP| 1.605e-08; n<1e-3 176
+both-converged loci 79: max|dPP.H4| 2.602e-09; pair presence agree all 100: True
+                                     fit     a     dpip   sp_pip      dH4    sp_h4  strict  amended
+0           L2_P3_rho=0.5__S__0008601 t1  True 4.52e-06 2.34e-06  1.7e-14 8.79e-15   False     True
+1   L4_P1_r_p=0.0__D_r3_dall__0007077 t2  True 1.35e-09 5.43e-09 7.84e-13 5.18e-12    True     True
+2   L4_P1_r_p=0.0__D_r4_dall__0007110 t2  True 3.32e-10 3.86e-09 6.39e-11  5.5e-10    True     True
+3   L4_P1_r_p=0.0__D_r4_dall__0007897 t1  True 3.14e-09 4.36e-09        0        0    True     True
+4   L4_P1_r_p=0.0__D_r4_dall__0011054 t1  True   0.0858    0.285 3.99e-06 7.42e-05    True     True
+5           L4_P1_r_p=0.0__G__0000803 t1  True 7.36e-10 1.67e-10        0        0   False     True
+6           L4_P1_r_p=0.0__G__0004022 t1  True 6.22e-11 3.73e-10 4.11e-11 2.42e-10    True     True
+7           L4_P1_r_p=0.0__G__0004022 t2  True 2.35e-09 3.75e-09 4.11e-11 2.42e-10    True     True
+8           L4_P1_r_p=0.0__S__0017821 t2  True 6.15e-09 8.35e-09 3.63e-11  7.2e-11    True     True
+9           L4_P1_r_p=0.0__W__0004202 t1  True 7.66e-09 1.42e-08        0        0    True     True
+10          L4_P1_r_p=0.0__W__0007201 t1  True    0.474   0.0207  8.5e-11 4.54e-12   False    False
+11  L4_P3_rho=0.5__D_r0_dall__0000043 t1  True 3.73e-06 8.31e-05 1.38e-08 3.09e-07    True     True
+12  L4_P3_rho=0.5__D_r1_dall__0004616 t1  True 1.92e-09 3.26e-09 9.61e-15 2.85e-13    True     True
+13          L4_P3_rho=0.5__G__0005813 t1  True 9.79e-11 2.33e-10  1.1e-08 1.63e-08    True     True
+14          L4_P3_rho=0.5__G__0005813 t2  True  1.4e-07 1.94e-07  1.1e-08 1.63e-08    True     True
+15          L4_P3_rho=0.5__S__0000414 t1  True 1.34e-10 2.31e-09 5.05e-10 5.52e-09    True     True
+16          L4_P3_rho=0.5__S__0007218 t1  True 2.25e-09 1.24e-09 1.07e-12 6.63e-12   False     True
+17          L4_P3_rho=0.5__S__0011835 t1  True 2.02e-09 2.41e-09  3.6e-10 8.13e-10    True     True
+18          L4_P3_rho=0.5__S__0013015 t1  True 2.03e-08 4.64e-07 6.05e-16 1.25e-15    True     True
+19          L4_P3_rho=0.5__S__0014002 t1  True 7.12e-10 4.79e-10   0.0117   0.0443   False     True
+20          L4_P3_rho=0.5__S__0014002 t2  True   0.0524        1   0.0117   0.0443    True     True
+21          L4_P3_rho=0.5__S__0016256 t1  True        1        1    0.721    0.721    True     True
+22          L4_P3_rho=0.5__W__0001801 t1  True 4.08e-09 1.12e-08        0        0    True     True
+23          L4_P3_rho=0.5__W__0010204 t1  True 2.06e-07 6.48e-07        0        0    True     True
+non-converged fits 24: (a) 24, strict P4-3 19/24, amended P4-3a 23/24
+amended failures: ['L4_P1_r_p=0.0__W__0007201 t1']
+strict failures: ['L2_P3_rho=0.5__S__0008601 t1', 'L4_P1_r_p=0.0__G__0000803 t1', 'L4_P1_r_p=0.0__W__0007201 t1', 'L4_P3_rho=0.5__S__0007218 t1', 'L4_P3_rho=0.5__S__0014002 t1']
+stored sens_v7: strict 19 amended 23 | max |spread_pip diff| 0.0
+VERDICT correctness rung (P4-3a as written): FAIL

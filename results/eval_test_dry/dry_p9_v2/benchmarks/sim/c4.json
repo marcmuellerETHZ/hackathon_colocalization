@@ -1,0 +1,15 @@
+{
+ "definition": "C4 (configs/testset_v1.yaml endpoints.C4): slope of the false-S rate (P_S >= t_S) on the realised rho,\n        per 0.1, in P2 and P3 cells of the realistic setting (levels L1-L6), among D and among W loci; BCa 95% CI\n        from one cluster bootstrap (test LD block); margin 0.02 (|slope| CI within +-0.02 = no overlap effect).",
+ "modes": {
+  "excluded": {
+   "n_loci": 136,
+   "n_units": 1,
+   "note": "not estimable: fewer than 2 bootstrap units among realistic P2/P3 loci"
+  },
+  "least_favourable": {
+   "n_loci": 136,
+   "n_units": 1,
+   "note": "not estimable: fewer than 2 bootstrap units among realistic P2/P3 loci"
+  }
+ }
+}

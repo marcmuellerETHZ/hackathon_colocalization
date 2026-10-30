@@ -1,0 +1,85 @@
+[orch] job p5_verify_famC_recompute_r2 start 2026-10-27T15:47:19+01:00 host eu-g6-001 commit 9246acc634 pid 1386818
+[orch] cmd: set -e; mkdir -p results/p5_verify_famC; python reviews/p5_verify_famC/recompute_c1.py --out results/p5_verify_famC/recompute_c1_long8M_pilot.json; for cw in auto none main; do python scripts/famC_eval/c1_eval.py --set data/processed/famC/l0star_pilot/l0star_pilot.h5 --b-preds data/processed/famC/l0star_pilot/famB_sim_preds.parquet --ckpt results/famC/c1_long/model.pt --class-w $cw --out results/p5_verify_famC/c1_eval_pilot_$cw.json; done
+{
+ "set": "data/processed/famC/l0star_pilot/l0star_pilot.h5",
+ "ckpt": "results/famC/c1_long/model.pt",
+ "b": "data/processed/famC/l0star_pilot/famB_sim_preds.parquet",
+ "n": 600,
+ "B_row_sum_range": [
+  1.0,
+  1.0
+ ],
+ "natural_shares_stats": {
+  "W": 0.7818867924528302,
+  "S": 0.05660377358490566,
+  "D": 0.06792452830188679,
+  "G": 0.08754716981132075,
+  "U": 0.0060377358490566035
+ },
+ "natural_shares_from_counts": {
+  "W": 0.7818867924528302,
+  "S": 0.05660377358490566,
+  "D": 0.06792452830188679,
+  "G": 0.08754716981132075,
+  "U": 0.0060377358490566035
+ },
+ "min_PC_none": 2.0892022709884363e-09,
+ "min_PC_old": 2.507059408447957e-10,
+ "full_none": {
+  "natural": 0.0063783229865353765,
+  "balanced": 0.019844010048863932,
+  "by_class": {
+   "S": 0.042811934191884865,
+   "D": 0.01675036315924333,
+   "W": 0.0015037276680454706,
+   "G": 0.01831001517628207
+  }
+ },
+ "full_old": {
+  "natural": 0.04841641522586552,
+  "balanced": 0.11116772666884218,
+  "by_class": {
+   "S": 0.11891974542396033,
+   "D": 0.10271794648220042,
+   "W": 0.02144453244461054,
+   "G": 0.20158868232459745
+  }
+ },
+ "subset50_none": {
+  "natural": 0.007294200140477665,
+  "balanced": 0.01727964367039734,
+  "by_class": {
+   "S": 0.030813962260151838,
+   "D": 0.01628474848539628,
+   "W": 0.003692062240736085,
+   "G": 0.017282849744909037
+  }
+ },
+ "subset50_old": {
+  "natural": 0.07156888982819885,
+  "balanced": 0.11453926078953273,
+  "by_class": {
+   "S": 0.0840368333130484,
+   "D": 0.13436363671308793,
+   "W": 0.052114950492128616,
+   "G": 0.1885314602692768
+  }
+ },
+ "natural_share_sensitivity_none": {
+  "S-2SE": 0.006046237633969468,
+  "S+2SE": 0.006704462933434989,
+  "D-2SE": 0.006275300351702939,
+  "D+2SE": 0.0064793388946599185,
+  "W-2SE": 0.006458298329178201,
+  "W+2SE": 0.006300888510705983,
+  "G-2SE": 0.00624503529980278,
+  "G+2SE": 0.006508697864979017
+ }
+}
+model {"C1_E_KL_natural": 0.006378326120377669, "C1_E_KL_natural_ci95": [0.003833047715669456, 0.015373691435565514], "E_KL_balanced": 0.019844016145792988, "E_KL_by_class": {"S": 0.04281194735590179, "D": 0.016750372905047925, "W": 0.0015037299413181123, "G": 0.01831001438090412}, "pass": true}
+wrote results/p5_verify_famC/c1_eval_pilot_auto.json
+model {"C1_E_KL_natural": 0.006378326120377669, "C1_E_KL_natural_ci95": [0.003833047715669456, 0.015373691435565514], "E_KL_balanced": 0.019844016145792988, "E_KL_by_class": {"S": 0.04281194735590179, "D": 0.016750372905047925, "W": 0.0015037299413181123, "G": 0.01831001438090412}, "pass": true}
+wrote results/p5_verify_famC/c1_eval_pilot_none.json
+model {"C1_E_KL_natural": 0.04841641950278818, "C1_E_KL_natural_ci95": [0.03624188938620384, 0.09059836247091571], "E_KL_balanced": 0.11116774047430511, "E_KL_by_class": {"S": 0.11891977404160675, "D": 0.10271795785952059, "W": 0.021444533201247687, "G": 0.20158869679484545}, "pass": false}
+wrote results/p5_verify_famC/c1_eval_pilot_main.json
+[orch] exit 0 at 2026-10-27T15:51:12+01:00

@@ -1,0 +1,136 @@
+{
+ "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5",
+ "n_ids": 24,
+ "runs": {
+  "coloc_abf": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T154522Z_coloc_abf_screen_v1_810c7e",
+   "counts": {
+    "ok": 24,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 45.54042410850525,
+   "rerun": null,
+   "done": true
+  },
+  "lead_snp": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T154606Z_lead_snp_screen_v1_a61c90",
+   "counts": {
+    "ok": 24,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 44.4682891368866,
+   "rerun": null,
+   "done": true
+  },
+  "sharepro": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T154651Z_sharepro_screen_v1_b709da",
+   "counts": {
+    "ok": 24,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 63.417572021484375,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_susie": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T154755Z_coloc_susie_screen_v1_114fe6",
+   "counts": {
+    "ok": 14,
+    "nonconverged": 10,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 146.68063378334045,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_susie_mm": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T155022Z_coloc_susie_mm_screen_v1_138950",
+   "counts": {
+    "ok": 17,
+    "nonconverged": 7,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 112.2454285621643,
+   "rerun": null,
+   "done": true
+  },
+  "colocboost": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T155213Z_colocboost_screen_v1_5d2b68",
+   "counts": {
+    "ok": 23,
+    "nonconverged": 0,
+    "failed": 1,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 78.4957025051117,
+   "rerun": null,
+   "done": true
+  },
+  "colocboost_m1": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T155424Z_colocboost_m1_screen_v1_2dbf4b",
+   "counts": {
+    "ok": 24,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 98.66501045227051,
+   "rerun": null,
+   "done": true
+  },
+  "mvsusie": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T155537Z_mvsusie_screen_v1_0c5991",
+   "counts": {
+    "ok": 14,
+    "nonconverged": 10,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 385.68501019477844,
+   "rerun": null,
+   "done": true
+  },
+  "prop_coloc": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T160247Z_prop_coloc_screen_v1_514938",
+   "counts": {
+    "ok": 23,
+    "nonconverged": 0,
+    "failed": 1,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 118.92804074287415,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_prop_test": {
+   "run_dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/results_dry/20261026T160335Z_coloc_prop_test_screen_v1_1626a5",
+   "counts": {
+    "ok": 24,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 24
+   },
+   "wall_s": 52.59077429771423,
+   "rerun": null,
+   "done": true
+  }
+ }
+}

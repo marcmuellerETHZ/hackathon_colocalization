@@ -1,0 +1,2 @@
+10:07:06 [harness] run dry_p9_v2__strength_only__real_R2: 16 loci (16 to run), mode=cpu, workers=2
+10:07:08 [harness] done dry_p9_v2__strength_only__real_R2: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 3.2s

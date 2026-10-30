@@ -1,0 +1,21 @@
+{
+ "run": "c0_full",
+ "variant": "full",
+ "steps": 40000,
+ "wb": 32,
+ "L": 8,
+ "lr": 0.0005,
+ "warmup": 1000,
+ "n_train_windows": 3000,
+ "n_val_windows": 400,
+ "d": 128,
+ "layers": 4,
+ "K": 16,
+ "pip_weight": 0.1,
+ "hyp": "uniform",
+ "seed_key": "main",
+ "eval_at": "50000,100000,200000,500000,1000000,2000000,5000000,10000000",
+ "eval_sweeps": 2,
+ "git": "0984894c850db37eb27d071289ce01e1f5aefc03",
+ "start": "2026-10-26 16:43:10"
+}

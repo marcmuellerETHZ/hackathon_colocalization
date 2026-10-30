@@ -1,0 +1,133 @@
+{
+ "config": {
+  "baseline": "coloc_susie_mm",
+  "frozen_timeouts_file": null,
+  "kwargs": {},
+  "max_cpus": 24,
+  "mem_budget_gb": 48.0,
+  "mem_model_gb": {
+   "a": 0.8,
+   "at_p_max": 4.7087504,
+   "b": 0.1
+  },
+  "n_workers": 12,
+  "p_max": 6252,
+  "r_timeout_s": 216.0,
+  "run_name": "coloc_susie_mm",
+  "timeout_s": 240.0
+ },
+ "counts": {
+  "expected": 5000,
+  "failed": 0,
+  "nonconverged": 939,
+  "ok": 4050,
+  "timeout": 11
+ },
+ "end_utc": "2026-10-27T16:08:59.900383Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "commit": "956e24944b3ee0a055d51aad421ee718e924a7bb",
+  "modified_tracked": [],
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 12,
+  "timeout_s_per_locus": 240.0,
+  "timing": false
+ },
+ "label": "p4 screen_v2 other 5 cells, half a",
+ "locus_set": {
+  "ids_sha256": "4864a8a31312a48e1d70ffe40296fb5bcd99dfba966a5cc11bf6ef01ae1db0fc",
+  "n_expected": 5000,
+  "n_loci_in_file": 12000,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+  "sha256": "6cc05e1c8ae75ff5b96c8293bddd881e355fe015db3ee931670f9bbefe9769fe"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "1, 4708",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   45.62158203125,
+   46.54541015625,
+   45.7822265625
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 216.0
+  },
+  "name": "coloc_susie_mm",
+  "target": "baselines.methods:ColocSusieMM"
+ },
+ "method_name": "coloc_susie_mm",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": null,
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "d654b873a710256f397febdc0f50cbf6908378521d0a86326ac629580f7157df",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 3148661,
+  "rule": "D6(h)"
+ },
+ "run_id": "20261027T132229Z_coloc_susie_mm_screen_v2_f0e573",
+ "runtime_s": {
+  "median": 15.028862370498246,
+  "p95": 73.57734368289678,
+  "sum": 119066.15157651521
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T13:22:29.497593Z",
+ "test_access": false,
+ "truth": null,
+ "wall_s": 9990.40272891699
+}

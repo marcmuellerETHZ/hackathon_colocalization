@@ -1,0 +1,13 @@
+[orch] job p4b_m4_coloc_abf_W0p2_p12_5em06_r2 start 2026-10-27T14:06:17+01:00 host eu-g6-001 commit ad021dcdc4 pid 1165314
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method coloc_abf --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/m4_subsample_v1/main.txt --workers 2 --pilot-timeout --results-dir results/baselines_m4/runs --label 'p4 M4 valid_grid_v1 subsample m4_subsample@1' --run-name coloc_abf_W0.2_p12_5e-06 --kwargs '{'W': 0.2, 'p12': 5e-06}'
+[baselines.run] coloc_abf_W0.2_p12_5e-06: 12170 loci, p_max=5371, workers=2, timeout=60s
+[harness] run 20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c: 12170 loci, mode=cpu, workers=2
+[harness] 967/12170 tasks done
+[harness] 2557/12170 tasks done
+[harness] 3960/12170 tasks done
+[harness] 5245/12170 tasks done
+[harness] 8999/12170 tasks done
+[harness] 12083/12170 tasks done
+[harness] done 20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c: {'ok': 12170, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12170} in 182.1s
+{"run_id": "20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c", "run_dir": "results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c", "counts": {"ok": 12170, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 12170}}
+[orch] exit 0 at 2026-10-27T14:19:19+01:00

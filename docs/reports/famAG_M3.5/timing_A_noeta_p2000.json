@@ -1,0 +1,49 @@
+{
+ "loadavg_start": [
+  26.39794921875,
+  28.4931640625,
+  32.22265625
+ ],
+ "gpu_util_start": "89 %, 11140 MiB",
+ "eta": false,
+ "cfg": "JointConfig(L=10, pi=(0.25, 0.25, 0.25, 0.25), pi_mode='eb', pi_prior_strength=4.0, prior='optim', sigma2_init=(50.0, 50.0), U_fixed=None, rho_u=0.0, estimate_eta=False, eta_init=0.0, eta_bounds=(1e-08, 0.95), eig_dtype=torch.float64, eig_chunk=4, eig_rel_tol=1e-10, eig_rel_tol_fp32=1e-06, eta_min_fp32=0.001, ref_var=False, ref_var_table='/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famA/ref_ld_var_v1.json', ref_var_topk=32, z_adjust=True, rho_clip=0.95, check_null_threshold=0.0, prior_tol=1e-09, max_iter=100, tol=0.001, tol_alpha=0.0001, convergence='susie014', default_types=('gwas', 'mol'), tau=None, weak=None, power_marginal=True, nonweak_own=True, bvn_gather_tol=1e-13, coverage=0.95, min_abs_corr=0.5, powered_cs_min=0.5, ld_dtype=torch.float32, mem_budget_bytes=6000000000.0, bucket_ratio=1.1, max_batch=4096, compact_fraction=0.5, refill_fraction=0.25, return_details=True, use_triton=True, eb_fast_exp=False)",
+ "runs": [
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_f2000",
+   "p": 2000,
+   "ld_kind": "factor",
+   "n_loci": 256,
+   "replicate": 4,
+   "rep": 0,
+   "t_io": 0.3885478973388672,
+   "t_fit": 9.54308533668518,
+   "loci_per_s_fit": 26.825705834977093,
+   "loci_per_s_with_io": 25.776223705380957,
+   "median_niter": 7.0,
+   "max_niter": 43,
+   "gpu_util": "96 %, 16697 MiB",
+   "loadavg": 25.23876953125
+  },
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_d2000",
+   "p": 2000,
+   "ld_kind": "dense",
+   "n_loci": 256,
+   "replicate": 4,
+   "rep": 0,
+   "t_io": 1.9029302597045898,
+   "t_fit": 9.3684663772583,
+   "loci_per_s_fit": 27.32571049424195,
+   "loci_per_s_with_io": 22.712358392258647,
+   "median_niter": 7.0,
+   "max_niter": 32,
+   "gpu_util": "97 %, 19301 MiB",
+   "loadavg": 25.310546875
+  }
+ ],
+ "loadavg_end": [
+  25.310546875,
+  28.05517578125,
+  31.9775390625
+ ]
+}

@@ -1,0 +1,315 @@
+[orch] job p2va_l0star_v2 start 2026-10-27T10:33:27+01:00 host eu-g6-001 commit ed1e71625c pid 928636
+[orch] cmd: bash scripts/p2_verify/l0star_v2.sh
+{"set": "l0star_v2", "seed": 20261029, "split": "valid", "per_class": {"S": 500, "D": 500, "W": 500, "G": 500}, "segments_visited": 193, "candidates": 9600, "candidate_class_counts": {"W": 7557, "U": 67, "G": 878, "S": 500, "D": 598}, "natural_class_shares": {"W": 0.7871875, "U": 0.0069791666666666665, "G": 0.09145833333333334, "S": 0.052083333333333336, "D": 0.06229166666666667}, "natural_class_shares_mc_se": {"W": 0.004177361356214066, "U": 0.0008496603426336484, "G": 0.0029420391630994055, "S": 0.0022677691801411687, "D": 0.0024666824661069646}, "eta": 0.001, "type_prior": {"S": 0.35294117647058826, "D": 0.35294117647058826, "W": 0.29411764705882354}, "kinds": ["gwas", "mol"], "rho_values": [0.0, 0.3, -0.3, 0.5, -0.5, 0.8, -0.8]}
+{"set": "l0star_v1", "seed": 20261029, "split": "valid", "per_class": {"S": 500, "D": 500, "W": 500, "G": 500}, "segments_visited": 194, "candidates": 9650, "candidate_class_counts": {"D": 639, "S": 500, "W": 7558, "G": 907, "U": 46}, "natural_class_shares": {"D": 0.06621761658031088, "S": 0.05181347150259067, "W": 0.7832124352331606, "G": 0.09398963730569948, "U": 0.004766839378238342}, "natural_class_shares_mc_se": {"D": 0.00253131360836824, "S": 0.002256340190273306, "W": 0.004194626670466749, "G": 0.0029705913541326974, "U": 0.0007011549776267872}, "eta": 0.001, "type_prior": {"S": 0.35294117647058826, "D": 0.35294117647058826, "W": 0.29411764705882354}, "kinds": ["gwas", "mol"], "rho_values": [0.0, 0.3, -0.3, 0.5, -0.5, 0.8, -0.8]}
+{
+ "a": "data/processed/sets/l0star_v1.h5",
+ "b": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_l0star_v2/out/l0star_replica/l0star_v1.h5",
+ "n_a": 2000,
+ "n_b": 2000,
+ "ids_equal_after_prefix_map": true,
+ "n_compared": 2000,
+ "truth_ids_equal": true,
+ "truth_cols_equal": true,
+ "stats_keys_differing": [],
+ "fields_not_identical": [],
+ "identical": true,
+ "first_mismatches": []
+}
+{
+ "a": "data/processed/sets/l0star_v1.h5",
+ "b": "data/processed/sets/l0star_v2.h5",
+ "n_a": 2000,
+ "n_b": 2000,
+ "ids_equal_after_prefix_map": false,
+ "n_compared": 486,
+ "truth_ids_equal": false,
+ "truth_cols_equal": true,
+ "stats_keys_differing": [
+  "candidate_class_counts",
+  "candidates",
+  "natural_class_shares",
+  "natural_class_shares_mc_se",
+  "segments_visited"
+ ],
+ "fields_not_identical": [
+  "attr:block_ids",
+  "attr:cell_id",
+  "attr:rho_hat",
+  "attr:window_chr",
+  "attr:window_end",
+  "attr:window_start",
+  "ds:R",
+  "ds:beta1",
+  "ds:beta2",
+  "ds:maf1",
+  "ds:maf2",
+  "ds:maf_ref",
+  "ds:pos",
+  "ds:se1",
+  "ds:se2",
+  "ds:variant_id",
+  "ds:z1",
+  "ds:z2"
+ ],
+ "identical": false,
+ "first_mismatches": [
+  [
+   "l0star_v1__W__0000003",
+   "ds:R",
+   1.76155686378479
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:beta1",
+   0.014712434470512516
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:beta2",
+   0.5258285931170265
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:maf1",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:maf2",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:maf_ref",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:pos",
+   42967902.0
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:se1",
+   0.004708659076937325
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:se2",
+   0.04708659076937325
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:variant_id",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:z1",
+   2.0838671396055206
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "ds:z2",
+   10.550612357413277
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "attr:block_ids",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "attr:window_chr",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "attr:window_end",
+   43398205.0
+  ],
+  [
+   "l0star_v1__W__0000003",
+   "attr:window_start",
+   43265483.0
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:R",
+   1.76155686378479
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:beta1",
+   0.19111935813876244
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:beta2",
+   0.466972169269268
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:maf1",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:maf2",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:maf_ref",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:pos",
+   42967902.0
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:se1",
+   0.004708659076937325
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:se2",
+   0.04708659076937325
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:variant_id",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:z1",
+   38.089301412690624
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "ds:z2",
+   8.773708514982673
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "attr:block_ids",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "attr:cell_id",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "attr:rho_hat",
+   0.8
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "attr:window_chr",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "attr:window_end",
+   43398205.0
+  ],
+  [
+   "l0star_v1__W__0000004",
+   "attr:window_start",
+   43265483.0
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:R",
+   1.76155686378479
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:beta1",
+   0.06785051155060234
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:beta2",
+   0.12002330866637206
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:maf1",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:maf2",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:maf_ref",
+   0.31882502138614655
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:pos",
+   42967902.0
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:se1",
+   0.004708659076937325
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:se2",
+   0.04708659076937325
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:variant_id",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:z1",
+   14.24109811654294
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "ds:z2",
+   2.310556069422386
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "attr:block_ids",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "attr:cell_id",
+   Infinity
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "attr:rho_hat",
+   0.5
+  ],
+  [
+   "l0star_v1__W__0000005",
+   "attr:window_chr",
+   Infinity
+  ]
+ ]
+}
+2f9e7558637f03eb5f573ae0d78fb0102ebaf1963e874cb3f62bab627bce8d4d  data/processed/sets/l0star_v2.h5
+e8b93828b3672aa4ccd1b99b1ae3de886463e4baf0b80143858fe544462bc821  data/processed/sets/l0star_v2.truth.parquet
+6ea8815d5e05daa8902bc7bcec58f268a2fada3cfbeeb6522f1fbd659698d805  data/processed/sets/l0star_v2.stats.json
+3b660558ad3a63ece04f1017522d5d87240f7e90b534f8a1a12567e1b2b59b3a  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_l0star_v2/out/l0star_replica/l0star_v1.h5
+3133112d3d791b566119c4ac21271fa84771c8e7c270b667364eefd0d4a7cc85  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_l0star_v2/out/l0star_replica/l0star_v1.stats.json
+e3d52800a860061615aff676d34c55ec8579b4396fe851f84c3d3f2ab9d81164  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_l0star_v2/out/l0star_replica/l0star_v1.truth.parquet
+[orch] exit 0 at 2026-10-27T10:38:16+01:00

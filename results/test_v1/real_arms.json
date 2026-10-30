@@ -1,0 +1,107 @@
+{
+ "definition": "DESIGN \u00a72.5 pre-registered real-data criterion (descriptive in the dry run): per method, t_R3b = the\n        threshold giving a 5% confident-S rate on R3b (matched_threshold on P_S, alpha 0.05); S recall on R2 at\n        t_R3b; R4b agreement = share of loci whose three-way call (frozen t_S/t_D, E gate) is the same with\n        reference LD as with in-sample LD (calls recomputed here from the operating points in use). Failures are least favourable (R3b: P_S = 1, R2: P_S = 0, R4b:\n        disagreement). CIs: cluster bootstrap (2,000) over each locus set's boot_unit attribute (R2/R4b block,\n        R3b FinnGen CS; D6(i)), arms resampled independently; candidate minus best baseline (by point estimate).",
+ "methods": {
+  "coloc_abf": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 0.9357803828293125,
+    "ci_low": 0.8926694010846066,
+    "est": 0.9125
+   }
+  },
+  "coloc_susie": {
+   "R4b_call_agreement": {
+    "ci_high": 0.8270277212143651,
+    "ci_low": 0.7552550976976872,
+    "est": 0.7933333333333333
+   },
+   "failures": {
+    "real_R2": 2,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 0.887475207474294,
+    "ci_low": 0.8179289173153519,
+    "est": 0.8525
+   }
+  },
+  "coloc_susie_mm": {
+   "R4b_call_agreement": {
+    "ci_high": 0.9463091988018049,
+    "ci_low": 0.9047561257512714,
+    "est": 0.9266666666666666
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 0.9410224449154843,
+    "ci_low": 0.8973988359878835,
+    "est": 0.9175
+   }
+  },
+  "sharepro": {
+   "R4b_call_agreement": {
+    "ci_high": 0.8861962188156689,
+    "ci_low": 0.8087995571055085,
+    "est": 0.8466666666666667
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 0.9338799743260591,
+    "ci_low": 0.0,
+    "est": 0.83
+   }
+  },
+  "strength_only": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 0.3427022859802692,
+    "ci_low": 0.11300838151292601,
+    "est": 0.13375
+   }
+  }
+ },
+ "n": {
+  "real_R2": 800,
+  "real_R3b": 1237,
+  "real_R4b_insample": 600,
+  "real_R4b_reference": 600
+ },
+ "n_boot": 2000,
+ "n_clusters": {
+  "real_R2": 176,
+  "real_R3b": 103,
+  "real_R4b_insample": 156
+ }
+}

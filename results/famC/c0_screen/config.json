@@ -1,0 +1,23 @@
+{
+ "run": "c0_screen",
+ "variant": "screen",
+ "steps": 40000,
+ "wb": 32,
+ "L": 8,
+ "lr": 0.0005,
+ "warmup": 1000,
+ "n_train_windows": 3000,
+ "n_val_windows": 400,
+ "d": 128,
+ "layers": 4,
+ "K": 16,
+ "pip_weight": 0.1,
+ "energy": "free",
+ "hyp": "uniform",
+ "seed_key": "main",
+ "eval_at": "50000,100000,200000,500000,1000000,2000000,5000000,10000000",
+ "eval_sweeps": 2,
+ "stop_after": 2000000,
+ "git": "3416f2e61d31203e19176198970d3cfe255443ad",
+ "start": "2026-10-26 18:07:28"
+}

@@ -1,0 +1,309 @@
+[orch] job p4b_bench_m4_partial start 2026-10-27T19:24:34+01:00 host eu-g6-001 commit 04f318803d pid 1575055
+[orch] cmd: set -euo pipefail
+S=data/processed/sets/valid_grid_v1.h5; D=results/baselines_m4
+PYTHONPATH=src python scripts/baselines_p4.py bench --ids-file $D/m4_subsample_v1/main.txt --reuse-from $D/runs --locus-set $S --label p4_m4_main_partial --results-dir $D/bench --unit block --n-boot 2000 --n-jobs 8 --control-workers 8
+B1=$(ls -d $D/bench/benchmarks/*_p4_m4_main_partial | tail -1)
+PYTHONPATH=src python scripts/baselines_p4.py bench --ids-file $D/m4_subsample_v1/slow.txt --reuse-from $D/runs --reuse-from $D/bench --strength-table $B1/strength_table_crossfit.json --locus-set $S --label p4_m4_slow_partial --results-dir $D/bench --unit block --n-boot 2000 --n-jobs 8
+[baselines_p4 bench] --locus-set data/processed/sets/valid_grid_v1.h5 --label p4_m4_main_partial --results-dir results/baselines_m4/bench --unit block --n-boot 2000 --n-jobs 8 --control-workers 8 --reuse coloc_abf_W0.15_p12_1e-05=results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.15_p12_1e-05_valid_grid_v1_fee4fd --reuse coloc_abf_W0.15_p12_5e-06=results/baselines_m4/runs/20261027T130106Z_coloc_abf_W0.15_p12_5e-06_valid_grid_v1_83518d --reuse coloc_abf_W0.1_p12_1e-05=results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_1e-05_valid_grid_v1_f3a6c7 --reuse coloc_abf_W0.1_p12_5e-06=results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_5e-06_valid_grid_v1_33c808 --reuse coloc_abf_W0.2_p12_1e-05=results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_1e-05_valid_grid_v1_c54f85 --reuse coloc_abf_W0.2_p12_5e-06=results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c --reuse coloc_prop_test=results/baselines_m4/runs/20261027T122018Z_coloc_prop_test_valid_grid_v1_f3e772 --reuse lead_snp=results/baselines_m4/runs/20261027T112359Z_lead_snp_valid_grid_v1_a0bc69 --reuse prop_coloc=results/baselines_m4/runs/20261027T130107Z_prop_coloc_valid_grid_v1_b390f1 --reuse sharepro=results/baselines_m4/runs/20261027T112359Z_sharepro_valid_grid_v1_5a802a extra_runs={}
+[benchmark 19:24:37] benchmark 20261027T182437Z_p4_m4_main_partial: 1 locus set(s), 0 method(s) + reuse ['coloc_abf_W0.15_p12_1e-05', 'coloc_abf_W0.15_p12_5e-06', 'coloc_abf_W0.1_p12_1e-05', 'coloc_abf_W0.1_p12_5e-06', 'coloc_abf_W0.2_p12_1e-05', 'coloc_abf_W0.2_p12_5e-06', 'coloc_prop_test', 'lead_snp', 'prop_coloc', 'sharepro']
+[benchmark 19:45:54] run strength_only on valid_grid_v1.h5 (12170 loci)
+[benchmark 19:50:02] [harness] run 20261027T185001Z_strength_only_valid_grid_v1_817022: 12170 loci, mode=cpu, workers=8
+[benchmark 19:50:32] [harness] 2510/12170 tasks done
+[benchmark 19:51:02] [harness] 5161/12170 tasks done
+[benchmark 19:51:32] [harness] 10934/12170 tasks done
+[benchmark 19:51:44] [harness] done 20261027T185001Z_strength_only_valid_grid_v1_817022: {'ok': 12170, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12170} in 97.9s
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[benchmark 19:52:05] [least_favourable] bootstrap (2000 x block, 11 methods, settings ['realistic', 'ideal'])
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[benchmark 19:53:07] [excluded] bootstrap (2000 x block, 11 methods, settings ['realistic', 'ideal'])
+[benchmark 19:53:34] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/bench/benchmarks/20261027T182437Z_p4_m4_main_partial (12170 loci, 11 methods)
+[baselines_p4 bench] --strength-table results/baselines_m4/bench/benchmarks/20261027T182437Z_p4_m4_main_partial/strength_table_crossfit.json --locus-set data/processed/sets/valid_grid_v1.h5 --label p4_m4_slow_partial --results-dir results/baselines_m4/bench --unit block --n-boot 2000 --n-jobs 8 --reuse coloc_abf_W0.15_p12_1e-05=results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.15_p12_1e-05_valid_grid_v1_fee4fd --reuse coloc_abf_W0.15_p12_5e-06=results/baselines_m4/runs/20261027T130106Z_coloc_abf_W0.15_p12_5e-06_valid_grid_v1_83518d --reuse coloc_abf_W0.1_p12_1e-05=results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_1e-05_valid_grid_v1_f3a6c7 --reuse coloc_abf_W0.1_p12_5e-06=results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_5e-06_valid_grid_v1_33c808 --reuse coloc_abf_W0.2_p12_1e-05=results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_1e-05_valid_grid_v1_c54f85 --reuse coloc_abf_W0.2_p12_5e-06=results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c --reuse coloc_prop_test=results/baselines_m4/runs/20261027T122018Z_coloc_prop_test_valid_grid_v1_f3e772 --reuse colocboost=results/baselines_m4/runs/20261027T111847Z_colocboost_valid_grid_v1_82686c --reuse colocboost_m1=results/baselines_m4/runs/20261027T111847Z_colocboost_m1_valid_grid_v1_58fd9a --reuse lead_snp=results/baselines_m4/runs/20261027T112359Z_lead_snp_valid_grid_v1_a0bc69 --reuse prop_coloc=results/baselines_m4/runs/20261027T130107Z_prop_coloc_valid_grid_v1_b390f1 --reuse sharepro=results/baselines_m4/runs/20261027T112359Z_sharepro_valid_grid_v1_5a802a --reuse strength_only=results/baselines_m4/bench/20261027T185001Z_strength_only_valid_grid_v1_817022 extra_runs={}
+[benchmark 19:53:41] benchmark 20261027T185341Z_p4_m4_slow_partial: 1 locus set(s), 0 method(s) + reuse ['coloc_abf_W0.15_p12_1e-05', 'coloc_abf_W0.15_p12_5e-06', 'coloc_abf_W0.1_p12_1e-05', 'coloc_abf_W0.1_p12_5e-06', 'coloc_abf_W0.2_p12_1e-05', 'coloc_abf_W0.2_p12_5e-06', 'coloc_prop_test', 'colocboost', 'colocboost_m1', 'lead_snp', 'prop_coloc', 'sharepro', 'strength_only']
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[benchmark 20:07:13] [least_favourable] bootstrap (2000 x block, 13 methods, settings ['realistic', 'ideal'])
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:162: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-(_logit(p) + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_bench_m4_partial/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[benchmark 20:07:40] [excluded] bootstrap (2000 x block, 13 methods, settings ['realistic', 'ideal'])
+[benchmark 20:07:54] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/bench/benchmarks/20261027T185341Z_p4_m4_slow_partial (4080 loci, 13 methods)
+[orch] exit 0 at 2026-10-27T20:07:55+01:00

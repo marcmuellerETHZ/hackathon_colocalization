@@ -1,0 +1,126 @@
+{
+ "argv": [
+  "scripts/run_benchmark.py",
+  "--locus-set",
+  "data/processed/sets/screen_v1.h5",
+  "--methods",
+  "results/eval_dryrun/methods_dryrun.yaml",
+  "--results-dir",
+  "results/eval_dryrun",
+  "--label",
+  "dryrun_screen_v1",
+  "--per-cell",
+  "100",
+  "--n-boot",
+  "2000",
+  "--unit",
+  "locus",
+  "--n-jobs",
+  "16",
+  "--control-workers",
+  "16"
+ ],
+ "bench_id": "20261026T161829Z_dryrun_screen_v1",
+ "boot_seed": [
+  20261029,
+  "run_benchmark",
+  "bootstrap",
+  "20261026T161829Z_dryrun_screen_v1"
+ ],
+ "c3_baselines": null,
+ "candidate": null,
+ "evaluate_wall_s": 6.3003144200047245,
+ "git": {
+  "clean": false,
+  "commit": "83923a989f2041d92560cc0068de80fe46cb1acc",
+  "modified_tracked": [
+   " M logs/redo_chr7.log",
+   " M scripts/eval_test.py",
+   " M scripts/verify_run.py",
+   " M src/eval/README.md",
+   " M src/eval/adapters.py",
+   " M src/eval/harness.py",
+   " M src/eval/io.py",
+   " M src/eval/metrics.py",
+   " M src/eval/reference_methods.py",
+   " M src/famA/bvn.py",
+   " M src/famA/joint_susie.py",
+   " M src/famA/method.py",
+   " M src/famA/ser_kernel.py",
+   " M src/famA/validation/compare_mvsusie.py",
+   " M src/famA/validation/timing.py",
+   " M src/famG/coloc.py",
+   " M src/famG/ld.py",
+   " M src/famG/method.py",
+   " M src/sim/architecture.py",
+   " M src/sim/cells.py",
+   " M src/sim/generator.py",
+   " M src/sim/l0star.py",
+   " M src/sim/oracle.py",
+   " M src/sim/params.py",
+   " M src/sim/validation/generator_tests.json",
+   " M src/sim/windows.py",
+   " M src/stats/rho.py",
+   " M tests/eval/eval_dummy_methods.py",
+   " M tests/eval/test_eval_adapters_config.py",
+   " M tests/famA/test_joint_susie.py",
+   " M tests/famG/test_method.py",
+   " M tests/sim/test_oracle.py",
+   " M tests/stats/test_rho.py"
+  ],
+  "tags": [],
+  "untracked_code": [
+   "configs/FROZEN_SHA256",
+   "configs/test_methods_v1.yaml",
+   "configs/testset_v1.yaml",
+   "scripts/run_benchmark.py",
+   "src/eval/strength_control.py",
+   "src/famA/eta_kernel.py",
+   "src/famA/ref_ld_var_v1.json",
+   "src/famA/ref_ld_var_v1.md",
+   "src/famA/validation/calibrate_ref_ld_var.py",
+   "src/famC/run_gen_dev.sh",
+   "src/sim/pilot_strata.py",
+   "src/sim/testset.py",
+   "src/sim/train_api.py",
+   "src/sim/validate_rho.py",
+   "src/sim/validation/pilot_strata.json",
+   "src/sim/validation/rho_calibration.json",
+   "src/sim/validation/rho_calibration.parquet"
+  ]
+ },
+ "ids_sha256": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5": "87008f992d78a2f974518cc5ee6f629f4036facf978b9d6490aa24f10feb71c7"
+ },
+ "label": "dryrun_screen_v1",
+ "locus_sets": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5"
+ ],
+ "n_boot": 2000,
+ "n_expected": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5": 600
+ },
+ "n_jobs": 16,
+ "operating_points_in": null,
+ "operating_points_in_sha256": null,
+ "per_cell": 100,
+ "runs": {
+  "coloc_abf": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_dryrun/20261026T162058Z_coloc_abf_screen_v1_6ff53e"
+  },
+  "lead_snp": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_dryrun/20261026T162236Z_lead_snp_screen_v1_071c38"
+  },
+  "strength_only": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_dryrun/20261026T162348Z_strength_only_screen_v1_d510ab"
+  }
+ },
+ "start_utc": "20261026T161829Z",
+ "strength_control": {
+  "folds": 5,
+  "mode": "crossfit_k5",
+  "sha256": "ffeefa697975fd6e195618d81e60f9d3a6d6c535655dc1452ce756a0582ea904",
+  "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_dryrun/benchmarks/20261026T161829Z_dryrun_screen_v1/strength_table_crossfit.json"
+ },
+ "unit": "locus"
+}

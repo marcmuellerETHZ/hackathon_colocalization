@@ -1,0 +1,195 @@
+WARNING: ELBO decreased by 4.97e-03 at iteration 3
+WARNING: ELBO decreased by 1.57e-02 at iteration 4
+WARNING: ELBO decreased by 1.86e-03 at iteration 4
+WARNING: ELBO decreased by 8.93e-04 at iteration 5
+WARNING: ELBO decreased by 7.84e-03 at iteration 5
+WARNING: ELBO decreased by 1.01e-03 at iteration 6
+WARNING: ELBO decreased by 7.79e-04 at iteration 6
+WARNING: ELBO decreased by 4.36e-04 at iteration 7
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 9.13e-03 at iteration 4
+WARNING: ELBO decreased by 1.10e-04 at iteration 11
+WARNING: ELBO decreased by 1.72e-03 at iteration 5
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.79e-02 at iteration 3
+WARNING: ELBO decreased by 2.46e-02 at iteration 5
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.63e-03 at iteration 4
+WARNING: ELBO decreased by 2.77e-03 at iteration 6
+WARNING: ELBO decreased by 3.07e-04 at iteration 8
+WARNING: ELBO decreased by 2.93e-03 at iteration 9
+WARNING: ELBO decreased by 1.77e-03 at iteration 10
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 6.65e-04 at iteration 9
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 5.53e-04 at iteration 11
+WARNING: ELBO decreased by 3.83e-04 at iteration 10
+WARNING: ELBO decreased by 1.50e-04 at iteration 12
+WARNING: ELBO decreased by 1.56e-04 at iteration 11
+WARNING: ELBO decreased by 3.05e-03 at iteration 5
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 5.35e-03 at iteration 6
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.67e-03 at iteration 7
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 8.72e-03 at iteration 8
+WARNING: ELBO decreased by 7.70e-04 at iteration 8
+WARNING: ELBO decreased by 9.09e-03 at iteration 9
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 7.20e-03 at iteration 10
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 4.36e-03 at iteration 11
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.97e-02 at iteration 4
+WARNING: ELBO decreased by 1.80e-02 at iteration 5
+WARNING: ELBO decreased by 4.38e-03 at iteration 6
+WARNING: ELBO decreased by 3.80e-04 at iteration 7
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.67e-03 at iteration 12
+WARNING: ELBO decreased by 9.09e-03 at iteration 5
+WARNING: ELBO decreased by 7.78e-03 at iteration 6
+WARNING: ELBO decreased by 3.81e-03 at iteration 7
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 8.85e-04 at iteration 8
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 7.00e-03 at iteration 6
+WARNING: ELBO decreased by 6.61e-03 at iteration 7
+WARNING: ELBO decreased by 4.29e-03 at iteration 8
+WARNING: ELBO decreased by 2.74e-03 at iteration 9
+WARNING: ELBO decreased by 1.84e-03 at iteration 10
+WARNING: ELBO decreased by 7.25e-03 at iteration 5
+WARNING: ELBO decreased by 1.29e-03 at iteration 6
+WARNING: ELBO decreased by 1.25e-03 at iteration 11
+WARNING: ELBO decreased by 7.85e-04 at iteration 12
+WARNING: ELBO decreased by 8.04e-04 at iteration 7
+WARNING: ELBO decreased by 4.31e-04 at iteration 13
+WARNING: ELBO decreased by 6.11e-03 at iteration 6
+WARNING: ELBO decreased by 1.92e-04 at iteration 14
+WARNING: ELBO decreased by 6.66e-03 at iteration 7
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.20e-04 at iteration 8
+WARNING: ELBO decreased by 4.43e-03 at iteration 8
+WARNING: ELBO decreased by 1.50e-03 at iteration 6
+WARNING: ELBO decreased by 1.88e-03 at iteration 9
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.19e-04 at iteration 10
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.46e-02 at iteration 5
+WARNING: ELBO decreased by 7.34e-03 at iteration 6
+WARNING: ELBO decreased by 2.70e-04 at iteration 7
+WARNING: ELBO decreased by 3.96e-04 at iteration 17
+WARNING: ELBO decreased by 1.99e-03 at iteration 4
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 5.38e-04 at iteration 18
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 4.09e-04 at iteration 19
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.13e-04 at iteration 8
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.12e-04 at iteration 20
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 8.27e-04 at iteration 13
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.04e-02 at iteration 3
+WARNING: ELBO decreased by 8.17e-04 at iteration 14
+WARNING: ELBO decreased by 1.44e-03 at iteration 4
+WARNING: ELBO decreased by 5.55e-03 at iteration 5
+WARNING: ELBO decreased by 1.28e-03 at iteration 3
+WARNING: ELBO decreased by 2.10e-03 at iteration 6
+WARNING: ELBO decreased by 4.13e-04 at iteration 15
+WARNING: ELBO decreased by 3.42e-03 at iteration 4
+WARNING: ELBO decreased by 2.08e-04 at iteration 5
+WARNING: ELBO decreased by 1.23e-03 at iteration 6
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.58e-04 at iteration 7
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.03e-04 at iteration 16
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 3.05e-04 at iteration 17
+WARNING: ELBO decreased by 1.53e-02 at iteration 2
+WARNING: ELBO decreased by 3.63e-04 at iteration 18
+WARNING: ELBO decreased by 5.57e-03 at iteration 4
+WARNING: ELBO decreased by 3.39e-04 at iteration 19
+WARNING: ELBO decreased by 2.74e-03 at iteration 5
+WARNING: ELBO decreased by 7.06e-04 at iteration 8
+WARNING: ELBO decreased by 5.62e-04 at iteration 5
+WARNING: ELBO decreased by 2.74e-04 at iteration 20
+WARNING: ELBO decreased by 1.57e-03 at iteration 9
+WARNING: ELBO decreased by 3.53e-03 at iteration 11
+WARNING: ELBO decreased by 1.64e-03 at iteration 10
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.32e-03 at iteration 11
+WARNING: ELBO decreased by 1.95e-04 at iteration 21
+WARNING: ELBO decreased by 3.40e-03 at iteration 12
+WARNING: ELBO decreased by 8.78e-04 at iteration 12
+WARNING: ELBO decreased by 4.64e-04 at iteration 13
+WARNING: ELBO decreased by 1.17e-04 at iteration 22
+WARNING: ELBO decreased by 6.13e-04 at iteration 6
+WARNING: ELBO decreased by 1.41e-04 at iteration 14
+WARNING: ELBO decreased by 1.45e-03 at iteration 13
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 4.93e-04 at iteration 14
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.25e-02 at iteration 3
+WARNING: ELBO decreased by 1.52e-04 at iteration 15
+WARNING: ELBO decreased by 1.36e-04 at iteration 7
+WARNING: ELBO decreased by 4.60e-03 at iteration 4
+WARNING: ELBO decreased by 7.60e-03 at iteration 4
+WARNING: ELBO decreased by 4.90e-04 at iteration 5
+WARNING: ELBO decreased by 5.65e-04 at iteration 8
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.27e-02 at iteration 3
+WARNING: ELBO decreased by 4.43e-03 at iteration 6
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.05e-03 at iteration 7
+WARNING: ELBO decreased by 2.58e-03 at iteration 9
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.92e-02 at iteration 3
+WARNING: ELBO decreased by 3.94e-03 at iteration 4
+WARNING: ELBO decreased by 2.62e-03 at iteration 10
+WARNING: ELBO decreased by 4.83e-04 at iteration 8
+WARNING: ELBO decreased by 2.44e-03 at iteration 10
+WARNING: ELBO decreased by 2.24e-04 at iteration 9
+WARNING: ELBO decreased by 1.94e-03 at iteration 11
+WARNING: ELBO decreased by 2.15e-03 at iteration 11
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 9.80e-04 at iteration 12
+WARNING: ELBO decreased by 3.69e-04 at iteration 13
+WARNING: ELBO decreased by 1.15e-03 at iteration 12
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 1.37e-04 at iteration 14
+WARNING: ELBO decreased by 4.62e-04 at iteration 8
+WARNING: ELBO decreased by 5.15e-04 at iteration 13
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 5.19e-04 at iteration 9
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 2.57e-04 at iteration 3
+WARNING: ELBO decreased by 1.45e-03 at iteration 3
+WARNING: ELBO decreased by 1.48e-03 at iteration 4
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+WARNING: ELBO decreased by 8.57e-03 at iteration 3
+WARNING: ELBO decreased by 1.98e-03 at iteration 4
+WARNING: Xcorr is not symmetric; using (Xcorr + t(Xcorr))/2.
+DONE

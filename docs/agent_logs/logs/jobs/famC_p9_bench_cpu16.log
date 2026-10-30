@@ -1,0 +1,67 @@
+[orch] job famC_p9_bench_cpu16 start 2026-10-28T09:37:52+01:00 host eu-g6-001 commit ad2f50972a pid 2096857
+[orch] cmd: export OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; t0=$(date +%s); for k in $(seq 0 15); do python -m famC.gen_shards --set bench --split train --n-loci 512 --worker $k --n-workers 16 --step-offset 50000000 --lpw 128 --n-noise 2 --device cpu --threads 1 --shard-size 256 --out-dir $ORCH_OUT/cpu > $ORCH_OUT/cpu_w$k.log 2>&1 & done; wait; t1=$(date +%s); echo WALL $((t1-t0)) s for 16x512 loci; tail -n 2 $ORCH_OUT/cpu_w*.log | cut -c1-300
+WALL 612 s for 16x512 loci
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w0.log <==
+[w0] shard 2 loci 512 1.4 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.712004899978638, 't_loci': 360.49317240715027, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.712004899978638, "t_loci": 360.49317240715027, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w1.log <==
+[w1] shard 2 loci 512 0.9 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.001976013183594, 't_loci': 550.7317972183228, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.001976013183594, "t_loci": 550.7317972183228, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w10.log <==
+[w10] shard 2 loci 512 1.0 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.634683847427368, 't_loci': 488.30689668655396, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.634683847427368, "t_loci": 488.30689668655396, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w11.log <==
+[w11] shard 2 loci 512 1.3 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.0227272510528564, 't_loci': 377.11074328422546, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.0227272510528564, "t_loci": 377.11074328422546, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w12.log <==
+[w12] shard 2 loci 512 1.4 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.308588981628418, 't_loci': 359.23872208595276, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.308588981628418, "t_loci": 359.23872208595276, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w13.log <==
+[w13] shard 2 loci 512 1.2 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.371762275695801, 't_loci': 403.9895284175873, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.371762275695801, "t_loci": 403.9895284175873, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w14.log <==
+[w14] shard 2 loci 512 1.0 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 6.481739282608032, 't_loci': 482.76174116134644, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 6.481739282608032, "t_loci": 482.76174116134644, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w15.log <==
+[w15] shard 2 loci 512 1.8 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 3.2406632900238037, 't_loci': 279.29075503349304, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 3.2406632900238037, "t_loci": 279.29075503349304, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w2.log <==
+[w2] shard 2 loci 512 1.2 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 5.739760637283325, 't_loci': 412.03678011894226, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 5.739760637283325, "t_loci": 412.03678011894226, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w3.log <==
+[w3] shard 2 loci 512 1.4 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 4.501543998718262, 't_loci': 360.0268397331238, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 4.501543998718262, "t_loci": 360.0268397331238, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w4.log <==
+[w4] shard 2 loci 512 1.0 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 6.171213626861572, 't_loci': 501.90671157836914, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 6.171213626861572, "t_loci": 501.90671157836914, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w5.log <==
+[w5] shard 2 loci 512 0.9 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 6.366486549377441, 't_loci': 569.7477083206177, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 6.366486549377441, "t_loci": 569.7477083206177, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w6.log <==
+[w6] shard 2 loci 512 1.3 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 4.428165435791016, 't_loci': 378.44012212753296, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 4.428165435791016, "t_loci": 378.44012212753296, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w7.log <==
+[w7] shard 2 loci 512 1.7 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 4.392578840255737, 't_loci': 298.13469195365906, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 4.392578840255737, "t_loci": 298.13469195365906, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w8.log <==
+[w8] shard 2 loci 512 1.8 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 4.484269857406616, 't_loci': 282.62439727783203, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 4.484269857406616, "t_loci": 282.62439727783203, "rejected": 0}
+
+==> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_bench_cpu16/out/cpu_w9.log <==
+[w9] shard 2 loci 512 1.4 loci/s stats {'windows': 2, 'loci': 256, 'none': 0, 't_window': 4.687885999679565, 't_loci': 356.4452471733093, 'rejected': 0}
+DONE 512 {"windows": 2, "loci": 256, "none": 0, "t_window": 4.687885999679565, "t_loci": 356.4452471733093, "rejected": 0}
+[orch] exit 0 at 2026-10-28T09:48:04+01:00

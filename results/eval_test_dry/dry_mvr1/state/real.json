@@ -1,0 +1,75 @@
+{
+ "done_utc": "2026-10-27T21:19:10Z",
+ "sets": {
+  "real_R2": {
+   "condition": null,
+   "failed_ids": [],
+   "ids": [
+    "R2__QTD000021__QTD000409__ENSG00000140575",
+    "R2__QTD000021__QTD000409__ENSG00000253593",
+    "R2__QTD000110__QTD000539__ENSG00000130193",
+    "R2__QTD000110__QTD000539__ENSG00000144115",
+    "R2__QTD000110__QTD000539__ENSG00000162976",
+    "R2__QTD000110__QTD000539__ENSG00000175390",
+    "R2__QTD000110__QTD000539__ENSG00000233223",
+    "R2__QTD000356__QTD000373__ENSG00000212127"
+   ],
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_mvr1/real/R2_valid.h5",
+   "sha256": "8ddf1af504dfcdeb62ea50c7476e65b0567d6391131fce35313ce9b7aafa90fe",
+   "source": "data.real.extract:build_test_arm (mode valid)"
+  },
+  "real_R3b": {
+   "condition": null,
+   "failed_ids": [],
+   "ids": [
+    "R3b__FG_3001308__QTD000356__ENSG00000104866",
+    "R3b__FG_3001308__QTD000356__ENSG00000215067",
+    "R3b__FG_3006140__QTD000021__ENSG00000231272",
+    "R3b__FG_3007461__QTD000021__ENSG00000181007",
+    "R3b__FG_3007461__QTD000021__ENSG00000244055",
+    "R3b__FG_3007461__QTD000110__ENSG00000196781",
+    "R3b__FG_3007461__QTD000373__ENSG00000140463",
+    "R3b__FG_3007461__QTD000539__ENSG00000135127",
+    "R3b__FG_3026493__QTD000549__ENSG00000160691",
+    "R3b__FG_E4_HYTHY_AI_STRICT__QTD000021__ENSG00000132514",
+    "R3b__FG_T2D__QTD000356__ENSG00000189114",
+    "R3b__FG_T2D__QTD000539__ENSG00000043143",
+    "R3b__FG_T2D__QTD000549__ENSG00000145817"
+   ],
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_mvr1/real/R3b_valid.h5",
+   "sha256": "9909c41d9c88552852fd0cd3ab4103636bf015dd3277fde0694ed466ff60ede7",
+   "source": "data.real.extract:build_test_arm (mode valid)"
+  },
+  "real_R4b_insample": {
+   "condition": "in_sample",
+   "failed_ids": [],
+   "ids": [
+    "R4b__FG_3006140__QTD000110__ENSG00000237520",
+    "R4b__FG_3007461__QTD000110__ENSG00000237190",
+    "R4b__FG_T2D__QTD000110__ENSG00000160392",
+    "R4b__QTD000539__QTD000110__ENSG00000178971",
+    "R4b__QTD000539__QTD000110__ENSG00000186532",
+    "R4b__QTD000539__QTD000110__ENSG00000197226"
+   ],
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_mvr1/real/R4b_valid.geuv_insample_pcadj.h5",
+   "sha256": "bdfb7edd09a19b254d4565928070315f63f908a1ea249d553f7dce56c57e99f6",
+   "source": "data.real.extract:build_test_arm (mode valid)"
+  },
+  "real_R4b_reference": {
+   "condition": "reference",
+   "failed_ids": [],
+   "ids": [
+    "R4b__FG_3006140__QTD000110__ENSG00000237520",
+    "R4b__FG_3007461__QTD000110__ENSG00000237190",
+    "R4b__FG_T2D__QTD000110__ENSG00000160392",
+    "R4b__QTD000539__QTD000110__ENSG00000178971",
+    "R4b__QTD000539__QTD000110__ENSG00000186532",
+    "R4b__QTD000539__QTD000110__ENSG00000197226"
+   ],
+   "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_mvr1/real/R4b_valid.nfe_minus_geuv.h5",
+   "sha256": "cf519322f1cb767d22c83ae55965866c652b1e9d5ddd1f1d1b5f01cfc90d2466",
+   "source": "data.real.extract:build_test_arm (mode valid)"
+  }
+ },
+ "wall_s": 23.441660404205322
+}

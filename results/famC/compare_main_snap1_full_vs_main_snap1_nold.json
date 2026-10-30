@@ -1,0 +1,42 @@
+{
+ "point": {
+  "main_snap1_full": {
+   "auprc_sd_pm_all": 0.97619,
+   "auroc_dw_all": 0.99755,
+   "auprc_sd_pm_L1-L4": 0.97709
+  },
+  "main_snap1_nold": {
+   "auprc_sd_pm_all": 0.96848,
+   "auroc_dw_all": 0.99759,
+   "auprc_sd_pm_L1-L4": 0.9688
+  }
+ },
+ "paired_diff": {
+  "main_snap1_full - main_snap1_nold": {
+   "auprc_sd_pm_all": {
+    "diff": 0.007705674308982502,
+    "ci95": [
+     0.00394,
+     0.0112
+    ],
+    "p_le0": 0.0
+   },
+   "auroc_dw_all": {
+    "diff": -3.17576415139742e-05,
+    "ci95": [
+     -0.00066,
+     0.00049
+    ],
+    "p_le0": 0.486
+   },
+   "auprc_sd_pm_L1-L4": {
+    "diff": 0.008290977650642462,
+    "ci95": [
+     0.00467,
+     0.01262
+    ],
+    "p_le0": 0.0
+   }
+  }
+ }
+}

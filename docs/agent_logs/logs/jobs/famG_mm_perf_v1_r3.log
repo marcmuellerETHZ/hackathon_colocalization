@@ -1,0 +1,104 @@
+[orch] job famG_mm_perf_v1_r3 start 2026-10-28T13:31:27+01:00 host eu-g6-001 commit 9875f10ee3 pid 2358892
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH R_PROFILE_USER=/dev/null; mkdir -p results/famG_mm/bench_v2; python -m famG.validation.bench_mm --n 512 --batch 512 --mem-gb 1.5 --dtype float64 --profile --out results/famG_mm/bench_v2/fp64.json 2>&1 | head -60; W=$ORCH_HOME/runs/famG_mm_identity_ref_v2/out/loci; O=results/famG_mm/identity_v2; python -m famG.validation.compare_mm --work $W --rdir $O/r016 --out $O/cmp_shipped --mem-gb 1.5 --dtype float64; python -m famG.validation.sens_mm --r0 $O/r016 --pert $O/pert --gfits $O/cmp_shipped/fits_float64_cuda.tsv --gpairs $O/cmp_shipped/pairs_float64_cuda.tsv --ids $O/nonconv_ids.txt --out $O/sens_shipped | tail -14; python -m pytest tests/famG/test_susie_mm.py -q -rs -p no:cacheprovider 2>&1 | tail -5
+{
+ "n": 512,
+ "io_s": 33.11021447181702,
+ "fit_s_rep0": 208.56937623023987,
+ "fit_s_rep1": 198.27821493148804,
+ "fit_loci_per_s": 2.5822302272436417,
+ "status": {
+  "nonconverged": 28,
+  "ok": 484
+ },
+ "niter_mean": 7.130859375,
+ "max_mem_gb": 3.17001984
+}
+USDT:2026-10-28 13:39:17 2358901:2358901 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-28 13:42:50 2358901:2358901 SyncActivityProfilerHandler.cpp:46] profiler_stop
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                              aten::bmm         0.34%     659.859ms         1.52%        2.967s     183.715us       74.398s        41.41%       74.398s       4.606ms         16152  
+                                          _brent_kernel         0.00%       0.000us         0.00%       0.000us       0.000us       63.391s        35.28%       63.391s       3.283ms         19311  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us       41.538s        23.12%       41.538s      10.736ms          3869  
+                                           aten::matmul         0.00%       6.268ms         0.04%      83.392ms      62.187us       0.000us         0.00%       30.480s      22.729ms          1341  
+                                               aten::mm         0.03%      65.399ms         0.04%      77.124ms      57.512us       30.480s        16.96%       30.480s      22.729ms          1341  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us       28.940s        16.11%       28.940s       4.334ms          6677  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us       18.521s        10.31%       18.521s      44.521ms           416  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_1...         0.00%       0.000us         0.00%       0.000us       0.000us        6.571s         3.66%        6.571s      73.830ms            89  
+                                        _loglik3_kernel         0.00%       0.000us         0.00%       0.000us       0.000us        2.921s         1.63%        2.921s     318.010us          9185  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us        2.808s         1.56%        2.808s      24.416ms           115  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_3...         0.00%       0.000us         0.00%       0.000us       0.000us        2.430s         1.35%        2.430s     845.360us          2874  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_3...         0.00%       0.000us         0.00%       0.000us       0.000us        2.428s         1.35%        2.428s      27.585ms            88  
+                                              aten::div         0.45%     880.032ms         2.62%        5.134s      30.347us        1.260s         0.70%        1.260s       7.447us        169179  
+                                              aten::max         0.31%     605.246ms         0.46%     904.582ms      15.666us     954.788ms         0.53%     954.788ms      16.535us         57742  
+void at::native::reduce_kernel<512, 1, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us     954.788ms         0.53%     954.788ms      16.736us         57050  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_3...         0.00%       0.000us         0.00%       0.000us       0.000us     844.563ms         0.47%     844.563ms     721.233us          1171  
+                                              aten::mul         0.90%        1.770s         6.92%       13.555s      34.708us     776.107ms         0.43%     776.107ms       1.987us        390554  
+void at::native::elementwise_kernel<128, 2, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     759.177ms         0.42%     759.177ms       8.630us         87967  
+                                            aten::copy_         0.29%     562.243ms         5.63%       11.020s      69.323us     667.527ms         0.37%     667.527ms       4.199us        158968  
+                                               aten::to         0.05%      97.307ms         3.66%        7.157s      29.890us       0.000us         0.00%     537.211ms       2.244us        239430  
+                                         aten::_to_copy         0.10%     196.526ms         3.61%        7.059s      84.750us       0.000us         0.00%     537.211ms       6.449us         83296  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us     498.729ms         0.28%     498.729ms       6.275us         79475  
+                                             aten::topk         0.07%     143.241ms         0.15%     287.548ms      31.306us     475.256ms         0.26%     475.256ms      51.743us          9185  
+                                              aten::log         0.21%     402.096ms         0.99%        1.944s      22.262us     440.116ms         0.24%     440.116ms       5.040us         87329  
+                                            aten::where         0.75%        1.470s         3.42%        6.701s      22.735us     436.765ms         0.24%     436.765ms       1.482us        294755  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us     421.007ms         0.23%     421.007ms       5.448us         77279  
+void at::native::sbtopk::gatherTopK<double, unsigned...         0.00%       0.000us         0.00%       0.000us       0.000us     419.078ms         0.23%     419.078ms      45.626us          9185  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us     411.243ms         0.23%     411.243ms      41.124ms            10  
+                                            aten::index         0.07%     131.488ms         0.12%     230.318ms      17.181us     410.669ms         0.23%     410.669ms      30.635us         13405  
+                                              aten::abs         0.16%     315.240ms         0.63%        1.226s      11.670us     205.302ms         0.11%     410.604ms       3.907us        105082  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 195.790s
+Self CUDA time total: 179.663s
+
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                  cudaStreamSynchronize        50.61%       99.086s        50.61%       99.087s       5.037ms       0.000us         0.00%       0.000us       0.000us         19670  
+                                             aten::item         0.02%      29.734ms        47.03%       92.071s       8.785ms       0.000us         0.00%      10.479ms       1.000us         10481  
+                              aten::_local_scalar_dense         0.04%      80.211ms        47.01%       92.041s       8.782ms      10.479ms         0.01%      10.479ms       1.000us         10481  
+                                       cudaLaunchKernel         4.10%        8.026s        37.40%       73.234s      29.928us       0.000us         0.00%       0.000us       0.000us       2447036  
+                                    Command Buffer Full        34.27%       67.101s        34.27%       67.101s       4.106ms       0.000us         0.00%       0.000us       0.000us         16343  
+{
+ "n_loci": 100,
+ "n_fits": 200,
+ "dtype": "float64",
+ "device": "cuda",
+ "triton": true,
+ "g_seconds": 55.75806403160095,
+ "fail_r": 0,
+ "fail_g": 0,
+ "fail_agree": 200,
+ "max_dpip": 0.9999376731755634,
+ "median_dpip": 1.6331319629969698e-10,
+ "n_dpip_ge_1e3": 4,
+ "max_dalpha": 0.99993767322398,
+ "conv_agree": 200,
+ "n_both_ok": 200,
+ "nonconv_r": 24,
+ "nonconv_g": 24,
+ "niter_agree": 200,
+ "max_dlambda": 0.002533804971789101,
+ "cs_equal": 197,
+ "pairs_presence_agree": 100,
+ "max_dPP_pair": Infinity,
+ "max_dmaxH4": 0.7211973694085119
+}
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__D_r1_dall__0004616",
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__S__0011835",
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__S__0014002",
+   1
+  ]
+ ]
+}
+.....                                                                    [100%]
+5 passed in 77.58s (0:01:17)
+[orch] exit 0 at 2026-10-28T13:55:58+01:00

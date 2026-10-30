@@ -1,0 +1,120 @@
+[orch] job famG_mm_timing_v1 start 2026-10-28T16:17:09+01:00 host eu-g6-001 commit bcc841ffa4 pid 2484979
+[orch] cmd: PLAN=gmm:3,mm:3,cs:1,cs:2 OUT=results/famG_mm/timing_v1 bash $ORCH_CODE/src/famG/validation/timing_job.sh
+{"n": 512, "io_s": 37.07515501976013, "block": 1024, "num_warps": 8, "bucket_ratio": 1.5, "streams": 1, "dtype": "float64", "mem_budget_gb": 9.0, "fit_s": 35.2998104095459, "fit_loci_per_s": 14.504327192124045, "status": {"ok": 484, "nonconverged": 28}, "niter_max_mean": 10.466796875, "max_mem_gb": 16.55862272}
+{"n": 512, "io_s": 37.07515501976013, "block": 1024, "num_warps": 8, "bucket_ratio": 1.5, "streams": 3, "dtype": "float64", "mem_budget_gb": 9.0, "fit_s": 23.050833702087402, "fit_loci_per_s": 22.211777960709295, "status": {"ok": 484, "nonconverged": 28}, "niter_max_mean": 10.466796875, "max_mem_gb": 12.081209856}
+picked streams=3
+{"prewarm_s": 11.582429885864258, "prewarm_gb": 22.363691604, "workers": 16}
+[harness] run 20261028T152430Z_famG_coloc_susie_mm_gpu_valid_grid_v1_a3e4c1: 2000 loci (2000 to run), mode=batch, workers=1
+[harness] famG_coloc_susie_mm_gpu: 2000/2000 loci done
+[harness] done 20261028T152430Z_famG_coloc_susie_mm_gpu_valid_grid_v1_a3e4c1: {'ok': 1752, 'nonconverged': 248, 'failed': 0, 'timeout': 0, 'expected': 2000} in 234.0s
+{"method": "gmm", "target": "famG.method_mm:GPUColocSusieMM", "kwargs": {"ld_dtype": "float64", "mem_budget_gb": 9.0, "streams": 3}, "mode": "batch", "n_workers": 1, "batch_size": 2000, "rep": 0, "n_loci": 2000, "harness_wall_s": 234.02518243601662, "driver_wall_s": 527.2315487861633, "loci_per_hour": 30765.91982560897, "counts": {"expected": 2000, "failed": 0, "nonconverged": 248, "ok": 1752, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T152430Z_famG_coloc_susie_mm_gpu_valid_grid_v1_a3e4c1", "machine_state": null}
+[harness] run 20261028T152846Z_famG_coloc_susie_mm_gpu_valid_grid_v1_7bb30f: 2000 loci (2000 to run), mode=batch, workers=1
+[harness] famG_coloc_susie_mm_gpu: 2000/2000 loci done
+[harness] done 20261028T152846Z_famG_coloc_susie_mm_gpu_valid_grid_v1_7bb30f: {'ok': 1752, 'nonconverged': 248, 'failed': 0, 'timeout': 0, 'expected': 2000} in 212.7s
+{"method": "gmm", "target": "famG.method_mm:GPUColocSusieMM", "kwargs": {"ld_dtype": "float64", "mem_budget_gb": 9.0, "streams": 3}, "mode": "batch", "n_workers": 1, "batch_size": 2000, "rep": 1, "n_loci": 2000, "harness_wall_s": 212.68752994999522, "driver_wall_s": 233.80383825302124, "loci_per_hour": 33852.478336143104, "counts": {"expected": 2000, "failed": 0, "nonconverged": 248, "ok": 1752, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T152846Z_famG_coloc_susie_mm_gpu_valid_grid_v1_7bb30f", "machine_state": null}
+[harness] run 20261028T153240Z_famG_coloc_susie_mm_gpu_valid_grid_v1_cbf7dc: 2000 loci (2000 to run), mode=batch, workers=1
+[harness] famG_coloc_susie_mm_gpu: 2000/2000 loci done
+[harness] done 20261028T153240Z_famG_coloc_susie_mm_gpu_valid_grid_v1_cbf7dc: {'ok': 1752, 'nonconverged': 248, 'failed': 0, 'timeout': 0, 'expected': 2000} in 226.1s
+{"method": "gmm", "target": "famG.method_mm:GPUColocSusieMM", "kwargs": {"ld_dtype": "float64", "mem_budget_gb": 9.0, "streams": 3}, "mode": "batch", "n_workers": 1, "batch_size": 2000, "rep": 2, "n_loci": 2000, "harness_wall_s": 226.14290200499818, "driver_wall_s": 247.35620760917664, "loci_per_hour": 31838.275427458993, "counts": {"expected": 2000, "failed": 0, "nonconverged": 248, "ok": 1752, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T153240Z_famG_coloc_susie_mm_gpu_valid_grid_v1_cbf7dc", "machine_state": null}
+[harness] run 20261028T153647Z_coloc_susie_mm_valid_grid_v1_44c45f: 2000 loci (2000 to run), mode=cpu, workers=40
+[harness] coloc_susie_mm: 5/2000 loci done
+[harness] coloc_susie_mm: 49/2000 loci done
+[harness] coloc_susie_mm: 96/2000 loci done
+[harness] coloc_susie_mm: 144/2000 loci done
+[harness] coloc_susie_mm: 203/2000 loci done
+[harness] coloc_susie_mm: 258/2000 loci done
+[harness] coloc_susie_mm: 322/2000 loci done
+[harness] coloc_susie_mm: 402/2000 loci done
+[harness] coloc_susie_mm: 478/2000 loci done
+[harness] coloc_susie_mm: 553/2000 loci done
+[harness] coloc_susie_mm: 663/2000 loci done
+[harness] coloc_susie_mm: 774/2000 loci done
+[harness] coloc_susie_mm: 903/2000 loci done
+[harness] coloc_susie_mm: 1057/2000 loci done
+[harness] coloc_susie_mm: 1204/2000 loci done
+[harness] coloc_susie_mm: 1442/2000 loci done
+[harness] coloc_susie_mm: 1725/2000 loci done
+[harness] done 20261028T153647Z_coloc_susie_mm_valid_grid_v1_44c45f: {'ok': 1751, 'nonconverged': 249, 'failed': 0, 'timeout': 0, 'expected': 2000} in 1088.8s
+{"method": "mm", "target": "baselines.methods:ColocSusieMM", "kwargs": {}, "mode": "cpu", "n_workers": 40, "batch_size": 1, "rep": 0, "n_loci": 2000, "harness_wall_s": 1088.8058004009945, "driver_wall_s": 1110.5063576698303, "loci_per_hour": 6612.7494887961875, "counts": {"expected": 2000, "failed": 0, "nonconverged": 249, "ok": 1751, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T153647Z_coloc_susie_mm_valid_grid_v1_44c45f", "machine_state": null}
+[harness] run 20261028T155518Z_coloc_susie_mm_valid_grid_v1_917f5c: 2000 loci (2000 to run), mode=cpu, workers=40
+[harness] coloc_susie_mm: 1/2000 loci done
+[harness] coloc_susie_mm: 41/2000 loci done
+[harness] coloc_susie_mm: 89/2000 loci done
+[harness] coloc_susie_mm: 145/2000 loci done
+[harness] coloc_susie_mm: 202/2000 loci done
+[harness] coloc_susie_mm: 253/2000 loci done
+[harness] coloc_susie_mm: 322/2000 loci done
+[harness] coloc_susie_mm: 405/2000 loci done
+[harness] coloc_susie_mm: 483/2000 loci done
+[harness] coloc_susie_mm: 568/2000 loci done
+[harness] coloc_susie_mm: 688/2000 loci done
+[harness] coloc_susie_mm: 812/2000 loci done
+[harness] coloc_susie_mm: 979/2000 loci done
+[harness] coloc_susie_mm: 1130/2000 loci done
+[harness] coloc_susie_mm: 1331/2000 loci done
+[harness] coloc_susie_mm: 1592/2000 loci done
+[harness] coloc_susie_mm: 1991/2000 loci done
+[harness] done 20261028T155518Z_coloc_susie_mm_valid_grid_v1_917f5c: {'ok': 1751, 'nonconverged': 249, 'failed': 0, 'timeout': 0, 'expected': 2000} in 1045.4s
+{"method": "mm", "target": "baselines.methods:ColocSusieMM", "kwargs": {}, "mode": "cpu", "n_workers": 40, "batch_size": 1, "rep": 1, "n_loci": 2000, "harness_wall_s": 1045.3948912839987, "driver_wall_s": 1067.3143553733826, "loci_per_hour": 6887.34951742174, "counts": {"expected": 2000, "failed": 0, "nonconverged": 249, "ok": 1751, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T155518Z_coloc_susie_mm_valid_grid_v1_917f5c", "machine_state": null}
+[harness] run 20261028T161305Z_coloc_susie_mm_valid_grid_v1_4124cd: 2000 loci (2000 to run), mode=cpu, workers=40
+[harness] coloc_susie_mm: 4/2000 loci done
+[harness] coloc_susie_mm: 46/2000 loci done
+[harness] coloc_susie_mm: 93/2000 loci done
+[harness] coloc_susie_mm: 141/2000 loci done
+[harness] coloc_susie_mm: 198/2000 loci done
+[harness] coloc_susie_mm: 252/2000 loci done
+[harness] coloc_susie_mm: 315/2000 loci done
+[harness] coloc_susie_mm: 388/2000 loci done
+[harness] coloc_susie_mm: 469/2000 loci done
+[harness] coloc_susie_mm: 553/2000 loci done
+[harness] coloc_susie_mm: 671/2000 loci done
+[harness] coloc_susie_mm: 783/2000 loci done
+[harness] coloc_susie_mm: 936/2000 loci done
+[harness] coloc_susie_mm: 1084/2000 loci done
+[harness] coloc_susie_mm: 1253/2000 loci done
+[harness] coloc_susie_mm: 1479/2000 loci done
+[harness] coloc_susie_mm: 1784/2000 loci done
+[harness] done 20261028T161305Z_coloc_susie_mm_valid_grid_v1_4124cd: {'ok': 1751, 'nonconverged': 249, 'failed': 0, 'timeout': 0, 'expected': 2000} in 1079.5s
+{"method": "mm", "target": "baselines.methods:ColocSusieMM", "kwargs": {}, "mode": "cpu", "n_workers": 40, "batch_size": 1, "rep": 2, "n_loci": 2000, "harness_wall_s": 1079.5263753400068, "driver_wall_s": 1103.3287172317505, "loci_per_hour": 6669.59155836493, "counts": {"expected": 2000, "failed": 0, "nonconverged": 249, "ok": 1751, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T161305Z_coloc_susie_mm_valid_grid_v1_4124cd", "machine_state": null}
+[harness] run 20261028T163128Z_coloc_susie_valid_grid_v1_1d4d1e: 2000 loci (2000 to run), mode=cpu, workers=40
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[harness] coloc_susie: 60/2000 loci done
+[harness] coloc_susie: 121/2000 loci done
+[harness] coloc_susie: 188/2000 loci done
+[harness] coloc_susie: 261/2000 loci done
+[harness] coloc_susie: 372/2000 loci done
+[harness] coloc_susie: 452/2000 loci done
+[harness] coloc_susie: 545/2000 loci done
+[harness] coloc_susie: 701/2000 loci done
+[harness] coloc_susie: 800/2000 loci done
+[harness] coloc_susie: 975/2000 loci done
+[harness] coloc_susie: 1096/2000 loci done
+[harness] coloc_susie: 1218/2000 loci done
+[harness] coloc_susie: 1447/2000 loci done
+[harness] coloc_susie: 1668/2000 loci done
+[harness] coloc_susie: 1897/2000 loci done
+[harness] done 20261028T163128Z_coloc_susie_valid_grid_v1_1d4d1e: {'ok': 1543, 'nonconverged': 452, 'failed': 5, 'timeout': 0, 'expected': 2000} in 944.4s
+{"method": "cs", "target": "baselines.methods:ColocSusie", "kwargs": {}, "mode": "cpu", "n_workers": 40, "batch_size": 1, "rep": 0, "n_loci": 2000, "harness_wall_s": 944.4178058760008, "driver_wall_s": 965.9579186439514, "loci_per_hour": 7623.7444436168735, "counts": {"expected": 2000, "failed": 5, "nonconverged": 452, "ok": 1543, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T163128Z_coloc_susie_valid_grid_v1_1d4d1e", "machine_state": null}
+[harness] run 20261028T164734Z_coloc_susie_valid_grid_v1_1ee355: 2000 loci (2000 to run), mode=cpu, workers=40
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_timing_v1/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[harness] coloc_susie: 52/2000 loci done
+[harness] coloc_susie: 113/2000 loci done
+[harness] coloc_susie: 165/2000 loci done
+[harness] coloc_susie: 198/2000 loci done
+[harness] coloc_susie: 263/2000 loci done
+[harness] coloc_susie: 367/2000 loci done
+[harness] coloc_susie: 443/2000 loci done
+[harness] coloc_susie: 526/2000 loci done
+[harness] coloc_susie: 654/2000 loci done
+[harness] coloc_susie: 768/2000 loci done
+[harness] coloc_susie: 931/2000 loci done
+[harness] coloc_susie: 1069/2000 loci done
+[harness] coloc_susie: 1180/2000 loci done
+[harness] coloc_susie: 1393/2000 loci done
+[harness] coloc_susie: 1588/2000 loci done
+[harness] coloc_susie: 1818/2000 loci done
+[harness] done 20261028T164734Z_coloc_susie_valid_grid_v1_1ee355: {'ok': 1543, 'nonconverged': 452, 'failed': 5, 'timeout': 0, 'expected': 2000} in 1020.5s
+{"method": "cs", "target": "baselines.methods:ColocSusie", "kwargs": {}, "mode": "cpu", "n_workers": 40, "batch_size": 1, "rep": 1, "n_loci": 2000, "harness_wall_s": 1020.4743488040112, "driver_wall_s": 1041.7083566188812, "loci_per_hour": 7055.542364625186, "counts": {"expected": 2000, "failed": 5, "nonconverged": 452, "ok": 1543, "timeout": 0}, "run_dir": "results/famG_mm/timing_v1/20261028T164734Z_coloc_susie_valid_grid_v1_1ee355", "machine_state": null}
+[harness] run 20261028T170456Z_coloc_susie_valid_grid_v1_489175: 2000 loci (2000 to run), mode=cpu, workers=40

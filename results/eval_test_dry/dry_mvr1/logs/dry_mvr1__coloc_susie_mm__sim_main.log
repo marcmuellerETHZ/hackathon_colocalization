@@ -1,0 +1,5 @@
+23:00:03 [harness] run dry_mvr1__coloc_susie_mm__sim_main: 147 loci (147 to run), mode=cpu, workers=6
+23:01:05 [harness] coloc_susie_mm: 42/147 loci done
+23:02:06 [harness] coloc_susie_mm: 91/147 loci done
+23:03:07 [harness] coloc_susie_mm: 123/147 loci done
+23:03:54 [harness] done dry_mvr1__coloc_susie_mm__sim_main: {'ok': 124, 'nonconverged': 23, 'failed': 0, 'timeout': 0, 'expected': 147} in 229.2s

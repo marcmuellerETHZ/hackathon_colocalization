@@ -1,0 +1,38 @@
+[
+ {
+  "n": 512,
+  "io_s": 37.07515501976013,
+  "block": 1024,
+  "num_warps": 8,
+  "bucket_ratio": 1.5,
+  "streams": 1,
+  "dtype": "float64",
+  "mem_budget_gb": 9.0,
+  "fit_s": 35.2998104095459,
+  "fit_loci_per_s": 14.504327192124045,
+  "status": {
+   "ok": 484,
+   "nonconverged": 28
+  },
+  "niter_max_mean": 10.466796875,
+  "max_mem_gb": 16.55862272
+ },
+ {
+  "n": 512,
+  "io_s": 37.07515501976013,
+  "block": 1024,
+  "num_warps": 8,
+  "bucket_ratio": 1.5,
+  "streams": 3,
+  "dtype": "float64",
+  "mem_budget_gb": 9.0,
+  "fit_s": 23.050833702087402,
+  "fit_loci_per_s": 22.211777960709295,
+  "status": {
+   "ok": 484,
+   "nonconverged": 28
+  },
+  "niter_max_mean": 10.466796875,
+  "max_mem_gb": 12.081209856
+ }
+]

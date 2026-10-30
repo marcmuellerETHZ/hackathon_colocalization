@@ -1,0 +1,23 @@
+# Hash-protected definitions (DESIGN v4 §7.4; D6(e), D6(f)). Verify: python scripts/check_frozen.py ; the PI refreshes
+# with --update right before tagging frozen-*. Format: <sha256|PENDING>  <path>[#§<section>]. PENDING = file not yet produced.
+# Proposed by the eval agent; the PI reviews and commits. Any change needs a decision note + re-run of affected methods.
+# v4: the WHOLE DESIGN.md is protected (no longer only §1 and §8).
+91c07fd910f52cee73544b2228145b6e05794b83f341d54df486f781a4a2b6fd  DESIGN.md
+192f3c42c1f02b3866cb59e1b5e4116e977e80923b04f7dfa2ef50c896e01989  src/eval/metrics.py
+9b4c38c66d270bd7b678067dc8a169c15fb7fa731a1b0e209cf48115a5d5ef23  src/eval/adapters.py
+be2ee85dcac30891b55961debeb1f26cfb85a49390a4b4208a4aa5601873bd3b  src/eval/strength_control.py
+9aa08bc614b7406cc3ec89d0d6b2123ce20eb1bd41bdca7524ddc51e69a016bf  src/sim/oracle.py
+a86651bb35f1c91763dabd469266f4fec6406a7ac376e3ab0f54e5e1932d0e3f  splits/blocks_v1.tsv
+a56c3cf13dfe124961d9582895079ebfa1f497fabb05d467397977178f03b419  splits/genes_v1.tsv.gz
+1661fb36ed580859fb50bba3f68c985d57247b9f4e4329c90189568321327909  configs/testset_v1.yaml
+78585b027853316bfd34ff93bf0bf8ddf3b605414ac7e71b1b4301e3f9ff13ab  configs/test_methods_v1.yaml
+# Not listed: src/baselines/adapters.py is a thin forwarding shim to src/eval/adapters.py (D6(f)); the per-method
+# wrappers themselves are pinned by the git commit of the frozen-* tag.
+# added at freeze (D18/D19, P3-28): test-run pipeline, test-set generator entry point, real-data test ID/metadata hashes
+9f9d0e1720d8f5e486563df2354c2656d9bb54f7178df564650a06d5f1dac0a8  src/eval/testrun.py
+918a6dee51803e2e878f394c1af89d00d14ba694d612028abd8d6ba6f6b60642  scripts/eval_test.py
+bb9c5d574a8d5f09ca873a92c326f7c7b2daa0013513253b6ccf5fd78650c605  scripts/run_benchmark.py
+ce222921fa3c5e3c2f8a5e58f64754dbd547a1480862c6ef1ffdb491b08d6cb3  src/sim/testset.py
+b46eab638d4528679d05f323e9f8c2daad3a12fee67dfca7bdead50df36e59e1  src/data/real/extract.py
+0b6dc2150dcf37a384a9159ad41e03e7876a813dff69b724dce155500a7e8524  configs/real_test_ids_v1.sha256
+cf8ce22f2dde888a26b6a40d29632d82a00173a95de2e76dfbfd0b0d9c6ed07a  configs/real_test_meta_v1.sha256

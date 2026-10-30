@@ -1,0 +1,178 @@
+[orch] job p2va_regen_valid_grid_v1 start 2026-10-27T10:34:03+01:00 host eu-g6-001 commit ed1e71625c pid 929383
+[orch] cmd: python scripts/p2_verify/regen_sample.py --set valid_grid_v1 --per-cell 3 --out results/p2_verify_artifacts/regen_valid_grid_v1.json
+[     1s] 1/102 valid_grid_v1__L0_P1_r_p=0.6__D_r4_dall__0008206 ok=True
+[     2s] 2/102 valid_grid_v1__L0_P3_rho=0.8__G__0001606 ok=True
+[     2s] 3/102 valid_grid_v1__L1_P1_r_p=0.6__G__0001601 ok=True
+[     2s] 4/102 valid_grid_v1__L2_P2_rho=0.0__D_r1_dall__0001707 ok=True
+[     2s] 5/102 valid_grid_v1__L3_P1_r_p=0.0__G__0001626 ok=True
+[     2s] 6/102 valid_grid_v1__L4_P3_rho=0.5__S__0001625 ok=True
+[     2s] 7/102 valid_grid_v1__L4_P3_rho=0.5__D_r0_dall__0001647 ok=True
+[     3s] 8/102 valid_grid_v1__L6_P3_rho=0.0__U__0001728 ok=True
+[     3s] 9/102 valid_grid_v1__L4_P3_rho=0.5__U__0009424 ok=True
+[     3s] 10/102 valid_grid_v1__L2_P2_rho=0.3__U__0002967 ok=True
+[     3s] 11/102 valid_grid_v1__L2_P3_rho=0.5__U__0002868 ok=True
+[     3s] 12/102 valid_grid_v1__L6_P2_rho=0.0__U__0002928 ok=True
+[     4s] 13/102 valid_grid_v1__L0_P3_rho=0.0__D_r1_dall__0005013 ok=True
+[     4s] 14/102 valid_grid_v1__L0_P2_rho=0.3__S__0014200 ok=True
+[     4s] 15/102 valid_grid_v1__L0_P3_rho=0.8__W__0014200 ok=True
+[     4s] 16/102 valid_grid_v1__L1_P2_rho=0.3__S__0018025 ok=True
+[     5s] 17/102 valid_grid_v1__L1_P3_rho=0.0__W__0015803 ok=True
+[     5s] 18/102 valid_grid_v1__L0_P3_rho=0.5__W__0008000 ok=True
+[     5s] 19/102 valid_grid_v1__L0_P1_r_p=0.0__D_r4_dall__0003925 ok=True
+[     5s] 20/102 valid_grid_v1__L0_P2_rho=0.0__G__0003813 ok=True
+[     5s] 21/102 valid_grid_v1__L0_P3_rho=0.0__U__0003935 ok=True
+[     6s] 22/102 valid_grid_v1__L1_P1_r_p=0.0__G__0003810 ok=True
+[     6s] 23/102 valid_grid_v1__L1_P2_rho=0.0__D_r4_dall__0003214 ok=True
+[     7s] 24/102 valid_grid_v1__L0_P1_r_p=0.6__W__0018400 ok=True
+[     9s] 25/102 valid_grid_v1__L3_P2_rho=0.0__W__0011607 ok=True
+[     9s] 26/102 valid_grid_v1__L3_P3_rho=0.0__U__0012741 ok=True
+[    10s] 27/102 valid_grid_v1__L0_P3_rho=0.5__D_r0_dall__0000610 ok=True
+[    10s] 28/102 valid_grid_v1__L1_P2_rho=0.3__D_r2_dall__0000768 ok=True
+[    10s] 29/102 valid_grid_v1__L2_P3_rho=0.8__S__0000662 ok=True
+[    11s] 30/102 valid_grid_v1__L2_P2_rho=0.0__G__0002416 ok=True
+[    12s] 31/102 valid_grid_v1__L0_P2_rho=0.0__U__0013784 ok=True
+[    13s] 32/102 valid_grid_v1__L0_P3_rho=0.8__D_r2_dall__0000120 ok=True
+[    13s] 33/102 valid_grid_v1__L1_P1_r_p=0.6__U__0019877 ok=True
+[    13s] 34/102 valid_grid_v1__L1_P3_rho=0.8__S__0019815 ok=True
+[    13s] 35/102 valid_grid_v1__L6_P2_rho=0.0__W__0019803 ok=True
+[    14s] 36/102 valid_grid_v1__L2_P1_r_p=0.0__S__0017423 ok=True
+[    14s] 37/102 valid_grid_v1__L0_P3_rho=0.5__S__0001848 ok=True
+[    15s] 38/102 valid_grid_v1__L2_P3_rho=0.5__S__0001829 ok=True
+[    15s] 39/102 valid_grid_v1__L0_P2_rho=0.3__U__0004020 ok=True
+[    15s] 40/102 valid_grid_v1__L1_P3_rho=0.8__U__0004196 ok=True
+[    15s] 41/102 valid_grid_v1__L2_P3_rho=0.0__S__0008635 ok=True
+[    16s] 42/102 valid_grid_v1__L4_P3_rho=0.0__G__0003021 ok=True
+[    16s] 43/102 valid_grid_v1__L6_P2_rho=0.0__G__0003012 ok=True
+[    16s] 44/102 valid_grid_v1__L2_P1_r_p=0.6__S__0016009 ok=True
+[    17s] 45/102 valid_grid_v1__L1_P2_rho=0.0__S__0005406 ok=True
+[    17s] 46/102 valid_grid_v1__L1_P3_rho=0.8__G__0005410 ok=True
+[    17s] 47/102 valid_grid_v1__L3_P3_rho=0.0__S__0005425 ok=True
+[    18s] 48/102 valid_grid_v1__L1_P3_rho=0.5__G__0005601 ok=True
+[    18s] 49/102 valid_grid_v1__L1_P1_r_p=0.0__U__0011049 ok=True
+[    19s] 50/102 valid_grid_v1__L3_P3_rho=0.0__G__0004407 ok=True
+[    19s] 51/102 valid_grid_v1__L6_P1_r_p=0.0__G__0004406 ok=True
+[    19s] 52/102 valid_grid_v1__L4_P3_rho=0.8__W__0014600 ok=True
+[    20s] 53/102 valid_grid_v1__L0_P1_r_p=0.0__S__0004873 ok=True
+[    20s] 54/102 valid_grid_v1__L4_P3_rho=0.0__U__0004848 ok=True
+[    20s] 55/102 valid_grid_v1__L4_P1_r_p=0.0__U__0017897 ok=True
+[    20s] 56/102 valid_grid_v1__L1_P2_rho=0.3__W__0016203 ok=True
+[    21s] 57/102 valid_grid_v1__L4_P1_r_p=0.0__S__0016239 ok=True
+[    21s] 58/102 valid_grid_v1__L6_P1_r_p=0.0__W__0016206 ok=True
+[    21s] 59/102 valid_grid_v1__L4_P1_r_p=0.6__S__0015013 ok=True
+[    21s] 60/102 valid_grid_v1__L4_P2_rho=0.3__W__0014006 ok=True
+[    21s] 61/102 valid_grid_v1__L4_P2_rho=0.3__U__0014103 ok=True
+[    22s] 62/102 valid_grid_v1__L4_P1_r_p=0.6__D_r2_dall__0002620 ok=True
+[    22s] 63/102 valid_grid_v1__L6_P3_rho=0.0__G__0000407 ok=True
+[    23s] 64/102 valid_grid_v1__L1_P3_rho=0.5__W__0010601 ok=True
+[    23s] 65/102 valid_grid_v1__L0_P3_rho=0.0__S__0019405 ok=True
+[    24s] 66/102 valid_grid_v1__L0_P2_rho=0.0__W__0007202 ok=True
+[    24s] 67/102 valid_grid_v1__L2_P1_r_p=0.0__U__0016638 ok=True
+[    24s] 68/102 valid_grid_v1__L3_P1_r_p=0.0__W__0012801 ok=True
+[    25s] 69/102 valid_grid_v1__L2_P1_r_p=0.6__W__0018800 ok=True
+[    25s] 70/102 valid_grid_v1__L4_P3_rho=0.0__S__0018833 ok=True
+[    26s] 71/102 valid_grid_v1__L2_P1_r_p=0.0__D_r0_dall__0003411 ok=True
+[    26s] 72/102 valid_grid_v1__L2_P3_rho=0.5__D_r0_dall__0003410 ok=True
+[    26s] 73/102 valid_grid_v1__L4_P1_r_p=0.0__D_r2_dall__0003542 ok=True
+[    26s] 74/102 valid_grid_v1__L4_P2_rho=0.0__G__0003421 ok=True
+[    26s] 75/102 valid_grid_v1__L2_P2_rho=0.3__W__0013404 ok=True
+[    26s] 76/102 valid_grid_v1__L2_P2_rho=0.0__W__0014403 ok=True
+[    27s] 77/102 valid_grid_v1__L2_P3_rho=0.0__G__0005807 ok=True
+[    27s] 78/102 valid_grid_v1__L2_P1_r_p=0.6__D_r4_dall__0001081 ok=True
+[    28s] 79/102 valid_grid_v1__L1_P1_r_p=0.6__S__0001262 ok=True
+[    28s] 80/102 valid_grid_v1__L2_P2_rho=0.3__G__0001212 ok=True
+[    28s] 81/102 valid_grid_v1__L3_P2_rho=0.0__U__0011971 ok=True
+[    28s] 82/102 valid_grid_v1__L4_P2_rho=0.0__W__0011808 ok=True
+[    29s] 83/102 valid_grid_v1__L1_P3_rho=0.5__U__0009993 ok=True
+[    29s] 84/102 valid_grid_v1__L4_P1_r_p=0.6__W__0000804 ok=True
+[    29s] 85/102 valid_grid_v1__L4_P2_rho=0.0__D_r2_dall__0000838 ok=True
+[    29s] 86/102 valid_grid_v1__L4_P3_rho=0.8__D_r3_dall__0000858 ok=True
+[    30s] 87/102 valid_grid_v1__L6_P1_r_p=0.0__D_r1_dall__0000926 ok=True
+[    30s] 88/102 valid_grid_v1__L0_P1_r_p=0.6__G__0006605 ok=True
+[    31s] 89/102 valid_grid_v1__L4_P3_rho=0.8__S__0006634 ok=True
+[    31s] 90/102 valid_grid_v1__L1_P3_rho=0.0__G__0002202 ok=True
+[    31s] 91/102 valid_grid_v1__L1_P3_rho=0.0__D_r3_dall__0002246 ok=True
+[    31s] 92/102 valid_grid_v1__L2_P3_rho=0.8__W__0002202 ok=True
+[    31s] 93/102 valid_grid_v1__L2_P3_rho=0.8__D_r0_dall__0002263 ok=True
+[    32s] 94/102 valid_grid_v1__L0_P2_rho=0.3__G__0001425 ok=True
+[    32s] 95/102 valid_grid_v1__L1_P1_r_p=0.0__W__0001400 ok=True
+[    32s] 96/102 valid_grid_v1__L4_P2_rho=0.3__G__0001458 ok=True
+[    32s] 97/102 valid_grid_v1__L3_P2_rho=0.0__G__0006423 ok=True
+[    33s] 98/102 valid_grid_v1__L2_P3_rho=0.0__U__0006026 ok=True
+[    34s] 99/102 valid_grid_v1__L3_P1_r_p=0.0__D_r4_dall__0009334 ok=True
+[    35s] 100/102 valid_grid_v1__L6_P3_rho=0.0__S__0007043 ok=True
+[    35s] 101/102 valid_grid_v1__L0_P1_r_p=0.0__W__0004202 ok=True
+[    35s] 102/102 valid_grid_v1__L1_P2_rho=0.0__U__0004243 ok=True
+{
+ "set": "valid_grid_v1",
+ "seed": 20261029,
+ "n_sampled": 102,
+ "n_ok": 102,
+ "n_cells": 34,
+ "by_cell": {
+  "L0|P1|r_p=0.0": 3,
+  "L0|P1|r_p=0.6": 3,
+  "L0|P2|rho=0.0": 3,
+  "L0|P2|rho=0.3": 3,
+  "L0|P3|rho=0.0": 3,
+  "L0|P3|rho=0.5": 3,
+  "L0|P3|rho=0.8": 3,
+  "L1|P1|r_p=0.0": 3,
+  "L1|P1|r_p=0.6": 3,
+  "L1|P2|rho=0.0": 3,
+  "L1|P2|rho=0.3": 3,
+  "L1|P3|rho=0.0": 3,
+  "L1|P3|rho=0.5": 3,
+  "L1|P3|rho=0.8": 3,
+  "L2|P1|r_p=0.0": 3,
+  "L2|P1|r_p=0.6": 3,
+  "L2|P2|rho=0.0": 3,
+  "L2|P2|rho=0.3": 3,
+  "L2|P3|rho=0.0": 3,
+  "L2|P3|rho=0.5": 3,
+  "L2|P3|rho=0.8": 3,
+  "L3|P1|r_p=0.0": 3,
+  "L3|P2|rho=0.0": 3,
+  "L3|P3|rho=0.0": 3,
+  "L4|P1|r_p=0.0": 3,
+  "L4|P1|r_p=0.6": 3,
+  "L4|P2|rho=0.0": 3,
+  "L4|P2|rho=0.3": 3,
+  "L4|P3|rho=0.0": 3,
+  "L4|P3|rho=0.5": 3,
+  "L4|P3|rho=0.8": 3,
+  "L6|P1|r_p=0.0": 3,
+  "L6|P2|rho=0.0": 3,
+  "L6|P3|rho=0.0": 3
+ },
+ "by_class": {
+  "D": 20,
+  "G": 21,
+  "S": 20,
+  "U": 20,
+  "W": 21
+ },
+ "by_bucket": {
+  "D_r0_dall": 5,
+  "D_r1_dall": 3,
+  "D_r2_dall": 5,
+  "D_r3_dall": 2,
+  "D_r4_dall": 5,
+  "G": 21,
+  "S": 20,
+  "U": 20,
+  "W": 21
+ },
+ "cand_index_range": [
+  120,
+  19877
+ ],
+ "fields_not_identical": [],
+ "runtime_s": 35.26556658744812,
+ "device": "cuda",
+ "torch": "2.14.1+cu130",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "peak_gpu_gb": 2.315784192,
+ "commit": "ed1e71625c22950106f2dc49bf9aafb5fae2b3b0"
+}
+fields max_abs_diff: {"z1": [102, 102, 0.0], "z2": [102, 102, 0.0], "beta1": [102, 102, 0.0], "se1": [102, 102, 0.0], "beta2": [102, 102, 0.0], "se2": [102, 102, 0.0], "n1": [102, 102, 0.0], "n2": [102, 102, 0.0], "maf1": [102, 102, 0.0], "maf2": [102, 102, 0.0], "maf_ref": [102, 102, 0.0], "variant_id": [102, 102, 0.0], "pos": [102, 102, 0.0], "ld_type": [102, 102, 0.0], "n_ref": [102, 102, 0.0], "LD": [102, 102, 0.0], "rho_hat": [102, 102, 0.0], "rho_se": [102, 102, 0.0], "attr:split": [102, 102, 0.0], "attr:mismatch_level": [102, 102, 0.0], "attr:pairing_type": [102, 102, 0.0], "attr:cell_id": [102, 102, 0.0], "attr:window_chr": [102, 102, 0.0], "attr:window_start": [102, 102, 0.0], "attr:window_end": [102, 102, 0.0], "attr:block_ids": [102, 102, 0.0], "attr:trait1_type": [102, 102, 0.0], "attr:trait2_type": [102, 102, 0.0], "LD2": [6, 6, 0.0], "attr:ld_type2": [6, 6, 0.0], "attr:n_ref2": [6, 6, 0.0], "truth:locus_id": [102, 102, 0.0], "truth:oracle_class": [102, 102, 0.0], "truth:mu1": [102, 102, 0.0], "truth:mu2": [102, 102, 0.0], "truth:r2": [102, 102, 0.0], "truth:d": [102, 102, 0.0], "truth:rho": [102, 102, 0.0], "truth:block_id": [102, 102, 0.0], "truth:cell_id": [102, 102, 0.0], "truth:split": [102, 102, 0.0], "truth:mismatch_level": [102, 102, 0.0], "truth:pairing_type": [102, 102, 0.0], "truth:overlap": [102, 102, 0.0], "truth:control": [102, 102, 0.0], "truth:causal1": [102, 102, 0.0], "truth:causal2": [102, 102, 0.0], "truth:effect1": [102, 102, 0.0], "truth:effect2": [102, 102, 0.0], "truth:mu1_all": [102, 102, 0.0], "truth:mu2_all": [102, 102, 0.0], "truth:causal1_vid": [102, 102, 0.0], "truth:causal2_vid": [102, 102, 0.0], "truth:cd1": [102, 102, 0.0], "truth:cd2": [102, 102, 0.0], "truth:n_powered1": [102, 102, 0.0], "truth:n_powered2": [102, 102, 0.0], "truth:locus_type": [102, 102, 0.0], "truth:target_r2_bin": [102, 102, 0.0], "truth:background": [102, 102, 0.0], "truth:strong1": [102, 102, 0.0], "truth:strong2": [102, 102, 0.0], "truth:pve1": [102, 102, 0.0], "truth:pve2": [102, 102, 0.0], "truth:pairing_sub": [102, 102, 0.0], "truth:N1": [102, 102, 0.0], "truth:N2": [102, 102, 0.0], "truth:N_s": [102, 102, 0.0], "truth:r_p": [102, 102, 0.0], "truth:trait1_type": [102, 102, 0.0], "truth:trait2_type": [102, 102, 0.0], "truth:pop1": [102, 102, 0.0], "truth:pop2": [102, 102, 0.0], "truth:form1": [102, 102, 0.0], "truth:form2": [102, 102, 0.0], "truth:rho_hat": [102, 102, 0.0], "truth:rho_se": [102, 102, 0.0], "truth:rho_mode": [102, 102, 0.0], "truth:rho_n_used": [102, 102, 0.0], "truth:p": [102, 102, 0.0], "truth:p_study": [102, 102, 0.0], "truth:p_window": [102, 102, 0.0], "truth:flipped": [102, 102, 0.0], "truth:flip_trait": [102, 102, 0.0], "truth:lead_abs_z1": [102, 102, 0.0], "truth:lead_abs_z2": [102, 102, 0.0], "truth:anchor": [102, 102, 0.0], "truth:window_chr": [102, 102, 0.0], "truth:window_start": [102, 102, 0.0], "truth:window_end": [102, 102, 0.0], "truth:seed_key": [102, 102, 0.0], "truth:bucket": [102, 102, 0.0], "truth:cand_index": [102, 102, 0.0], "truth:set": [102, 102, 0.0]}
+[orch] exit 0 at 2026-10-27T10:34:49+01:00

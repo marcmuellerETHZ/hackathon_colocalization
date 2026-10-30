@@ -1,0 +1,5 @@
+[orch] job famC_p9_tests_r2 start 2026-10-28T10:18:09+01:00 host eu-g6-001 commit b4c4c0b13c pid 2182058
+[orch] cmd: python -m pytest -q tests/famC/test_floor_p9.py 2>&1 | tail -n 5
+..                                                                       [100%]
+2 passed in 83.99s (0:01:23)
+[orch] exit 0 at 2026-10-28T10:19:35+01:00

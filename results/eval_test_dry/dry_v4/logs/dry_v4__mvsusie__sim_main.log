@@ -1,0 +1,18 @@
+19:16:25 [harness] run dry_v4__mvsusie__sim_main: 102 loci (102 to run), mode=cpu, workers=5
+19:17:27 [harness] mvsusie: 5/102 loci done
+19:19:27 [harness] mvsusie: 10/102 loci done
+19:21:02 [harness] mvsusie: 11/102 loci done
+19:22:18 [harness] mvsusie: 14/102 loci done
+19:24:18 [harness] mvsusie: 16/102 loci done
+19:25:23 [harness] mvsusie: 18/102 loci done
+19:26:28 [harness] mvsusie: 31/102 loci done
+19:27:33 [harness] mvsusie: 50/102 loci done
+19:28:36 [harness] mvsusie: 53/102 loci done
+19:29:43 [harness] mvsusie: 61/102 loci done
+19:30:49 [harness] mvsusie: 67/102 loci done
+19:32:00 [harness] mvsusie: 73/102 loci done
+19:33:38 [harness] mvsusie: 79/102 loci done
+19:34:39 [harness] mvsusie: 88/102 loci done
+19:35:45 [harness] mvsusie: 96/102 loci done
+19:36:53 [harness] mvsusie: 102/102 loci done
+19:36:56 [harness] done dry_v4__mvsusie__sim_main: {'ok': 69, 'nonconverged': 33, 'failed': 0, 'timeout': 0, 'expected': 102} in 1230.3s

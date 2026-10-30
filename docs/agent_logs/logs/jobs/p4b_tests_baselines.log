@@ -1,0 +1,30 @@
+[orch] job p4b_tests_baselines start 2026-10-27T10:56:11+01:00 host eu-g6-001 commit 13754339ae pid 953421
+[orch] cmd: PYTHONPATH=src python -m pytest -q -rxs -p no:cacheprovider tests/baselines
+........................................x............................... [ 65%]
+....................F.................                                   [100%]
+=================================== FAILURES ===================================
+_____________________ test_no_truth_reference_in_wrappers ______________________
+
+    def test_no_truth_reference_in_wrappers():
+        for f in list(SRC.rglob("*.py")) + list(SRC.rglob("*.R")):
+            txt = f.read_text()
+            for a in ALLOWED:
+                txt = txt.replace(a, "")
+>           assert "truth" not in txt.lower(), f"{f} mentions truth files"
+E           AssertionError: /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p4b_tests_baselines/code/src/baselines/subsample.py mentions truth files
+E           assert 'truth' not in '"""pre-regi...t.items()}\n'
+E             
+E             'truth' is contained here:
+E               ver reads truth files itself.
+E             ?           +++++
+E               
+E               screen_v2 (task p4.baselines_screen): slow methods (mvsusie, colocboost both modes) run on all loci of the a1 cell
+E               l0|p1|r_p=0.0 and on 200 loci per other cell, stratified by generation bucket (equal allocation, 50 per bucket for...
+E             
+E             ...Full output truncated (72 lines hidden), use '-vv' to show
+
+tests/baselines/test_no_truth_access.py:17: AssertionError
+=========================== short test summary info ============================
+XFAIL tests/baselines/test_controls.py::test_distinct[1-sharepro] - SharePro false sharing on distinct control (s = 1); matches CLI
+1 failed, 108 passed, 1 xfailed in 133.18s (0:02:13)
+[orch] exit 1 at 2026-10-27T10:58:26+01:00

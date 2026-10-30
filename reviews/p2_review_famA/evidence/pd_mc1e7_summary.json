@@ -1,0 +1,24 @@
+{
+ "n_loci": 2,
+ "cells": [
+  "L0_P1_r_p=0.0",
+  "L0_P3_rho=0.5"
+ ],
+ "commit_reviewed": "47ceb97",
+ "fit_s_rho_eta": 2.9915995597839355,
+ "max_abs_PD_A_vs_ie": 1.1102230246251565e-16,
+ "max_abs_PD_A_vs_dp": 1.1102230246251565e-16,
+ "max_abs_PS_A_vs_ie": 0.0,
+ "max_abs_PD_A_vs_mc": 5.3534822596956744e-05,
+ "max_z_PD_A_vs_mc": 0.4596238340444895,
+ "max_abs_PS_A_vs_mc": 0.00015908522027380245,
+ "max_abs_E1_A_vs_mc": 0.0,
+ "max_abs_E2_A_vs_mc": 2.2883764318935526e-06,
+ "max_dalpha_indep": 3.4416913763379853e-15,
+ "effect_events_max_abs": 0.00021107324248581527,
+ "effect_events_max_absz": 1.599209581115721,
+ "n_effect_events": 80,
+ "n_loci_PD_gt_0_05": 1,
+ "n_loci_PS_gt_0_05": 1,
+ "mc_draws": 10000000
+}

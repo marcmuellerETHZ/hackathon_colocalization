@@ -1,0 +1,205 @@
+[orch] job famA_p5_killtest_a1_rule_a_r2 start 2026-10-27T15:46:13+01:00 host eu-g6-001 commit 695a1207ae pid 1385882
+[orch] cmd: OMP_NUM_THREADS=1 python -m famA.validation.killtest_a1 --a-dir results/famA/killtest_inputs/a1_primary_v1 --a-method famA_joint_susie_rho_eta_ms_ptld --baseline-pred results/baselines_screen_v2/collected_L0P1_v1b/predictions.parquet --cells "L0|P1|r_p=0.0" --out results/famA/killtest_a1_ruleA_v1 --n-boot 2000 --n-jobs 2
+{
+ "a_method": "famA_joint_susie_rho_eta_ms_ptld",
+ "baselines_present": [
+  "coloc_abf_W0.15_p12_1e-05",
+  "coloc_abf_W0.15_p12_5e-06",
+  "coloc_abf_W0.1_p12_1e-05",
+  "coloc_abf_W0.1_p12_5e-06",
+  "coloc_abf_W0.2_p12_1e-05",
+  "coloc_abf_W0.2_p12_5e-06",
+  "coloc_prop_test",
+  "coloc_susie",
+  "coloc_susie_mm",
+  "colocboost",
+  "colocboost_m1",
+  "famA_joint_susie_rho_eta_ms_ptld",
+  "lead_snp",
+  "mvsusie",
+  "prop_coloc",
+  "sharepro",
+  "strength_only"
+ ],
+ "tier1_present": [
+  "coloc_abf_W0.15_p12_5e-06",
+  "coloc_abf_W0.1_p12_5e-06",
+  "coloc_abf_W0.2_p12_5e-06",
+  "coloc_susie",
+  "coloc_susie_mm",
+  "sharepro",
+  "colocboost",
+  "mvsusie"
+ ],
+ "n_rows": {
+  "coloc_abf_W0.15_p12_1e-05": 2000,
+  "coloc_abf_W0.15_p12_5e-06": 2000,
+  "coloc_abf_W0.1_p12_1e-05": 2000,
+  "coloc_abf_W0.1_p12_5e-06": 2000,
+  "coloc_abf_W0.2_p12_1e-05": 2000,
+  "coloc_abf_W0.2_p12_5e-06": 2000,
+  "coloc_prop_test": 2000,
+  "coloc_susie": 2000,
+  "coloc_susie_mm": 2000,
+  "colocboost": 2000,
+  "colocboost_m1": 2000,
+  "lead_snp": 2000,
+  "mvsusie": 2000,
+  "prop_coloc": 2000,
+  "sharepro": 2000,
+  "strength_only": 2000,
+  "famA_joint_susie_rho_eta_ms_ptld": 2000
+ },
+ "inputs": {
+  "baseline_pred": [
+   "results/baselines_screen_v2/collected_L0P1_v1b/predictions.parquet"
+  ],
+  "baseline_dir": null,
+  "a_dir": [
+   "results/famA/killtest_inputs/a1_primary_v1"
+  ]
+ },
+ "A1": {
+  "cell": "L0|P1|r_p=0.0",
+  "n_loci": 2000,
+  "auprc": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+   "coloc_susie": 0.9783517307167242,
+   "sharepro": 0.7339343806898627,
+   "mvsusie": 0.6424317748499618
+  },
+  "best_baseline": "coloc_susie",
+  "diff": -0.08510508313051701,
+  "paired_se": 0.010379380963913151,
+  "ci95": [
+   -0.10521110253305793,
+   -0.06428115029305348
+  ],
+  "verdict": "FAIL",
+  "excluded_mode": {
+   "n_loci": 1999,
+   "auprc": {
+    "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+    "coloc_susie": 0.9783517307167242,
+    "sharepro": 0.7339343806898627,
+    "mvsusie": 0.6424317748499618
+   }
+  },
+  "failures": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0,
+   "coloc_susie": 0,
+   "sharepro": 0,
+   "mvsusie": 1
+  },
+  "runtime": {
+   "A_median_s": 1.2559883196669641,
+   "A_mean_s": 1.409489498934483,
+   "coloc_susie_median_s": 3.307517856497725,
+   "coloc_susie_mean_s": 4.269551384809463,
+   "verdict": "PASS"
+  }
+ },
+ "rule_a": {
+  "cell": "L0|P1|r_p=0.0",
+  "n_loci": 2000,
+  "auprc": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+   "coloc_abf_W0.15_p12_5e-06": 0.8718922612642637,
+   "coloc_abf_W0.1_p12_5e-06": 0.869249603832727,
+   "coloc_abf_W0.2_p12_5e-06": 0.873936976246499,
+   "coloc_susie": 0.9783517307167242,
+   "coloc_susie_mm": 0.9717079505105843,
+   "sharepro": 0.7339343806898627,
+   "colocboost": 0.8728731522658506,
+   "mvsusie": 0.6424317748499618
+  },
+  "best_baseline": "coloc_susie",
+  "diff": -0.08510508313051701,
+  "paired_se": 0.009857064261227025,
+  "ci95": [
+   -0.1045961695523871,
+   -0.06603691770497237
+  ],
+  "verdict": "FAIL",
+  "excluded_mode": {
+   "n_loci": 1999,
+   "auprc": {
+    "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+    "coloc_abf_W0.15_p12_5e-06": 0.8718922612642637,
+    "coloc_abf_W0.1_p12_5e-06": 0.869249603832727,
+    "coloc_abf_W0.2_p12_5e-06": 0.873936976246499,
+    "coloc_susie": 0.9783517307167242,
+    "coloc_susie_mm": 0.9717079505105843,
+    "sharepro": 0.7339343806898627,
+    "colocboost": 0.8728731522658506,
+    "mvsusie": 0.6424317748499618
+   }
+  },
+  "failures": {
+   "famA_joint_susie_rho_eta_ms_ptld": 0,
+   "coloc_abf_W0.15_p12_5e-06": 0,
+   "coloc_abf_W0.1_p12_5e-06": 0,
+   "coloc_abf_W0.2_p12_5e-06": 0,
+   "coloc_susie": 0,
+   "coloc_susie_mm": 0,
+   "sharepro": 0,
+   "colocboost": 0,
+   "mvsusie": 1
+  }
+ },
+ "rule_b": {
+  "cells": [
+   "L0|P1|r_p=0.0"
+  ],
+  "n_W": 500,
+  "rate_A": 0.0,
+  "rate_abf": 0.048,
+  "p_margin": 0.999962197788637,
+  "p_diff_gt0": 0.999962197788637,
+  "per_cell": {
+   "L0|P1|r_p=0.0": {
+    "A": 0.0,
+    "abf": 0.048
+   }
+  },
+  "verdict": "PASS"
+ },
+ "macro_auprc": {
+  "coloc_abf_W0.15_p12_5e-06": 0.8718922612642637,
+  "coloc_abf_W0.1_p12_5e-06": 0.869249603832727,
+  "coloc_abf_W0.2_p12_5e-06": 0.873936976246499,
+  "coloc_susie": 0.9783517307167242,
+  "coloc_susie_mm": 0.9717079505105843,
+  "colocboost": 0.8728731522658506,
+  "mvsusie": 0.6424317748499618,
+  "sharepro": 0.7339343806898627,
+  "famA_joint_susie_rho_eta_ms_ptld": 0.8932466475862072,
+  "best_tier1": "coloc_susie"
+ },
+ "rule_c": {
+  "subsets_evaluated": [],
+  "verdict": "not evaluated (no L4 / rho=0.5 cells in this run)"
+ },
+ "rule_d": {
+  "cells": [
+   "L0|P1|r_p=0.0"
+  ],
+  "A_median_s": 1.2559883196669641,
+  "coloc_susie_median_s": 3.307517856497725,
+  "ratio": 0.3797374267230439,
+  "A_macro_auprc": 0.8932466475862072,
+  "coloc_susie_macro_auprc": 0.9783517307167242,
+  "verdict": "PASS"
+ }
+}
+            cell                            method     n  auprc_sd  auroc_sd  confident_W  false_S_D  n_failed  runtime_median_s  runtime_mean_s
+0  L0|P1|r_p=0.0  famA_joint_susie_rho_eta_ms_ptld  2000  0.893247  0.935671        0.000      0.036         0          1.255988        1.409489
+1  L0|P1|r_p=0.0         coloc_abf_W0.15_p12_5e-06  2000  0.871892  0.813957        0.048      0.034         0          0.047197        0.053074
+2  L0|P1|r_p=0.0          coloc_abf_W0.1_p12_5e-06  2000  0.869250  0.812327        0.040      0.041         0          0.047701        0.047768
+3  L0|P1|r_p=0.0          coloc_abf_W0.2_p12_5e-06  2000  0.873937  0.815561        0.054      0.036         0          0.054425        0.058868
+4  L0|P1|r_p=0.0                       coloc_susie  2000  0.978352  0.979365        0.054      0.054         0          3.307518        4.269551
+5  L0|P1|r_p=0.0                    coloc_susie_mm  2000  0.971708  0.967128        0.054      0.051         0         12.249757       17.311865
+6  L0|P1|r_p=0.0                          sharepro  2000  0.733934  0.814091        0.030      0.461         0          0.356554        0.454948
+7  L0|P1|r_p=0.0                        colocboost  2000  0.872873  0.893022        0.020      0.123         0          0.960955        1.466325
+8  L0|P1|r_p=0.0                           mvsusie  2000  0.642432  0.721707        0.200      0.556         1         18.511003       28.051147
+[orch] exit 0 at 2026-10-27T15:47:18+01:00

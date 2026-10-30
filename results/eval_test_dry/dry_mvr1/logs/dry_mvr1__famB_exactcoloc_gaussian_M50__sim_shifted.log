@@ -1,0 +1,2 @@
+22:23:33 [harness] run dry_mvr1__famB_exactcoloc_gaussian_M50__sim_shifted: 16 loci (16 to run), mode=batch, workers=1
+22:23:46 [harness] done dry_mvr1__famB_exactcoloc_gaussian_M50__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 12.7s

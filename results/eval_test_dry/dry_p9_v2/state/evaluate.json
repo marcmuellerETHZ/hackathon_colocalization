@@ -1,0 +1,40 @@
+{
+ "benchmark": {
+  "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/benchmarks/sim",
+  "evaluate_wall_s": 67.22967529296875,
+  "not_run": [],
+  "parts": {
+   "main": {
+    "benchmark_sha256": "326069ff13e58eed295631c8de27a523f8205c5e6b602e2764bdac132cdd8435",
+    "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/benchmarks/sim",
+    "methods": [
+     "coloc_abf",
+     "coloc_susie_mm",
+     "lead_snp",
+     "strength_only"
+    ],
+    "n_loci": 273
+   },
+   "subsample_564655fb": {
+    "benchmark_sha256": "31e8e219b431b3006c382221b620fe534108d31e14f5a9c34fae29c751de0145",
+    "dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/benchmarks/sim/subsample_564655fb",
+    "methods": [
+     "coloc_abf",
+     "coloc_susie_mm",
+     "colocboost_m1",
+     "lead_snp",
+     "strength_only"
+    ],
+    "n_loci": 112
+   }
+  }
+ },
+ "claims": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/claims.json",
+ "descriptive": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/descriptive.json",
+ "done_utc": "2026-10-28T09:16:51Z",
+ "operating_points": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/DRY_operating_points_in_sample.json",
+ "operating_points_source": "DRY placeholders fitted in-sample on the dry-run set (not validation values)",
+ "real_arms": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/real_arms.json",
+ "runtime": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runtime.json",
+ "strength_table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/DRY_strength_table_in_sample.json"
+}

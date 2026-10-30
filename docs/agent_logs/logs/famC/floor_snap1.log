@@ -1,0 +1,5 @@
+Training until validation scores don't improve for 100 rounds
+[200]	valid_0's multi_logloss: 0.394494
+Early stopping, best iteration is:
+[145]	valid_0's multi_logloss: 0.390062
+FLOOR {"all": {"auprc_sd_pm": 0.9765717231782578, "auroc_dw": 0.9984237683905308, "logloss_nat": 0.4273255370381928}, "realistic_L1-L4": {"auprc_sd_pm": 0.9753671548098527, "auroc_dw": 0.9983872899513514, "logloss_nat": 0.43651729148344853}, "L0": {"auprc_sd_pm": 0.9938000857721181, "auroc_dw": 0.9992134967835902, "logloss_nat": 0.3712326134308169}, "L1": {"auprc_sd_pm": 0.9818739579688015, "auroc_dw": 0.9971780815997234, "logloss_nat": 0.40015079672465453}, "L2": {"auprc_sd_pm": 0.9702440856322248, "auroc_dw": 0.9981993738120869, "logloss_nat": 0.45826556600307067}, "L3": {"auprc_sd_pm": 0.9796908693197229, "auroc_dw": 0.9993500866551126, "logloss_nat": 0.44384023510153386}, "L4": {"auprc_sd_pm": 0.9678712544892274, "auroc_dw": 0.9987301267353674, "logloss_nat": 0.44181230123428256}, "L6": {"auprc_sd_pm": 0.9578014300899006, "auroc_dw": 0.9976729659692907, "logloss_nat": 0.44797451699658275}}

@@ -1,0 +1,5 @@
+23:57:33 [harness] run test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference: 600 loci (600 to run), mode=cpu, workers=5
+23:58:33 [harness] sharepro: 101/600 loci done
+23:59:33 [harness] sharepro: 197/600 loci done
+00:00:34 [harness] sharepro: 282/600 loci done
+00:01:25 [harness] done test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference: {'ok': 600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 600} in 233.0s

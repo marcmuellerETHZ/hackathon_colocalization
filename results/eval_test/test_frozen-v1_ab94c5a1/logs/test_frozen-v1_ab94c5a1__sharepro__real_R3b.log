@@ -1,0 +1,7 @@
+23:44:54 [harness] run test_frozen-v1_ab94c5a1__sharepro__real_R3b: 1237 loci (1237 to run), mode=cpu, workers=5
+23:45:55 [harness] sharepro: 139/1237 loci done
+23:46:55 [harness] sharepro: 298/1237 loci done
+23:47:55 [harness] sharepro: 527/1237 loci done
+23:48:58 [harness] sharepro: 725/1237 loci done
+23:49:58 [harness] sharepro: 1195/1237 loci done
+23:50:03 [harness] done test_frozen-v1_ab94c5a1__sharepro__real_R3b: {'ok': 1237, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1237} in 309.3s

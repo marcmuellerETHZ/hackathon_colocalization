@@ -1,0 +1,4 @@
+[orch] job famG_mm_slice2000_v1 start 2026-10-28T10:00:41+01:00 host eu-g6-001 commit 99c5d46447 pid 2144265
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src; python -m famG.validation.timing_mm slice --out results/famG_mm/slice2000_v1 --n 2000
+2000 ids -> results/famG_mm/slice2000_v1/ids.txt
+[orch] exit 0 at 2026-10-28T10:00:42+01:00

@@ -1,0 +1,5 @@
+method	cell	n	ok	nonconverged	failed	timeout
+famA_joint_susie_rho_eta_ms_ptld	L2_P1_r_p=0.0	2000	2000	0	0	0
+famA_joint_susie_rho_eta_ms_ptld	L2_P3_rho=0.5	2000	1999	1	0	0
+famA_joint_susie_rho_eta_ms_ptld	L4_P1_r_p=0.0	2000	1986	14	0	0
+famA_joint_susie_rho_eta_ms_ptld	L4_P3_rho=0.5	2000	1984	16	0	0

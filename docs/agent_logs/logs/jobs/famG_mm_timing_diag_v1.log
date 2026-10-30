@@ -1,0 +1,5 @@
+[orch] job famG_mm_timing_diag_v1 start 2026-10-28T18:12:26+01:00 host eu-g6-001 commit bcc841ffa4 pid 2521306
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH; python -m famG.validation.timing_mm run --ids results/famG_mm/slice2000_v1/ids.txt --plan gmm:1 --out results/famG_mm/timing_diag_v1 --overrides "{\"gmm\": {\"n_workers\": 4, \"batch_size\": 250, \"kwargs\": {\"streams\": 3, \"mem_budget_gb\": 2.5}}}" 2>&1 | grep "^{"
+{"prewarm_s": 15.11018967628479, "prewarm_gb": 22.363691604, "workers": 16}
+{"method": "gmm", "target": "famG.method_mm:GPUColocSusieMM", "kwargs": {"ld_dtype": "float64", "mem_budget_gb": 2.5, "streams": 3}, "mode": "batch", "n_workers": 4, "batch_size": 250, "rep": 0, "n_loci": 2000, "harness_wall_s": 548.8433929970197, "driver_wall_s": 970.2144374847412, "loci_per_hour": 13118.496262993363, "counts": {"expected": 2000, "failed": 0, "nonconverged": 248, "ok": 1752, "timeout": 0}, "run_dir": "results/famG_mm/timing_diag_v1/20261028T171956Z_famG_coloc_susie_mm_gpu_valid_grid_v1_e518e9", "machine_state": null}
+[orch] exit 0 at 2026-10-28T18:29:08+01:00

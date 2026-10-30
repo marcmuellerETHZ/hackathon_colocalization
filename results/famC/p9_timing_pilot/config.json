@@ -1,0 +1,36 @@
+{
+ "run": "p9_timing_pilot",
+ "train_set": "train_v1",
+ "valid_set": "valid_dev",
+ "variant": "full",
+ "steps": 18750,
+ "batch": 256,
+ "lr": 0.0003,
+ "warmup": 1000,
+ "d": 128,
+ "layers": 4,
+ "K": 16,
+ "dropout": 0.0,
+ "energy": "free",
+ "eval_every": 2000,
+ "n_valid": 4096,
+ "max_train_shards": 3,
+ "seed_key": "main",
+ "stop_after": 700,
+ "pilot_sizes": "75776:2368,150000:4688,300000:9375,600000:18750",
+ "start": "2026-10-28 11:17:24",
+ "class_w": [
+  1.0,
+  1.0,
+  0.11999999731779099,
+  0.4000000059604645,
+  1.0
+ ],
+ "train_shards": [
+  "shardw0_00000.pt",
+  "shardw0_00001.pt",
+  "shardw0_00002.pt"
+ ],
+ "commit": "b4c4c0b13cda297c50c3b1350bf8f9b42d4f13cd",
+ "job": "famC_p9_timing_pilot"
+}

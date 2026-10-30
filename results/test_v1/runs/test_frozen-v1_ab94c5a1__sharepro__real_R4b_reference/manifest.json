@@ -1,0 +1,149 @@
+{
+ "checkpoint": {
+  "resumed": false,
+  "rows_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1/code/results/eval_test/test_frozen-v1_ab94c5a1/checkpoints/test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference.rows.jsonl",
+  "rows_from_checkpoint": 0,
+  "rows_this_segment": 600,
+  "segments": [
+   {
+    "git": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+    "host": "eu-g6-001",
+    "n_todo": 600,
+    "pid": 1826033,
+    "rows_from_checkpoint": 0,
+    "start_utc": "2026-10-27T22:57:32.769043Z"
+   }
+  ]
+ },
+ "config": {
+  "commit": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+  "methods_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1/code/configs/test_methods_v1.yaml",
+  "methods_file_sha256": "78585b027853316bfd34ff93bf0bf8ddf3b605414ac7e71b1b4301e3f9ff13ab",
+  "mode": "test",
+  "nonce": "ab94c5a1c097449db8d1d1f4bd18c168",
+  "set_key": "real_R4b_reference",
+  "subsample_per_class": null,
+  "tag": "frozen-v1",
+  "test_run": true,
+  "unit": "test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference"
+ },
+ "counts": {
+  "expected": 600,
+  "failed": 0,
+  "nonconverged": 0,
+  "ok": 600,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-27T23:01:25.762127Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "cab2599d5ea81288468a4e7abc6d58548766edd7",
+  "modified_tracked": [],
+  "orch_job": "test_run_v1",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/test_run_v1/code",
+  "tags": [
+   "frozen-v1"
+  ],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 5,
+  "timeout_s_per_locus": 60.0,
+  "timing": false
+ },
+ "label": "TEST test_frozen-v1_ab94c5a1",
+ "locus_set": {
+  "ids_sha256": "e6a8ac6eda2d069df9ee23c51c267b504b4aa070caf0dff0614f7969fa42ccf4",
+  "n_expected": 600,
+  "n_loci_in_file": 600,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/testset_v1/test_frozen-v1_ab94c5a1/real/R4b_test.nfe_minus_geuv.h5",
+  "sha256": "c0957a0bd4830467fd3a6c7f093002c3fc70537bab315f5e1aebdbc28f399dc4"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "100, 6516",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   51.2294921875,
+   54.08837890625,
+   50.9384765625
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 54
+  },
+  "name": "sharepro",
+  "target": "baselines.methods:SharePro"
+ },
+ "method_name": "sharepro",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": 3.717009480847768,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.23149745386910034,
+  "t_S": 0.8021643891632574,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": null,
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "d6b92de1af840907fe8a77d2a27edcb4eaf0ce84bdad8def3a36cbb65d022c07",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 207936,
+  "rule": "D6(h)"
+ },
+ "run_id": "test_frozen-v1_ab94c5a1__sharepro__real_R4b_reference",
+ "runtime_s": {
+  "median": 0.6526757374958834,
+  "p95": 7.166263881801567,
+  "sum": 1099.3383775489056
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-27T22:57:32.769043Z",
+ "test_access": true,
+ "truth": null,
+ "wall_s": 232.99305576301413
+}

@@ -1,0 +1,8 @@
+[orch] job p2va_sha256_sets start 2026-10-27T10:30:07+01:00 host eu-g6-001 commit 334e1828e8 pid 924745
+[orch] cmd: set -euo pipefail; cd '/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets'; mkdir -p '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/h'; { find screen_v2 valid_grid_v1 -type f; ls screen_v2.h5 screen_v2.truth.parquet screen_v2.stats.L*.json valid_grid_v1.h5 valid_grid_v1.truth.parquet valid_grid_v1.stats.json; } | sort > '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/files.txt'; wc -l '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/files.txt'; t0=1793093407; tr '\n' '\0' < '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/files.txt' | xargs -0 -P 16 -I{} sh -c 'sha256sum \'$1\' > \'/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/h/$(printf %s \'$1\' | tr / @).sha\'' _ {}; cat '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out'/h/*.sha | sort -k2 > '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/SHA256SUMS.sets'; wc -l '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/SHA256SUMS.sets'; echo 'elapsed 1793093407 s'; du -sb screen_v2 valid_grid_v1
+88 /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/files.txt
+88 /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_sha256_sets/out/SHA256SUMS.sets
+elapsed 81 s
+127126455336	screen_v2
+248215529767	valid_grid_v1
+[orch] exit 0 at 2026-10-27T10:31:28+01:00

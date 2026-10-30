@@ -1,0 +1,57 @@
+[eval_test 10:02:50] real-data arms ready: real_R2 n=16, real_R3b n=25, real_R4b_insample n=12, real_R4b_reference n=12
+[eval_test 10:02:50] status: running []; pending []
+[eval_test 10:02:50] generating main grid: 34/34 cells to do (segment 0)
+[eval_test 10:02:52] start dry_p9_v2__coloc_susie_mm__real_R3b: 25 loci, 4 workers (busy 6/7 cores, 14/16 GB; 7 pending)
+[eval_test 10:03:51] unit done dry_p9_v2__coloc_susie_mm__real_R3b: {'ok': 24, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 25} in 59s
+[eval_test 10:03:52] start dry_p9_v2__coloc_susie_mm__real_R2: 16 loci, 4 workers (busy 6/7 cores, 14/16 GB; 6 pending)
+[eval_test 10:05:13] unit done dry_p9_v2__coloc_susie_mm__real_R2: {'ok': 15, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 16} in 81s
+[eval_test 10:05:14] start dry_p9_v2__coloc_susie_mm__real_R4b_insample: 12 loci, 4 workers (busy 6/7 cores, 14/16 GB; 5 pending)
+[eval_test 10:05:51] unit done dry_p9_v2__coloc_susie_mm__real_R4b_insample: {'ok': 11, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 12} in 37s
+[eval_test 10:05:52] start dry_p9_v2__coloc_susie_mm__real_R4b_reference: 12 loci, 4 workers (busy 6/7 cores, 14/16 GB; 4 pending)
+[eval_test 10:05:55] main grid: 34 cells -> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5 (184s)
+[eval_test 10:05:55] generating shifted arm
+[eval_test 10:06:15] shifted arm -> /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5 (20s)
+[eval_test 10:06:16] start dry_p9_v2__coloc_abf__real_R3b: 25 loci, 2 workers (busy 6/7 cores, 16/16 GB; 3 pending)
+[eval_test 10:06:18] disjointness vs v1 (main): keys 15800 vs 1361000, key overlap 0, derived-seed overlap 0, locus-id overlap n/a
+[eval_test 10:06:18] disjointness vs v1 (shifted): keys 1080 vs 1800, key overlap 0, derived-seed overlap 0, locus-id overlap n/a
+[eval_test 10:06:19] simulated sets ready: main n=241, shifted n=32
+[eval_test 10:06:21] unit done dry_p9_v2__coloc_susie_mm__real_R4b_reference: {'ok': 12, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12} in 29s
+[eval_test 10:06:22] unit done dry_p9_v2__coloc_abf__real_R3b: {'ok': 25, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 25} in 6s
+[eval_test 10:06:22] start dry_p9_v2__coloc_susie_mm__sim_main: 241 loci, 4 workers (busy 4/7 cores, 14/16 GB; 16 pending)
+[eval_test 10:06:22] start dry_p9_v2__lead_snp__sim_main: 241 loci, 2 workers (busy 6/7 cores, 16/16 GB; 15 pending)
+[eval_test 10:06:27] unit done dry_p9_v2__lead_snp__sim_main: {'ok': 241, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 241} in 4s
+[eval_test 10:06:28] start dry_p9_v2__coloc_abf__sim_main: 241 loci, 2 workers (busy 6/7 cores, 16/16 GB; 14 pending)
+[eval_test 10:06:32] unit done dry_p9_v2__coloc_abf__sim_main: {'ok': 241, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 241} in 4s
+[eval_test 10:06:32] start dry_p9_v2__strength_only__sim_main: 241 loci, 2 workers (busy 6/7 cores, 15/16 GB; 13 pending)
+[eval_test 10:06:32] start dry_p9_v2__strength_only__sim_shifted: 32 loci, 1 workers (busy 7/7 cores, 16/16 GB; 12 pending)
+[eval_test 10:06:36] unit done dry_p9_v2__strength_only__sim_shifted: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 3s
+[eval_test 10:06:36] start dry_p9_v2__strength_only__real_R3b: 25 loci, 1 workers (busy 7/7 cores, 16/16 GB; 11 pending)
+[eval_test 10:06:38] unit done dry_p9_v2__strength_only__sim_main: {'ok': 241, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 241} in 5s
+[eval_test 10:06:38] start dry_p9_v2__lead_snp__sim_shifted: 32 loci, 1 workers (busy 6/7 cores, 16/16 GB; 10 pending)
+[eval_test 10:06:41] unit done dry_p9_v2__strength_only__real_R3b: {'ok': 25, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 25} in 4s
+[eval_test 10:06:41] unit done dry_p9_v2__lead_snp__sim_shifted: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 3s
+[eval_test 10:06:42] start dry_p9_v2__coloc_abf__sim_shifted: 32 loci, 2 workers (busy 6/7 cores, 16/16 GB; 9 pending)
+[eval_test 10:06:45] unit done dry_p9_v2__coloc_abf__sim_shifted: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 2s
+[eval_test 10:06:46] start dry_p9_v2__coloc_abf__real_R2: 16 loci, 2 workers (busy 6/7 cores, 16/16 GB; 8 pending)
+[eval_test 10:06:51] unit done dry_p9_v2__coloc_abf__real_R2: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 4s
+[eval_test 10:06:52] start dry_p9_v2__coloc_abf__real_R4b_insample: 12 loci, 2 workers (busy 6/7 cores, 16/16 GB; 7 pending)
+[eval_test 10:06:58] unit done dry_p9_v2__coloc_abf__real_R4b_insample: {'ok': 12, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12} in 5s
+[eval_test 10:06:58] start dry_p9_v2__coloc_abf__real_R4b_reference: 12 loci, 2 workers (busy 6/7 cores, 16/16 GB; 6 pending)
+[eval_test 10:07:02] unit done dry_p9_v2__coloc_abf__real_R4b_reference: {'ok': 12, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12} in 3s
+[eval_test 10:07:02] start dry_p9_v2__strength_only__real_R2: 16 loci, 2 workers (busy 6/7 cores, 15/16 GB; 5 pending)
+[eval_test 10:07:02] start dry_p9_v2__strength_only__real_R4b_insample: 12 loci, 1 workers (busy 7/7 cores, 16/16 GB; 4 pending)
+[eval_test 10:07:08] unit done dry_p9_v2__strength_only__real_R2: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 6s
+[eval_test 10:07:08] unit done dry_p9_v2__strength_only__real_R4b_insample: {'ok': 12, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12} in 6s
+[eval_test 10:07:08] start dry_p9_v2__strength_only__real_R4b_reference: 12 loci, 2 workers (busy 6/7 cores, 15/16 GB; 3 pending)
+[eval_test 10:07:12] unit done dry_p9_v2__strength_only__real_R4b_reference: {'ok': 12, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12} in 3s
+[eval_test 10:12:50] status: running ['dry_p9_v2__coloc_susie_mm__sim_main']; pending ['dry_p9_v2__coloc_susie_mm__sim_shifted', 'dry_p9_v2__colocboost_m1__sim_main', 'dry_p9_v2__colocboost_m1__sim_shifted']
+[eval_test 10:14:05] unit done dry_p9_v2__coloc_susie_mm__sim_main: {'ok': 205, 'nonconverged': 36, 'failed': 0, 'timeout': 0, 'expected': 241} in 463s
+[eval_test 10:14:06] start dry_p9_v2__coloc_susie_mm__sim_shifted: 32 loci, 4 workers (busy 4/7 cores, 14/16 GB; 2 pending)
+[eval_test 10:15:21] unit done dry_p9_v2__coloc_susie_mm__sim_shifted: {'ok': 27, 'nonconverged': 5, 'failed': 0, 'timeout': 0, 'expected': 32} in 75s
+[eval_test 10:15:22] start dry_p9_v2__colocboost_m1__sim_main: 102 loci, 4 workers (busy 4/7 cores, 7/16 GB; 1 pending)
+[eval_test 10:15:22] start dry_p9_v2__colocboost_m1__sim_shifted: 10 loci, 3 workers (busy 7/7 cores, 12/16 GB; 0 pending)
+[eval_test 10:15:28] unit done dry_p9_v2__colocboost_m1__sim_shifted: {'ok': 10, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 10} in 6s
+[eval_test 10:15:37] unit done dry_p9_v2__colocboost_m1__sim_main: {'ok': 102, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 102} in 14s
+[eval_test 10:15:39] evaluate sim benchmark: 273 loci, 5 methods, per-method id lists ['colocboost_m1']
+[eval_test 10:16:51] verify sim benchmark (every harness run re-verified, every (sub-)benchmark recomputed)
+[eval_test 10:18:04] bundle written: /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/bundle.json (verify ok: True)

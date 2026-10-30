@@ -1,0 +1,105 @@
+[orch] job famG_mm_bench_v4 start 2026-10-28T11:19:59+01:00 host eu-g6-001 commit 885f65cb66 pid 2304049
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH; mkdir -p results/famG_mm/bench_v1; python -m famG.validation.bench_mm --n 512 --batch 128 --mem-gb 1.5 --dtype float32 --profile --out results/famG_mm/bench_v1/fp32.json; python -m famG.validation.bench_mm --n 512 --batch 128 --mem-gb 1.5 --dtype float64 --out results/famG_mm/bench_v1/fp64.json
+{
+ "n": 512,
+ "io_s": 35.66987609863281,
+ "fit_s_rep0": 228.7672460079193,
+ "fit_s_rep1": 218.02585315704346,
+ "fit_loci_per_s": 2.348345357149951,
+ "status": {
+  "ok": 484,
+  "nonconverged": 28
+ },
+ "niter_mean": 7.1357421875,
+ "max_mem_gb": 2.673866752
+}
+USDT:2026-10-28 11:28:20 2304059:2304059 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-28 11:29:08 2304059:2304059 SyncActivityProfilerHandler.cpp:46] profiler_stop
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                          _brent_kernel         0.00%       0.000us         0.00%       0.000us       0.000us       19.305s        78.27%       19.305s       2.530ms          7630  
+                                        _loglik3_kernel         0.00%       0.000us         0.00%       0.000us       0.000us        1.182s         4.79%        1.182s     309.509us          3820  
+                                              aten::bmm         0.57%     236.702ms         0.64%     268.003ms      56.315us        1.132s         4.59%        1.132s     237.932us          4759  
+void gemmSN_NN_kernel<float, 256, 4, 2, 8, 2, 4, fal...         0.00%       0.000us         0.00%       0.000us       0.000us     458.362ms         1.86%     458.362ms     197.826us          2317  
+                                           aten::matmul         0.00%      94.233us         0.01%       2.268ms      55.329us       0.000us         0.00%     456.076ms      11.124ms            41  
+                                               aten::mm         0.00%       1.850ms         0.01%       2.174ms      53.030us     456.076ms         1.85%     456.076ms      11.124ms            41  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us     428.269ms         1.74%     428.269ms      32.944ms            13  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us     375.564ms         1.52%     375.564ms      37.556ms            10  
+                                            aten::copy_         0.54%     226.444ms         8.70%        3.630s      55.456us     372.333ms         1.51%     372.333ms       5.689us         65452  
+                                               aten::to         0.08%      35.025ms         6.19%        2.582s      32.496us       0.000us         0.00%     321.952ms       4.051us         79468  
+                                         aten::_to_copy         0.18%      75.268ms         6.10%        2.547s      79.354us       0.000us         0.00%     321.952ms      10.029us         32101  
+                                              aten::div         0.78%     325.042ms         1.28%     536.064ms       8.233us     286.402ms         1.16%     286.402ms       4.398us         65114  
+                                              aten::mul         1.63%     681.649ms         2.77%        1.154s       7.546us     217.643ms         0.88%     217.643ms       1.423us        152962  
+                       Memcpy HtoD (Pageable -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us     209.705ms         0.85%     209.705ms     117.154us          1790  
+                                              aten::max         0.61%     253.024ms         0.86%     358.949ms      14.199us     190.992ms         0.77%     190.992ms       7.555us         25280  
+void at::native::reduce_kernel<512, 1, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us     184.219ms         0.75%     184.219ms       8.484us         21714  
+                                            aten::index         0.90%     375.775ms         1.49%     620.171ms      11.951us     170.080ms         0.69%     170.080ms       3.278us         51893  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us     166.525ms         0.68%     166.525ms       5.163us         32254  
+                                            aten::where         1.31%     546.428ms         3.06%        1.279s      11.648us     151.849ms         0.62%     151.849ms       1.383us        109797  
+                                              aten::log         0.35%     148.066ms         0.61%     252.646ms       7.488us     137.665ms         0.56%     137.665ms       4.080us         33740  
+                                              aten::add         1.12%     467.653ms         1.87%     781.828ms       7.698us     133.575ms         0.54%     133.575ms       1.315us        101563  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us     130.076ms         0.53%     130.076ms       4.376us         29725  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     122.225ms         0.50%     122.225ms       2.821us         43322  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us     119.010ms         0.48%     119.010ms       1.981us         60073  
+void at::native::elementwise_kernel<128, 2, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     117.718ms         0.48%     117.718ms       3.750us         31394  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us      92.996ms         0.38%      92.996ms       1.245us         74704  
+                                              aten::abs         0.28%     115.413ms         1.00%     418.169ms      10.643us      46.197ms         0.19%      92.393ms       2.351us         39292  
+void cutlass::Kernel2<cutlass_80_tensorop_d884gemm_6...         0.00%       0.000us         0.00%       0.000us       0.000us      92.255ms         0.37%      92.255ms       3.295ms            28  
+                                              aten::exp         0.23%      95.248ms         0.38%     157.593ms       8.482us      86.522ms         0.35%      86.522ms       4.657us         18580  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us      86.522ms         0.35%      86.522ms       4.726us         18307  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 41.744s
+Self CUDA time total: 24.665s
+
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                  cudaStreamSynchronize        70.89%       29.591s        70.89%       29.591s       2.250ms       0.000us         0.00%       0.000us       0.000us         13149  
+                                          aten::nonzero         0.24%      99.218ms        44.91%       18.745s       4.788ms      18.653ms         0.08%      18.653ms       4.765us          3915  
+                                             aten::item         0.02%       9.946ms        22.11%        9.228s       1.352ms       0.000us         0.00%       6.840ms       1.002us          6828  
+                              aten::_local_scalar_dense         0.08%      33.133ms        22.08%        9.218s       1.350ms       6.840ms         0.03%       6.840ms       1.002us          6828  
+                                       aten::is_nonzero         0.01%       2.188ms         9.76%        4.074s       2.019ms       0.000us         0.00%       2.022ms       1.002us          2018  
+                                            aten::copy_         0.54%     226.444ms         8.70%        3.630s      55.456us     372.333ms         1.51%     372.333ms       5.689us         65452  
+                                       cudaLaunchKernel         7.83%        3.270s         7.94%        3.314s       3.247us       0.000us         0.00%       0.000us       0.000us       1020422  
+                                               aten::to         0.08%      35.025ms         6.19%        2.582s      32.496us       0.000us         0.00%     321.952ms       4.051us         79468  
+                                         aten::_to_copy         0.18%      75.268ms         6.10%        2.547s      79.354us       0.000us         0.00%     321.952ms      10.029us         32101  
+                                        cudaMemcpyAsync         3.22%        1.345s         3.23%        1.347s      72.006us       0.000us         0.00%       0.000us       0.000us         18700  
+                                            aten::where         1.31%     546.428ms         3.06%        1.279s      11.648us     151.849ms         0.62%     151.849ms       1.383us        109797  
+                                              aten::mul         1.63%     681.649ms         2.77%        1.154s       7.546us     217.643ms         0.88%     217.643ms       1.423us        152962  
+                                              aten::add         1.12%     467.653ms         1.87%     781.828ms       7.698us     133.575ms         0.54%     133.575ms       1.315us        101563  
+                                         aten::isfinite         0.15%      64.168ms         1.52%     634.750ms      40.585us       0.000us         0.00%      74.145ms       4.741us         15640  
+                                            aten::index         0.90%     375.775ms         1.49%     620.171ms      11.951us     170.080ms         0.69%     170.080ms       3.278us         51893  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 41.744s
+Self CUDA time total: 24.665s
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/validation/bench_mm.py", line 65, in <module>
+    main()
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/validation/bench_mm.py", line 42, in main
+    rows += m.fit_batch(loci[k:k + a.batch])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/method_mm.py", line 43, in fit_batch
+    fits = susie_mm_batch(dicts, self.cfg, device=self.device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/susie_mm.py", line 608, in susie_mm_batch
+    run(bucket)
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/susie_mm.py", line 595, in run
+    res = _fit_bucket([loci[i]["z"] for i in bucket], [loci[i]["n"] for i in bucket], lds, kind,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/susie_mm.py", line 540, in _fit_bucket
+    flush(done)
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/susie_mm.py", line 458, in flush
+    sets = _credible_sets(alpha, V[k], st.ld, r // T, p, cfg) if not fail[k] else \
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/susie_rss.py", line 276, in _credible_sets
+    C = ld.corr_sub(b, ix).abs()
+        ^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_bench_v4/code/src/famG/ld.py", line 66, in corr_sub
+    return sub / dg[:, None] / dg[None, :]
+           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 52.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 6.00 GiB is free. Process 2128864 has 1.80 GiB memory in use. Process 2143296 has 3.58 GiB memory in use. Process 2143292 has 2.82 GiB memory in use. Process 2143390 has 2.80 GiB memory in use. Including non-PyTorch memory, this process has 3.92 GiB memory in use. Process 2309519 has 2.55 GiB memory in use. 3.50 GiB allowed; Of the allocated memory 3.25 GiB is allocated by PyTorch, and 227.76 MiB is reserved by PyTorch but unallocated.
+[orch] exit 1 at 2026-10-28T11:35:58+01:00

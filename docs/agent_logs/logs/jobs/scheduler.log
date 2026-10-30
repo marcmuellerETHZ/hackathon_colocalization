@@ -1,0 +1,401 @@
+[2026-10-27T10:24:56+01:00] scheduler start pid 918875 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T10:30:07+01:00] launched p2va_sha256_sets pid 924745 gpu=False vram=0 cores=16
+[2026-10-27T10:30:40+01:00] launched p2rs_pytest_sim_stats pid 925831 gpu=True vram=8.0 cores=8
+[2026-10-27T10:30:44+01:00] launched p2rw_tests_baselines pid 925977 gpu=False vram=0 cores=8
+[2026-10-27T10:30:52+01:00] launched p2rw_tests_baselines_r2 pid 926110 gpu=False vram=0 cores=8
+[2026-10-27T10:31:28+01:00] job p2va_sha256_sets -> done (exit 0) 
+[2026-10-27T10:31:28+01:00] job p2rw_tests_baselines_r2 -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:32:45+01:00] launched p2rA_pytest_famAG pid 928027 gpu=True vram=8.0 cores=4
+[2026-10-27T10:32:56+01:00] job p2rs_pytest_sim_stats -> done (exit 0) 
+[2026-10-27T10:33:27+01:00] launched p2va_l0star_v2 pid 928636 gpu=True vram=4.0 cores=2
+[2026-10-27T10:33:29+01:00] launched p2va_regen_screen_v2 pid 928713 gpu=True vram=7.0 cores=2
+[2026-10-27T10:34:03+01:00] job p2va_regen_screen_v2 -> done (exit 0) 
+[2026-10-27T10:34:03+01:00] launched p2va_regen_valid_grid_v1 pid 929383 gpu=True vram=7.0 cores=2
+[2026-10-27T10:34:24+01:00] launched p2rw_tests_baselines_r3 pid 929696 gpu=False vram=0 cores=8
+[2026-10-27T10:34:26+01:00] launched p2rw_tests_eval_cfg pid 929772 gpu=False vram=0 cores=4
+[2026-10-27T10:34:45+01:00] launched p4_realdata_rho_tests pid 930328 gpu=False vram=0 cores=4
+[2026-10-27T10:34:49+01:00] job p2va_regen_valid_grid_v1 -> done (exit 0) 
+[2026-10-27T10:34:49+01:00] launched p4_realdata_rho_update pid 930471 gpu=False vram=0 cores=32
+[2026-10-27T10:34:51+01:00] job p4_realdata_rho_tests -> done (exit 0) 
+[2026-10-27T10:36:05+01:00] launched p2rA_layerE_check pid 931589 gpu=False vram=0 cores=2
+[2026-10-27T10:36:26+01:00] job p2rw_tests_eval_cfg -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:36:49+01:00] job p2rA_layerE_check -> done (exit 0) 
+[2026-10-27T10:36:49+01:00] launched p2rA_g_identity pid 932653 gpu=True vram=6.0 cores=2
+[2026-10-27T10:36:51+01:00] job p2rA_pytest_famAG -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:36:51+01:00] launched p2rs_checks pid 932706 gpu=False vram=0 cores=4
+[2026-10-27T10:37:02+01:00] job p2rw_tests_baselines_r3 -> done (exit 0) 
+[2026-10-27T10:37:02+01:00] launched p2rA_pd_check pid 932814 gpu=True vram=8.0 cores=4
+[2026-10-27T10:38:03+01:00] job p2rs_checks -> done (exit 0) 
+[2026-10-27T10:38:18+01:00] job p2va_l0star_v2 -> done (exit 0) 
+[2026-10-27T10:38:22+01:00] job p4_realdata_rho_update -> done (exit 0) 
+[2026-10-27T10:38:33+01:00] launched p2rs_checks_c2 pid 933792 gpu=False vram=0 cores=2
+[2026-10-27T10:38:48+01:00] job p2rs_checks_c2 -> done (exit 0) 
+[2026-10-27T10:38:58+01:00] job p2rA_g_identity -> done (exit 0) 
+[2026-10-27T10:38:58+01:00] launched p2rs_pytest_sim_stats_r2 pid 934115 gpu=True vram=8.0 cores=8
+[2026-10-27T10:39:51+01:00] launched p4_realdata_rho_diag pid 934990 gpu=False vram=0 cores=32
+[2026-10-27T10:40:10+01:00] job p4_realdata_rho_diag -> done (exit 0) 
+[2026-10-27T10:41:33+01:00] job p2rs_pytest_sim_stats_r2 -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:41:33+01:00] launched p2rA_pytest_famAG_r2 pid 936635 gpu=True vram=8.0 cores=4
+[2026-10-27T10:42:21+01:00] job p2rA_pd_check -> done (exit 0) 
+[2026-10-27T10:43:52+01:00] launched famA_p3fix_tests_r1 pid 939250 gpu=True vram=8.0 cores=4
+[2026-10-27T10:43:56+01:00] job p2rA_pytest_famAG_r2 -> done (exit 0) 
+[2026-10-27T10:44:09+01:00] job famA_p3fix_tests_r1 -> done (exit 0) 
+[2026-10-27T10:44:42+01:00] launched famA_p3fix_tests_r2 pid 940145 gpu=True vram=8.0 cores=4
+[2026-10-27T10:44:59+01:00] launched p2rA_pd_check_mc1e7 pid 940636 gpu=True vram=4.0 cores=2
+[2026-10-27T10:45:35+01:00] job p2rA_pd_check_mc1e7 -> done (exit 0) 
+[2026-10-27T10:45:41+01:00] launched p5vi_tests_full pid 941191 gpu=True vram=10.0 cores=8
+[2026-10-27T10:48:29+01:00] job famA_p3fix_tests_r2 -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:49:49+01:00] launched famA_refldvar_v2 pid 946533 gpu=False vram=0 cores=4
+[2026-10-27T10:49:51+01:00] launched famA_p3fix_tests_r3 pid 946660 gpu=True vram=8.0 cores=4
+[2026-10-27T10:50:28+01:00] job famA_refldvar_v2 -> done (exit 0) 
+[2026-10-27T10:51:57+01:00] launched p5vi_scan_testsplit pid 949319 gpu=False vram=0 cores=2
+[2026-10-27T10:51:59+01:00] launched p5vi_oracle_check pid 949398 gpu=False vram=0 cores=4
+[2026-10-27T10:53:14+01:00] job p5vi_oracle_check -> done (exit 0) 
+[2026-10-27T10:54:11+01:00] job famA_p3fix_tests_r3 -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:54:11+01:00] launched famB_l0star_ref_v1 pid 951303 gpu=True vram=6.0 cores=8
+[2026-10-27T10:56:06+01:00] launched p4b_subsample_screen pid 953223 gpu=False vram=0 cores=2
+[2026-10-27T10:56:09+01:00] launched p4b_subsample_m4 pid 953355 gpu=False vram=0 cores=2
+[2026-10-27T10:56:11+01:00] launched p4b_tests_baselines pid 953421 gpu=False vram=0 cores=8
+[2026-10-27T10:57:30+01:00] job p5vi_scan_testsplit -> done (exit 0) 
+[2026-10-27T10:57:37+01:00] job p4b_subsample_screen -> done (exit 0) 
+[2026-10-27T10:58:28+01:00] job p4b_tests_baselines -> failed (exit 1) nonzero exit 1
+[2026-10-27T10:59:23+01:00] launched p5vi_gitinfo_probe pid 958227 gpu=False vram=0 cores=1
+[2026-10-27T10:59:30+01:00] job p5vi_gitinfo_probe -> done (exit 0) 
+[2026-10-27T11:00:08+01:00] job p4b_subsample_m4 -> done (exit 0) 
+[2026-10-27T11:00:56+01:00] launched p4b_scr_L0P1_mvsusie pid 958902 gpu=False vram=0 cores=24
+[2026-10-27T11:01:06+01:00] launched p4b_scr_L0P1_prop_coloc pid 959131 gpu=False vram=0 cores=4
+[2026-10-27T11:03:58+01:00] job p5vi_tests_full -> failed (exit 1) nonzero exit 1
+[2026-10-27T11:03:58+01:00] launched famA_p3fix_smoke_r1 pid 961836 gpu=True vram=12.0 cores=4
+[2026-10-27T11:09:08+01:00] job p4b_scr_L0P1_prop_coloc -> done (exit 0) 
+[2026-10-27T11:09:08+01:00] launched p4b_scr_L0P1_colocboost_m1 pid 964674 gpu=False vram=0 cores=4
+[2026-10-27T11:09:17+01:00] launched famA_p3fix_tests_r5 pid 965099 gpu=True vram=8.0 cores=4
+[2026-10-27T11:10:54+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T11:10:57+01:00] scheduler start pid 967305 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T11:13:15+01:00] job famA_p3fix_smoke_r1 -> done (exit 0) 
+[2026-10-27T11:13:15+01:00] launched famC_c1_tests_r1 pid 968642 gpu=True vram=10.0 cores=4
+[2026-10-27T11:13:15+01:00] launched p4b_scr_L0P1_coloc_prop_test pid 968645 gpu=False vram=0 cores=6
+[2026-10-27T11:13:15+01:00] launched p4b_scr_L0P1_lead_snp pid 968648 gpu=False vram=0 cores=2
+[2026-10-27T11:15:14+01:00] job p4b_scr_L0P1_colocboost_m1 -> done (exit 0) 
+[2026-10-27T11:15:14+01:00] launched p4b_scr_L0P1_sharepro pid 972040 gpu=False vram=0 cores=4
+[2026-10-27T11:15:14+01:00] launched p4b_scr_L0P1_coloc_abf_W0p1_p12_5em06 pid 972047 gpu=False vram=0 cores=2
+[2026-10-27T11:15:23+01:00] job famC_c1_tests_r1 -> done (exit 0) 
+[2026-10-27T11:15:23+01:00] launched p4b_scr_L0P1_colocboost pid 974177 gpu=False vram=0 cores=6
+[2026-10-27T11:16:22+01:00] job famA_p3fix_tests_r5 -> done (exit 0) 
+[2026-10-27T11:16:22+01:00] launched p4b_tests_baselines_r2 pid 979251 gpu=False vram=0 cores=8
+[2026-10-27T11:17:40+01:00] job p4b_scr_L0P1_coloc_abf_W0p1_p12_5em06 -> done (exit 0) 
+[2026-10-27T11:17:40+01:00] launched p4b_scr_L0P1_sharepro_r2 pid 981516 gpu=False vram=0 cores=4
+[2026-10-27T11:17:43+01:00] job p4b_scr_L0P1_lead_snp -> done (exit 0) 
+[2026-10-27T11:17:43+01:00] launched p4b_scr_L0P1_coloc_abf_W0p1_p12_5em06_r2 pid 981615 gpu=False vram=0 cores=2
+[2026-10-27T11:20:17+01:00] job p4b_tests_baselines_r2 -> done (exit 0) 
+[2026-10-27T11:20:17+01:00] launched famC_c1_pilot_eval_r1 pid 984384 gpu=True vram=6.0 cores=4
+[2026-10-27T11:20:34+01:00] job p4b_scr_L0P1_sharepro -> done (exit 0) 
+[2026-10-27T11:20:34+01:00] launched p4b_scr_L0P1_coloc_abf_W0p1_p12_1em05_r2 pid 984735 gpu=False vram=0 cores=2
+[2026-10-27T11:20:34+01:00] launched p4b_scr_L0P1_coloc_abf_W0p15_p12_5em06_r2 pid 984737 gpu=False vram=0 cores=2
+[2026-10-27T11:21:37+01:00] job p4b_scr_L0P1_coloc_abf_W0p1_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T11:21:37+01:00] launched p4b_scr_L0P1_coloc_abf_W0p15_p12_1em05_r2 pid 985796 gpu=False vram=0 cores=2
+[2026-10-27T11:21:51+01:00] job famC_c1_pilot_eval_r1 -> done (exit 0) 
+[2026-10-27T11:21:51+01:00] launched famB_tests_p4 pid 985998 gpu=True vram=6.0 cores=8
+[2026-10-27T11:23:30+01:00] job p4b_scr_L0P1_coloc_prop_test -> done (exit 0) 
+[2026-10-27T11:23:30+01:00] launched p4b_scr_L0P1_colocboost_r2 pid 986986 gpu=False vram=0 cores=6
+[2026-10-27T11:24:38+01:00] job p4b_scr_L0P1_sharepro_r2 -> done (exit 0) 
+[2026-10-27T11:24:38+01:00] launched p4b_scr_L0P1_coloc_susie_r2 pid 987724 gpu=False vram=0 cores=8
+[2026-10-27T11:24:41+01:00] job p4b_scr_L0P1_colocboost -> done (exit 0) 
+[2026-10-27T11:24:41+01:00] launched p4b_scr_L0P1_coloc_abf_W0p2_p12_5em06_r2 pid 987773 gpu=False vram=0 cores=2
+[2026-10-27T11:24:41+01:00] launched p4b_scr_L0P1_coloc_abf_W0p2_p12_1em05_r2 pid 987774 gpu=False vram=0 cores=2
+[2026-10-27T11:24:41+01:00] launched p4b_scr_control_r2 pid 987778 gpu=False vram=0 cores=8
+[2026-10-27T11:24:50+01:00] job p4b_scr_L0P1_coloc_abf_W0p1_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T11:24:50+01:00] job p4b_scr_L0P1_coloc_abf_W0p15_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T11:24:50+01:00] job p4b_scr_L0P1_coloc_abf_W0p15_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T11:24:50+01:00] launched p4b_scr_rest_sharepro_r2 pid 991455 gpu=False vram=0 cores=8
+[2026-10-27T11:25:07+01:00] job famB_tests_p4 -> failed (exit 1) nonzero exit 1
+[2026-10-27T11:25:07+01:00] launched p4b_scr_rest_coloc_prop_test_r2 pid 992288 gpu=False vram=0 cores=6
+[2026-10-27T11:25:07+01:00] launched p4b_scr_rest_colocboost_r2 pid 992289 gpu=False vram=0 cores=4
+[2026-10-27T11:27:42+01:00] job p4b_scr_L0P1_coloc_abf_W0p2_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T11:27:42+01:00] job p4b_scr_L0P1_coloc_abf_W0p2_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T11:27:42+01:00] launched p4b_scr_rest_prop_coloc_r2 pid 995923 gpu=False vram=0 cores=6
+[2026-10-27T11:29:53+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T11:29:55+01:00] scheduler start pid 998617 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T11:36:57+01:00] job p4b_scr_control_r2 -> done (exit 0) 
+[2026-10-27T11:43:08+01:00] job p4b_scr_L0P1_mvsusie -> done (exit 0) 
+[2026-10-27T11:43:08+01:00] launched famC_c1_v2_train pid 1009514 gpu=True vram=10.0 cores=4
+[2026-10-27T11:43:08+01:00] launched famB_l0star_ref_v2run pid 1009515 gpu=True vram=6.0 cores=8
+[2026-10-27T11:43:08+01:00] launched p4b_scr_rest_colocboost_m1_r2 pid 1009517 gpu=False vram=0 cores=2
+[2026-10-27T11:43:08+01:00] launched p4b_scr_rest_lead_snp_r2 pid 1009521 gpu=False vram=0 cores=4
+[2026-10-27T11:43:08+01:00] launched p4b_scr_rest_coloc_abf_W0p1_p12_5em06_r2 pid 1009526 gpu=False vram=0 cores=2
+[2026-10-27T11:43:08+01:00] launched p4b_scr_rest_coloc_abf_W0p1_p12_1em05_r2 pid 1009533 gpu=False vram=0 cores=2
+[2026-10-27T11:43:08+01:00] launched p4b_scr_rest_coloc_abf_W0p15_p12_5em06_r2 pid 1009540 gpu=False vram=0 cores=2
+[2026-10-27T11:44:36+01:00] job p4b_scr_L0P1_coloc_susie_r2 -> done (exit 0) 
+[2026-10-27T11:46:55+01:00] job p4b_scr_rest_lead_snp_r2 -> done (exit 0) 
+[2026-10-27T11:46:55+01:00] job p4b_scr_rest_coloc_abf_W0p1_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T11:46:58+01:00] job p4b_scr_rest_coloc_abf_W0p1_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T11:46:58+01:00] job p4b_scr_rest_coloc_abf_W0p15_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T11:46:58+01:00] launched p4b_scr_L0P1_coloc_susie_mm_r2 pid 1012443 gpu=False vram=0 cores=16
+[2026-10-27T11:48:54+01:00] job p4b_scr_rest_colocboost_m1_r2 -> done (exit 0) 
+[2026-10-27T12:01:59+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T12:02:02+01:00] scheduler start pid 1020532 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T12:06:21+01:00] job p4b_scr_rest_coloc_prop_test_r2 -> done (exit 0) 
+[2026-10-27T12:07:09+01:00] job famB_l0star_ref_v2run -> done (exit 0) 
+[2026-10-27T12:07:09+01:00] launched famB_screen_pilot_r2 pid 1022842 gpu=True vram=8.0 cores=8
+[2026-10-27T12:07:09+01:00] launched p4b_scr_rest_coloc_abf_W0p15_p12_1em05_r2 pid 1022843 gpu=False vram=0 cores=2
+[2026-10-27T12:07:09+01:00] launched p4b_scr_rest_coloc_abf_W0p2_p12_5em06_r2 pid 1022845 gpu=False vram=0 cores=2
+[2026-10-27T12:08:31+01:00] job p4b_scr_rest_prop_coloc_r2 -> done (exit 0) 
+[2026-10-27T12:10:24+01:00] job famB_screen_pilot_r2 -> done (exit 0) 
+[2026-10-27T12:10:24+01:00] launched famA_p5_m4_primary_r2 pid 1025694 gpu=True vram=7.0 cores=2
+[2026-10-27T12:10:24+01:00] launched famA_p5_scrL24_primary pid 1025698 gpu=True vram=4.0 cores=2
+[2026-10-27T12:10:24+01:00] launched p4b_scr_rest_coloc_abf_W0p2_p12_1em05_r2 pid 1025704 gpu=False vram=0 cores=2
+[2026-10-27T12:10:24+01:00] launched p4b_m4_colocboost_r2 pid 1025708 gpu=False vram=0 cores=8
+[2026-10-27T12:10:24+01:00] launched p4b_m4_colocboost_m1_r2 pid 1025710 gpu=False vram=0 cores=2
+[2026-10-27T12:11:44+01:00] job p4b_scr_rest_coloc_abf_W0p15_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T12:11:44+01:00] job p4b_scr_rest_coloc_abf_W0p2_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T12:14:18+01:00] job p4b_scr_rest_colocboost_r2 -> done (exit 0) 
+[2026-10-27T12:14:18+01:00] launched p4b_m4_sharepro_r2 pid 1027239 gpu=False vram=0 cores=8
+[2026-10-27T12:14:18+01:00] launched p4b_m4_lead_snp_r2 pid 1027240 gpu=False vram=0 cores=4
+[2026-10-27T12:14:33+01:00] job p4b_scr_rest_coloc_abf_W0p2_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T12:25:28+01:00] job p4b_scr_L0P1_coloc_susie_mm_r2 -> done (exit 0) 
+[2026-10-27T12:25:28+01:00] launched p4b_scr_rest_mvsusie_r2 pid 1031767 gpu=False vram=0 cores=20
+[2026-10-27T12:26:55+01:00] job p4b_m4_lead_snp_r2 -> done (exit 0) 
+[2026-10-27T12:40:40+01:00] job famA_p5_scrL24_primary -> done (exit 0) 
+[2026-10-27T12:41:12+01:00] job p4b_m4_colocboost_m1_r2 -> done (exit 0) 
+[2026-10-27T12:50:25+01:00] job p4b_scr_rest_sharepro_r2 -> done (exit 0) 
+[2026-10-27T13:00:31+01:00] launched p4b_bench_scr_L0P1 pid 1114137 gpu=False vram=0 cores=8
+[2026-10-27T13:00:31+01:00] launched p4b_collect_scr_L0P1 pid 1114139 gpu=False vram=0 cores=2
+[2026-10-27T13:00:49+01:00] job p4b_collect_scr_L0P1 -> done (exit 0) 
+[2026-10-27T13:07:38+01:00] job p4b_bench_scr_L0P1 -> done (exit 0) 
+[2026-10-27T13:07:38+01:00] launched p4b_collect_scr_L0P1_r2 pid 1119526 gpu=False vram=0 cores=2
+[2026-10-27T13:07:38+01:00] launched p4b_m4_coloc_prop_test_r2 pid 1119527 gpu=False vram=0 cores=6
+[2026-10-27T13:07:38+01:00] launched p4b_m4_coloc_abf_W0p1_p12_5em06_r2 pid 1119529 gpu=False vram=0 cores=2
+[2026-10-27T13:07:38+01:00] launched p4b_m4_coloc_abf_W0p1_p12_1em05_r2 pid 1119534 gpu=False vram=0 cores=2
+[2026-10-27T13:07:48+01:00] job p4b_collect_scr_L0P1_r2 -> done (exit 0) 
+[2026-10-27T13:26:30+01:00] job p4b_m4_coloc_abf_W0p1_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T13:26:30+01:00] job p4b_m4_coloc_abf_W0p1_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T13:26:30+01:00] launched p4b_m4_prop_coloc_r2 pid 1129944 gpu=False vram=0 cores=6
+[2026-10-27T13:26:30+01:00] launched p4b_m4_coloc_abf_W0p15_p12_5em06_r2 pid 1129946 gpu=False vram=0 cores=2
+[2026-10-27T13:31:56+01:00] job p4b_m4_colocboost_r2 -> done (exit 0) 
+[2026-10-27T13:36:00+01:00] job p4b_m4_sharepro_r2 -> done (exit 0) 
+[2026-10-27T13:45:27+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T14:05:43+01:00] scheduler start pid 1163901 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T14:05:44+01:00] job p4b_m4_coloc_prop_test_r2 -> done (exit 0) 
+[2026-10-27T14:05:44+01:00] job p4b_m4_coloc_abf_W0p15_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T14:05:44+01:00] launched p6dr_tests_eval pid 1163908 gpu=False vram=0 cores=8
+[2026-10-27T14:05:44+01:00] launched p4b_m4_coloc_abf_W0p15_p12_1em05_r2 pid 1163910 gpu=False vram=0 cores=2
+[2026-10-27T14:06:17+01:00] job p4b_scr_rest_mvsusie_r2 -> done (exit 0) 
+[2026-10-27T14:06:17+01:00] launched p4b_m4_coloc_abf_W0p2_p12_5em06_r2 pid 1165314 gpu=False vram=0 cores=2
+[2026-10-27T14:06:17+01:00] launched p4b_m4_coloc_abf_W0p2_p12_1em05_r2 pid 1165315 gpu=False vram=0 cores=2
+[2026-10-27T14:06:17+01:00] launched famB_tests_p4_r3 pid 1165319 gpu=False vram=0 cores=8
+[2026-10-27T14:10:09+01:00] job p6dr_tests_eval -> done (exit 0) 
+[2026-10-27T14:10:09+01:00] launched p4b_scr_rest_coloc_susie_half_a pid 1170573 gpu=False vram=0 cores=12
+[2026-10-27T14:19:21+01:00] job p4b_m4_coloc_abf_W0p15_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T14:19:21+01:00] job p4b_m4_coloc_abf_W0p2_p12_5em06_r2 -> done (exit 0) 
+[2026-10-27T14:19:21+01:00] job p4b_m4_coloc_abf_W0p2_p12_1em05_r2 -> done (exit 0) 
+[2026-10-27T14:19:21+01:00] launched p4b_scr_rest_coloc_susie_half_b pid 1184706 gpu=False vram=0 cores=12
+[2026-10-27T14:20:52+01:00] job famB_tests_p4_r3 -> done (exit 0) 
+[2026-10-27T14:20:52+01:00] launched p4b_scr_rest_coloc_susie_mm_half_a pid 1186315 gpu=False vram=0 cores=12
+[2026-10-27T14:21:45+01:00] job famA_p5_m4_primary_r2 -> done (exit 0) 
+[2026-10-27T14:31:51+01:00] job famC_c1_v2_train -> done (exit 0) 
+[2026-10-27T14:32:28+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T14:32:30+01:00] scheduler start pid 1197605 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T14:33:44+01:00] launched famA_p5_A1_primary_r2 pid 1239662 gpu=True vram=10.0 cores=2
+[2026-10-27T14:33:44+01:00] launched famA_p5_scrL0P3_primary_r2 pid 1239674 gpu=True vram=9.0 cores=2
+[2026-10-27T14:36:03+01:00] job p4b_m4_prop_coloc_r2 -> done (exit 0) 
+[2026-10-27T14:45:51+01:00] launched p4b_tests_baselines_r3 pid 1276979 gpu=False vram=0 cores=4
+[2026-10-27T14:51:31+01:00] job p4b_tests_baselines_r3 -> done (exit 0) 
+[2026-10-27T15:06:10+01:00] job famA_p5_scrL0P3_primary_r2 -> done (exit 0) 
+[2026-10-27T15:06:10+01:00] launched famB_screen_v2_full_r2 pid 1313967 gpu=True vram=9.0 cores=8
+[2026-10-27T15:34:27+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T15:34:30+01:00] scheduler start pid 1377246 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T15:41:07+01:00] launched p6rt_test_meta_r2 pid 1383684 gpu=False vram=0 cores=3
+[2026-10-27T15:42:28+01:00] job p6rt_test_meta_r2 -> done (exit 0) 
+[2026-10-27T15:46:13+01:00] launched famA_p5_killtest_a1_rule_a_r2 pid 1385882 gpu=False vram=0 cores=2
+[2026-10-27T15:47:19+01:00] job famA_p5_killtest_a1_rule_a_r2 -> done (exit 0) 
+[2026-10-27T15:47:19+01:00] launched p5_verify_famC_recompute_r2 pid 1386818 gpu=True vram=2.5 cores=1
+[2026-10-27T15:51:14+01:00] job p5_verify_famC_recompute_r2 -> done (exit 0) 
+[2026-10-27T15:51:14+01:00] launched p6rt_tests_r2 pid 1390443 gpu=False vram=0 cores=2
+[2026-10-27T15:51:47+01:00] job p6rt_tests_r2 -> done (exit 0) 
+[2026-10-27T15:52:12+01:00] job famB_screen_v2_full_r2 -> done (exit 0) 
+[2026-10-27T15:52:12+01:00] launched p4b_scr_rest_coloc_susie_mm_quarter_b1 pid 1390995 gpu=False vram=0 cores=12
+[2026-10-27T15:59:05+01:00] job famA_p5_A1_primary_r2 -> done (exit 0) 
+[2026-10-27T15:59:05+01:00] launched p4b_scr_rest_coloc_susie_mm_quarter_b2 pid 1394805 gpu=False vram=0 cores=12
+[2026-10-27T16:10:55+01:00] launched famA_p5_scrL0P3_retry_r3 pid 1403437 gpu=True vram=9.0 cores=1
+[2026-10-27T16:22:52+01:00] job famA_p5_scrL0P3_retry_r3 -> done (exit 0) 
+[2026-10-27T16:31:52+01:00] launched p6rt_valid_check_r4 pid 1415006 gpu=False vram=0 cores=4
+[2026-10-27T16:41:08+01:00] scheduler stop (running jobs keep running; they are re-adopted on restart)
+[2026-10-27T19:10:07+01:00] scheduler start pid 1564430 home /cluster/scratch/mumarc/hackathon_eqtl_gwas cores<=64 ram<=120.0 gpu sum vram<22.0
+[2026-10-27T19:10:07+01:00] launched famC_c1_v2_eval_l0star_v2_r3 pid 1564433 gpu=True vram=6.0 cores=2
+[2026-10-27T19:10:07+01:00] launched p6dr_dry_v4 pid 1564436 gpu=True vram=8.0 cores=8
+[2026-10-27T19:10:07+01:00] launched p4b_m4_mvsusie_half_a pid 1564439 gpu=False vram=0 cores=12
+[2026-10-27T19:10:07+01:00] launched p4b_m4_mvsusie_half_b pid 1564444 gpu=False vram=0 cores=12
+[2026-10-27T19:10:07+01:00] launched p4b_m4_coloc_susie_half_a pid 1564450 gpu=False vram=0 cores=12
+[2026-10-27T19:10:07+01:00] launched p4b_m4_coloc_susie_half_b pid 1564456 gpu=False vram=0 cores=12
+[2026-10-27T19:11:31+01:00] job famC_c1_v2_eval_l0star_v2_r3 -> done (exit 0) 
+[2026-10-27T19:24:08+01:00] launched famC_m4_provisional pid 1574587 gpu=True vram=8.0 cores=4
+[2026-10-27T19:24:11+01:00] launched famB_killtest_B1 pid 1574617 gpu=False vram=0 cores=16
+[2026-10-27T19:24:34+01:00] job famB_killtest_B1 -> failed (exit 1) Python exception: ValueError: exactcoloc_gaussian_M50: 9000 predicted loci not in the expected list, e.g. ['screen_v2__L0_P3_rho=0.5__W__0000000', 'screen_v2__L0_P3_rho=0.5__W__0000001', 'screen_v2__L0_P3_rho=0.5__W__0000003']
+[2026-10-27T19:24:34+01:00] launched p4b_bench_m4_partial pid 1575055 gpu=False vram=0 cores=8
+[2026-10-27T19:24:34+01:00] launched p6dr_realbuilder_v1 pid 1575056 gpu=False vram=0 cores=8
+[2026-10-27T19:25:34+01:00] job p6dr_realbuilder_v1 -> done (exit 0) 
+[2026-10-27T19:42:46+01:00] job famC_m4_provisional -> done (exit 0) 
+[2026-10-27T19:42:46+01:00] launched famB_killtest_B1_r2 pid 1593266 gpu=False vram=0 cores=16
+[2026-10-27T19:44:04+01:00] job famB_killtest_B1_r2 -> done (exit 0) 
+[2026-10-27T19:44:04+01:00] launched famC_m4_provisional_bench pid 1595164 gpu=False vram=0 cores=16
+[2026-10-27T19:50:52+01:00] launched p5_verify_B1 pid 1599521 gpu=False vram=0 cores=2
+[2026-10-27T19:51:28+01:00] job p5_verify_B1 -> done (exit 0) 
+[2026-10-27T20:06:52+01:00] job famC_m4_provisional_bench -> done (exit 0) 
+[2026-10-27T20:06:53+01:00] launched p4b_m4_coloc_susie_mm_half_a pid 1612189 gpu=False vram=0 cores=12
+[2026-10-27T20:07:55+01:00] job p4b_bench_m4_partial -> done (exit 0) 
+[2026-10-27T20:07:55+01:00] launched p4b_m4_coloc_susie_mm_half_b pid 1612798 gpu=False vram=0 cores=12
+[2026-10-27T20:30:11+01:00] job p6dr_dry_v4 -> done (exit 0) 
+[2026-10-27T20:30:11+01:00] launched p4b_m4_mvsusie_half_a_r2 pid 1621792 gpu=False vram=0 cores=12
+[2026-10-27T22:17:16+01:00] job p4b_m4_coloc_susie_half_b -> done (exit 0) 
+[2026-10-27T22:17:16+01:00] launched p6dr_mvr_v1 pid 1721194 gpu=True vram=8.0 cores=12
+[2026-10-27T22:17:22+01:00] job p4b_m4_coloc_susie_half_a -> done (exit 0) 
+[2026-10-27T22:17:22+01:00] launched p4b_m4_mvsusie_half_b_r2 pid 1721253 gpu=False vram=0 cores=12
+[2026-10-27T23:12:27+01:00] job p6dr_mvr_v1 -> failed (exit 1) Python exception: ValueError: need at least one array to concatenate
+[2026-10-27T23:12:27+01:00] launched famB_m4_valid_r2 pid 1790209 gpu=True vram=9.0 cores=8
+[2026-10-27T23:24:13+01:00] launched p6dr_mvr_v1_resume2 pid 1807826 gpu=False vram=0 cores=4
+[2026-10-27T23:28:08+01:00] job p6dr_mvr_v1_resume2 -> done (exit 0) 
+[2026-10-27T23:35:25+01:00] launched p6dr_mvr_v1_resume3 pid 1823360 gpu=False vram=0 cores=4
+[2026-10-27T23:36:52+01:00] job p4b_m4_coloc_susie_mm_half_b -> done (exit 0) 
+[2026-10-27T23:38:39+01:00] job p6dr_mvr_v1_resume3 -> done (exit 0) 
+[2026-10-27T23:38:41+01:00] job p4b_m4_coloc_susie_mm_half_a -> done (exit 0) 
+[2026-10-27T23:40:27+01:00] launched test_run_v1 pid 1826029 gpu=True vram=10.0 cores=64
+[2026-10-28T01:53:42+01:00] launched test_run_v1_r1 pid 1878729 gpu=True vram=10.0 cores=64
+[2026-10-28T04:43:47+01:00] job test_run_v1_r1 -> done (exit 0) 
+[2026-10-28T04:54:59+01:00] launched p7_verify_testrun_vr pid 1924502 gpu=False vram=0 cores=2
+[2026-10-28T04:55:12+01:00] job p7_verify_testrun_vr -> done (exit 0) 
+[2026-10-28T04:57:32+01:00] launched p7_verify_testrun_vr2 pid 1926433 gpu=False vram=0 cores=2
+[2026-10-28T04:57:37+01:00] job p7_verify_testrun_vr2 -> done (exit 0) 
+[2026-10-28T09:37:52+01:00] launched famC_p9_bench_cpu16 pid 2096857 gpu=False vram=0 cores=16
+[2026-10-28T09:37:55+01:00] launched famC_p9_bench_gpu1 pid 2097148 gpu=True vram=4.0 cores=2
+[2026-10-28T09:39:00+01:00] job famC_p9_bench_gpu1 -> done (exit 0) 
+[2026-10-28T09:41:45+01:00] launched p9_m4_mvsusie pid 2104337 gpu=False vram=0 cores=24
+[2026-10-28T09:41:47+01:00] launched p9_bench_m4_main_full pid 2104563 gpu=False vram=0 cores=8
+[2026-10-28T09:46:22+01:00] launched p9_op2_screen_v2 pid 2110611 gpu=False vram=0 cores=2
+[2026-10-28T09:46:29+01:00] job p9_op2_screen_v2 -> done (exit 0) 
+[2026-10-28T09:47:06+01:00] job p9_bench_m4_main_full -> done (exit 0) 
+[2026-10-28T09:48:05+01:00] job famC_p9_bench_cpu16 -> done (exit 0) 
+[2026-10-28T09:48:36+01:00] launched famB_mm_tests_r1 pid 2112343 gpu=True vram=6.0 cores=4
+[2026-10-28T09:48:39+01:00] launched famB_mm_pilot_r1 pid 2112487 gpu=True vram=7.0 cores=4
+[2026-10-28T09:49:54+01:00] launched famC_p9_gen_valid_v1 pid 2113879 gpu=True vram=4.0 cores=2
+[2026-10-28T09:49:59+01:00] launched p9_op2_screen_v2_r2 pid 2114044 gpu=False vram=0 cores=2
+[2026-10-28T09:50:06+01:00] job p9_op2_screen_v2_r2 -> done (exit 0) 
+[2026-10-28T09:50:32+01:00] launched p9_op2_m4_main pid 2114790 gpu=False vram=0 cores=2
+[2026-10-28T09:50:47+01:00] job p9_op2_m4_main -> done (exit 0) 
+[2026-10-28T09:51:07+01:00] launched famC_p9_trainregion_smoke pid 2115342 gpu=True vram=4.0 cores=2
+[2026-10-28T09:51:48+01:00] launched famG_mm_identity_ref_v1 pid 2116111 gpu=False vram=0 cores=32
+[2026-10-28T09:51:52+01:00] job famC_p9_trainregion_smoke -> done (exit 0) 
+[2026-10-28T09:52:03+01:00] launched p9_m4_valid_v3_assemble pid 2117559 gpu=False vram=0 cores=2
+[2026-10-28T09:53:15+01:00] job famB_mm_pilot_r1 -> done (exit 0) 
+[2026-10-28T09:53:15+01:00] launched famB_mm_profile_r1 pid 2121626 gpu=True vram=7.0 cores=2
+[2026-10-28T09:53:42+01:00] job famB_mm_profile_r1 -> done (exit 0) 
+[2026-10-28T09:53:52+01:00] job famG_mm_identity_ref_v1 -> done (exit 0) 
+[2026-10-28T09:54:07+01:00] launched famB_mm_profile_r2 pid 2123982 gpu=True vram=7.0 cores=2
+[2026-10-28T09:54:10+01:00] job famB_mm_tests_r1 -> done (exit 0) 
+[2026-10-28T09:54:30+01:00] launched famG_mm_identity_gpu_v1 pid 2124813 gpu=True vram=8.0 cores=4
+[2026-10-28T09:54:51+01:00] job famB_mm_profile_r2 -> done (exit 0) 
+[2026-10-28T09:54:51+01:00] launched famC_p9_trainregion_m4_v1 pid 2125912 gpu=True vram=7.0 cores=6
+[2026-10-28T09:55:37+01:00] launched famB_mm_tests_r2 pid 2127714 gpu=True vram=6.0 cores=4
+[2026-10-28T09:55:41+01:00] launched famG_mm_identity_ref_v2 pid 2128034 gpu=False vram=0 cores=32
+[2026-10-28T09:56:00+01:00] launched famC_p9_gen_train_v1_w0 pid 2128854 gpu=True vram=3.5 cores=2
+[2026-10-28T09:57:54+01:00] job p9_m4_valid_v3_assemble -> done (exit 0) 
+[2026-10-28T09:57:58+01:00] job famG_mm_identity_ref_v2 -> done (exit 0) 
+[2026-10-28T09:57:58+01:00] launched famB_mm_ladder_dry pid 2136046 gpu=False vram=0 cores=16
+[2026-10-28T09:58:17+01:00] job famB_mm_ladder_dry -> done (exit 0) 
+[2026-10-28T09:59:55+01:00] launched famC_p9_c2eval_plumbing pid 2142242 gpu=False vram=0 cores=8
+[2026-10-28T10:00:03+01:00] job famC_p9_c2eval_plumbing -> done (exit 0) 
+[2026-10-28T10:00:20+01:00] launched famC_p9_gen_train_v1_w1 pid 2143285 gpu=True vram=3.5 cores=2
+[2026-10-28T10:00:20+01:00] launched famC_p9_gen_train_v1_w2 pid 2143287 gpu=True vram=3.5 cores=2
+[2026-10-28T10:00:23+01:00] job famB_mm_tests_r2 -> done (exit 0) 
+[2026-10-28T10:00:23+01:00] launched famC_p9_gen_train_v1_w3 pid 2143377 gpu=True vram=3.5 cores=2
+[2026-10-28T10:00:23+01:00] launched famC_p9_tests_r1 pid 2143380 gpu=True vram=3.0 cores=4
+[2026-10-28T10:00:33+01:00] launched famG_mm_identity_cpu_v2 pid 2143887 gpu=False vram=0 cores=16
+[2026-10-28T10:00:38+01:00] job famG_mm_identity_cpu_v2 -> failed (exit 1) Python exception: FileNotFoundError: [Errno 2] No such file or directory: 'runs/famG_mm_identity_ref_v2/out/loci/ids.txt'
+[2026-10-28T10:00:41+01:00] launched famG_mm_slice2000_v1 pid 2144265 gpu=False vram=0 cores=1
+[2026-10-28T10:00:44+01:00] job famG_mm_slice2000_v1 -> done (exit 0) 
+[2026-10-28T10:00:50+01:00] launched p9_tests_v2lock pid 2144528 gpu=False vram=0 cores=4
+[2026-10-28T10:01:13+01:00] launched famG_mm_identity_cpu_v2_r2 pid 2145595 gpu=False vram=0 cores=16
+[2026-10-28T10:02:09+01:00] job famC_p9_tests_r1 -> done (exit 0) 
+[2026-10-28T10:02:09+01:00] launched p9_dry_testset_v2 pid 2147713 gpu=True vram=3.0 cores=8
+[2026-10-28T10:06:01+01:00] job famG_mm_identity_cpu_v2_r2 -> done (exit 0) 
+[2026-10-28T10:07:07+01:00] launched famG_mm_traj_v1 pid 2159377 gpu=False vram=0 cores=16
+[2026-10-28T10:07:55+01:00] job p9_tests_v2lock -> done (exit 0) 
+[2026-10-28T10:13:39+01:00] job famG_mm_traj_v1 -> done (exit 0) 
+[2026-10-28T10:15:00+01:00] launched famG_mm_sens_v1 pid 2174389 gpu=False vram=0 cores=32
+[2026-10-28T10:18:09+01:00] job p9_dry_testset_v2 -> done (exit 0) 
+[2026-10-28T10:18:09+01:00] launched famC_p9_tests_r2 pid 2182058 gpu=True vram=2.0 cores=4
+[2026-10-28T10:19:37+01:00] job famC_p9_tests_r2 -> done (exit 0) 
+[2026-10-28T10:19:58+01:00] job famG_mm_sens_v1 -> done (exit 0) 
+[2026-10-28T10:53:16+01:00] launched famG_mm_identity_gpu_v4 pid 2210905 gpu=True vram=3.5 cores=4
+[2026-10-28T11:15:24+01:00] job famG_mm_identity_gpu_v4 -> done (exit 0) 
+[2026-10-28T11:17:05+01:00] job famC_p9_gen_valid_v1 -> done (exit 0) 
+[2026-10-28T11:17:05+01:00] launched famC_p9_timing_pilot pid 2300825 gpu=True vram=6.0 cores=4
+[2026-10-28T11:19:59+01:00] job famC_p9_timing_pilot -> done (exit 0) 
+[2026-10-28T11:19:59+01:00] launched famG_mm_bench_v4 pid 2304049 gpu=True vram=3.5 cores=4
+[2026-10-28T11:19:59+01:00] launched famB_mm_screen_v2_r3 pid 2304051 gpu=True vram=3.0 cores=4
+[2026-10-28T11:20:57+01:00] launched famC_p9_floorfeat_valid_v1 pid 2304719 gpu=False vram=0 cores=15
+[2026-10-28T11:26:44+01:00] job famC_p9_floorfeat_valid_v1 -> done (exit 0) 
+[2026-10-28T11:35:59+01:00] job famG_mm_bench_v4 -> failed (exit 1) CUDA OOM: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 52.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 6.00 GiB is free. Process 2128864 has 1.80 GiB memory in use. Process 2143296 has 3.58 GiB memory in use. Process 2143
+[2026-10-28T11:35:59+01:00] launched famB_mm_m4_valid_r3 pid 2309609 gpu=True vram=3.0 cores=4
+[2026-10-28T11:59:08+01:00] job famB_mm_screen_v2_r3 -> done (exit 0) 
+[2026-10-28T11:59:26+01:00] launched famB_mm_ladder pid 2319472 gpu=False vram=0 cores=16
+[2026-10-28T12:00:29+01:00] job famB_mm_ladder -> done (exit 0) 
+[2026-10-28T12:11:05+01:00] launched famC_p9_floorfeat_train_v1_a pid 2327275 gpu=False vram=0 cores=24
+[2026-10-28T12:23:16+01:00] job famB_mm_m4_valid_r3 -> done (exit 0) 
+[2026-10-28T12:23:16+01:00] launched famC_p9_trainregion_m4_v1_r2 pid 2331677 gpu=True vram=5.0 cores=4
+[2026-10-28T12:34:16+01:00] launched famB_mm_m4_eval pid 2336035 gpu=False vram=0 cores=16
+[2026-10-28T12:34:34+01:00] job famB_mm_m4_eval -> done (exit 0) 
+[2026-10-28T12:45:12+01:00] job famC_p9_floorfeat_train_v1_a -> done (exit 0) 
+[2026-10-28T12:45:32+01:00] launched famC_p9_floorfeat_train_v1_b pid 2340726 gpu=False vram=0 cores=24
+[2026-10-28T13:00:17+01:00] job famC_p9_floorfeat_train_v1_b -> done (exit 0) 
+[2026-10-28T13:31:26+01:00] job famC_p9_trainregion_m4_v1_r2 -> done (exit 0) 
+[2026-10-28T13:31:27+01:00] launched famB_p1_m4_valid_r3 pid 2358891 gpu=True vram=3.0 cores=4
+[2026-10-28T13:31:27+01:00] launched famG_mm_perf_v1_r3 pid 2358892 gpu=True vram=4.5 cores=4
+[2026-10-28T13:52:13+01:00] job famC_p9_gen_train_v1_w0 -> done (exit 0) 
+[2026-10-28T13:54:34+01:00] job famC_p9_gen_train_v1_w2 -> done (exit 0) 
+[2026-10-28T13:54:34+01:00] launched famC_p9_main_75k pid 2383069 gpu=True vram=6.0 cores=4
+[2026-10-28T13:54:44+01:00] job famC_p9_gen_train_v1_w1 -> done (exit 0) 
+[2026-10-28T13:56:00+01:00] job famG_mm_perf_v1_r3 -> done (exit 0) 
+[2026-10-28T13:56:00+01:00] launched famC_p9_main_600k pid 2385419 gpu=True vram=6.0 cores=4
+[2026-10-28T13:56:11+01:00] job famC_p9_gen_train_v1_w3 -> done (exit 0) 
+[2026-10-28T13:56:11+01:00] launched famC_p9_nold_600k pid 2385817 gpu=True vram=6.0 cores=4
+[2026-10-28T14:03:58+01:00] job famC_p9_main_75k -> done (exit 0) 
+[2026-10-28T14:03:58+01:00] launched famC_p9_main_150k pid 2398149 gpu=True vram=6.0 cores=4
+[2026-10-28T14:07:06+01:00] launched famG_mm_perf_v3 pid 2399325 gpu=True vram=4.5 cores=6
+[2026-10-28T14:07:09+01:00] launched famC_p9_main_300k pid 2399367 gpu=True vram=6.0 cores=4
+[2026-10-28T14:07:17+01:00] launched famC_p9_main_600k_r2 pid 2399506 gpu=True vram=10.0 cores=4
+[2026-10-28T14:07:42+01:00] job famB_p1_m4_valid_r3 -> done (exit 0) 
+[2026-10-28T14:07:56+01:00] launched famC_p9_floorfeat_train_v1_c2 pid 2400080 gpu=False vram=0 cores=16
+[2026-10-28T14:13:04+01:00] job famG_mm_perf_v3 -> done (exit 0) 
+[2026-10-28T14:13:04+01:00] launched famC_p9_nold_600k_r2 pid 2404446 gpu=True vram=10.0 cores=4
+[2026-10-28T14:13:04+01:00] launched famB_mm_m4_eval_v2 pid 2404447 gpu=False vram=0 cores=16
+[2026-10-28T14:13:23+01:00] job famB_mm_m4_eval_v2 -> done (exit 0) 
+[2026-10-28T14:36:34+01:00] job famC_p9_floorfeat_train_v1_c2 -> done (exit 0) 
+[2026-10-28T14:36:53+01:00] launched famC_p9_floor_600k pid 2423508 gpu=False vram=0 cores=16
+[2026-10-28T14:37:33+01:00] launched famC_p9_c2_harness_floor pid 2423935 gpu=False vram=0 cores=16
+[2026-10-28T14:41:35+01:00] job famC_p9_floor_600k -> done (exit 0) 
+[2026-10-28T14:51:32+01:00] job famC_p9_c2_harness_floor -> done (exit 0) 
+[2026-10-28T15:07:18+01:00] job famC_p9_main_600k_r2 -> done (exit 0) 
+[2026-10-28T15:07:18+01:00] launched famG_mm_perf_v5 pid 2440981 gpu=True vram=4.5 cores=8
+[2026-10-28T15:09:22+01:00] job famC_p9_nold_600k_r2 -> done (exit 0) 
+[2026-10-28T15:09:22+01:00] launched famC_p9_c2_harness_net pid 2441533 gpu=True vram=8.0 cores=4
+[2026-10-28T15:09:22+01:00] launched famC_p9_c2_harness_nold pid 2441534 gpu=True vram=8.0 cores=4
+[2026-10-28T15:12:45+01:00] job famG_mm_perf_v5 -> done (exit 0) 
+[2026-10-28T15:14:38+01:00] launched famG_mm_timing_dry_v1 pid 2443110 gpu=True vram=4.5 cores=10
+[2026-10-28T15:22:45+01:00] job famC_p9_c2_harness_nold -> done (exit 0) 
+[2026-10-28T15:22:59+01:00] job famG_mm_timing_dry_v1 -> done (exit 0) 
+[2026-10-28T15:22:59+01:00] launched famC_p9_main_150k_r3 pid 2446181 gpu=True vram=10.0 cores=4
+[2026-10-28T15:29:03+01:00] job famC_p9_c2_harness_net -> done (exit 0) 
+[2026-10-28T15:29:03+01:00] launched famG_mm_perf_v6 pid 2447771 gpu=True vram=4.5 cores=6
+[2026-10-28T15:29:33+01:00] launched famC_p9_c2_eval pid 2448115 gpu=False vram=0 cores=16
+[2026-10-28T15:30:25+01:00] job famC_p9_c2_eval -> done (exit 0) 
+[2026-10-28T15:30:25+01:00] launched famC_p9_c2_bench pid 2448495 gpu=False vram=0 cores=16
+[2026-10-28T15:40:33+01:00] job famC_p9_main_150k_r3 -> done (exit 0) 
+[2026-10-28T15:40:33+01:00] launched famC_p9_main_300k_r3 pid 2454044 gpu=True vram=10.0 cores=4
+[2026-10-28T15:45:03+01:00] job famG_mm_perf_v6 -> failed (exit 1) nonzero exit 1
+[2026-10-28T15:45:03+01:00] launched famG_mm_perf_v7 pid 2455189 gpu=True vram=4.5 cores=6
+[2026-10-28T15:45:38+01:00] job famC_p9_c2_bench -> done (exit 0) 
+[2026-10-28T15:50:11+01:00] job famG_mm_perf_v7 -> done (exit 0) 
+[2026-10-28T16:08:08+01:00] job famC_p9_main_300k_r3 -> done (exit 0) 
+[2026-10-28T16:17:09+01:00] launched famG_mm_timing_v1 pid 2484979 gpu=True vram=22.0 cores=64
+[2026-10-28T18:12:09+01:00] job famG_mm_timing_v1 timed out; SIGTERM pgid 2484979
+[2026-10-28T18:12:26+01:00] launched famG_mm_timing_diag_v1 pid 2521306 gpu=True vram=22.0 cores=64
+[2026-10-28T18:29:10+01:00] job famG_mm_timing_diag_v1 -> done (exit 0) 

@@ -1,0 +1,34 @@
+{
+ "label": "M4 (valid_grid_v1, m4_subsample@1 main), runs p4b_m4_coloc_susie_half_a/b",
+ "methods": {
+  "coloc_susie": {
+   "cells": 34,
+   "class_counts": {
+    "D": 3400,
+    "G": 1020,
+    "S": 3400,
+    "U": 950,
+    "W": 3400
+   },
+   "n_loci": 12170,
+   "rate_D_on_W": 0.024833333333333332,
+   "rate_S_on_W": 0.025,
+   "recal_a_D": -3.249584767969364,
+   "recal_a_S": -2.8538447050360407,
+   "setting": "realistic",
+   "status": {
+    "failed": 38,
+    "nonconverged": 2597,
+    "ok": 9533,
+    "timeout": 2
+   },
+   "t_D": 0.8036174141574123,
+   "t_S": 0.8784511379171775
+  }
+ },
+ "pred_files": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T182327Z_coloc_susie_valid_grid_v1_e782c9/predictions.parquet",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_m4/runs/20261027T182327Z_coloc_susie_valid_grid_v1_feecd5/predictions.parquet"
+ ],
+ "set": "data/processed/sets/valid_grid_v1.h5"
+}

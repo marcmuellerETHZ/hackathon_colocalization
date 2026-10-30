@@ -1,0 +1,43 @@
+[orch] job p9_tests_v2lock start 2026-10-28T10:00:50+01:00 host eu-g6-001 commit 885ec7ec5c pid 2144528
+[orch] cmd: python -m pytest -q -p no:cacheprovider tests/eval tests/data_real/test_real_testarm.py tests/baselines/test_subsample.py 2>&1 | tail -40
+
+tests/eval/test_truth_isolation.py:46: AssertionError
+=============================== warnings summary ===============================
+tests/eval/test_eval_metrics.py: 4 warnings
+tests/eval/test_eval_testrun.py: 32 warnings
+tests/eval/test_testset_v2_lock.py: 32 warnings
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2144532) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_tests_v2lock/code/src/eval/metrics.py:855: RuntimeWarning: Mean of empty slice
+    dlt = jj.mean() - jj
+
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+  /cluster/scratch/mumarc/hackathon_eqtl_gwas/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+    ret = ret.dtype.type(ret / rcount)
+
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+tests/eval/test_eval_testrun.py::test_run_benchmark_method_ids
+  /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_tests_v2lock/code/src/eval/metrics.py:944: RuntimeWarning: Mean of empty slice
+    dlt = jk.mean() - jk
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/eval/test_truth_isolation.py::test_method_code_never_touches_truth
+1 failed, 118 passed, 1 skipped, 86 warnings in 422.11s (0:07:02)
+[orch] exit 0 at 2026-10-28T10:07:55+01:00

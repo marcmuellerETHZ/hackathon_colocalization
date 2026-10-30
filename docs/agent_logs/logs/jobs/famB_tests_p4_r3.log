@@ -1,0 +1,4 @@
+[orch] job famB_tests_p4_r3 start 2026-10-27T14:06:17+01:00 host eu-g6-001 commit cac6d4e664 pid 1165319
+[orch] cmd: OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 python -m pytest tests/famB -q -p no:cacheprovider 2>&1 | tee /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famB_tests_p4_r3/out/pytest.txt; exit 0
+.............................s..s............                            [100%]
+43 passed, 2 skipped in 853.91s (0:14:13)

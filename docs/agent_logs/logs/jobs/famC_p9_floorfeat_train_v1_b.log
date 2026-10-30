@@ -1,0 +1,4 @@
+[orch] job famC_p9_floorfeat_train_v1_b start 2026-10-28T12:45:32+01:00 host eu-g6-001 commit f7cf358173 pid 2340726
+[orch] cmd: export OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; for k in $(seq 0 23); do python -m famC.floor featurize --set train_v1 --worker $k --n-workers 24 --device cpu --skip-newest > logs/famC/p9_floorfeat_train_v1_b_w$k.log 2>&1 & done; wait; ls data/processed/famC/floor_feats/train_v1 | wc -l
+212
+[orch] exit 0 at 2026-10-28T13:00:17+01:00

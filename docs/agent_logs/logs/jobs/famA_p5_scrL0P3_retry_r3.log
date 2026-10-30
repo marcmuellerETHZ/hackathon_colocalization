@@ -1,0 +1,10 @@
+[orch] job famA_p5_scrL0P3_retry_r3 start 2026-10-27T16:10:55+01:00 host eu-g6-001 commit 695a1207ae pid 1403437
+[orch] cmd: python -m famA.validation.run_eval --group screen_L0P3 --retry-failed /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037 --rungs primary --label famA_screen_v2 --batch-size-dense 8 --mem-budget-gb 3 --eig-chunk 1
+[run_eval] group screen_L0P3__retry: 40 loci from data/processed/sets/screen_v2.h5; truth=yes; 0 with a trait-2 LD
+[harness] run 20261027T151941Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_2f5e6c: 40 loci, mode=batch, workers=1
+[harness] 1/5 tasks done
+[harness] 3/5 tasks done
+[harness] 5/5 tasks done
+[harness] done 20261027T151941Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_2f5e6c: {'ok': 40, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 40} in 184.6s
+[run_eval] {"group": "screen_L0P3__retry", "rung": "primary", "components": "rho+eta+multistart+perTraitLD", "method": "famA_joint_susie_rho_eta_ms_ptld", "run_id": "20261027T151941Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_2f5e6c", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T151941Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_2f5e6c", "locus_set": "data/processed/sets/screen_v2.h5", "n": 40, "counts": {"ok": 40, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 40}, "with_truth": true, "n_with_ld2": 0, "wall_s": 646.7, "n_per_trait_ld": 0, "n_noshare_start": 14, "runtime_median_s": 2.86505952124935, "orch_job": "famA_p5_scrL0P3_retry_r3", "orch_commit": "695a1207aeb5e64ca9307d02279bf96940d58f4f"}
+[orch] exit 0 at 2026-10-27T16:22:51+01:00

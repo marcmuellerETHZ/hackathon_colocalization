@@ -1,0 +1,16 @@
+[w0] shard 1 loci 2048 7.4 loci/s stats {'windows': 70, 'loci': 2080, 'none': 2400, 't_window': 37.29768943786621, 't_loci': 238.87256598472595, 'rejected': 2400}
+[w0] shard 2 loci 4096 7.0 loci/s stats {'windows': 137, 'loci': 4108, 'none': 4660, 't_window': 74.05987644195557, 't_loci': 510.2437837123871, 'rejected': 4660}
+[w0] shard 3 loci 6144 6.3 loci/s stats {'windows': 205, 'loci': 6161, 'none': 6959, 't_window': 112.70988035202026, 't_loci': 853.2332735061646, 'rejected': 6959}
+[w0] shard 4 loci 8192 6.3 loci/s stats {'windows': 274, 'loci': 8210, 'none': 9326, 't_window': 149.15585160255432, 't_loci': 1151.6011810302734, 'rejected': 9326}
+[w0] shard 5 loci 10240 6.2 loci/s stats {'windows': 341, 'loci': 10243, 'none': 11581, 't_window': 188.6332504749298, 't_loci': 1451.4971215724945, 'rejected': 11581}
+[w0] shard 6 loci 12288 6.1 loci/s stats {'windows': 410, 'loci': 12297, 'none': 13943, 't_window': 232.95152354240417, 't_loci': 1764.0368630886078, 'rejected': 13943}
+[w0] shard 7 loci 14336 6.1 loci/s stats {'windows': 479, 'loci': 14337, 'none': 16319, 't_window': 273.4180254936218, 't_loci': 2082.9644317626953, 'rejected': 16319}
+[w0] shard 8 loci 16384 6.0 loci/s stats {'windows': 548, 'loci': 16388, 'none': 18684, 't_window': 308.7857656478882, 't_loci': 2393.7045636177063, 'rejected': 18684}
+[w0] shard 9 loci 18432 6.0 loci/s stats {'windows': 616, 'loci': 18435, 'none': 20989, 't_window': 344.7042670249939, 't_loci': 2707.8237829208374, 'rejected': 20989}
+[w0] shard 10 loci 20480 6.0 loci/s stats {'windows': 684, 'loci': 20488, 'none': 23288, 't_window': 382.4248254299164, 't_loci': 3021.3006489276886, 'rejected': 23288}
+[w0] shard 11 loci 22528 6.0 loci/s stats {'windows': 754, 'loci': 22530, 'none': 25726, 't_window': 420.5255892276764, 't_loci': 3328.9342846870422, 'rejected': 25726}
+[w0] shard 12 loci 24576 5.9 loci/s stats {'windows': 821, 'loci': 24597, 'none': 27947, 't_window': 455.01399302482605, 't_loci': 3716.2371253967285, 'rejected': 27947}
+[w0] shard 13 loci 26624 5.8 loci/s stats {'windows': 888, 'loci': 26633, 'none': 30199, 't_window': 490.24509620666504, 't_loci': 4051.5734589099884, 'rejected': 30199}
+[w0] shard 14 loci 28672 5.8 loci/s stats {'windows': 959, 'loci': 28707, 'none': 32669, 't_window': 533.5428042411804, 't_loci': 4422.53763127327, 'rejected': 32669}
+[w0] shard 15 loci 30000 5.8 loci/s stats {'windows': 1003, 'loci': 30016, 'none': 34176, 't_window': 563.280415058136, 't_loci': 4636.963970184326, 'rejected': 34176}
+DONE 30000 {"windows": 1003, "loci": 30016, "none": 34176, "t_window": 563.280415058136, "t_loci": 4636.963970184326, "rejected": 34176}

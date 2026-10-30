@@ -1,0 +1,697 @@
+{
+ "definition": "C4 (configs/testset_v1.yaml endpoints.C4): slope of the false-S rate (P_S >= t_S) on the realised rho,\n        per 0.1, in P2 and P3 cells of the realistic setting (levels L1-L6), among D and among W loci; BCa 95% CI\n        from one cluster bootstrap (test LD block); margin 0.02 (|slope| CI within +-0.02 = no overlap effect).",
+ "modes": {
+  "excluded": {
+   "n_boot_nan": 480,
+   "n_loci": 48,
+   "slopes": {
+    "coloc_abf": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.03319502074688795,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.02743142144638404,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "coloc_susie": {
+     "P2": {
+      "D": {
+       "ci_high": 0.08333333333333336,
+       "ci_low": 0.08333333333333336,
+       "slope_per_0.1": 0.08333333333333336,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.03319502074688795,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.02743142144638404,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "coloc_susie_mm": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.03319502074688795,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.02743142144638404,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "colocboost": {
+     "P2": {
+      "D": {
+       "ci_high": -0.08333333333333331,
+       "ci_low": -0.08333333333333333,
+       "slope_per_0.1": -0.08333333333333333,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "colocboost_m1": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.03319502074688795,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.02743142144638404,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "famA_joint_susie_rho_ms_ptld": {
+     "P2": {
+      "D": {
+       "ci_high": -0.08333333333333331,
+       "ci_low": -0.08333333333333331,
+       "slope_per_0.1": -0.08333333333333331,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": -0.02743142144638403,
+       "ci_low": -0.02743142144638404,
+       "slope_per_0.1": -0.02743142144638404,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "famB_exactcoloc_gaussian_M50": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.03319502074688795,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.02743142144638404,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "mvsusie": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "sharepro": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.03319502074688795,
+       "ci_low": -0.06249999999999999,
+       "slope_per_0.1": -0.007481296758104732,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "strength_only": {
+     "P2": {
+      "D": {
+       "ci_high": -0.16666666666666663,
+       "ci_low": -0.16666666666666666,
+       "slope_per_0.1": -0.16666666666666666,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.06249999999999999,
+       "ci_low": -0.01244813278008299,
+       "slope_per_0.1": 0.01246882793017456,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0606060606060606,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.03281190385349104,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": false
+      }
+     }
+    }
+   }
+  },
+  "least_favourable": {
+   "n_boot_nan": 480,
+   "n_loci": 57,
+   "slopes": {
+    "coloc_abf": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.02814258911819887,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.024566473988439304,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8574510081113149,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "coloc_susie": {
+     "P2": {
+      "D": {
+       "ci_high": 0.044444444444444474,
+       "ci_low": 0.044444444444444474,
+       "slope_per_0.1": 0.044444444444444474,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.02814258911819887,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.024566473988439304,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": -0.006585136406396987,
+       "slope_per_0.1": -0.00242382271468144,
+       "t_S": 0.8904632775574971,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "coloc_susie_mm": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": -0.06666666666666667,
+       "slope_per_0.1": -0.06666666666666667,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": false
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.02814258911819887,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.024566473988439304,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8866549147753109,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "colocboost": {
+     "P2": {
+      "D": {
+       "ci_high": -0.06666666666666667,
+       "ci_low": -0.06666666666666667,
+       "slope_per_0.1": -0.06666666666666667,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.21770000000000003,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "colocboost_m1": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.11111111111111112,
+       "ci_low": 0.11111111111111108,
+       "slope_per_0.1": 0.11111111111111112,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": false
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.02814258911819887,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.024566473988439304,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.8216000000000001,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "famA_joint_susie_rho_ms_ptld": {
+     "P2": {
+      "D": {
+       "ci_high": -0.04444444444444445,
+       "ci_low": -0.04444444444444445,
+       "slope_per_0.1": -0.04444444444444445,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": -0.03540462427745665,
+       "ci_low": -0.03540462427745666,
+       "slope_per_0.1": -0.03540462427745666,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.018726944154557782,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "famB_exactcoloc_gaussian_M50": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.11111111111111112,
+       "ci_low": 0.11111111111111108,
+       "slope_per_0.1": 0.11111111111111112,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": false
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.02814258911819887,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.024566473988439304,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.008117675781250002,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "mvsusie": {
+     "P2": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 1.0000000000000002,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "sharepro": {
+     "P2": {
+      "D": {
+       "ci_high": -0.11111111111111112,
+       "ci_low": -0.11111111111111112,
+       "slope_per_0.1": -0.11111111111111112,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": -0.008755472170106322,
+       "ci_low": -0.06249999999999999,
+       "slope_per_0.1": -0.024927745664739896,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.7054795392655949,
+       "within_margin_0.02": true
+      }
+     }
+    },
+    "strength_only": {
+     "P2": {
+      "D": {
+       "ci_high": -0.11111111111111112,
+       "ci_low": -0.11111111111111112,
+       "slope_per_0.1": -0.11111111111111112,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.0,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": true
+      }
+     },
+     "P3": {
+      "D": {
+       "ci_high": 0.06249999999999999,
+       "ci_low": -0.024390243902439025,
+       "slope_per_0.1": -0.0036127167630057837,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": false
+      },
+      "W": {
+       "ci_high": 0.062088428974600186,
+       "ci_low": 0.0,
+       "slope_per_0.1": 0.0332409972299169,
+       "t_S": 0.22522522522522526,
+       "within_margin_0.02": false
+      }
+     }
+    }
+   }
+  }
+ }
+}

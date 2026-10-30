@@ -1,0 +1,57 @@
+[orch] job famG_mm_perf_v5 start 2026-10-28T15:07:18+01:00 host eu-g6-001 commit 03e4df6faf pid 2440981
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH R_PROFILE_USER=/dev/null; W=$ORCH_HOME/runs/famG_mm_identity_ref_v2/out/loci; O=results/famG_mm/identity_v2; python -m famG.validation.compare_mm --work $W --rdir $O/r016 --out $O/cmp_v5 --mem-gb 1.5 --dtype float64 | grep -E "max_dpip|niter_agree|conv_agree|fail_agree|g_seconds"; python -m famG.validation.sens_mm --r0 $O/r016 --pert $O/pert --gfits $O/cmp_v5/fits_float64_cuda.tsv --gpairs $O/cmp_v5/pairs_float64_cuda.tsv --ids $O/nonconv_ids.txt --out $O/sens_v5 | tail -4; mkdir -p results/famG_mm/bench_v5; python -m famG.validation.bench_mm --n 512 --batch 512 --mem-gb 1.8 --dtype float64 --sweep 1024:8:1.5:1,1024:8:1.5:4,1024:8:1.5:8 --profile --out results/famG_mm/bench_v5/fp64_streams.json 2>&1 | grep -v "^USDT" | head -80
+ "g_seconds": 42.84007549285889,
+ "fail_agree": 200,
+ "max_dpip": 0.9999373896146205,
+ "conv_agree": 200,
+ "niter_agree": 200,
+   1
+  ]
+ ]
+}
+{"n": 512, "io_s": 61.900543451309204, "block": 1024, "num_warps": 8, "bucket_ratio": 1.5, "streams": 1, "dtype": "float64", "mem_budget_gb": 1.8, "fit_s": 83.37182807922363, "fit_loci_per_s": 6.141163169811687, "status": {"nonconverged": 28, "ok": 484}, "niter_max_mean": 10.4765625, "max_mem_gb": 3.488395264}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/validation/bench_mm.py", line 76, in <module>
+    main()
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/validation/bench_mm.py", line 53, in main
+    rows += m.fit_batch(loci[k:k + a.batch])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/method_mm.py", line 46, in fit_batch
+    fits = susie_mm_batch(dicts, self.cfg, device=self.device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/susie_mm.py", line 656, in susie_mm_batch
+    list(ex.map(work, jobs))
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/susie_mm.py", line 653, in work
+    run(*job)
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/susie_mm.py", line 632, in run
+    res = _fit_bucket([loci[i]["z"] for i in bucket], [loci[i]["n"] for i in bucket], lds, kind,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/susie_mm.py", line 566, in _fit_bucket
+    flush(done)
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/susie_mm.py", line 484, in flush
+    sets = _credible_sets(alpha, V[k], st.ld, r // T, p, cfg) if not fail[k] else \
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/susie_rss.py", line 276, in _credible_sets
+    C = ld.corr_sub(b, ix).abs()
+        ^^^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famG_mm_perf_v5/code/src/famG/ld.py", line 64, in corr_sub
+    sub = Xs.T @ Xs / self.n_ref[b]
+          ~~~~~^~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 118.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 18.58 GiB is free. Including non-PyTorch memory, this process has 4.93 GiB memory in use. 4.50 GiB allowed; Of the allocated memory 4.11 GiB is allocated by PyTorch, and 325.35 MiB is reserved by PyTorch but unallocated.
+[orch] exit 0 at 2026-10-28T15:12:44+01:00

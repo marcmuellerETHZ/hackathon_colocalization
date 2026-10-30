@@ -1,0 +1,181 @@
+[orch] job famA_p5_m4_primary_r2 start 2026-10-27T12:10:24+01:00 host eu-g6-001 commit fa1aeec73f pid 1025694
+[orch] cmd: python -m famA.validation.run_eval --group m4_L1p,m4_L0P23 --rungs primary --label famA_m4_valid
+[run_eval] group m4_L1p: 9677 loci from data/processed/sets/valid_grid_v1.h5; truth=yes; 0 with a trait-2 LD
+[run_eval] group m4_L0P23: 1786 loci from data/processed/sets/valid_grid_v1.h5; truth=yes; 0 with a trait-2 LD
+[harness] run 20261027T111509Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_8d09a3: 9677 loci, mode=batch, workers=1
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p5_m4_primary_r2/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p5_m4_primary_r2/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p5_m4_primary_r2/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famA_p5_m4_primary_r2/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+[harness] 1/242 tasks done
+[harness] 4/242 tasks done
+[harness] 7/242 tasks done
+[harness] 10/242 tasks done
+[harness] 12/242 tasks done
+[harness] 14/242 tasks done
+[harness] 16/242 tasks done
+[harness] 18/242 tasks done
+[harness] 20/242 tasks done
+[harness] 22/242 tasks done
+[harness] 25/242 tasks done
+[harness] 27/242 tasks done
+[harness] 30/242 tasks done
+[harness] 32/242 tasks done
+[harness] 34/242 tasks done
+[harness] 36/242 tasks done
+[harness] 39/242 tasks done
+[harness] 41/242 tasks done
+[harness] 43/242 tasks done
+[harness] 45/242 tasks done
+[harness] 47/242 tasks done
+[harness] 49/242 tasks done
+[harness] 51/242 tasks done
+[harness] 54/242 tasks done
+[harness] 56/242 tasks done
+[harness] 58/242 tasks done
+[harness] 60/242 tasks done
+[harness] 62/242 tasks done
+[harness] 64/242 tasks done
+[harness] 66/242 tasks done
+[harness] 68/242 tasks done
+[harness] 70/242 tasks done
+[harness] 71/242 tasks done
+[harness] 73/242 tasks done
+[harness] 75/242 tasks done
+[harness] 77/242 tasks done
+[harness] 79/242 tasks done
+[harness] 81/242 tasks done
+[harness] 83/242 tasks done
+[harness] 85/242 tasks done
+[harness] 87/242 tasks done
+[harness] 89/242 tasks done
+[harness] 91/242 tasks done
+[harness] 93/242 tasks done
+[harness] 95/242 tasks done
+[harness] 97/242 tasks done
+[harness] 99/242 tasks done
+[harness] 101/242 tasks done
+[harness] 103/242 tasks done
+[harness] 105/242 tasks done
+[harness] 107/242 tasks done
+[harness] 109/242 tasks done
+[harness] 111/242 tasks done
+[harness] 113/242 tasks done
+[harness] 115/242 tasks done
+[harness] 117/242 tasks done
+[harness] 119/242 tasks done
+[harness] 121/242 tasks done
+[harness] 123/242 tasks done
+[harness] 125/242 tasks done
+[harness] 127/242 tasks done
+[harness] 129/242 tasks done
+[harness] 131/242 tasks done
+[harness] 133/242 tasks done
+[harness] 135/242 tasks done
+[harness] 137/242 tasks done
+[harness] 139/242 tasks done
+[harness] 141/242 tasks done
+[harness] 143/242 tasks done
+[harness] 145/242 tasks done
+[harness] 147/242 tasks done
+[harness] 149/242 tasks done
+[harness] 151/242 tasks done
+[harness] 153/242 tasks done
+[harness] 155/242 tasks done
+[harness] 157/242 tasks done
+[harness] 159/242 tasks done
+[harness] 161/242 tasks done
+[harness] 163/242 tasks done
+[harness] 165/242 tasks done
+[harness] 167/242 tasks done
+[harness] 169/242 tasks done
+[harness] 171/242 tasks done
+[harness] 173/242 tasks done
+[harness] 175/242 tasks done
+[harness] 177/242 tasks done
+[harness] 178/242 tasks done
+[harness] 180/242 tasks done
+[harness] 182/242 tasks done
+[harness] 184/242 tasks done
+[harness] 185/242 tasks done
+[harness] 187/242 tasks done
+[harness] 189/242 tasks done
+[harness] 191/242 tasks done
+[harness] 192/242 tasks done
+[harness] 194/242 tasks done
+[harness] 196/242 tasks done
+[harness] 197/242 tasks done
+[harness] 199/242 tasks done
+[harness] 200/242 tasks done
+[harness] 201/242 tasks done
+[harness] 202/242 tasks done
+[harness] 203/242 tasks done
+[harness] 204/242 tasks done
+[harness] 205/242 tasks done
+[harness] 206/242 tasks done
+[harness] 208/242 tasks done
+[harness] 209/242 tasks done
+[harness] 210/242 tasks done
+[harness] 211/242 tasks done
+[harness] 213/242 tasks done
+[harness] 214/242 tasks done
+[harness] 215/242 tasks done
+[harness] 216/242 tasks done
+[harness] 217/242 tasks done
+[harness] 218/242 tasks done
+[harness] 219/242 tasks done
+[harness] 221/242 tasks done
+[harness] 222/242 tasks done
+[harness] 223/242 tasks done
+[harness] 224/242 tasks done
+[harness] 225/242 tasks done
+[harness] 227/242 tasks done
+[harness] 229/242 tasks done
+[harness] 230/242 tasks done
+[harness] 231/242 tasks done
+[harness] 233/242 tasks done
+[harness] 234/242 tasks done
+[harness] 235/242 tasks done
+[harness] 236/242 tasks done
+[harness] 237/242 tasks done
+[harness] 238/242 tasks done
+[harness] 239/242 tasks done
+[harness] 240/242 tasks done
+[harness] 241/242 tasks done
+[harness] 242/242 tasks done
+[harness] done 20261027T111509Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_8d09a3: {'ok': 9636, 'nonconverged': 41, 'failed': 0, 'timeout': 0, 'expected': 9677} in 5987.8s
+[run_eval] {"group": "m4_L1p", "rung": "primary", "components": "rho+eta+multistart+perTraitLD", "method": "famA_joint_susie_rho_eta_ms_ptld", "run_id": "20261027T111509Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_8d09a3", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T111509Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_8d09a3", "locus_set": "data/processed/sets/valid_grid_v1.h5", "n": 9677, "counts": {"ok": 9636, "nonconverged": 41, "failed": 0, "timeout": 0, "expected": 9677}, "with_truth": true, "n_with_ld2": 0, "wall_s": 6265.3, "n_per_trait_ld": 0, "n_noshare_start": 3453, "runtime_median_s": 0.5814948792500217, "orch_job": "famA_p5_m4_primary_r2", "orch_commit": "fa1aeec73f27bac9a58ab9d16f9242e0c002238b"}
+[harness] run 20261027T130106Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_52338e: 1786 loci, mode=batch, workers=1
+[harness] 1/45 tasks done
+[harness] 3/45 tasks done
+[harness] 6/45 tasks done
+[harness] 8/45 tasks done
+[harness] 10/45 tasks done
+[harness] 12/45 tasks done
+[harness] 14/45 tasks done
+[harness] 16/45 tasks done
+[harness] 18/45 tasks done
+[harness] 20/45 tasks done
+[harness] 22/45 tasks done
+[harness] 24/45 tasks done
+[harness] 26/45 tasks done
+[harness] 28/45 tasks done
+[harness] 30/45 tasks done
+[harness] 31/45 tasks done
+[harness] 32/45 tasks done
+[harness] 34/45 tasks done
+[harness] 35/45 tasks done
+[harness] 36/45 tasks done
+[harness] 38/45 tasks done
+[harness] 39/45 tasks done
+[harness] 40/45 tasks done
+[harness] 41/45 tasks done
+[harness] 42/45 tasks done
+[harness] 45/45 tasks done
+[harness] done 20261027T130106Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_52338e: {'ok': 1593, 'nonconverged': 7, 'failed': 186, 'timeout': 0, 'expected': 1786} in 1235.5s
+[run_eval] {"group": "m4_L0P23", "rung": "primary", "components": "rho+eta+multistart+perTraitLD", "method": "famA_joint_susie_rho_eta_ms_ptld", "run_id": "20261027T130106Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_52338e", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T130106Z_famA_joint_susie_rho_eta_ms_ptld_valid_grid_v1_52338e", "locus_set": "data/processed/sets/valid_grid_v1.h5", "n": 1786, "counts": {"ok": 1593, "nonconverged": 7, "failed": 186, "timeout": 0, "expected": 1786}, "with_truth": true, "n_with_ld2": 0, "wall_s": 1600.8, "n_per_trait_ld": 0, "n_noshare_start": 270, "runtime_median_s": 0.6071072217750043, "orch_job": "famA_p5_m4_primary_r2", "orch_commit": "fa1aeec73f27bac9a58ab9d16f9242e0c002238b"}
+[orch] exit 0 at 2026-10-27T14:21:44+01:00

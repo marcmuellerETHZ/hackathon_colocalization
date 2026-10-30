@@ -1,0 +1,14 @@
+[orch] job p4_realdata_rho_tests start 2026-10-27T10:34:45+01:00 host eu-g6-001 commit b84b110965 pid 930328
+[orch] cmd: python -m pytest -q tests/data_real -p no:cacheprovider
+............................                                             [100%]
+=============================== warnings summary ===============================
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=930333) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+28 passed, 4 warnings in 3.68s
+[orch] exit 0 at 2026-10-27T10:34:49+01:00

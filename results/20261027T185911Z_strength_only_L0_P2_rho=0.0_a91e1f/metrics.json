@@ -1,0 +1,454 @@
+{
+ "methods": {
+  "strength_only": {
+   "excluded": {
+    "all": {
+     "auprc_sd": 0.4810690624973767,
+     "auroc_dw": 0.98595,
+     "auroc_sd": 0.46985476631516343
+    },
+    "at_config_thresholds": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "at_fixed_0.8": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "at_matched_w_here": {
+     "W_called_D": 0.010000000000000002,
+     "W_called_S": 0.020000000000000004,
+     "recall_D": 0.0,
+     "recall_S": 0.85
+    },
+    "by_d_stratum_config_thresholds": {
+     "[16,inf)": {
+      "auprc_sd": 0.526334582751904,
+      "auroc_dw": 1.0,
+      "auroc_sd": 0.4965134297520663,
+      "false_S": 0.0,
+      "n": 14,
+      "recall_D": 0.0
+     },
+     "[2,4)": {
+      "auprc_sd": 0.6648443498126256,
+      "auroc_dw": 0.985,
+      "auroc_sd": 0.6005262399077278,
+      "false_S": 0.0,
+      "n": 8,
+      "recall_D": 0.0
+     },
+     "[4,8)": {
+      "auprc_sd": 0.43070715073386834,
+      "auroc_dw": 0.9728409090909091,
+      "auroc_sd": 0.3820932856029318,
+      "false_S": 0.0,
+      "n": 44,
+      "recall_D": 0.0
+     },
+     "[8,16)": {
+      "auprc_sd": 0.5175520336177566,
+      "auroc_dw": 0.9973529411764707,
+      "auroc_sd": 0.4219838516976914,
+      "false_S": 0.0,
+      "n": 34,
+      "recall_D": 0.0
+     },
+     "out": {
+      "false_S": null,
+      "n": 0,
+      "recall_D": null
+     }
+    },
+    "by_r2_stratum_config_thresholds": {
+     "[0,0.1)": {
+      "auprc_sd": 0.47251482541687695,
+      "auroc_dw": 0.9733928571428572,
+      "auroc_sd": 0.4184968167711837,
+      "false_S": 0.0,
+      "n": 28,
+      "recall_D": 0.0
+     },
+     "[0.1,0.3)": {
+      "auprc_sd": 0.5179238098650037,
+      "auroc_dw": 0.98725,
+      "auroc_sd": 0.46511245149911806,
+      "false_S": 0.0,
+      "n": 20,
+      "recall_D": 0.0
+     },
+     "[0.3,0.5)": {
+      "auprc_sd": 0.5041361607656896,
+      "auroc_dw": 0.9892105263157895,
+      "auroc_sd": 0.500254620519772,
+      "false_S": 0.0,
+      "n": 19,
+      "recall_D": 0.0
+     },
+     "[0.5,0.8)": {
+      "auprc_sd": 0.45004138593947896,
+      "auroc_dw": 0.993,
+      "auroc_sd": 0.45398181331356036,
+      "false_S": 0.0,
+      "n": 20,
+      "recall_D": 0.0
+     },
+     "[0.8,0.95)": {
+      "auprc_sd": 0.4976712121551528,
+      "auroc_dw": 0.9953846153846154,
+      "auroc_sd": 0.5047395833333334,
+      "false_S": 0.0,
+      "n": 13,
+      "recall_D": 0.0
+     },
+     "out": {
+      "false_S": null,
+      "n": 0,
+      "recall_D": null
+     }
+    },
+    "calibration": {
+     "brier_D": 0.17138904620043596,
+     "brier_S": 0.16918479221255026,
+     "ece_D": 0.041515102662511336,
+     "ece_S": 0.02340729024002993,
+     "recal_a_D_fitted_here": 0.023322788451801413,
+     "recal_a_S_fitted_here": 0.07641865576064116
+    },
+    "confusion_config_thresholds": {
+     "D": {
+      "insufficient": 100
+     },
+     "G": {
+      "insufficient": 30
+     },
+     "S": {
+      "insufficient": 100
+     },
+     "U": {
+      "insufficient": 30
+     },
+     "W": {
+      "insufficient": 100
+     }
+    },
+    "controls": {},
+    "false_S_slope_per_0.1rho": {
+     "D": null,
+     "W": null
+    },
+    "fdr_config_thresholds": {
+     "fdr_D_nominal": null,
+     "fdr_D_realized": null,
+     "fdr_S_nominal": null,
+     "fdr_S_realized": null,
+     "n_called_D": 0,
+     "n_called_S": 0
+    },
+    "ideal": {
+     "auprc_sd": 0.4810690624973767,
+     "auroc_dw": 0.98595,
+     "auroc_sd": 0.46985476631516343
+    },
+    "macro": {
+     "auprc_sd": 0.4810690624973767,
+     "auroc_dw": 0.98595,
+     "auroc_sd": 0.46985476631516343
+    },
+    "matched_w": {
+     "rate_D_on_W": 0.010000000000000002,
+     "rate_S_on_W": 0.020000000000000004,
+     "setting": "ideal",
+     "t_D": 0.25359100359100367,
+     "t_S": 0.1873987657105366
+    },
+    "per_cell": {
+     "L0|P2|rho=0.0": {
+      "auprc_sd": 0.4810690624973767,
+      "auroc_dw": 0.98595,
+      "auroc_sd": 0.46985476631516343,
+      "calibration": {
+       "brier_D": 0.17138904620043596,
+       "brier_S": 0.16918479221255026,
+       "ece_D": 0.041515102662511336,
+       "ece_S": 0.02340729024002993
+      },
+      "n": {
+       "D": 100,
+       "G": 30,
+       "S": 100,
+       "U": 30,
+       "W": 100
+      }
+     }
+    },
+    "per_level": {
+     "L0": {
+      "auprc_sd": 0.4810690624973767,
+      "auroc_dw": 0.98595,
+      "auroc_sd": 0.46985476631516343
+     }
+    },
+    "shuffled_label_control": {
+     "auprc_shuffled": 0.4636986547977801,
+     "weighted_prevalence": 0.5
+    },
+    "ties": {
+     "share_in_tie_groups": 0.565,
+     "share_s_eq_0.5": 0.0
+    }
+   },
+   "failures": {
+    "blocks_claims_gt_1pct": false,
+    "max_cell_failure_share": 0.0,
+    "n_expected": 360,
+    "n_failed": 0,
+    "per_cell": {
+     "L0|P2|rho=0.0": {
+      "n": 360,
+      "n_failed": 0,
+      "n_nonconverged": 0,
+      "share": 0.0
+     }
+    },
+    "status_counts": {
+     "ok": 360
+    }
+   },
+   "least_favourable": {
+    "all": {
+     "auprc_sd": 0.4810690624973767,
+     "auroc_dw": 0.98595,
+     "auroc_sd": 0.46985476631516343
+    },
+    "at_config_thresholds": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "at_fixed_0.8": {
+     "W_called_D": 0.0,
+     "W_called_S": 0.0,
+     "recall_D": 0.0,
+     "recall_S": 0.0
+    },
+    "at_matched_w_here": {
+     "W_called_D": 0.010000000000000002,
+     "W_called_S": 0.020000000000000004,
+     "recall_D": 0.0,
+     "recall_S": 0.85
+    },
+    "by_d_stratum_config_thresholds": {
+     "[16,inf)": {
+      "auprc_sd": 0.526334582751904,
+      "auroc_dw": 1.0,
+      "auroc_sd": 0.4965134297520663,
+      "false_S": 0.0,
+      "n": 14,
+      "recall_D": 0.0
+     },
+     "[2,4)": {
+      "auprc_sd": 0.6648443498126256,
+      "auroc_dw": 0.985,
+      "auroc_sd": 0.6005262399077278,
+      "false_S": 0.0,
+      "n": 8,
+      "recall_D": 0.0
+     },
+     "[4,8)": {
+      "auprc_sd": 0.43070715073386834,
+      "auroc_dw": 0.9728409090909091,
+      "auroc_sd": 0.3820932856029318,
+      "false_S": 0.0,
+      "n": 44,
+      "recall_D": 0.0
+     },
+     "[8,16)": {
+      "auprc_sd": 0.5175520336177566,
+      "auroc_dw": 0.9973529411764707,
+      "auroc_sd": 0.4219838516976914,
+      "false_S": 0.0,
+      "n": 34,
+      "recall_D": 0.0
+     },
+     "out": {
+      "false_S": null,
+      "n": 0,
+      "recall_D": null
+     }
+    },
+    "by_r2_stratum_config_thresholds": {
+     "[0,0.1)": {
+      "auprc_sd": 0.47251482541687695,
+      "auroc_dw": 0.9733928571428572,
+      "auroc_sd": 0.4184968167711837,
+      "false_S": 0.0,
+      "n": 28,
+      "recall_D": 0.0
+     },
+     "[0.1,0.3)": {
+      "auprc_sd": 0.5179238098650037,
+      "auroc_dw": 0.98725,
+      "auroc_sd": 0.46511245149911806,
+      "false_S": 0.0,
+      "n": 20,
+      "recall_D": 0.0
+     },
+     "[0.3,0.5)": {
+      "auprc_sd": 0.5041361607656896,
+      "auroc_dw": 0.9892105263157895,
+      "auroc_sd": 0.500254620519772,
+      "false_S": 0.0,
+      "n": 19,
+      "recall_D": 0.0
+     },
+     "[0.5,0.8)": {
+      "auprc_sd": 0.45004138593947896,
+      "auroc_dw": 0.993,
+      "auroc_sd": 0.45398181331356036,
+      "false_S": 0.0,
+      "n": 20,
+      "recall_D": 0.0
+     },
+     "[0.8,0.95)": {
+      "auprc_sd": 0.4976712121551528,
+      "auroc_dw": 0.9953846153846154,
+      "auroc_sd": 0.5047395833333334,
+      "false_S": 0.0,
+      "n": 13,
+      "recall_D": 0.0
+     },
+     "out": {
+      "false_S": null,
+      "n": 0,
+      "recall_D": null
+     }
+    },
+    "calibration": {
+     "brier_D": 0.17138904620043596,
+     "brier_S": 0.16918479221255026,
+     "ece_D": 0.041515102662511336,
+     "ece_S": 0.02340729024002993,
+     "recal_a_D_fitted_here": 0.023322788451801413,
+     "recal_a_S_fitted_here": 0.07641865576064116
+    },
+    "confusion_config_thresholds": {
+     "D": {
+      "insufficient": 100
+     },
+     "G": {
+      "insufficient": 30
+     },
+     "S": {
+      "insufficient": 100
+     },
+     "U": {
+      "insufficient": 30
+     },
+     "W": {
+      "insufficient": 100
+     }
+    },
+    "controls": {},
+    "false_S_slope_per_0.1rho": {
+     "D": null,
+     "W": null
+    },
+    "fdr_config_thresholds": {
+     "fdr_D_nominal": null,
+     "fdr_D_realized": null,
+     "fdr_S_nominal": null,
+     "fdr_S_realized": null,
+     "n_called_D": 0,
+     "n_called_S": 0
+    },
+    "ideal": {
+     "auprc_sd": 0.4810690624973767,
+     "auroc_dw": 0.98595,
+     "auroc_sd": 0.46985476631516343
+    },
+    "macro": {
+     "auprc_sd": 0.4810690624973767,
+     "auroc_dw": 0.98595,
+     "auroc_sd": 0.46985476631516343
+    },
+    "matched_w": {
+     "rate_D_on_W": 0.010000000000000002,
+     "rate_S_on_W": 0.020000000000000004,
+     "setting": "ideal",
+     "t_D": 0.25359100359100367,
+     "t_S": 0.1873987657105366
+    },
+    "per_cell": {
+     "L0|P2|rho=0.0": {
+      "auprc_sd": 0.4810690624973767,
+      "auroc_dw": 0.98595,
+      "auroc_sd": 0.46985476631516343,
+      "calibration": {
+       "brier_D": 0.17138904620043596,
+       "brier_S": 0.16918479221255026,
+       "ece_D": 0.041515102662511336,
+       "ece_S": 0.02340729024002993
+      },
+      "n": {
+       "D": 100,
+       "G": 30,
+       "S": 100,
+       "U": 30,
+       "W": 100
+      }
+     }
+    },
+    "per_level": {
+     "L0": {
+      "auprc_sd": 0.4810690624973767,
+      "auroc_dw": 0.98595,
+      "auroc_sd": 0.46985476631516343
+     }
+    },
+    "shuffled_label_control": {
+     "auprc_shuffled": 0.4636986547977801,
+     "weighted_prevalence": 0.5
+    },
+    "ties": {
+     "share_in_tie_groups": 0.565,
+     "share_s_eq_0.5": 0.0
+    }
+   }
+  }
+ },
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   "inf"
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ }
+}

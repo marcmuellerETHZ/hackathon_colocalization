@@ -1,0 +1,32 @@
+{
+ "source": "stored benchmark predictions of coloc_susie_mm on the M4 validation subsample (results/phase2_validation/coloc_susie_mm_M4/<run>/predictions.parquet); the pipeline reproduced them exactly (abs diff 0.0)",
+ "tolerance": 1e-06,
+ "loci": {
+  "L2_S_locus": {
+   "locus_id": "valid_grid_v1__L2_P3_rho=0.8__S__0009230",
+   "run": "20261027T192145Z_coloc_susie_mm_valid_grid_v1_9ee9eb",
+   "P_S": 0.9227656937864273,
+   "P_D": 0.005965138056285942,
+   "P_W": 0.0712691681572868,
+   "s": 0.9227656937864986,
+   "call": "S",
+   "fallback": false,
+   "n_ref": 150,
+   "rho_hat": 0.3959701144286405,
+   "oracle_class": "S"
+  },
+  "L2_W_fallback_locus": {
+   "locus_id": "valid_grid_v1__L2_P3_rho=0.8__W__0009204",
+   "run": "20261027T192144Z_coloc_susie_mm_valid_grid_v1_977229",
+   "P_S": 0.003135550087379315,
+   "P_D": 0.0056957805352454765,
+   "P_W": 0.9911686693773752,
+   "s": 0.3550484316991166,
+   "call": "insufficient",
+   "fallback": true,
+   "n_ref": 150,
+   "rho_hat": 0.7566814583467568,
+   "oracle_class": "W"
+  }
+ }
+}

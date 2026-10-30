@@ -1,0 +1,70 @@
+{
+ "checks": [
+  {
+   "arm": "main",
+   "derived_seed_collisions_within_new": 0,
+   "derived_seed_overlap": 0,
+   "key_overlap": 0,
+   "new": {
+    "key_prefix": [],
+    "n_cells": 34,
+    "n_keys": 15800,
+    "seed": 20261029,
+    "set": "dry_p9_v2"
+   },
+   "new_stats": [
+    "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.stats.seg0.json"
+   ],
+   "ok": true,
+   "ref": {
+    "key_prefix": [],
+    "n_cells": 34,
+    "n_keys": 1361000,
+    "seed": 20261029,
+    "set": "valid_grid_v1"
+   },
+   "reference": "v1",
+   "reference_source": "data/processed/sets/valid_grid_v1.stats.json",
+   "reference_stats": [
+    "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/data/processed/sets/valid_grid_v1.stats.json"
+   ]
+  },
+  {
+   "arm": "shifted",
+   "derived_seed_collisions_within_new": 0,
+   "derived_seed_overlap": 0,
+   "key_overlap": 0,
+   "new": {
+    "key_prefix": [
+     "shifted"
+    ],
+    "n_cells": 4,
+    "n_keys": 1080,
+    "seed": 20261029,
+    "set": "dry_p9_v2_shifted"
+   },
+   "new_stats": [
+    "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.stats.json"
+   ],
+   "ok": true,
+   "ref": {
+    "key_prefix": [
+     "shifted"
+    ],
+    "n_cells": 4,
+    "n_keys": 1800,
+    "seed": 20261029,
+    "set": "shifted_dry_v1_shifted"
+   },
+   "reference": "v1",
+   "reference_source": "data/processed/sets/shifted_dry_v1_shifted.stats.json",
+   "reference_stats": [
+    "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/data/processed/sets/shifted_dry_v1_shifted.stats.json"
+   ]
+  }
+ ],
+ "definition": "DESIGN_P2 \u00a76 / M8: no generation key, derived seed or locus id of this run's simulated sets overlaps a\n        reference test set named in the config's `disjoint_from` (eval.testset_lock). Test mode: the reference is\n        that test set's own run (its sim stage state: stats files and truth ids; read inside this run's access\n        window). Dry mode: the reference is the entry's `dry_reference_stats` (validation sets), so the same code\n        runs without test data. Any overlap aborts the run before a method sees a locus.",
+ "done_utc": "2026-10-28T09:06:18Z",
+ "mode": "dry",
+ "ok": true
+}

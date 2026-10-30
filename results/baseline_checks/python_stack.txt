@@ -1,0 +1,4 @@
+msprime 1.4.4 stdpopsim 0.3.0 pyarrow 26.0.0 lightgbm 4.7.0 xgboost 3.4.1 pgenlib 0.95.1
+msprime sites 88
+lgbm acc 1.0 xgb acc 1.0
+pgenlib roundtrip ok: True

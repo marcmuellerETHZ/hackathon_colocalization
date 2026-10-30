@@ -1,0 +1,62 @@
+[W1026 17:42:39.090500240 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 641728512 bytes (free: 178061312, total: 25250627584).
+[W1026 17:42:39.116756785 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 108855296, total: 25250627584).
+[W1026 17:42:39.136621980 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 750583808, total: 25250627584).
+[W1026 17:42:49.254966826 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 641728512 bytes (free: 232587264, total: 25250627584).
+[W1026 17:42:49.255631970 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 641728512 bytes (free: 232587264, total: 25250627584).
+[w0] shard 1 loci 2048 11.8 loci/s stats {'windows': 8, 'loci': 1024, 'none': 0, 't_window': 4.479062080383301, 't_loci': 167.7947313785553, 'rejected': 0}
+[w0] shard 2 loci 4096 12.9 loci/s stats {'windows': 16, 'loci': 2048, 'none': 0, 't_window': 6.9838457107543945, 't_loci': 309.2305064201355, 'rejected': 0}
+[w0] shard 3 loci 6144 13.0 loci/s stats {'windows': 24, 'loci': 3072, 'none': 0, 't_window': 11.796929359436035, 't_loci': 458.7118721008301, 'rejected': 0}
+[w0] shard 4 loci 8192 13.3 loci/s stats {'windows': 32, 'loci': 4096, 'none': 0, 't_window': 15.705771446228027, 't_loci': 597.7994842529297, 'rejected': 0}
+[w0] shard 5 loci 10240 13.1 loci/s stats {'windows': 40, 'loci': 5120, 'none': 0, 't_window': 20.502894163131714, 't_loci': 757.7222809791565, 'rejected': 0}
+[w0] shard 6 loci 12288 11.2 loci/s stats {'windows': 48, 'loci': 6144, 'none': 0, 't_window': 25.233840227127075, 't_loci': 1063.1123216152191, 'rejected': 0}
+[w0] shard 7 loci 14336 11.0 loci/s stats {'windows': 56, 'loci': 7168, 'none': 0, 't_window': 29.783976316452026, 't_loci': 1273.2190296649933, 'rejected': 0}
+[w0] shard 8 loci 16384 11.3 loci/s stats {'windows': 64, 'loci': 8192, 'none': 0, 't_window': 35.51041579246521, 't_loci': 1405.9855864048004, 'rejected': 0}
+[w0] shard 9 loci 18432 11.4 loci/s stats {'windows': 72, 'loci': 9216, 'none': 0, 't_window': 40.591296911239624, 't_loci': 1566.9218986034393, 'rejected': 0}
+[W1026 18:10:06.239627540 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 87162880, total: 25250627584).
+[W1026 18:10:06.252194458 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 307363840, total: 25250627584).
+[W1026 18:13:40.238413378 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 725352448, total: 25250627584).
+[W1026 18:13:40.261540611 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 517996544 bytes (free: 337379328, total: 25250627584).
+[W1026 18:13:40.261788272 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 517996544 bytes (free: 337379328, total: 25250627584).
+[W1026 18:13:51.652382278 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 681312256, total: 25250627584).
+[W1026 18:13:51.653114352 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 681312256, total: 25250627584).
+[w0] shard 10 loci 20480 10.7 loci/s stats {'windows': 80, 'loci': 10240, 'none': 0, 't_window': 44.623438358306885, 't_loci': 1854.9761805534363, 'rejected': 0}
+[w0] shard 11 loci 22528 10.5 loci/s stats {'windows': 88, 'loci': 11264, 'none': 0, 't_window': 48.837629318237305, 't_loci': 2090.188457965851, 'rejected': 0}
+[w0] shard 12 loci 24576 10.4 loci/s stats {'windows': 96, 'loci': 12288, 'none': 0, 't_window': 53.554017066955566, 't_loci': 2298.5445692539215, 'rejected': 0}
+[w0] shard 13 loci 26624 10.3 loci/s stats {'windows': 104, 'loci': 13312, 'none': 0, 't_window': 57.84901261329651, 't_loci': 2506.1656379699707, 'rejected': 0}
+[w0] shard 14 loci 28672 10.4 loci/s stats {'windows': 112, 'loci': 14336, 'none': 0, 't_window': 61.62411141395569, 't_loci': 2681.698814868927, 'rejected': 0}
+[w0] shard 15 loci 30720 10.3 loci/s stats {'windows': 120, 'loci': 15360, 'none': 0, 't_window': 66.92581248283386, 't_loci': 2904.385261297226, 'rejected': 0}
+[w0] shard 16 loci 32768 10.2 loci/s stats {'windows': 128, 'loci': 16384, 'none': 0, 't_window': 71.97703123092651, 't_loci': 3113.423272371292, 'rejected': 0}
+[w0] shard 17 loci 34816 10.2 loci/s stats {'windows': 136, 'loci': 17408, 'none': 0, 't_window': 76.61040902137756, 't_loci': 3325.3528599739075, 'rejected': 0}
+[w0] shard 18 loci 36864 10.1 loci/s stats {'windows': 144, 'loci': 18432, 'none': 0, 't_window': 80.71957111358643, 't_loci': 3535.137181997299, 'rejected': 0}
+[w0] shard 19 loci 38912 10.2 loci/s stats {'windows': 152, 'loci': 19456, 'none': 0, 't_window': 86.30332732200623, 't_loci': 3692.9230597019196, 'rejected': 0}
+[w0] shard 20 loci 40960 10.2 loci/s stats {'windows': 160, 'loci': 20480, 'none': 0, 't_window': 90.15807056427002, 't_loci': 3919.725866794586, 'rejected': 0}
+[w0] shard 21 loci 43008 10.1 loci/s stats {'windows': 168, 'loci': 21504, 'none': 0, 't_window': 94.74402379989624, 't_loci': 4130.053360939026, 'rejected': 0}
+[w0] shard 22 loci 45056 10.1 loci/s stats {'windows': 176, 'loci': 22528, 'none': 0, 't_window': 100.67566061019897, 't_loci': 4354.600209712982, 'rejected': 0}
+[w0] shard 23 loci 47104 10.0 loci/s stats {'windows': 184, 'loci': 23552, 'none': 0, 't_window': 105.51630210876465, 't_loci': 4572.858439683914, 'rejected': 0}
+[w0] shard 24 loci 49152 10.0 loci/s stats {'windows': 192, 'loci': 24576, 'none': 0, 't_window': 109.83648347854614, 't_loci': 4761.899750947952, 'rejected': 0}
+[w0] shard 25 loci 51200 10.1 loci/s stats {'windows': 200, 'loci': 25600, 'none': 0, 't_window': 114.8882110118866, 't_loci': 4917.68701004982, 'rejected': 0}
+[w0] shard 26 loci 53248 10.1 loci/s stats {'windows': 208, 'loci': 26624, 'none': 0, 't_window': 119.44742488861084, 't_loci': 5133.308879852295, 'rejected': 0}
+[w0] shard 27 loci 55296 10.0 loci/s stats {'windows': 216, 'loci': 27648, 'none': 0, 't_window': 124.65763711929321, 't_loci': 5363.632369995117, 'rejected': 0}
+[w0] shard 28 loci 57344 10.0 loci/s stats {'windows': 224, 'loci': 28672, 'none': 0, 't_window': 129.4653446674347, 't_loci': 5555.33992433548, 'rejected': 0}
+[w0] shard 29 loci 59392 10.0 loci/s stats {'windows': 232, 'loci': 29696, 'none': 0, 't_window': 134.736266374588, 't_loci': 5755.558648586273, 'rejected': 0}
+[w0] shard 30 loci 61440 10.0 loci/s stats {'windows': 240, 'loci': 30720, 'none': 0, 't_window': 140.5151710510254, 't_loci': 5944.990384578705, 'rejected': 0}
+[w0] shard 31 loci 63488 10.1 loci/s stats {'windows': 248, 'loci': 31744, 'none': 0, 't_window': 144.64834547042847, 't_loci': 6128.697679519653, 'rejected': 0}
+[w0] shard 32 loci 65536 10.1 loci/s stats {'windows': 256, 'loci': 32768, 'none': 0, 't_window': 149.84646773338318, 't_loci': 6314.152847290039, 'rejected': 0}
+[w0] shard 33 loci 67584 10.1 loci/s stats {'windows': 264, 'loci': 33792, 'none': 0, 't_window': 153.82834553718567, 't_loci': 6512.272821426392, 'rejected': 0}
+[w0] shard 34 loci 69632 10.1 loci/s stats {'windows': 272, 'loci': 34816, 'none': 0, 't_window': 159.26307702064514, 't_loci': 6699.973896980286, 'rejected': 0}
+[w0] shard 35 loci 71680 10.1 loci/s stats {'windows': 280, 'loci': 35840, 'none': 0, 't_window': 164.28452825546265, 't_loci': 6887.1664526462555, 'rejected': 0}
+[w0] shard 36 loci 73728 10.1 loci/s stats {'windows': 288, 'loci': 36864, 'none': 0, 't_window': 168.90562415122986, 't_loci': 7127.664245605469, 'rejected': 0}
+[w0] shard 37 loci 75776 10.1 loci/s stats {'windows': 296, 'loci': 37888, 'none': 0, 't_window': 173.77547001838684, 't_loci': 7287.611347198486, 'rejected': 0}
+[w0] shard 38 loci 77824 10.2 loci/s stats {'windows': 304, 'loci': 38912, 'none': 0, 't_window': 177.4352056980133, 't_loci': 7450.270818948746, 'rejected': 0}
+[w0] shard 39 loci 79872 10.2 loci/s stats {'windows': 312, 'loci': 39936, 'none': 0, 't_window': 181.82291507720947, 't_loci': 7609.654440164566, 'rejected': 0}
+[w0] shard 40 loci 81920 10.2 loci/s stats {'windows': 320, 'loci': 40960, 'none': 0, 't_window': 185.42352032661438, 't_loci': 7810.2389414310455, 'rejected': 0}
+[w0] shard 41 loci 83968 10.0 loci/s stats {'windows': 328, 'loci': 41984, 'none': 0, 't_window': 191.18801760673523, 't_loci': 8208.676669597626, 'rejected': 0}
+[w0] shard 42 loci 86016 9.7 loci/s stats {'windows': 336, 'loci': 43008, 'none': 0, 't_window': 195.84773302078247, 't_loci': 8624.550488233566, 'rejected': 0}
+[w0] shard 43 loci 88064 9.5 loci/s stats {'windows': 344, 'loci': 44032, 'none': 0, 't_window': 200.43869161605835, 't_loci': 9067.785507440567, 'rejected': 0}
+[w0] shard 44 loci 90112 9.2 loci/s stats {'windows': 352, 'loci': 45056, 'none': 0, 't_window': 204.38351225852966, 't_loci': 9517.556429624557, 'rejected': 0}
+[w0] shard 45 loci 92160 9.0 loci/s stats {'windows': 360, 'loci': 46080, 'none': 0, 't_window': 210.51595497131348, 't_loci': 9953.289781808853, 'rejected': 0}
+[w0] shard 46 loci 94208 8.9 loci/s stats {'windows': 368, 'loci': 47104, 'none': 0, 't_window': 215.0616579055786, 't_loci': 10337.511514425278, 'rejected': 0}
+[w0] shard 47 loci 96256 8.8 loci/s stats {'windows': 376, 'loci': 48128, 'none': 0, 't_window': 219.58721542358398, 't_loci': 10647.631410598755, 'rejected': 0}
+[w0] shard 48 loci 98304 8.8 loci/s stats {'windows': 384, 'loci': 49152, 'none': 0, 't_window': 225.38501644134521, 't_loci': 10955.39104270935, 'rejected': 0}
+[w0] shard 49 loci 100000 8.7 loci/s stats {'windows': 391, 'loci': 50048, 'none': 0, 't_window': 229.94355607032776, 't_loci': 11229.540628671646, 'rejected': 0}
+DONE 100000 {"windows": 391, "loci": 50048, "none": 0, "t_window": 229.94355607032776, "t_loci": 11229.540628671646, "rejected": 0}

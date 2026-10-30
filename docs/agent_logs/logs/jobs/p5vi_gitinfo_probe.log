@@ -1,0 +1,6 @@
+[orch] job p5vi_gitinfo_probe start 2026-10-27T10:59:23+01:00 host eu-g6-001 commit 11fc77f2b4 pid 958227
+[orch] cmd: echo ORCH_COMMIT=11fc77f2b4d5cc0b94e8f9a3839ae4c23595f1c5; PYTHONPATH=src python -c 'from eval.harness import git_info; import json; print(json.dumps(git_info())[:600])'; PYTHONPATH=src python -c 'import eval.io as e; print(\'PROJECT_ROOT\', e.PROJECT_ROOT)'
+ORCH_COMMIT=11fc77f2b4d5cc0b94e8f9a3839ae4c23595f1c5
+{"commit": "3e19da1d864a448ce5ecdd4fb997c71e5a632d3a", "clean": false, "modified_tracked": [" M logs/redo_chr7.log"], "untracked_code": [], "tags": []}
+PROJECT_ROOT /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p5vi_gitinfo_probe/code
+[orch] exit 0 at 2026-10-27T10:59:29+01:00

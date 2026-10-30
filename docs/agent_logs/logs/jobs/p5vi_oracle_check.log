@@ -1,0 +1,580 @@
+[orch] job p5vi_oracle_check start 2026-10-27T10:51:59+01:00 host eu-g6-001 commit 11fc77f2b4 pid 949398
+[orch] cmd: PYTHONPATH=src python reviews/p5_verify_infra/oracle_check.py
+{
+ "n": 30,
+ "n_class_mismatch": 0,
+ "class_counts": {
+  "D": 8,
+  "S": 8,
+  "W": 8,
+  "G": 3,
+  "U": 3
+ },
+ "max_dmu": 0.0,
+ "max_dr2": 3.13940149654357e-07,
+ "max_dd_rel": 1.7378208170078574e-06,
+ "mu_factor_checks": 29,
+ "mu_factor_max_rel_err": 2.284478709344268e-05,
+ "rows": [
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__D_r2_0.5-0.8__0035515",
+   "level": "L0",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 3.13940149654357e-07,
+   "dd_rel": 3.552352113064837e-07
+  },
+  {
+   "locus_id": "screen_v2__L2_P3_rho=0.5__D_r2_0.5-0.8__0010630",
+   "level": "L2",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 1.72772868234361e-08,
+   "dd_rel": 1.989675563952807e-08
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__D_r2_0.5-0.8__0034845",
+   "level": "L4",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 7.653361833170891e-08,
+   "dd_rel": 8.055428338647934e-08
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__D_r2_0.5-0.8__0033884",
+   "level": "L4",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 1.9058347144884635e-07,
+   "dd_rel": 3.428733785456556e-07
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__D_r2lt0.5__0028222",
+   "level": "L4",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 6.965154208601887e-10,
+   "dd_rel": 3.5049633224225794e-10
+  },
+  {
+   "locus_id": "screen_v2__L0_P1_r_p=0.0__S__0004260",
+   "level": "L0",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L0_P1_r_p=0.0__S__0014609",
+   "level": "L0",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    3
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L2_P3_rho=0.5__S__0030031",
+   "level": "L2",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__S__0025625",
+   "level": "L0",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L0_P1_r_p=0.0__S__0009804",
+   "level": "L0",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__W__0028602",
+   "level": "L4",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__W__0026002",
+   "level": "L4",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L4_P3_rho=0.5__W__0019603",
+   "level": "L4",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L2_P3_rho=0.5__W__0000000",
+   "level": "L2",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__W__0029002",
+   "level": "L0",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P3_rho=0.5__D_r4_dall__0000268",
+   "level": "L2",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 9.691015712132156e-08,
+   "dd_rel": 4.4780839099826827e-07
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P1_r_p=0.0__D_r2_dall__0000453",
+   "level": "L2",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 6.344569875027517e-08,
+   "dd_rel": 4.561832132050826e-08
+  },
+  {
+   "locus_id": "valid_grid_v1__L0_P1_r_p=0.0__D_r4_dall__0008595",
+   "level": "L0",
+   "stored": "D",
+   "mine": "D",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 2.539525134626075e-07,
+   "dd_rel": 1.0407103915605776e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L4_P1_r_p=0.6__G__0002203",
+   "level": "L4",
+   "stored": "G",
+   "mine": "G",
+   "class_ok": true,
+   "n_causal": [
+    3,
+    3
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L0_P1_r_p=0.6__G__0000404",
+   "level": "L0",
+   "stored": "G",
+   "mine": "G",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.0__G__0002204",
+   "level": "L1",
+   "stored": "G",
+   "mine": "G",
+   "class_ok": true,
+   "n_causal": [
+    3,
+    2
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L4_P2_rho=0.3__S__0016616",
+   "level": "L4",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    2,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P2_rho=0.0__S__0002208",
+   "level": "L2",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    3,
+    3
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P1_r_p=0.0__S__0011016",
+   "level": "L1",
+   "stored": "S",
+   "mine": "S",
+   "class_ok": true,
+   "n_causal": [
+    3,
+    3
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P3_rho=0.8__U__0018432",
+   "level": "L1",
+   "stored": "U",
+   "mine": "U",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 1.0966840879866879e-07,
+   "dd_rel": 9.338378827096193e-07
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.3__U__0010077",
+   "level": "L1",
+   "stored": "U",
+   "mine": "U",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 1.9293492437011395e-07,
+   "dd_rel": 1.7378208170078574e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L0_P2_rho=0.3__U__0008002",
+   "level": "L0",
+   "stored": "U",
+   "mine": "U",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0,
+   "dr2": 2.0116592258645483e-07,
+   "dd_rel": 1.7093166334113838e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P2_rho=0.3__W__0006402",
+   "level": "L2",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P1_r_p=0.0__W__0017800",
+   "level": "L2",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.3__W__0008604",
+   "level": "L1",
+   "stored": "W",
+   "mine": "W",
+   "class_ok": true,
+   "n_causal": [
+    1,
+    1
+   ],
+   "dmu1": 0.0,
+   "dmu2": 0.0
+  }
+ ],
+ "mu_rows": [
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__D_r2_0.5-0.8__0035515",
+   "trait": 1,
+   "max_rel_err": 6.246070537938306e-06
+  },
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__D_r2_0.5-0.8__0035515",
+   "trait": 2,
+   "max_rel_err": 2.840900597862993e-06
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__D_r2_0.5-0.8__0034845",
+   "trait": 1,
+   "max_rel_err": 5.496461191025235e-06
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__D_r2lt0.5__0028222",
+   "trait": 1,
+   "max_rel_err": 2.284478709344268e-05
+  },
+  {
+   "locus_id": "screen_v2__L0_P1_r_p=0.0__S__0004260",
+   "trait": 1,
+   "max_rel_err": 7.957047386246425e-07
+  },
+  {
+   "locus_id": "screen_v2__L0_P1_r_p=0.0__S__0014609",
+   "trait": 1,
+   "max_rel_err": 7.71122917244223e-07
+  },
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__S__0025625",
+   "trait": 1,
+   "max_rel_err": 5.015644675060401e-06
+  },
+  {
+   "locus_id": "screen_v2__L0_P3_rho=0.5__S__0025625",
+   "trait": 2,
+   "max_rel_err": 4.7412829424198895e-06
+  },
+  {
+   "locus_id": "screen_v2__L0_P1_r_p=0.0__S__0009804",
+   "trait": 1,
+   "max_rel_err": 1.2624196031877337e-05
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__W__0028602",
+   "trait": 1,
+   "max_rel_err": 3.193572650982553e-06
+  },
+  {
+   "locus_id": "screen_v2__L4_P1_r_p=0.0__W__0026002",
+   "trait": 1,
+   "max_rel_err": 3.7297156295777373e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P1_r_p=0.0__D_r2_dall__0000453",
+   "trait": 1,
+   "max_rel_err": 3.5019211624732916e-07
+  },
+  {
+   "locus_id": "valid_grid_v1__L0_P1_r_p=0.0__D_r4_dall__0008595",
+   "trait": 1,
+   "max_rel_err": 2.459791777036871e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L4_P1_r_p=0.6__G__0002203",
+   "trait": 1,
+   "max_rel_err": 8.200204027267008e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L0_P1_r_p=0.6__G__0000404",
+   "trait": 1,
+   "max_rel_err": 3.993485132498197e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.0__G__0002204",
+   "trait": 1,
+   "max_rel_err": 5.458958299206783e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.0__G__0002204",
+   "trait": 2,
+   "max_rel_err": 1.4226510301874862e-05
+  },
+  {
+   "locus_id": "valid_grid_v1__L4_P2_rho=0.3__S__0016616",
+   "trait": 1,
+   "max_rel_err": 3.4823933545919055e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L4_P2_rho=0.3__S__0016616",
+   "trait": 2,
+   "max_rel_err": 3.7939373984081108e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P2_rho=0.0__S__0002208",
+   "trait": 1,
+   "max_rel_err": 7.752803867108224e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P2_rho=0.0__S__0002208",
+   "trait": 2,
+   "max_rel_err": 8.693607199781374e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P1_r_p=0.0__S__0011016",
+   "trait": 1,
+   "max_rel_err": 3.62386602357348e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.3__U__0010077",
+   "trait": 1,
+   "max_rel_err": 5.2298321031798314e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.3__U__0010077",
+   "trait": 2,
+   "max_rel_err": 3.4388974503846238e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P2_rho=0.3__W__0006402",
+   "trait": 1,
+   "max_rel_err": 3.5716751947761533e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P2_rho=0.3__W__0006402",
+   "trait": 2,
+   "max_rel_err": 1.5347822585292962e-05
+  },
+  {
+   "locus_id": "valid_grid_v1__L2_P1_r_p=0.0__W__0017800",
+   "trait": 1,
+   "max_rel_err": 5.065109969448756e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.3__W__0008604",
+   "trait": 1,
+   "max_rel_err": 7.270127700540299e-06
+  },
+  {
+   "locus_id": "valid_grid_v1__L1_P2_rho=0.3__W__0008604",
+   "trait": 2,
+   "max_rel_err": 3.024503742479722e-06
+  }
+ ]
+}
+[orch] exit 0 at 2026-10-27T10:53:13+01:00

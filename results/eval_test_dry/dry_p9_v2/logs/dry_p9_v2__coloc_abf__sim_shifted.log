@@ -1,0 +1,2 @@
+10:06:43 [harness] run dry_p9_v2__coloc_abf__sim_shifted: 32 loci (32 to run), mode=cpu, workers=2
+10:06:45 [harness] done dry_p9_v2__coloc_abf__sim_shifted: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 2.1s

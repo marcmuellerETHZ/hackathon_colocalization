@@ -1,0 +1,8 @@
+[orch] job p4b_tests_baselines_r3 start 2026-10-27T14:45:51+01:00 host eu-g6-001 commit f6921efab6 pid 1276979
+[orch] cmd: PYTHONPATH=src python -m pytest -q -rxs -p no:cacheprovider tests/baselines
+........................................x............................... [ 65%]
+......................................                                   [100%]
+=========================== short test summary info ============================
+XFAIL tests/baselines/test_controls.py::test_distinct[1-sharepro] - SharePro false sharing on distinct control (s = 1); matches CLI
+109 passed, 1 xfailed in 331.15s (0:05:31)
+[orch] exit 0 at 2026-10-27T14:51:29+01:00

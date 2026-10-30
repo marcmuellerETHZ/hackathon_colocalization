@@ -1,0 +1,2 @@
+10:06:49 [harness] run dry_p9_v2__coloc_abf__real_R2: 16 loci (16 to run), mode=cpu, workers=2
+10:06:51 [harness] done dry_p9_v2__coloc_abf__real_R2: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 2.7s

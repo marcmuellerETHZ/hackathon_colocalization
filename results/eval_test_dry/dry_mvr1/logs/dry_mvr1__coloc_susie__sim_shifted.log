@@ -1,0 +1,2 @@
+23:05:57 [harness] run dry_mvr1__coloc_susie__sim_shifted: 16 loci (16 to run), mode=cpu, workers=6
+23:06:58 [harness] done dry_mvr1__coloc_susie__sim_shifted: {'ok': 15, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 16} in 61.2s

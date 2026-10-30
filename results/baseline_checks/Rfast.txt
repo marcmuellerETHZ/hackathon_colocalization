@@ -1,0 +1,3 @@
+Rfast 2.1.5.2 
+max|Rfast::cora - cor| = 3.552714e-15 
+Rfast colsums check: TRUE 

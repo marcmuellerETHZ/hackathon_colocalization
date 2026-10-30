@@ -1,0 +1,17 @@
+[orch] job famC_p9_trainregion_smoke start 2026-10-28T09:51:07+01:00 host eu-g6-001 commit 059ac52c9b pid 2115342
+[orch] cmd: python scripts/famC_eval/build_trainregion.py --set trainregion_smoke --out $ORCH_OUT/sets --workers 1 --cells "L2|P1|r_p=0.0" --max-visits 2 && python -c "
+import sys; sys.path.insert(0,\"src\")
+from eval.io import list_loci, read_locus_attrs
+import pandas as pd, glob
+ids = list_loci(\"$ORCH_OUT/sets/trainregion_smoke.h5\"); print(len(ids), ids[:2])
+t = pd.read_parquet(\"$ORCH_OUT/sets/trainregion_smoke.truth.parquet\"); print(t.columns.tolist()[:30]); print(t[\"oracle_class\"].value_counts().to_dict() if \"oracle_class\" in t else t.iloc[0])
+print(t[\"split\"].unique() if \"split\" in t else \"\")
+"
+{"set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_trainregion_smoke/out/sets/trainregion_smoke.h5", "runtime_s": 38.27732968330383}
+38 ['trainregion_smoke__L2_P1_r_p=0.0__D_r0_dall__0000002', 'trainregion_smoke__L2_P1_r_p=0.0__D_r0_dall__0000013']
+['locus_id', 'oracle_class', 'mu1', 'mu2', 'r2', 'd', 'rho', 'block_id', 'cell_id', 'split', 'mismatch_level', 'pairing_type', 'overlap', 'control', 'causal1', 'causal2', 'effect1', 'effect2', 'mu1_all', 'mu2_all', 'causal1_vid', 'causal2_vid', 'cd1', 'cd2', 'n_powered1', 'n_powered2', 'locus_type', 'target_r2_bin', 'background', 'strong1']
+{'D': 19, 'W': 6, 'S': 6, 'G': 6, 'U': 1}
+<ArrowStringArray>
+['train']
+Length: 1, dtype: str
+[orch] exit 0 at 2026-10-28T09:51:51+01:00

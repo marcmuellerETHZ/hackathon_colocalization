@@ -1,0 +1,42 @@
+[orch] job p2rs_checks_c2 start 2026-10-27T10:38:33+01:00 host eu-g6-001 commit ceef79cc64 pid 933792
+[orch] cmd: python reviews/p2_review_sim_checks.py C2; echo CHECKS_EXIT=0
+{
+ "C2_rho_window_paired": {
+  "ok": true,
+  "rho=0.0_signal=False": {
+   "bias_plain": 0.00314138543347193,
+   "bias_resid": 0.0033526265336945834,
+   "mc_se": 0.0040487580492439825,
+   "paired_diff": 0.00021124110022265375,
+   "paired_diff_se": 0.00014148189947786174,
+   "reps": 1000
+  },
+  "rho=0.0_signal=True": {
+   "bias_plain": 0.008624997422960388,
+   "bias_resid": 0.003996875055855666,
+   "mc_se": 0.003969981849512836,
+   "paired_diff": -0.00462812236710472,
+   "paired_diff_se": 0.0005886152751009969,
+   "reps": 1000
+  },
+  "rho=0.3_signal=False": {
+   "bias_plain": -0.0031541717266158065,
+   "bias_resid": -0.0031865029918305976,
+   "mc_se": 0.003325526285390853,
+   "paired_diff": -3.233126521475169e-05,
+   "paired_diff_se": 0.0001168405337794568,
+   "reps": 1000
+  },
+  "rho=0.3_signal=True": {
+   "bias_plain": -0.004693151902421033,
+   "bias_resid": -0.007318957585732921,
+   "mc_se": 0.0034145155905175324,
+   "paired_diff": -0.002625805683311896,
+   "paired_diff_se": 0.0004346999626910152,
+   "reps": 1000
+  }
+ }
+}
+ALL OK []
+CHECKS_EXIT=0
+[orch] exit 0 at 2026-10-27T10:38:48+01:00

@@ -1,0 +1,2 @@
+20:21:33 [harness] run dry_v4__sharepro__real_R2: 32 loci (32 to run), mode=cpu, workers=7
+20:21:57 [harness] done dry_v4__sharepro__real_R2: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 25.9s

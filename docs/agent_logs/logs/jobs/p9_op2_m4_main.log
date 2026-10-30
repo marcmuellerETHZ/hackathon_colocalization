@@ -1,0 +1,20 @@
+[orch] job p9_op2_m4_main start 2026-10-28T09:50:32+01:00 host eu-g6-001 commit 4de05127bb pid 2114790
+[orch] cmd: PYTHONPATH=src python scripts/baselines_p4.py op2 --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/m4_subsample_v1/main.txt --runs-dir results/baselines_m4/runs --runs-dir results/baselines_m4/bench_p9 --exclude mvsusie --label 'OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main' --out results/baselines_p9/m4_valid_v3_parts/op2_m4_main.json && PYTHONPATH=src python scripts/baselines_p4.py op2 --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/m4_subsample_v1/slow.txt --runs-dir results/baselines_m4/runs --methods colocboost colocboost_m1 --label 'OP1+OP2 M4 slow (realistic L1-L6), m4_subsample@1 slow' --out results/baselines_p9/m4_valid_v3_parts/op2_m4_slow.json
+coloc_abf_W0.15_p12_1e-05    n= 12170 OP1 t_S=0.908331 t_D=0.538167 | OP2 t_S=0.908331 feasible=True t_D=0.538167 S_on_W=0.0247 S_on_D=0.0676
+coloc_abf_W0.15_p12_5e-06    n= 12170 OP1 t_S=0.832058 t_D=0.566502 | OP2 t_S=0.832058 feasible=True t_D=0.566502 S_on_W=0.0247 S_on_D=0.0676
+coloc_abf_W0.1_p12_1e-05     n= 12170 OP1 t_S=0.919904 t_D=0.554344 | OP2 t_S=0.919904 feasible=True t_D=0.554344 S_on_W=0.0250 S_on_D=0.0639
+coloc_abf_W0.1_p12_5e-06     n= 12170 OP1 t_S=0.851686 t_D=0.595357 | OP2 t_S=0.851686 feasible=True t_D=0.595357 S_on_W=0.0250 S_on_D=0.0639
+coloc_abf_W0.2_p12_1e-05     n= 12170 OP1 t_S=0.907803 t_D=0.53257 | OP2 t_S=0.907803 feasible=True t_D=0.53257 S_on_W=0.0250 S_on_D=0.0687
+coloc_abf_W0.2_p12_5e-06     n= 12170 OP1 t_S=0.831172 t_D=0.580311 | OP2 t_S=0.831172 feasible=True t_D=0.580311 S_on_W=0.0250 S_on_D=0.0687
+coloc_prop_test              n= 12170 OP1 t_S=inf t_D=inf | OP2 t_S=inf feasible=None t_D=inf S_on_W=nan S_on_D=nan
+coloc_susie                  n= 12170 OP1 t_S=0.878451 t_D=0.803617 | OP2 t_S=0.999964 feasible=True t_D=0.803617 S_on_W=0.0046 S_on_D=0.0997
+coloc_susie_mm               n= 12170 OP1 t_S=0.840282 t_D=0.732259 | OP2 t_S=0.840282 feasible=True t_D=0.732259 S_on_W=0.0248 S_on_D=0.0975
+lead_snp                     n= 12170 OP1 t_S=inf t_D=inf | OP2 t_S=inf feasible=None t_D=inf S_on_W=nan S_on_D=nan
+prop_coloc                   n= 12170 OP1 t_S=inf t_D=inf | OP2 t_S=inf feasible=None t_D=inf S_on_W=nan S_on_D=nan
+sharepro                     n= 12170 OP1 t_S=0.802164 t_D=0.231497 | OP2 t_S=1 feasible=False t_D=0.232578 S_on_W=0.0000 S_on_D=0.0000
+strength_only                n= 12170 OP1 t_S=0.193967 t_D=0.199622 | OP2 t_S=0.535889 feasible=True t_D=0.226297 S_on_W=0.0000 S_on_D=0.0990
+/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_op2_m4_main/code/src/eval/metrics.py:172: RuntimeWarning: overflow encountered in exp
+  q = 1.0 / (1.0 + np.exp(-(x + a)))
+colocboost                   n=  4080 OP1 t_S=0.4662 t_D=4.94066e-324 | OP2 t_S=0.9475 feasible=True t_D=0.528 S_on_W=0.0000 S_on_D=0.0992
+colocboost_m1                n=  4080 OP1 t_S=0.8836 t_D=0.3781 | OP2 t_S=0.8836 feasible=True t_D=0.3781 S_on_W=0.0227 S_on_D=0.0934
+[orch] exit 0 at 2026-10-28T09:50:45+01:00

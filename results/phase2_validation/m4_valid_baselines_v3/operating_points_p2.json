@@ -1,0 +1,655 @@
+{
+ "definition": "Phase-2 operating points per method (DESIGN_P2 \u00a73, \u00a75): OP1 = the frozen phase-1 value (P3-30, --frozen-op1)\n    except for the methods in --refit-op1 (coloc_susie_mm: its M4 OP1 replaces the P3-27 screen fallback); OP2 =\n    fitted on M4 (--op2 files of `op2`). Every frozen OP1 is compared with the OP1 refitted by `op2` on the same\n    runs (reported as op1_refit_matches_frozen).",
+ "excluded": [
+  "mvsusie"
+ ],
+ "frozen_op1_file": "results/baselines_m4/m4_valid_v2/operating_points_final.json",
+ "methods": {
+  "coloc_abf_W0.15_p12_1e-05": {
+   "OP1": {
+    "recal_a_D": -7.775325801235586,
+    "recal_a_S": -1.8814125374338675,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.5381672901893849,
+    "t_S": 0.9083312563327388
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024916666666666667,
+    "rate_S_on_D": 0.06758775205377147,
+    "rate_S_on_W": 0.02466666666666667,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.5381672901893849,
+    "t_S": 0.9083312563327388,
+    "t_S_D_side": 0.7585381396792208,
+    "t_S_W_side": 0.9083312563327388,
+    "t_S_call": 0.9083312563327388,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.02491666666666667,
+    "W_called_S": 0.02466666666666667,
+    "false_S_on_D_all_unweighted": 0.06441176470588235,
+    "false_S_on_D_matched_unweighted": 0.06758775205377147,
+    "false_S_on_D_setting_unweighted": 0.0674074074074074,
+    "recall_D": 0.8480833333333335,
+    "recall_S": 0.6526666666666667
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.02491666666666667,
+    "W_called_S": 0.02466666666666667,
+    "false_S_on_D_all_unweighted": 0.06441176470588235,
+    "false_S_on_D_matched_unweighted": 0.06758775205377147,
+    "false_S_on_D_setting_unweighted": 0.0674074074074074,
+    "recall_D": 0.8480833333333335,
+    "recall_S": 0.6526666666666667
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "OP1": {
+    "recal_a_D": -8.17201947526052,
+    "recal_a_S": -1.1882687542279422,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.5665021967221262,
+    "t_S": 0.8320575830369603
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024916666666666667,
+    "rate_S_on_D": 0.06758775205377147,
+    "rate_S_on_W": 0.02466666666666667,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.5665021967221262,
+    "t_S": 0.8320575830369603,
+    "t_S_D_side": 0.6110039816150373,
+    "t_S_W_side": 0.8320575830369603,
+    "t_S_call": 0.8320575830369603,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.024916666666666667,
+    "W_called_S": 0.02466666666666667,
+    "false_S_on_D_all_unweighted": 0.06441176470588235,
+    "false_S_on_D_matched_unweighted": 0.06758775205377147,
+    "false_S_on_D_setting_unweighted": 0.0674074074074074,
+    "recall_D": 0.856,
+    "recall_S": 0.6526666666666667
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.024916666666666667,
+    "W_called_S": 0.02466666666666667,
+    "false_S_on_D_all_unweighted": 0.06441176470588235,
+    "false_S_on_D_matched_unweighted": 0.06758775205377147,
+    "false_S_on_D_setting_unweighted": 0.0674074074074074,
+    "recall_D": 0.856,
+    "recall_S": 0.6526666666666667
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "OP1": {
+    "recal_a_D": -6.72602147431751,
+    "recal_a_S": -1.7606431734677253,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.5543438544172188,
+    "t_S": 0.9199035254003043
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.02466666666666667,
+    "rate_S_on_D": 0.0638536221060493,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.5543438544172188,
+    "t_S": 0.9199035254003043,
+    "t_S_D_side": 0.7675730310499739,
+    "t_S_W_side": 0.9199035254003043,
+    "t_S_call": 0.9199035254003043,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.024666666666666667,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.060588235294117644,
+    "false_S_on_D_matched_unweighted": 0.0638536221060493,
+    "false_S_on_D_setting_unweighted": 0.0637037037037037,
+    "recall_D": 0.8151666666666668,
+    "recall_S": 0.6284166666666666
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.024666666666666667,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.060588235294117644,
+    "false_S_on_D_matched_unweighted": 0.0638536221060493,
+    "false_S_on_D_setting_unweighted": 0.0637037037037037,
+    "recall_D": 0.8151666666666668,
+    "recall_S": 0.6284166666666666
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "OP1": {
+    "recal_a_D": -7.153881632671756,
+    "recal_a_S": -1.0674990377452143,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.5953574066158972,
+    "t_S": 0.8516864437884993
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024833333333333332,
+    "rate_S_on_D": 0.0638536221060493,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.5953574066158972,
+    "t_S": 0.8516864437884993,
+    "t_S_D_side": 0.6228142116233553,
+    "t_S_W_side": 0.8516864437884993,
+    "t_S_call": 0.8516864437884993,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.024833333333333332,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.060588235294117644,
+    "false_S_on_D_matched_unweighted": 0.0638536221060493,
+    "false_S_on_D_setting_unweighted": 0.0637037037037037,
+    "recall_D": 0.8236666666666668,
+    "recall_S": 0.6284166666666666
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.024833333333333332,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.060588235294117644,
+    "false_S_on_D_matched_unweighted": 0.0638536221060493,
+    "false_S_on_D_setting_unweighted": 0.0637037037037037,
+    "recall_D": 0.8236666666666668,
+    "recall_S": 0.6284166666666666
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "OP1": {
+    "recal_a_D": -8.359000335791691,
+    "recal_a_S": -1.9211867143668921,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.5325704441250746,
+    "t_S": 0.9078034225018711
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.06870799103808813,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.5325704441250746,
+    "t_S": 0.9078034225018711,
+    "t_S_D_side": 0.7401655046194848,
+    "t_S_W_side": 0.9078034225018711,
+    "t_S_call": 0.9078034225018711,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.025,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.06382352941176471,
+    "false_S_on_D_matched_unweighted": 0.06870799103808813,
+    "false_S_on_D_setting_unweighted": 0.06851851851851852,
+    "recall_D": 0.8568333333333334,
+    "recall_S": 0.6624166666666667
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.025,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.06382352941176471,
+    "false_S_on_D_matched_unweighted": 0.06870799103808813,
+    "false_S_on_D_setting_unweighted": 0.06851851851851852,
+    "recall_D": 0.8568333333333334,
+    "recall_S": 0.6624166666666667
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "OP1": {
+    "recal_a_D": -8.731448932324927,
+    "recal_a_S": -1.2280431639752656,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.5803111143879112,
+    "t_S": 0.8311721911648525
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.02475,
+    "rate_S_on_D": 0.06870799103808813,
+    "rate_S_on_W": 0.025,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.5803111143879112,
+    "t_S": 0.8311721911648525,
+    "t_S_D_side": 0.5875101113149953,
+    "t_S_W_side": 0.8311721911648525,
+    "t_S_call": 0.8311721911648525,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.02475,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.06382352941176471,
+    "false_S_on_D_matched_unweighted": 0.06870799103808813,
+    "false_S_on_D_setting_unweighted": 0.06851851851851852,
+    "recall_D": 0.8650000000000001,
+    "recall_S": 0.6624166666666667
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.02475,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.06382352941176471,
+    "false_S_on_D_matched_unweighted": 0.06870799103808813,
+    "false_S_on_D_setting_unweighted": 0.06851851851851852,
+    "recall_D": 0.8650000000000001,
+    "recall_S": 0.6624166666666667
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_prop_test": {
+   "OP1": {
+    "recal_a_D": null,
+    "recal_a_S": null,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": "inf",
+    "t_S": "inf"
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": null,
+    "rate_D_on_W": null,
+    "rate_S_on_D": null,
+    "rate_S_on_W": null,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": null,
+    "t_S": null,
+    "t_S_D_side": null,
+    "t_S_W_side": null,
+    "t_S_call": null,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": null,
+   "at_OP2_M4": null,
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_susie": {
+   "OP1": {
+    "recal_a_D": -3.249584767969364,
+    "recal_a_S": -2.8538447050360407,
+    "source": "frozen phase-1 (P3-30): M4 main sample (oppoints on runs p4b_m4_coloc_susie_half_a/b; finished 22:17)",
+    "t_D": 0.8036174141574123,
+    "t_S": 0.8784511379171775
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024833333333333332,
+    "rate_S_on_D": 0.09970126960418223,
+    "rate_S_on_W": 0.004583333333333333,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.8036174141574123,
+    "t_S": 0.9999643680498651,
+    "t_S_D_side": 0.9999643680498651,
+    "t_S_W_side": 0.8784511379171775,
+    "t_S_call": 0.9999643680498651,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.024833333333333332,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.15323529411764705,
+    "false_S_on_D_matched_unweighted": 0.1777445855115758,
+    "false_S_on_D_setting_unweighted": 0.17888888888888888,
+    "recall_D": 0.7077500000000001,
+    "recall_S": 0.7272500000000001
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.024833333333333332,
+    "W_called_S": 0.004583333333333333,
+    "false_S_on_D_all_unweighted": 0.08,
+    "false_S_on_D_matched_unweighted": 0.09970126960418223,
+    "false_S_on_D_setting_unweighted": 0.10074074074074074,
+    "recall_D": 0.7077500000000001,
+    "recall_S": 0.3065
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "coloc_susie_mm": {
+   "OP1": {
+    "recal_a_D": -2.8259788802403594,
+    "recal_a_S": -2.3871283828140606,
+    "source": "M4 refit (DESIGN_P2 \u00a75; replaces screen_fallback (P3-27): M4 runs unfinished at 22:20): OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.7322585039086077,
+    "t_S": 0.8402818292911564
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024916666666666663,
+    "rate_S_on_D": 0.09746079163554892,
+    "rate_S_on_W": 0.02475,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.7322585039086077,
+    "t_S": 0.8402818292911564,
+    "t_S_D_side": 0.8272329501202839,
+    "t_S_W_side": 0.8402818292911564,
+    "t_S_call": 0.8402818292911564,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.02491666666666667,
+    "W_called_S": 0.02475,
+    "false_S_on_D_all_unweighted": 0.08970588235294118,
+    "false_S_on_D_matched_unweighted": 0.09746079163554892,
+    "false_S_on_D_setting_unweighted": 0.0974074074074074,
+    "recall_D": 0.8034166666666667,
+    "recall_S": 0.7823333333333334
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.02491666666666667,
+    "W_called_S": 0.02475,
+    "false_S_on_D_all_unweighted": 0.08970588235294118,
+    "false_S_on_D_matched_unweighted": 0.09746079163554892,
+    "false_S_on_D_setting_unweighted": 0.0974074074074074,
+    "recall_D": 0.8034166666666667,
+    "recall_S": 0.7823333333333334
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": false
+  },
+  "colocboost": {
+   "OP1": {
+    "recal_a_D": 4.885883464161857,
+    "recal_a_S": -148354662.92393252,
+    "source": "frozen phase-1 (P3-30): M4 slow benchmark 20261027T185341Z_p4_m4_slow_partial",
+    "t_D": 5e-324,
+    "t_S": 0.46620000000000006
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 867,
+    "n_W": 1080,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024166666666666663,
+    "rate_S_on_D": 0.09919261822376009,
+    "rate_S_on_W": 0.0,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 slow (realistic L1-L6), m4_subsample@1 slow",
+    "t_D": 0.5280000000000001,
+    "t_S": 0.9475000000000001,
+    "t_S_D_side": 0.9475000000000001,
+    "t_S_W_side": 0.46620000000000006,
+    "t_S_call": 0.9475000000000001,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.02375,
+    "W_called_S": 0.02375,
+    "false_S_on_D_all_unweighted": 0.19411764705882353,
+    "false_S_on_D_matched_unweighted": 0.17647058823529413,
+    "false_S_on_D_setting_unweighted": 0.1814814814814815,
+    "recall_D": 0.39916666666666667,
+    "recall_S": 0.6097916666666667
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.02416666666666667,
+    "W_called_S": 0.0,
+    "false_S_on_D_all_unweighted": 0.1161764705882353,
+    "false_S_on_D_matched_unweighted": 0.09919261822376009,
+    "false_S_on_D_setting_unweighted": 0.10277777777777777,
+    "recall_D": 0.3997916666666667,
+    "recall_S": 0.4197916666666667
+   },
+   "n_loci_M4": 4080,
+   "op1_refit_matches_frozen": true
+  },
+  "colocboost_m1": {
+   "OP1": {
+    "recal_a_D": -9.309151763771357,
+    "recal_a_S": 10.036747145928384,
+    "source": "frozen phase-1 (P3-30): M4 slow benchmark 20261027T185341Z_p4_m4_slow_partial",
+    "t_D": 0.37810000000000005,
+    "t_S": 0.8836000000000002
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 867,
+    "n_W": 1080,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024166666666666666,
+    "rate_S_on_D": 0.09342560553633218,
+    "rate_S_on_W": 0.022708333333333334,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 slow (realistic L1-L6), m4_subsample@1 slow",
+    "t_D": 0.37810000000000005,
+    "t_S": 0.8836000000000002,
+    "t_S_D_side": 0.8035000000000001,
+    "t_S_W_side": 0.8836000000000002,
+    "t_S_call": 0.8836000000000002,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.024166666666666663,
+    "W_called_S": 0.022708333333333334,
+    "false_S_on_D_all_unweighted": 0.10441176470588236,
+    "false_S_on_D_matched_unweighted": 0.09342560553633218,
+    "false_S_on_D_setting_unweighted": 0.10092592592592593,
+    "recall_D": 0.7885416666666667,
+    "recall_S": 0.6072916666666667
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.024166666666666663,
+    "W_called_S": 0.022708333333333334,
+    "false_S_on_D_all_unweighted": 0.10441176470588236,
+    "false_S_on_D_matched_unweighted": 0.09342560553633218,
+    "false_S_on_D_setting_unweighted": 0.10092592592592593,
+    "recall_D": 0.7885416666666667,
+    "recall_S": 0.6072916666666667
+   },
+   "n_loci_M4": 4080,
+   "op1_refit_matches_frozen": true
+  },
+  "lead_snp": {
+   "OP1": {
+    "recal_a_D": null,
+    "recal_a_S": null,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": "inf",
+    "t_S": "inf"
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": null,
+    "rate_D_on_W": null,
+    "rate_S_on_D": null,
+    "rate_S_on_W": null,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": null,
+    "t_S": null,
+    "t_S_D_side": null,
+    "t_S_W_side": null,
+    "t_S_call": null,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": null,
+   "at_OP2_M4": null,
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "prop_coloc": {
+   "OP1": {
+    "recal_a_D": null,
+    "recal_a_S": null,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": "inf",
+    "t_S": "inf"
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": null,
+    "rate_D_on_W": null,
+    "rate_S_on_D": null,
+    "rate_S_on_W": null,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": null,
+    "t_S": null,
+    "t_S_D_side": null,
+    "t_S_W_side": null,
+    "t_S_call": null,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": null,
+   "at_OP2_M4": null,
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "sharepro": {
+   "OP1": {
+    "recal_a_D": 3.717009480847768,
+    "recal_a_S": 446.097934680271,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.23149745386910034,
+    "t_S": 0.8021643891632574
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": false,
+    "rate_D_on_W": 0.024833333333333336,
+    "rate_S_on_D": 0.0,
+    "rate_S_on_W": 0.0,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.2325780468445537,
+    "t_S": 1.0,
+    "t_S_D_side": 1.0000000000000002,
+    "t_S_W_side": 0.8021643891632574,
+    "t_S_call": "inf",
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.024583333333333332,
+    "W_called_S": 0.025,
+    "false_S_on_D_all_unweighted": 0.5611764705882353,
+    "false_S_on_D_matched_unweighted": 0.5870052277819268,
+    "false_S_on_D_setting_unweighted": 0.5881481481481482,
+    "recall_D": 0.2573333333333333,
+    "recall_S": 0.9454166666666669
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.024833333333333332,
+    "W_called_S": 0.0,
+    "false_S_on_D_all_unweighted": 0.0,
+    "false_S_on_D_matched_unweighted": 0.0,
+    "false_S_on_D_setting_unweighted": 0.0,
+    "recall_D": 0.2573333333333333,
+    "recall_S": 0.0
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  },
+  "strength_only": {
+   "OP1": {
+    "recal_a_D": -0.0073992313228411315,
+    "recal_a_S": -0.007132558540755564,
+    "source": "frozen phase-1 (P3-30): M4 main benchmark 20261027T182437Z_p4_m4_main_partial",
+    "t_D": 0.19962158544105324,
+    "t_S": 0.19396712638528904
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 2678,
+    "n_W": 2700,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.025,
+    "rate_S_on_D": 0.09895444361463779,
+    "rate_S_on_W": 0.0,
+    "setting": "realistic",
+    "source": "M4 fit: OP1+OP2 M4 main (realistic L1-L6), m4_subsample@1 main",
+    "t_D": 0.2262973107946549,
+    "t_S": 0.5358886396622247,
+    "t_S_D_side": 0.5358886396622247,
+    "t_S_W_side": 0.19396712638528904,
+    "t_S_call": 0.5358886396622247,
+    "w_limit": 0.025
+   },
+   "at_OP1_M4": {
+    "W_called_D": 0.025,
+    "W_called_S": 0.02425,
+    "false_S_on_D_all_unweighted": 0.9388235294117647,
+    "false_S_on_D_matched_unweighted": 0.9395070948469006,
+    "false_S_on_D_setting_unweighted": 0.9396296296296296,
+    "recall_D": 0.025,
+    "recall_S": 0.9420000000000002
+   },
+   "at_OP2_M4": {
+    "W_called_D": 0.025,
+    "W_called_S": 0.0,
+    "false_S_on_D_all_unweighted": 0.09294117647058824,
+    "false_S_on_D_matched_unweighted": 0.09895444361463779,
+    "false_S_on_D_setting_unweighted": 0.09814814814814815,
+    "recall_D": 0.8417500000000001,
+    "recall_S": 0.10325000000000001
+   },
+   "n_loci_M4": 12170,
+   "op1_refit_matches_frozen": true
+  }
+ },
+ "op2_files": [
+  "results/baselines_m4/m4_valid_v3/op2_m4_main.json",
+  "results/baselines_m4/m4_valid_v3/op2_m4_slow.json"
+ ]
+}

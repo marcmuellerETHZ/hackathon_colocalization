@@ -1,0 +1,3 @@
+22:58:45 [harness] run dry_mvr1__colocboost__sim_main: 102 loci (102 to run), mode=cpu, workers=8
+22:59:46 [harness] colocboost: 94/102 loci done
+23:00:02 [harness] done dry_mvr1__colocboost__sim_main: {'ok': 102, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 102} in 75.6s

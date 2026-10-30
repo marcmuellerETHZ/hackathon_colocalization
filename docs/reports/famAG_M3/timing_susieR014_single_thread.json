@@ -1,0 +1,78 @@
+{
+ "1000": {
+  "n_loci": 8,
+  "median_s": 0.3375,
+  "mean_s": 0.34799999999999986,
+  "per_locus_s": [
+   0.449,
+   0.317,
+   0.41,
+   0.327,
+   0.334,
+   0.182,
+   0.341,
+   0.423999999999999
+  ],
+  "niter": [
+   2,
+   2,
+   4,
+   4,
+   4,
+   2,
+   5,
+   3
+  ]
+ },
+ "3000": {
+  "n_loci": 8,
+  "median_s": 1.5985,
+  "mean_s": 1.6986249999999998,
+  "per_locus_s": [
+   1.658,
+   1.775,
+   1.172,
+   1.48,
+   1.539,
+   1.317,
+   2.865,
+   1.783
+  ],
+  "niter": [
+   2,
+   3,
+   2,
+   4,
+   3,
+   3,
+   8,
+   4
+  ]
+ },
+ "5000": {
+  "n_loci": 8,
+  "median_s": 3.5445,
+  "mean_s": 3.49725,
+  "per_locus_s": [
+   3.899,
+   2.514,
+   4.448,
+   3.21,
+   5.055,
+   3.879,
+   2.883,
+   2.09
+  ],
+  "niter": [
+   3,
+   2,
+   5,
+   3,
+   6,
+   4,
+   3,
+   2
+  ]
+ },
+ "note": "susieR 0.14.2 susie_rss(z,R,n,L=10), single-threaded OpenBLAS 0.3.34, trait 1 of the first 8 loci of each timing set; 3 such R processes ran concurrently on a shared node (load avg ~22-35)."
+}

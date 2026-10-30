@@ -1,0 +1,4 @@
+[orch] job p4b_subsample_screen start 2026-10-27T10:56:07+01:00 host eu-g6-001 commit 13754339ae pid 953223
+[orch] cmd: PYTHONPATH=src python scripts/baselines_p4.py subsample screen --set data/processed/sets/screen_v2.h5 --out results/baselines_screen_v2/ids
+{"L0P1_all.txt": 2000, "rest_all.txt": 10000, "rest_slow.txt": 1000}
+[orch] exit 0 at 2026-10-27T10:57:36+01:00

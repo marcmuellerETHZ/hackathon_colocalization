@@ -1,0 +1,32 @@
+{
+ "runs": {
+  "famA_joint_susie_rho_eta_ms_ptld": [
+   {
+    "cells": [
+     "L0_P1_r_p=0.0"
+    ],
+    "components": "rho+eta+multistart+perTraitLD",
+    "counts": {
+     "expected": 2000,
+     "failed": 0,
+     "nonconverged": 1,
+     "ok": 1999,
+     "timeout": 0
+    },
+    "group": "screen_L0P1",
+    "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+    "n": 2000,
+    "n_per_trait_ld": 848,
+    "n_with_ld2": 2000,
+    "orch_commit": "37da481d857cb07178411fd9fd26f0586ae2da40",
+    "orch_job": "famA_p5_A1_primary_r2",
+    "predictions_sha256": "dac7451ace092de555a390f6675a6c017e2516a4cfa63f0d75605ad86e945b50",
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_fb9518",
+    "run_id": "20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_fb9518",
+    "rung": "primary",
+    "wall_s": 2862.0223513679957
+   }
+  ]
+ },
+ "superseded": []
+}

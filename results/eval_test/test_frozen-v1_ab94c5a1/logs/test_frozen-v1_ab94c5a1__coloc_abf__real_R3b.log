@@ -1,0 +1,2 @@
+23:44:54 [harness] run test_frozen-v1_ab94c5a1__coloc_abf__real_R3b: 1237 loci (1237 to run), mode=cpu, workers=1
+23:45:14 [harness] done test_frozen-v1_ab94c5a1__coloc_abf__real_R3b: {'ok': 1237, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1237} in 21.0s

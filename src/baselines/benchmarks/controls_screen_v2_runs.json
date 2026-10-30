@@ -1,0 +1,136 @@
+{
+ "locus_set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v2.h5",
+ "n_ids": 108,
+ "runs": {
+  "coloc_abf": {
+   "run_dir": "results/baselines_pilot/20261026T191606Z_coloc_abf_screen_v2_93a82a",
+   "counts": {
+    "ok": 108,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 47.345860719680786,
+   "rerun": null,
+   "done": true
+  },
+  "lead_snp": {
+   "run_dir": "results/baselines_pilot/20261026T191653Z_lead_snp_screen_v2_7463e5",
+   "counts": {
+    "ok": 108,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 47.782575607299805,
+   "rerun": null,
+   "done": true
+  },
+  "sharepro": {
+   "run_dir": "results/baselines_pilot/20261026T191741Z_sharepro_screen_v2_59e34e",
+   "counts": {
+    "ok": 108,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 76.16167044639587,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_susie": {
+   "run_dir": "results/baselines_pilot/20261026T191857Z_coloc_susie_screen_v2_0790c6",
+   "counts": {
+    "ok": 70,
+    "nonconverged": 38,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 258.48636388778687,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_susie_mm": {
+   "run_dir": "results/baselines_pilot/20261026T192315Z_coloc_susie_mm_screen_v2_f17fa9",
+   "counts": {
+    "ok": 87,
+    "nonconverged": 21,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 207.13256359100342,
+   "rerun": null,
+   "done": true
+  },
+  "colocboost": {
+   "run_dir": "results/baselines_pilot/20261026T192649Z_colocboost_screen_v2_5d065a",
+   "counts": {
+    "ok": 108,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 126.15148162841797,
+   "rerun": null,
+   "done": true
+  },
+  "colocboost_m1": {
+   "run_dir": "results/baselines_pilot/20261026T192852Z_colocboost_m1_screen_v2_eac24d",
+   "counts": {
+    "ok": 108,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 52.96883535385132,
+   "rerun": null,
+   "done": true
+  },
+  "mvsusie": {
+   "run_dir": "results/baselines_pilot/20261026T192944Z_mvsusie_screen_v2_5e05a9",
+   "counts": {
+    "ok": 70,
+    "nonconverged": 38,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 841.5646781921387,
+   "rerun": null,
+   "done": true
+  },
+  "prop_coloc": {
+   "run_dir": "results/baselines_pilot/20261026T194503Z_prop_coloc_screen_v2_cb8cb9",
+   "counts": {
+    "ok": 106,
+    "nonconverged": 0,
+    "failed": 2,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 135.8134322166443,
+   "rerun": null,
+   "done": true
+  },
+  "coloc_prop_test": {
+   "run_dir": "results/baselines_pilot/20261026T194707Z_coloc_prop_test_screen_v2_035ae3",
+   "counts": {
+    "ok": 108,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 108
+   },
+   "wall_s": 126.83293128013611,
+   "rerun": null,
+   "done": true
+  }
+ }
+}

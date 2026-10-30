@@ -1,0 +1,2 @@
+19:34:20 [harness] run dry_v4__strength_only__real_R2: 32 loci (32 to run), mode=cpu, workers=2
+19:34:25 [harness] done dry_v4__strength_only__real_R2: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 6.2s

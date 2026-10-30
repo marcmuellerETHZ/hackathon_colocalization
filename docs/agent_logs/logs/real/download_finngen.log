@@ -1,0 +1,264 @@
+selected 76 objects, 15.05 GB
+all 8 traits have sumstats + SuSiE objects
+[get ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[get ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[get ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz (1430 MB, resume at 0 MB)
+[get ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred.bgz ok
+[gzip] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred.bgz ok
+[done] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred.bgz
+[md5 ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred_99.bgz ok
+[md5 ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.cred_99.bgz
+[done] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_K11_IBD_STRICT.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[get ] finngen_R12_K11_IBD_STRICT.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[get ] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz (535 MB, resume at 0 MB)
+[md5 ] finngen_R12_K11_IBD_STRICT.SUSIE.cred.bgz ok
+[md5 ] finngen_R12_K11_IBD_STRICT.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_K11_IBD_STRICT.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_K11_IBD_STRICT.SUSIE.cred.bgz ok
+[done] finngen_R12_K11_IBD_STRICT.SUSIE.cred_99.bgz
+[done] finngen_R12_K11_IBD_STRICT.SUSIE.cred.bgz
+[get ] finngen_R12_T2D.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[get ] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_T2D.SUSIE.cred.bgz ok
+[gzip] finngen_R12_T2D.SUSIE.cred.bgz ok
+[done] finngen_R12_T2D.SUSIE.cred.bgz
+[get ] finngen_R12_T2D.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_T2D.SUSIE.snp.bgz (2003 MB, resume at 0 MB)
+[md5 ] finngen_R12_T2D.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_T2D.SUSIE.cred_99.bgz ok
+[done] finngen_R12_T2D.SUSIE.cred_99.bgz
+[get ] finngen_R12_T2D.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_T2D.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_T2D.SUSIE.snp.bgz.tbi
+[get ] FinnGen_kanta_lab_documentation_v2.pdf (0 MB, resume at 0 MB)
+[md5 ] FinnGen_kanta_lab_documentation_v2.pdf ok
+[done] FinnGen_kanta_lab_documentation_v2.pdf
+[get ] Kanta_labs_GWAS_results_v2_summary.txt (0 MB, resume at 0 MB)
+[md5 ] Kanta_labs_GWAS_results_v2_summary.txt ok
+[done] Kanta_labs_GWAS_results_v2_summary.txt
+[get ] Kanta_labs_GWAS_results_v2_summary.xlsx (0 MB, resume at 0 MB)
+[md5 ] Kanta_labs_GWAS_results_v2_summary.xlsx ok
+[done] Kanta_labs_GWAS_results_v2_summary.xlsx
+[get ] finngen_R12_3001122.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001122.SUSIE.cred.bgz ok
+[gzip] finngen_R12_3001122.SUSIE.cred.bgz ok
+[done] finngen_R12_3001122.SUSIE.cred.bgz
+[get ] finngen_R12_3001122.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001122.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_3001122.SUSIE.cred_99.bgz ok
+[done] finngen_R12_3001122.SUSIE.cred_99.bgz
+[get ] finngen_R12_3001122.SUSIE.snp.bgz (156 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001122.SUSIE.snp.bgz ok
+[md5 ] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz ok
+[gzip] finngen_R12_3001122.SUSIE.snp.bgz ok
+[done] finngen_R12_3001122.SUSIE.snp.bgz
+[get ] finngen_R12_3001122.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001122.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_3001122.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_3001308.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001308.SUSIE.cred.bgz ok
+[gzip] finngen_R12_3001308.SUSIE.cred.bgz ok
+[done] finngen_R12_3001308.SUSIE.cred.bgz
+[get ] finngen_R12_3001308.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001308.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_3001308.SUSIE.cred_99.bgz ok
+[done] finngen_R12_3001308.SUSIE.cred_99.bgz
+[get ] finngen_R12_3001308.SUSIE.snp.bgz (795 MB, resume at 0 MB)
+[md5 ] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz ok
+[gzip] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz ok
+[done] finngen_R12_K11_IBD_STRICT.SUSIE.snp.bgz
+[md5 ] finngen_R12_T2D.SUSIE.snp.bgz ok
+[get ] finngen_R12_3001308.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001308.SUSIE.snp.bgz.tbi ok
+[md5 ] finngen_R12_3001308.SUSIE.snp.bgz ok
+[done] finngen_R12_3001308.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_3006140.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3006140.SUSIE.cred.bgz ok
+[gzip] finngen_R12_3006140.SUSIE.cred.bgz ok
+[done] finngen_R12_3006140.SUSIE.cred.bgz
+[get ] finngen_R12_3006140.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3006140.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_3006140.SUSIE.cred_99.bgz ok
+[done] finngen_R12_3006140.SUSIE.cred_99.bgz
+[get ] finngen_R12_3006140.SUSIE.snp.bgz (329 MB, resume at 0 MB)
+[md5 ] finngen_R12_3006140.SUSIE.snp.bgz ok
+[gzip] finngen_R12_3006140.SUSIE.snp.bgz ok
+[done] finngen_R12_3006140.SUSIE.snp.bgz
+[get ] finngen_R12_3006140.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3006140.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_3006140.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_3007461.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3007461.SUSIE.cred.bgz ok
+[gzip] finngen_R12_3007461.SUSIE.cred.bgz ok
+[done] finngen_R12_3007461.SUSIE.cred.bgz
+[get ] finngen_R12_3007461.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3007461.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_3007461.SUSIE.cred_99.bgz ok
+[done] finngen_R12_3007461.SUSIE.cred_99.bgz
+[get ] finngen_R12_3007461.SUSIE.snp.bgz (4724 MB, resume at 0 MB)
+[gzip] finngen_R12_3001308.SUSIE.snp.bgz ok
+[done] finngen_R12_3001308.SUSIE.snp.bgz
+[get ] finngen_R12_3007461.SUSIE.snp.bgz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_3007461.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_3007461.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_3026493.SUSIE.cred.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3026493.SUSIE.cred.bgz ok
+[gzip] finngen_R12_3026493.SUSIE.cred.bgz ok
+[done] finngen_R12_3026493.SUSIE.cred.bgz
+[get ] finngen_R12_3026493.SUSIE.cred_99.bgz (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3026493.SUSIE.cred_99.bgz ok
+[gzip] finngen_R12_3026493.SUSIE.cred_99.bgz ok
+[done] finngen_R12_3026493.SUSIE.cred_99.bgz
+[get ] finngen_R12_3026493.SUSIE.snp.bgz (202 MB, resume at 0 MB)
+[gzip] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz ok
+[md5 ] finngen_R12_3026493.SUSIE.snp.bgz ok
+[done] finngen_R12_E4_HYTHY_AI_STRICT.SUSIE.snp.bgz
+[get ] finngen_R12_3026493.SUSIE.snp.bgz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3026493.SUSIE.snp.bgz.tbi ok
+[done] finngen_R12_3026493.SUSIE.snp.bgz.tbi
+[get ] finngen_R12_3001122.gz (479 MB, resume at 0 MB)
+[gzip] finngen_R12_3026493.SUSIE.snp.bgz ok
+[done] finngen_R12_3026493.SUSIE.snp.bgz
+[get ] finngen_R12_3001122.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001122.gz.tbi ok
+[done] finngen_R12_3001122.gz.tbi
+[get ] finngen_R12_3001308.gz (489 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001122.gz ok
+[md5 ] finngen_R12_3001308.gz ok
+[gzip] finngen_R12_3001122.gz ok
+[gzip] finngen_R12_T2D.SUSIE.snp.bgz ok
+[done] finngen_R12_3001122.gz
+[get ] finngen_R12_3001308.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_3001308.gz.tbi ok
+[done] finngen_R12_3001308.gz.tbi
+[get ] finngen_R12_3006140.gz (482 MB, resume at 0 MB)
+[done] finngen_R12_T2D.SUSIE.snp.bgz
+[get ] finngen_R12_3006140.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_3006140.gz.tbi ok
+[done] finngen_R12_3006140.gz.tbi
+[get ] finngen_R12_3007461.gz (491 MB, resume at 0 MB)
+[gzip] finngen_R12_3001308.gz ok
+[done] finngen_R12_3001308.gz
+[get ] finngen_R12_3007461.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_3007461.gz.tbi ok
+[done] finngen_R12_3007461.gz.tbi
+[get ] finngen_R12_3026493.gz (457 MB, resume at 0 MB)
+[md5 ] finngen_R12_3006140.gz ok
+[md5 ] finngen_R12_3007461.gz ok
+[md5 ] finngen_R12_3026493.gz ok
+[gzip] finngen_R12_3006140.gz ok
+[done] finngen_R12_3006140.gz
+[get ] finngen_R12_3026493.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_3026493.gz.tbi ok
+[done] finngen_R12_3026493.gz.tbi
+[get ] README (0 MB, resume at 0 MB)
+[md5 ] finngen_R12_3007461.SUSIE.snp.bgz ok
+[md5 ] README ok
+[done] README
+[get ] finngen_r12_chr10_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr10_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr10_ld.tsv.gz.tbi
+[get ] finngen_r12_chr11_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr11_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr11_ld.tsv.gz.tbi
+[get ] finngen_r12_chr12_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr12_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr12_ld.tsv.gz.tbi
+[get ] finngen_r12_chr13_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr13_ld.tsv.gz.tbi ok
+[gzip] finngen_R12_3007461.gz ok
+[done] finngen_r12_chr13_ld.tsv.gz.tbi
+[get ] finngen_r12_chr14_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr14_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr14_ld.tsv.gz.tbi
+[done] finngen_R12_3007461.gz
+[get ] finngen_r12_chr15_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[get ] finngen_r12_chr16_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr15_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr15_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr16_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr16_ld.tsv.gz.tbi
+[get ] finngen_r12_chr17_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[gzip] finngen_R12_3026493.gz ok
+[get ] finngen_r12_chr18_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr17_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr17_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr18_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr18_ld.tsv.gz.tbi
+[get ] finngen_r12_chr19_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[done] finngen_R12_3026493.gz
+[get ] finngen_r12_chr1_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr19_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr19_ld.tsv.gz.tbi
+[get ] finngen_r12_chr20_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[get ] finngen_r12_chr21_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr20_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr20_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr1_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr1_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr21_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr21_ld.tsv.gz.tbi
+[get ] finngen_r12_chr22_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[get ] finngen_r12_chr2_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr22_ld.tsv.gz.tbi ok
+[get ] finngen_r12_chr3_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[done] finngen_r12_chr22_ld.tsv.gz.tbi
+[get ] finngen_r12_chr4_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr2_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr2_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr3_ld.tsv.gz.tbi ok
+[md5 ] finngen_r12_chr4_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr3_ld.tsv.gz.tbi
+[done] finngen_r12_chr4_ld.tsv.gz.tbi
+[get ] finngen_r12_chr5_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[get ] finngen_r12_chr6_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[get ] finngen_r12_chr7_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr6_ld.tsv.gz.tbi ok
+[md5 ] finngen_r12_chr5_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr6_ld.tsv.gz.tbi
+[done] finngen_r12_chr5_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr7_ld.tsv.gz.tbi ok
+[get ] finngen_r12_chr8_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[done] finngen_r12_chr7_ld.tsv.gz.tbi
+[get ] finngen_r12_chr9_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[get ] finngen_r12_chrX_ld.tsv.gz.tbi (0 MB, resume at 0 MB)
+[md5 ] finngen_r12_chr8_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr8_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chrX_ld.tsv.gz.tbi ok
+[get ] finngen_R12_manifest.tsv (0 MB, resume at 0 MB)
+[done] finngen_r12_chrX_ld.tsv.gz.tbi
+[md5 ] finngen_r12_chr9_ld.tsv.gz.tbi ok
+[done] finngen_r12_chr9_ld.tsv.gz.tbi
+[get ] finngen_R12_E4_HYTHY_AI_STRICT.gz (819 MB, resume at 0 MB)
+[md5 ] finngen_R12_manifest.tsv ok
+[get ] finngen_R12_E4_HYTHY_AI_STRICT.gz.tbi (1 MB, resume at 0 MB)
+[done] finngen_R12_manifest.tsv
+[get ] finngen_R12_K11_IBD_STRICT.gz (813 MB, resume at 0 MB)
+[md5 ] finngen_R12_E4_HYTHY_AI_STRICT.gz.tbi ok
+[done] finngen_R12_E4_HYTHY_AI_STRICT.gz.tbi
+[get ] finngen_R12_K11_IBD_STRICT.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_K11_IBD_STRICT.gz.tbi ok
+[done] finngen_R12_K11_IBD_STRICT.gz.tbi
+[get ] finngen_R12_T2D.gz (820 MB, resume at 0 MB)
+[md5 ] finngen_R12_K11_IBD_STRICT.gz ok
+[md5 ] finngen_R12_T2D.gz ok
+[md5 ] finngen_R12_E4_HYTHY_AI_STRICT.gz ok
+[gzip] finngen_R12_K11_IBD_STRICT.gz ok
+[done] finngen_R12_K11_IBD_STRICT.gz
+[gzip] finngen_R12_T2D.gz ok
+[get ] finngen_R12_T2D.gz.tbi (1 MB, resume at 0 MB)
+[md5 ] finngen_R12_T2D.gz.tbi ok
+[done] finngen_R12_T2D.gz.tbi
+[done] finngen_R12_T2D.gz
+[gzip] finngen_R12_E4_HYTHY_AI_STRICT.gz ok
+[done] finngen_R12_E4_HYTHY_AI_STRICT.gz
+[gzip] finngen_R12_3007461.SUSIE.snp.bgz ok
+[done] finngen_R12_3007461.SUSIE.snp.bgz
+finngen downloads complete
+15G	data/raw/finngen/r12

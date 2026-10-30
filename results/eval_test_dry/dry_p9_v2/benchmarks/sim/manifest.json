@@ -1,0 +1,107 @@
+{
+ "argv": [
+  "scripts/eval_test.py",
+  "--testset",
+  "configs/testset_v2.yaml",
+  "--dry-run-valid",
+  "--methods",
+  "configs/proposals/test_methods_dry_p9_v2.yaml",
+  "--scale",
+  "0.02",
+  "--label",
+  "dry_p9_v2",
+  "--gen-workers",
+  "2",
+  "--cores",
+  "8",
+  "--ram-gb",
+  "16",
+  "--n-jobs",
+  "4"
+ ],
+ "bench_id": "dry_p9_v2__sim",
+ "boot_seed": [
+  20261029,
+  "run_benchmark",
+  "bootstrap",
+  "dry_p9_v2__sim"
+ ],
+ "c3_baselines": [
+  "coloc_abf",
+  "coloc_susie_mm",
+  "colocboost_m1"
+ ],
+ "c4_sha256": {
+  ".": "d5f6419e4f9b675b771481f6f4da9790b07e54d5bcee33d401ae8e3b44f1d649",
+  "subsample_564655fb": "8440d8412c64732a35f66332b1e3626e25cf487fee7b7d34e5e155c3f266fd08"
+ },
+ "candidate": null,
+ "evaluate_wall_s": 67.22967529296875,
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "885ec7ec5c92232541fb106d7be73cb0a09620f0",
+  "modified_tracked": [],
+  "orch_job": "p9_dry_testset_v2",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "ids_sha256": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": "ffda98a7bd6cb4077a2ea9916f5e60818870f99f0b3f71744dfbac1777d41b54",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": "54234d104d016b9ff0ff1e42a5c165de834673e99d2fbb2cc1e1a1b0543f200e"
+ },
+ "label": "dry sim",
+ "locus_sets": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5"
+ ],
+ "method_ids": {
+  "colocboost_m1": {
+   "file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test_dry/dry_p9_v2/benchmarks/sim/ids_subsample40.txt",
+   "sha256": "564655fbd26358330837e674a99f722b3f68070e66a44a4013f89a2436e2d512"
+  }
+ },
+ "methods_not_run": [],
+ "mode": "dry",
+ "n_boot": 2000,
+ "n_expected": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": 241,
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": 32
+ },
+ "n_jobs": 4,
+ "operating_points_in": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test_dry/dry_p9_v2/DRY_operating_points_in_sample.json",
+ "operating_points_in_sha256": "d640756deef2cb57114ba9c39538458908d1474f6d113c26faf27ed5e5f7e0a6",
+ "operating_points_source": "DRY placeholders fitted in-sample on the dry-run set (not validation values)",
+ "per_cell": null,
+ "runs": {
+  "coloc_abf": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__coloc_abf__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__coloc_abf__sim_shifted"
+  },
+  "coloc_susie_mm": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__coloc_susie_mm__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__coloc_susie_mm__sim_shifted"
+  },
+  "colocboost_m1": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__colocboost_m1__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__colocboost_m1__sim_shifted"
+  },
+  "lead_snp": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__lead_snp__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__lead_snp__sim_shifted"
+  },
+  "strength_only": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__strength_only__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/runs/dry_p9_v2__strength_only__sim_shifted"
+  }
+ },
+ "start_utc": "2026-10-28T09:15:39Z",
+ "strength_control": {
+  "folds": null,
+  "mode": "DRY in-sample placeholder",
+  "sha256": "f77633051960d8aa73c36622c02c0faeb0535a2e6fe407212dd385cc58bd833e",
+  "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/DRY_strength_table_in_sample.json"
+ },
+ "unit": "block"
+}

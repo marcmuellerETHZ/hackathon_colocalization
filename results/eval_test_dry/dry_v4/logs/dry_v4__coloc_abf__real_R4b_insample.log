@@ -1,0 +1,2 @@
+19:33:55 [harness] run dry_v4__coloc_abf__real_R4b_insample: 24 loci (24 to run), mode=cpu, workers=2
+19:34:00 [harness] done dry_v4__coloc_abf__real_R4b_insample: {'ok': 24, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 24} in 8.3s

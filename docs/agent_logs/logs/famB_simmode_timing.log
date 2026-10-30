@@ -1,0 +1,5 @@
+{"mode": "simulator", "K": 8, "p": 10, "compile": true, "s_per_locus": 0.092, "n_terms": 8767521, "status": ["ok", "ok"]}
+{"mode": "simulator", "K": 8, "p": 20, "compile": true, "s_per_locus": 1.244, "n_terms": 151807041, "status": ["ok", "ok"]}
+{"mode": "simulator", "K": 8, "p": 30, "compile": true, "s_per_locus": 6.376, "n_terms": 788542561, "status": ["ok", "ok"]}
+{"mode": "simulator", "K": 8, "p": 10, "compile": false, "s_per_locus": 0.179, "n_terms": 8767521, "status": ["ok", "ok"]}
+{"mode": "simulator", "K": 8, "p": 20, "compile": false, "s_per_locus": 6.657, "n_terms": 151807041, "status": ["ok", "ok"]}

@@ -1,0 +1,13 @@
+gmm rep0 workers=1 wall=234.0s (ledger 234.0s) loci/h=30766 (stored 30766) counts ok/nc/fail=1752/248/0
+gmm rep1 workers=1 wall=212.7s (ledger 212.7s) loci/h=33852 (stored 33852) counts ok/nc/fail=1752/248/0
+gmm rep2 workers=1 wall=226.1s (ledger 226.1s) loci/h=31838 (stored 31838) counts ok/nc/fail=1752/248/0
+mm rep0 workers=40 wall=1088.8s (ledger 1088.8s) loci/h=6613 (stored 6613) counts ok/nc/fail=1751/249/0
+mm rep1 workers=40 wall=1045.4s (ledger 1045.4s) loci/h=6887 (stored 6887) counts ok/nc/fail=1751/249/0
+mm rep2 workers=40 wall=1079.5s (ledger 1079.5s) loci/h=6670 (stored 6670) counts ok/nc/fail=1751/249/0
+cs rep0 workers=40 wall=944.4s (ledger 944.4s) loci/h=7624 (stored 7624) counts ok/nc/fail=1543/452/5
+cs rep1 workers=40 wall=1020.5s (ledger 1020.5s) loci/h=7056 (stored 7056) counts ok/nc/fail=1543/452/5
+medians: {'gmm': 31838, 'mm': 6670, 'cs': 7340}
+ratio G-mm/mm (medians) 4.774; means 4.782; pairwise range 4.47-5.12
+ratio G-mm/cs rep0 only (n=1, as claimed) 4.176; all complete cs reps (n=2) median 7340 -> 4.338
+slot 2026-10-28T16:17:09+01:00 -> 2026-10-28T18:12:09+01:00 failed timeout after 115.0 min
+overlapping orch jobs: none

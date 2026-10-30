@@ -1,0 +1,164 @@
+{
+ "config": {
+  "baseline": "coloc_susie",
+  "frozen_timeouts_file": null,
+  "max_cpus": 24,
+  "mem_budget_gb": 48.0,
+  "mem_model_gb": {
+   "a": 0.8,
+   "at_p_max": 3.4481316,
+   "b": 0.1
+  },
+  "n_workers": 13,
+  "p_max": 5146,
+  "r_timeout_s": 540.0,
+  "timeout_s": 600.0
+ },
+ "counts": {
+  "expected": 200,
+  "failed": 2,
+  "nonconverged": 48,
+  "ok": 150,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-26T17:13:36.933810Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": false,
+  "commit": "3416f2e61d31203e19176198970d3cfe255443ad",
+  "modified_tracked": [
+   " M logs/redo_chr7.log",
+   " M src/famA/README.md",
+   " M src/famA/bvn.py",
+   " M src/famA/joint_susie.py",
+   " M src/famA/method.py",
+   " M src/famA/ser_kernel.py",
+   " M src/famA/validation/compare_mvsusie.py",
+   " M src/famA/validation/timing.py",
+   " M src/famC/model.py",
+   " M src/famC/train_c0.py",
+   " M src/famC/train_main.py",
+   " M src/famG/README.md",
+   " M src/famG/coloc.py",
+   " M src/famG/ld.py",
+   " M src/famG/method.py",
+   " M src/sim/testset.py",
+   " M tests/famA/test_joint_susie.py",
+   " M tests/famG/test_method.py"
+  ],
+  "tags": [],
+  "untracked_code": [
+   "configs/FROZEN_SHA256",
+   "configs/test_methods_v1.yaml",
+   "configs/testset_v1.yaml",
+   "src/baselines/benchmarks/pilot200_screen_v1_ids.txt",
+   "src/baselines/benchmarks/pilot200_screen_v1_runs.json",
+   "src/famA/eta_kernel.py",
+   "src/famA/ref_ld_var_v1.json",
+   "src/famA/ref_ld_var_v1.md",
+   "src/famA/validation/calibrate_ref_ld_var.py",
+   "src/sim/validation/rho_calibration.md",
+   "src/sim/validation/rho_calibration_final.tsv",
+   "src/sim/validation/rho_genomewide_calibration.json",
+   "src/sim/validation/rho_summary.py"
+  ]
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 13,
+  "timeout_s_per_locus": 600.0,
+  "timing": false
+ },
+ "label": "M3.5 pilot200_screen_v1 coloc_susie",
+ "locus_set": {
+  "ids_sha256": "a16bf258484e1d6df1e86bcdf0085ccacf0aba2350b5d99416343a50745272ee",
+  "n_expected": 200,
+  "n_loci_in_file": 12000,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/screen_v1.h5",
+  "sha256": "82d28203484ebf0f468a14f4b47c5235d9fadfbf5fff2850dd3c3134a30d6f99"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "100, 19290",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   31.60400390625,
+   28.68798828125,
+   28.0830078125
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "timeout": 540.0
+  },
+  "name": "coloc_susie",
+  "target": "baselines.methods:ColocSusie"
+ },
+ "method_name": "coloc_susie",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": null,
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "027910d1c69cf9a73a555f6e500d1841f48e2e3103fca150d75f87f7aaa6d873",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 216892,
+  "rule": "D6(h)"
+ },
+ "run_id": "20261026T170911Z_coloc_susie_screen_v1_ff43b4",
+ "runtime_s": {
+  "median": 5.45920655450027,
+  "p95": 48.433739837394356,
+  "sum": 2814.0765084990635
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-26T17:09:11.187282Z",
+ "test_access": false,
+ "truth": null,
+ "wall_s": 265.74651427899516
+}

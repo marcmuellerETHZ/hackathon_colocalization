@@ -1,0 +1,2 @@
+22:24:51 [harness] run dry_mvr1__strength_only__real_R4b_reference: 6 loci (6 to run), mode=cpu, workers=2
+22:24:54 [harness] done dry_mvr1__strength_only__real_R4b_reference: {'ok': 6, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 6} in 3.8s

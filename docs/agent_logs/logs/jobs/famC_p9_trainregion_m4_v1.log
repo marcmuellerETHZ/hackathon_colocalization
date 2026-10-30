@@ -1,0 +1,2 @@
+[orch] job famC_p9_trainregion_m4_v1 start 2026-10-28T09:54:51+01:00 host eu-g6-001 commit 2990439e6b pid 2125912
+[orch] cmd: python scripts/famC_eval/build_trainregion.py --set trainregion_m4_v1 --workers 3 > logs/famC/p9_trainregion_m4_v1.log 2>&1; rc=$?; tail -n 3 logs/famC/p9_trainregion_m4_v1.log; exit $rc

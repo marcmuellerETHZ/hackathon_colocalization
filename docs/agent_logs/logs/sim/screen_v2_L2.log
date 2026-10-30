@@ -1,0 +1,40 @@
+[     88s] visit 10 L2|P1|r_p=0.0: S=30,W=30,G=0,U=0,D=47,k=2000 | L2|P3|rho=0.5: S=30,W=30,G=0,U=0,D=51,k=2000
+[    222s] visit 20 L2|P1|r_p=0.0: S=60,W=60,G=0,U=0,D=87,k=4000 | L2|P3|rho=0.5: S=60,W=60,G=0,U=0,D=97,k=4000
+[    356s] visit 30 L2|P1|r_p=0.0: S=90,W=90,G=0,U=0,D=136,k=6000 | L2|P3|rho=0.5: S=90,W=90,G=0,U=0,D=143,k=6000
+[W1026 18:13:26.016724750 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 398458880 bytes (free: 64749568, total: 25250627584).
+[W1026 18:13:26.170504332 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 398458880 bytes (free: 182190080, total: 25250627584).
+[W1026 18:13:26.170622703 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 398458880 bytes (free: 182190080, total: 25250627584).
+CUDA OOM at visit 33 (attempt 1); retrying in 30 s
+[    576s] visit 40 L2|P1|r_p=0.0: S=120,W=120,G=0,U=0,D=183,k=8000 | L2|P3|rho=0.5: S=120,W=120,G=0,U=0,D=194,k=8000
+[    693s] visit 50 L2|P1|r_p=0.0: S=150,W=150,G=0,U=0,D=233,k=10000 | L2|P3|rho=0.5: S=150,W=150,G=0,U=0,D=241,k=10000
+[    811s] visit 60 L2|P1|r_p=0.0: S=180,W=180,G=0,U=0,D=273,k=12000 | L2|P3|rho=0.5: S=180,W=180,G=0,U=0,D=295,k=12000
+[    932s] visit 70 L2|P1|r_p=0.0: S=210,W=210,G=0,U=0,D=322,k=14000 | L2|P3|rho=0.5: S=210,W=210,G=0,U=0,D=343,k=14000
+[   1052s] visit 80 L2|P1|r_p=0.0: S=240,W=240,G=0,U=0,D=368,k=16000 | L2|P3|rho=0.5: S=240,W=240,G=0,U=0,D=389,k=16000
+[   1174s] visit 90 L2|P1|r_p=0.0: S=270,W=270,G=0,U=0,D=416,k=18000 | L2|P3|rho=0.5: S=270,W=270,G=0,U=0,D=433,k=18000
+[   1265s] visit 100 L2|P1|r_p=0.0: S=300,W=300,G=0,U=0,D=459,k=20000 | L2|P3|rho=0.5: S=300,W=300,G=0,U=0,D=479,k=20000
+[   1388s] visit 110 L2|P1|r_p=0.0: S=330,W=330,G=0,U=0,D=511,k=22000 | L2|P3|rho=0.5: S=330,W=330,G=0,U=0,D=526,k=22000
+[   1517s] visit 120 L2|P1|r_p=0.0: S=360,W=360,G=0,U=0,D=556,k=24000 | L2|P3|rho=0.5: S=360,W=360,G=0,U=0,D=565,k=24000
+[   1643s] visit 130 L2|P1|r_p=0.0: S=390,W=390,G=0,U=0,D=604,k=26000 | L2|P3|rho=0.5: S=390,W=390,G=0,U=0,D=614,k=26000
+[   1770s] visit 140 L2|P1|r_p=0.0: S=420,W=420,G=0,U=0,D=648,k=28000 | L2|P3|rho=0.5: S=420,W=420,G=0,U=0,D=663,k=28000
+[   1901s] visit 150 L2|P1|r_p=0.0: S=450,W=450,G=0,U=0,D=693,k=30000 | L2|P3|rho=0.5: S=450,W=450,G=0,U=0,D=714,k=30000
+[   2026s] visit 160 L2|P1|r_p=0.0: S=480,W=480,G=0,U=0,D=736,k=32000 | L2|P3|rho=0.5: S=480,W=480,G=0,U=0,D=764,k=32000
+[   2146s] visit 170 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=778,k=34000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=795,k=34000
+[   2250s] visit 180 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=796,k=36000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=815,k=36000
+[   2315s] visit 190 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=813,k=38000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=840,k=38000
+[   2426s] visit 200 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=831,k=40000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=851,k=40000
+[   2549s] visit 210 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=852,k=42000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=868,k=42000
+[   2671s] visit 220 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=866,k=44000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=890,k=44000
+[   2777s] visit 230 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=877,k=46000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=906,k=46000
+[W1026 18:53:05.752706471 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 362807296 bytes (free: 319225856, total: 25250627584).
+[W1026 18:53:05.943633802 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 348127232 bytes (free: 113704960, total: 25250627584).
+[W1026 18:53:05.952275226 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 348127232 bytes (free: 298254336, total: 25250627584).
+CUDA OOM at visit 231 (attempt 1); retrying in 30 s
+[   2929s] visit 240 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=895,k=48000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=923,k=48000
+[   3038s] visit 250 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=903,k=50000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=940,k=50000
+[   3158s] visit 260 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=917,k=52000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=953,k=52000
+[   3265s] visit 270 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=933,k=54000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=969,k=54000
+[   3355s] visit 280 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=947,k=56000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=984,k=56000
+[   3468s] visit 290 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=967,k=58000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=997,k=58000
+[   3524s] visit 300 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=984,k=60000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=1000,k=58600
+[   3571s] visit 310 L2|P1|r_p=0.0: S=500,W=500,G=0,U=0,D=997,k=62000 | L2|P3|rho=0.5: S=500,W=500,G=0,U=0,D=1000,k=58600
+{"set": "screen_v2", "seed": 20261027, "key_prefix": [], "split": "valid", "K": 200, "M": 3, "plan": {"type": "fixed", "targets": {"S": 500, "D_r2lt0.5": 500, "D_r2_0.5-0.8": 500, "W": 500}}, "windows_available": 3769, "visits": 311, "skipped_small_windows": 0, "runtime_s": 3578.076662302017, "world_version": "sim_v2"}

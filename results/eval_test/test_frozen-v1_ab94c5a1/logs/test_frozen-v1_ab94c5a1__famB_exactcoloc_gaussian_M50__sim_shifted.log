@@ -1,0 +1,4 @@
+04:33:34 [harness] run test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted: 1600 loci (1600 to run), mode=batch, workers=1
+04:34:35 [harness] famB_exactcoloc_gaussian_M50: 640/1600 loci done
+04:35:39 [harness] famB_exactcoloc_gaussian_M50: 1472/1600 loci done
+04:35:56 [harness] done test_frozen-v1_ab94c5a1__famB_exactcoloc_gaussian_M50__sim_shifted: {'ok': 1600, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 1600} in 139.9s

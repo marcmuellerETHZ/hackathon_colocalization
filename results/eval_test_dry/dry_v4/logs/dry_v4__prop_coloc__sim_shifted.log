@@ -1,0 +1,2 @@
+20:23:18 [harness] run dry_v4__prop_coloc__sim_shifted: 64 loci (64 to run), mode=cpu, workers=7
+20:23:47 [harness] done dry_v4__prop_coloc__sim_shifted: {'ok': 62, 'nonconverged': 0, 'failed': 2, 'timeout': 0, 'expected': 64} in 28.8s

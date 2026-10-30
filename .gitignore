@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# local environments and data (see docs/environment/README.md); never committed
+/.venv/
+/env/*
+!/env/activate.sh
+/data/
+/runs/
+/logs/
+/.orch/

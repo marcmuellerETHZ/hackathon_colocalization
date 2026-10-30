@@ -1,0 +1,113 @@
+[orch] job p2va_regen_screen_v2 start 2026-10-27T10:33:29+01:00 host eu-g6-001 commit ed1e71625c pid 928713
+[orch] cmd: python scripts/p2_verify/regen_sample.py --set screen_v2 --per-group 3 --out results/p2_verify_artifacts/regen_screen_v2.json
+[     2s] 1/72 screen_v2__L4_P3_rho=0.5__D_r2lt0.5__0000417 ok=True
+[     2s] 2/72 screen_v2__L2_P1_r_p=0.0__D_r2_0.5-0.8__0062118 ok=True
+[     2s] 3/72 screen_v2__L4_P3_rho=0.5__D_r2_0.5-0.8__0034698 ok=True
+[     2s] 4/72 screen_v2__L4_P3_rho=0.5__D_r2_0.5-0.8__0052808 ok=True
+[     3s] 5/72 screen_v2__L0_P1_r_p=0.0__W__0033204 ok=True
+[     3s] 6/72 screen_v2__L0_P1_r_p=0.0__D_r2lt0.5__0033215 ok=True
+[     3s] 7/72 screen_v2__L0_P1_r_p=0.0__S__0033263 ok=True
+[     3s] 8/72 screen_v2__L0_P3_rho=0.5__W__0033202 ok=True
+[     3s] 9/72 screen_v2__L0_P3_rho=0.5__D_r2lt0.5__0033220 ok=True
+[     3s] 10/72 screen_v2__L0_P3_rho=0.5__S__0033222 ok=True
+[     4s] 11/72 screen_v2__L2_P1_r_p=0.0__S__0033201 ok=True
+[     4s] 12/72 screen_v2__L2_P1_r_p=0.0__W__0033204 ok=True
+[     4s] 13/72 screen_v2__L2_P1_r_p=0.0__D_r2lt0.5__0033227 ok=True
+[     4s] 14/72 screen_v2__L2_P3_rho=0.5__W__0033202 ok=True
+[     4s] 15/72 screen_v2__L2_P3_rho=0.5__D_r2lt0.5__0033213 ok=True
+[     4s] 16/72 screen_v2__L2_P3_rho=0.5__S__0033228 ok=True
+[     4s] 17/72 screen_v2__L4_P1_r_p=0.0__D_r2lt0.5__0033202 ok=True
+[     4s] 18/72 screen_v2__L4_P1_r_p=0.0__W__0033203 ok=True
+[     4s] 19/72 screen_v2__L4_P1_r_p=0.0__S__0033272 ok=True
+[     4s] 20/72 screen_v2__L4_P3_rho=0.5__W__0033201 ok=True
+[     4s] 21/72 screen_v2__L4_P3_rho=0.5__S__0033206 ok=True
+[     4s] 22/72 screen_v2__L4_P3_rho=0.5__D_r2lt0.5__0033245 ok=True
+[     4s] 23/72 screen_v2__L2_P3_rho=0.5__D_r2lt0.5__0017419 ok=True
+[     5s] 24/72 screen_v2__L2_P1_r_p=0.0__W__0014801 ok=True
+[     5s] 25/72 screen_v2__L0_P3_rho=0.5__W__0003204 ok=True
+[     6s] 26/72 screen_v2__L2_P1_r_p=0.0__D_r2lt0.5__0001036 ok=True
+[     6s] 27/72 screen_v2__L0_P3_rho=0.5__D_r2_0.5-0.8__0011710 ok=True
+[     6s] 28/72 screen_v2__L2_P3_rho=0.5__S__0011683 ok=True
+[     7s] 29/72 screen_v2__L0_P1_r_p=0.0__S__0028416 ok=True
+[     7s] 30/72 screen_v2__L0_P3_rho=0.5__D_r2_0.5-0.8__0053802 ok=True
+[     8s] 31/72 screen_v2__L0_P1_r_p=0.0__D_r2lt0.5__0017624 ok=True
+[     8s] 32/72 screen_v2__L4_P3_rho=0.5__S__0029238 ok=True
+[     9s] 33/72 screen_v2__L4_P1_r_p=0.0__D_r2_0.5-0.8__0057822 ok=True
+[     9s] 34/72 screen_v2__L0_P1_r_p=0.0__W__0000000 ok=True
+[    10s] 35/72 screen_v2__L0_P1_r_p=0.0__S__0000009 ok=True
+[    10s] 36/72 screen_v2__L0_P1_r_p=0.0__D_r2lt0.5__0000018 ok=True
+[    10s] 37/72 screen_v2__L0_P1_r_p=0.0__D_r2_0.5-0.8__0000059 ok=True
+[    10s] 38/72 screen_v2__L0_P3_rho=0.5__W__0000000 ok=True
+[    10s] 39/72 screen_v2__L0_P3_rho=0.5__S__0000010 ok=True
+[    11s] 40/72 screen_v2__L0_P3_rho=0.5__D_r2lt0.5__0000012 ok=True
+[    11s] 41/72 screen_v2__L0_P3_rho=0.5__D_r2_0.5-0.8__0000050 ok=True
+[    11s] 42/72 screen_v2__L2_P1_r_p=0.0__W__0000001 ok=True
+[    11s] 43/72 screen_v2__L2_P1_r_p=0.0__S__0000004 ok=True
+[    11s] 44/72 screen_v2__L2_P1_r_p=0.0__D_r2lt0.5__0000024 ok=True
+[    11s] 45/72 screen_v2__L2_P1_r_p=0.0__D_r2_0.5-0.8__0000155 ok=True
+[    11s] 46/72 screen_v2__L2_P3_rho=0.5__W__0000000 ok=True
+[    11s] 47/72 screen_v2__L2_P3_rho=0.5__D_r2lt0.5__0000006 ok=True
+[    11s] 48/72 screen_v2__L2_P3_rho=0.5__S__0000026 ok=True
+[    11s] 49/72 screen_v2__L2_P3_rho=0.5__D_r2_0.5-0.8__0000054 ok=True
+[    11s] 50/72 screen_v2__L4_P1_r_p=0.0__W__0000000 ok=True
+[    11s] 51/72 screen_v2__L4_P1_r_p=0.0__S__0000013 ok=True
+[    11s] 52/72 screen_v2__L4_P1_r_p=0.0__D_r2lt0.5__0000041 ok=True
+[    11s] 53/72 screen_v2__L4_P1_r_p=0.0__D_r2_0.5-0.8__0000148 ok=True
+[    11s] 54/72 screen_v2__L4_P3_rho=0.5__D_r2lt0.5__0000000 ok=True
+[    11s] 55/72 screen_v2__L4_P3_rho=0.5__W__0000001 ok=True
+[    11s] 56/72 screen_v2__L4_P3_rho=0.5__S__0000002 ok=True
+[    11s] 57/72 screen_v2__L4_P3_rho=0.5__D_r2_0.5-0.8__0000094 ok=True
+[    11s] 58/72 screen_v2__L2_P1_r_p=0.0__D_r2_0.5-0.8__0021613 ok=True
+[    12s] 59/72 screen_v2__L4_P1_r_p=0.0__S__0008000 ok=True
+[    12s] 60/72 screen_v2__L2_P3_rho=0.5__D_r2_0.5-0.8__0036092 ok=True
+[    12s] 61/72 screen_v2__L2_P3_rho=0.5__D_r2_0.5-0.8__0058408 ok=True
+[    12s] 62/72 screen_v2__L4_P3_rho=0.5__W__0008401 ok=True
+[    13s] 63/72 screen_v2__L2_P1_r_p=0.0__S__0030401 ok=True
+[    13s] 64/72 screen_v2__L4_P1_r_p=0.0__D_r2_0.5-0.8__0052525 ok=True
+[    13s] 65/72 screen_v2__L0_P3_rho=0.5__S__0024619 ok=True
+[    14s] 66/72 screen_v2__L0_P1_r_p=0.0__D_r2_0.5-0.8__0060789 ok=True
+[    15s] 67/72 screen_v2__L4_P1_r_p=0.0__D_r2lt0.5__0027420 ok=True
+[    15s] 68/72 screen_v2__L4_P1_r_p=0.0__W__0026003 ok=True
+[    15s] 69/72 screen_v2__L0_P3_rho=0.5__D_r2lt0.5__0011003 ok=True
+[    16s] 70/72 screen_v2__L0_P1_r_p=0.0__D_r2_0.5-0.8__0018790 ok=True
+[    16s] 71/72 screen_v2__L2_P3_rho=0.5__W__0004800 ok=True
+[    17s] 72/72 screen_v2__L0_P1_r_p=0.0__W__0031200 ok=True
+{
+ "set": "screen_v2",
+ "seed": 20261027,
+ "n_sampled": 72,
+ "n_ok": 72,
+ "n_cells": 6,
+ "by_cell": {
+  "L0|P1|r_p=0.0": 12,
+  "L0|P3|rho=0.5": 12,
+  "L2|P1|r_p=0.0": 12,
+  "L2|P3|rho=0.5": 12,
+  "L4|P1|r_p=0.0": 12,
+  "L4|P3|rho=0.5": 12
+ },
+ "by_class": {
+  "D": 36,
+  "S": 18,
+  "W": 18
+ },
+ "by_bucket": {
+  "D_r2_0.5-0.8": 18,
+  "D_r2lt0.5": 18,
+  "S": 18,
+  "W": 18
+ },
+ "cand_index_range": [
+  0,
+  62118
+ ],
+ "fields_not_identical": [],
+ "runtime_s": 17.27159881591797,
+ "device": "cuda",
+ "torch": "2.14.1+cu130",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "peak_gpu_gb": 1.077319168,
+ "commit": "ed1e71625c22950106f2dc49bf9aafb5fae2b3b0"
+}
+fields max_abs_diff: {"z1": [72, 72, 0.0], "z2": [72, 72, 0.0], "beta1": [72, 72, 0.0], "se1": [72, 72, 0.0], "beta2": [72, 72, 0.0], "se2": [72, 72, 0.0], "n1": [72, 72, 0.0], "n2": [72, 72, 0.0], "maf1": [72, 72, 0.0], "maf2": [72, 72, 0.0], "maf_ref": [72, 72, 0.0], "variant_id": [72, 72, 0.0], "pos": [72, 72, 0.0], "ld_type": [72, 72, 0.0], "n_ref": [72, 72, 0.0], "LD": [72, 72, 0.0], "rho_hat": [72, 72, 0.0], "rho_se": [72, 72, 0.0], "attr:split": [72, 72, 0.0], "attr:mismatch_level": [72, 72, 0.0], "attr:pairing_type": [72, 72, 0.0], "attr:cell_id": [72, 72, 0.0], "attr:window_chr": [72, 72, 0.0], "attr:window_start": [72, 72, 0.0], "attr:window_end": [72, 72, 0.0], "attr:block_ids": [72, 72, 0.0], "attr:trait1_type": [72, 72, 0.0], "attr:trait2_type": [72, 72, 0.0], "truth:locus_id": [72, 72, 0.0], "truth:oracle_class": [72, 72, 0.0], "truth:mu1": [72, 72, 0.0], "truth:mu2": [72, 72, 0.0], "truth:r2": [72, 72, 0.0], "truth:d": [72, 72, 0.0], "truth:rho": [72, 72, 0.0], "truth:block_id": [72, 72, 0.0], "truth:cell_id": [72, 72, 0.0], "truth:split": [72, 72, 0.0], "truth:mismatch_level": [72, 72, 0.0], "truth:pairing_type": [72, 72, 0.0], "truth:overlap": [72, 72, 0.0], "truth:control": [72, 72, 0.0], "truth:causal1": [72, 72, 0.0], "truth:causal2": [72, 72, 0.0], "truth:effect1": [72, 72, 0.0], "truth:effect2": [72, 72, 0.0], "truth:mu1_all": [72, 72, 0.0], "truth:mu2_all": [72, 72, 0.0], "truth:causal1_vid": [72, 72, 0.0], "truth:causal2_vid": [72, 72, 0.0], "truth:cd1": [72, 72, 0.0], "truth:cd2": [72, 72, 0.0], "truth:n_powered1": [72, 72, 0.0], "truth:n_powered2": [72, 72, 0.0], "truth:locus_type": [72, 72, 0.0], "truth:target_r2_bin": [72, 72, 0.0], "truth:background": [72, 72, 0.0], "truth:strong1": [72, 72, 0.0], "truth:strong2": [72, 72, 0.0], "truth:pve1": [72, 72, 0.0], "truth:pve2": [72, 72, 0.0], "truth:pairing_sub": [72, 72, 0.0], "truth:N1": [72, 72, 0.0], "truth:N2": [72, 72, 0.0], "truth:N_s": [72, 72, 0.0], "truth:r_p": [72, 72, 0.0], "truth:trait1_type": [72, 72, 0.0], "truth:trait2_type": [72, 72, 0.0], "truth:pop1": [72, 72, 0.0], "truth:pop2": [72, 72, 0.0], "truth:form1": [72, 72, 0.0], "truth:form2": [72, 72, 0.0], "truth:rho_hat": [72, 72, 0.0], "truth:rho_se": [72, 72, 0.0], "truth:rho_mode": [72, 72, 0.0], "truth:rho_n_used": [72, 72, 0.0], "truth:p": [72, 72, 0.0], "truth:p_study": [72, 72, 0.0], "truth:p_window": [72, 72, 0.0], "truth:flipped": [72, 72, 0.0], "truth:flip_trait": [72, 72, 0.0], "truth:lead_abs_z1": [72, 72, 0.0], "truth:lead_abs_z2": [72, 72, 0.0], "truth:anchor": [72, 72, 0.0], "truth:window_chr": [72, 72, 0.0], "truth:window_start": [72, 72, 0.0], "truth:window_end": [72, 72, 0.0], "truth:seed_key": [72, 72, 0.0], "truth:bucket": [72, 72, 0.0], "truth:cand_index": [72, 72, 0.0], "truth:set": [72, 72, 0.0], "LD2": [12, 12, 0.0], "attr:ld_type2": [12, 12, 0.0], "attr:n_ref2": [12, 12, 0.0]}
+[orch] exit 0 at 2026-10-27T10:34:01+01:00

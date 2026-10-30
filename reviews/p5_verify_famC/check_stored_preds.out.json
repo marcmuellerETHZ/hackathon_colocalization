@@ -1,0 +1,121 @@
+{
+ "model_100096": {
+  "max_abs(main - renorm(none/CW))": 4.816266729879004e-08,
+  "none": {
+   "natural_mine": 0.0630592562511582,
+   "natural_c1_eval": 0.0630592563099281,
+   "balanced_mine": 0.18738631241445958,
+   "balanced_c1_eval": 0.18738631261445954,
+   "min_PC": 3.1e-07
+  },
+  "main": {
+   "natural_mine": 0.08649620577192124,
+   "natural_c1_eval": 0.08649620542102271,
+   "balanced_mine": 0.28062879027369053,
+   "balanced_c1_eval": 0.2806287903903572,
+   "min_PC": 7e-08
+  }
+ },
+ "model_300032": {
+  "max_abs(main - renorm(none/CW))": 4.730167801891838e-08,
+  "none": {
+   "natural_mine": 0.04033790128410192,
+   "natural_c1_eval": 0.04033790129670629,
+   "balanced_mine": 0.12185456340398314,
+   "balanced_c1_eval": 0.12185456327064977,
+   "min_PC": 4e-08
+  },
+  "main": {
+   "natural_mine": 0.07514592313555482,
+   "natural_c1_eval": 0.07514592387285221,
+   "balanced_mine": 0.23889968550394514,
+   "balanced_c1_eval": 0.2388996856539501,
+   "min_PC": 0.0
+  }
+ },
+ "model_1000192": {
+  "max_abs(main - renorm(none/CW))": 4.404657000039395e-08,
+  "none": {
+   "natural_mine": 0.02948576105879831,
+   "natural_c1_eval": 0.029485761270845855,
+   "balanced_mine": 0.07908099828120634,
+   "balanced_c1_eval": 0.07908099813120628,
+   "min_PC": 2e-08
+  },
+  "main": {
+   "natural_mine": 0.04083234308308386,
+   "natural_c1_eval": 0.04083234279108978,
+   "balanced_mine": 0.12596457077615808,
+   "balanced_c1_eval": 0.12596457089285137,
+   "min_PC": 0.0
+  }
+ },
+ "model_1000448": {
+  "max_abs(main - renorm(none/CW))": 5.280645243299631e-08,
+  "none": {
+   "natural_mine": 0.029069783776291845,
+   "natural_c1_eval": 0.02906978383480941,
+   "balanced_mine": 0.08052552508200089,
+   "balanced_c1_eval": 0.08052552546533752,
+   "min_PC": 0.0
+  },
+  "main": {
+   "natural_mine": 0.09129836240438316,
+   "natural_c1_eval": 0.09129836184234418,
+   "balanced_mine": 0.22007212224493788,
+   "balanced_c1_eval": 0.22007212206170285,
+   "min_PC": 0.0
+  }
+ },
+ "model_2000384": {
+  "max_abs(main - renorm(none/CW))": 4.714538126560086e-08,
+  "none": {
+   "natural_mine": 0.02399941422895127,
+   "natural_c1_eval": 0.023999414407336838,
+   "balanced_mine": 0.06568436272396919,
+   "balanced_c1_eval": 0.06568436295730415,
+   "min_PC": 0.0
+  },
+  "main": {
+   "natural_mine": 0.06423530233856561,
+   "natural_c1_eval": 0.06423530227347728,
+   "balanced_mine": 0.1775622464722511,
+   "balanced_c1_eval": 0.17756224637233442,
+   "min_PC": 0.0
+  }
+ },
+ "model_4000256": {
+  "max_abs(main - renorm(none/CW))": 5.106235512197799e-08,
+  "none": {
+   "natural_mine": 0.014217871902675401,
+   "natural_c1_eval": 0.014217872139239803,
+   "balanced_mine": 0.04510099185719228,
+   "balanced_c1_eval": 0.04510099162391558,
+   "min_PC": 0.0
+  },
+  "main": {
+   "natural_mine": 0.05229648615749332,
+   "natural_c1_eval": 0.05229648520989124,
+   "balanced_mine": 0.14270758425481803,
+   "balanced_c1_eval": 0.142707583805013,
+   "min_PC": 0.0
+  }
+ },
+ "model": {
+  "max_abs(main - renorm(none/CW))": 4.837539091528953e-08,
+  "none": {
+   "natural_mine": 0.006378326223981076,
+   "natural_c1_eval": 0.006378326120377669,
+   "balanced_mine": 0.01984401619573968,
+   "balanced_c1_eval": 0.019844016145792988,
+   "min_PC": 0.0
+  },
+  "main": {
+   "natural_mine": 0.04841642041390183,
+   "natural_c1_eval": 0.04841641950278818,
+   "balanced_mine": 0.11116774079076348,
+   "balanced_c1_eval": 0.11116774047430511,
+   "min_PC": 0.0
+  }
+ }
+}

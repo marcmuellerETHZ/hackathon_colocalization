@@ -1,0 +1,72 @@
+coloc 5.2.3  susieR 0.14.2 
+PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+ 1.38e-18  2.94e-10  8.59e-12  8.34e-04  9.99e-01 
+[1] "PP abf for shared variant: 99.9%"
+       nsnps    PP.H0.abf    PP.H1.abf    PP.H2.abf    PP.H3.abf    PP.H4.abf 
+5.000000e+02 1.377000e-18 2.937336e-10 8.593226e-12 8.338917e-04 9.991661e-01 
+running max iterations: 100
+	converged: TRUE
+running max iterations: 100
+	converged: TRUE
+
+Variables in credible sets:
+
+ variable variable_prob cs
+      105   0.777112363  1
+       89   0.395106280  2
+       87   0.271833777  2
+       82   0.106275736  1
+      103   0.080325925  1
+       81   0.057211679  2
+       80   0.051878567  2
+       84   0.037874443  2
+       68   0.036058478  2
+       97   0.030410224  2
+       75   0.018683900  2
+      113   0.014731357  2
+       69   0.011078296  2
+       58   0.010512961  2
+       73   0.008534130  2
+      108   0.007895691  2
+
+Credible sets summary:
+
+ cs cs_log10bf cs_avg_r2 cs_min_r2                                 variable
+  1   8.626023 0.6743405 0.5947188                               82,103,105
+  2   3.492210 0.6237635 0.4582396 58,68,69,73,75,80,81,84,87,89,97,108,113
+
+Variables in credible sets:
+
+ variable variable_prob cs
+      105     0.9051715  1
+      156     0.0605820  1
+
+Credible sets summary:
+
+ cs cs_log10bf cs_avg_r2 cs_min_r2 variable
+  1   4.940385 0.5047112 0.5047112  105,156
+   nsnps   hit1   hit2    PP.H0.abf    PP.H1.abf    PP.H2.abf    PP.H3.abf
+   <int> <char> <char>        <num>        <num>        <num>        <num>
+1:   500   s105   s105 3.079008e-14 6.507291e-07 1.342030e-10 0.0008379729
+2:   500    s89   s105 1.422896e-06 2.209787e-04 6.201896e-03 0.9631063076
+   PP.H4.abf  idx1  idx2
+       <num> <int> <int>
+1: 0.9991614     1     1
+2: 0.0304694     2     1
+susie_rss args (0.14.2):  [1] "z"                          "R"                         
+ [3] "n"                          "bhat"                      
+ [5] "shat"                       "var_y"                     
+ [7] "z_ld_weight"                "estimate_residual_variance"
+ [9] "prior_variance"             "check_prior"               
+[11] "..."                       
+$L2
+[1] 653
+
+$L1
+[1] 773 777
+
+$L3
+ [1] 360 362 365 366 368 372 373 374 379 381 383 384 386 387 388 389 391 392 396
+[20] 397 398 399 400 401 403 404 405 407 408 415
+
+true causal idx: 403 653 773 

@@ -1,0 +1,2 @@
+[orch] job famG_mm_identity_gpu_v1 start 2026-10-28T09:54:30+01:00 host eu-g6-001 commit 872bc3aa94 pid 2124813
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH R_PROFILE_USER=/dev/null; W=runs/famG_mm_identity_ref_v1/out/loci; O=results/famG_mm/identity_v1; cd $ORCH_CODE && python -m pytest tests/famG/test_susie_mm.py -q -rs -p no:cacheprovider 2>&1 | tail -15; cd $ORCH_HOME; for args in "--dtype float64" "--dtype float64 --no-triton" "--dtype float32"; do python -m famG.validation.compare_mm --work $W --rdir $O/r016 --out $O/cmp $args; done

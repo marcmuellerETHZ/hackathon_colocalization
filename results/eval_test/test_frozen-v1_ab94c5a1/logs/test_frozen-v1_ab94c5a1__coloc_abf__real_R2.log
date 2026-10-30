@@ -1,0 +1,2 @@
+23:45:20 [harness] run test_frozen-v1_ab94c5a1__coloc_abf__real_R2: 800 loci (800 to run), mode=cpu, workers=1
+23:45:39 [harness] done test_frozen-v1_ab94c5a1__coloc_abf__real_R2: {'ok': 800, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 800} in 20.4s

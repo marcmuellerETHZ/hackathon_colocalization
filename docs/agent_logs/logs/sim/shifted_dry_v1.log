@@ -1,0 +1,8 @@
+[W1026 18:37:38.922896316 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 281018368 bytes (free: 17956864, total: 25250627584).
+[W1026 18:37:38.977471357 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 113246208 bytes (free: 85065728, total: 25250627584).
+[W1026 18:37:38.977571367 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 113246208 bytes (free: 85065728, total: 25250627584).
+[W1026 18:38:59.511725242 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 354418688 bytes (free: 145883136, total: 25250627584).
+[W1026 18:39:02.618389320 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 218103808 bytes (free: 162660352, total: 25250627584).
+[W1026 18:39:03.475421143 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 293601280 bytes (free: 137494528, total: 25250627584).
+shifted arm -> /cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/shifted_dry_v1_shifted.h5 (122s)
+["/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/shifted_dry_v1_shifted.h5"]

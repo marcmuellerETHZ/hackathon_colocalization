@@ -1,0 +1,2 @@
+CUDA OOM at visit 8 (attempt 1); retrying in 30 s
+[     52s] visit 10 L1swap|P1|r_p=0.0: S=8,W=67,G=17,U=0,D=8,k=100

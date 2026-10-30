@@ -1,0 +1,65 @@
+[ldbank train] 0/3000 windows
+[ldbank train] 200/3000 windows
+[ldbank train] 400/3000 windows
+[ldbank train] 600/3000 windows
+[ldbank train] 800/3000 windows
+[ldbank train] 1000/3000 windows
+[ldbank train] 1200/3000 windows
+[ldbank train] 1400/3000 windows
+[ldbank train] 1600/3000 windows
+[ldbank train] 1800/3000 windows
+[ldbank train] 2000/3000 windows
+[ldbank train] 2200/3000 windows
+[ldbank train] 2400/3000 windows
+[ldbank train] 2600/3000 windows
+[ldbank train] 2800/3000 windows
+[ldbank valid] 0/400 windows
+[ldbank valid] 200/400 windows
+banks: train 2998 windows (2.17 GB), valid 400; 45s
+params 1019638
+EVAL seen 50176: uniform E_KL 0.11739 dPP4_q99 0.5442 | coloc E_KL 0.06197 dPP4_q99 0.3200 | train E_KL 0.11891
+step 200 seen 51200 KL 0.43678 pip 0.1906 gn 5.83 lr 1.00e-04 1003 loci/s mem 5.1GB
+EVAL seen 100096: uniform E_KL 0.05407 dPP4_q99 0.3255 | coloc E_KL 0.02733 dPP4_q99 0.0831 | train E_KL 0.05635
+step 400 seen 102400 KL 0.08342 pip 0.2126 gn 14.66 lr 2.00e-04 1111 loci/s mem 5.1GB
+step 600 seen 153600 KL 0.05829 pip 0.1829 gn 3.70 lr 3.00e-04 1913 loci/s mem 5.1GB
+EVAL seen 200192: uniform E_KL 0.03727 dPP4_q99 0.2301 | coloc E_KL 0.02313 dPP4_q99 0.0614 | train E_KL 0.03955
+step 800 seen 204800 KL 0.04536 pip 0.3088 gn 8.27 lr 4.00e-04 1024 loci/s mem 5.1GB
+step 1000 seen 256000 KL 0.03487 pip 0.1453 gn 3.57 lr 4.99e-04 1911 loci/s mem 5.1GB
+step 1200 seen 307200 KL 0.03387 pip 0.1216 gn 4.31 lr 4.99e-04 2296 loci/s mem 5.1GB
+step 1400 seen 358400 KL 0.02175 pip 0.1771 gn 1.53 lr 4.99e-04 2289 loci/s mem 5.1GB
+step 1600 seen 409600 KL 0.01825 pip 0.1793 gn 2.25 lr 4.98e-04 2267 loci/s mem 5.1GB
+step 1800 seen 460800 KL 0.01888 pip 0.1844 gn 2.44 lr 4.98e-04 1373 loci/s mem 5.1GB
+EVAL seen 500224: uniform E_KL 0.01947 dPP4_q99 0.2690 | coloc E_KL 0.00942 dPP4_q99 0.0538 | train E_KL 0.01943
+step 2000 seen 512000 KL 0.01613 pip 0.1644 gn 1.09 lr 4.97e-04 649 loci/s mem 5.1GB
+step 2200 seen 563200 KL 0.01281 pip 0.1065 gn 0.73 lr 4.96e-04 1186 loci/s mem 5.1GB
+step 2400 seen 614400 KL 0.01257 pip 0.1255 gn 0.69 lr 4.96e-04 2078 loci/s mem 5.1GB
+step 2600 seen 665600 KL 0.01159 pip 0.1431 gn 1.23 lr 4.95e-04 2308 loci/s mem 5.1GB
+step 2800 seen 716800 KL 0.01109 pip 0.1686 gn 1.13 lr 4.94e-04 2191 loci/s mem 5.1GB
+step 3000 seen 768000 KL 0.01009 pip 0.1211 gn 1.75 lr 4.93e-04 2469 loci/s mem 5.1GB
+step 3200 seen 819200 KL 0.00926 pip 0.1726 gn 0.95 lr 4.92e-04 2138 loci/s mem 5.1GB
+step 3400 seen 870400 KL 0.00890 pip 0.1413 gn 0.83 lr 4.91e-04 2272 loci/s mem 5.1GB
+step 3600 seen 921600 KL 0.00863 pip 0.1089 gn 0.61 lr 4.90e-04 2479 loci/s mem 5.1GB
+step 3800 seen 972800 KL 0.00738 pip 0.1551 gn 0.56 lr 4.89e-04 2370 loci/s mem 5.1GB
+EVAL seen 1000192: uniform E_KL 0.00702 dPP4_q99 0.1224 | coloc E_KL 0.00451 dPP4_q99 0.0255 | train E_KL 0.00713
+step 4000 seen 1024000 KL 0.00733 pip 0.1605 gn 0.62 lr 4.88e-04 1201 loci/s mem 5.1GB
+step 4200 seen 1075200 KL 0.00655 pip 0.1527 gn 6.18 lr 4.87e-04 2408 loci/s mem 5.1GB
+step 4400 seen 1126400 KL 0.00656 pip 0.0936 gn 0.42 lr 4.86e-04 2237 loci/s mem 5.1GB
+step 4600 seen 1177600 KL 0.00834 pip 0.2051 gn 0.46 lr 4.84e-04 2483 loci/s mem 5.1GB
+step 4800 seen 1228800 KL 0.00543 pip 0.1151 gn 0.52 lr 4.83e-04 2055 loci/s mem 5.1GB
+step 5000 seen 1280000 KL 0.00674 pip 0.1635 gn 0.56 lr 4.81e-04 2176 loci/s mem 5.1GB
+step 5200 seen 1331200 KL 0.00453 pip 0.1084 gn 0.69 lr 4.80e-04 2303 loci/s mem 5.1GB
+step 5400 seen 1382400 KL 0.00517 pip 0.1541 gn 0.30 lr 4.78e-04 2450 loci/s mem 5.1GB
+step 5600 seen 1433600 KL 0.00507 pip 0.1926 gn 0.37 lr 4.77e-04 2220 loci/s mem 5.1GB
+step 5800 seen 1484800 KL 0.00449 pip 0.2009 gn 0.58 lr 4.75e-04 2445 loci/s mem 5.1GB
+step 6000 seen 1536000 KL 0.00499 pip 0.1246 gn 0.99 lr 4.73e-04 2428 loci/s mem 5.1GB
+step 6200 seen 1587200 KL 0.00551 pip 0.1482 gn 0.24 lr 4.72e-04 2199 loci/s mem 5.1GB
+step 6400 seen 1638400 KL 0.00481 pip 0.1153 gn 0.46 lr 4.70e-04 2335 loci/s mem 5.1GB
+step 6600 seen 1689600 KL 0.00426 pip 0.0986 gn 0.39 lr 4.68e-04 2130 loci/s mem 5.1GB
+step 6800 seen 1740800 KL 0.00410 pip 0.0937 gn 0.29 lr 4.66e-04 2391 loci/s mem 5.1GB
+step 7000 seen 1792000 KL 0.00431 pip 0.1217 gn 1.15 lr 4.64e-04 2517 loci/s mem 5.1GB
+step 7200 seen 1843200 KL 0.00438 pip 0.1176 gn 0.59 lr 4.62e-04 2178 loci/s mem 5.1GB
+step 7400 seen 1894400 KL 0.00449 pip 0.1311 gn 0.35 lr 4.60e-04 1992 loci/s mem 5.1GB
+step 7600 seen 1945600 KL 0.00411 pip 0.1753 gn 0.29 lr 4.58e-04 2241 loci/s mem 5.1GB
+step 7800 seen 1996800 KL 0.00476 pip 0.1398 gn 0.52 lr 4.55e-04 2297 loci/s mem 5.1GB
+EVAL seen 2000128: uniform E_KL 0.00535 dPP4_q99 0.1021 | coloc E_KL 0.00281 dPP4_q99 0.0315 | train E_KL 0.00541
+DONE {"C0_pass": false, "train_loci": 2000128, "wall_s": 1143.190764427185}

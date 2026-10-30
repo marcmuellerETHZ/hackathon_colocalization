@@ -1,0 +1,2 @@
+[orch] job p2rw_tests_baselines start 2026-10-27T10:30:44+01:00 host eu-g6-001 commit b0d4265ba9 pid 925977
+[orch] cmd: PYTHONPATH=src python -m pytest tests/baselines -q -p no:cacheprovider 2>&1 | tail -40

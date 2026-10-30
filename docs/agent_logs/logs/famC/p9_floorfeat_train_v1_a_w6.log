@@ -1,0 +1,8 @@
+[w6] shardw0_00006.pt 2048 -> shardw0_00006.floor.npy; 7.85 loci/s
+[w6] shardw0_00030.pt 2048 -> shardw0_00030.floor.npy; 7.52 loci/s
+[w6] shardw1_00013.pt 2048 -> shardw1_00013.floor.npy; 7.47 loci/s
+[w6] shardw1_00037.pt 2048 -> shardw1_00037.floor.npy; 7.48 loci/s
+[w6] shardw2_00021.pt 2048 -> shardw2_00021.floor.npy; 7.41 loci/s
+[w6] shardw3_00005.pt 2048 -> shardw3_00005.floor.npy; 7.41 loci/s
+[w6] shardw3_00029.pt 2048 -> shardw3_00029.floor.npy; 7.39 loci/s
+FEATURIZE DONE 14336

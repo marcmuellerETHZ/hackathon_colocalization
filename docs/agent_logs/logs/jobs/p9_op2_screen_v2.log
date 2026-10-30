@@ -1,0 +1,18 @@
+[orch] job p9_op2_screen_v2 start 2026-10-28T09:46:22+01:00 host eu-g6-001 commit 162b00b6f2 pid 2110611
+[orch] cmd: PYTHONPATH=src python scripts/baselines_p4.py op2 --set data/processed/sets/screen_v2.h5 --pred results/baselines_screen_v2/collected_v1/predictions.parquet --exclude mvsusie --label 'OP1+OP2 screen_v2 L2+L4 (realistic), baselines_screen_v2@1' --out results/baselines_p9/op2_screen_v2_v1/op2_screen_v2.json
+coloc_abf_W0.15_p12_1e-05    n= 12000 OP1 t_S=0.874927 t_D=0.48117 | OP2 t_S=0.874927 feasible=True t_D=0.48117 S_on_W=0.0250 S_on_D=0.0432
+coloc_abf_W0.15_p12_5e-06    n= 12000 OP1 t_S=0.777663 t_D=0.516409 | OP2 t_S=0.777663 feasible=True t_D=0.516409 S_on_W=0.0250 S_on_D=0.0432
+coloc_abf_W0.1_p12_1e-05     n= 12000 OP1 t_S=0.855394 t_D=0.426881 | OP2 t_S=0.855394 feasible=True t_D=0.426881 S_on_W=0.0250 S_on_D=0.0455
+coloc_abf_W0.1_p12_5e-06     n= 12000 OP1 t_S=0.747326 t_D=0.469572 | OP2 t_S=0.747326 feasible=True t_D=0.469572 S_on_W=0.0250 S_on_D=0.0455
+coloc_abf_W0.2_p12_1e-05     n= 12000 OP1 t_S=0.904781 t_D=0.532829 | OP2 t_S=0.904781 feasible=True t_D=0.532829 S_on_W=0.0250 S_on_D=0.0375
+coloc_abf_W0.2_p12_5e-06     n= 12000 OP1 t_S=0.826119 t_D=0.56355 | OP2 t_S=0.826119 feasible=True t_D=0.56355 S_on_W=0.0250 S_on_D=0.0375
+coloc_prop_test              n= 12000 OP1 t_S=inf t_D=inf | OP2 t_S=inf feasible=None t_D=inf S_on_W=nan S_on_D=nan
+coloc_susie                  n= 12000 OP1 t_S=0.861627 t_D=0.844221 | OP2 t_S=0.999906 feasible=True t_D=0.844221 S_on_W=0.0073 S_on_D=0.1000
+coloc_susie_mm               n= 12000 OP1 t_S=0.819873 t_D=0.692074 | OP2 t_S=0.819873 feasible=True t_D=0.692074 S_on_W=0.0247 S_on_D=0.0705
+colocboost                   n=  3000 OP1 t_S=4.94066e-324 t_D=4.94066e-324 | OP2 t_S=0.9278 feasible=True t_D=0.2992 S_on_W=0.0033 S_on_D=0.0981
+colocboost_m1                n=  3000 OP1 t_S=0.586 t_D=0.4342 | OP2 t_S=0.586 feasible=True t_D=0.4342 S_on_W=0.0200 S_on_D=0.0463
+lead_snp                     n= 12000 OP1 t_S=inf t_D=inf | OP2 t_S=inf feasible=None t_D=inf S_on_W=nan S_on_D=nan
+prop_coloc                   n= 12000 OP1 t_S=inf t_D=inf | OP2 t_S=inf feasible=None t_D=inf S_on_W=nan S_on_D=nan
+sharepro                     n= 12000 OP1 t_S=0.6561 t_D=0.208955 | OP2 t_S=1 feasible=False t_D=0.216492 S_on_W=0.0000 S_on_D=0.0000
+strength_only                n= 12000 OP1 t_S=0.310547 t_D=0.592284 | OP2 t_S=0.400663 feasible=True t_D=0.5943 S_on_W=0.0030 S_on_D=0.0973
+[orch] exit 0 at 2026-10-28T09:46:28+01:00

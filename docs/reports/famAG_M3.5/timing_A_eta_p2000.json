@@ -1,0 +1,81 @@
+{
+ "loadavg_start": [
+  28.314453125,
+  29.93408203125,
+  33.23193359375
+ ],
+ "gpu_util_start": "92 %, 13685 MiB",
+ "eta": true,
+ "cfg": "JointConfig(L=10, pi=(0.25, 0.25, 0.25, 0.25), pi_mode='eb', pi_prior_strength=4.0, prior='optim', sigma2_init=(50.0, 50.0), U_fixed=None, rho_u=0.0, estimate_eta=True, eta_init=0.0, eta_bounds=(1e-08, 0.95), eig_dtype=torch.float64, eig_chunk=4, eig_rel_tol=1e-10, eig_rel_tol_fp32=1e-06, eta_min_fp32=0.001, ref_var=False, ref_var_table='/cluster/scratch/mumarc/hackathon_eqtl_gwas/src/famA/ref_ld_var_v1.json', ref_var_topk=32, z_adjust=True, rho_clip=0.95, check_null_threshold=0.0, prior_tol=1e-09, max_iter=100, tol=0.001, tol_alpha=0.0001, convergence='susie014', default_types=('gwas', 'mol'), tau=None, weak=None, power_marginal=True, nonweak_own=True, bvn_gather_tol=1e-13, coverage=0.95, min_abs_corr=0.5, powered_cs_min=0.5, ld_dtype=torch.float32, mem_budget_bytes=6000000000.0, bucket_ratio=1.1, max_batch=4096, compact_fraction=0.5, refill_fraction=0.25, return_details=True, use_triton=True, eb_fast_exp=False)",
+ "runs": [
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_f2000",
+   "p": 2000,
+   "ld_kind": "factor",
+   "n_loci": 64,
+   "replicate": 1,
+   "rep": 0,
+   "t_io": 0.10074877738952637,
+   "t_fit": 5.681466579437256,
+   "loci_per_s_fit": 11.264697082199353,
+   "loci_per_s_with_io": 11.068422058067812,
+   "median_niter": 7.0,
+   "max_niter": 41,
+   "gpu_util": "97 %, 15488 MiB",
+   "loadavg": 28.4677734375
+  },
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_f2000",
+   "p": 2000,
+   "ld_kind": "factor",
+   "n_loci": 256,
+   "replicate": 4,
+   "rep": 0,
+   "t_io": 0.3357830047607422,
+   "t_fit": 11.420847654342651,
+   "loci_per_s_fit": 22.41514883552963,
+   "loci_per_s_with_io": 21.77494619189845,
+   "median_niter": 7.0,
+   "max_niter": 41,
+   "gpu_util": "95 %, 20406 MiB",
+   "loadavg": 27.25830078125
+  },
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_d2000",
+   "p": 2000,
+   "ld_kind": "dense",
+   "n_loci": 64,
+   "replicate": 1,
+   "rep": 0,
+   "t_io": 0.46755123138427734,
+   "t_fit": 9.835725545883179,
+   "loci_per_s_fit": 6.506891606668276,
+   "loci_per_s_with_io": 6.211616108499175,
+   "median_niter": 7.0,
+   "max_niter": 37,
+   "gpu_util": "97 %, 20254 MiB",
+   "loadavg": 26.05615234375
+  },
+  {
+   "dir": "/tmp/claude-190744/-cluster-scratch-mumarc-hackathon-eqtl-gwas/0666a753-70c8-497e-b212-f9558627195a/scratchpad/t_d2000",
+   "p": 2000,
+   "ld_kind": "dense",
+   "n_loci": 256,
+   "replicate": 4,
+   "rep": 0,
+   "t_io": 1.5014400482177734,
+   "t_fit": 35.47723054885864,
+   "loci_per_s_fit": 7.215895830635402,
+   "loci_per_s_with_io": 6.92290977113276,
+   "median_niter": 7.0,
+   "max_niter": 37,
+   "gpu_util": "97 %, 22136 MiB",
+   "loadavg": 27.57373046875
+  }
+ ],
+ "loadavg_end": [
+  27.57373046875,
+  29.23388671875,
+  32.73876953125
+ ]
+}

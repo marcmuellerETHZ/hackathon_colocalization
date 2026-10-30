@@ -1,0 +1,56 @@
+[orch] job famB_m4_valid_r2 start 2026-10-27T23:12:27+01:00 host eu-g6-001 commit e4e6a63c06 pid 1790209
+[orch] cmd: python scripts/famB_eval/run_harness.py --sets data/processed/sets/valid_grid_v1/*.h5 --ids-file results/baselines_m4/m4_subsample_v1/main.txt --M 50 --out results/famB/m4_valid/M50 --label famB_m4_valid --n-workers 2 --batch-size-dense 24
+[harness] run 20261027T221329Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.0_baa335: 350 loci, mode=batch, workers=2
+[harness] 1/15 tasks done
+[harness] 8/15 tasks done
+[harness] done 20261027T221329Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.0_baa335: {'ok': 350, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 350} in 179.5s
+{"set": "data/processed/sets/valid_grid_v1/L0_P1_r_p=0.0.h5", "run_id": "20261027T221329Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.0_baa335", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T221329Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.0_baa335", "n": 350, "counts": {"ok": 350, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 350}, "wall_s": 227.12727451324463, "loci_per_s": 1.5409862190707098, "predictions_sha256": "ce6f2038d243ae2721e9141e309e9af55563d07802ca7e8f8257747644c29362"}
+[harness] run 20261027T221649Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.6_163281: 357 loci, mode=batch, workers=2
+[harness] 1/15 tasks done
+[harness] done 20261027T221649Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.6_163281: {'ok': 357, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 357} in 65.0s
+{"set": "data/processed/sets/valid_grid_v1/L0_P1_r_p=0.6.h5", "run_id": "20261027T221649Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.6_163281", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T221649Z_exactcoloc_gaussian_M50_L0_P1_r_p=0.6_163281", "n": 357, "counts": {"ok": 357, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 357}, "wall_s": 82.24809551239014, "loci_per_s": 4.340526036207371, "predictions_sha256": "809a756763c1f5c93e1cc2ac9760c49efefe367111b150806666c630ee949c54"}
+[harness] run 20261027T221912Z_exactcoloc_gaussian_M50_L0_P2_rho=0.0_1ba251: 360 loci, mode=batch, workers=2
+[harness] 3/15 tasks done
+[harness] done 20261027T221912Z_exactcoloc_gaussian_M50_L0_P2_rho=0.0_1ba251: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 56.4s
+{"set": "data/processed/sets/valid_grid_v1/L0_P2_rho=0.0.h5", "run_id": "20261027T221912Z_exactcoloc_gaussian_M50_L0_P2_rho=0.0_1ba251", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T221912Z_exactcoloc_gaussian_M50_L0_P2_rho=0.0_1ba251", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 134.77467107772827, "loci_per_s": 2.671125049842474, "predictions_sha256": "5061b785d5fadcb336731b4a31161816839c62ab5a75a5af2765327621afb248"}
+[harness] run 20261027T222047Z_exactcoloc_gaussian_M50_L0_P2_rho=0.3_8dbe06: 360 loci, mode=batch, workers=2
+[harness] 1/15 tasks done
+[harness] done 20261027T222047Z_exactcoloc_gaussian_M50_L0_P2_rho=0.3_8dbe06: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 60.2s
+{"set": "data/processed/sets/valid_grid_v1/L0_P2_rho=0.3.h5", "run_id": "20261027T222047Z_exactcoloc_gaussian_M50_L0_P2_rho=0.3_8dbe06", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T222047Z_exactcoloc_gaussian_M50_L0_P2_rho=0.3_8dbe06", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 98.08312177658081, "loci_per_s": 3.670356259867299, "predictions_sha256": "a860cac1928df96f07a72bdff46d63ed2556359fdd416756a19dbfe98b9959f6"}
+[harness] run 20261027T222201Z_exactcoloc_gaussian_M50_L0_P3_rho=0.0_bbe03f: 360 loci, mode=batch, workers=2
+[harness] 9/15 tasks done
+[harness] done 20261027T222201Z_exactcoloc_gaussian_M50_L0_P3_rho=0.0_bbe03f: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 50.4s
+{"set": "data/processed/sets/valid_grid_v1/L0_P3_rho=0.0.h5", "run_id": "20261027T222201Z_exactcoloc_gaussian_M50_L0_P3_rho=0.0_bbe03f", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T222201Z_exactcoloc_gaussian_M50_L0_P3_rho=0.0_bbe03f", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 64.83624649047852, "loci_per_s": 5.552449740483783, "predictions_sha256": "b4e1fdea35b5796118351e33091cf74322a5ea0d1ef997c9f007f08b5315cf8e"}
+[harness] run 20261027T222340Z_exactcoloc_gaussian_M50_L0_P3_rho=0.5_74c8be: 360 loci, mode=batch, workers=2
+[harness] 1/15 tasks done
+[harness] done 20261027T222340Z_exactcoloc_gaussian_M50_L0_P3_rho=0.5_74c8be: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 75.9s
+{"set": "data/processed/sets/valid_grid_v1/L0_P3_rho=0.5.h5", "run_id": "20261027T222340Z_exactcoloc_gaussian_M50_L0_P3_rho=0.5_74c8be", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T222340Z_exactcoloc_gaussian_M50_L0_P3_rho=0.5_74c8be", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 122.71995759010315, "loci_per_s": 2.933508184564696, "predictions_sha256": "13da6bdccbdc278793883947840b892b7b4eafb41af2ccbef9a0324fe2c9cfd9"}
+[harness] run 20261027T222515Z_exactcoloc_gaussian_M50_L0_P3_rho=0.8_a36ed2: 346 loci, mode=batch, workers=2
+[harness] 1/15 tasks done
+[harness] done 20261027T222515Z_exactcoloc_gaussian_M50_L0_P3_rho=0.8_a36ed2: {'ok': 346, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 346} in 113.3s
+{"set": "data/processed/sets/valid_grid_v1/L0_P3_rho=0.8.h5", "run_id": "20261027T222515Z_exactcoloc_gaussian_M50_L0_P3_rho=0.8_a36ed2", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T222515Z_exactcoloc_gaussian_M50_L0_P3_rho=0.8_a36ed2", "n": 346, "counts": {"ok": 346, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 346}, "wall_s": 133.3186740875244, "loci_per_s": 2.595285336942739, "predictions_sha256": "7c859d9d310411b77d85f3bfa556548af5776ffefc907b7149985734a627e533"}
+[harness] run 20261027T222742Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.0_b34e23: 360 loci, mode=batch, workers=2
+[harness] 1/3 tasks done
+[harness] 3/3 tasks done
+[harness] done 20261027T222742Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.0_b34e23: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 145.0s
+{"set": "data/processed/sets/valid_grid_v1/L1_P1_r_p=0.0.h5", "run_id": "20261027T222742Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.0_b34e23", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T222742Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.0_b34e23", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 176.80782961845398, "loci_per_s": 2.036108925588133, "predictions_sha256": "e580aa206dc0e373a39682870319d0c0a12154fde32f838146961e7e1a048d21"}
+[harness] run 20261027T223033Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.6_2d8997: 358 loci, mode=batch, workers=2
+[harness] 1/3 tasks done
+[harness] 3/3 tasks done
+[harness] done 20261027T223033Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.6_2d8997: {'ok': 358, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 358} in 100.1s
+{"set": "data/processed/sets/valid_grid_v1/L1_P1_r_p=0.6.h5", "run_id": "20261027T223033Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.6_2d8997", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T223033Z_exactcoloc_gaussian_M50_L1_P1_r_p=0.6_2d8997", "n": 358, "counts": {"ok": 358, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 358}, "wall_s": 125.31335973739624, "loci_per_s": 2.8568382553162444, "predictions_sha256": "16c71c6f714fdb63d5082ea02362abcc974bf02b2ea3b10ed7b13cb5078e3060"}
+[harness] run 20261027T223230Z_exactcoloc_gaussian_M50_L1_P2_rho=0.0_5872a3: 360 loci, mode=batch, workers=2
+[harness] 1/3 tasks done
+[harness] 3/3 tasks done
+[harness] done 20261027T223230Z_exactcoloc_gaussian_M50_L1_P2_rho=0.0_5872a3: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 99.0s
+{"set": "data/processed/sets/valid_grid_v1/L1_P2_rho=0.0.h5", "run_id": "20261027T223230Z_exactcoloc_gaussian_M50_L1_P2_rho=0.0_5872a3", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T223230Z_exactcoloc_gaussian_M50_L1_P2_rho=0.0_5872a3", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 116.37421607971191, "loci_per_s": 3.0934687435695696, "predictions_sha256": "14d0e7d798c337051d3d7247d96b4d7cbfd4c4ad481392c178dfb71fa0d053e7"}
+[harness] run 20261027T223422Z_exactcoloc_gaussian_M50_L1_P2_rho=0.3_6b19c3: 360 loci, mode=batch, workers=2
+[harness] 1/3 tasks done
+[harness] 3/3 tasks done
+[harness] done 20261027T223422Z_exactcoloc_gaussian_M50_L1_P2_rho=0.3_6b19c3: {'ok': 360, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 360} in 120.7s
+{"set": "data/processed/sets/valid_grid_v1/L1_P2_rho=0.3.h5", "run_id": "20261027T223422Z_exactcoloc_gaussian_M50_L1_P2_rho=0.3_6b19c3", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T223422Z_exactcoloc_gaussian_M50_L1_P2_rho=0.3_6b19c3", "n": 360, "counts": {"ok": 360, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 360}, "wall_s": 133.02740097045898, "loci_per_s": 2.70620937772019, "predictions_sha256": "7d752f8fa8e7beaa2a9eb4e4256a774964823c2ea53bb69e8ee1d9fe4eb3ede6"}
+[harness] run 20261027T223652Z_exactcoloc_gaussian_M50_L1_P3_rho=0.0_0b2426: 356 loci, mode=batch, workers=2
+[harness] 1/3 tasks done
+[harness] done 20261027T223652Z_exactcoloc_gaussian_M50_L1_P3_rho=0.0_0b2426: {'ok': 356, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 356} in 149.7s
+{"set": "data/processed/sets/valid_grid_v1/L1_P3_rho=0.0.h5", "run_id": "20261027T223652Z_exactcoloc_gaussian_M50_L1_P3_rho=0.0_0b2426", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261027T223652Z_exactcoloc_gaussian_M50_L1_P3_rho=0.0_0b2426", "n": 356, "counts": {"ok": 356, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 356}, "wall_s": 179.07397556304932, "loci_per_s": 1.9880052301327147, "predictions_sha256": "e28c83e5dd34c8860b63530b2b6c485e31c131b635aa819cb9165bba16f3125a"}
+[harness] run 20261027T223934Z_exactcoloc_gaussian_M50_L1_P3_rho=0.5_a05783: 360 loci, mode=batch, workers=2

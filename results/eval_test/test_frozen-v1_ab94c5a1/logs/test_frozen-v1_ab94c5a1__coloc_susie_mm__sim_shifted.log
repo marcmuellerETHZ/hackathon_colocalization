@@ -1,0 +1,31 @@
+03:43:40 [harness] run test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted: 1600 loci (1600 to run), mode=cpu, workers=14
+03:44:43 [harness] coloc_susie_mm: 1/1600 loci done
+03:45:52 [harness] coloc_susie_mm: 13/1600 loci done
+03:47:00 [harness] coloc_susie_mm: 24/1600 loci done
+03:48:02 [harness] coloc_susie_mm: 37/1600 loci done
+03:49:02 [harness] coloc_susie_mm: 57/1600 loci done
+03:50:03 [harness] coloc_susie_mm: 74/1600 loci done
+03:51:03 [harness] coloc_susie_mm: 106/1600 loci done
+03:52:04 [harness] coloc_susie_mm: 137/1600 loci done
+03:53:06 [harness] coloc_susie_mm: 165/1600 loci done
+03:54:07 [harness] coloc_susie_mm: 197/1600 loci done
+03:55:10 [harness] coloc_susie_mm: 233/1600 loci done
+03:56:11 [harness] coloc_susie_mm: 264/1600 loci done
+03:57:12 [harness] coloc_susie_mm: 299/1600 loci done
+03:58:13 [harness] coloc_susie_mm: 343/1600 loci done
+03:59:14 [harness] coloc_susie_mm: 390/1600 loci done
+04:00:15 [harness] coloc_susie_mm: 433/1600 loci done
+04:01:16 [harness] coloc_susie_mm: 484/1600 loci done
+04:02:17 [harness] coloc_susie_mm: 537/1600 loci done
+04:03:19 [harness] coloc_susie_mm: 586/1600 loci done
+04:04:19 [harness] coloc_susie_mm: 639/1600 loci done
+04:05:19 [harness] coloc_susie_mm: 694/1600 loci done
+04:06:20 [harness] coloc_susie_mm: 752/1600 loci done
+04:07:21 [harness] coloc_susie_mm: 809/1600 loci done
+04:08:22 [harness] coloc_susie_mm: 880/1600 loci done
+04:09:22 [harness] coloc_susie_mm: 940/1600 loci done
+04:10:23 [harness] coloc_susie_mm: 1011/1600 loci done
+04:11:24 [harness] coloc_susie_mm: 1092/1600 loci done
+04:12:25 [harness] coloc_susie_mm: 1216/1600 loci done
+04:13:25 [harness] coloc_susie_mm: 1369/1600 loci done
+04:14:20 [harness] done test_frozen-v1_ab94c5a1__coloc_susie_mm__sim_shifted: {'ok': 1547, 'nonconverged': 53, 'failed': 0, 'timeout': 0, 'expected': 1600} in 1838.0s

@@ -1,0 +1,4 @@
+[orch] job famC_p9_floorfeat_valid_v1 start 2026-10-28T11:20:57+01:00 host eu-g6-001 commit b4c4c0b13c pid 2304719
+[orch] cmd: export OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; for k in $(seq 0 14); do python -m famC.floor featurize --set valid_v1 --worker $k --n-workers 15 --device cpu > logs/famC/p9_floorfeat_valid_v1_w$k.log 2>&1 & done; wait; grep -c "FEATURIZE DONE" logs/famC/p9_floorfeat_valid_v1_w*.log | grep -c ":1" | grep -qx 15 && ls data/processed/famC/floor_feats/valid_v1 | wc -l
+15
+[orch] exit 0 at 2026-10-28T11:26:42+01:00

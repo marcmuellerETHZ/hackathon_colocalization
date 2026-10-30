@@ -1,0 +1,177 @@
+{
+ "d_limit": 0.1,
+ "definition": {
+  "OP1": "C3 thresholds (DESIGN v4 \u00a70, \u00a78.2), set on a validation run:\n      t_S = the smallest threshold with confident-S rate on W <= w_limit (2.5%);\n      then, with t_S fixed and S precedence (a locus with P_S >= t_S is called S, never D), t_D = the smallest\n      threshold with confident-D rate on W <= w_limit, where a W locus is called D iff P_S < t_S, P_D >= t_D and\n      the E gate passes (E1, E2 >= e_gate where reported).\n    W rates are weighted with the D-vs-W cell pooling weights restricted to W. A method without P_S gets only\n    t_D (no S calls); without P_D only t_S.",
+  "OP2": "OP2 (DESIGN_P2 \u00a73, phase-2 amendment; eval.metrics.matched_w_thresholds (OP1) is unchanged):\n      t_S = the smallest threshold with weighted confident-S on W <= w_limit (2.5%; the OP1 W weights) AND\n            unweighted confident-S on D <= d_limit (10%), the D share taken over all power-matched D loci of the\n            fit set (class D with S-vs-D weight > 0 in `setting`). Both rates fall monotonically in t, so the\n            smallest feasible t is the max of the two one-sided matched thresholds. A threshold is a probability:\n            if the smallest feasible t exceeds 1 (only \"no S calls\" satisfies both), t_S = 1 and op2_feasible =\n            False; S calls are then NOT made (t_S_call = inf), and consumers must treat t_S = 1 as \"no S calls\".\n      t_D = as OP1, after S precedence at the OP2 S rule: the smallest threshold with weighted confident-D on W\n            <= w_limit, a W locus being called D iff not called S, P_D >= t_D and the E gate passes.\n    NaN scores (excluded/raw frames) are never called, as in calls_from_arrays."
+ },
+ "ids_file": "results/baselines_m4/m4_subsample_v1/slow.txt",
+ "label": "OP1+OP2 M4 slow (realistic L1-L6), m4_subsample@1 slow",
+ "methods": {
+  "colocboost": {
+   "OP1": {
+    "rate_D_on_W": 0.023749999999999997,
+    "rate_S_on_W": 0.02375,
+    "recal_a_D": 4.885883464161857,
+    "recal_a_S": -148354662.92393252,
+    "setting": "realistic",
+    "t_D": 5e-324,
+    "t_S": 0.46620000000000006
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 867,
+    "n_W": 1080,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024166666666666663,
+    "rate_S_on_D": 0.09919261822376009,
+    "rate_S_on_W": 0.0,
+    "setting": "realistic",
+    "t_D": 0.5280000000000001,
+    "t_S": 0.9475000000000001,
+    "t_S_D_side": 0.9475000000000001,
+    "t_S_W_side": 0.46620000000000006,
+    "t_S_call": 0.9475000000000001,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.02375,
+    "W_called_S": 0.02375,
+    "false_S_on_D_all_unweighted": 0.19411764705882353,
+    "false_S_on_D_matched_unweighted": 0.17647058823529413,
+    "false_S_on_D_setting_unweighted": 0.1814814814814815,
+    "recall_D": 0.39916666666666667,
+    "recall_S": 0.6097916666666667
+   },
+   "at_OP2": {
+    "W_called_D": 0.02416666666666667,
+    "W_called_S": 0.0,
+    "false_S_on_D_all_unweighted": 0.1161764705882353,
+    "false_S_on_D_matched_unweighted": 0.09919261822376009,
+    "false_S_on_D_setting_unweighted": 0.10277777777777777,
+    "recall_D": 0.3997916666666667,
+    "recall_S": 0.4197916666666667
+   },
+   "class_counts": {
+    "D": 1360,
+    "S": 1360,
+    "W": 1360
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 1,
+   "n_loci": 4080,
+   "setting": "realistic",
+   "status": {
+    "failed": 1,
+    "ok": 4079
+   }
+  },
+  "colocboost_m1": {
+   "OP1": {
+    "rate_D_on_W": 0.024166666666666666,
+    "rate_S_on_W": 0.022708333333333334,
+    "recal_a_D": -9.309151763771357,
+    "recal_a_S": 10.036747145928384,
+    "setting": "realistic",
+    "t_D": 0.37810000000000005,
+    "t_S": 0.8836000000000002
+   },
+   "OP2": {
+    "d_limit": 0.1,
+    "n_D_matched": 867,
+    "n_W": 1080,
+    "op2_feasible": true,
+    "rate_D_on_W": 0.024166666666666666,
+    "rate_S_on_D": 0.09342560553633218,
+    "rate_S_on_W": 0.022708333333333334,
+    "setting": "realistic",
+    "t_D": 0.37810000000000005,
+    "t_S": 0.8836000000000002,
+    "t_S_D_side": 0.8035000000000001,
+    "t_S_W_side": 0.8836000000000002,
+    "t_S_call": 0.8836000000000002,
+    "w_limit": 0.025
+   },
+   "at_OP1": {
+    "W_called_D": 0.024166666666666663,
+    "W_called_S": 0.022708333333333334,
+    "false_S_on_D_all_unweighted": 0.10441176470588236,
+    "false_S_on_D_matched_unweighted": 0.09342560553633218,
+    "false_S_on_D_setting_unweighted": 0.10092592592592593,
+    "recall_D": 0.7885416666666667,
+    "recall_S": 0.6072916666666667
+   },
+   "at_OP2": {
+    "W_called_D": 0.024166666666666663,
+    "W_called_S": 0.022708333333333334,
+    "false_S_on_D_all_unweighted": 0.10441176470588236,
+    "false_S_on_D_matched_unweighted": 0.09342560553633218,
+    "false_S_on_D_setting_unweighted": 0.10092592592592593,
+    "recall_D": 0.7885416666666667,
+    "recall_S": 0.6072916666666667
+   },
+   "class_counts": {
+    "D": 1360,
+    "S": 1360,
+    "W": 1360
+   },
+   "has_P_D": true,
+   "has_P_S": true,
+   "n_failed": 0,
+   "n_loci": 4080,
+   "setting": "realistic",
+   "status": {
+    "ok": 4080
+   }
+  }
+ },
+ "sets": [
+  "data/processed/sets/valid_grid_v1.h5"
+ ],
+ "sources": {
+  "coloc_abf_W0.15_p12_1e-05": [
+   "results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.15_p12_1e-05_valid_grid_v1_fee4fd"
+  ],
+  "coloc_abf_W0.15_p12_5e-06": [
+   "results/baselines_m4/runs/20261027T130106Z_coloc_abf_W0.15_p12_5e-06_valid_grid_v1_83518d"
+  ],
+  "coloc_abf_W0.1_p12_1e-05": [
+   "results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_1e-05_valid_grid_v1_f3a6c7"
+  ],
+  "coloc_abf_W0.1_p12_5e-06": [
+   "results/baselines_m4/runs/20261027T122018Z_coloc_abf_W0.1_p12_5e-06_valid_grid_v1_33c808"
+  ],
+  "coloc_abf_W0.2_p12_1e-05": [
+   "results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_1e-05_valid_grid_v1_c54f85"
+  ],
+  "coloc_abf_W0.2_p12_5e-06": [
+   "results/baselines_m4/runs/20261027T131616Z_coloc_abf_W0.2_p12_5e-06_valid_grid_v1_50505c"
+  ],
+  "coloc_prop_test": [
+   "results/baselines_m4/runs/20261027T122018Z_coloc_prop_test_valid_grid_v1_f3e772"
+  ],
+  "coloc_susie": [
+   "results/baselines_m4/runs/20261027T182327Z_coloc_susie_valid_grid_v1_e782c9",
+   "results/baselines_m4/runs/20261027T182327Z_coloc_susie_valid_grid_v1_feecd5"
+  ],
+  "coloc_susie_mm": [
+   "results/baselines_m4/runs/20261027T192144Z_coloc_susie_mm_valid_grid_v1_977229",
+   "results/baselines_m4/runs/20261027T192145Z_coloc_susie_mm_valid_grid_v1_9ee9eb"
+  ],
+  "colocboost": [
+   "results/baselines_m4/runs/20261027T111847Z_colocboost_valid_grid_v1_82686c"
+  ],
+  "colocboost_m1": [
+   "results/baselines_m4/runs/20261027T111847Z_colocboost_m1_valid_grid_v1_58fd9a"
+  ],
+  "lead_snp": [
+   "results/baselines_m4/runs/20261027T112359Z_lead_snp_valid_grid_v1_a0bc69"
+  ],
+  "prop_coloc": [
+   "results/baselines_m4/runs/20261027T130107Z_prop_coloc_valid_grid_v1_b390f1"
+  ],
+  "sharepro": [
+   "results/baselines_m4/runs/20261027T112359Z_sharepro_valid_grid_v1_5a802a"
+  ]
+ }
+}

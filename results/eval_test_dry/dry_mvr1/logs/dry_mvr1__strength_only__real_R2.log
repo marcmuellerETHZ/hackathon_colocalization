@@ -1,0 +1,2 @@
+22:24:19 [harness] run dry_mvr1__strength_only__real_R2: 8 loci (8 to run), mode=cpu, workers=2
+22:24:22 [harness] done dry_mvr1__strength_only__real_R2: {'ok': 8, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 8} in 3.5s

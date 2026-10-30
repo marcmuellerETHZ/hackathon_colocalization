@@ -1,0 +1,2 @@
+20:16:06 [harness] run dry_v4__sharepro__sim_shifted: 64 loci (64 to run), mode=cpu, workers=7
+20:16:16 [harness] done dry_v4__sharepro__sim_shifted: {'ok': 64, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 64} in 10.3s

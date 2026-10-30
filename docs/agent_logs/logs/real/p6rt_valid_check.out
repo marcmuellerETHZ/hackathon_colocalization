@@ -1,0 +1,63 @@
+{
+ "real_R2": {
+  "n_requested": 800,
+  "n_written": 800,
+  "n_compared": 800,
+  "ids_equal": true,
+  "n_mismatches": 0,
+  "added_attrs": [
+   "donor_disjoint",
+   "rho_sens_zero"
+  ],
+  "ok": true
+ },
+ "real_R3b": {
+  "n_requested": 1203,
+  "n_written": 1203,
+  "n_compared": 1203,
+  "ids_equal": true,
+  "n_mismatches": 0,
+  "added_attrs": [
+   "donor_disjoint",
+   "rho_sens_zero"
+  ],
+  "ok": true
+ },
+ "real_R4b_insample": {
+  "n_requested": 600,
+  "n_written": 600,
+  "n_compared": 600,
+  "ids_equal": true,
+  "n_mismatches": 0,
+  "added_attrs": [
+   "donor_disjoint",
+   "rho_sens_zero"
+  ],
+  "ok": true
+ },
+ "real_R4b_reference": {
+  "n_requested": 600,
+  "n_written": 600,
+  "n_compared": 600,
+  "ids_equal": true,
+  "n_mismatches": 0,
+  "added_attrs": [
+   "donor_disjoint",
+   "rho_sens_zero"
+  ],
+  "ok": true
+ },
+ "real_R4b_insample_raw": {
+  "n_requested": 600,
+  "n_written": 600,
+  "n_compared": 600,
+  "ids_equal": true,
+  "n_mismatches": 0,
+  "added_attrs": [
+   "donor_disjoint",
+   "rho_sens_zero"
+  ],
+  "ok": true
+ }
+}
+wall_s_build 1411.8 OK

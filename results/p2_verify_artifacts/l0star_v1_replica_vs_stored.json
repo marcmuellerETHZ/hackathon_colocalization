@@ -1,0 +1,281 @@
+{
+ "a": "data/processed/sets/l0star_v1.h5",
+ "b": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2va_l0star_v2/out/l0star_replica/l0star_v1.h5",
+ "n_a": 2000,
+ "n_b": 2000,
+ "ids_equal_after_prefix_map": true,
+ "n_compared": 2000,
+ "truth_ids_equal": true,
+ "truth_cols_equal": true,
+ "stats_keys_differing": [],
+ "fields_not_identical": [],
+ "identical": true,
+ "fields": {
+  "ds:R": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:beta1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:beta2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:maf1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:maf2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:maf_ref": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:n1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:n2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:pos": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:se1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:se2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:variant_id": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:z1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "ds:z2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:block_ids": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:cell_id": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:eta": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:ld_type": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:mismatch_level": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:n_ref": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:pairing_type": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:rho_hat": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:rho_se": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:split": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:trait1_type": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:trait2_type": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:window_chr": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:window_end": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "attr:window_start": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:oracle_class": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:mu1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:mu2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:r2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:d": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:rho": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:block_id": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:cell_id": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:split": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:mismatch_level": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:pairing_type": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:overlap": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:control": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:causal1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:causal2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:effect1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:effect2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:mu1_all": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:mu2_all": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:locus_type": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:cd1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:cd2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:lead_abs_z1": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  },
+  "truth:lead_abs_z2": {
+   "n": 2000,
+   "n_equal": 2000,
+   "max_abs_diff": 0.0
+  }
+ },
+ "first_mismatches": []
+}

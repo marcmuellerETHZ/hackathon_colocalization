@@ -1,0 +1,107 @@
+{
+ "definition": "DESIGN \u00a72.5 pre-registered real-data criterion (descriptive in the dry run): per method, t_R3b = the\n        threshold giving a 5% confident-S rate on R3b (matched_threshold on P_S, alpha 0.05); S recall on R2 at\n        t_R3b; R4b agreement = share of loci whose three-way call (frozen t_S/t_D, E gate) is the same with\n        reference LD as with in-sample LD (calls recomputed here from the operating points in use). Failures are least favourable (R3b: P_S = 1, R2: P_S = 0, R4b:\n        disagreement). CIs: cluster bootstrap (2,000) over each locus set's boot_unit attribute (R2/R4b block,\n        R3b FinnGen CS; D6(i)), arms resampled independently; candidate minus best baseline (by point estimate).",
+ "methods": {
+  "coloc_abf": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 1.0,
+    "ci_low": 0.625,
+    "est": 0.875
+   }
+  },
+  "coloc_susie": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 1.0,
+    "ci_low": 0.5,
+    "est": 0.75
+   }
+  },
+  "coloc_susie_mm": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   }
+  },
+  "sharepro": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 1.0,
+    "ci_low": 0.625,
+    "est": 0.875
+   }
+  },
+  "strength_only": {
+   "R4b_call_agreement": {
+    "ci_high": 1.0,
+    "ci_low": 1.0,
+    "est": 1.0
+   },
+   "failures": {
+    "real_R2": 0,
+    "real_R3b": 0,
+    "real_R4b_insample": 0,
+    "real_R4b_reference": 0
+   },
+   "recall_S_R2_at_5pct_R3b": {
+    "ci_high": 0.625,
+    "ci_low": 0.0,
+    "est": 0.25
+   }
+  }
+ },
+ "n": {
+  "real_R2": 8,
+  "real_R3b": 13,
+  "real_R4b_insample": 6,
+  "real_R4b_reference": 6
+ },
+ "n_boot": 2000,
+ "n_clusters": {
+  "real_R2": 8,
+  "real_R3b": 13,
+  "real_R4b_insample": 6
+ }
+}

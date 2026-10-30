@@ -1,0 +1,63 @@
+{
+ "done_utc": "2026-10-27T18:14:46Z",
+ "generator_kwargs": {
+  "K": 200,
+  "M": 3,
+  "dry_run": true,
+  "n_gu": 2,
+  "n_per_class": 4,
+  "n_shifted": 64,
+  "seed": 20261029,
+  "set_name": "dry_v4",
+  "split": "valid",
+  "workers": 2
+ },
+ "main": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5",
+ "main_truth": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.truth.parquet",
+ "segments": [
+  {
+   "cells": [
+    "L3|P1|r_p=0.0",
+    "L3|P3|rho=0.0",
+    "L4|P1|r_p=0.6",
+    "L4|P1|r_p=0.0",
+    "L2|P3|rho=0.8",
+    "L3|P2|rho=0.0",
+    "L4|P3|rho=0.0",
+    "L2|P3|rho=0.5",
+    "L4|P3|rho=0.5",
+    "L4|P2|rho=0.0",
+    "L4|P3|rho=0.8",
+    "L6|P1|r_p=0.0",
+    "L0|P1|r_p=0.6",
+    "L0|P1|r_p=0.0",
+    "L4|P2|rho=0.3",
+    "L6|P3|rho=0.0",
+    "L1|P1|r_p=0.6",
+    "L1|P3|rho=0.5",
+    "L1|P1|r_p=0.0",
+    "L2|P3|rho=0.0",
+    "L1|P3|rho=0.8",
+    "L1|P3|rho=0.0",
+    "L2|P1|r_p=0.0",
+    "L2|P1|r_p=0.6",
+    "L0|P3|rho=0.5",
+    "L0|P3|rho=0.8",
+    "L6|P2|rho=0.0",
+    "L0|P3|rho=0.0",
+    "L0|P2|rho=0.3",
+    "L0|P2|rho=0.0",
+    "L1|P2|rho=0.3",
+    "L1|P2|rho=0.0",
+    "L2|P2|rho=0.3",
+    "L2|P2|rho=0.0"
+   ],
+   "end_utc": "2026-10-27T18:14:27Z",
+   "segment": 0,
+   "wall_s": 176.418639421463
+  }
+ ],
+ "shifted": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5",
+ "wall_s_main_this_segment": 177.0315523147583,
+ "wall_s_shifted": 18.6070556640625
+}

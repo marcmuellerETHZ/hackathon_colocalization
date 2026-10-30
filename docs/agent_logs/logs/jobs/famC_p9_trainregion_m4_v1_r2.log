@@ -1,0 +1,3 @@
+[orch] job famC_p9_trainregion_m4_v1_r2 start 2026-10-28T12:23:16+01:00 host eu-g6-001 commit b4c4c0b13c pid 2331677
+[orch] cmd: rm -rf data/processed/famC/sets/trainregion_m4_v1 data/processed/famC/sets/trainregion_m4_v1.h5; python scripts/famC_eval/build_trainregion.py --set trainregion_m4_v1 --workers 2 > logs/famC/p9_trainregion_m4_v1.log 2>&1; rc=$?; tail -n 3 logs/famC/p9_trainregion_m4_v1.log; exit $rc
+{"set": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/famC_p9_trainregion_m4_v1_r2/code/data/processed/famC/sets/trainregion_m4_v1.h5", "runtime_s": 4082.1301794052124}

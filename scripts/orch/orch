@@ -1,0 +1,5 @@
+#!/bin/bash
+# Thin CLI for scripts/orch/orch.py (see scripts/orch/README.md).
+DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+PY="${ORCH_PYTHON:-$DIR/../../.venv/bin/python}"; [ -x "$PY" ] || PY=python3
+exec "$PY" "$DIR/orch.py" "$@"

@@ -1,0 +1,11 @@
+[w0] shard 1 loci 2048 5.4 loci/s stats {'windows': 35, 'loci': 2057, 'none': 2423, 't_window': 18.34114909172058, 't_loci': 360.101345539093, 'rejected': 2423}
+[w0] shard 2 loci 4096 6.3 loci/s stats {'windows': 70, 'loci': 4097, 'none': 4863, 't_window': 37.21729850769043, 't_loci': 609.0254504680634, 'rejected': 4863}
+[w0] shard 3 loci 6144 6.7 loci/s stats {'windows': 105, 'loci': 6181, 'none': 7259, 't_window': 55.267823696136475, 't_loci': 856.8255660533905, 'rejected': 7259}
+[W1026 17:42:44.756838773 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 278724608, total: 25250627584).
+[W1026 17:42:44.768241514 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 679280640, total: 25250627584).
+[w0] shard 4 loci 8192 6.7 loci/s stats {'windows': 138, 'loci': 8197, 'none': 9467, 't_window': 73.4352035522461, 't_loci': 1139.7997846603394, 'rejected': 9467}
+[w0] shard 5 loci 10240 6.8 loci/s stats {'windows': 172, 'loci': 10266, 'none': 11750, 't_window': 91.70604991912842, 't_loci': 1407.355049610138, 'rejected': 11750}
+[w0] shard 6 loci 12288 6.6 loci/s stats {'windows': 206, 'loci': 12348, 'none': 14020, 't_window': 111.41062712669373, 't_loci': 1754.5613360404968, 'rejected': 14020}
+[w0] shard 7 loci 14336 6.3 loci/s stats {'windows': 240, 'loci': 14362, 'none': 16358, 't_window': 127.2347092628479, 't_loci': 2150.101478099823, 'rejected': 16358}
+[w0] shard 8 loci 15000 6.3 loci/s stats {'windows': 251, 'loci': 15027, 'none': 17101, 't_window': 134.74700140953064, 't_loci': 2235.595197200775, 'rejected': 17101}
+DONE 15000 {"windows": 251, "loci": 15027, "none": 17101, "t_window": 134.74700140953064, "t_loci": 2235.595197200775, "rejected": 17101}

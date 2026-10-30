@@ -1,0 +1,5 @@
+[orch] job famC_p9_c2_bench start 2026-10-28T15:30:25+01:00 host eu-g6-001 commit 45921a837f pid 2448495
+[orch] cmd: python scripts/famC_eval/bench_m4.py --ids-file results/baselines_m4/m4_subsample_v1/main.txt --runs-json results/famC/c2_v1/net_m4/runs.json -- --reuse neuralcoloc_p9_nold_600k=/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c --reuse famC_floor_p9_600k=/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T134655Z_famC_floor_p9_600k_valid_grid_v1_ae571d --label famC_C2_m4 --unit block --n-boot 2000 --n-jobs 16 --candidate neuralcoloc_p9_600k > logs/famC/p9_c2_bench.log 2>&1; rc=$?; tail -n 3 logs/famC/p9_c2_bench.log | cut -c1-300; exit $rc
+[benchmark 15:45:05] [least_favourable] bootstrap (2000 x block, 4 methods, settings ['realistic', 'ideal'])
+[benchmark 15:45:23] [excluded] bootstrap (2000 x block, 4 methods, settings ['realistic', 'ideal'])
+[benchmark 15:45:35] done: /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/benchmarks/20261028T143030Z_famC_C2_m4 (12170 loci, 4 methods)

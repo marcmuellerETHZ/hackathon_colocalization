@@ -1,0 +1,5 @@
+#!/bin/bash
+# Project consistency check: git, JOBS/TASKS/ARTIFACTS registries, processes, GPU, reports.
+# Exit 0 = clean, 1 = flags. Same as `scripts/orch/orch reconcile`.
+DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+exec "$DIR/orch/orch" reconcile "$@"

@@ -1,0 +1,2 @@
+22:23:13 [harness] run dry_mvr1__famG_coloc_susie_gpu__sim_shifted: 16 loci (16 to run), mode=batch, workers=1
+22:23:32 [harness] done dry_mvr1__famG_coloc_susie_gpu__sim_shifted: {'ok': 15, 'nonconverged': 1, 'failed': 0, 'timeout': 0, 'expected': 16} in 19.0s

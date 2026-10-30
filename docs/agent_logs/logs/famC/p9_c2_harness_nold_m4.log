@@ -1,0 +1,9 @@
+[harness] run 20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c: 12170 loci (12170 to run), mode=batch, workers=2
+[harness] neuralcoloc_p9_nold_600k: 2656/12170 loci done
+[harness] neuralcoloc_p9_nold_600k: 5376/12170 loci done
+[harness] neuralcoloc_p9_nold_600k: 7968/12170 loci done
+[harness] neuralcoloc_p9_nold_600k: 10112/12170 loci done
+[harness] neuralcoloc_p9_nold_600k: 12032/12170 loci done
+[harness] done 20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c: {'ok': 12170, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 12170} in 312.6s
+{"set": "data/processed/sets/valid_grid_v1.h5", "run_id": "20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T141727Z_neuralcoloc_p9_nold_600k_valid_grid_v1_a7d94c", "n": 12170, "counts": {"ok": 12170, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 12170}, "wall_s": 798.1174032688141, "loci_per_s": 15.248383195449529, "predictions_sha256": "1335d8710689947d5597b523f251b3d4d66cae793d741703a0e40121271a5fa8"}
+{"method": "neuralcoloc_p9_nold_600k", "kwargs": {"checkpoint": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famC/p9_nold_600k/model.pt", "class_w": "main", "batch": 32, "variant": "nold"}, "n_loci": 12170, "ids_file": "results/baselines_m4/m4_subsample_v1/main.txt", "status_counts": {"ok": 12170}, "commit": "f7cf358173ab737150437a415a7ee9996f0a848b", "job": "famC_p9_c2_harness_nold"}

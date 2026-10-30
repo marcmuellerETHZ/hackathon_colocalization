@@ -1,0 +1,5 @@
+01:15:40 [harness] run test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted: 387 loci (387 to run), mode=cpu, workers=2
+01:16:40 [harness] colocboost_m1: 37/387 loci done
+01:17:41 [harness] colocboost_m1: 145/387 loci done
+01:18:41 [harness] colocboost_m1: 313/387 loci done
+01:19:03 [harness] done test_frozen-v1_ab94c5a1__colocboost_m1__sim_shifted: {'ok': 387, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 387} in 198.6s

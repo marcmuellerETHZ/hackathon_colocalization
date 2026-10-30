@@ -1,0 +1,251 @@
+# Test-set definition v2 — DESIGN_P2 §6 (frozen 2026-10-28, tag design-p2-frozen): fresh simulated loci in the same
+# 267 test-split LD blocks, by the frozen generator. IDENTICAL to configs/testset_v1.yaml (cells, per-cell sizes,
+# D strata, shifted arm, slow-method subsample, pooling, endpoints) except:
+#   * version 2, testset_id v2 and the labels below;
+#   * seed name derive(20261101, 'testset_v2'): seed 20261101 (added to common.seeds.SEEDS) with set name
+#     "testset_v2", so every generator draw is rng(20261101, [prefix,] "testset_v2"[_shifted], ...) and the slow
+#     subsample is rng(20261101, "slow_subsample");
+#   * `lock:` its own test lock (DESIGN_P2 §6, M8; src/eval/testset_lock.py): access log
+#     results/test_access_v2.log, `frozen-v2*` tag, hash list configs/FROZEN_P2_SHA256; the v1 log is untouched;
+#   * `disjoint_from:` the in-run check that no generation key / derived seed / locus id overlaps v1;
+#   * methods_file configs/test_methods_v2.yaml.
+# Drafted by the baselines agent (task p9.testset_v2); the PI freezes it (hash in configs/FROZEN_P2_SHA256).
+# `diff configs/testset_v1.yaml configs/testset_v2.yaml` shows every difference.
+version: 2
+testset_id: v2
+design_ref: "DESIGN_P2.md §6 (test set v2); otherwise as configs/testset_v1.yaml: DESIGN.md v4 §8.6 (also §0 C3, §1, §2.2-2.4, §3, §4.3, §8.1-8.5); decisions D4, D6, D7; DECISIONS.md P3-11, P3-12"
+seed: 20261101                      # DESIGN_P2 §6: seed name derive(20261101, 'testset_v2') (set name testset_v2)
+split: test                         # §3: test-split LD blocks only (splits/blocks_v1.tsv); produced only by scripts/eval_test.py
+lock:                               # DESIGN_P2 §6 (M8): per-testset lock (eval.testset_lock, eval.io.ACCESS_LOGS)
+  testset_id: v2
+  access_log: results/test_access_v2.log
+  frozen_tag_prefix: frozen-v2
+  frozen_hashes: configs/FROZEN_P2_SHA256
+  default_out: data/processed/testset_v2
+disjoint_from:                      # DESIGN_P2 §6: no locus or noise draw shared with v1 (checked inside the v2 run)
+  - testset_id: v1
+    config: configs/testset_v1.yaml
+    sim_state: results/eval_test/test_frozen-v1_ab94c5a1/state/sim.json   # the v1 test run (REPORT.md); stats + truth ids
+    dry_reference_stats:            # validation dry run only: same check against validation sets (no test data)
+      main: data/processed/sets/valid_grid_v1.stats.json
+      shifted: data/processed/sets/shifted_dry_v1_shifted.stats.json
+generator:
+  entry: "sim.testset:generate"     # P3-11 item 1: generate(config, out_dir, seed) -> list[HDF5 locus-set paths], as implemented
+  K: 200                            # P3-11 item 1: candidates per cell and window visit (src/sim/README.md D17)
+  M: 3                              # P3-11 item 1: accepted loci per bucket and window visit (D17)
+  statistics: ols                   # D6(a): OLS beta/se/z for individual-level traits; se_ols = se*sqrt(1 - z^2/N) for factor form
+  rho_hat: "src/stats/rho.py per D6(d) (truncated MLE, |z|<2 both traits, LD-excluded around |z|>4, block-jackknife SE)"
+
+main_grid:
+  mismatch_levels: [L0, L1, L2, L3, L4, L6]          # §8.6
+  pairing_overlap:                                   # §8.6 "Pairing type × overlap"
+    - {pairing: P1, param: r_p, value: 0.0, nesting: nested}
+    - {pairing: P1, param: r_p, value: 0.6, nesting: nested}
+    - {pairing: P2, param: rho, value: 0.0}
+    - {pairing: P2, param: rho, value: 0.3}
+    - {pairing: P3, param: rho, value: 0.0}
+    - {pairing: P3, param: rho, value: 0.5}
+    - {pairing: P3, param: rho, value: 0.8}
+  cell_exclusions:                                   # §8.6 / §2.2 (R3-stat 2): different populations cannot share donors
+    rule: "L3 and L6 only with the overlap-0 cells (P1 r_p = 0, P2 rho = 0, P3 rho = 0)"
+    levels: [L3, L6]
+  n_cells: 34                                        # 4 x 7 + 2 x 3
+  cell_id_format: "{level}|{pairing}|{param}={value}"  # as written by src/sim/cells.py (truth column cell_id)
+  cells:
+    - "L0|P1|r_p=0.0"
+    - "L0|P1|r_p=0.6"
+    - "L0|P2|rho=0.0"
+    - "L0|P2|rho=0.3"
+    - "L0|P3|rho=0.0"
+    - "L0|P3|rho=0.5"
+    - "L0|P3|rho=0.8"
+    - "L1|P1|r_p=0.0"
+    - "L1|P1|r_p=0.6"
+    - "L1|P2|rho=0.0"
+    - "L1|P2|rho=0.3"
+    - "L1|P3|rho=0.0"
+    - "L1|P3|rho=0.5"
+    - "L1|P3|rho=0.8"
+    - "L2|P1|r_p=0.0"
+    - "L2|P1|r_p=0.6"
+    - "L2|P2|rho=0.0"
+    - "L2|P2|rho=0.3"
+    - "L2|P3|rho=0.0"
+    - "L2|P3|rho=0.5"
+    - "L2|P3|rho=0.8"
+    - "L3|P1|r_p=0.0"
+    - "L3|P2|rho=0.0"
+    - "L3|P3|rho=0.0"
+    - "L4|P1|r_p=0.0"
+    - "L4|P1|r_p=0.6"
+    - "L4|P2|rho=0.0"
+    - "L4|P2|rho=0.3"
+    - "L4|P3|rho=0.0"
+    - "L4|P3|rho=0.5"
+    - "L4|P3|rho=0.8"
+    - "L6|P1|r_p=0.0"
+    - "L6|P2|rho=0.0"
+    - "L6|P3|rho=0.0"
+  pairing_types:                                     # §2.2, §2.4, §1 (trait-type power thresholds)
+    P1: {trait1: GWAS, trait2: molecular, N1: [20000, 100000, 400000], N2: [100, 300, 1000, 5000], nesting: nested}
+    P2: {trait1: GWAS, trait2: molecular, N1: 100000, N2: 50000, form: factor}      # v4: fixed N1 = 100k, N2 = 50k
+    P3:
+      rho_sign: positive                             # v4 §2.4: "the test uses positive rho"
+      subtypes:
+        eqtl_x_eqtl: {traits: [molecular, molecular], N: [300, 1000], form: individual, N1_equals_N2: true}
+        lab_x_lab: {traits: [GWAS, GWAS], N: 100000, form: factor, N1_equals_N2: true}
+      eqtl_x_eqtl_share: 0.5                         # P3-11 item 2: eQTL x eQTL : lab x lab = 0.5 : 0.5 (src/sim/params.py P3_EQTL_SHARE, README D7)
+  power_thresholds:                                  # §1 (frozen): powered |mu|, |lambda| >= tau; weak |mu| < w
+    GWAS: {alpha: 5.0e-8, tau: 6.29, weak: 4.61}
+    molecular: {alpha: 1.0e-5, tau: 5.26, weak: 3.58}
+
+per_cell:                             # P3-12: 100 / 100 / 100 and G, U up to 30 each (DESIGN §8.6 had 400/400/400, 200)
+  S: 100                              # P3-12
+  D: 100                              # P3-12; §8.6 "stratified uniformly over the d/r² bins"
+  D_generation_strata:                # D6(e), P3-11 item 4: D strata follow DESIGN v4 §8.6
+    by: r2                            # uniform over the 5 r² bins (20 D per bin); d is reported, not crossed for generation
+    r2_edges: [0.0, 0.1, 0.3, 0.5, 0.8, 0.95]   # half-open [lo, hi); r² of the class-determining pair in R_true
+    per_bin: 20
+    relaxation: gridplan_deterministic          # P3-11 item 4: GridPlan staged relaxation for structurally rare bins (src/sim/README.md D17)
+    report_realised_counts: true                # P3-11 item 4: realised per-bin D counts are reported (testset stats.json)
+  W: 100                              # P3-12
+  G_U: {policy: keep_as_they_arise, max: 30, cap_applies_to: each_of_G_and_U}   # P3-12 "G/U as they arise up to 30 each"
+  fill: rejection_sampling_on_oracle_class      # §2.4 / §8.6, seed 20261101 (v2)
+
+power_matching:                       # §8.6 (R3-PI 6), D6(e)
+  bins: [5, 5]                        # 5 x 5 on the class-determining (|mu1|, |mu2|)
+  quantiles: trait_specific           # quantile edges per trait ...
+  quantiles_over: pooled_S_and_D_of_the_cell   # ... computed on the pooled S ∪ D loci of the cell
+  strata_used_for_matching: false     # "r²/d strata are used for stratified reporting, not for matching"
+  weighted_S_prevalence: 0.5          # per cell (§2.4)
+  recompute_in_every_bootstrap_replicate: true  # §3
+
+reporting_strata:                     # §8.6: stratified reporting of D (half-open bins; r² >= 0.95 reported as "out")
+  r2_edges: [0.0, 0.1, 0.3, 0.5, 0.8, 0.95]
+  d_edges: [2, 4, 8, 16, .inf]
+
+pooling:                              # §8.1 / §8.6
+  realistic:                          # headline
+    levels: [L1, L2, L3, L4, L6]      # "equal weight over L1–L6 (L0 is 'ideal' only)"; L5 deferred
+    level_weights: equal
+    pairing_weights: {P1: 0.5, P2: 0.25, P3: 0.25}
+    within_pairing: equal_over_cells_that_exist   # §8.6 "with equal weights within type, over the cells that exist"
+    cell_weights:                     # = metrics.cell_pooling_weights(frame, "realistic") (test-checked); sum 1
+      "L1|P1|r_p=0.0": 0.05
+      "L1|P1|r_p=0.6": 0.05
+      "L1|P2|rho=0.0": 0.025
+      "L1|P2|rho=0.3": 0.025
+      "L1|P3|rho=0.0": 0.016666666666666666
+      "L1|P3|rho=0.5": 0.016666666666666666
+      "L1|P3|rho=0.8": 0.016666666666666666
+      "L2|P1|r_p=0.0": 0.05
+      "L2|P1|r_p=0.6": 0.05
+      "L2|P2|rho=0.0": 0.025
+      "L2|P2|rho=0.3": 0.025
+      "L2|P3|rho=0.0": 0.016666666666666666
+      "L2|P3|rho=0.5": 0.016666666666666666
+      "L2|P3|rho=0.8": 0.016666666666666666
+      "L3|P1|r_p=0.0": 0.1
+      "L3|P2|rho=0.0": 0.05
+      "L3|P3|rho=0.0": 0.05
+      "L4|P1|r_p=0.0": 0.05
+      "L4|P1|r_p=0.6": 0.05
+      "L4|P2|rho=0.0": 0.025
+      "L4|P2|rho=0.3": 0.025
+      "L4|P3|rho=0.0": 0.016666666666666666
+      "L4|P3|rho=0.5": 0.016666666666666666
+      "L4|P3|rho=0.8": 0.016666666666666666
+      "L6|P1|r_p=0.0": 0.1
+      "L6|P2|rho=0.0": 0.05
+      "L6|P3|rho=0.0": 0.05
+  ideal:                              # §8.1 "ideal: L0, rho = 0"
+    levels: [L0]
+    overlap: 0
+    pairing_weights: {P1: 0.5, P2: 0.25, P3: 0.25}   # same pairing weights as the headline (§8.6 pooling rule)
+    cell_weights: {"L0|P1|r_p=0.0": 0.5, "L0|P2|rho=0.0": 0.25, "L0|P3|rho=0.0": 0.25}
+  macro_per_cell: true                # §8.1 "Macro-averaged per-cell values are also reported"
+  d_vs_w_within_cell: "D and W each get half the cell's pooling weight, uniform within class (no power matching)"
+
+endpoints:                            # §8.1, frozen
+  co_primary:
+    - {name: auprc_sd, def: "AUPRC S vs D on the ungated s; U and G excluded; power-matched; weighted S prevalence 0.5; step-wise AP, ties = one threshold"}
+    - {name: auroc_dw, def: "AUROC of the ungated P_D on D ∪ W"}
+  settings: [realistic, ideal]
+  also: [auroc_sd, macro_per_cell, per_level, runtime]
+  C1: {test: paired_cluster_bootstrap, ci: BCa95, rule: "CI of AUPRC(candidate) - AUPRC(baseline) excludes 0, for every baseline"}
+  C3:                                 # §0 C3 (v4), §8.2
+    thresholds_from: validation
+    t_S: "smallest threshold with confident-S rate on W <= 0.025"
+    t_D: "then, with S precedence (P_S >= t_S -> S), smallest threshold with confident-D rate on W <= 0.025"
+    call_rule: "S if P_S >= t_S; else D if P_D >= t_D and E1, E2 >= 0.95 where reported; else insufficient"
+    w_rate_weights: "D-vs-W cell pooling weights restricted to W (realistic setting)"
+    noninferiority: {endpoints: [recall_S, recall_D], versus: every_eligible_baseline, test: one_sided_paired_cluster_bootstrap, margin: 0.01, alpha: 0.05}
+    superiority: {versus: best_eligible_baseline_per_endpoint, test: one_sided_paired_cluster_bootstrap, alpha: 0.05, multiplicity: holm_over_the_two_recalls, rule: at_least_one}
+    p_value: "inversion of the BCa interval (metrics.bootstrap_p_value)"
+    eligible_baselines: "tier-1 methods with a defined P_D; proportional test and lead-SNP rule excluded"
+    implementation: metrics.c3_test
+  C4: {pairing_types: [P2, P3], slope_of: "false-S rate vs rho per 0.1", classes: [D, W], margin: 0.02, ci: BCa95}
+  secondary:                          # §8.2
+    matched_w: {confident_S_on_W_max: 0.025, confident_D_on_W_max: 0.025, thresholds_from: validation, s_precedence: true}
+    fixed_thresholds: 0.8
+    e_gate: 0.95
+    calibration: {metrics: [ece, brier], distribution: unweighted, recalibration: "one-parameter logit intercept fitted on validation, per method", also_by: "mismatch level x rho"}
+    others: [three_way_confusion, realized_fdr, false_S_by_r2_stratum, false_S_by_d_stratum, false_S_slope_vs_rho, delta_auprc_by_level]
+  controls:                           # §7.1-9 and D6(e), in every benchmark and in the test run
+    strength_only: {method: "eval.reference_methods:StrengthOnly", table: "fitted on validation (see configs/test_methods_v1.yaml)", role: "claims are read against it (D6(e))"}
+    shuffled_label: "AUPRC with scores permuted within cell equals the weighted prevalence 0.5"
+    positive: "lambda = 30 shared at r² = 1 gives s > 0.9 for every LD-using method (proportional test: distinct r² < 0.1 gives p_prop < 0.05 in >= 80%)"
+    null: "null loci give high P_W"
+  failures: {scoring: [least_favourable, excluded], outer_join: true, block_claims_if_cell_failure_share_gt: 0.01, claims_must_hold_in_both: true}  # §4.3
+
+uncertainty:                          # §3, §8.3
+  bootstrap: {type: paired_cluster, unit: test_ld_block, ci: BCa, replicates: 2000, recompute_weights_per_replicate: true}
+  sign_test: {unit: test_ld_block}
+
+shifted_arm:                          # §8.5 / §8.6 (R3-PI 5); test-only, never used in development
+  n_loci: 1600                        # P3-12: 4 cells x 400 (DESIGN §8.6 had 6,000)
+  seed: "derive(20261101, 'shifted')"           # src/common/seeds.py derive: rng(20261101, 'shifted', 'testset_v2_shifted', ...)
+  ld_world: pool_swap                 # target population = mosaic of pool-B haplotypes
+  levels:                             # "half each"
+    L1swap: {reference: "independent pool-B mosaic draw", n_ref: 2000, share: 0.5}
+    L2swap: {reference: "pool-A individuals", n_ref: 254, share: 0.5}
+  pairing: {type: P1, r_p: [0.0, 0.6], nesting: nested}
+  cells:                              # P3-11 item 3: equal split over level x r_p -> 4 cells; P3-12: 400 loci each
+    - {cell_id: "L1swap|P1|r_p=0.0", n: 400}
+    - {cell_id: "L1swap|P1|r_p=0.6", n: 400}
+    - {cell_id: "L2swap|P1|r_p=0.0", n: 400}
+    - {cell_id: "L2swap|P1|r_p=0.6", n: 400}
+  class_mix: {S: 0.15, D: 0.15, W: 0.50, M: 0.20}   # architecture types of §8.5; oracle classes as they arise (no rejection sampling)
+  biobank_strong_share: 0.5
+  max_causal_per_trait: 4
+  polygenic_background_share: 0.5
+  msprime: optional_if_time_permits
+  power_matching: as_main_grid
+  pooling: equal_over_cells           # the 4 cells (one level weight each, P1 only)
+  claims: "C1 and C3 must hold in direction; magnitude reported, not claimed"
+
+slow_method_subsample:                # P3-12 (DESIGN §4.3 allows a pre-registered subsample for slow methods)
+  methods: [mvsusie, colocboost, colocboost_m1]   # mvSuSiE-RSS and both ColocBoost modes (P3-12)
+  per_cell: {S: 40, D: 40, W: 40}     # by oracle class; all loci of the class if a cell has fewer; G and U not included
+  per_method:                         # P3-17: mvSuSiE-RSS on 20 / 20 / 20 per cell; both ColocBoost modes stay at per_cell
+    mvsusie: {S: 20, D: 20, W: 20}
+  cells: all_test_cells               # the 34 main-grid cells and the 4 shifted-arm cells (P3-12 "per cell"; P3-17)
+  seed: "derive(20261101, 'slow_subsample')"
+  draw: >-
+    one generator g = common.seeds.rng(20261101, "slow_subsample"); cells in the order of main_grid.cells, then
+    shifted_arm.cells; within a cell classes S, D, W; ids of that cell and class sorted as strings;
+    idx = g.choice(n_ids, size=min(40, n_ids), replace=False); the 40-subsample = the ids at idx, sorted;
+    the 20-subsample (mvSuSiE, P3-17) = the ids at idx[:min(20, n_ids)], sorted, i.e. the first 20 of the same
+    draw, so it is nested in the 40-subsample (paired mvSuSiE / ColocBoost comparisons stay possible).
+    Implemented by src/eval/testrun.py Pipeline.slow_subsamples (p6.dryrun_testpipeline).
+  identical_across_methods: true      # every paired comparison with a slow method uses this id set for both methods
+  scope_of_claims: "C1/C3 comparisons against a slow method are computed on that method's subsample (all methods restricted to it); all other methods on the full set"
+
+methods_file: configs/test_methods_v2.yaml      # DESIGN_P2 §6: frozen before the v2 test run (PI fills the methods list)
+
+resolved_items:                       # former open_items, closed by DECISIONS.md P3-11 / P3-12 (no test data existed)
+  1: "P3-11.1: generator entry point sim.testset:generate(config, out_dir, seed) with K = 200, M = 3, as implemented."
+  2: "P3-11.2: P3 sub-type mix eQTL x eQTL : lab x lab = 0.5 : 0.5, equal weights within type (§8.6)."
+  3: "P3-11.3: shifted arm split equally over r_p in {0, 0.6} x {L1swap, L2swap} = 4 cells ('half each'); P3-12: 400 loci per cell, 1,600 in all."
+  4: "P3-11.4: D strata uniform over the 5 r² bins (20 per bin at D = 100) with GridPlan's deterministic relaxation for structurally rare bins (README D17); realised per-bin counts are reported."
+  5: "P3-12: slow-method subsample 40 S / 40 D / 40 W per cell, seed derive(20261028, 'slow_subsample') [v1; v2: derive(20261101, 'slow_subsample')], identical for paired comparisons. P3-17: it covers the 4 shifted-arm cells too, and mvSuSiE runs on 20 / 20 / 20 per cell (nested first-20 of the same draw; per_method)."

@@ -1,0 +1,3 @@
+[w0] shard 1 loci 2048 5.5 loci/s stats {'windows': 70, 'loci': 2074, 'none': 2406, 't_window': 37.26767325401306, 't_loci': 335.0536410808563, 'rejected': 2406}
+[W1026 17:04:19.031661932 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 641728512 bytes (free: 424083456, total: 25250627584).
+[W1026 17:04:19.064176842 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 786432000 bytes (free: 447152128, total: 25250627584).

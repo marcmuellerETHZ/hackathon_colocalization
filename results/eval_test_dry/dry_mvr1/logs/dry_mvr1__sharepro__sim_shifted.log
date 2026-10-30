@@ -1,0 +1,2 @@
+22:24:09 [harness] run dry_mvr1__sharepro__sim_shifted: 16 loci (16 to run), mode=cpu, workers=4
+22:24:27 [harness] done dry_mvr1__sharepro__sim_shifted: {'ok': 16, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 16} in 18.6s

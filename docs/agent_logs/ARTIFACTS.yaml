@@ -1,0 +1,1225 @@
+# ARTIFACTS.yaml -- edit via `orch artifact ...`; consumers read this, not reports
+artifacts:
+- name: l0star_v1
+  version: '1'
+  status: stale
+  path: data/processed/sets/l0star_v1.h5
+  producing_commit: 3416f2e
+  producing_job: null
+  dirty_tree: false
+  checksum: 3b660558ad3a63ece04f1017522d5d87240f7e90b534f8a1a12567e1b2b59b3a
+  checksum_mode: full
+  fast_checksum: 0c568e941dd2e7d69daf597bb515202f57252831f5ce13b9b121580987da59f2
+  size_gb: 0.026
+  n_files: 1
+  schema:
+    n_loci: 2000
+    p: 20
+    seed: 20261029
+  notes: built 17:54 from uncommitted sim code; regenerate as l0star_v2
+  created: '2026-10-27T10:25:10+01:00'
+  stale_reason: '[2026-10-27T10:39:40+01:00] built 17:54 from uncommitted sim code (P3-16); superseded by l0star_v2@2. Evidence (p2.verify_artifacts, job p2va_l0star_v2): a replica built under the name l0star_v1 at ed1e716 (= master 334e182 sim code) is byte-identical (h5 sha256 3b660558..., truth e3d52800...), so its content equals the committed code''s output'
+- name: screen_v1
+  version: '1'
+  status: stale
+  path: data/processed/sets/screen_v1
+  producing_commit: bbd0804
+  producing_job: null
+  dirty_tree: false
+  checksum: 6ecba2a55cae50295e8ee49a97e335eba06b6a5026dd6d10d53bd64baf843b99
+  checksum_mode: fast
+  fast_checksum: 6ecba2a55cae50295e8ee49a97e335eba06b6a5026dd6d10d53bd64baf843b99
+  size_gb: 151.113
+  n_files: 12
+  schema: {}
+  notes: superseded (pre-OLS); delete after Phase 2
+  created: '2026-10-27T10:25:10+01:00'
+- name: real_locus_sets
+  version: '1'
+  status: stale
+  path: data/processed/real
+  producing_commit: 6532bea
+  producing_job: null
+  dirty_tree: false
+  checksum: dda52695a32f4d3d2730b989e59143058e8f7f08cca7fc5258e860b2ef5d3637
+  checksum_mode: fast
+  fast_checksum: dda52695a32f4d3d2730b989e59143058e8f7f08cca7fc5258e860b2ef5d3637
+  size_gb: 33.722
+  n_files: 59
+  schema: {}
+  notes: rho-hat attrs pre-date D6(d)/P3-1; realdata update pending
+  created: '2026-10-27T10:25:10+01:00'
+  stale_reason: '[2026-10-27T10:40:31+01:00] superseded by real_locus_sets@2 (P3-1 rho-hat; attrs rewritten in place, so @1 checksum no longer matches)'
+- name: famC_c0_full
+  version: '1'
+  status: ok
+  path: results/famC/c0_full
+  producing_commit: 0aded87
+  producing_job: null
+  dirty_tree: false
+  checksum: 193270c25c552dede512459cb76f78cdbe62b3dded8ce93e47d5b7eaf8d53835
+  checksum_mode: full
+  fast_checksum: 176923cb0b68984c9fd717206357fee777fe357f6cb8222d42b9f75868ccde3c
+  size_gb: 0.007
+  n_files: 9
+  schema: {}
+  notes: C0 kill test PASS
+  created: '2026-10-27T10:25:10+01:00'
+- name: famC_c1_long
+  version: '1'
+  status: provisional
+  path: results/famC/c1_long
+  producing_commit: e285fe2
+  producing_job: null
+  dirty_tree: false
+  checksum: a311912e00ab0c2a206fbd23adac25db502a038d4316e4e4e9b0a6985a1d1acb
+  checksum_mode: full
+  fast_checksum: ae560d66b1bcb73e5c14cdee674f8a5b072bea0622a607fb34bdbeaa7b8c469a
+  size_gb: 0.016
+  n_files: 6
+  schema: {}
+  notes: trained 8M on sim train API at fb426c4; 8M C1 eval missing; pilot only (P3-9)
+  created: '2026-10-27T10:25:11+01:00'
+- name: kg_pgen
+  version: '1'
+  status: ok
+  path: data/processed/1kg
+  producing_commit: 9f90102
+  producing_job: null
+  dirty_tree: false
+  checksum: bad00130ac7df7f2fadf92878138ea0d8e7de3ab716e51a511ddbf9a0dd14486
+  checksum_mode: fast
+  fast_checksum: bad00130ac7df7f2fadf92878138ea0d8e7de3ab716e51a511ddbf9a0dd14486
+  size_gb: 2.591
+  n_files: 92
+  schema: {}
+  notes: 1000G pgen (scripts/prep_1kg_pgen.sh), chr7 rebuilt
+  created: '2026-10-27T10:25:11+01:00'
+- name: variants_qc
+  version: '1'
+  status: ok
+  path: data/processed/variants
+  producing_commit: 5d8c044
+  producing_job: null
+  dirty_tree: false
+  checksum: eb4860e2453324bdf875297fef836ec34430d21cc29845c82ba7eb1e563031e8
+  checksum_mode: fast
+  fast_checksum: eb4860e2453324bdf875297fef836ec34430d21cc29845c82ba7eb1e563031e8
+  size_gb: 0.248
+  n_files: 88
+  schema: {}
+  notes: null
+  created: '2026-10-27T10:25:11+01:00'
+- name: screen_v2
+  version: '2'
+  status: ok
+  path: data/processed/sets/screen_v2
+  producing_commit: 334e182
+  producing_job: null
+  dirty_tree: false
+  checksum: 1580d2b6beb97726e25eb5b9dbc09925e3ef03ad567853c6223f7a9835a6d9db
+  checksum_mode: fast
+  fast_checksum: 1580d2b6beb97726e25eb5b9dbc09925e3ef03ad567853c6223f7a9835a6d9db
+  size_gb: 118.396
+  n_files: 12
+  schema:
+    n_loci: 12000
+    seed: 20261027
+    split: valid
+    world: sim_v2
+    cells: 6
+    K: 200
+    M: 3
+    buckets:
+    - S
+    - D_r2lt0.5
+    - D_r2_0.5-0.8
+    - W
+    per_bucket: 500
+  notes: 'P3-16 verified (task p2.verify_artifacts, job p2va_regen_screen_v2 @ed1e716 = master 334e182 + scripts only; sim code unchanged since fb426c4): 72 loci (6 cells x 4 buckets x 3: first, last and 1 seeded-random cand_index per bucket, k 0..62118) regenerated via draw_candidate/finalize with rng(20261027,set,cell,''cand''|''fin'',k) on the RTX 4090: ALL 94 fields bit-identical (z/beta/se/n/maf/maf_ref, variant_id, pos, LD R/X_ref, L0 R2/X_ref2, every attr incl. rho_hat/rho_se, every truth column), max |diff| 0. Full sha256 manifest (job p2va_sha256_sets) identical to the 19:08 entries in data/processed/sets/SHA256SUMS (17 files); full dir checksum (orch manifest definition over screen_v2/, 12 files) 9f6aa3a78ec23daabffa4c16800a17ae613e3d6d9a1815dbb94cc1fb81603906. Report reports/p2.verify_artifacts.md.'
+  created: '2026-10-27T10:39:27+01:00'
+- name: valid_grid_v1
+  version: '1'
+  status: ok
+  path: data/processed/sets/valid_grid_v1
+  producing_commit: 334e182
+  producing_job: null
+  dirty_tree: false
+  checksum: fc893dd68d22a1955d0f9dbbaae3abd7ef03abc6d35f94c16e078556520e08fe
+  checksum_mode: fast
+  fast_checksum: fc893dd68d22a1955d0f9dbbaae3abd7ef03abc6d35f94c16e078556520e08fe
+  size_gb: 231.169
+  n_files: 68
+  schema:
+    n_cells: 34
+    n_loci: 35086
+    per_cell: S/D/W 300, G 100, U<=100 as arising
+    seed: 20261029
+    split: valid
+    world: sim_v2
+    K: 200
+    M: 3
+    D_strata: r2 (5 bins, k1=30000, k2=60000)
+  notes: 'P3-16 verified (task p2.verify_artifacts, job p2va_regen_valid_grid_v1 @ed1e716 = master 334e182 + scripts only; sim code unchanged since fb426c4): 102 loci (34 cells x 3, classes rotating over S/D/W/G/U: S20 D20 W21 G21 U20, k 120..19877) regenerated via sim.testset.main_grid_cells CellSpecs + draw_candidate/finalize with rng(20261029,set,cell,''cand''|''fin'',k): ALL 94 fields bit-identical (incl. LD, rho_hat/rho_se, truth), max |diff| 0. Full sha256 manifest of 71 files (68 part files + master h5, truth, stats) appended to data/processed/sets/SHA256SUMS (job p2va_sha256_sets); full dir checksum (orch manifest definition over valid_grid_v1/, 68 files) 14932056661a175681e9ffe939091e5da6aea386164a8dba673f969fec1f1ae2. Report reports/p2.verify_artifacts.md.'
+  created: '2026-10-27T10:39:27+01:00'
+- name: l0star_v2
+  version: '2'
+  status: ok
+  path: data/processed/sets/l0star_v2.h5
+  producing_commit: ed1e71625c22950106f2dc49bf9aafb5fae2b3b0
+  producing_job: p2va_l0star_v2
+  dirty_tree: false
+  checksum: 2f9e7558637f03eb5f573ae0d78fb0102ebaf1963e874cb3f62bab627bce8d4d
+  checksum_mode: full
+  fast_checksum: c8f0ca10009d35ae3697e03e657a2fd74f79ce4535c5787653261d14576eaf8c
+  size_gb: 0.026
+  n_files: 1
+  schema:
+    n_loci: 2000
+    p: 20
+    seed: 20261029
+    split: valid
+    world: L0star
+    eta: 0.001
+    per_class:
+      S: 500
+      D: 500
+      W: 500
+      G: 500
+    rho_grid:
+    - 0.0
+    - 0.3
+    - -0.3
+    - 0.5
+    - -0.5
+    - 0.8
+    - -0.8
+    n_nominal:
+    - 100000
+    - 1000
+    kinds:
+    - gwas
+    - mol
+    type_prior:
+      S: 0.35294
+      D: 0.35294
+      W: 0.29412
+    candidates: 9600
+    candidate_class_counts:
+      W: 7557
+      U: 67
+      G: 878
+      S: 500
+      D: 598
+    natural_class_shares:
+      W: 0.787188
+      G: 0.091458
+      D: 0.062292
+      S: 0.052083
+      U: 0.006979
+    natural_class_shares_mc_se:
+      W: 0.004177
+      G: 0.002942
+      D: 0.002467
+      S: 0.002268
+      U: 0.00085
+  notes: "Built by sim.l0star (README D13, DESIGN v4 \xA75 B L0*) at clean commit ed1e716 (= master 334e182 + scripts/p2_verify only). Truth/stats alongside: l0star_v2.truth.parquet e8b93828..., l0star_v2.stats.json 6ea8815d... (SHA256SUMS). Not identical to l0star_v1 by construction: the set name enters every rng key (rng(seed, set, 'segment'|'locus', i)). A replica built under the name l0star_v1 at the same commit is byte-identical to the stored l0star_v1.h5 (sha256 3b660558...) and truth (e3d52800...); results/p2_verify_artifacts/l0star_v1_replica_vs_stored.json."
+  created: '2026-10-27T10:39:27+01:00'
+- name: real_locus_sets
+  version: '2'
+  status: ok
+  path: data/processed/real
+  producing_commit: b84b1109653999e590cd19c9db5ca11f19c58963
+  producing_job: p4_realdata_rho_update
+  dirty_tree: false
+  checksum: 609cd2bf15ef815f1dbeae7f7fb3dc8c4bc745b73d20f7179d0aa3070450470a
+  checksum_mode: fast
+  fast_checksum: 609cd2bf15ef815f1dbeae7f7fb3dc8c4bc745b73d20f7179d0aa3070450470a
+  size_gb: 33.788
+  n_files: 66
+  schema:
+    arms: R2,R3b,R4b
+    splits: train,valid
+    n_loci_R2: 11319
+    n_loci_R3b: 5151
+    n_loci_R4b: 5340
+    R4b_ld_modes: nfe_minus_geuv,geuv_insample_pcadj(primary),geuv_insample_raw
+    rho_primary: rho_hat/rho_se_per_window_P3-1
+    rho_sensitivity: rho_hat_pair/rho_se_pair_pooled_train_per_cohort_pair
+    trait_types: gwas/mol
+    boot_unit: R3b:fg_cs_id;R2,R4b:block_id
+    test_ids_frozen: configs/real_test_ids_v1.sha256
+  notes: rho attrs rewritten in place by job p4_realdata_rho_update (commit b84b110); rho_v2_diagnostics.json by job p4_realdata_rho_diag (72edcd0); pairs/*_test_ids_sub_v1.tsv written by data.real.freeze_test_ids at b84b110 (sha256 in configs/real_test_ids_v1.sha256, verified in the update job). Same loci/variants/LD as @1.
+  created: '2026-10-27T10:40:31+01:00'
+- name: review_famA_evidence
+  version: v1
+  status: ok
+  path: results/review_famA_v1
+  producing_commit: 8f2701676d3c53aa7d66fd0fa5a9814c4efafeba
+  producing_job: null
+  dirty_tree: false
+  checksum: c5e7be493016786971f6644c6b71ff4540a7fd62607678ff9536769aed2fb8c9
+  checksum_mode: full
+  fast_checksum: 3108a2c46c05aee7c2b990a83fed6ac882b92816c6da196f4be6ee81421f85d1
+  size_gb: 0.0
+  n_files: 8
+  schema:
+    n_loci_pd: 48
+    n_fits_g: 24
+    mc_draws: 400000
+    split: valid
+    cells: L0_P1,L0_P3,L2_P1
+  notes: 'p2.review_famA evidence: P_D re-implementation/MC, G vs susieR 0.14.2, layer-E provenance; jobs p2rA_pd_check, p2rA_pd_check_mc1e7, p2rA_g_identity, p2rA_layerE_check'
+  created: '2026-10-27T10:47:31+01:00'
+- name: ref_ld_var
+  version: v2
+  status: ok
+  path: results/famA/ref_ld_var_v2.json
+  producing_commit: 9daa45a6162ce7b996f5260a1f64d6a1e05ff2be
+  producing_job: famA_refldvar_v2
+  dirty_tree: false
+  checksum: f88fbb5f6d4d2c6d5d177ffe25b6df5ed75b199cef45982bd9388c543ccd8b35
+  checksum_mode: full
+  fast_checksum: 0d6b15ba5b491434783bd2b432f8ee25c66417fd2b92e1108cc267a35a8c3490
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    n_windows: 40
+    p: 300
+    draws: 200
+    n_list:
+    - 100
+    - 150
+    - 254
+    exclude_monomorphic: true
+    seed_key: ref_ld_var_v1
+  notes: Layer-E n*Var(r_hat) table; v2 excludes subsample-monomorphic draws (review p2 defect 3); binned by pool r2, looked up by reference r_hat2. Copied to src/famA/ref_ld_var_v2.json (default of JointConfig.ref_var_table).
+  created: '2026-10-27T10:55:11+01:00'
+- name: m4_subsample
+  version: '1'
+  status: ok
+  path: results/baselines_m4/m4_subsample_v1
+  producing_commit: 13754339ae7e00322367dc4fb34072c01cec7290
+  producing_job: p4b_subsample_m4
+  dirty_tree: false
+  checksum: b1d02646585c4559f69caca4066e0a432eaafe945bcf45d536c0ed1d92a6c34d
+  checksum_mode: full
+  fast_checksum: d829e6387e0633018d6d4953ac4de8e8de6ac58b2ec1ed39c856cdbdfa2e5df0
+  size_gb: 0.001
+  n_files: 4
+  schema:
+    source: valid_grid_v1@1
+    seed: derive(20261029,'m4_subsample')
+    n_main: 12170
+    n_slow: 4080
+    n_mvsusie: 2040
+    main: per cell 100 S/100 D/100 W + G,U up to 30 each
+    slow: 40/40/40 per cell (colocboost, colocboost_m1)
+    mvsusie: 20/20/20 per cell
+    nested: true
+    draw: src/baselines/subsample.py:m4_subsample
+  notes: DECISIONS P3-13/P3-17. Files main.txt, slow.txt, mvsusie.txt (sorted ids) + subsample.json (counts per cell x class, ids sha256).
+  created: '2026-10-27T11:00:30+01:00'
+- name: shifted_dry_v1
+  version: '1'
+  status: stale
+  path: data/processed/sets/shifted_dry_v1_shifted
+  producing_commit: fb426c4
+  producing_job: null
+  dirty_tree: false
+  checksum: 087f280e836ac6848db9cf42fdc1eb0bd4701690102990661303151eea83d9b0
+  checksum_mode: fast
+  fast_checksum: 087f280e836ac6848db9cf42fdc1eb0bd4701690102990661303151eea83d9b0
+  size_gb: 5.021
+  n_files: 8
+  schema: {}
+  notes: plumbing-only dry run on validation blocks; never used for tuning or evaluation
+  created: '2026-10-27T11:06:59+01:00'
+- name: famA_p3fix_smoke
+  version: v1
+  status: ok
+  path: results/famA/p3_fixes_smoke_v1
+  producing_commit: bc9e492620d977d5099f63ab649b1dca166b2c71
+  producing_job: famA_p3fix_smoke_r1
+  dirty_tree: false
+  checksum: e70f344e3e99e470b8d0a61f6558eee5d58c82dfd7c99cda92ed955c4d1b5ab5
+  checksum_mode: full
+  fast_checksum: 3afc4c4a57a80e2d402c87be820558d5ccf2bbe26105c4452029fa9cdaaf867e
+  size_gb: 0.0
+  n_files: 2
+  schema:
+    n_loci: 300
+    cells:
+    - L0|P3|rho=0.5
+    - L2|P1|r_p=0.0
+    - L2|P3|rho=0.5
+    - L4|P1|r_p=0.0
+    - L4|P3|rho=0.5
+    per_cell: 60
+    seed: 20261027
+    rungs:
+    - +eta
+    - rho+eta+multistart
+    - rho+eta+multistart+perTraitLD
+    truth_read: false
+  notes: Validation-only runtime/nonconvergence smoke for p3.famA_fixes; A1 cell (L0|P1|r_p=0.0) excluded; no truth read
+  created: '2026-10-27T11:17:11+01:00'
+- name: famB_l0star_ref
+  version: '1'
+  status: ok
+  path: results/famB/l0star_ref
+  producing_commit: 0e3d4ac1de841e798ffa96ec1e0b6fae888180fc
+  producing_job: famB_l0star_ref_v2run
+  dirty_tree: false
+  checksum: 63238c8e5372020ba5687fe0a72b72501f2d0d35e12b5bf36f1975a06af78747
+  checksum_mode: full
+  fast_checksum: 367d305a025ab74962cb837ae37540118cdbc3d1acec83e6dccf343328412f65
+  size_gb: 0.0
+  n_files: 3
+  schema:
+    n_mc: 262144
+    n_mc_per_replicate: 65536
+    replicates: 4
+    eta: 0
+    eta_floor: 0
+    set: l0star_v2@2
+    commit: 0e3d4ac1de841e798ffa96ec1e0b6fae888180fc
+    n_loci: 2000
+    mode: simulator
+    classes:
+    - S
+    - U
+    - D
+    - W
+    - G
+    mc_se_max: 0.00235
+    mc_se_mean: 0.0002
+    seeds: derive(20261029,famB_mc,l0star_ref_rep{r},locus_id)
+    file: posteriors.parquet
+  notes: 'B simulator-prior oracle-class posteriors (natural L0* prior, exact sim.l0star prior, eta=0 since the set stores R_tilde, p=20 unscreened). Columns P_S,P_U,P_D,P_W(strict),P_G (sum 1), se_* = replicate MC SE of the mean (4 reps x 65536 draws; max 0.0024), exact PP_H0..H34. MC draws keyed per locus (batch-invariant, commit 0e3d4ac). calibration.json: natural-weighted CE 0.1726 vs posterior entropy 0.1824 (diff -0.0098 +- 0.0090), reliability max|z| 2.88 over 79 bins. Report reports/p4.famB_l0star_ref.md.'
+  created: '2026-10-27T12:41:43+01:00'
+- name: baselines_screen_v2_L0P1
+  version: '1'
+  status: ok
+  path: results/baselines_screen_v2/collected_L0P1_v1b
+  producing_commit: d70a435e833b46665cf477959f69e9e726f7034f
+  producing_job: p4b_collect_scr_L0P1_r2
+  dirty_tree: false
+  checksum: 493659e92349fb1631be85b82459114e117d693ca4a9e6b3042d2f3509f158cb
+  checksum_mode: full
+  fast_checksum: 6af39348113feeb5d3fea8ecd8187952fbc4dd1efca4eab6edcae0965c4c73fe
+  size_gb: 0.009
+  n_files: 2
+  schema:
+    source: screen_v2@2
+    cell: L0|P1|r_p=0.0
+    n_loci: 2000
+    n_rows: 32000
+    methods: coloc_abf (W 0.1/0.15/0.2 x p12 5e-6/1e-5, as coloc_abf_W<W>_p12_<p12>), coloc_susie, coloc_susie_mm, sharepro, colocboost, colocboost_m1, mvsusie (hard lfsr rule, soft in extra.soft), prop_coloc, coloc_prop_test, lead_snp, strength_only (crossfit k5 over all 12000 screen_v2 loci)
+    n_per_method: 2000
+    subsample: none
+    files: predictions.parquet (INTERFACES 3 columns + run_id, group), index.json (run dirs, status counts, runtimes)
+  notes: 'Interim for kill test A1 (the A1 cell, ALL methods on all 2000 loci). Failures: coloc_prop_test 3, prop_coloc 1, mvsusie 1 (mvsusieR has_mixture defect, src/baselines/README item 20); nonconverged used+flagged. Timeouts = pilot rule (baselines.run.PILOT_TIMEOUTS_S). Benchmark (locus bootstrap) results/baselines_screen_v2/bench/benchmarks/*_p4_screen_v2_L0P1 when job p4b_bench_scr_L0P1 ends. Superseded in content by baselines_screen_v2@1 (same runs).'
+  created: '2026-10-27T13:08:02+01:00'
+- name: famA_screen_v2
+  version: '1'
+  status: stale
+  path: results/famA/famA_screen_v2_v1
+  producing_commit: 4b9c79437d786402771ef73906839447131bf698
+  producing_job: famA_p5_scrL24_primary
+  dirty_tree: false
+  checksum: 40be57bf94103b2dc2f7f2ed5831f63ee076e7865baed9656236e0d4341660c1
+  checksum_mode: full
+  fast_checksum: d7c43a85f96ba17e2dda4541fe47ad268800accef08f72423dc4c5bd815e5644
+  size_gb: 0.004
+  n_files: 3
+  schema:
+    source: screen_v2@2
+    cells:
+    - L2|P1|r_p=0.0
+    - L2|P3|rho=0.5
+    - L4|P1|r_p=0.0
+    - L4|P3|rho=0.5
+    n_loci: 8000
+    methods:
+    - famA_joint_susie_rho_eta_ms_ptld
+    primary: famA_joint_susie_rho_eta_ms_ptld
+    rung: rho+eta+multistart+perTraitLD
+    pi: EB_kappa4
+  notes: 'PARTIAL: A primary (rho+eta+multistart+perTraitLD, pi EB k=4, no layer E) on the 4 screen_v2 L2/L4 cells (8000 loci, all). Missing: L0|P3|rho=0.5 and L0|P1|r_p=0.0 (A1) -> famA_screen_v2@2; ladder rungs on a 25% seeded subsample -> separate artifact. Files: predictions/<method>.parquet (INTERFACES 3), runs.json (harness run dirs + sha256), coverage.tsv. Harness run 20261027T111133Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_d9a380 (7969 ok, 31 nonconverged, 0 failed). Code branch p5-famA @4b9c794.'
+  created: '2026-10-27T14:01:59+01:00'
+- name: famA_m4_valid
+  version: '1'
+  status: provisional
+  path: results/famA/famA_m4_valid_v1
+  producing_commit: fa1aeec73f27bac9a58ab9d16f9242e0c002238b
+  producing_job: famA_p5_m4_primary_r2
+  dirty_tree: false
+  checksum: 1c2a6c2454977cf8c78819e21addaf69df613462475b901c22904d26948398ba
+  checksum_mode: full
+  fast_checksum: 1b1aec5e3ec236449fe39c6e77f20061aa1491a8aa7ded21250e340cd59358b7
+  size_gb: 0.005
+  n_files: 3
+  schema:
+    source: m4_subsample@1
+    locus_set: valid_grid_v1@1
+    cells: 27_cells_L1-L6
+    n_loci: 9677
+    methods:
+    - famA_joint_susie_rho_eta_ms_ptld
+    primary: famA_joint_susie_rho_eta_ms_ptld
+  notes: 'PARTIAL: A primary (rho+eta+multistart+perTraitLD, pi EB k=4, no E) on m4_subsample@1 main.txt ids at L1-L6 (27 cells, 9677 loci; 9636 ok, 41 nonconverged, 0 failed; harness run 20261027T111509Z_..._8d09a3). L0 cells (7 cells, 2493 loci) not included: the first L0 P2/P3 run lost 186 loci to CUDA OOM (6 GB working set too large for dense p~6k LD + eigh); rerun with 3 GB working set (job famA_p5_m4L0_primary) -> famA_m4_valid@2. Code p5-famA @fa1aeec.'
+  created: '2026-10-27T14:23:26+01:00'
+- name: real_test_meta
+  version: '1'
+  status: ok
+  path: data/processed/real_testmeta_v1
+  producing_commit: f241c4ed9b2b2d9b12763e9aa259409926e8ca05
+  producing_job: p6rt_test_meta_r2
+  dirty_tree: false
+  checksum: f6dbff513a8f9468186d49807c65ab33df8495a48bb60449bec597a4934c4974
+  checksum_mode: full
+  fast_checksum: 7ec95d2100ac00fc963c56655cac85efcaa920c65e20aa0d6eb6fd4b3e04913e
+  size_gb: 0.0
+  n_files: 5
+  schema:
+    files: R2/R3b/R4b_test_meta_v1.tsv + test_meta_v1.sha256 + verify.json
+    rows: R2 800, R3b 1237, R4b 600 (frozen sub lists, same order)
+    columns: ID_COLS + gene_name,tss,block_id,lead1,lead2 (+fg_region,fg_cs R3b)
+    frozen_sha: configs/real_test_meta_v1.sha256
+  notes: 'Produced by job p6rt_test_meta_r2 (commit f241c4e) into data/processed/real/pairs; moved unchanged (sha256 identical) to data/processed/real_testmeta_v1 at PI request so real_locus_sets@2 is untouched; sha file paths rewritten to the new dir. Verified: train/valid rebuild byte-identical, all 6 frozen ID-list hashes reproduced.'
+  created: '2026-10-27T15:49:46+01:00'
+- name: famB_screen_v2
+  version: '1'
+  status: ok
+  path: results/famB/screen_v2
+  producing_commit: e4e6a63c06b9173a658e2c9e24c96f4f6b9edb77
+  producing_job: famB_screen_v2_full_r2
+  dirty_tree: false
+  checksum: 0d8a4fe1198a5b0f831f8fcf1ee15929e6b12da1c059dde12e37ea6a40b83fce
+  checksum_mode: full
+  fast_checksum: 603b76dc40482045185a528ddfc83dd8f6cd437b8595a9dc4e7d340c465b6832
+  size_gb: 0.006
+  n_files: 4
+  schema:
+    set: screen_v2@2
+    n_loci: 12000
+    primary: M50/predictions.parquet
+    primary_method: exactcoloc_gaussian_M50
+    primary_config: gaussian EB, M=50, p1=p2=1e-4, p12=5e-6, n_mc=16384
+    primary_status_ok: 12000
+    ablation: M100_ablation/predictions.parquet
+    ablation_method: exactcoloc_gaussian_M100
+    ablation_loci: L0_P1 all 2000 + D_r2_0.5-0.8 bucket of the other 5 cells (4500)
+    ablation_failed: 10
+    mc_seeds: derive(20261029,famB_mc,"",locus_id)
+    commit: e4e6a63c06b9173a658e2c9e24c96f4f6b9edb77
+  notes: 'Family B on screen_v2 through eval.harness (batch mode, 2 GPU workers). runs.json in each subdir lists the harness run dirs (results/<run_id>) and predictions sha256. M100 ablation: 10 loci failed (Cholesky of R_tilde not PD in EB at M=100: 8 L0_P1, 2 L0_P3), scored as failures (P3 decision 1 of handover). Primary M50: 12000/12000 ok.'
+  created: '2026-10-27T15:52:22+01:00'
+- name: p5_verify_famC_c1_recompute
+  version: '1'
+  status: ok
+  path: results/p5_verify_famC
+  producing_commit: 9246acc63402dc674e38809379d2c51d5d281df9
+  producing_job: p5_verify_famC_recompute_r2
+  dirty_tree: false
+  checksum: 7a19ff7fd90f139af6aa5a3fd315899cf9bee8381f7d88b3ecce098113603b65
+  checksum_mode: full
+  fast_checksum: 0f64ad69cee323e862dea837586c625420923b9f56da747921d762d5d8bfeaaa
+  size_gb: 0.0
+  n_files: 7
+  schema:
+    set: l0star_pilot
+    ckpt: results/famC/c1_long/model.pt
+    C1_natural_none: 0.006378
+    C1_natural_main: 0.048416
+    balanced_none: 0.019844
+    balanced_main: 0.111168
+  notes: 'Independent verification (p5.verify_famC_scoring): raw-logit recompute of c1_long 8M on the 600-locus PILOT set vs c1_eval.py rerun (auto/none/main). Not l0star_v2.'
+  created: '2026-10-27T15:52:27+01:00'
+- name: famA_screen_v2
+  version: '2'
+  status: provisional
+  path: results/famA/famA_screen_v2_v2
+  producing_commit: 37da481d857cb07178411fd9fd26f0586ae2da40
+  producing_job: famA_p5_A1_primary_r2
+  dirty_tree: false
+  checksum: 2559e52ade8d4a2d33d89ee8dba40f8b008b3b5877c316a4f7fe357799c893f6
+  checksum_mode: full
+  fast_checksum: ccc9b9f737e5a651d14f9a6b59015d994fc012697d2f5ad694e52e0797bbff2d
+  size_gb: 0.007
+  n_files: 4
+  schema:
+    source: screen_v2@2
+    cells: 6
+    n_loci: 12000
+    methods:
+    - famA_joint_susie_rho_eta_ms_ptld
+    - famA_joint_susie_rho_eta_ms
+    primary: famA_joint_susie_rho_eta_ms_ptld
+  notes: 'PARTIAL (ladder not run: PI cancelled after A1 FAIL / demotion). A primary (rho+eta+multistart+perTraitLD, pi EB k=4, no E) on all 6 screen_v2 cells (12000 loci: 11953 ok, 47 nonconverged, 0 failed after an OOM retry of 40 L0|P3 loci, job famA_p5_scrL0P3_retry_r3, engineering settings only: 3 GB working set, eig_chunk 1). One-LD rung famA_joint_susie_rho_eta_ms on the A1 cell only. Per-trait LD used on 848/2000 A1 loci (others: trait-2 LD of a different kind -> one LD). Jobs: famA_p5_scrL24_primary, famA_p5_scrL0P3_primary_r2, famA_p5_scrL0P3_retry_r3, famA_p5_A1_primary_r2. Supersedes famA_screen_v2@1 in content. Branch p5-famA.'
+  created: '2026-10-27T16:23:55+01:00'
+- name: famA_killtest_A1
+  version: '1'
+  status: ok
+  path: results/famA/killtest_a1_ruleA_v1
+  producing_commit: 695a1207aeb5e64ca9307d02279bf96940d58f4f
+  producing_job: famA_p5_killtest_a1_rule_a_r2
+  dirty_tree: false
+  checksum: f7965bb5ed6824b3b097d77340f61c0fa441668712429c49defafcd71e229951
+  checksum_mode: full
+  fast_checksum: cb514db868502776dfd098c6008f9f4f4e68735f5f6dc6d1568ca600d82938b9
+  size_gb: 0.0
+  n_files: 2
+  schema:
+    cell: L0|P1|r_p=0.0
+    n_loci: 2000
+    a_method: famA_joint_susie_rho_eta_ms_ptld
+    baselines: baselines_screen_v2_L0P1@1
+    n_boot: 2000
+    unit: locus
+    verdict_A1: FAIL
+  notes: 'Kill test A1 (DESIGN 5A/6.2): AUPRC A 0.893 vs coloc-SuSiE 0.978, diff -0.085, paired locus SE 0.010, CI [-0.105,-0.064] -> FAIL; runtime median 1.26 s vs 3.31 s -> PASS; rule (a) FAIL; rule (b) on A1 cell only PASS (pooled not run); rule (c) not evaluated; rule (d) A1 cell PASS. Family A demoted (PI). Report reports/p5.killtest_A1.md.'
+  created: '2026-10-27T16:23:56+01:00'
+- name: real_testarm_valid_check
+  version: '1'
+  status: ok
+  path: data/processed/real_testarm_valid_check_v1
+  producing_commit: aa647c9fc8
+  producing_job: null
+  dirty_tree: false
+  checksum: fc478a040cda23a14134346a137ade7a364235af98fe8153518418a0f4f4b153
+  checksum_mode: fast
+  fast_checksum: fc478a040cda23a14134346a137ade7a364235af98fe8153518418a0f4f4b153
+  size_gb: 3.821
+  n_files: 27
+  schema:
+    content: build_test_arms(mode=valid) on P3-14-size validation ID lists (R2 800, R3b 1203, R4b 600) + check.json vs real_locus_sets@2
+    result: 5/5 sets identical (z, beta/se, n, maf, variant ids, X_ref, all @2 attrs); added attrs donor_disjoint, rho_sens_zero
+  notes: produced by job p6rt_valid_check_r4 (exit 0 at ~17:05; scheduler stopped for the D14 pause, so the job record may still say running). Check output only; 3.9 GB, deletable after the freeze.
+  created: '2026-10-27T17:05:56+01:00'
+- name: baselines_screen_v2
+  version: '1'
+  status: ok
+  path: results/baselines_screen_v2/collected_v1
+  producing_commit: f6921efab6ac19e5e11b6cb31166fc16b4a46d30
+  producing_job: null
+  dirty_tree: false
+  checksum: fcdc16522010e4cb895a0240c87f86bb1ca636c5002793b04dced50996b76e86
+  checksum_mode: full
+  fast_checksum: 4050574f19ceec26933891f3d775aaa44cb261fc26c70497e1251f65bc4f34a8
+  size_gb: 0.063
+  n_files: 2
+  schema:
+    source: screen_v2@2
+    n_loci: 12000
+    n_rows: 165000
+    methods: 'coloc_abf_W{0.1,0.15,0.2}_p12_{5e-06,1e-05} (6 runs), coloc_susie, coloc_susie_mm, sharepro, prop_coloc, coloc_prop_test, lead_snp, strength_only: 12000 each; colocboost, colocboost_m1, mvsusie: 3000 each'
+    subsample_rule:
+      slow methods (mvsusie hard-lfsr primary with soft in extra.soft, colocboost, colocboost_m1): all 2000 loci of L0|P1|r_p=0.0 + 200 per other cell, 50 per generation bucket, seed derive(20261027,'screen_slow_subsample') (src/baselines/subsample.py); ids in results/baselines_screen_v2/ids
+    strength_only: crossfit k5 over all 12000 (bench 20261027T102443Z_p4_screen_v2_control)
+    timeouts: baselines.run.PILOT_TIMEOUTS_S
+    files: predictions.parquet (INTERFACES 3 columns + run_id, group), index.json (run dirs, commits, status counts, runtime median/p95 per method x id group)
+  notes: 'Collected in-process at 17:50 (scheduler paused per PI D14) by scripts/baselines_p4.py collect at f6921ef from harness runs in results/baselines_screen_v2/runs (+ bench/ for strength_only). Failure shares >1% per cell: prop_coloc L2/L4 5-7% (P3-20 method limitation, claims blocked); coloc_susie L4_P1 1.3%, L4_P3 1.4% (susieR ''estimated prior variance is unreasonably large'' under mismatch + 4 timeouts) -> blocks coloc_susie claims at L4 per DESIGN 4.3. Supersedes baselines_screen_v2_L0P1@1 (same L0P1 runs).'
+  created: '2026-10-27T17:47:28+01:00'
+- name: famC_C1
+  version: '1'
+  status: ok
+  path: results/famC/c1_v2
+  producing_commit: dfb4a797a550d24bd151c5d7f6617b413efe300d
+  producing_job: famC_c1_v2_eval_l0star_v2_r3
+  dirty_tree: false
+  checksum: 380fd46ecbcc406570979afae7ec9bf2b5a9150e42c096859ba22d727a3181c0
+  checksum_mode: full
+  fast_checksum: 920fb51e6eb728559b9496cb898dd19c8ae0520d6913ddbe0e7fcc14c60ef112
+  size_gb: 0.02
+  n_files: 13
+  schema:
+    world: L0star
+    set: l0star_v2@2
+    reference: famB_l0star_ref@1
+    train_job: famC_c1_v2_train
+    train_split: train
+    p: 20
+    rho_grid:
+    - 0
+    - 0.3
+    - -0.3
+    - 0.5
+    - -0.5
+    - 0.8
+    - -0.8
+    n_nominal:
+    - 100000
+    - 1000
+    eta: 0.001
+    loss: unweighted_CE
+    logit_correction: none
+    checkpoints:
+    - model_1000448.pt
+    - model_2000384.pt
+    - model_4000256.pt
+    - model_8000000.pt
+    - model.pt(14412288)
+    final_checkpoint: model.pt
+    final_n_train: 14412288
+    C1_E_KL_natural: 0.005633
+    C1_E_KL_natural_ci95_block_boot:
+    - 0.00398
+    - 0.00871
+    E_KL_balanced: 0.01589
+    C1_W_term_share: 0.241
+    n_blocks: 111
+    n_blocks_by_class:
+      S:106: null
+      D:94: null
+      W:10: null
+      G:73: null
+    bar: 0.02
+    C1: PASS
+    eval_file: c1_eval_l0star_v2.json
+  notes: 'Pre-registered C1 (DESIGN v4 5 C, P3-4/P3-9): natural-weighted E[KL(B||C)] of the 14.4 M final checkpoint (stopped by the pre-set 2.8 h cap; PI decision: ''last'') on l0star_v2 vs famB_l0star_ref@1 = 0.00563, block-bootstrap 95% CI [0.0040, 0.0087] < 0.02: PASS. Learning curve 1/2/4/8 M: 0.0315/0.0216/0.0173/0.0132. Report reports/p4.famC_C1.md.'
+  created: '2026-10-27T19:12:01+01:00'
+- name: verify_B1
+  version: '1'
+  status: ok
+  path: .worktrees/p5-verify-B1/results/verify_B1
+  producing_commit: 8fcb22e56fdfe8cac5966db77ffe6a0ed93919a7
+  producing_job: p5_verify_B1
+  dirty_tree: false
+  checksum: a61b2751e2f98b8f78c7950584f7f4121cd6f75463b90e62326b4b2ec32842f9
+  checksum_mode: full
+  fast_checksum: e69fbe2f9634e07a6c448e61b0ecb5d4b6fdc18bbb9f1d239a043e9feef388ef
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    verdict: B1 FAIL, c KILL confirmed
+  notes: null
+  created: '2026-10-27T19:53:21+01:00'
+- name: famC_m4_provisional
+  version: '1'
+  status: provisional
+  path: results/famC/m4_provisional_v1
+  producing_commit: 55efbface65bc32be4b6250cf34008d8b7283d56
+  producing_job: famC_m4_provisional
+  dirty_tree: false
+  checksum: 1c0af1d02d93b440d879b38447bcb51248b67f872286aba6916a028d52a859a3
+  checksum_mode: full
+  fast_checksum: 17f123123f0578bf7e3e526cef41466f9fc154a9fd1e4b3b94a2de7b0eaafeef
+  size_gb: 0.001
+  n_files: 6
+  schema:
+    label: PROVISIONAL
+    model: results/famC/main_snap1_full/model.pt
+    training: 74k records (train_dev_snap1) from the pre-M3.5 uncommitted simulator, 8k steps, class-weighted CE, L6 held out
+    ids: m4_subsample@1/main.txt
+    n_loci: 12170
+    failures: 0
+    set: valid_grid_v1
+    bench: results/benchmarks/20261027T184412Z_famC_m4_provisional
+    bench_job: famC_m4_provisional_bench
+    unit: block
+    n_boot: 2000
+    realistic_AUPRC_SvsD: 0.951 [0.940,0.958]
+    realistic_AUROC_DvsW: 0.995 [0.994,0.997]
+    ideal_AUPRC_SvsD: 0.981 [0.961,0.990]
+    L6_cells_AUPRC_SvsD: 0.864/0.925/0.943
+    median_s_per_locus: 0.031
+    harness_wall_min: 18.5
+  notes: 'PROVISIONAL C2 look (PI go 19:15): NeuralColoc dev model main_snap1_full on the main M4 subsample through the harness (per-cell runs, famC.method.NeuralColoc class_w=main). Trained on 74k records from the pre-M3.5 simulator; nothing is selected on it. predictions.parquet + runs.json (harness run dirs) + bench/ (copy of the benchmark: least_favourable co-primaries, block bootstrap; vs strength-only control only; baselines comparison pending m4_valid_baselines@1).'
+  created: '2026-10-27T20:07:18+01:00'
+- name: m4_valid_baselines
+  version: '1'
+  status: stale
+  path: results/baselines_m4/m4_valid_v1
+  producing_commit: 04f318803d396209dc64b63250e368229029e5ca
+  producing_job: p4b_bench_m4_partial
+  dirty_tree: false
+  checksum: 3659e668bc72a23d6f3b9c9873522ec9a18d4efa4d50ed00eaf9f6e980339f39
+  checksum_mode: full
+  fast_checksum: 499722586bfc7c55f4cace306bca6f4f2116ac23cc313b733baa3ea25fa95165
+  size_gb: 0.002
+  n_files: 17
+  schema:
+    source: valid_grid_v1@1
+    subsample: m4_subsample@1
+    main:
+      12170 loci (100 S/D/W + G,U<=30 per cell): coloc_abf x6 (W x p12), sharepro, prop_coloc, coloc_prop_test, lead_snp, strength_only
+    slow:
+      4080 loci (40/40/40): colocboost, colocboost_m1 (+ fast methods reused)
+    missing: coloc_susie, coloc_susie_mm, mvsusie (runs in flight; P3-27 partial)
+    files:
+      main/ and slow/ each: benchmark.json, summary.md, operating_points.json (t_S,t_D,recal_a_S,recal_a_D, in-sample C3 on validation), strength_table_full.json, strength_table_crossfit.json, manifest.json; m4summary.json/.md (tables, coloc_abf W selection)
+    coloc_abf_W_selected: 0.2 (realistic AUPRC 0.856 vs 0.855 W0.15, 0.853 W0.1)
+    bootstrap: 2000 x LD block, BCa
+  notes: 'PARTIAL (P3-27): built 20:08 from benches 20261027T182437Z_p4_m4_main_partial and 20261027T185341Z_p4_m4_slow_partial (job p4b_bench_m4_partial at 04f3188 = master). coloc_susie/coloc_susie_mm/mvsusie M4 halves still running; will be @2.'
+  created: '2026-10-27T20:08:52+01:00'
+- name: m4_valid_baselines
+  version: '2'
+  status: ok
+  path: results/baselines_m4/m4_valid_v2
+  producing_commit: d47e98e
+  producing_job: null
+  dirty_tree: false
+  checksum: ddf2f7745ea73891f7261065c7f881c6f53120803874ecb98dc6fa7f66eba3a6
+  checksum_mode: full
+  fast_checksum: df66e45f41cbed8713b8faf61d1752e1656a829c6be3510c874c3c0c2ad6c261
+  size_gb: 0.002
+  n_files: 21
+  schema:
+    source: valid_grid_v1@1
+    subsample: m4_subsample@1
+    M4_complete:
+      ? coloc_abf x6 (W x p12), sharepro, prop_coloc, coloc_prop_test, lead_snp, strength_only (main 12170); colocboost, colocboost_m1 (slow 4080); coloc_susie (main 12170, late
+      : oppoints + quickeval, no full benchmark)
+    screen_fallback_P3-27: coloc_susie_mm, mvsusie (M4 runs unfinished at 22:20)
+    coloc_abf_W_selected: 0.2
+    files: operating_points_final.json (method -> t_S, t_D, recal_a_S, recal_a_D, source); main/ slow/ (benchmark.json, summary.md, operating_points.json, strength tables, manifest); m4summary.json/.md; m4_late_operating_points.json, m4_late_coprimaries_coloc_susie.json; screen_fallback_operating_points.json
+  notes: Supersedes provisional @1 (same main/slow benchmarks). Built in-process 22:20 (orch RAM full; PI asked for results by 23:00) with scripts/baselines_p4.py oppoints/quickeval at d47e98e (oppoints reproduces the benchmark's coloc_abf W0.2 t_S/t_D/recal exactly). coloc_susie_mm and mvsusie M4 halves still running/queued at registration; their values come from screen_v2 (P3-27 fallback).
+  created: '2026-10-27T22:19:53+01:00'
+- name: op2_screen_v2_baselines
+  version: '1'
+  status: ok
+  path: results/baselines_p9/op2_screen_v2_v1
+  producing_commit: 0e345daafab354a0042c21c6e7e253f96248314c
+  producing_job: p9_op2_screen_v2_r2
+  dirty_tree: false
+  checksum: b088c148f192b34a0234bfc8007ba3039e56bf51b483ff252a60c27a251f6913
+  checksum_mode: full
+  fast_checksum: 629418eab94d5bc11a678b412658bedc2ddaf0a46a04f5d851503437e538dd68
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    source: baselines_screen_v2@1
+    locus_set: screen_v2@2
+    fit_setting: realistic (screen_v2 cells L2+L4, DESIGN 8.6 weights)
+    definition: "DESIGN_P2 \xA73 OP2 (eval.op2.op2_thresholds) + OP1 (matched_w, run_benchmark._op_points)"
+    d_limit: 0.1
+    w_limit: 0.025
+    failure_scoring: least_favourable
+    methods: "all tier-1 baselines in baselines_screen_v2@1 except mvsusie (excluded, DESIGN_P2 \xA75); each on its own loci"
+    file: op2_screen_v2.json
+  notes: "Kill-test fit set for B-mm rule (c)/B1 at OP2 (DESIGN_P2 \xA73/\xA74). Per method: OP1 {t_S,t_D,rates,recal}, OP2 {t_S, t_S_call, op2_feasible, t_S_W_side, t_S_D_side, t_D, rate_S_on_W, rate_S_on_D, n_D_matched}, at_OP1/at_OP2 call summaries. op2_feasible=false -> t_S=1 means NO S calls (t_S_call=inf). OP2 feasibility dry run (S3); constants unchanged."
+  created: '2026-10-28T09:51:11+01:00'
+- name: famG_mm_slice2000
+  version: '1'
+  status: ok
+  path: results/famG_mm/slice2000_v1
+  producing_commit: 99c5d4644792c0ad9dec4d5e9f61b8624de6a1d0
+  producing_job: famG_mm_slice2000_v1
+  dirty_tree: false
+  checksum: 1901a2fad4c85c9ab7e8b5a51c02cfc4341fc5e0913fbf81be0c13a14ab04b34
+  checksum_mode: full
+  fast_checksum: a17b24cd20d9f25ccda5afb90e4412ea816a5f3f5bf1f61480af208e2d04b45d
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    n_loci: 2000
+    source: m4_subsample@1
+    seed: derive(20261029,'famG_mm','slice',2000)
+    split: valid
+  notes: "Fixed 2,000-locus random slice of M4 main (valid_grid_v1) for the G-mm \xA77.7 throughput comparison"
+  created: '2026-10-28T10:01:01+01:00'
+- name: m4_valid_baselines
+  version: '3'
+  status: ok
+  path: results/baselines_m4/m4_valid_v3
+  producing_commit: b2a927841383e54abefcab3f14f4513cffc20379
+  producing_job: p9_m4_valid_v3_assemble
+  dirty_tree: false
+  checksum: 5452b2e198b07cb77bded6eda6fcd51d62dcdbc35972341b5c3accf92bce9313
+  checksum_mode: full
+  fast_checksum: 9a3effbe690668b41bdb420a4ac2db7c1b05a8c14d9fc1896eb2360e3d83cd9a
+  size_gb: 0.002
+  n_files: 21
+  schema:
+    source: valid_grid_v1@1
+    subsample: m4_subsample@1
+    main:
+      benchmark 20261028T084150Z_p9_m4_main_full (job p9_bench_m4_main_full): 12170 loci, 13 methods incl. coloc_susie and coloc_susie_mm (two disjoint half runs each, extra_runs), 2000x block BCa
+    slow: copy of m4_valid_baselines@2 slow/ (colocboost, colocboost_m1; unchanged)
+    coloc_susie_mm_M4: realistic AUPRC 0.899 [0.887,0.913], ideal 0.977, AUROC D-vs-W 0.900/0.928, 0 failures, median 16.1 s/locus
+    operating_points:
+      operating_points_p2.json: "per method OP1 (frozen P3-30 values; coloc_susie_mm refit on M4) + OP2 (DESIGN_P2 \xA73, M4 realistic L1-L6) + at_OP1_M4/at_OP2_M4"
+    mvsusie: "excluded (DESIGN_P2 \xA75)"
+  notes: Phase-2 baselines on M4 (task p9.baselines_m4mm). Does not modify @2 (phase-1 frozen record). run_benchmark --verify on main/ reports mismatches only for coloc_susie/coloc_susie_mm (verify does not know extra_runs, as documented in baselines_p4 bench); point estimates of both recomputed independently from the concatenated half runs agree to <1e-12. OP1 refit = frozen @2 values for every method except coloc_susie_mm (screen fallback replaced).
+  created: '2026-10-28T10:01:25+01:00'
+- name: testset_v2_dry_bundle
+  version: '1'
+  status: provisional
+  path: results/eval_test_dry/dry_p9_v2
+  producing_commit: 885ec7ec5c92232541fb106d7be73cb0a09620f0
+  producing_job: p9_dry_testset_v2
+  dirty_tree: false
+  checksum: e3f4b4bb043103183285c5464450dcfad12b279a7d3597190fbb5586c85450ee
+  checksum_mode: full
+  fast_checksum: 655a066c2a2f2a2d4703eafeb7d8d7658d5559ec24665255f898c6315ac2a770
+  size_gb: 0.003
+  n_files: 189
+  schema:
+    testset_config: configs/testset_v2.yaml
+    methods: configs/proposals/test_methods_dry_p9_v2.yaml
+    scale: 0.02
+    split: valid
+    n_loci: main 241, shifted 32
+    verify_ok: true
+    disjoint: state/disjoint.json ok (vs valid_grid_v1 / shifted_dry_v1_shifted stats; key + derived-seed overlap 0)
+  notes: p9.testset_v2 validation dry run of the v2 path (eval_test.py --testset configs/testset_v2.yaml --dry-run-valid). DRY placeholders; plumbing evidence only, never used for any claim.
+  created: '2026-10-28T10:18:31+01:00'
+- name: testset_v2_dry_sets
+  version: '1'
+  status: provisional
+  path: data/processed/eval_test_dry/dry_p9_v2
+  producing_commit: 885ec7ec5c92232541fb106d7be73cb0a09620f0
+  producing_job: p9_dry_testset_v2
+  dirty_tree: false
+  checksum: 3368e6ea8bbe60ef25f79f44f4978e9c5cb9b1734ebfbdcc375cbd34ae021625
+  checksum_mode: fast
+  fast_checksum: 3368e6ea8bbe60ef25f79f44f4978e9c5cb9b1734ebfbdcc375cbd34ae021625
+  size_gb: 1.506
+  n_files: 82
+  schema:
+    split: valid
+    seed: 20261029
+    set_name: dry_p9_v2
+    n_loci: main 241, shifted 32
+  notes: Locus sets of the p9.testset_v2 validation dry run (validation blocks only). Deletable after the freeze.
+  created: '2026-10-28T10:18:32+01:00'
+- name: famC_valid_v1
+  version: '1'
+  status: ok
+  path: data/processed/famC/valid_v1
+  producing_commit: ad2f50972a3a7720308bd4e96c36510e28e6c5eb
+  producing_job: famC_p9_gen_valid_v1
+  dirty_tree: false
+  checksum: a7a5f54aa9abbc327725fe1b0cbd872b4af5dbdb66186fc2a6ef834d2df98a0a
+  checksum_mode: full
+  fast_checksum: 1127266030ac352905516038a9a27be5ef30b8832fecc809a13a2791e47a10fe
+  size_gb: 3.745
+  n_files: 16
+  schema:
+    n_loci: 30000
+    split: valid
+    seed: 20261029
+    levels: L0,L1,L2,L3,L4,L6
+    accept:
+      S:1: null
+      D:1: null
+      U:1: null
+      G:0.5: null
+      W:0.3: null
+    n_noise: 1
+    lpw: 64
+    M: 128
+    shard_size: 2048
+    format: famC.simadapter.compact
+  notes: Family C validation records (README C-T2) from the committed simulator, validation windows; monitoring for famC.train_main / floor only (no checkpoint selection); 34,176 candidates rejected by acceptance
+  created: '2026-10-28T11:19:08+01:00'
+- name: famB_mm_screen_v2
+  version: '1'
+  status: ok
+  path: results/famB/p9_screen_v2/Bmm_M50
+  producing_commit: bcf1f6436f8f558d80ee0b7b8a5d205b6aee9d6d
+  producing_job: famB_mm_screen_v2_r3
+  dirty_tree: false
+  checksum: aa615f58e2d42a584d06077f8a5a33e0a46d25a87e8d9601d61a6010604cb3bd
+  checksum_mode: full
+  fast_checksum: 374418aeef5584712f358c2f4176bb31d2fd8e734c560c2ca6ce2588681e2348
+  size_gb: 0.007
+  n_files: 2
+  schema:
+    set: screen_v2@2
+    n_loci: 12000
+    method: exactcoloc_mm_gaussian_M50
+    config: gaussian EB, M=50, p1=p2=1e-4, p12=5e-6, n_mc=16384, mismatch=True, mm_iter=2, mm_cross_terms=True, no-compile
+    status_ok: 12000
+  notes: "B-mm (DESIGN_P2 \xA72) on screen_v2 through eval.harness; runs.json lists harness run dirs"
+  created: '2026-10-28T11:59:20+01:00'
+- name: famB_mm_ladder
+  version: '1'
+  status: ok
+  path: results/famB/p9_ladder/ladder_Bmm.json
+  producing_commit: bcf1f6436f8f558d80ee0b7b8a5d205b6aee9d6d
+  producing_job: famB_mm_ladder
+  dirty_tree: false
+  checksum: 5c61f7b8f737d2c7b76c33cb2315d09e4f6f24c46e20825cb3fecc5b440d21ca
+  checksum_mode: full
+  fast_checksum: 2c45847f3412ab4723831f0f8603e99cad82bca6fc54438d5829956e8499e513
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    inputs: famB_mm_screen_v2@1, famB_screen_v2@1, baselines_screen_v2@1, screen_v2@2
+    n_boot: 2000
+    decisions: DESIGN_P2 frozen cb6bdd0; P4-1
+  notes: 'B-mm ladder: gate PASS; rule (c) at OP2 KILL (L4, readings ii and iii); B1 at OP2 FAIL'
+  created: '2026-10-28T12:01:10+01:00'
+- name: famB_mm_m4_valid
+  version: '1'
+  status: ok
+  path: results/famB/p9_m4_valid/Bmm_M50
+  producing_commit: bcf1f6436f8f558d80ee0b7b8a5d205b6aee9d6d
+  producing_job: famB_mm_m4_valid_r3
+  dirty_tree: false
+  checksum: 5fe4eedb62ec88aca43240a2d5382a221dbba1a1b8fe8fabd2e1a75e8598a337
+  checksum_mode: full
+  fast_checksum: 42af01022a0be1cd3ca4085503754b1163e2130c24be4549c7721d2319c12658
+  size_gb: 0.007
+  n_files: 2
+  schema:
+    source: valid_grid_v1@1
+    subsample: m4_subsample@1 main
+    n_loci: 12170
+    method: exactcoloc_mm_gaussian_M50
+    config: gaussian EB, M=50, p12=5e-6, n_mc=16384, mismatch=True, mm_iter=2, mm_cross_terms=True
+    status_ok: 12170
+  notes: B-mm on the M4 main subsample (descriptive; B-mm killed on screen)
+  created: '2026-10-28T12:23:36+01:00'
+- name: famB_mm_m4_eval
+  version: '1'
+  status: ok
+  path: results/famB/p9_m4_eval/m4_Bmm_v1.json
+  producing_commit: a50c567efb43ab4b722b436a2175cf9ac7f0c1f5
+  producing_job: famB_mm_m4_eval
+  dirty_tree: false
+  checksum: e0a93c18a0a34df45140b003a949fa8f00fe3c0e0f0a3429b239ab875a2ebe09
+  checksum_mode: full
+  fast_checksum: 2f93a0c13bee1de9b46720adb32a311212936a4ed34f24f74f7a7f32400ae7fd
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    inputs: famB_mm_m4_valid@1, m4_valid_baselines@3 (coloc_susie_mm half runs 977229 + 9ee9eb), m4_subsample@1
+    n_boot: 2000
+    unit: block
+  notes: 'B-mm M4: realistic AUPRC 0.860 vs coloc_susie_mm 0.899, diff -0.039 +- 0.009 (block) -> candidacy bar FAIL (descriptive; B-mm killed)'
+  created: '2026-10-28T12:35:02+01:00'
+- name: famC_trainregion_m4
+  version: '1'
+  status: ok
+  path: data/processed/famC/sets/trainregion_m4_v1
+  producing_commit: b4c4c0b13cda297c50c3b1350bf8f9b42d4f13cd
+  producing_job: famC_p9_trainregion_m4_v1_r2
+  dirty_tree: false
+  checksum: a08ddf3604a7164d9aa2bb43b7c864039294406677bf9f455782fd2cffd1b776
+  checksum_mode: fast
+  fast_checksum: a08ddf3604a7164d9aa2bb43b7c864039294406677bf9f455782fd2cffd1b776
+  size_gb: 73.634
+  n_files: 68
+  schema:
+    n_loci: 11599
+    split: train
+    seed: 20261030
+    key_prefix: famC_trainregion
+    cells: 34
+    per_cell: S100/D100/W100,G/U<=30
+    n_anchor_blocks: 32
+    config: configs/testset_v1.yaml
+  notes: "Train-block locus set with the M4 design (DESIGN_P2 \xA72 C region gap) built by scripts/famC_eval/build_trainregion.py (sim.cells.build_set, GridPlan as sim.testset); master file trainregion_m4_v1.h5 + truth parquet sit next to this part directory. 32 anchor blocks (M4 main: 80). Never used for training/tuning."
+  created: '2026-10-28T13:31:56+01:00'
+- name: famC_train_v1
+  version: '1'
+  status: ok
+  path: data/processed/famC/train_v1
+  producing_commit: fba53768055f8e806ae4bf626e0f23b53c8ea275
+  producing_job: famC_p9_gen_train_v1_w0
+  dirty_tree: false
+  checksum: 4aa5e684d02490906e3c8b37d4f1a0dd8a399819383997caa6b0057b1e223825
+  checksum_mode: fast
+  fast_checksum: 4aa5e684d02490906e3c8b37d4f1a0dd8a399819383997caa6b0057b1e223825
+  size_gb: 76.956
+  n_files: 300
+  schema:
+    n_loci: 600000
+    shards: 296
+    split: train
+    seed: 20261030
+    levels: L0,L1,L2,L3,L4
+    holdout: L6,L6c
+    accept: natural
+    n_noise: 2
+    lpw: 128
+    M: 128
+    window_visits: 2344
+    workers: 4
+    format: famC.simadapter.compact
+  notes: "Family C phase-2 training records (DESIGN_P2 \xA72 C), committed simulator, train windows, 4 GPU workers (jobs famC_p9_gen_train_v1_w0..w3 @fba5376); worker k visits window steps k, k+4, ... Learning-curve subsets = first 37/74/148/296 sorted shards (75,776/150,000/300,000/600,000)."
+  created: '2026-10-28T13:56:31+01:00'
+- name: famB_m4_valid
+  version: '1'
+  status: ok
+  path: results/famB/p9_m4_valid/B1_M50
+  producing_commit: bcf1f6436f8f558d80ee0b7b8a5d205b6aee9d6d
+  producing_job: famB_p1_m4_valid_r3
+  dirty_tree: false
+  checksum: f1de8d6694d530f0bdc045520f3a6142e3103297d0af04f9621bde6569bd2336
+  checksum_mode: full
+  fast_checksum: 23309b8218f878259fe5ad31c364c89c748330d5103a1bd661d509e60968eaa4
+  size_gb: 0.004
+  n_files: 2
+  schema:
+    source: valid_grid_v1@1
+    subsample: m4_subsample@1 main
+    n_loci: 12170
+    method: exactcoloc_gaussian_M50
+    config:
+      phase-1 primary (P3-7): gaussian EB, M=50, p1=p2=1e-4, p12=5e-6, n_mc=16384, compile
+    config_sha256_16: 14bb821b1f076ad1
+    status_ok: 12170
+  notes: 'DECISIONS P4-2: phase-1 B (frozen primary config, unchanged phase-1 code path; commit bcf1f64 adds only the Phi=None-guarded B-mm branch) on M4 main; comparator only, no phase-1 verdict changes'
+  created: '2026-10-28T14:08:03+01:00'
+- name: famB_mm_m4_eval
+  version: '2'
+  status: ok
+  path: results/famB/p9_m4_eval/m4_Bmm_v2.json
+  producing_commit: 5a771b3f6468593fea1697f44a4b5073f9970d7c
+  producing_job: famB_mm_m4_eval_v2
+  dirty_tree: false
+  checksum: ae09e9e4027667c24510378c87e05e75571788eeefd0e19d305846b3b58fff8a
+  checksum_mode: full
+  fast_checksum: 197dbe750e323b41c3b1f8bebb66401d59eb2c7e8c1f85b5a1b76944de1a85b3
+  size_gb: 0.0
+  n_files: 1
+  schema:
+    inputs: famB_mm_m4_valid@1, famB_m4_valid@1, m4_valid_baselines@3 (coloc_susie_mm halves), m4_subsample@1
+    n_boot: 2000
+    unit: block
+  notes: v1 + phase-1 B (famB_m4_valid@1) column and B-mm vs phase-1 B contrast; same B-mm/csmm numbers as v1
+  created: '2026-10-28T14:13:59+01:00'
+- name: famC_C2_model
+  version: '1'
+  status: ok
+  path: results/famC/p9_main_600k
+  producing_commit: f7cf358173ab737150437a415a7ee9996f0a848b
+  producing_job: famC_p9_main_600k_r2
+  dirty_tree: false
+  checksum: 13162e8f5128e9d391e5ec26c921be49b96c46571c429cfa88559c73b425b1f0
+  checksum_mode: full
+  fast_checksum: a2e343d86412911e78341e5ec829f4dd2373039c928091d299ec2d1726e85af3
+  size_gb: 0.005
+  n_files: 5
+  schema:
+    train: famC_train_v1@1
+    n_train: 600000
+    shards: 296
+    steps: 18750
+    batch: 256
+    lr: 3e-4
+    warmup: 1000
+    cosine_floor: 0.02
+    arch: C0_d128_L4_K16
+    params: 1038582
+    checkpoint: model.pt_final_step
+    class_w: main
+  notes: "Pre-declared final C2 checkpoint (DESIGN_P2 \xA72 C): timing pilot fixed 600k; final-step model.pt, no selection on validation. GPU 60 min."
+  created: '2026-10-28T15:07:35+01:00'
+- name: famC_floor_600k
+  version: '1'
+  status: ok
+  path: results/famC/p9_floor_600k
+  producing_commit: f7cf358173ab737150437a415a7ee9996f0a848b
+  producing_job: famC_p9_floor_600k
+  dirty_tree: false
+  checksum: 89d9c92bf130dd63751af231569e5d7a9404383ceea93bb03e03221d8bdb38f1
+  checksum_mode: full
+  fast_checksum: c3db7ad383a6df4a2bc207c1d7e01601d86ba9faf9397e2e9821b9c38eae90af
+  size_gb: 0.014
+  n_files: 4
+  schema:
+    train: famC_train_v1@1
+    n_train: 600000
+    shards: 296
+    model: lightgbm_multiclass
+    feats: 39
+    early_stop: 10pct_train_split
+  notes: "LightGBM floor (DESIGN \xA75 C) on the same 600k records as the C2 network; features cached by famC.floor featurize (CPU) in data/processed/famC/floor_feats/train_v1"
+  created: '2026-10-28T15:07:44+01:00'
+- name: famC_nold_600k
+  version: '1'
+  status: ok
+  path: results/famC/p9_nold_600k
+  producing_commit: f7cf358173ab737150437a415a7ee9996f0a848b
+  producing_job: famC_p9_nold_600k_r2
+  dirty_tree: false
+  checksum: 85141ba58a9fcbbe82bb90eb8e6b731f88f7f634d5885d96af5df01e0dfd68b7
+  checksum_mode: full
+  fast_checksum: 1113ddbdee65763e6fb744ece6118940ffed4fdfd148bda70f918068c06e7e35
+  size_gb: 0.005
+  n_files: 5
+  schema:
+    train: famC_train_v1@1
+    n_train: 600000
+    shards: 296
+    steps: 18750
+    variant: nold
+    arch: C0_d128_L4_K16
+    checkpoint: model.pt_final_step
+  notes: No-LD ablation (README C-A4) at the C2 size and schedule, same records
+  created: '2026-10-28T15:09:42+01:00'
+- name: famC_C2
+  version: '1'
+  status: ok
+  path: results/famC/c2_v1
+  producing_commit: 45921a837f9dfd2623be22c8095782a4d47358ef
+  producing_job: famC_p9_c2_eval
+  dirty_tree: false
+  checksum: f2245e6f92cc59112ba5b42e33cd52558ec765466c315ad0c78b7490d0561cd2
+  checksum_mode: full
+  fast_checksum: c7d267f73b15688be0c5869fbbbe93023f6d29f1ee5bfe1320e5c8c9f3c38635
+  size_gb: 0.005
+  n_files: 9
+  schema:
+    verdict: FAIL
+    failed_condition: iii_beats_nold
+    ids: m4_subsample@1:main.txt
+    n: 12170
+    n_boot: 2000
+    unit: block
+    failure_mode: least_favourable
+    comparators: famA_m4_valid@1,famB_m4_valid@1
+    model: famC_C2_model@1
+    floor: famC_floor_600k@1
+    nold: famC_nold_600k@1
+    trainregion: famC_trainregion_m4@1
+  notes: c2.json (scripts/famC_eval/c2_eval.py) + harness predictions net_m4, nold_m4, floor_m4, net_trainregion; joint BCa benchmark results/benchmarks/20261028T143030Z_famC_C2_m4 (job famC_p9_c2_bench). Pending independent recompute.
+  created: '2026-10-28T15:46:01+01:00'
+- name: famG_mm_identity
+  version: '1'
+  status: ok
+  path: results/famG_mm/identity_v2
+  producing_commit: bcc841ffa46eb7f593729247216be9e9cc9b60eb
+  producing_job: famG_mm_perf_v7
+  dirty_tree: false
+  checksum: c27764e200c82e3a312016d5d5038ed2aa54cc960e1e670189f98bd2664b5c20
+  checksum_mode: full
+  fast_checksum: d7a1fa4613d0cc482bc5f4b49b7e3a46be2bffa298a97a63a75ca23cef02f59a
+  size_gb: 0.377
+  n_files: 354
+  schema:
+    n_loci: 100
+    cells: L2_P1_r_p=0.0,L2_P3_rho=0.5,L4_P1_r_p=0.0,L4_P3_rho=0.5
+    reference: susieR 0.16.6 via run_susie016_mm.R (= coloc_susie_mm wrapper, bit-identical)
+    shipped_commit: bcc841f
+  notes: 'G-mm identity: r016/ (R ref, job famG_mm_identity_ref_v2), pert/ (P4-3 10-seed 1e-14 spread, job famG_mm_sens_v1), cmp_v7/ + sens_v7/ (shipped build), traj/ (job famG_mm_traj_v1); earlier builds in cmp*/sens*. Verdict P4-6: 199/200; fails amended P4-3a on L4_P1 W 0007201 t1.'
+  created: '2026-10-28T18:30:02+01:00'
+- name: famG_mm_timing
+  version: '1'
+  status: ok
+  path: results/famG_mm/timing_v1
+  producing_commit: bcc841f
+  producing_job: null
+  dirty_tree: false
+  checksum: ac577e5d947a55037667ffb5391fae73eac47c07c88c81937de6c01d00016ce7
+  checksum_mode: full
+  fast_checksum: 89ce0bfe852917be782bfb3482c7774cb548e8c1e8c30787a7db7b06d905e96b
+  size_gb: 0.009
+  n_files: 29
+  schema:
+    slice: famG_mm_slice2000@1
+    gmm_loci_per_h_median: 31838
+    coloc_susie_mm_loci_per_h_median: 6670
+    coloc_susie_014_loci_per_h: 7624
+    ratio_mm: 4.77
+    ratio_014: 4.18
+    cpu_workers: 40
+    producing_job: famG_mm_timing_v1
+  notes: DESIGN 7.7 exclusive slot 16:17-18:12 (job famG_mm_timing_v1, ended by its 115-min orch timeout during the 2nd 0.14.2 repeat, which is discarded; PI fallback set 3 gmm, 3 mm, 1 cs complete in timing_summary.json). Post-hoc 4-worker diagnostic in results/famG_mm/timing_diag_v1 (job famG_mm_timing_diag_v1), not pre-registered.
+  created: '2026-10-28T18:30:09+01:00'

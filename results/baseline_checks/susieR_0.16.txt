@@ -1,0 +1,76 @@
+susieR 0.16.6 from /cluster/scratch/mumarc/hackathon_eqtl_gwas/env/rlib_susie016/susieR 
+susie_rss args:
+ [1] "z"                            "R"                           
+ [3] "n"                            "X"                           
+ [5] "bhat"                         "shat"                        
+ [7] "var_y"                        "L"                           
+ [9] "maf"                          "maf_thresh"                  
+[11] "scaled_prior_variance"        "residual_variance"           
+[13] "prior_weights"                "null_weight"                 
+[15] "standardize"                  "estimate_residual_variance"  
+[17] "estimate_residual_method"     "z_method"                    
+[19] "estimate_prior_variance"      "estimate_prior_method"       
+[21] "prior_variance_grid"          "mixture_weights"             
+[23] "unmappable_effects"           "check_null_threshold"        
+[25] "prior_tol"                    "residual_variance_lowerbound"
+[27] "residual_variance_upperbound" "model_init"                  
+[29] "s_init"                       "coverage"                    
+[31] "min_abs_corr"                 "max_iter"                    
+[33] "L_greedy"                     "greedy_lbf_cutoff"           
+[35] "tol"                          "convergence_method"          
+[37] "verbose"                      "track_fit"                   
+[39] "n_purity"                     "median_abs_corr"             
+[41] "cs_extension_corr"            "refine"                      
+[43] "R_finite"                     "R_mismatch"                  
+[45] "control"                      "alpha0"                      
+[47] "beta0"                        "init_only"                   
+[49] "slot_prior"                  
+R_mismatch choices:
+[1] "none"   "eb"     "eb_mix"
+HINT: Setting max_iter = 50 for the SuSiE RSS model because slow convergence is often a sign of unstable summary-statistics fitting. To disable this message, explicitly set max_iter = 50 or another value in the susie_rss() call.
+standard, in-sample R: CS:
+$L2
+[1] 653
+
+$L1
+[1] 773 777
+
+$L3
+ [1] 360 362 365 366 368 372 373 374 379 381 383 384 386 387 388 389 391 392 396
+[20] 397 398 399 400 401 403 404 405 407 408 415
+
+HINT: Setting max_iter = 50 for the SuSiE RSS model because slow convergence is often a sign of unstable summary-statistics fitting. To disable this message, explicitly set max_iter = 50 or another value in the susie_rss() call.
+HINT: Setting max_iter = 50 for the SuSiE RSS model because slow convergence is often a sign of unstable summary-statistics fitting. To disable this message, explicitly set max_iter = 50 or another value in the susie_rss() call.
+HINT: Switching to PIP-based convergence: R uncertainty inflation modifies per-variant SER likelihoods, which prevents a consistent model-level ELBO.
+ref-panel LD, standard CS:
+$L2
+[1] 653
+
+$L1
+[1] 773 777
+
+$L3
+ [1] 362 372 373 374 379 381 383 384 386 387 388 389 391 392 396 397 398 399 400
+[20] 401 403 404 405 407 408 409 410 415 419 424
+
+ref-panel LD, R_finite=B + eb_mix CS:
+$L2
+[1] 653
+
+$L1
+[1] 773 777
+
+$L3
+ [1] 360 361 362 365 366 367 368 369 372 373 374 379 381 383 384 386 387 388 389
+[20] 391 392 396 397 398 399 400 401 402 403 404 405 407 408 409 410 415 419 424
+
+true causal idx: 403 653 773 
+ [1] "B"                    "p"                    "R_frob_sq_debiased"  
+ [4] "effective_rank"       "r_over_B"             "Rhat_diag_deviation" 
+ [7] "lambda_bias"          "B_corrected"          "R_mismatch"          
+[10] "per_variable_penalty" "Q_art"                "artifact_flag"       
+[13] "artifact_evaluable"   "low_eigen_count"      "low_eigen_fraction"  
+[16] "eig_delta"            "mode_label"           "R_mismatch_method"   
+[19] "R_mismatch_init"      "ser_model"            "bf_attenuation"      
+[22] "R_sensitivity_flag"   "R_reliability_flag"   "SER_fallback"        
+SER_fallback: FALSE  lambda_bias: 0  B_corrected: 300  Q_art: 0.06071704 

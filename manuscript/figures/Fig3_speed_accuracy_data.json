@@ -1,0 +1,46 @@
+{
+ "coloc_susie_mm": {
+  "worker_s_per_locus": 15.766839367269199,
+  "auprc_realistic": 0.9
+ },
+ "coloc_abf": {
+  "worker_s_per_locus": 0.07772241266561082,
+  "auprc_realistic": 0.86
+ },
+ "famB_exactcoloc_gaussian_M50": {
+  "worker_s_per_locus": 0.060777325537805155,
+  "auprc_realistic": 0.829
+ },
+ "coloc_susie": {
+  "worker_s_per_locus": 17.876088993256914,
+  "auprc_realistic": 0.717
+ },
+ "famG_coloc_susie_gpu": {
+  "worker_s_per_locus": 0.23599684567570905,
+  "auprc_realistic": 0.719
+ },
+ "lead_snp": {
+  "worker_s_per_locus": 0.07761211172613677,
+  "auprc_realistic": 0.704
+ },
+ "sharepro": {
+  "worker_s_per_locus": 3.6162288109586584,
+  "auprc_realistic": 0.635
+ },
+ "coloc_prop_test": {
+  "worker_s_per_locus": 1.5654301725091235,
+  "auprc_realistic": 0.632
+ },
+ "prop_coloc": {
+  "worker_s_per_locus": 1.2033983825095882,
+  "auprc_realistic": 0.552
+ },
+ "colocboost_m1": {
+  "worker_s_per_locus": 0.8397737420475132,
+  "auprc_realistic": 0.787
+ },
+ "colocboost": {
+  "worker_s_per_locus": 10.493360090512258,
+  "auprc_realistic": 0.678
+ }
+}

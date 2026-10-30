@@ -1,0 +1,9 @@
+[orch] job p4b_scr_rest_coloc_abf_W0p1_p12_5em06_r2 start 2026-10-27T11:43:08+01:00 host eu-g6-001 commit ad021dcdc4 pid 1009526
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method coloc_abf --set data/processed/sets/screen_v2.h5 --ids-file results/baselines_screen_v2/ids/rest_all.txt --workers 2 --pilot-timeout --results-dir results/baselines_screen_v2/runs --label 'p4 screen_v2 other 5 cells' --run-name coloc_abf_W0.1_p12_5e-06 --kwargs '{'W': 0.1, 'p12': 5e-06}'
+[baselines.run] coloc_abf_W0.1_p12_5e-06: 10000 loci, p_max=6252, workers=2, timeout=60s
+[harness] run 20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac: 10000 loci, mode=cpu, workers=2
+[harness] 1676/10000 tasks done
+[harness] 5652/10000 tasks done
+[harness] done 20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac: {'ok': 10000, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 10000} in 86.0s
+{"run_id": "20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac", "run_dir": "results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac", "counts": {"ok": 10000, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 10000}}
+[orch] exit 0 at 2026-10-27T11:46:54+01:00

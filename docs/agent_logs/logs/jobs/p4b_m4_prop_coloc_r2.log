@@ -1,0 +1,76 @@
+[orch] job p4b_m4_prop_coloc_r2 start 2026-10-27T13:26:30+01:00 host eu-g6-001 commit ad021dcdc4 pid 1129944
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method prop_coloc --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/m4_subsample_v1/main.txt --workers 6 --pilot-timeout --results-dir results/baselines_m4/runs --label 'p4 M4 valid_grid_v1 subsample m4_subsample@1'
+[baselines.run] prop_coloc: 12170 loci, p_max=5371, workers=6, timeout=60s
+[harness] run 20261027T130107Z_prop_coloc_valid_grid_v1_b390f1: 12170 loci, mode=cpu, workers=6
+[harness] 188/12170 tasks done
+[harness] 473/12170 tasks done
+[harness] 642/12170 tasks done
+[harness] 878/12170 tasks done
+[harness] 1169/12170 tasks done
+[harness] 1443/12170 tasks done
+[harness] 1661/12170 tasks done
+[harness] 1928/12170 tasks done
+[harness] 2153/12170 tasks done
+[harness] 2367/12170 tasks done
+[harness] 2574/12170 tasks done
+[harness] 2739/12170 tasks done
+[harness] 2931/12170 tasks done
+[harness] 3088/12170 tasks done
+[harness] 3300/12170 tasks done
+[harness] 3430/12170 tasks done
+[harness] 3616/12170 tasks done
+[harness] 3790/12170 tasks done
+[harness] 4013/12170 tasks done
+[harness] 4180/12170 tasks done
+[harness] 4371/12170 tasks done
+[harness] 4518/12170 tasks done
+[harness] 4689/12170 tasks done
+[harness] 4822/12170 tasks done
+[harness] 4959/12170 tasks done
+[harness] 5166/12170 tasks done
+[harness] 5397/12170 tasks done
+[harness] 5599/12170 tasks done
+[harness] 5842/12170 tasks done
+[harness] 6060/12170 tasks done
+[harness] 6242/12170 tasks done
+[harness] 6440/12170 tasks done
+[harness] 6633/12170 tasks done
+[harness] 6857/12170 tasks done
+[harness] 7035/12170 tasks done
+[harness] 7212/12170 tasks done
+[harness] 7386/12170 tasks done
+[harness] 7547/12170 tasks done
+[harness] 7728/12170 tasks done
+[harness] 7967/12170 tasks done
+[harness] 8204/12170 tasks done
+[harness] 8444/12170 tasks done
+[harness] 8657/12170 tasks done
+[harness] 8793/12170 tasks done
+[harness] 8942/12170 tasks done
+[harness] 9082/12170 tasks done
+[harness] 9211/12170 tasks done
+[harness] 9369/12170 tasks done
+[harness] 9485/12170 tasks done
+[harness] 9650/12170 tasks done
+[harness] 9788/12170 tasks done
+[harness] 9881/12170 tasks done
+[harness] 10039/12170 tasks done
+[harness] 10147/12170 tasks done
+[harness] 10267/12170 tasks done
+[harness] 10440/12170 tasks done
+[harness] 10573/12170 tasks done
+[harness] 10708/12170 tasks done
+[harness] 10820/12170 tasks done
+[harness] 10915/12170 tasks done
+[harness] 11027/12170 tasks done
+[harness] 11161/12170 tasks done
+[harness] 11289/12170 tasks done
+[harness] 11459/12170 tasks done
+[harness] 11577/12170 tasks done
+[harness] 11672/12170 tasks done
+[harness] 11815/12170 tasks done
+[harness] 11971/12170 tasks done
+[harness] 12127/12170 tasks done
+[harness] done 20261027T130107Z_prop_coloc_valid_grid_v1_b390f1: {'ok': 11719, 'nonconverged': 0, 'failed': 451, 'timeout': 0, 'expected': 12170} in 2093.7s
+{"run_id": "20261027T130107Z_prop_coloc_valid_grid_v1_b390f1", "run_dir": "results/baselines_m4/runs/20261027T130107Z_prop_coloc_valid_grid_v1_b390f1", "counts": {"ok": 11719, "nonconverged": 0, "failed": 451, "timeout": 0, "expected": 12170}}
+[orch] exit 0 at 2026-10-27T14:36:02+01:00

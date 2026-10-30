@@ -1,0 +1,258 @@
+# Methods of the ONE test run (DESIGN v4 §6.3, §7.3), FROZEN for frozen-v1. Prepared by the eval agent
+# (p6.dryrun_testpipeline) from configs/proposals/test_methods_v1_mvr.yaml as instructed by the PI after D16:
+#   * no primary candidate (D16, MVR route): claims.json writes "no candidate" for C1-C4; the run is the C5 benchmark;
+#   * tier-1 baselines + strength_only + lead_snp; famB (ExactColoc Gaussian-EB, M = 50, p12 = 5e-6) and famG (GPU
+#     coloc-SuSiE) as PRE-DECLARED DESCRIPTIVE entries (no claims; three-way calls at matched-W and fixed 0.8);
+#   * metric_config = M4 operating points (operating_points_final.json, P3-30; sha256 below); coloc.abf W = 0.2,
+#     p12 = 5e-6; no recalibration for SharePro a_S, ColocBoost a_S (both modes) and mvSuSiE (P3-30);
+#   * slow-method subsamples from configs/testset_v1.yaml (ColocBoost 40/40/40, mvSuSiE 20/20/20; P3-12/P3-17);
+#   * worker counts / memory tuned for 64 cores / 120 GB (p6 dry run dry_v4; projected wall 4.6 h central, 6.5 h
+#     conservative).
+version: 1
+status: frozen
+design_ref: "DESIGN.md v4 \xA70, \xA72.5, \xA74.3, \xA76.3, \xA77.3, \xA78; D16 (MVR route), D17; DECISIONS.md P3-12, P3-14,\
+  \ P3-17, P3-23, P3-28, P3-30"
+candidates:
+  primary: null
+  decision: D16
+  secondary: []
+c3_eligible_baselines:
+- coloc_abf
+- coloc_susie
+- coloc_susie_mm
+- sharepro
+- colocboost
+- colocboost_m1
+- mvsusie
+real_data_arms:
+  R2:
+    n: 800
+  R3b:
+    n: 1237
+  R4b:
+    n: 600
+    ld_conditions:
+    - in_sample
+    - reference
+  methods:
+  - primary_candidate
+  - coloc_abf
+  - coloc_susie
+  - coloc_susie_mm
+  - sharepro
+  - strength_only
+  builder: data.real.extract:build_test_arm
+methods:
+- name: coloc_abf
+  target: baselines.methods:ColocABF
+  kwargs:
+    timeout: 54
+    W: 0.2
+    p12: 5.0e-06
+  mode: cpu
+  n_workers: 2
+  timeout_s: 60
+  mem_gb_per_worker: 0.5
+  expected_s_per_locus: 0.155
+  metric_config:
+    t_S: 0.8311721911648525
+    t_D: 0.5803111143879112
+    recal_a_S: -1.2280431639752656
+    recal_a_D: -8.731448932324927
+  metric_config_source: M4 main benchmark 20261027T182437Z_p4_m4_main_partial
+- name: lead_snp
+  target: eval.reference_methods:LeadSNPRule
+  kwargs: {}
+  mode: cpu
+  n_workers: 2
+  timeout_s: 60
+  mem_gb_per_worker: 0.5
+  expected_s_per_locus: 0.139
+  metric_config:
+    t_S: null
+    t_D: null
+    recal_a_S: null
+    recal_a_D: null
+- name: sharepro
+  target: baselines.methods:SharePro
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 8
+  timeout_s: 60
+  mem_gb_per_worker: 0.7
+  expected_s_per_locus: 2.39
+  metric_config:
+    t_S: 0.8021643891632574
+    t_D: 0.23149745386910034
+    recal_a_S: null
+    recal_a_D: 3.717009480847768
+  metric_config_source: 'M4 main benchmark 20261027T182437Z_p4_m4_main_partial; recalibration not applied for recal_a_S
+    (P3-30: degenerate intercept; recalibrated ECE not estimable)'
+- name: coloc_susie
+  target: baselines.methods:ColocSusie
+  kwargs:
+    timeout: 324
+  mode: cpu
+  n_workers: 20
+  timeout_s: 360
+  mem_gb_per_worker: 3.0
+  expected_s_per_locus: 14.75
+  metric_config:
+    t_S: 0.8784511379171775
+    t_D: 0.8036174141574123
+    recal_a_S: -2.8538447050360407
+    recal_a_D: -3.249584767969364
+  metric_config_source: M4 main sample (oppoints on runs p4b_m4_coloc_susie_half_a/b; finished 22:17)
+- name: coloc_susie_mm
+  target: baselines.methods:ColocSusieMM
+  kwargs:
+    timeout: 216
+  mode: cpu
+  n_workers: 20
+  timeout_s: 240
+  mem_gb_per_worker: 2.8
+  expected_s_per_locus: 13.44
+  metric_config:
+    t_S: 0.8198729398321837
+    t_D: 0.6920740371206827
+    recal_a_S: -1.0278543592233402
+    recal_a_D: 0.047819203830938385
+  metric_config_source: 'screen_fallback (P3-27): M4 runs unfinished at 22:20'
+- name: colocboost
+  target: baselines.methods:ColocBoost
+  kwargs:
+    timeout: 108
+  mode: cpu
+  n_workers: 8
+  timeout_s: 120
+  mem_gb_per_worker: 1.3
+  expected_s_per_locus: 6.71
+  subsample: slow_method_subsample
+  metric_config:
+    t_S: 0.46620000000000006
+    t_D: 5.0e-324
+    recal_a_S: null
+    recal_a_D: 4.885883464161857
+  metric_config_source: 'M4 slow benchmark 20261027T185341Z_p4_m4_slow_partial; recalibration not applied for recal_a_S
+    (P3-30: degenerate intercept; recalibrated ECE not estimable)'
+- name: colocboost_m1
+  target: baselines.methods:ColocBoostM1
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 4
+  timeout_s: 60
+  mem_gb_per_worker: 1.0
+  expected_s_per_locus: 0.42
+  subsample: slow_method_subsample
+  metric_config:
+    t_S: 0.8836000000000002
+    t_D: 0.37810000000000005
+    recal_a_S: null
+    recal_a_D: -9.309151763771357
+  metric_config_source: 'M4 slow benchmark 20261027T185341Z_p4_m4_slow_partial; recalibration not applied for recal_a_S
+    (P3-30 intent, PI 22:5x: intercept 10.04 degenerate; recalibrated ECE not estimable)'
+- name: mvsusie
+  target: baselines.methods:MvSusie
+  kwargs:
+    timeout: 972
+  mode: cpu
+  n_workers: 14
+  timeout_s: 1080
+  mem_gb_per_worker: 3.0
+  expected_s_per_locus: 70.35
+  subsample: slow_method_subsample
+  metric_config:
+    t_S: 1.0000000000000002
+    t_D: 5.0e-324
+    recal_a_S: null
+    recal_a_D: null
+  metric_config_source: 'screen_fallback (P3-27): M4 runs unfinished at 22:20; recalibration not applied for recal_a_S,
+    recal_a_D (P3-30: degenerate intercept; recalibrated ECE not estimable)'
+- name: prop_coloc
+  target: baselines.methods:PropColoc
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 6
+  timeout_s: 60
+  mem_gb_per_worker: 1.3
+  expected_s_per_locus: 0.88
+  metric_config:
+    t_S: null
+    t_D: null
+    recal_a_S: null
+    recal_a_D: null
+- name: coloc_prop_test
+  target: baselines.methods:ColocPropTest
+  kwargs:
+    timeout: 54
+  mode: cpu
+  n_workers: 6
+  timeout_s: 60
+  mem_gb_per_worker: 1.3
+  expected_s_per_locus: 1.32
+  metric_config:
+    t_S: null
+    t_D: null
+    recal_a_S: null
+    recal_a_D: null
+- name: strength_only
+  target: eval.reference_methods:StrengthOnly
+  kwargs:
+    table: results/baselines_m4/m4_valid_v2/main/strength_table_full.json
+  mode: cpu
+  n_workers: 2
+  timeout_s: 60
+  mem_gb_per_worker: 0.5
+  expected_s_per_locus: 0.05
+  metric_config:
+    t_S: 0.19396712638528904
+    t_D: 0.19962158544105324
+    recal_a_S: -0.007132558540755564
+    recal_a_D: -0.0073992313228411315
+  metric_config_source: M4 main benchmark 20261027T182437Z_p4_m4_main_partial
+- name: famB_exactcoloc_gaussian_M50
+  target: famB.method:ExactColoc
+  kwargs:
+    mode: gaussian
+    M: 50
+    p12: 5.0e-06
+  mode: batch
+  gpu: true
+  batch_size: 64
+  timeout_s: 60
+  mem_gb_per_worker: 6.0
+  expected_s_per_locus: 0.05
+  descriptive: true
+  metric_config:
+    t_S: 0.013366699218750002
+    t_D: 0.24871826171875003
+    recal_a_S: null
+    recal_a_D: null
+  metric_config_source: C3 rule fitted on validation screen_v2@2 (famB_screen_v2@1 M50 predictions; least-favourable, realistic
+    = pooled L2/L4 x P1/P3; P3-27 fallback rule); no recalibration (descriptive entry); fixed 0.8/0.8 also reported
+- name: famG_coloc_susie_gpu
+  target: famG.method:GPUColocSusie
+  kwargs:
+    p12: 5.0e-06
+  mode: batch
+  gpu: true
+  batch_size: 32
+  timeout_s: 120
+  mem_gb_per_worker: 6.0
+  expected_s_per_locus: 0.2
+  descriptive: true
+  metric_config:
+    t_S: 0.8784511379171775
+    t_D: 0.8036174141574123
+    recal_a_S: null
+    recal_a_D: null
+  metric_config_source: 'no validation run of famG: the operating point of coloc_susie (M4), which famG reproduces (susieR
+    identity gate, max |dPIP| 6.7e-8); no recalibration (descriptive entry); fixed 0.8/0.8 also reported'
+validation_source:
+  operating_points: results/baselines_m4/m4_valid_v2/operating_points_final.json (m4_valid_baselines@2; P3-30)
+  operating_points_sha256: cb7e28d808f4c3694e8595fb2d9195e1b1a6f72ce2cb95e2eeeac99a8f339863
+  strength_table: results/baselines_m4/m4_valid_v2/main/strength_table_full.json
+  strength_table_sha256: 1c264db97c38c7ea152c402016114ca36f13d349df58f27a3b21022bdcffc34b

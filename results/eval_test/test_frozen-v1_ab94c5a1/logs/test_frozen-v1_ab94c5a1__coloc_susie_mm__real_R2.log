@@ -1,0 +1,9 @@
+00:03:35 [harness] run test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2: 800 loci (800 to run), mode=cpu, workers=20
+00:04:53 [harness] coloc_susie_mm: 1/800 loci done
+00:05:53 [harness] coloc_susie_mm: 47/800 loci done
+00:06:55 [harness] coloc_susie_mm: 115/800 loci done
+00:07:55 [harness] coloc_susie_mm: 189/800 loci done
+00:08:56 [harness] coloc_susie_mm: 285/800 loci done
+00:09:56 [harness] coloc_susie_mm: 435/800 loci done
+00:10:56 [harness] coloc_susie_mm: 632/800 loci done
+00:11:37 [harness] done test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R2: {'ok': 766, 'nonconverged': 34, 'failed': 0, 'timeout': 0, 'expected': 800} in 482.3s

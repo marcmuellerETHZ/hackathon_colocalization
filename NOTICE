@@ -1,0 +1,38 @@
+coloc-agentic-benchmark: licences and third-party data terms
+=============================================================
+
+1. Code
+   All code in this repository (src/, scripts/, mvp/ code, tests/, env/, manuscript/figures/make_figures.py)
+   is released under the MIT License (see LICENSE).
+
+2. Predictions, truth tables and other derived results
+   The contents of results/, datasets/ and mvp/example/, the project record (the root Markdown files, docs/,
+   reviews/) and manuscript/ text and figures are released under the Creative Commons Attribution 4.0 International licence
+   (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), subject to the third-party terms below.
+
+3. Third-party data the derived files rest on
+   * 1000 Genomes Project, 30x high-coverage phased GRCh38 release (IGSR; Byrska-Bishop et al. 2022). Open
+     access, no restrictions on use or redistribution (https://www.internationalgenome.org/IGSR_disclaimer).
+     The simulated loci, their truth tables and the example LD factor in mvp/example/ (genotypes of 150
+     reference-pool samples, standardised) derive from these data. Sample IDs in datasets/splits/pools_v1.tsv are
+     1000 Genomes sample IDs.
+   * eQTL Catalogue release 7 (Kerimov et al. 2021, 2023), CC BY 4.0. Real-data arms R2, R3b and R4b use its
+     summary statistics; only method outputs and identifiers are redistributed here.
+   * FinnGen release R12 (Kurki et al. 2023). Used under FinnGen's terms for public summary statistics: the
+     data may be used freely after the access form, must not be redistributed, and FinnGen must be
+     acknowledged and cited. No FinnGen data are redistributed in this repository; the R3b predictions are
+     derived results (posterior probabilities and calls) with identifiers only. Raw-statistic fields that the
+     pipeline had copied into prediction metadata (lead |z| values, credible-set LD purity) were removed before
+     release (results/README.md). We acknowledge the participants and investigators of the FinnGen study.
+   * GEUVADIS (Lappalainen et al. 2013) via the eQTL Catalogue and 1000 Genomes genotypes (R4b), CC BY 4.0 /
+     EBI terms.
+   * LD blocks: MacDonald et al. 2022 (bioRxiv 10.1101/2022.03.04.483057; github.com/jmacdon/LDblocks_GRCh38).
+     No licence is asserted upstream, so the block files are NOT vendored; scripts/download_annotations.sh
+     downloads them. datasets/splits/blocks_v1.tsv contains this project's tiled blocks and split labels derived from them.
+   * GENCODE v39 gene annotation (open), used to place genes and windows in datasets/splits/genes_v1.tsv.gz.
+   * Beagle GRCh38 genetic map (scripts/download_genetic_map.sh), not vendored.
+
+4. Third-party software
+   The benchmarked methods (coloc, susieR, mvsusieR, colocboost, colocPropTest, prop.coloc, SharePro_coloc,
+   hyprcoloc) are not included; they are installed from their own sources under their own licences
+   (docs/environment/README.md).

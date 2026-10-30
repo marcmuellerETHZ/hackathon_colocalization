@@ -1,0 +1,189 @@
+{
+ "AP weighted ties: mine vs metrics": {
+  "mine": 0.3340659512393816,
+  "code": 0.33406595123938176,
+  "ok": true
+ },
+ "AP weighted ties: sklearn vs metrics": {
+  "mine": 0.3340659512393818,
+  "code": 0.33406595123938176,
+  "ok": true
+ },
+ "AUROC weighted ties: mine vs metrics": {
+  "mine": 0.4484058034217281,
+  "code": 0.448405803421728,
+  "ok": true
+ },
+ "AUROC weighted ties: sklearn vs metrics": {
+  "mine": 0.448405803421728,
+  "code": 0.448405803421728,
+  "ok": true
+ },
+ "cell pooling realistic: same cells": {
+  "mine": "L1|P1|r_p=0.0,L1|P3|rho=0.5,L2|P1|r_p=0.0,L2|P1|r_p=0.6,L2|P2|rho=0.3",
+  "code": "L1|P1|r_p=0.0,L1|P3|rho=0.5,L2|P1|r_p=0.0,L2|P1|r_p=0.6,L2|P2|rho=0.3",
+  "ok": true
+ },
+ "cell pooling realistic: max |diff|": {
+  "mine": 0.0,
+  "code": 0.0,
+  "ok": true
+ },
+ "cell pooling ideal: same cells": {
+  "mine": "L0|P1|r_p=0.0",
+  "code": "L0|P1|r_p=0.0",
+  "ok": true
+ },
+ "cell pooling ideal: max |diff|": {
+  "mine": 0.0,
+  "code": 0.0,
+  "ok": true
+ },
+ "power-matching x pooling weights realistic: max |diff|": {
+  "mine": 1.734723475976807e-18,
+  "code": 0.0,
+  "ok": true
+ },
+ "pm_invariants": {
+  "L1|P1|r_p=0.0": {
+   "S_share": 0.49999999999999994,
+   "cell_mass_over_pool_w": 1.0000000000000002,
+   "nonSD_weight": 0.0
+  },
+  "L1|P3|rho=0.5": {
+   "S_share": 0.5,
+   "cell_mass_over_pool_w": 1.0,
+   "nonSD_weight": 0.0
+  },
+  "L2|P1|r_p=0.0": {
+   "S_share": 0.5,
+   "cell_mass_over_pool_w": 0.9999999999999998,
+   "nonSD_weight": 0.0
+  },
+  "L2|P1|r_p=0.6": {
+   "S_share": 0.5,
+   "cell_mass_over_pool_w": 1.0,
+   "nonSD_weight": 0.0
+  },
+  "L2|P2|rho=0.3": {
+   "S_share": 0.4999999999999999,
+   "cell_mass_over_pool_w": 1.0,
+   "nonSD_weight": 0.0
+  }
+ },
+ "pm_invariants_ok": true,
+ "AUPRC S vs D realistic: mine vs metrics.auprc_sd": {
+  "mine": 0.9114799970501188,
+  "code": 0.9114799970501186,
+  "ok": true
+ },
+ "AUROC S vs D realistic: mine vs metrics.auroc_sd": {
+  "mine": 0.9366029828588396,
+  "code": 0.9366029828588397,
+  "ok": true
+ },
+ "AUROC D vs W realistic: mine vs metrics.auroc_dw": {
+  "mine": 0.6695833333333335,
+  "code": 0.6695833333333325,
+  "ok": true
+ },
+ "C3 t_S: mine vs metrics": {
+  "mine": 0.7700000000000001,
+  "code": 0.7700000000000001,
+  "ok": true
+ },
+ "C3 t_D (S precedence): mine vs metrics": {
+  "mine": 0.5870000000000001,
+  "code": 0.5870000000000001,
+  "ok": true
+ },
+ "C3 hand case (40 W, 1 allowed)": {
+  "mine": 0.964871794871795,
+  "code": 0.964871794871795,
+  "ok": true
+ },
+ "C3 achieved W rates": {
+  "S": 0.020833333333333336,
+  "D": 0.025,
+  "ok": true
+ },
+ "outer join: frame length == expected list": {
+  "mine": 714.0,
+  "code": 714.0,
+  "ok": true
+ },
+ "failed count (5+5+5 missing, 3 failed, 3 NaN s)": {
+  "mine": 21.0,
+  "code": 21.0,
+  "ok": true
+ },
+ "excluded frame length": {
+  "mine": 693.0,
+  "code": 693.0,
+  "ok": true
+ },
+ "LF AUPRC: mine vs metrics": {
+  "mine": 0.691378530785256,
+  "code": 0.691378530785256,
+  "ok": true
+ },
+ "LF AUROC D-vs-W: mine vs metrics": {
+  "mine": 0.58025,
+  "code": 0.5802499999999994,
+  "ok": true
+ },
+ "LF lowers AUPRC vs complete": {
+  "complete": 0.9114799970501186,
+  "lf": 0.691378530785256,
+  "ok": true
+ },
+ "compute_run_metrics n_failed counts missing rows": {
+  "mine": 21.0,
+  "code": 21.0,
+  "ok": true
+ },
+ "compute_run_metrics status 'missing' count": {
+  "mine": 15.0,
+  "code": 15.0,
+  "ok": true
+ },
+ "e2e rows == expected (missing outputs become rows)": {
+  "rows": 60,
+  "expected": 60,
+  "ok": true
+ },
+ "e2e statuses": {
+  "ok": 54,
+  "failed": 4,
+  "nonconverged": 2
+ },
+ "e2e metrics.json auprc_sd realistic vs mine": {
+  "mine": 0.40304665317732086,
+  "code": 0.4030466531773208,
+  "ok": true
+ },
+ "e2e n_failed (2 raised + 2 missing)": {
+  "mine": 4.0,
+  "code": 4.0,
+  "ok": true
+ },
+ "verify_run on untouched run": {
+  "problems": [],
+  "ok": true
+ },
+ "verify_run detects tampered metric": {
+  "problems": [
+   "metric mismatch /methods/flaky/least_favourable/realistic/auprc_sd: 0.4030466531773208 != 0.4130466531773208"
+  ],
+  "ok": true
+ },
+ "verify_run detects a dropped prediction row": {
+  "problems": [
+   "predicted locus ids (order) differ from the manifest's expected ids",
+   "status counts {'ok': 53, 'nonconverged': 2, 'failed': 4, 'timeout': 0, 'expected': 59} != manifest {'expected': 60, 'failed': 4, 'nonconverged': 2, 'ok': 54, 'timeout': 0}",
+   "metric mismatch /methods/flaky/excluded/all/auprc_sd: 0.444964875110413 != 0.43679883235039746"
+  ],
+  "ok": true
+ },
+ "n_failed_checks": 0
+}

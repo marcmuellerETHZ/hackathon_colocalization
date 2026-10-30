@@ -1,0 +1,182 @@
+[get ] tabix_ftp_paths.tsv (0 MB, resume at 0 MB)
+[done] tabix_ftp_paths.tsv
+[get ] dataset_metadata_r7.tsv (0 MB, resume at 0 MB)
+[done] dataset_metadata_r7.tsv
+[get ] population_assignments.tsv (0 MB, resume at 0 MB)
+[done] population_assignments.tsv
+[get ] dataset_id_map.tsv (0 MB, resume at 0 MB)
+[done] dataset_id_map.tsv
+[get ] sceQTL_num_individuals_per_dataset.tsv (0 MB, resume at 0 MB)
+[done] sceQTL_num_individuals_per_dataset.tsv
+[get ] zenodo4678936_GEUVADIS.tsv (0 MB, resume at 0 MB)
+[md5 ] zenodo4678936_GEUVADIS.tsv ok
+[done] zenodo4678936_GEUVADIS.tsv
+[get ] QTD000356.lbf_variable.txt.gz (1524 MB, resume at 0 MB)
+[get ] QTD000356.permuted.tsv.gz (0 MB, resume at 0 MB)
+[get ] QTD000356.credible_sets.tsv.gz (3 MB, resume at 0 MB)
+[get ] QTD000356.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[get ] QTD000356.all.tsv.gz (2797 MB, resume at 0 MB)
+[gzip] QTD000356.permuted.tsv.gz ok
+[done] QTD000356.permuted.tsv.gz
+[done] QTD000356.all.tsv.gz.tbi
+[gzip] QTD000356.credible_sets.tsv.gz ok
+[done] QTD000356.credible_sets.tsv.gz
+[get ] QTD000266.permuted.tsv.gz (0 MB, resume at 0 MB)
+[get ] QTD000266.all.tsv.gz (2906 MB, resume at 0 MB)
+[get ] QTD000266.all.tsv.gz.tbi (2 MB, resume at 0 MB)
+[gzip] QTD000266.permuted.tsv.gz ok
+[done] QTD000266.permuted.tsv.gz
+[get ] QTD000266.credible_sets.tsv.gz (1 MB, resume at 0 MB)
+[done] QTD000266.all.tsv.gz.tbi
+[get ] QTD000266.lbf_variable.txt.gz (526 MB, resume at 0 MB)
+[gzip] QTD000266.credible_sets.tsv.gz ok
+[done] QTD000266.credible_sets.tsv.gz
+[get ] QTD000373.all.tsv.gz (2328 MB, resume at 0 MB)
+[gzip] QTD000266.lbf_variable.txt.gz ok
+[done] QTD000266.lbf_variable.txt.gz
+[get ] QTD000373.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[done] QTD000373.all.tsv.gz.tbi
+[get ] QTD000373.permuted.tsv.gz (0 MB, resume at 0 MB)
+[gzip] QTD000373.permuted.tsv.gz ok
+[done] QTD000373.permuted.tsv.gz
+[get ] QTD000373.credible_sets.tsv.gz (6 MB, resume at 0 MB)
+[gzip] QTD000373.credible_sets.tsv.gz ok
+[done] QTD000373.credible_sets.tsv.gz
+[get ] QTD000373.lbf_variable.txt.gz (2077 MB, resume at 0 MB)
+[gzip] QTD000356.lbf_variable.txt.gz ok
+[done] QTD000356.lbf_variable.txt.gz
+[get ] QTD000549.all.tsv.gz (2962 MB, resume at 0 MB)
+[gzip] QTD000373.all.tsv.gz ok
+[done] QTD000373.all.tsv.gz
+[get ] QTD000549.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[done] QTD000549.all.tsv.gz.tbi
+[get ] QTD000549.permuted.tsv.gz (0 MB, resume at 0 MB)
+[gzip] QTD000549.permuted.tsv.gz ok
+[done] QTD000549.permuted.tsv.gz
+[get ] QTD000549.credible_sets.tsv.gz (4 MB, resume at 0 MB)
+[gzip] QTD000549.credible_sets.tsv.gz ok
+[done] QTD000549.credible_sets.tsv.gz
+[get ] QTD000549.lbf_variable.txt.gz (1032 MB, resume at 0 MB)
+[gzip] QTD000549.lbf_variable.txt.gz ok
+[done] QTD000549.lbf_variable.txt.gz
+[get ] QTD000021.all.tsv.gz (2991 MB, resume at 0 MB)
+[gzip] QTD000266.all.tsv.gz ok
+[done] QTD000266.all.tsv.gz
+[get ] QTD000021.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[done] QTD000021.all.tsv.gz.tbi
+[get ] QTD000021.permuted.tsv.gz (0 MB, resume at 0 MB)
+[gzip] QTD000021.permuted.tsv.gz ok
+[done] QTD000021.permuted.tsv.gz
+[get ] QTD000021.credible_sets.tsv.gz (10 MB, resume at 0 MB)
+[gzip] QTD000021.credible_sets.tsv.gz ok
+[done] QTD000021.credible_sets.tsv.gz
+[get ] QTD000021.lbf_variable.txt.gz (2690 MB, resume at 0 MB)
+[gzip] QTD000356.all.tsv.gz ok
+[done] QTD000356.all.tsv.gz
+[get ] QTD000409.all.tsv.gz (4819 MB, resume at 0 MB)
+[gzip] QTD000373.lbf_variable.txt.gz ok
+[done] QTD000373.lbf_variable.txt.gz
+[get ] QTD000409.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[done] QTD000409.all.tsv.gz.tbi
+[skip] QTD000409.permuted.tsv.gz (verified earlier)
+[skip] QTD000409.credible_sets.tsv.gz (verified earlier)
+[get ] QTD000409.lbf_variable.txt.gz (3533 MB, resume at 0 MB)
+[gzip] QTD000021.lbf_variable.txt.gz ok
+[done] QTD000021.lbf_variable.txt.gz
+[get ] QTD000609.all.tsv.gz (1438 MB, resume at 0 MB)
+[gzip] QTD000021.all.tsv.gz ok
+[done] QTD000021.all.tsv.gz
+[get ] QTD000609.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[done] QTD000609.all.tsv.gz.tbi
+[skip] QTD000609.permuted.tsv.gz (verified earlier)
+[skip] QTD000609.credible_sets.tsv.gz (verified earlier)
+[get ] QTD000609.lbf_variable.txt.gz (123 MB, resume at 0 MB)
+[gzip] QTD000549.all.tsv.gz ok
+[done] QTD000549.all.tsv.gz
+[get ] QTD000110.all.tsv.gz (4744 MB, resume at 0 MB)
+[gzip] QTD000609.lbf_variable.txt.gz ok
+[done] QTD000609.lbf_variable.txt.gz
+[get ] QTD000110.all.tsv.gz.tbi (2 MB, resume at 0 MB)
+[done] QTD000110.all.tsv.gz.tbi
+[skip] QTD000110.permuted.tsv.gz (verified earlier)
+[skip] QTD000110.credible_sets.tsv.gz (verified earlier)
+[get ] QTD000110.lbf_variable.txt.gz (2675 MB, resume at 0 MB)
+[gzip] QTD000609.all.tsv.gz ok
+[done] QTD000609.all.tsv.gz
+[get ] QTD000539.all.tsv.gz (3491 MB, resume at 0 MB)
+[gzip] QTD000409.lbf_variable.txt.gz ok
+[done] QTD000409.lbf_variable.txt.gz
+[get ] QTD000539.all.tsv.gz.tbi (1 MB, resume at 0 MB)
+[done] QTD000539.all.tsv.gz.tbi
+[skip] QTD000539.permuted.tsv.gz (verified earlier)
+[skip] QTD000539.credible_sets.tsv.gz (verified earlier)
+[get ] QTD000539.lbf_variable.txt.gz (2373 MB, resume at 0 MB)
+[gzip] QTD000110.lbf_variable.txt.gz ok
+[done] QTD000110.lbf_variable.txt.gz
+[gzip] QTD000539.all.tsv.gz ok
+[done] QTD000539.all.tsv.gz
+[gzip] QTD000409.all.tsv.gz ok
+[done] QTD000409.all.tsv.gz
+[gzip] QTD000110.all.tsv.gz ok
+[done] QTD000110.all.tsv.gz
+[gzip] QTD000539.lbf_variable.txt.gz ok
+[done] QTD000539.lbf_variable.txt.gz
+scripts/real/download_eqtlcat.sh: line 39: emote_size: command not found
+=== rerun Mon Oct 26 15:42:53 CET 2026 after script-edit glitch (verification pass; all files should be skipped) ===
+curl: (22) The requested URL returned error: 429
+curl: (22) The requested URL returned error: 429
+[skip] tabix_ftp_paths.tsv (verified earlier)
+[skip] dataset_metadata_r7.tsv (verified earlier)
+curl: (22) The requested URL returned error: 429
+[skip] population_assignments.tsv (verified earlier)
+[skip] dataset_id_map.tsv (verified earlier)
+[skip] sceQTL_num_individuals_per_dataset.tsv (verified earlier)
+[skip] zenodo4678936_GEUVADIS.tsv (verified earlier)
+[skip] E-GEUV-1.sdrf.txt (verified earlier)
+[skip] QTD000356.permuted.tsv.gz (verified earlier)
+[skip] QTD000356.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000356.all.tsv.gz (verified earlier)
+[skip] QTD000356.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000356.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000266.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000266.permuted.tsv.gz (verified earlier)
+[skip] QTD000266.all.tsv.gz (verified earlier)
+[skip] QTD000266.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000266.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000373.all.tsv.gz (verified earlier)
+[skip] QTD000373.permuted.tsv.gz (verified earlier)
+[skip] QTD000373.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000373.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000373.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000549.permuted.tsv.gz (verified earlier)
+[skip] QTD000549.all.tsv.gz (verified earlier)
+[skip] QTD000549.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000549.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000021.all.tsv.gz (verified earlier)
+[skip] QTD000021.permuted.tsv.gz (verified earlier)
+[skip] QTD000021.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000021.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000021.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000409.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000549.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000409.all.tsv.gz (verified earlier)
+[skip] QTD000409.permuted.tsv.gz (verified earlier)
+[skip] QTD000609.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000409.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000409.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000609.permuted.tsv.gz (verified earlier)
+[skip] QTD000609.all.tsv.gz (verified earlier)
+[skip] QTD000110.all.tsv.gz (verified earlier)
+[skip] QTD000609.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000609.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000110.permuted.tsv.gz (verified earlier)
+[skip] QTD000110.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000539.all.tsv.gz (verified earlier)
+[skip] QTD000539.all.tsv.gz.tbi (verified earlier)
+[skip] QTD000110.lbf_variable.txt.gz (verified earlier)
+[skip] QTD000539.permuted.tsv.gz (verified earlier)
+[skip] QTD000110.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000539.credible_sets.tsv.gz (verified earlier)
+[skip] QTD000539.lbf_variable.txt.gz (verified earlier)
+eqtlcat downloads complete
+43G	data/raw/eqtlcat

@@ -1,0 +1,30 @@
+{
+ "gmm": [
+  {
+   "method": "gmm",
+   "target": "famG.method_mm:GPUColocSusieMM",
+   "kwargs": {
+    "ld_dtype": "float64",
+    "mem_budget_gb": 2.5,
+    "streams": 3
+   },
+   "mode": "batch",
+   "n_workers": 4,
+   "batch_size": 250,
+   "rep": 0,
+   "n_loci": 2000,
+   "harness_wall_s": 548.8433929970197,
+   "driver_wall_s": 970.2144374847412,
+   "loci_per_hour": 13118.496262993363,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 248,
+    "ok": 1752,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_diag_v1/20261028T171956Z_famG_coloc_susie_mm_gpu_valid_grid_v1_e518e9",
+   "machine_state": null
+  }
+ ]
+}

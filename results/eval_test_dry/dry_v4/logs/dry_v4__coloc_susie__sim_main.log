@@ -1,0 +1,12 @@
+19:36:57 [harness] run dry_v4__coloc_susie__sim_main: 502 loci (502 to run), mode=cpu, workers=6
+19:38:05 [harness] coloc_susie: 37/502 loci done
+19:39:27 [harness] coloc_susie: 61/502 loci done
+19:40:29 [harness] coloc_susie: 67/502 loci done
+19:41:32 [harness] coloc_susie: 77/502 loci done
+19:42:33 [harness] coloc_susie: 86/502 loci done
+19:43:34 [harness] coloc_susie: 113/502 loci done
+19:44:35 [harness] coloc_susie: 254/502 loci done
+19:45:37 [harness] coloc_susie: 328/502 loci done
+19:46:37 [harness] coloc_susie: 402/502 loci done
+19:47:38 [harness] coloc_susie: 467/502 loci done
+19:48:10 [harness] done dry_v4__coloc_susie__sim_main: {'ok': 357, 'nonconverged': 143, 'failed': 2, 'timeout': 0, 'expected': 502} in 671.7s

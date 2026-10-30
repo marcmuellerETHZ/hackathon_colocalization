@@ -1,0 +1,11 @@
+.........................................                                [100%]
+=============================== warnings summary ===============================
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+tests/data_real/test_real_rho.py::test_end_to_end_toy_locus_sets
+  /usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=1390447) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+41 passed, 4 warnings in 27.91s

@@ -1,0 +1,63 @@
+[orch] job famA_p3fix_tests_r2 start 2026-10-27T10:44:42+01:00 host eu-g6-001 commit 6063f0dc8d pid 940145
+[orch] cmd: set -o pipefail; R_PROFILE_USER=/dev/null python -m pytest tests/famA tests/famG -q -p no:cacheprovider 2>&1 | tail -60
+    def test_pi_eb():
+        """EB of π: a locus with one strong shared signal moves π_both up; a locus with one trait-1-only signal moves
+        π_2-only down; κ -> ∞ reproduces the fixed-π fit."""
+        rng = np.random.default_rng(21)
+        p, n = 200, 2000
+        X = ar_genotypes(rng, n, p)
+        sh = toy_locus(rng, n, p, (60,), (12.0,), (60,), (11.0,), X=X)
+        on = toy_locus(rng, n, p, (60,), (12.0,), X=X)
+        args = ([sh[2], on[2]], [sh[3], on[3]], [sh[1], on[1]], [1e5] * 2, [1e5] * 2, [0.0] * 2, "dense")
+        eb = joint_susie_batch(*args, JointConfig(pi_mode="eb", pi_prior_strength=4.0))
+        # one used effect, κ = 4, π_ref = 1/4: the fixed point is π_s = (q(s) + 1)/5, so π_both -> ~0.4
+        assert eb[0]["pi"][3] > 0.35 and eb[0]["pi"][3] > max(eb[0]["pi"][:3])
+        # trait-1-only signal: σ²_2 -> 0 by EB makes 'both' identical to '1-only' (split by π), so EB moves mass away
+        # from the null and 2-only states only: π_2 -> 1/5
+        assert eb[1]["pi"][1] > 0.27 and abs(eb[1]["pi"][1] - eb[1]["pi"][3]) < 1e-6 and eb[1]["pi"][2] < 0.21
+        assert abs(eb[0]["pi"].sum() - 1) < 1e-12
+        big = joint_susie_batch(*args, JointConfig(pi_mode="eb", pi_prior_strength=1e12))
+        fx = joint_susie_batch(*args, JointConfig(pi_mode="fixed"))
+        for x, y in zip(big, fx):
+>           assert np.abs(x["pip"] - y["pip"]).max() < 1e-6 and abs(x["P_S"] - y["P_S"]) < 1e-6
+E           AssertionError: assert (np.float64(0.0006168757481174181) < 1e-06)
+E            +  where np.float64(0.0006168757481174181) = <built-in method max of numpy.ndarray object at 0x152cbc3b67f0>()
+E            +    where <built-in method max of numpy.ndarray object at 0x152cbc3b67f0> = array([8.66341440e-05, 5.22334737e-06, 2.67968469e-06, 2.31094852e-05,\n       8.44654538e-05, 4.68148972e-06, 2.959813...7.57522374e-05, 8.28646768e-05, 9.68283163e-08,\n       7.02736479e-05, 6.55691925e-05, 4.65485757e-05, 8.30241174e-05]).max
+E            +      where array([8.66341440e-05, 5.22334737e-06, 2.67968469e-06, 2.31094852e-05,\n       8.44654538e-05, 4.68148972e-06, 2.959813...7.57522374e-05, 8.28646768e-05, 9.68283163e-08,\n       7.02736479e-05, 6.55691925e-05, 4.65485757e-05, 8.30241174e-05]) = <ufunc 'absolute'>((array([0.04263676, 0.04428599, 0.04424222, 0.04377255, 0.04562018,\n       0.04410328, 0.04471172, 0.04394349, 0.043385...94, 0.04397374, 0.04458762, 0.04285313, 0.0427197 ,\n       0.04427683, 0.04297066, 0.04304461, 0.04340769, 0.04271557]) - array([0.0427234 , 0.04428077, 0.04423954, 0.04379566, 0.04553572,\n       0.04410796, 0.04468212, 0.04395858, 0.043432...9 , 0.04399066, 0.04456977, 0.04292888, 0.04280256,\n       0.04427673, 0.04304093, 0.04311018, 0.04345424, 0.04279859])))
+E            +        where <ufunc 'absolute'> = np.abs
+
+tests/famA/test_m35.py:114: AssertionError
+___________________ test_noshare_phase_disables_shared_state ___________________
+
+    @needs_cuda
+    def test_noshare_phase_disables_shared_state():
+        """During the first noshare_sweeps sweeps the 'both' state has zero posterior mass; afterwards it is free."""
+        rng = np.random.default_rng(2)
+        p, n = 200, 2000
+        _, R, z1, z2 = toy_locus(rng, n, p, (80,), (9.0,), (80,), (9.0,))
+        B = 2
+        z = torch.tensor(np.stack([np.stack([z1, z2])] * B), dtype=torch.float64, device="cuda")
+        valid = torch.ones((B, p), dtype=torch.bool, device="cuda")
+        ld = build_batch_ld([R] * B, "dense", p, torch.float64, "cuda")
+        st = js._JointBucket(z, valid, torch.tensor([p] * B, device="cuda"), None, ld,
+                             torch.zeros(B, dtype=torch.float64, device="cuda"), JointConfig(multistart=False),
+                             noshare=[0, 3])
+        for it in range(3):
+            st.sweep(); st.niter += 1
+            assert float(st.smass[1, :, 3].max()) == 0.0
+            assert float(st.smass[0, :, 3].max()) > 0.5                      # shared signal: 'both' in default start
+        st.sweep(); st.niter += 1
+>       assert float(st.smass[1, :, 3].max()) > 0.5                          # shared state re-enabled after the phase
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 0.4999999999999867 > 0.5
+E        +  where 0.4999999999999867 = float(tensor(0.5000, device='cuda:0', dtype=torch.float64))
+E        +    where tensor(0.5000, device='cuda:0', dtype=torch.float64) = <built-in method max of Tensor object at 0x152cbc1c2df0>()
+E        +      where <built-in method max of Tensor object at 0x152cbc1c2df0> = tensor([0.5000, 0.5000, 0.2512, 0.2511, 0.2510, 0.2509, 0.2509, 0.2508, 0.2508,\n        0.2508], device='cuda:0', dtype=torch.float64).max
+
+tests/famA/test_p3_fixes.py:70: AssertionError
+=========================== short test summary info ============================
+FAILED tests/famA/test_joint_susie.py::test_identity_vs_mvsusie - FileNotFoun...
+FAILED tests/famA/test_m35.py::test_pi_eb - AssertionError: assert (np.float6...
+FAILED tests/famA/test_p3_fixes.py::test_noshare_phase_disables_shared_state
+3 failed, 40 passed, 5 skipped in 224.38s (0:03:44)
+[orch] exit 1 at 2026-10-27T10:48:28+01:00

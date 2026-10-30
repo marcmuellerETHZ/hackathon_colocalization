@@ -1,0 +1,20 @@
+[
+ {
+  "n": 512,
+  "io_s": 39.92691349983215,
+  "block": 1024,
+  "num_warps": 8,
+  "bucket_ratio": 1.5,
+  "streams": 1,
+  "dtype": "float64",
+  "mem_budget_gb": 1.8,
+  "fit_s": 84.46288514137268,
+  "fit_loci_per_s": 6.061834131559942,
+  "status": {
+   "ok": 484,
+   "nonconverged": 28
+  },
+  "niter_max_mean": 10.4765625,
+  "max_mem_gb": 3.488395264
+ }
+]

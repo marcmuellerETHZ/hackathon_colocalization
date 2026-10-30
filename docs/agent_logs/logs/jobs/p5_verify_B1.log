@@ -1,0 +1,382 @@
+[orch] job p5_verify_B1 start 2026-10-27T19:50:52+01:00 host eu-g6-001 commit 8fcb22e56f pid 1599521
+[orch] cmd: PYTHONPATH=src python scripts/verify/p5_verify_B1.py --out /cluster/scratch/mumarc/hackathon_eqtl_gwas/.worktrees/p5-verify-B1/results/verify_B1/verify_B1.json
+{
+ "thresholds_tS": {
+  "exactcoloc_gaussian_M50": {
+   "W_L2L4 (agent)|lf": 0.010253906250000002,
+   "W_L2L4 (agent)|excl": 0.010253906250000002,
+   "W_L2L4 (agent)|lf|observed_value": 0.01104736328125,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.010273742675781142,
+   "W_all|lf": 0.015686035156250003,
+   "W_all|excl": 0.015686035156250003,
+   "W_all|lf|observed_value": 0.0164794921875,
+   "W_all|q975_of_W_PS": 0.015705871582031322,
+   "W_L0|lf": 0.028259277343750003,
+   "W_L0|excl": 0.028259277343750003,
+   "W_L0|lf|observed_value": 0.02911376953125,
+   "W_L0|q975_of_W_PS": 0.02828063964843748
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "W_L2L4 (agent)|lf": 0.7884789945321156,
+   "W_L2L4 (agent)|excl": 0.7884789945321156,
+   "W_L2L4 (agent)|lf|observed_value": 0.7982741376650182,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.7887238731104367,
+   "W_all|lf": 0.7982741376650183,
+   "W_all|excl": 0.7982741376650183,
+   "W_all|lf|observed_value": 0.8012327102783526,
+   "W_all|q975_of_W_PS": 0.7983481019803518,
+   "W_L0|lf": 0.8014348935817767,
+   "W_L0|excl": 0.8014348935817767,
+   "W_L0|lf|observed_value": 0.8057958505192266,
+   "W_L0|q975_of_W_PS": 0.8015439175052127
+  },
+  "coloc_susie": {
+   "W_L2L4 (agent)|lf": 0.8461912193458935,
+   "W_L2L4 (agent)|excl": 0.7784780493556833,
+   "W_L2L4 (agent)|lf|observed_value": 0.8490078357446743,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.8462616347558625,
+   "W_all|lf": 0.8246095973948339,
+   "W_all|excl": 0.7995797476820223,
+   "W_all|lf|observed_value": 0.8283761043095845,
+   "W_all|q975_of_W_PS": 0.8247037600677029,
+   "W_L0|lf": 0.8114566674329623,
+   "W_L0|excl": 0.8114566674329623,
+   "W_L0|lf|observed_value": 0.8134034659401904,
+   "W_L0|q975_of_W_PS": 0.8115053373956429
+  },
+  "coloc_susie_mm": {
+   "W_L2L4 (agent)|lf": 0.8182447944650111,
+   "W_L2L4 (agent)|excl": 0.8097123934941644,
+   "W_L2L4 (agent)|lf|observed_value": 0.8198729398321836,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.81828549809919,
+   "W_all|lf": 0.8178883407466168,
+   "W_all|excl": 0.8108936254342564,
+   "W_all|lf|observed_value": 0.818244794465011,
+   "W_all|q975_of_W_PS": 0.8178972520895765,
+   "W_L0|lf": 0.8134034659401905,
+   "W_L0|excl": 0.8134034659401905,
+   "W_L0|lf|observed_value": 0.8178883407466166,
+   "W_L0|q975_of_W_PS": 0.8135155878103509
+  },
+  "sharepro": {
+   "W_L2L4 (agent)|lf": 0.6465000000000001,
+   "W_L2L4 (agent)|excl": 0.6465000000000001,
+   "W_L2L4 (agent)|lf|observed_value": 0.653,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.646662499999999,
+   "W_all|lf": 0.6580000000000001,
+   "W_all|excl": 0.6580000000000001,
+   "W_all|lf|observed_value": 0.6744,
+   "W_all|q975_of_W_PS": 0.6584100000000015,
+   "W_L0|lf": 0.7219000000000001,
+   "W_L0|excl": 0.7219000000000001,
+   "W_L0|lf|observed_value": 0.72404413,
+   "W_L0|q975_of_W_PS": 0.7219536032499999
+  },
+  "colocboost": {
+   "W_L2L4 (agent)|lf": 5e-324,
+   "W_L2L4 (agent)|excl": 5e-324,
+   "W_L2L4 (agent)|lf|observed_value": 0.4131,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.010327500000002349,
+   "W_all|lf": 0.46860000000000007,
+   "W_all|excl": 0.46860000000000007,
+   "W_all|lf|observed_value": 0.5074,
+   "W_all|q975_of_W_PS": 0.46635249999999995,
+   "W_L0|lf": 0.5074000000000001,
+   "W_L0|excl": 0.5074000000000001,
+   "W_L0|lf|observed_value": 0.5167,
+   "W_L0|q975_of_W_PS": 0.47926999999999914
+  },
+  "colocboost_m1": {
+   "W_L2L4 (agent)|lf": 0.5658000000000001,
+   "W_L2L4 (agent)|excl": 0.5658000000000001,
+   "W_L2L4 (agent)|lf|observed_value": 0.586,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.5663050000000001,
+   "W_all|lf": 0.5658000000000001,
+   "W_all|excl": 0.5658000000000001,
+   "W_all|lf|observed_value": 0.586,
+   "W_all|q975_of_W_PS": 0.5383949999999992,
+   "W_L0|lf": 0.5280000000000001,
+   "W_L0|excl": 0.5280000000000001,
+   "W_L0|lf|observed_value": 0.6723,
+   "W_L0|q975_of_W_PS": 0.5074824999999994
+  },
+  "mvsusie": {
+   "W_L2L4 (agent)|lf": 1.0000000000000002,
+   "W_L2L4 (agent)|excl": 1.0000000000000002,
+   "W_L2L4 (agent)|lf|observed_value": 1.000000001,
+   "W_L2L4 (agent)|q975_of_W_PS": 1.0,
+   "W_all|lf": 1.0000000000000002,
+   "W_all|excl": 1.0000000000000002,
+   "W_all|lf|observed_value": 1.000000001,
+   "W_all|q975_of_W_PS": 1.0,
+   "W_L0|lf": 1.0000000000000002,
+   "W_L0|excl": 1.0000000000000002,
+   "W_L0|lf|observed_value": 1.000000001,
+   "W_L0|q975_of_W_PS": 1.0
+  },
+  "coloc_abf_W0.15_p12_1e-05": {
+   "W_L2L4 (agent)|lf": 0.8817313448385118,
+   "W_L2L4 (agent)|excl": 0.8817313448385118,
+   "W_L2L4 (agent)|lf|observed_value": 0.8878225193201554,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.8818836242005519,
+   "W_all|lf": 0.8878225193201555,
+   "W_all|excl": 0.8878225193201555,
+   "W_all|lf|observed_value": 0.8896493003999897,
+   "W_all|q975_of_W_PS": 0.8878681888471515,
+   "W_L0|lf": 0.8897739201534959,
+   "W_L0|excl": 0.8897739201534959,
+   "W_L0|lf|observed_value": 0.892455091518272,
+   "W_L0|q975_of_W_PS": 0.8898409494376152
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "W_L2L4 (agent)|lf": 0.8661972564317063,
+   "W_L2L4 (agent)|excl": 0.8661972564317063,
+   "W_L2L4 (agent)|lf|observed_value": 0.866936315277828,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.8662157329028591,
+   "W_all|lf": 0.8728037881748506,
+   "W_all|excl": 0.8728037881748506,
+   "W_all|lf|observed_value": 0.8758468709748399,
+   "W_all|q975_of_W_PS": 0.8728798652448505,
+   "W_L0|lf": 0.8849901607731219,
+   "W_L0|excl": 0.8849901607731219,
+   "W_L0|lf|observed_value": 0.8853725479963782,
+   "W_L0|q975_of_W_PS": 0.8849997204537031
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "W_L2L4 (agent)|lf": 0.7639752693714774,
+   "W_L2L4 (agent)|excl": 0.7639752693714774,
+   "W_L2L4 (agent)|lf|observed_value": 0.7651258503535942,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.7640040338960301,
+   "W_all|lf": 0.7743139827995033,
+   "W_all|excl": 0.7743139827995033,
+   "W_all|lf|observed_value": 0.7791170511924326,
+   "W_all|q975_of_W_PS": 0.7744340595093269,
+   "W_L0|lf": 0.7937061446800789,
+   "W_L0|excl": 0.7937061446800789,
+   "W_L0|lf|observed_value": 0.7943214985463161,
+   "W_L0|q975_of_W_PS": 0.7937215285267347
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "W_L2L4 (agent)|lf": 0.8993377571916586,
+   "W_L2L4 (agent)|excl": 0.8993377571916586,
+   "W_L2L4 (agent)|lf|observed_value": 0.9047808497127253,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.8994738345046844,
+   "W_all|lf": 0.9050886092976855,
+   "W_all|excl": 0.9050886092976855,
+   "W_all|lf|observed_value": 0.9071012430595975,
+   "W_all|q975_of_W_PS": 0.9051389251417334,
+   "W_L0|lf": 0.9073869513667692,
+   "W_L0|excl": 0.9073869513667692,
+   "W_L0|lf|observed_value": 0.9084177233079205,
+   "W_L0|q975_of_W_PS": 0.9074127206652978
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "W_L2L4 (agent)|lf": 0.8170878605747377,
+   "W_L2L4 (agent)|excl": 0.8170878605747377,
+   "W_L2L4 (agent)|lf|observed_value": 0.8261185439237456,
+   "W_L2L4 (agent)|q975_of_W_PS": 0.8173136276584616,
+   "W_all|lf": 0.8266318324783613,
+   "W_all|excl": 0.8266318324783613,
+   "W_all|lf|observed_value": 0.8299956764513319,
+   "W_all|q975_of_W_PS": 0.8267159285776857,
+   "W_L0|lf": 0.8304742035634985,
+   "W_L0|excl": 0.8304742035634985,
+   "W_L0|lf|observed_value": 0.8322027049218691,
+   "W_L0|q975_of_W_PS": 0.8305174160974577
+  }
+ },
+ "B_tS_per_cell": {
+  "L0|P1|r_p=0.0": 0.029113769531250003,
+  "L0|P3|rho=0.5": 0.028259277343750003,
+  "L2|P1|r_p=0.0": 0.018676757812500003,
+  "L2|P3|rho=0.5": 0.013793945312500002,
+  "L4|P1|r_p=0.0": 0.015625000000000003,
+  "L4|P3|rho=0.5": 0.0012817382812500002
+ },
+ "B_PS_on_W_quantiles": {
+  "0.5": 0.0,
+  "0.9": 6.103515625e-05,
+  "0.95": 0.0014099121093749667,
+  "0.975": 0.015705871582031322,
+  "0.98": 0.021691894531249978,
+  "0.99": 0.061473999023437226
+ },
+ "strata_n": {
+  "B1_union(Dmid|Mx_nonS) L0L2 [agent]": 3245,
+  "B1_union(Dmid|Mx_D) L0L2": 3048,
+  "B1_Dmid L0L2": 2301,
+  "B1_Mx_nonS L0L2": 1059,
+  "Dmid L0": 1154,
+  "Dmid L2": 1147,
+  "Mx_nonS L0": 510,
+  "Mx_nonS L2": 549,
+  "c_L4_D": 2000,
+  "c_rho0.5_D": 3000,
+  "c_L4_D|P1": 1000,
+  "c_L4_W": 1000,
+  "c_rho0.5_W": 1500,
+  "c_L4_DW": 3000,
+  "c_rho0.5_DW": 4500,
+  "c_L4_D|P3": 1000
+ },
+ "rule_a": {
+  "auprc": {
+   "exactcoloc_gaussian_M50": {
+    "n": 1500,
+    "auprc": 0.9759407285513916
+   },
+   "coloc_abf_W0.15_p12_5e-06": {
+    "n": 1500,
+    "auprc": 0.8705944586765985
+   },
+   "coloc_susie": {
+    "n": 1500,
+    "auprc": 0.9777278941565305
+   },
+   "coloc_susie_mm": {
+    "n": 1500,
+    "auprc": 0.9710533039735479
+   },
+   "sharepro": {
+    "n": 1500,
+    "auprc": 0.734698447178409
+   },
+   "colocboost": {
+    "n": 1500,
+    "auprc": 0.871495617753471
+   },
+   "colocboost_m1": {
+    "n": 1500,
+    "auprc": 0.806284128536891
+   },
+   "mvsusie": {
+    "n": 1500,
+    "auprc": 0.642262326467734
+   },
+   "prop_coloc": {
+    "n": 1500,
+    "auprc": 0.7430489247252295
+   },
+   "coloc_prop_test": {
+    "n": 1500,
+    "auprc": 0.6547449465012571
+   },
+   "lead_snp": {
+    "n": 1500,
+    "auprc": 0.826598254195618
+   },
+   "strength_only": {
+    "n": 1500,
+    "auprc": 0.4856434197840295
+   }
+  },
+  "best": "coloc_susie",
+  "diff": -0.0017871656051389184,
+  "se_locus": 0.004913924294667072,
+  "ci95": [
+   -0.011799422743036098,
+   0.008254275543008125
+  ],
+  "kill": false,
+  "weights_note": "own 5x5 quantile power matching (S matched to D distribution), no r2/d sub-bins"
+ },
+ "rule_b": {
+  "B": 0.011666666666666667,
+  "abf": 0.03866666666666667,
+  "B_cellequal": 0.011666666666666664,
+  "abf_cellequal": 0.038666666666666655,
+  "kill": false,
+  "B_noEgate": 0.013
+ },
+ "rule_d": {
+  "exactcoloc_gaussian_M50": {
+   "mean": 0.12636082322450967,
+   "median": 0.06744682777343769,
+   "n": 12000
+  },
+  "coloc_susie": {
+   "mean": 23.536701880725843,
+   "median": 7.595967309993284,
+   "n": 12000
+  },
+  "coloc_susie_mm": {
+   "mean": 24.798942419367155,
+   "median": 16.526742142501462,
+   "n": 12000
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "mean": 0.022246876050071782,
+   "median": 0.011301932499918621,
+   "n": 12000
+  },
+  "ratio_mean_B_over_cs": 0.005368671611887403,
+  "ratio_median_B_over_cs": 0.008879294107111859
+ },
+ "failures": {
+  "exactcoloc_gaussian_M50": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_susie": {
+   "n_run": 12000,
+   "n_fail": 55
+  },
+  "coloc_susie_mm": {
+   "n_run": 12000,
+   "n_fail": 18
+  },
+  "sharepro": {
+   "n_run": 12000,
+   "n_fail": 6
+  },
+  "colocboost": {
+   "n_run": 3000,
+   "n_fail": 0
+  },
+  "colocboost_m1": {
+   "n_run": 3000,
+   "n_fail": 0
+  },
+  "mvsusie": {
+   "n_run": 3000,
+   "n_fail": 1
+  },
+  "prop_coloc": {
+   "n_run": 12000,
+   "n_fail": 513
+  },
+  "coloc_prop_test": {
+   "n_run": 12000,
+   "n_fail": 4
+  },
+  "lead_snp": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_abf_W0.15_p12_1e-05": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "n_run": 12000,
+   "n_fail": 0
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "n_run": 12000,
+   "n_fail": 0
+  }
+ }
+}
+[orch] exit 0 at 2026-10-27T19:51:26+01:00

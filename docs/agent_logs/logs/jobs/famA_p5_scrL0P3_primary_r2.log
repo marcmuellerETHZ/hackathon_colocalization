@@ -1,0 +1,43 @@
+[orch] job famA_p5_scrL0P3_primary_r2 start 2026-10-27T14:33:44+01:00 host eu-g6-001 commit 37da481d85 pid 1239674
+[orch] cmd: python -m famA.validation.run_eval --group screen_L0P3 --rungs primary --label famA_screen_v2 --mem-budget-gb 3
+[run_eval] group screen_L0P3: 2000 loci from data/processed/sets/screen_v2.h5; truth=yes; 0 with a trait-2 LD
+[harness] run 20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037: 2000 loci, mode=batch, workers=1
+[harness] 1/50 tasks done
+[harness] 3/50 tasks done
+[harness] 5/50 tasks done
+[harness] 8/50 tasks done
+[harness] 10/50 tasks done
+[harness] 12/50 tasks done
+[harness] 14/50 tasks done
+[harness] 16/50 tasks done
+[harness] 17/50 tasks done
+[harness] 18/50 tasks done
+[harness] 20/50 tasks done
+[harness] 22/50 tasks done
+[harness] 24/50 tasks done
+[harness] 26/50 tasks done
+[harness] 28/50 tasks done
+[harness] 30/50 tasks done
+[harness] 31/50 tasks done
+[harness] 32/50 tasks done
+[harness] 33/50 tasks done
+[harness] 34/50 tasks done
+[harness] 35/50 tasks done
+[harness] 36/50 tasks done
+[harness] 37/50 tasks done
+[harness] 38/50 tasks done
+[harness] 39/50 tasks done
+[harness] 40/50 tasks done
+[harness] 41/50 tasks done
+[harness] 42/50 tasks done
+[harness] 43/50 tasks done
+[harness] 44/50 tasks done
+[harness] 45/50 tasks done
+[harness] 46/50 tasks done
+[harness] 47/50 tasks done
+[harness] 48/50 tasks done
+[harness] 49/50 tasks done
+[harness] 50/50 tasks done
+[harness] done 20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037: {'ok': 1960, 'nonconverged': 0, 'failed': 40, 'timeout': 0, 'expected': 2000} in 1739.0s
+[run_eval] {"group": "screen_L0P3", "rung": "primary", "components": "rho+eta+multistart+perTraitLD", "method": "famA_joint_susie_rho_eta_ms_ptld", "run_id": "20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037", "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famA/runs/20261027T133703Z_famA_joint_susie_rho_eta_ms_ptld_screen_v2_8c1037", "locus_set": "data/processed/sets/screen_v2.h5", "n": 2000, "counts": {"ok": 1960, "nonconverged": 0, "failed": 40, "timeout": 0, "expected": 2000}, "with_truth": true, "n_with_ld2": 0, "wall_s": 1885.0, "n_per_trait_ld": 0, "n_noshare_start": 485, "runtime_median_s": 0.7017101084124078, "orch_job": "famA_p5_scrL0P3_primary_r2", "orch_commit": "37da481d857cb07178411fd9fd26f0586ae2da40"}
+[orch] exit 0 at 2026-10-27T15:06:08+01:00

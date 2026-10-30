@@ -1,0 +1,51 @@
+[orch] job p4b_m4_colocboost_m1_r2 start 2026-10-27T12:10:24+01:00 host eu-g6-001 commit ad021dcdc4 pid 1025710
+[orch] cmd: PYTHONPATH=src python -m baselines.run --method colocboost_m1 --set data/processed/sets/valid_grid_v1.h5 --ids-file results/baselines_m4/m4_subsample_v1/slow.txt --workers 2 --pilot-timeout --results-dir results/baselines_m4/runs --label 'p4 M4 valid_grid_v1 subsample m4_subsample@1'
+[baselines.run] colocboost_m1: 4080 loci, p_max=5371, workers=2, timeout=60s
+[harness] run 20261027T111847Z_colocboost_m1_valid_grid_v1_58fd9a: 4080 loci, mode=cpu, workers=2
+[harness] 85/4080 tasks done
+[harness] 200/4080 tasks done
+[harness] 316/4080 tasks done
+[harness] 416/4080 tasks done
+[harness] 506/4080 tasks done
+[harness] 609/4080 tasks done
+[harness] 704/4080 tasks done
+[harness] 791/4080 tasks done
+[harness] 881/4080 tasks done
+[harness] 949/4080 tasks done
+[harness] 1005/4080 tasks done
+[harness] 1064/4080 tasks done
+[harness] 1126/4080 tasks done
+[harness] 1198/4080 tasks done
+[harness] 1270/4080 tasks done
+[harness] 1352/4080 tasks done
+[harness] 1424/4080 tasks done
+[harness] 1496/4080 tasks done
+[harness] 1587/4080 tasks done
+[harness] 1655/4080 tasks done
+[harness] 1762/4080 tasks done
+[harness] 1880/4080 tasks done
+[harness] 1985/4080 tasks done
+[harness] 2087/4080 tasks done
+[harness] 2189/4080 tasks done
+[harness] 2285/4080 tasks done
+[harness] 2406/4080 tasks done
+[harness] 2489/4080 tasks done
+[harness] 2576/4080 tasks done
+[harness] 2656/4080 tasks done
+[harness] 2754/4080 tasks done
+[harness] 2854/4080 tasks done
+[harness] 2950/4080 tasks done
+[harness] 3046/4080 tasks done
+[harness] 3154/4080 tasks done
+[harness] 3250/4080 tasks done
+[harness] 3351/4080 tasks done
+[harness] 3439/4080 tasks done
+[harness] 3531/4080 tasks done
+[harness] 3628/4080 tasks done
+[harness] 3728/4080 tasks done
+[harness] 3840/4080 tasks done
+[harness] 3948/4080 tasks done
+[harness] 4045/4080 tasks done
+[harness] done 20261027T111847Z_colocboost_m1_valid_grid_v1_58fd9a: {'ok': 4080, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 4080} in 1342.1s
+{"run_id": "20261027T111847Z_colocboost_m1_valid_grid_v1_58fd9a", "run_dir": "results/baselines_m4/runs/20261027T111847Z_colocboost_m1_valid_grid_v1_58fd9a", "counts": {"ok": 4080, "nonconverged": 0, "failed": 0, "timeout": 0, "expected": 4080}}
+[orch] exit 0 at 2026-10-27T12:41:10+01:00

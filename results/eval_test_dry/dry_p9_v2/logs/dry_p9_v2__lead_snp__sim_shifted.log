@@ -1,0 +1,2 @@
+10:06:39 [harness] run dry_p9_v2__lead_snp__sim_shifted: 32 loci (32 to run), mode=cpu, workers=1
+10:06:41 [harness] done dry_p9_v2__lead_snp__sim_shifted: {'ok': 32, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 32} in 2.5s

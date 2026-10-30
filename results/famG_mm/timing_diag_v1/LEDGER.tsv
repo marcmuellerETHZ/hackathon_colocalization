@@ -1,0 +1,2 @@
+run_id	start_utc	end_utc	method	locus_set	n_expected	n_ok	n_nonconverged	n_failed	n_timeout	git_commit	git_clean	timing	label	run_dir
+20261028T171956Z_famG_coloc_susie_mm_gpu_valid_grid_v1_e518e9	2026-10-28T17:19:56.068975Z	2026-10-28T17:29:04.912407Z	famG_coloc_susie_mm_gpu	/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/sets/valid_grid_v1.h5	2000	1752	248	0	0	bcc841ffa46eb7f593729247216be9e9cc9b60eb	True	True	famG_mm timing gmm rep 0	results/famG_mm/timing_diag_v1/20261028T171956Z_famG_coloc_susie_mm_gpu_valid_grid_v1_e518e9

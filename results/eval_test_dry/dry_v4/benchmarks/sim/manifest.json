@@ -1,0 +1,148 @@
+{
+ "argv": [
+  "scripts/eval_test.py",
+  "--dry-run-valid",
+  "--methods",
+  "configs/proposals/test_methods_dry_v1.yaml",
+  "--scale",
+  "0.04",
+  "--label",
+  "dry_v4",
+  "--gen-workers",
+  "2",
+  "--cores",
+  "8",
+  "--ram-gb",
+  "24"
+ ],
+ "bench_id": "dry_v4__sim",
+ "boot_seed": [
+  20261029,
+  "run_benchmark",
+  "bootstrap",
+  "dry_v4__sim"
+ ],
+ "c3_baselines": [
+  "coloc_abf",
+  "coloc_susie",
+  "coloc_susie_mm",
+  "sharepro",
+  "colocboost",
+  "colocboost_m1",
+  "mvsusie"
+ ],
+ "c4_sha256": {
+  ".": "83998b92f1a5778f6a505f9c13746c715042018c8fd324646cfe176a1b67e2ee",
+  "subsample_9a475bf8": "3821b1c02753926229bd25b11c3a9bef13c3c446746500c0e87bf8fc447fe31b",
+  "subsample_c5b9c96f": "b225fd1af32f149cee765cd2b9ce75ea613313c55e86c198d82463a2d0216838"
+ },
+ "candidate": "famA_joint_susie_rho_ms_ptld",
+ "evaluate_wall_s": 142.02355885505676,
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "df33fb53466f02599caf6cbcbfd872aad36c8de5",
+  "modified_tracked": [],
+  "orch_job": "p6dr_dry_v4",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "ids_sha256": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "24bcec47606e563658eb85b5778abb6e033fe4a7da732049e2b3ea7585c628fb",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "6d587a9eba8863190fd503dfab6c3976ad12481219d660686d0ae689da32d64d"
+ },
+ "label": "dry sim",
+ "locus_sets": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5"
+ ],
+ "method_ids": {
+  "colocboost": {
+   "file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test_dry/dry_v4/benchmarks/sim/ids_subsample40.txt",
+   "sha256": "9a475bf8644198f247c363eea3c62d50a0483f1ffd5df8666d0300f2d349b7b5"
+  },
+  "colocboost_m1": {
+   "file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test_dry/dry_v4/benchmarks/sim/ids_subsample40.txt",
+   "sha256": "9a475bf8644198f247c363eea3c62d50a0483f1ffd5df8666d0300f2d349b7b5"
+  },
+  "mvsusie": {
+   "file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test_dry/dry_v4/benchmarks/sim/ids_subsample20.txt",
+   "sha256": "c5b9c96feabbbe3959ef5cc18d0b777cffd62c52a51bd84ac78a60d8b2f210dd"
+  }
+ },
+ "methods_not_run": [],
+ "mode": "dry",
+ "n_boot": 2000,
+ "n_expected": {
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": 502,
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": 64
+ },
+ "n_jobs": 16,
+ "operating_points_in": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test_dry/dry_v4/DRY_operating_points_in_sample.json",
+ "operating_points_in_sha256": "22f270225225603733ef81f2e27c0df58a9e099907c3090e6b13ecb5663b1bf9",
+ "operating_points_source": "DRY placeholders fitted in-sample on the dry-run set (not validation values)",
+ "per_cell": null,
+ "runs": {
+  "coloc_abf": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_abf__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_abf__sim_shifted"
+  },
+  "coloc_prop_test": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_prop_test__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_prop_test__sim_shifted"
+  },
+  "coloc_susie": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_susie__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_susie__sim_shifted"
+  },
+  "coloc_susie_mm": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_susie_mm__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__coloc_susie_mm__sim_shifted"
+  },
+  "colocboost": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__colocboost__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__colocboost__sim_shifted"
+  },
+  "colocboost_m1": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__colocboost_m1__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__colocboost_m1__sim_shifted"
+  },
+  "famA_joint_susie_rho_ms_ptld": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__famA_joint_susie_rho_ms_ptld__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__famA_joint_susie_rho_ms_ptld__sim_shifted"
+  },
+  "famB_exactcoloc_gaussian_M50": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__famB_exactcoloc_gaussian_M50__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__famB_exactcoloc_gaussian_M50__sim_shifted"
+  },
+  "lead_snp": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__lead_snp__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__lead_snp__sim_shifted"
+  },
+  "mvsusie": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__mvsusie__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__mvsusie__sim_shifted"
+  },
+  "prop_coloc": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__prop_coloc__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__prop_coloc__sim_shifted"
+  },
+  "sharepro": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__sharepro__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__sharepro__sim_shifted"
+  },
+  "strength_only": {
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__strength_only__sim_main",
+   "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_v4/sets/dry_v4_shifted.h5": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/runs/dry_v4__strength_only__sim_shifted"
+  }
+ },
+ "start_utc": "2026-10-27T19:23:49Z",
+ "strength_control": {
+  "folds": null,
+  "mode": "DRY in-sample placeholder",
+  "sha256": "72a4ce1455eca41f59e3f705592ddf36346ed04a71b84942e45791c4c4273ce5",
+  "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p6dr_dry_v4/code/results/eval_test_dry/dry_v4/DRY_strength_table_in_sample.json"
+ },
+ "unit": "block"
+}

@@ -1,0 +1,3 @@
+[orch] job famC_p9_gen_train_v1_w2 start 2026-10-28T10:00:20+01:00 host eu-g6-001 commit fba5376805 pid 2143287
+[orch] cmd: python -m famC.gen_shards --set train_v1 --split train --n-loci 150000 --worker 2 --n-workers 4 --lpw 128 --n-noise 2 --accept none --device cuda > logs/famC/p9_gen_train_v1_w2.log 2>&1; rc=$?; tail -n 1 logs/famC/p9_gen_train_v1_w2.log; exit $rc
+DONE 150000 {"windows": 586, "loci": 75008, "none": 0, "t_window": 354.74620747566223, "t_loci": 13618.45229268074, "rejected": 0}

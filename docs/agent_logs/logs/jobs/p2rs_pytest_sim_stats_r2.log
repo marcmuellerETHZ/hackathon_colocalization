@@ -1,0 +1,150 @@
+[orch] job p2rs_pytest_sim_stats_r2 start 2026-10-27T10:38:58+01:00 host eu-g6-001 commit ce7001cce3 pid 934115
+[orch] cmd: set -o pipefail; python -m pytest tests/sim tests/stats -rA -p no:cacheprovider 2>&1 | tail -150
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0
+rootdir: /cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rs_pytest_sim_stats_r2/code
+collected 79 items
+
+tests/sim/test_cells.py .....                                            [  6%]
+tests/sim/test_generator.py ............                                 [ 21%]
+tests/sim/test_l0star.py ..                                              [ 24%]
+tests/sim/test_levels.py .................                               [ 45%]
+tests/sim/test_mosaic.py ...                                             [ 49%]
+tests/sim/test_ols_and_v4.py ........                                    [ 59%]
+tests/sim/test_oracle.py ...                                             [ 63%]
+tests/sim/test_testset.py ..F...                                         [ 70%]
+tests/sim/test_train_api.py ...                                          [ 74%]
+tests/stats/test_rho.py ....................                             [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_config_file_parses ____________________________
+
+    def test_config_file_parses():
+        """The eval agent's configs/testset_v1.yaml (v4) gives 34 cells and the 4 shifted cells."""
+>       cfg = yaml.safe_load((ROOT / "configs/testset_v1.yaml").read_text())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/sim/test_testset.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rs_pytest_sim_stats_r2/code/configs/testset_v1.yaml')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p2rs_pytest_sim_stats_r2/code/configs/testset_v1.yaml'
+
+/usr/lib/python3.12/pathlib.py:1015: FileNotFoundError
+==================================== PASSES ====================================
+___________________________ test_partition_1e5_draws ___________________________
+----------------------------- Captured stdout call -----------------------------
+oracle class shares on 1e5 random draws: {'S': 0.0495, 'U': 0.00024, 'D': 0.10067, 'W': 0.72951, 'G': 0.12008}
+________________________ test_genomewide_unbiased[0.0] _________________________
+----------------------------- Captured stdout call -----------------------------
+rho=0.0: bias=+0.0005 (MC SE 0.0007), sd=0.0095, mean SE=0.0092
+________________________ test_genomewide_unbiased[0.3] _________________________
+----------------------------- Captured stdout call -----------------------------
+rho=0.3: bias=-0.0021 (MC SE 0.0006), sd=0.0083, mean SE=0.0078
+________________________ test_genomewide_unbiased[0.5] _________________________
+----------------------------- Captured stdout call -----------------------------
+rho=0.5: bias=-0.0038 (MC SE 0.0004), sd=0.0057, mean SE=0.0057
+________________________ test_genomewide_unbiased[0.8] _________________________
+----------------------------- Captured stdout call -----------------------------
+rho=0.8: bias=-0.0046 (MC SE 0.0002), sd=0.0025, mean SE=0.0023
+__________ test_residualize_removes_concordant_leakage_and_keeps_null __________
+----------------------------- Captured stdout call -----------------------------
+{'plain': 0.43593113780971804, 'resid': 0.3099900446855263, 'null_plain': 0.29111700846665217, 'null_resid': 0.2904697450909861} {'plain': 0.0038009125141117116, 'resid': 0.005246144277028558, 'null_plain': 0.005686076565095997, 'null_resid': 0.005737233833574162}
+=========================== short test summary info ============================
+PASSED tests/sim/test_cells.py::test_test_split_refused
+PASSED tests/sim/test_cells.py::test_format_and_buckets
+PASSED tests/sim/test_cells.py::test_truth_isolation
+PASSED tests/sim/test_cells.py::test_l4_corruption
+PASSED tests/sim/test_cells.py::test_deterministic_rebuild
+PASSED tests/sim/test_generator.py::test_tf32_off
+PASSED tests/sim/test_generator.py::test_factor_vs_individual_mean_cov
+PASSED tests/sim/test_generator.py::test_realised_rho[P2_factor_rho0.3-factor2-100000-50000-None-0.3]
+PASSED tests/sim/test_generator.py::test_realised_rho[P3_lab_rho-0.8-factor2-100000-100000-None--0.8]
+PASSED tests/sim/test_generator.py::test_realised_rho[P1_nested_N1=20k_N2=2k_rp0.6-nested-20000-2000-0.6-0.18973665961010275]
+PASSED tests/sim/test_generator.py::test_realised_rho[P1_nested_N1=100k_N2=5k_rp0.6-nested-100000-5000-0.6-0.13416407864998736]
+PASSED tests/sim/test_generator.py::test_realised_rho[P1_disjoint_rp0.6-disjoint-100000-1000-0.0-0.0]
+PASSED tests/sim/test_generator.py::test_realised_rho[P3_eqtl_N=1000_rp0.5-eqtl-1000-1000-0.5-0.5]
+PASSED tests/sim/test_generator.py::test_in_sample_ld_noise
+PASSED tests/sim/test_generator.py::test_oracle_power_equals_detection[indiv]
+PASSED tests/sim/test_generator.py::test_oracle_power_equals_detection[factor]
+PASSED tests/sim/test_generator.py::test_fp32_mu_matches_fp64
+PASSED tests/sim/test_l0star.py::test_config_prior_normalised_and_matches_sampler
+PASSED tests/sim/test_l0star.py::test_lambda_mixture_and_data_model
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L1-P1-0.6]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L1-P2-0.3]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L1-P3-0.8]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L2-P2-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L6-P1-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L6-P3-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L6c-P1-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L6c-P2-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L3-P1-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L3-P3-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L3-P2-0.0]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L1swap-P1-0.6]
+PASSED tests/sim/test_levels.py::test_level_generates_valid_loci[L2swap-P1-0.0]
+PASSED tests/sim/test_levels.py::test_overlap_only_with_rho0_for_population_levels
+PASSED tests/sim/test_levels.py::test_p2_reachability_assertion
+PASSED tests/sim/test_levels.py::test_l6_allelic_scale_conversion
+PASSED tests/sim/test_levels.py::test_l3_pcs_separate_ancestry
+PASSED tests/sim/test_mosaic.py::test_deterministic_and_window_consistent
+PASSED tests/sim/test_mosaic.py::test_allele_frequencies_and_copying
+PASSED tests/sim/test_mosaic.py::test_switch_rate
+PASSED tests/sim/test_ols_and_v4.py::test_individual_level_stats_are_ols[NFE]
+PASSED tests/sim/test_ols_and_v4.py::test_individual_level_stats_are_ols[ADMIX]
+PASSED tests/sim/test_ols_and_v4.py::test_factor_form_ols_transform
+PASSED tests/sim/test_ols_and_v4.py::test_trait_types_sizes_and_lambda[L1-P1-0.3-kinds0]
+PASSED tests/sim/test_ols_and_v4.py::test_trait_types_sizes_and_lambda[L1-P2-0.2-kinds1]
+PASSED tests/sim/test_ols_and_v4.py::test_trait_types_sizes_and_lambda[L2-P3-0.5-None]
+PASSED tests/sim/test_ols_and_v4.py::test_population_levels_only_rho0
+PASSED tests/sim/test_ols_and_v4.py::test_shifted_arm_architecture
+PASSED tests/sim/test_oracle.py::test_thresholds_frozen_values
+PASSED tests/sim/test_oracle.py::test_known_answers
+PASSED tests/sim/test_oracle.py::test_partition_1e5_draws
+PASSED tests/sim/test_testset.py::test_34_cells_with_population_level_exclusion
+PASSED tests/sim/test_testset.py::test_gridplan_staged_relaxation
+PASSED tests/sim/test_testset.py::test_test_split_refused_without_eval_test
+PASSED tests/sim/test_testset.py::test_validation_dry_run
+PASSED tests/sim/test_testset.py::test_worker_access_check_does_not_need_eval_test_on_stack
+PASSED tests/sim/test_train_api.py::test_train_split_only
+PASSED tests/sim/test_train_api.py::test_default_screen_union
+PASSED tests/sim/test_train_api.py::test_batches_shapes_holdout_and_determinism
+PASSED tests/stats/test_rho.py::test_square_prob_matches_scipy[-0.9]
+PASSED tests/stats/test_rho.py::test_square_prob_matches_scipy[-0.3]
+PASSED tests/stats/test_rho.py::test_square_prob_matches_scipy[0.0]
+PASSED tests/stats/test_rho.py::test_square_prob_matches_scipy[0.4]
+PASSED tests/stats/test_rho.py::test_square_prob_matches_scipy[0.8]
+PASSED tests/stats/test_rho.py::test_square_prob_matches_scipy[0.95]
+PASSED tests/stats/test_rho.py::test_truncated_mle_exact_bivariate_normal
+PASSED tests/stats/test_rho.py::test_genomewide_unbiased[0.0]
+PASSED tests/stats/test_rho.py::test_genomewide_unbiased[0.3]
+PASSED tests/stats/test_rho.py::test_genomewide_unbiased[0.5]
+PASSED tests/stats/test_rho.py::test_genomewide_unbiased[0.8]
+PASSED tests/stats/test_rho.py::test_negative_control_independent_traits
+PASSED tests/stats/test_rho.py::test_prune_known_answer
+PASSED tests/stats/test_rho.py::test_window_mode_on_toy_ld
+PASSED tests/stats/test_rho.py::test_grid_mle_matches_brent
+PASSED tests/stats/test_rho.py::test_mle3_robust_to_variance_inflation
+PASSED tests/stats/test_rho.py::test_signal_mask_known_answer
+PASSED tests/stats/test_rho.py::test_jackknife_se_calibrated_independent_blocks
+PASSED tests/stats/test_rho.py::test_pooled_mode_windows_as_blocks
+PASSED tests/stats/test_rho.py::test_residualize_removes_concordant_leakage_and_keeps_null
+FAILED tests/sim/test_testset.py::test_config_file_parses - FileNotFoundError...
+=================== 1 failed, 78 passed in 151.81s (0:02:31) ===================
+[orch] exit 1 at 2026-10-27T10:41:32+01:00

@@ -1,0 +1,7 @@
+03:38:14 [harness] run test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted: 1600 loci (1600 to run), mode=cpu, workers=6
+03:39:14 [harness] prop_coloc: 168/1600 loci done
+03:40:14 [harness] prop_coloc: 443/1600 loci done
+03:41:14 [harness] prop_coloc: 747/1600 loci done
+03:42:15 [harness] prop_coloc: 1084/1600 loci done
+03:43:15 [harness] prop_coloc: 1555/1600 loci done
+03:43:27 [harness] done test_frozen-v1_ab94c5a1__prop_coloc__sim_shifted: {'ok': 1575, 'nonconverged': 0, 'failed': 25, 'timeout': 0, 'expected': 1600} in 311.6s

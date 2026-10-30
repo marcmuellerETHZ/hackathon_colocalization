@@ -1,0 +1,10 @@
+00:27:04 [harness] run test_frozen-v1_ab94c5a1__coloc_abf__sim_main: 11607 loci (11607 to run), mode=cpu, workers=2
+00:28:04 [harness] coloc_abf: 702/11607 loci done
+00:29:04 [harness] coloc_abf: 1988/11607 loci done
+00:30:04 [harness] coloc_abf: 2931/11607 loci done
+00:31:04 [harness] coloc_abf: 4442/11607 loci done
+00:32:05 [harness] coloc_abf: 6127/11607 loci done
+00:33:05 [harness] coloc_abf: 7888/11607 loci done
+00:34:05 [harness] coloc_abf: 8681/11607 loci done
+00:35:08 [harness] coloc_abf: 10551/11607 loci done
+00:36:11 [harness] done test_frozen-v1_ab94c5a1__coloc_abf__sim_main: {'ok': 11607, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 11607} in 515.4s

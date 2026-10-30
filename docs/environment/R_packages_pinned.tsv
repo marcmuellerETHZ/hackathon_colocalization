@@ -1,0 +1,13 @@
+package	version	source	commit_or_sha	library_path
+coloc	5.2.3	conda-forge r-coloc (CRAN)	NA	<project>/env/renv/lib/R/library
+susieR	0.14.2	conda-forge r-susier (CRAN 0.14.2; GitHub tag v0.14.2=3859639)	NA	<project>/env/renv/lib/R/library
+susieR	0.16.6	GitHub stephenslab/susieR HEAD (R CMD INSTALL from env/src/susieR)	97feba561dda5402fb9d70fabc715cb49030101f	<project>/env/rlib_susie016
+mvsusieR	0.3.0	GitHub stephenslab/mvsusieR (R CMD INSTALL; built against susieR 0.16.6)	2b05b9a7ab4af2121218a74f08c33a59af2bbe53	<project>/env/rlib_mvsusie
+colocboost	1.0.10	CRAN (source build; identical version to GitHub StatFunGen/colocboost HEAD)	9f82c2a4a074e1d51bdc32cf24dcfe18ef889fa4 (GitHub HEAD, version 1.0.10)	<project>/env/renv/lib/R/library
+colocPropTest	0.9.3	CRAN (source build; GitHub chr1swallace/colocPropTest HEAD is 0.9.3)	f8dfc43d8b7fa353740bf9398ab181338fba910e (GitHub HEAD)	<project>/env/renv/lib/R/library
+prop.coloc	2.0.0	GitHub ash-res/prop-coloc (Patel & Burgess; R CMD INSTALL)	d7f0938f12e182a6b444ec9225e409b1a1cdc210	<project>/env/renv/lib/R/library
+hyprcoloc	0.0.2	GitHub jrs95/hyprcoloc (R CMD INSTALL against RcppEigen 0.3.3.9.4)	0348bbdd977be731d82e4efda115a9bed63cd44f	<project>/env/rlib_hyprcoloc
+RcppEigen	0.3.3.9.4	CRAN archive (needed only to compile hyprcoloc; Eigen 3.3)	NA	<project>/env/rlib_hypr_dep
+Rfast	2.1.5.2	conda-forge r-rfast (CRAN)	NA	<project>/env/renv/lib/R/library
+mashr	0.2.79	conda-forge r-mashr	NA	<project>/env/renv/lib/R/library
+cpp11armadillo	0.5.4	conda-forge	NA	<project>/env/renv/lib/R/library

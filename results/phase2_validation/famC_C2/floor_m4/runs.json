@@ -1,0 +1,34 @@
+{
+ "method": "famC_floor_p9_600k",
+ "kwargs": {
+  "model_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/famC/p9_floor_600k",
+  "device": "cpu",
+  "batch": 64,
+  "threads": 1
+ },
+ "runs": [
+  {
+   "set": "data/processed/sets/valid_grid_v1.h5",
+   "run_id": "20261028T134655Z_famC_floor_p9_600k_valid_grid_v1_ae571d",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T134655Z_famC_floor_p9_600k_valid_grid_v1_ae571d",
+   "n": 12170,
+   "counts": {
+    "ok": 12170,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 12170
+   },
+   "wall_s": 589.6499474048615,
+   "loci_per_s": 20.63936417456155,
+   "predictions_sha256": "421788402fc98aca81cb53101b43c67248c5134bc71d47fbd881d45a75a785ca"
+  }
+ ],
+ "n_loci": 12170,
+ "ids_file": "results/baselines_m4/m4_subsample_v1/main.txt",
+ "status_counts": {
+  "ok": 12170
+ },
+ "commit": "f7cf358173ab737150437a415a7ee9996f0a848b",
+ "job": "famC_p9_c2_harness_floor"
+}

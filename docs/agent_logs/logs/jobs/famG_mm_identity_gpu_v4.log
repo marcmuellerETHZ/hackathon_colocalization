@@ -1,0 +1,117 @@
+[orch] job famG_mm_identity_gpu_v4 start 2026-10-28T10:53:16+01:00 host eu-g6-001 commit 14f0ecdef1 pid 2210905
+[orch] cmd: export PYTHONPATH=$ORCH_CODE/src:$PYTHONPATH R_PROFILE_USER=/dev/null; W=$ORCH_HOME/runs/famG_mm_identity_ref_v2/out/loci; O=results/famG_mm/identity_v2; python -m pytest tests/famG/test_susie_mm.py -q -rs -p no:cacheprovider 2>&1 | tail -15; for args in "--dtype float64" "--dtype float32" "--dtype float64 --no-triton"; do python -m famG.validation.compare_mm --work $W --rdir $O/r016 --out $O/cmp --mem-gb 1.2 $args; done; for tag in float64_cuda float32_cuda; do python -m famG.validation.sens_mm --r0 $O/r016 --pert $O/pert --gfits $O/cmp/fits_$tag.tsv --gpairs $O/cmp/pairs_$tag.tsv --ids $O/nonconv_ids.txt --out $O/sens_$tag | tail -12; done
+        ins = [{k: v for k, v in d.items() if k != "X"} for d in loci]
+        cfg = MMConfig(ld_dtype=torch.float64, use_triton=False, bucket_ratio=10.0)
+        together = susie_mm_batch(ins, cfg, device=torch.device("cpu"))
+        for d, f in zip(ins, together):
+            one = susie_mm_batch([d], cfg, device=torch.device("cpu"))[0]
+            for t in (0, 1):
+>               assert np.abs(one[t]["pip"] - f[t]["pip"]).max() < 1e-10
+E               AssertionError: assert np.float64(2.610484273191105e-09) < 1e-10
+E                +  where np.float64(2.610484273191105e-09) = <built-in method max of numpy.ndarray object at 0x1553c8154f90>()
+E                +    where <built-in method max of numpy.ndarray object at 0x1553c8154f90> = array([5.46758860e-10, 5.36899081e-10, 5.42435652e-10, 5.27043964e-10,\n       2.39714470e-10, 2.61229705e-10, 3.041790...2.87030621e-10, 5.49001844e-10, 5.10981368e-10,\n       5.44876477e-10, 3.71204845e-10, 9.15764131e-11, 1.37039158e-10]).max
+E                +      where array([5.46758860e-10, 5.36899081e-10, 5.42435652e-10, 5.27043964e-10,\n       2.39714470e-10, 2.61229705e-10, 3.041790...2.87030621e-10, 5.49001844e-10, 5.10981368e-10,\n       5.44876477e-10, 3.71204845e-10, 9.15764131e-11, 1.37039158e-10]) = <ufunc 'absolute'>((array([0.06862977, 0.06870384, 0.06866876, 0.06878395, 0.07078718,\n       0.07417261, 0.07038417, 0.07178239, 0.069990...79, 0.06876118, 0.06893754, 0.07043179, 0.06861682,\n       0.06891036, 0.06863333, 0.06992004, 0.07189573, 0.07345609]) - array([0.06862977, 0.06870384, 0.06866876, 0.06878395, 0.07078718,\n       0.07417261, 0.07038417, 0.07178239, 0.069990...79, 0.06876118, 0.06893753, 0.07043179, 0.06861681,\n       0.06891036, 0.06863333, 0.06992004, 0.07189573, 0.07345609])))
+E                +        where <ufunc 'absolute'> = np.abs
+
+tests/famG/test_susie_mm.py:109: AssertionError
+1 failed, 4 passed in 127.53s (0:02:07)
+{
+ "n_loci": 100,
+ "n_fits": 200,
+ "dtype": "float64",
+ "device": "cuda",
+ "triton": true,
+ "g_seconds": 104.72773003578186,
+ "fail_r": 0,
+ "fail_g": 0,
+ "fail_agree": 200,
+ "max_dpip": 0.9043440573550187,
+ "median_dpip": 1.5481288473395693e-10,
+ "n_dpip_ge_1e3": 4,
+ "max_dalpha": 0.9998737350343212,
+ "conv_agree": 200,
+ "n_both_ok": 200,
+ "nonconv_r": 24,
+ "nonconv_g": 24,
+ "niter_agree": 200,
+ "max_dlambda": 0.005765922015241663,
+ "cs_equal": 197,
+ "pairs_presence_agree": 100,
+ "max_dPP_pair": Infinity,
+ "max_dmaxH4": 0.7213470022727466
+}
+{
+ "n_loci": 100,
+ "n_fits": 200,
+ "dtype": "float32",
+ "device": "cuda",
+ "triton": true,
+ "g_seconds": 70.52997469902039,
+ "fail_r": 0,
+ "fail_g": 0,
+ "fail_agree": 200,
+ "max_dpip": 0.9330551858750539,
+ "median_dpip": 1.8919038335951655e-08,
+ "n_dpip_ge_1e3": 6,
+ "max_dalpha": 0.999999989048058,
+ "conv_agree": 200,
+ "n_both_ok": 200,
+ "nonconv_r": 24,
+ "nonconv_g": 24,
+ "niter_agree": 200,
+ "max_dlambda": 0.018202483196349626,
+ "cs_equal": 195,
+ "pairs_presence_agree": 100,
+ "max_dPP_pair": Infinity,
+ "max_dmaxH4": 0.7180004634321135
+}
+{
+ "n_loci": 100,
+ "n_fits": 200,
+ "dtype": "float64",
+ "device": "cuda",
+ "triton": false,
+ "g_seconds": 970.3292260169983,
+ "fail_r": 0,
+ "fail_g": 0,
+ "fail_agree": 200,
+ "max_dpip": 0.9999071146881674,
+ "median_dpip": 1.216456935182464e-10,
+ "n_dpip_ge_1e3": 4,
+ "max_dalpha": 0.9999071147365813,
+ "conv_agree": 200,
+ "n_both_ok": 200,
+ "nonconv_r": 24,
+ "nonconv_g": 24,
+ "niter_agree": 200,
+ "max_dlambda": 0.020650064338370584,
+ "cs_equal": 197,
+ "pairs_presence_agree": 100,
+ "max_dPP_pair": Infinity,
+ "max_dmaxH4": 0.7213124147081609
+}
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__S__0011835",
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__S__0013015",
+   1
+  ]
+ ]
+}
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__W__0001801",
+   1
+  ],
+  [
+   "valid_grid_v1__L4_P3_rho=0.5__W__0010204",
+   1
+  ]
+ ]
+}
+[orch] exit 0 at 2026-10-28T11:15:24+01:00

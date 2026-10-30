@@ -1,0 +1,13 @@
+{
+ "cmd": "train",
+ "run": "c1_long",
+ "n_train": 8000000,
+ "batch": 512,
+ "lr": 0.0005,
+ "d": 128,
+ "layers": 4,
+ "K": 16,
+ "eval_at": "1000000,2000000,4000000",
+ "per_seg": 128,
+ "segs_per_window": 32
+}

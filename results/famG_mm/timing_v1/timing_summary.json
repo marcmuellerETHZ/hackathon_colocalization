@@ -1,0 +1,196 @@
+{
+ "gmm": [
+  {
+   "method": "gmm",
+   "target": "famG.method_mm:GPUColocSusieMM",
+   "kwargs": {
+    "ld_dtype": "float64",
+    "mem_budget_gb": 9.0,
+    "streams": 3
+   },
+   "mode": "batch",
+   "n_workers": 1,
+   "batch_size": 2000,
+   "rep": 0,
+   "n_loci": 2000,
+   "harness_wall_s": 234.02518243601662,
+   "driver_wall_s": 527.2315487861633,
+   "loci_per_hour": 30765.91982560897,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 248,
+    "ok": 1752,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T152430Z_famG_coloc_susie_mm_gpu_valid_grid_v1_a3e4c1",
+   "machine_state": null
+  },
+  {
+   "method": "gmm",
+   "target": "famG.method_mm:GPUColocSusieMM",
+   "kwargs": {
+    "ld_dtype": "float64",
+    "mem_budget_gb": 9.0,
+    "streams": 3
+   },
+   "mode": "batch",
+   "n_workers": 1,
+   "batch_size": 2000,
+   "rep": 1,
+   "n_loci": 2000,
+   "harness_wall_s": 212.68752994999522,
+   "driver_wall_s": 233.80383825302124,
+   "loci_per_hour": 33852.478336143104,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 248,
+    "ok": 1752,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T152846Z_famG_coloc_susie_mm_gpu_valid_grid_v1_7bb30f",
+   "machine_state": null
+  },
+  {
+   "method": "gmm",
+   "target": "famG.method_mm:GPUColocSusieMM",
+   "kwargs": {
+    "ld_dtype": "float64",
+    "mem_budget_gb": 9.0,
+    "streams": 3
+   },
+   "mode": "batch",
+   "n_workers": 1,
+   "batch_size": 2000,
+   "rep": 2,
+   "n_loci": 2000,
+   "harness_wall_s": 226.14290200499818,
+   "driver_wall_s": 247.35620760917664,
+   "loci_per_hour": 31838.275427458993,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 248,
+    "ok": 1752,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T153240Z_famG_coloc_susie_mm_gpu_valid_grid_v1_cbf7dc",
+   "machine_state": null
+  }
+ ],
+ "mm": [
+  {
+   "method": "mm",
+   "target": "baselines.methods:ColocSusieMM",
+   "kwargs": {},
+   "mode": "cpu",
+   "n_workers": 40,
+   "batch_size": 1,
+   "rep": 0,
+   "n_loci": 2000,
+   "harness_wall_s": 1088.8058004009945,
+   "driver_wall_s": 1110.5063576698303,
+   "loci_per_hour": 6612.7494887961875,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 249,
+    "ok": 1751,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T153647Z_coloc_susie_mm_valid_grid_v1_44c45f",
+   "machine_state": null
+  },
+  {
+   "method": "mm",
+   "target": "baselines.methods:ColocSusieMM",
+   "kwargs": {},
+   "mode": "cpu",
+   "n_workers": 40,
+   "batch_size": 1,
+   "rep": 1,
+   "n_loci": 2000,
+   "harness_wall_s": 1045.3948912839987,
+   "driver_wall_s": 1067.3143553733826,
+   "loci_per_hour": 6887.34951742174,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 249,
+    "ok": 1751,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T155518Z_coloc_susie_mm_valid_grid_v1_917f5c",
+   "machine_state": null
+  },
+  {
+   "method": "mm",
+   "target": "baselines.methods:ColocSusieMM",
+   "kwargs": {},
+   "mode": "cpu",
+   "n_workers": 40,
+   "batch_size": 1,
+   "rep": 2,
+   "n_loci": 2000,
+   "harness_wall_s": 1079.5263753400068,
+   "driver_wall_s": 1103.3287172317505,
+   "loci_per_hour": 6669.59155836493,
+   "counts": {
+    "expected": 2000,
+    "failed": 0,
+    "nonconverged": 249,
+    "ok": 1751,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T161305Z_coloc_susie_mm_valid_grid_v1_4124cd",
+   "machine_state": null
+  }
+ ],
+ "cs": [
+  {
+   "method": "cs",
+   "target": "baselines.methods:ColocSusie",
+   "kwargs": {},
+   "mode": "cpu",
+   "n_workers": 40,
+   "batch_size": 1,
+   "rep": 0,
+   "n_loci": 2000,
+   "harness_wall_s": 944.4178058760008,
+   "driver_wall_s": 965.9579186439514,
+   "loci_per_hour": 7623.7444436168735,
+   "counts": {
+    "expected": 2000,
+    "failed": 5,
+    "nonconverged": 452,
+    "ok": 1543,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T163128Z_coloc_susie_valid_grid_v1_1d4d1e",
+   "machine_state": null
+  },
+  {
+   "method": "cs",
+   "target": "baselines.methods:ColocSusie",
+   "kwargs": {},
+   "mode": "cpu",
+   "n_workers": 40,
+   "batch_size": 1,
+   "rep": 1,
+   "n_loci": 2000,
+   "harness_wall_s": 1020.4743488040112,
+   "driver_wall_s": 1041.7083566188812,
+   "loci_per_hour": 7055.542364625186,
+   "counts": {
+    "expected": 2000,
+    "failed": 5,
+    "nonconverged": 452,
+    "ok": 1543,
+    "timeout": 0
+   },
+   "run_dir": "results/famG_mm/timing_v1/20261028T164734Z_coloc_susie_valid_grid_v1_1ee355",
+   "machine_state": null
+  }
+ ]
+}

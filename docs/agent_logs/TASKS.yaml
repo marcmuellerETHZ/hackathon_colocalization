@@ -1,0 +1,783 @@
+# TASKS.yaml -- edit via `orch task ...` (flock-protected)
+tasks:
+- id: p2.review_sim
+  owner: reviewer_sim
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: independent review of sim commits 3416f2e,850218b,fb426c4 (sim, train_api, oracle.py, stats/rho.py); tests/sim+tests/stats pass via queue; verdict in reviews/p2_review_sim.md; defects fixed or listed
+  jobs:
+  - p2rs_pytest_sim_stats
+  - p2rs_checks
+  - p2rs_pytest_sim_stats_r2
+  - p2rs_checks_c2
+  notes: verdict approve-with-fixes; major defect 1 (testset pool workers refuse authorised test run) fixed in branch p2-review-sim (ce7001c); configs/testset_v1.yaml must be committed with P3-12 sizes; oracle.py re-freeze OK (9aa08bc6); review in reviews/p2_review_sim.md
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T10:44:18+01:00'
+- id: p2.review_famA
+  owner: reviewer_famA
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: independent review of 47ceb97 (famA/famG); tests pass; verdict reviews/p2_review_famA.md
+  jobs:
+  - p2rA_pytest_famAG
+  - p2rA_layerE_check
+  - p2rA_pd_check
+  - p2rA_g_identity
+  - p2rA_pytest_famAG_r2
+  - p2rA_pd_check_mc1e7
+  notes: 'PASS; defaults accepted: R tests fail-not-skip under ORCH_JOB_ID (orch env-link fix already in); layer-E table v2 excluding monomorphic draws before E enters ladder; report float32 G identity'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T10:48:08+01:00'
+- id: p2.review_wip
+  owner: reviewer_wip
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: review branch wip-m35-uncommitted (baselines pilot.py, pilot outputs, eval config drafts); verdict reviews/p2_review_wip.md; PI merges passing parts
+  jobs:
+  - p2rw_tests_baselines
+  - p2rw_tests_baselines_r2
+  - p2rw_tests_baselines_r3
+  - p2rw_tests_eval_cfg
+  notes: 'verdict: merge p2-review-wip (pilot.py by_level pass; screen_v2 pilot consistent; screen_v1 outputs dropped; testset_v1 to P3-11/12; provisional timeouts + P3-14 arms in test_methods_v1). See reviews/p2_review_wip.md'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T10:42:18+01:00'
+- id: p2.verify_artifacts
+  owner: artifact_verifier
+  status: done
+  depends_on: []
+  inputs: []
+  outputs:
+  - screen_v2@2
+  - valid_grid_v1@1
+  - l0star_v2@2
+  done_criterion: deterministic regeneration of a seeded sample (>=60 loci across cells) of screen_v2 and valid_grid_v1 at reviewed HEAD bit-identical (z, LD, truth) -> status ok, else stale + regeneration task; l0star_v2 generated at clean commit and registered
+  jobs:
+  - p2va_sha256_sets
+  - p2va_l0star_v2
+  - p2va_regen_screen_v2
+  - p2va_regen_valid_grid_v1
+  notes: '[2026-10-27T10:30:04+01:00] agent started; worktree .worktrees/p2-verify-artifacts
+
+    [2026-10-27T10:40:24+01:00] screen_v2@2, valid_grid_v1@1 ok (72+102 loci bit-identical, all 94 fields); l0star_v2@2 registered (job p2va_l0star_v2); l0star_v1 replica byte-identical but stays stale; SHA256SUMS appended; report reports/p2.verify_artifacts.md on branch p2-verify-artifacts'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T10:42:18+01:00'
+- id: p3.famA_fixes
+  owner: famA_dev
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: P3-5 fixes (multi-start IBSS, per-trait LD at L0, eta floor, rel tol, own-effect guard) implemented in worktree, identity tests still pass, merged
+  jobs:
+  - famA_p3fix_tests_r1
+  - famA_p3fix_tests_r2
+  - famA_refldvar_v2
+  - famA_p3fix_tests_r3
+  - famA_p3fix_smoke_r1
+  - famA_p3fix_tests_r4
+  - famA_p3fix_tests_r5
+  notes: 'defaults accepted: A1 primary rho+eta+multistart+perTraitLD, pi EB, no E; rel stop; reader change routed to eval owner'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T11:18:32+01:00'
+- id: p4.realdata_rho
+  owner: realdata_dev
+  status: done
+  depends_on: []
+  inputs: []
+  outputs:
+  - real_locus_sets@2
+  done_criterion: P3-1 rho-hat (per-window primary, pooled sensitivity) applied to R2/R3b/R4b train+valid; trait types attrs; test ID list sha256 in configs/real_test_ids_v1.sha256; registered
+  jobs:
+  - p4_realdata_rho_tests
+  - p4_realdata_rho_update
+  - p4_realdata_rho_diag
+  notes: '[2026-10-27T10:42:37+01:00] real_locus_sets@2 registered (job p4_realdata_rho_update, b84b110); report reports/p4.realdata_rho.md on branch p4-realdata-rho @7796aab (PI to merge). R2 rho-hat 0.157->0.126 (window), pooled 0.105: residual = shared cis signal (distance/strength/sign diagnostics), not overlap.'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T10:43:13+01:00'
+- id: p4.famB_l0star_ref
+  owner: famB_dev
+  status: done
+  depends_on:
+  - p2.verify_artifacts
+  inputs:
+  - l0star_v2@2
+  outputs:
+  - famB_l0star_ref@1
+  done_criterion: B simulator-prior posteriors on l0star_v2 (eta=0), registered as famB_l0star_ref@1
+  jobs:
+  - famB_l0star_ref_v1
+  - famB_screen_pilot
+  - famB_tests_p4
+  - famB_l0star_ref_v2run
+  - famB_tests_p4_r2
+  - famB_tests_p4_r3
+  notes: 'famB_l0star_ref@1 registered (job famB_l0star_ref_v2run @0e3d4ac, per-locus keyed MC draws; MC SE max 0.0024; calibrated: natural CE-entropy -0.0098+-0.009). Report reports/p4.famB_l0star_ref.md (branch p4-famB). Full famB GPU suite re-run famB_tests_p4_r2 queued.'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T13:09:49+01:00'
+- id: p4.famC_C1
+  owner: famC_dev
+  status: done
+  depends_on:
+  - p4.famB_l0star_ref
+  inputs:
+  - l0star_v2@2
+  outputs: []
+  done_criterion: C retrained in L0* at p=20 matching l0star_v2 grid (<=16M loci, <=3h GPU); C1 natural-weighted E[KL] vs B on l0star_v2 evaluated once; c1_long 8M eval filled; report without placeholders
+  jobs:
+  - famC_c1_tests_r1
+  - famC_c1_pilot_eval_r1
+  - famC_c1_v2_train
+  - famC_c1_v2_eval_l0star_v2
+  - famC_c1_v2_eval_l0star_v2_r2
+  - famC_c1_v2_eval_l0star_v2_r3
+  - famC_m4_provisional
+  - famC_m4_provisional_bench
+  notes: 'training started early (needs only l0star_v2 spec); evaluation waits for famB_l0star_ref
+
+    [2026-10-27T10:55:48+01:00] worktree p4-famC; code 76ad32b (P3-21 move, stream on l0star_v2 spec)
+
+    [2026-10-27T15:31:17+01:00] HANDOVER 15:3x: c1_v2 trained (job famC_c1_v2_train done, 14,412,288 loci, 168 min, stopped by 2.8h cap; ckpts 1M/2M/4M/8M + model.pt=14.4M in results/famC/c1_v2). C1 eval job famC_c1_v2_eval_l0star_v2 (priority 10) queued -> results/famC/c1_v2/c1_eval_l0star_v2.json. Pilot addendum done (reports/famC_M3.5_addendum.md, commit 8eec367): M3.5 pilot KL inflated by logit-correction bug; corrected c1_long 8M natural 0.0064. Remaining: read eval json, register famC_C1@1, write reports/p4.famC_C1.md.
+
+    [2026-10-27T19:13:11+01:00] C1 PASS: natural E[KL] 0.00563 [0.0040,0.0087] (14.4 M, l0star_v2 vs famB_l0star_ref@1); famC_C1@1 registered; report reports/p4.famC_C1.md on p4-famC @ HEAD
+
+    [2026-10-27T20:08:09+01:00] 20:15 provisional M4 look: famC_m4_provisional@1 (PROVISIONAL; realistic AUPRC S-vs-D 0.951 [0.940,0.958], D-vs-W 0.995; 0.031 s/locus); C2 plan in reports/p4.famC_C1.md; p4-famC @73b8653'
+  created: '2026-10-27T10:25:49+01:00'
+  updated: '2026-10-27T20:08:09+01:00'
+- id: p4.baselines_screen
+  owner: baselines_dev
+  status: done
+  depends_on:
+  - p2.verify_artifacts
+  - p2.review_wip
+  inputs:
+  - screen_v2@2
+  outputs:
+  - baselines_screen_v2@1
+  done_criterion: tier-1 baselines + strength_only on screen_v2 (slow methods 200/cell subsample) via harness; predictions registered
+  jobs:
+  - p4b_subsample_screen
+  - p4b_tests_baselines
+  - p4b_scr_L0P1_mvsusie
+  - p4b_scr_L0P1_coloc_susie_mm
+  - p4b_scr_L0P1_coloc_susie
+  - p4b_scr_L0P1_coloc_prop_test
+  - p4b_scr_L0P1_colocboost
+  - p4b_scr_L0P1_prop_coloc
+  - p4b_scr_L0P1_colocboost_m1
+  - p4b_scr_L0P1_sharepro
+  - p4b_scr_L0P1_lead_snp
+  - p4b_scr_L0P1_coloc_abf_W0p1_p12_5em06
+  - p4b_scr_L0P1_coloc_abf_W0p1_p12_1em05
+  - p4b_scr_L0P1_coloc_abf_W0p15_p12_5em06
+  - p4b_scr_L0P1_coloc_abf_W0p15_p12_1em05
+  - p4b_scr_L0P1_coloc_abf_W0p2_p12_5em06
+  - p4b_scr_L0P1_coloc_abf_W0p2_p12_1em05
+  - p4b_scr_control
+  - p4b_tests_baselines_r2
+  - p4b_scr_rest_coloc_susie
+  - p4b_scr_rest_mvsusie
+  - p4b_scr_rest_coloc_susie_mm
+  - p4b_scr_rest_sharepro
+  - p4b_scr_rest_coloc_prop_test
+  - p4b_scr_rest_prop_coloc
+  - p4b_scr_rest_colocboost
+  - p4b_scr_rest_colocboost_m1
+  - p4b_scr_rest_lead_snp
+  - p4b_scr_rest_coloc_abf_W0p1_p12_5em06
+  - p4b_scr_rest_coloc_abf_W0p1_p12_1em05
+  - p4b_scr_rest_coloc_abf_W0p15_p12_5em06
+  - p4b_scr_rest_coloc_abf_W0p15_p12_1em05
+  - p4b_scr_rest_coloc_abf_W0p2_p12_5em06
+  - p4b_scr_rest_coloc_abf_W0p2_p12_1em05
+  - p4b_scr_L0P1_coloc_susie_mm_r2
+  - p4b_scr_L0P1_coloc_susie_r2
+  - p4b_scr_L0P1_colocboost_r2
+  - p4b_scr_L0P1_sharepro_r2
+  - p4b_scr_L0P1_coloc_abf_W0p1_p12_5em06_r2
+  - p4b_scr_L0P1_coloc_abf_W0p1_p12_1em05_r2
+  - p4b_scr_L0P1_coloc_abf_W0p15_p12_5em06_r2
+  - p4b_scr_L0P1_coloc_abf_W0p15_p12_1em05_r2
+  - p4b_scr_L0P1_coloc_abf_W0p2_p12_5em06_r2
+  - p4b_scr_L0P1_coloc_abf_W0p2_p12_1em05_r2
+  - p4b_scr_control_r2
+  - p4b_scr_rest_coloc_susie_r2
+  - p4b_scr_rest_mvsusie_r2
+  - p4b_scr_rest_coloc_susie_mm_r2
+  - p4b_scr_rest_sharepro_r2
+  - p4b_scr_rest_coloc_prop_test_r2
+  - p4b_scr_rest_prop_coloc_r2
+  - p4b_scr_rest_colocboost_r2
+  - p4b_scr_rest_colocboost_m1_r2
+  - p4b_scr_rest_lead_snp_r2
+  - p4b_scr_rest_coloc_abf_W0p1_p12_5em06_r2
+  - p4b_scr_rest_coloc_abf_W0p1_p12_1em05_r2
+  - p4b_scr_rest_coloc_abf_W0p15_p12_5em06_r2
+  - p4b_scr_rest_coloc_abf_W0p15_p12_1em05_r2
+  - p4b_scr_rest_coloc_abf_W0p2_p12_5em06_r2
+  - p4b_scr_rest_coloc_abf_W0p2_p12_1em05_r2
+  - p4b_bench_scr_L0P1
+  - p4b_collect_scr_L0P1
+  - p4b_collect_scr_L0P1_r2
+  - p4b_scr_rest_coloc_susie_half_a
+  - p4b_scr_rest_coloc_susie_half_b
+  - p4b_scr_rest_coloc_susie_mm_half_a
+  - p4b_scr_rest_coloc_susie_mm_half_b
+  - p4b_scr_rest_coloc_susie_mm_quarter_b1
+  - p4b_scr_rest_coloc_susie_mm_quarter_b2
+  notes: '[2026-10-27T11:04:48+01:00] 11:05 runs queued: L0P1 cell (all methods, 2000 loci) p4b_scr_L0P1_*, other cells p4b_scr_rest_* (fast 10000, slow 1000), control p4b_scr_control. prop_coloc diagnosed (P3-20): method limitation, see tests/baselines/test_prop_coloc_limits.py
+
+    [2026-10-27T13:08:15+01:00] 13:10 L0P1 cell complete for all methods: interim artifact baselines_screen_v2_L0P1@1 registered; benchmark results/baselines_screen_v2/bench/benchmarks/20261027T120045Z_p4_screen_v2_L0P1 (best tier-1 ideal AUPRC S-vs-D: coloc_susie 0.978 [0.969,0.984], locus bootstrap). Other 5 cells: coloc_susie/coloc_susie_mm queued (prio 9), mvsusie running.
+
+    [2026-10-27T14:34:40+01:00] 14:35 still active. Screen: all methods done on all cells except coloc_susie / coloc_susie_mm on the other 5 cells, now run as 12-worker halves p4b_scr_rest_*_half_{a,b} (prio 10; RAM fit). prop_coloc 512/10000 failures at L2/L4 (singular reference-LD submatrix, P3-20 method limitation). Registration of baselines_screen_v2@1 right after the halves finish.
+
+    [2026-10-27T15:32:28+01:00] 15:35 HANDOVER: L0P1 complete (baselines_screen_v2_L0P1@1). In flight: p4b_scr_rest_coloc_susie_half_{a,b}, p4b_scr_rest_coloc_susie_mm_half_{a,b}. All other screen runs done. Next: collect + register baselines_screen_v2@1 (see branch p4-baselines @ f6921ef, scripts/baselines_p4.py collect).
+
+    [2026-10-27T17:48:22+01:00] 17:55 baselines_screen_v2@1 registered (collected in-process during D14 pause, commit f6921ef); interim baselines_screen_v2_L0P1@1 superseded. Report reports/p4.baselines_screen.md (branch p4-baselines @ 84a6596).'
+  created: '2026-10-27T10:25:50+01:00'
+  updated: '2026-10-27T22:20:43+01:00'
+- id: p4.m4_valid
+  owner: baselines_dev
+  status: done
+  depends_on:
+  - p2.verify_artifacts
+  - p2.review_wip
+  inputs:
+  - valid_grid_v1@1
+  outputs:
+  - m4_subsample@1
+  - m4_valid_baselines@2
+  done_criterion: tier-1 baselines on P3-13 subsample of valid_grid_v1; operating points (C3), recalibration, strength table; registered
+  jobs:
+  - p4b_subsample_m4
+  - p4b_m4_mvsusie
+  - p4b_m4_coloc_susie
+  - p4b_m4_coloc_susie_mm
+  - p4b_m4_colocboost
+  - p4b_m4_sharepro
+  - p4b_m4_coloc_prop_test
+  - p4b_m4_prop_coloc
+  - p4b_m4_colocboost_m1
+  - p4b_m4_lead_snp
+  - p4b_m4_coloc_abf_W0p1_p12_5em06
+  - p4b_m4_coloc_abf_W0p1_p12_1em05
+  - p4b_m4_coloc_abf_W0p15_p12_5em06
+  - p4b_m4_coloc_abf_W0p15_p12_1em05
+  - p4b_m4_coloc_abf_W0p2_p12_5em06
+  - p4b_m4_coloc_abf_W0p2_p12_1em05
+  - p4b_m4_mvsusie_r2
+  - p4b_m4_coloc_susie_r2
+  - p4b_m4_coloc_susie_mm_r2
+  - p4b_m4_colocboost_r2
+  - p4b_m4_sharepro_r2
+  - p4b_m4_coloc_prop_test_r2
+  - p4b_m4_prop_coloc_r2
+  - p4b_m4_colocboost_m1_r2
+  - p4b_m4_lead_snp_r2
+  - p4b_m4_coloc_abf_W0p1_p12_5em06_r2
+  - p4b_m4_coloc_abf_W0p1_p12_1em05_r2
+  - p4b_m4_coloc_abf_W0p15_p12_5em06_r2
+  - p4b_m4_coloc_abf_W0p15_p12_1em05_r2
+  - p4b_m4_coloc_abf_W0p2_p12_5em06_r2
+  - p4b_m4_coloc_abf_W0p2_p12_1em05_r2
+  - p4b_m4_mvsusie_half_a
+  - p4b_m4_mvsusie_half_b
+  - p4b_m4_coloc_susie_half_a
+  - p4b_m4_coloc_susie_half_b
+  - p4b_m4_coloc_susie_mm_half_a
+  - p4b_m4_coloc_susie_mm_half_b
+  - p4b_tests_baselines_r3
+  - p4b_bench_m4_partial
+  - p4b_m4_mvsusie_half_a_r2
+  - p4b_m4_mvsusie_half_b_r2
+  notes: '[2026-10-27T11:04:48+01:00] 11:05 m4_subsample@1 registered; runs p4b_m4_* queued (results/baselines_m4/runs)
+
+    [2026-10-27T14:34:40+01:00] 14:35 M4 fast methods done except prop_coloc (running); heavy methods (mvsusie, coloc_susie, coloc_susie_mm) requeued as 12-worker halves p4b_m4_*_half_{a,b} (prio 8); scripts/baselines_p4.py bench merges the halves.
+
+    [2026-10-27T14:45:35+01:00] 14:50 TIMING RISK: M4 heavy halves (6 x 12 workers x 23 GB; ~1.7-2.2 h each, pilot-consistent rates) can only start after the screen halves free RAM under the 120 GB orch budget -> projected M4 runs end ~21:00-21:30, benchmark + report ~30 min later. Options for PI: raise p4b_m4_*_half_* priority above the screen coloc_susie_mm half_b, or allow more RAM (host has ~380 GB free; my jobs use ~1.8 GB/worker measured).
+
+    [2026-10-27T15:32:28+01:00] 15:35 HANDOVER: all fast/slow M4 runs done except heavy halves p4b_m4_{mvsusie,coloc_susie,coloc_susie_mm}_half_{a,b} (queued). Next: 3 benches (main/slow/mvsusie) via scripts/baselines_p4.py bench, m4summary, report, register m4_valid_baselines@1.
+
+    [2026-10-27T20:09:50+01:00] 20:15 m4_valid_baselines@1 registered PROVISIONAL/partial (fast methods + colocboost both modes; W=0.2 selected; operating points in results/baselines_m4/m4_valid_v1/{main,slow}/operating_points.json). Missing: coloc_susie (halves ~22:30), coloc_susie_mm (~23:40), mvsusie (resubmitted prio 7). Report reports/p4.m4_valid.md (partial).
+
+    [2026-10-27T22:20:37+01:00] 22:25 m4_valid_baselines@2 registered (final for freeze; also m4_subsample@1). coloc_susie_mm + mvsusie operating points = screen_v2 fallback per P3-27. Still running, handed to PI (cancel at freeze): p4b_m4_coloc_susie_mm_half_a/b, p4b_m4_mvsusie_half_a_r2/_b_r2. Report reports/p4.m4_valid.md (p4-baselines @ 7a456c5).'
+  created: '2026-10-27T10:25:50+01:00'
+  updated: '2026-10-27T22:20:42+01:00'
+- id: p5.killtest_A1
+  owner: famA_dev
+  status: done
+  depends_on:
+  - p3.famA_fixes
+  - p4.baselines_screen
+  inputs: []
+  outputs: []
+  done_criterion: A1 per DESIGN 6.2 on screen_v2; result recorded
+  jobs:
+  - famA_p5_A1_primary
+  - famA_p5_A1_primary_r2
+  - famA_p5_scrL0P3_retry_r2
+  - famA_p5_killtest_a1_rule_a
+  - famA_p5_killtest_a1_rule_a_r2
+  - famA_p5_scrL0P3_retry_r3
+  notes: 'A1 FAIL: AUPRC 0.893 vs 0.978; demoted'
+  created: '2026-10-27T10:25:50+01:00'
+  updated: '2026-10-27T16:24:35+01:00'
+- id: p5.killtest_B1
+  owner: famB_dev
+  status: done
+  depends_on:
+  - p4.baselines_screen
+  inputs: []
+  outputs:
+  - famB_screen_v2@1
+  done_criterion: B1 per DESIGN 5B on screen_v2; result recorded
+  jobs:
+  - famB_screen_pilot_r2
+  - famB_screen_v2_full
+  - famB_m4_valid
+  - famB_screen_v2_full_r2
+  - famB_m4_valid_r2
+  - famB_killtest_B1
+  - famB_killtest_B1_r2
+  notes: FAIL/KILL (matched-W); confirmed
+  created: '2026-10-27T10:25:50+01:00'
+  updated: '2026-10-27T19:54:12+01:00'
+- id: p5.verify_infra
+  owner: verifier
+  status: done
+  depends_on:
+  - p2.review_sim
+  - p2.verify_artifacts
+  - p4.realdata_rho
+  inputs: []
+  outputs: []
+  done_criterion: independent verification per old M3.5 VERIFY brief; reviews/verify_M3.5.md
+  jobs:
+  - p5vi_tests_full
+  - p5vi_scan_testsplit
+  - p5vi_oracle_check
+  - p5vi_gitinfo_probe
+  notes: trust with caveats; defaults accepted; eval fixes routed to p6 dryrun; famB MC per-locus seeds routed
+  created: '2026-10-27T10:25:50+01:00'
+  updated: '2026-10-27T11:06:58+01:00'
+- id: p5.famA_screen_m4
+  owner: famA_dev
+  status: done
+  depends_on:
+  - p3.famA_fixes
+  - p4.m4_valid
+  inputs:
+  - screen_v2@2
+  outputs: []
+  done_criterion: A ablation ladder on screen_v2 (all cells) and on m4_subsample; registered famA_screen_v2, famA_m4_valid
+  jobs:
+  - famA_p5_plumb
+  - famA_p5_scr_primary
+  - famA_p5_m4_primary
+  - famA_p5_scr_primary_r2
+  - famA_p5_m4_primary_r2
+  - famA_p5_scr_ladder1
+  - famA_p5_m4_ladder1
+  - famA_p5_scr_ladder2
+  - famA_p5_m4_ladder2
+  - famA_p5_scrL24_primary
+  - famA_p5_scrL0P3_primary
+  - famA_p5_scrL24_ladder1
+  - famA_p5_scrL24_ladder2
+  - famA_p5_scrL0P3_ladder
+  - famA_p5_m4L0P1_primary
+  - famA_p5_L0P1_ladder
+  - famA_p5_scrL24_ladder1_r2
+  - famA_p5_scrL0P3_ladder_r2
+  - famA_p5_m4_ladder1_r2
+  - famA_p5_scrL24_ladder2_r2
+  - famA_p5_m4_ladder2_r2
+  - famA_p5_ladder_scr_sub
+  - famA_p5_ladder_m4_sub
+  - famA_p5_ladder_L0P1_sub
+  - famA_p5_scrL0P3_primary_r2
+  - famA_p5_m4L0_primary
+  - famA_p5_ladder_L24_sub
+  - famA_p5_ladder_m4L1p_sub
+  - famA_p5_ladder_L0_sub
+  - famA_p5_scrL0P3_retry
+  - famA_p5_m4L0_primary_r2
+  - famA_p5_ladder_L0_sub_r2
+  - famA_p5_m4L0_primary_r3
+  - famA_p5_ladder_L0_sub_r3
+  notes: 'partial: A primary on all 6 screen_v2 cells (famA_screen_v2@2) and M4 L1+ (famA_m4_valid@1); M4 L0 cells and the ablation ladder not run (cancelled after A1 FAIL / demotion)'
+  created: '2026-10-27T10:43:35+01:00'
+  updated: '2026-10-27T16:24:36+01:00'
+- id: p5.famC_C2
+  owner: famC_dev
+  status: abandoned
+  depends_on:
+  - p4.famC_C1
+  - p4.m4_valid
+  inputs: []
+  outputs: []
+  done_criterion: 'only if C1 passes: main training on train-split stream (L6 held out), floor+no-LD ablation, C2 on m4_subsample (AUPRC >= best A/B at <= recalibrated ECE; train-valid gap < 0.02); else task abandoned with C1 evidence'
+  jobs: []
+  notes: not testable before freeze (5-6h data gen); follow-up
+  created: '2026-10-27T10:43:35+01:00'
+  updated: '2026-10-27T19:54:13+01:00'
+- id: p6.select_primary
+  owner: PI
+  status: done
+  depends_on:
+  - p5.killtest_A1
+  - p5.killtest_B1
+  - p5.famA_screen_m4
+  - p4.m4_valid
+  inputs: []
+  outputs: []
+  done_criterion: decision note naming one primary + <=2 secondary candidates from validation evidence only; test_methods_v1.yaml filled with validation operating points
+  jobs: []
+  notes: 'D16: no primary candidate'
+  created: '2026-10-27T10:43:35+01:00'
+  updated: '2026-10-27T19:54:14+01:00'
+- id: p7.freeze
+  owner: PI
+  status: done
+  depends_on:
+  - p6.select_primary
+  - p5.verify_infra
+  inputs: []
+  outputs: []
+  done_criterion: check_frozen --update; oracle re-frozen; tag frozen-v1 (~22:00)
+  jobs: []
+  notes: tag frozen-v1 @ cab2599
+  created: '2026-10-27T10:43:35+01:00'
+  updated: '2026-10-27T23:40:56+01:00'
+- id: p7.test_run
+  owner: PI
+  status: done
+  depends_on:
+  - p7.freeze
+  inputs: []
+  outputs: []
+  done_criterion: single scripts/eval_test.py run (sim test grid + shifted arm + real arms), all methods, metrics + bootstrap; committed access log
+  jobs:
+  - test_run_v1
+  - test_run_v1_r1
+  notes: test run ab94c5a1 completed 04:43 (test_run_v1 interrupted for D21, test_run_v1_r1 resumed+completed); bundle verify ok; independent verification p7.verify running
+  created: '2026-10-27T10:43:35+01:00'
+  updated: '2026-10-28T04:56:33+01:00'
+- id: p8.report
+  owner: PI
+  status: done
+  depends_on:
+  - p7.test_run
+  inputs: []
+  outputs: []
+  done_criterion: REPORT.md written from committed results
+  jobs: []
+  notes: REPORT.md final 05:06 (971f7bc)
+  created: '2026-10-27T10:43:35+01:00'
+  updated: '2026-10-28T05:06:47+01:00'
+- id: p6.dryrun_testpipeline
+  owner: eval_dev
+  status: done
+  depends_on:
+  - p4.m4_valid
+  inputs: []
+  outputs: []
+  done_criterion: end-to-end dry run of scripts/eval_test.py pipeline on VALIDATION blocks at ~5% size with all test methods (incl. candidates), resumable, timing per method; must pass by 20:00
+  jobs:
+  - p6dr_tests_eval
+  - p6dr_dry_v1
+  - p6dr_dry_v2
+  - p6dr_dry_v3
+  - p6dr_dry_v4
+  - p6dr_realbuilder_v1
+  - p6dr_mvr_v1
+  - p6dr_mvr_v1_resume
+  - p6dr_mvr_v1_resume2
+  - p6dr_mvr_v1_resume3
+  notes: 'started early with available methods; re-dry-run with final candidates after selection
+
+    [2026-10-27T15:31:42+01:00] handover 15:31: code+tests committed on p6-dryrun (21f7086); dry run p6dr_dry_v2 queued (bundle results/eval_test_dry/dry_v2)
+
+    [2026-10-27T23:39:34+01:00] dry_v4 passed (kill+resume), MVR dry run passed (dry_mvr1 @ c32b511); frozen methods file on p6-freeze @ 049372e; extrapolation 4.6 h central / 6.5 h conservative'
+  created: '2026-10-27T10:44:48+01:00'
+  updated: '2026-10-27T23:39:34+01:00'
+- id: p5.verify_famC_scoring
+  owner: p5-verify
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: review reviews/p5_verify_famC_scoring.md committed
+  jobs:
+  - p5_verify_famC_recompute
+  - p5_verify_famC_recompute_r2
+  notes: fix correct; recompute matches to 1e-6; caveat W from 4 LD blocks
+  created: '2026-10-27T15:35:39+01:00'
+  updated: '2026-10-27T15:53:52+01:00'
+- id: p6.realdata_testarm
+  owner: real_data_engineer
+  status: done
+  depends_on: []
+  inputs:
+  - real_locus_sets@2
+  outputs: []
+  done_criterion: 'data.real.extract:build_test_arm implemented (test-access guarded: parent + worker), R3b/R2/R4b test metadata derived and hash-verified vs frozen ID lists, validation-mode end-to-end equality with real_locus_sets@2, entry point for eval_test; committed by ~19:00'
+  jobs:
+  - p6rt_test_meta
+  - p6rt_test_meta_r2
+  - p6rt_valid_check
+  - p6rt_tests
+  - p6rt_valid_check_r2
+  - p6rt_tests_r2
+  - p6rt_valid_check_r3
+  - p6rt_valid_check_r4
+  notes: build_test_arm implemented+guarded; valid check 5/5 identical; 41 tests pass; report reports/p6.realdata_testarm.md; branch p6-realdata-testarm
+  created: '2026-10-27T15:37:50+01:00'
+  updated: '2026-10-27T17:06:39+01:00'
+- id: p5.verify_B1
+  owner: verifier
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: null
+  jobs: []
+  notes: all 5 B1 verdicts confirmed from raw predictions
+  created: '2026-10-27T19:54:12+01:00'
+  updated: '2026-10-27T19:54:12+01:00'
+- id: p9.design_review
+  owner: reviewer
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: reviews/p9_design_review.md with must-change list
+  jobs: []
+  notes: approve with must-changes; all adopted; DESIGN_P2 frozen (tag design-p2-frozen)
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T09:41:11+01:00'
+- id: p9.famC_C2
+  owner: famC
+  status: done
+  depends_on: []
+  inputs: []
+  outputs:
+  - famC_C2@1
+  - famC_C2_model@1
+  - famC_nold_600k@1
+  - famC_floor_600k@1
+  - famC_train_v1@1
+  - famC_valid_v1@1
+  - famC_trainregion_m4@1
+  done_criterion: C2 verdict on M4 validation + floor + no-LD ablation; reports/p9.famC_C2.md
+  jobs:
+  - famC_p9_bench_cpu16
+  - famC_p9_bench_gpu1
+  - famC_p9_gen_train_v1
+  - famC_p9_gen_valid_v1
+  - famC_p9_trainregion_smoke
+  - famC_p9_trainregion_m4_v1
+  - famC_p9_gen_train_v1_w0
+  - famC_p9_gen_train_v1_w1
+  - famC_p9_gen_train_v1_w2
+  - famC_p9_gen_train_v1_w3
+  - famC_p9_tests_r1
+  - famC_p9_c2eval_plumbing
+  - famC_p9_tests_r2
+  - famC_p9_timing_pilot
+  - famC_p9_trainregion_m4_v1_r2
+  - famC_p9_floorfeat_valid_v1
+  - famC_p9_main_75k
+  - famC_p9_floorfeat_train_v1_a
+  - famC_p9_main_600k
+  - famC_p9_nold_600k
+  - famC_p9_main_150k
+  - famC_p9_main_300k
+  - famC_p9_floorfeat_train_v1_b
+  - famC_p9_floorfeat_train_v1_c
+  - famC_p9_main_600k_r2
+  - famC_p9_nold_600k_r2
+  - famC_p9_main_150k_r2
+  - famC_p9_main_300k_r2
+  - famC_p9_floorfeat_train_v1_c2
+  - famC_p9_floor_600k
+  - famC_p9_c2_harness_net
+  - famC_p9_c2_harness_nold
+  - famC_p9_c2_harness_floor
+  - famC_p9_main_150k_r3
+  - famC_p9_main_300k_r3
+  - famC_p9_c2_eval
+  - famC_p9_c2_bench
+  notes: 'C2 FAIL confirmed (reviews/p9_verify_C2.md); C demoted to fast pre-filter
+
+    [2026-10-28T16:08:25+01:00] 16:08 all famC GPU jobs finished (300k done); famC uses no GPU from now on -> G-mm exclusive slot can start any time. Writing reports/p9.famC_C2.md.
+
+    [2026-10-28T16:10:12+01:00] 16:20 DONE. C2 FAIL (iii nold), confirmed reviews/p9_verify_C2.md; report reports/p9.famC_C2.md on branch p9-famC-C2 @9e31c4c.'
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T16:10:12+01:00'
+- id: p9.famB_mm
+  owner: famB
+  status: done
+  depends_on: []
+  inputs: []
+  outputs:
+  - famB_mm_screen_v2@1
+  - famB_mm_ladder@1
+  - famB_mm_m4_valid@1
+  - famB_mm_m4_eval@2
+  - famB_m4_valid@1
+  done_criterion: B-mm implemented, correctness passed, ladder on screen_v2 at OP1+OP2; reports/p9.famB_mm.md
+  jobs:
+  - famB_mm_tests_r1
+  - famB_mm_pilot_r1
+  - famB_mm_profile_r1
+  - famB_mm_profile_r2
+  - famB_mm_tests_r2
+  - famB_mm_screen_v2
+  - famB_mm_m4_valid
+  - famB_p1_m4_valid
+  - famB_mm_ladder_dry
+  - famB_mm_screen_v2_r2
+  - famB_mm_m4_valid_r2
+  - famB_p1_m4_valid_r2
+  - famB_mm_screen_v2_r3
+  - famB_mm_m4_valid_r3
+  - famB_p1_m4_valid_r3
+  - famB_mm_ladder
+  - famB_mm_m4_eval
+  - famB_mm_m4_eval_v2
+  notes: '[2026-10-28T09:42:28+01:00] B-mm agent started 09:35; DESIGN_P2 frozen cb6bdd0 received ~10:00
+
+    [2026-10-28T14:14:43+01:00] Gate PASS (+0.040+-0.006 block); rule (c) OP2 KILL (L4, P4-1 ii+iii); B1 OP2 FAIL; M4 bar not met (-0.039+-0.009). Report reports/p9.famB_mm.md on branch p9-famB-mm @ef22e4a; pending PI verification.'
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T14:14:43+01:00'
+- id: p9.famG_mm
+  owner: famG
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: G-mm identity vs coloc_susie_mm (<1e-3) + whole-machine throughput; reports/p9.famG_mm.md
+  jobs:
+  - famG_mm_identity_ref_v1
+  - famG_mm_identity_gpu_v1
+  - famG_mm_identity_ref_v2
+  - famG_mm_identity_gpu_v2
+  - famG_mm_identity_cpu_v2
+  - famG_mm_slice2000_v1
+  - famG_mm_identity_cpu_v2_r2
+  - famG_mm_traj_v1
+  - famG_mm_sens_v1
+  - famG_mm_identity_gpu_v3
+  - famG_mm_bench_v1
+  - famG_mm_identity_gpu_v4
+  - famG_mm_bench_v2
+  - famG_mm_bench_v3
+  - famG_mm_bench_v4
+  - famG_mm_perf_v1
+  - famG_mm_perf_v1_r2
+  - famG_mm_perf_v1_r3
+  - famG_mm_perf_v2
+  - famG_mm_perf_v3
+  - famG_mm_perf_v4
+  - famG_mm_perf_v5
+  - famG_mm_timing_dry_v1
+  - famG_mm_perf_v6
+  - famG_mm_perf_v7
+  - famG_mm_timing_v1
+  - famG_mm_timing_diag_v1
+  notes: 'P4-6: correctness rung FAILED (199/200; 1 chaotic non-converged fit); report-only engineering note; throughput + M4 continue
+
+    [2026-10-28T11:19:05+01:00] 11:20 P4-6: identity PASS 199/200, FAIL 1 chaotic nonconverged fit (0007201 t1) under amended P4-3a; correctness rung failed -> report-only engineering note; ship GPU fp64 Triton; continuing throughput + M4
+
+    [2026-10-28T18:30:21+01:00] 18:35 done: report reports/p9.famG_mm.md @ branch p9-famG-mm; artifacts famG_mm_slice2000@1, famG_mm_identity@1, famG_mm_timing@1; identity FAIL 1/200 (P4-6) -> report-only; 7.7: 4.77x coloc_susie_mm (short of 5x), 4.18x 0.14.2 n=1'
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T18:44:54+01:00'
+- id: p9.baselines_m4mm
+  owner: baselines
+  status: done
+  depends_on: []
+  inputs: []
+  outputs: []
+  done_criterion: coloc_susie_mm (+mvsusie if possible) on M4 main; OP1+OP2 for all baselines; reports/p9.baselines_m4mm.md
+  jobs:
+  - p9_m4_mvsusie
+  - p9_bench_m4_main_full
+  - p9_op2_screen_v2
+  - p9_op2_screen_v2_r2
+  - p9_op2_m4_main
+  - p9_m4_valid_v3_assemble
+  notes: coloc_susie_mm M4 0.899 [0.887,0.913]; OP1 0.8403/0.7323; OP2 fits m4_valid_baselines@3, op2_screen_v2_baselines@1
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T10:22:15+01:00'
+- id: p9.testset_v2
+  owner: baselines
+  status: done
+  depends_on:
+  - p9.design_review
+  inputs: []
+  outputs: []
+  done_criterion: configs/testset_v2.yaml + generator dry check on validation; no test generation before freeze
+  jobs:
+  - p9_tests_v2lock
+  - p9_dry_testset_v2
+  notes: testset_v2.yaml + per-testset lock + dry run ok (not frozen)
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T10:22:15+01:00'
+- id: p9.select
+  owner: PI
+  status: done
+  depends_on:
+  - p9.famC_C2
+  - p9.famB_mm
+  - p9.famG_mm
+  - p9.baselines_m4mm
+  inputs: []
+  outputs: []
+  done_criterion: null
+  jobs: []
+  notes: 'D28: no candidate'
+  created: '2026-10-28T09:34:04+01:00'
+  updated: '2026-10-28T15:55:01+01:00'
+- id: p9.freeze_v2
+  owner: PI
+  status: abandoned
+  depends_on:
+  - p9.select
+  - p9.testset_v2
+  inputs: []
+  outputs: []
+  done_criterion: null
+  jobs: []
+  notes: "D28: no candidate -> v2 not generated (DESIGN_P2 \xA77 fallback)"
+  created: '2026-10-28T09:34:05+01:00'
+  updated: '2026-10-28T15:55:02+01:00'
+- id: p9.test_run_v2
+  owner: PI
+  status: abandoned
+  depends_on:
+  - p9.freeze_v2
+  inputs: []
+  outputs: []
+  done_criterion: null
+  jobs: []
+  notes: 'D28: no candidate -> v2 not generated'
+  created: '2026-10-28T09:34:05+01:00'
+  updated: '2026-10-28T15:55:02+01:00'
+- id: p9.report
+  owner: PI
+  status: done
+  depends_on:
+  - p9.test_run_v2
+  inputs: []
+  outputs: []
+  done_criterion: null
+  jobs: []
+  notes: "REPORT.md \xA711 final 19:20"
+  created: '2026-10-28T09:34:05+01:00'
+  updated: '2026-10-28T18:44:54+01:00'

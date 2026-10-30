@@ -1,0 +1,20 @@
+23:44:54 [harness] run test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b: 1237 loci (1237 to run), mode=cpu, workers=20
+23:45:54 [harness] coloc_susie_mm: 9/1237 loci done
+23:46:56 [harness] coloc_susie_mm: 35/1237 loci done
+23:47:57 [harness] coloc_susie_mm: 64/1237 loci done
+23:49:01 [harness] coloc_susie_mm: 94/1237 loci done
+23:50:03 [harness] coloc_susie_mm: 133/1237 loci done
+23:51:04 [harness] coloc_susie_mm: 174/1237 loci done
+23:52:04 [harness] coloc_susie_mm: 217/1237 loci done
+23:53:04 [harness] coloc_susie_mm: 260/1237 loci done
+23:54:04 [harness] coloc_susie_mm: 313/1237 loci done
+23:55:05 [harness] coloc_susie_mm: 370/1237 loci done
+23:56:05 [harness] coloc_susie_mm: 443/1237 loci done
+23:57:06 [harness] coloc_susie_mm: 515/1237 loci done
+23:58:06 [harness] coloc_susie_mm: 598/1237 loci done
+23:59:09 [harness] coloc_susie_mm: 667/1237 loci done
+00:00:09 [harness] coloc_susie_mm: 746/1237 loci done
+00:01:10 [harness] coloc_susie_mm: 839/1237 loci done
+00:02:11 [harness] coloc_susie_mm: 985/1237 loci done
+00:03:11 [harness] coloc_susie_mm: 1163/1237 loci done
+00:03:33 [harness] done test_frozen-v1_ab94c5a1__coloc_susie_mm__real_R3b: {'ok': 1175, 'nonconverged': 62, 'failed': 0, 'timeout': 0, 'expected': 1237} in 1119.1s

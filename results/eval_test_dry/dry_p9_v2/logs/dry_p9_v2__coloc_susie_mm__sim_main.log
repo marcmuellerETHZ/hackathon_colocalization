@@ -1,0 +1,9 @@
+10:06:23 [harness] run dry_p9_v2__coloc_susie_mm__sim_main: 241 loci (241 to run), mode=cpu, workers=4
+10:07:24 [harness] coloc_susie_mm: 33/241 loci done
+10:08:27 [harness] coloc_susie_mm: 70/241 loci done
+10:09:28 [harness] coloc_susie_mm: 113/241 loci done
+10:10:28 [harness] coloc_susie_mm: 153/241 loci done
+10:11:32 [harness] coloc_susie_mm: 178/241 loci done
+10:12:41 [harness] coloc_susie_mm: 199/241 loci done
+10:13:42 [harness] coloc_susie_mm: 228/241 loci done
+10:14:05 [harness] done dry_p9_v2__coloc_susie_mm__sim_main: {'ok': 205, 'nonconverged': 36, 'failed': 0, 'timeout': 0, 'expected': 241} in 461.4s

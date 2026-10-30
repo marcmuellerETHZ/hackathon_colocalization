@@ -1,0 +1,4 @@
+[orch] job famC_p9_main_75k start 2026-10-28T13:54:34+01:00 host eu-g6-001 commit b4c4c0b13c pid 2383069
+[orch] cmd: until [ -f data/processed/famC/train_v1/shardw0_00037.pt ]; do sleep 20; done; python -m famC.train_main --run p9_main_75k --train-set train_v1 --valid-set valid_v1 --max-train-shards 37 --steps 2368 --warmup 236 --eval-every 296 --seed-key main > logs/famC/p9_main_75k.log 2>&1; rc=$?; tail -n 2 logs/famC/p9_main_75k.log | cut -c1-400; exit $rc
+EVAL step 2368: all: sd_pm 0.9695 dw 0.9980 | realistic_L1-L4: sd_pm 0.9709 dw 0.9979 | L6: sd_pm 0.9554 dw 0.9977 | train-region sd_pm 0.9886 | ll 0.4123 | infer 3495 loci/s
+DONE

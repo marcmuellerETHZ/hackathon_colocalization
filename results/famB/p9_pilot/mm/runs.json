@@ -1,0 +1,54 @@
+{
+ "method": "exactcoloc_mm_gaussian_M50",
+ "kwargs": {
+  "mode": "gaussian",
+  "M": 50,
+  "p12": 5e-06,
+  "n_mc": 16384,
+  "compile": true,
+  "mismatch": true,
+  "mm_iter": 2,
+  "mm_cross_terms": true
+ },
+ "runs": [
+  {
+   "set": "data/processed/sets/valid_grid_v1/L2_P1_r_p=0.0.h5",
+   "run_id": "20261028T084850Z_exactcoloc_mm_gaussian_M50_L2_P1_r_p=0.0_cda458",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T084850Z_exactcoloc_mm_gaussian_M50_L2_P1_r_p=0.0_cda458",
+   "n": 102,
+   "counts": {
+    "ok": 102,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 102
+   },
+   "wall_s": 100.62528800964355,
+   "loci_per_s": 1.0136616949630464,
+   "predictions_sha256": "90bd55125338106facf42ea301127ed04eefe96fbb64208ad65ee67c5e21f4f7"
+  },
+  {
+   "set": "data/processed/sets/valid_grid_v1/L4_P3_rho=0.5.h5",
+   "run_id": "20261028T085031Z_exactcoloc_mm_gaussian_M50_L4_P3_rho=0.5_6a8ac6",
+   "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/20261028T085031Z_exactcoloc_mm_gaussian_M50_L4_P3_rho=0.5_6a8ac6",
+   "n": 103,
+   "counts": {
+    "ok": 103,
+    "nonconverged": 0,
+    "failed": 0,
+    "timeout": 0,
+    "expected": 103
+   },
+   "wall_s": 85.77673172950745,
+   "loci_per_s": 1.2007918455648934,
+   "predictions_sha256": "21fe355b47410e8fc39de0bdc2eda39dd873c37564dc431c6356772c2e09122b"
+  }
+ ],
+ "n_loci": 205,
+ "ids_file": null,
+ "status_counts": {
+  "ok": 205
+ },
+ "commit": "aa111205bb3e579644998c9b9301e734a60cd6d2",
+ "job": "famB_mm_pilot_r1"
+}

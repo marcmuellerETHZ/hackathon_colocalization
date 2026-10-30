@@ -1,0 +1,163 @@
+{
+ "checkpoint": {
+  "resumed": false,
+  "rows_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/checkpoints/dry_p9_v2__strength_only__sim_main.rows.jsonl",
+  "rows_from_checkpoint": 0,
+  "rows_this_segment": 241,
+  "segments": [
+   {
+    "git": "885ec7ec5c92232541fb106d7be73cb0a09620f0",
+    "host": "eu-g6-001",
+    "n_todo": 241,
+    "pid": 2147717,
+    "rows_from_checkpoint": 0,
+    "start_utc": "2026-10-28T09:06:34.098986Z"
+   }
+  ]
+ },
+ "config": {
+  "DRY": true,
+  "commit": "885ec7ec5c92232541fb106d7be73cb0a09620f0",
+  "methods_file": "configs/proposals/test_methods_dry_p9_v2.yaml",
+  "methods_file_sha256": "c8c18c9ce713e7346abef92b723c705b6bed9ece47561fc9f6377f9546e98588",
+  "mode": "dry",
+  "note": "validation blocks only; operating points / recalibration / strength table are DRY placeholders",
+  "orch_snapshot": true,
+  "set_key": "sim_main",
+  "subsample_per_class": null,
+  "test_mode_lock_refusals_observed": [
+   "the running commit 885ec7ec5c carries no frozen-v2* tag",
+   "methods file status is 'dry', not 'frozen'",
+   "coloc_abf: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "coloc_susie_mm: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "colocboost_m1: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "strength_only: metric_config lacks the validation-fixed t_S / t_D (C3)",
+   "strength_only: frozen strength table 'DRY' missing",
+   "real_data_arms.builder (entry point building the test arms from the frozen ID lists) is not set"
+  ],
+  "testset_config": "configs/testset_v2.yaml",
+  "testset_sha256": "25bfe007a8a9eb09bacfd424961dbd1a4217a040624496e8b38fa275ddeec8ac",
+  "unit": "dry_p9_v2__strength_only__sim_main"
+ },
+ "counts": {
+  "expected": 241,
+  "failed": 0,
+  "nonconverged": 0,
+  "ok": 241,
+  "timeout": 0
+ },
+ "end_utc": "2026-10-28T09:06:37.096524Z",
+ "env_lock_sha256": {
+  "combined": "fc1bef37f692c3e6c03381d6fa0f61b0a01cac967a0e2b39612b8712eee856d0",
+  "env/R_packages_pinned.tsv": "862e735a0991bd31b51fa3764f8528bdcdf61133aaec00270c7b6c46a1eabe64",
+  "env/renv.lock": "115dc8eabb31fec8bd329da3ff8b505cacbd4d3dbaa2eb403eb263b946478e04",
+  "env/requirements.lock": "f6aabf6740bc877d48a37b1f7d8e526a5ef62ac7069444ec1022832144925dcf"
+ },
+ "git": {
+  "clean": true,
+  "clean_basis": "orch snapshot of a committed tree",
+  "commit": "885ec7ec5c92232541fb106d7be73cb0a09620f0",
+  "modified_tracked": [],
+  "orch_job": "p9_dry_testset_v2",
+  "snapshot": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code",
+  "tags": [],
+  "untracked_code": []
+ },
+ "harness": {
+  "batch_size": 1,
+  "lock": "shared",
+  "mode": "cpu",
+  "n_workers": 2,
+  "timeout_s_per_locus": 60.0,
+  "timing": false
+ },
+ "label": "DRY dry_p9_v2",
+ "locus_set": {
+  "ids_sha256": "ffda98a7bd6cb4077a2ea9916f5e60818870f99f0b3f71744dfbac1777d41b54",
+  "n_expected": 241,
+  "n_loci_in_file": 241,
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.h5",
+  "sha256": "150fab420d57fcb56a4138360ea4d7f949fb91f7066b281502f33dc2c9a5c8d7"
+ },
+ "machine_start": {
+  "cpu_affinity": 64,
+  "gpu": "98, 10775",
+  "hostname": "eu-g6-001",
+  "loadavg": [
+   18.98779296875,
+   19.4873046875,
+   18.60302734375
+  ]
+ },
+ "method": {
+  "kwargs": {
+   "table": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p9_dry_testset_v2/code/results/eval_test_dry/dry_p9_v2/DRY_strength_table_in_sample.json"
+  },
+  "name": "strength_only",
+  "target": "eval.reference_methods:StrengthOnly"
+ },
+ "method_name": "strength_only",
+ "metric_config": {
+  "d_edges": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   Infinity
+  ],
+  "e_gate": 0.95,
+  "pairing_weights": {
+   "P1": 0.5,
+   "P2": 0.25,
+   "P3": 0.25
+  },
+  "r2_edges": [
+   0.0,
+   0.1,
+   0.3,
+   0.5,
+   0.8,
+   0.95
+  ],
+  "recal_a_D": null,
+  "recal_a_S": null,
+  "shuffle_seed": 20261029,
+  "t_D": 0.8,
+  "t_S": 0.8,
+  "w_limit": 0.025
+ },
+ "metrics_sha256": "d548e475957d8eff7698b39ec7b660dc31c9ade8fbf5bf1b20ebecf96839782c",
+ "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.39",
+ "predictions_sha256": "a5c5ca81bc5f8800b8cfdc7ff669017655525f78a9c88d33bad6c869b38f05eb",
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "results_policy": {
+  "commit_limit_bytes": 5242880,
+  "predictions_committed": true,
+  "predictions_size_bytes": 23275,
+  "rule": "D6(h)"
+ },
+ "run_id": "dry_p9_v2__strength_only__sim_main",
+ "runtime_s": {
+  "median": 0.0060456860228441656,
+  "p95": 0.00897624299977906,
+  "sum": 1.635568395955488
+ },
+ "seeds": {
+  "SEEDS": [
+   20261026,
+   20261027,
+   20261028,
+   20261029,
+   20261030,
+   20261101
+  ],
+  "used": {}
+ },
+ "start_utc": "2026-10-28T09:06:34.098986Z",
+ "test_access": false,
+ "truth": {
+  "path": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/data/processed/eval_test_dry/dry_p9_v2/sets/dry_p9_v2.truth.parquet",
+  "sha256": "53b88160b37f453fe8f1b22a89cf63da035bde64834f6e283b2e4c002d23a7d7"
+ },
+ "wall_s": 2.9975229910050984
+}

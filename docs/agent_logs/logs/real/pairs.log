@@ -1,0 +1,121 @@
+{
+ "gate": {
+  "QTD000356": {
+   "n_genes_with_cs": 4310,
+   "gate_train": 2579,
+   "gate_valid": 855,
+   "gate_test": 820
+  },
+  "QTD000266": {
+   "n_genes_with_cs": 1864,
+   "gate_train": 1126,
+   "gate_valid": 355,
+   "gate_test": 343
+  },
+  "QTD000373": {
+   "n_genes_with_cs": 6584,
+   "gate_train": 3899,
+   "gate_valid": 1326,
+   "gate_test": 1270
+  },
+  "QTD000549": {
+   "n_genes_with_cs": 2730,
+   "gate_train": 1620,
+   "gate_valid": 540,
+   "gate_test": 523
+  },
+  "QTD000021": {
+   "n_genes_with_cs": 5658,
+   "gate_train": 3338,
+   "gate_valid": 1131,
+   "gate_test": 1107
+  },
+  "QTD000409": {
+   "n_genes_with_cs": 4129,
+   "gate_train": 2480,
+   "gate_valid": 800,
+   "gate_test": 789
+  },
+  "QTD000609": {
+   "n_genes_with_cs": 301,
+   "gate_train": 173,
+   "gate_valid": 66,
+   "gate_test": 50
+  },
+  "QTD000110": {
+   "n_genes_with_cs": 4358,
+   "gate_train": 2619,
+   "gate_valid": 872,
+   "gate_test": 806
+  },
+  "QTD000539": {
+   "n_genes_with_cs": 5577,
+   "gate_train": 3323,
+   "gate_valid": 1114,
+   "gate_test": 1024
+  }
+ },
+ "R2": {
+  "train": 8518,
+  "valid": 2807,
+  "test": 2674
+ },
+ "R2_by_pair": {
+  "QTD000021xQTD000409": {
+   "train": 1507,
+   "test": 489,
+   "valid": 486
+  },
+  "QTD000021xQTD000609": {
+   "train": 153,
+   "valid": 50,
+   "test": 42
+  },
+  "QTD000110xQTD000539": {
+   "train": 2025,
+   "valid": 660,
+   "test": 624
+  },
+  "QTD000356xQTD000373": {
+   "train": 2031,
+   "valid": 690,
+   "test": 644
+  },
+  "QTD000356xQTD000549": {
+   "train": 1247,
+   "valid": 398,
+   "test": 382
+  },
+  "QTD000373xQTD000549": {
+   "train": 1437,
+   "valid": 487,
+   "test": 462
+  },
+  "QTD000409xQTD000609": {
+   "train": 118,
+   "valid": 36,
+   "test": 31
+  }
+ },
+ "R3b_prefilter": {
+  "train": 5514,
+  "valid": 1802,
+  "test": 1643
+ },
+ "R3b": {
+  "train": 3948,
+  "valid": 1203,
+  "test": 1237
+ },
+ "R3b_ld_status": {
+  "below_0.01": 4204,
+  "found": 2405,
+  "not_queried": 2350
+ },
+ "R3b_poolB_nan": 1373,
+ "R4b": {
+  "train": 4081,
+  "valid": 1259,
+  "test": 1279
+ }
+}

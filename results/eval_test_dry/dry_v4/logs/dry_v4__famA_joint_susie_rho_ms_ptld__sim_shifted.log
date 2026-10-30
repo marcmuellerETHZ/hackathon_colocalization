@@ -1,0 +1,2 @@
+19:19:41 [harness] run dry_v4__famA_joint_susie_rho_ms_ptld__sim_shifted: 64 loci (64 to run), mode=batch, workers=1
+19:20:17 [harness] done dry_v4__famA_joint_susie_rho_ms_ptld__sim_shifted: {'ok': 64, 'nonconverged': 0, 'failed': 0, 'timeout': 0, 'expected': 64} in 36.1s

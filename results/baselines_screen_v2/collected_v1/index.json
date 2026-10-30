@@ -1,0 +1,773 @@
+{
+ "groups": {
+  "L0P1": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/L0P1_all.txt",
+   "n": 2000
+  },
+  "rest_all": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/rest_all.txt",
+   "n": 10000
+  },
+  "rest_all_half_a": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/rest_all_half_a.txt",
+   "n": 5000
+  },
+  "rest_all_half_b": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/rest_all_half_b.txt",
+   "n": 5000
+  },
+  "rest_all_quarter_b1": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/rest_all_quarter_b1.txt",
+   "n": 2500
+  },
+  "rest_all_quarter_b2": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/rest_all_quarter_b2.txt",
+   "n": 2500
+  },
+  "rest_slow": {
+   "ids_file": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/ids/rest_slow.txt",
+   "n": 1000
+  }
+ },
+ "methods": {
+  "coloc_abf_W0.15_p12_1e-05": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102351Z_coloc_abf_W0.15_p12_1e-05_screen_v2_ea5a26",
+    "run_id": "20261027T102351Z_coloc_abf_W0.15_p12_1e-05_screen_v2_ea5a26",
+    "runtime_median_s": 0.047503450499789324,
+    "runtime_p95_s": 0.11692294404710991,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 57.00661077100085
+   },
+   "rest_all": {
+    "commit": "1710c67fc7af0a7d315082b8c362f1539907767d",
+    "n": 10000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T111010Z_coloc_abf_W0.15_p12_1e-05_screen_v2_0ea8a6",
+    "run_id": "20261027T111010Z_coloc_abf_W0.15_p12_1e-05_screen_v2_0ea8a6",
+    "runtime_median_s": 0.012750193498504814,
+    "runtime_p95_s": 0.04193895050411809,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 92.5516727540089
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_abf_W0.15_p12_5e-06": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102351Z_coloc_abf_W0.15_p12_5e-06_screen_v2_09d75d",
+    "run_id": "20261027T102351Z_coloc_abf_W0.15_p12_5e-06_screen_v2_09d75d",
+    "runtime_median_s": 0.04719660899718292,
+    "runtime_p95_s": 0.11657719529903256,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 57.0291382639989
+   },
+   "rest_all": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 10000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.15_p12_5e-06_screen_v2_754ca0",
+    "run_id": "20261027T104528Z_coloc_abf_W0.15_p12_5e-06_screen_v2_754ca0",
+    "runtime_median_s": 0.010222401499049738,
+    "runtime_p95_s": 0.0503803715095273,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 86.84133670800657
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_abf_W0.1_p12_1e-05": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102351Z_coloc_abf_W0.1_p12_1e-05_screen_v2_cfd0b4",
+    "run_id": "20261027T102351Z_coloc_abf_W0.1_p12_1e-05_screen_v2_cfd0b4",
+    "runtime_median_s": 0.04782738749781856,
+    "runtime_p95_s": 0.11385384254681412,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 56.83997859599185
+   },
+   "rest_all": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 10000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.1_p12_1e-05_screen_v2_b16a4a",
+    "run_id": "20261027T104528Z_coloc_abf_W0.1_p12_1e-05_screen_v2_b16a4a",
+    "runtime_median_s": 0.010550008999416605,
+    "runtime_p95_s": 0.04961794593837112,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 89.0122342609975
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_abf_W0.1_p12_5e-06": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102044Z_coloc_abf_W0.1_p12_5e-06_screen_v2_b87db0",
+    "run_id": "20261027T102044Z_coloc_abf_W0.1_p12_5e-06_screen_v2_b87db0",
+    "runtime_median_s": 0.04770134150021477,
+    "runtime_p95_s": 0.08643181854058639,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 50.520315949004726
+   },
+   "rest_all": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 10000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac",
+    "run_id": "20261027T104528Z_coloc_abf_W0.1_p12_5e-06_screen_v2_10f1ac",
+    "runtime_median_s": 0.010150071000680327,
+    "runtime_p95_s": 0.04988093049396407,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 85.99871794700448
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_abf_W0.2_p12_1e-05": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102636Z_coloc_abf_W0.2_p12_1e-05_screen_v2_bff38c",
+    "run_id": "20261027T102636Z_coloc_abf_W0.2_p12_1e-05_screen_v2_bff38c",
+    "runtime_median_s": 0.054810134490253404,
+    "runtime_p95_s": 0.10923221210105111,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 62.86186722799903
+   },
+   "rest_all": {
+    "commit": "1710c67fc7af0a7d315082b8c362f1539907767d",
+    "n": 10000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T111258Z_coloc_abf_W0.2_p12_1e-05_screen_v2_835bff",
+    "run_id": "20261027T111258Z_coloc_abf_W0.2_p12_1e-05_screen_v2_835bff",
+    "runtime_median_s": 0.013439007998385932,
+    "runtime_p95_s": 0.045897170747048216,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 93.77215539000463
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_abf_W0.2_p12_5e-06": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102636Z_coloc_abf_W0.2_p12_5e-06_screen_v2_204561",
+    "run_id": "20261027T102636Z_coloc_abf_W0.2_p12_5e-06_screen_v2_204561",
+    "runtime_median_s": 0.05442530150321545,
+    "runtime_p95_s": 0.10935440605753682,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 63.41176591900876
+   },
+   "rest_all": {
+    "commit": "1710c67fc7af0a7d315082b8c362f1539907767d",
+    "n": 10000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T111010Z_coloc_abf_W0.2_p12_5e-06_screen_v2_fcd486",
+    "run_id": "20261027T111010Z_coloc_abf_W0.2_p12_5e-06_screen_v2_fcd486",
+    "runtime_median_s": 0.012796982999134343,
+    "runtime_p95_s": 0.04176391944565693,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 91.48879958699399
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_prop_test": {
+   "L0P1": {
+    "commit": "cc26fff58a4f3f1fbb33e8d6a47d85e776be89c4",
+    "n": 2000,
+    "n_workers": 6,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T101622Z_coloc_prop_test_screen_v2_c77640",
+    "run_id": "20261027T101622Z_coloc_prop_test_screen_v2_c77640",
+    "runtime_median_s": 1.089394311500655,
+    "runtime_p95_s": 2.876524236650584,
+    "status": {
+     "failed": 3,
+     "ok": 1997
+    },
+    "timeout_s": 60.0,
+    "wall_s": 426.3672531389893
+   },
+   "rest_all": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 10000,
+    "n_workers": 6,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102637Z_coloc_prop_test_screen_v2_8e9069",
+    "run_id": "20261027T102637Z_coloc_prop_test_screen_v2_8e9069",
+    "runtime_median_s": 1.1833471745048882,
+    "runtime_p95_s": 3.4156924236478505,
+    "status": {
+     "failed": 1,
+     "ok": 9999
+    },
+    "timeout_s": 60.0,
+    "wall_s": 2383.689093916997
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_susie": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 8,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102636Z_coloc_susie_screen_v2_617536",
+    "run_id": "20261027T102636Z_coloc_susie_screen_v2_617536",
+    "runtime_median_s": 3.307517856497725,
+    "runtime_p95_s": 10.026093738603958,
+    "status": {
+     "nonconverged": 6,
+     "ok": 1994
+    },
+    "timeout_s": 360.0,
+    "wall_s": 1079.0474011299957
+   },
+   "rest_all_half_a": {
+    "commit": "20f986aedf53efa7b77ac1abde55a1a2ce7648ec",
+    "n": 5000,
+    "n_workers": 12,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T131112Z_coloc_susie_screen_v2_de5de7",
+    "run_id": "20261027T131112Z_coloc_susie_screen_v2_de5de7",
+    "runtime_median_s": 10.49324360499304,
+    "runtime_p95_s": 105.78855338549475,
+    "status": {
+     "failed": 25,
+     "nonconverged": 1661,
+     "ok": 3312,
+     "timeout": 2
+    },
+    "timeout_s": 360.0,
+    "wall_s": 11508.65046359699
+   },
+   "rest_all_half_b": {
+    "commit": "956e24944b3ee0a055d51aad421ee718e924a7bb",
+    "n": 5000,
+    "n_workers": 12,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T132204Z_coloc_susie_screen_v2_70173e",
+    "run_id": "20261027T132204Z_coloc_susie_screen_v2_70173e",
+    "runtime_median_s": 11.217240520498308,
+    "runtime_p95_s": 104.49125254250264,
+    "status": {
+     "failed": 26,
+     "nonconverged": 1621,
+     "ok": 3351,
+     "timeout": 2
+    },
+    "timeout_s": 360.0,
+    "wall_s": 11413.038525222
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "coloc_susie_mm": {
+   "L0P1": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 2000,
+    "n_workers": 16,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T104844Z_coloc_susie_mm_screen_v2_4ef05f",
+    "run_id": "20261027T104844Z_coloc_susie_mm_screen_v2_4ef05f",
+    "runtime_median_s": 12.249757093493827,
+    "runtime_p95_s": 47.54175218519812,
+    "status": {
+     "nonconverged": 21,
+     "ok": 1979
+    },
+    "timeout_s": 240.0,
+    "wall_s": 2202.603963652
+   },
+   "rest_all_half_a": {
+    "commit": "956e24944b3ee0a055d51aad421ee718e924a7bb",
+    "n": 5000,
+    "n_workers": 12,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T132229Z_coloc_susie_mm_screen_v2_f0e573",
+    "run_id": "20261027T132229Z_coloc_susie_mm_screen_v2_f0e573",
+    "runtime_median_s": 15.028862370498246,
+    "runtime_p95_s": 73.57734368289678,
+    "status": {
+     "nonconverged": 939,
+     "ok": 4050,
+     "timeout": 11
+    },
+    "timeout_s": 240.0,
+    "wall_s": 9990.40272891699
+   },
+   "rest_all_quarter_b1": {
+    "commit": "6b8c62f27a81263d8619c99a7eb519c63feffc03",
+    "n": 2500,
+    "n_workers": 12,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T150047Z_coloc_susie_mm_screen_v2_42e217",
+    "run_id": "20261027T150047Z_coloc_susie_mm_screen_v2_42e217",
+    "runtime_median_s": 21.139630176003266,
+    "runtime_p95_s": 81.51427237035595,
+    "status": {
+     "nonconverged": 473,
+     "ok": 2026,
+     "timeout": 1
+    },
+    "timeout_s": 240.0,
+    "wall_s": 6033.992536089005
+   },
+   "rest_all_quarter_b2": {
+    "commit": "6b8c62f27a81263d8619c99a7eb519c63feffc03",
+    "n": 2500,
+    "n_workers": 12,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T150601Z_coloc_susie_mm_screen_v2_6b5f23",
+    "run_id": "20261027T150601Z_coloc_susie_mm_screen_v2_6b5f23",
+    "runtime_median_s": 20.150110444992606,
+    "runtime_p95_s": 81.22586262165491,
+    "status": {
+     "nonconverged": 479,
+     "ok": 2015,
+     "timeout": 6
+    },
+    "timeout_s": 240.0,
+    "wall_s": 6017.540750018001
+   }
+  },
+  "colocboost": {
+   "L0P1": {
+    "commit": "cc26fff58a4f3f1fbb33e8d6a47d85e776be89c4",
+    "n": 2000,
+    "n_workers": 6,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T101626Z_colocboost_screen_v2_6bf56c",
+    "run_id": "20261027T101626Z_colocboost_screen_v2_6bf56c",
+    "runtime_median_s": 0.9609546725041582,
+    "runtime_p95_s": 4.070840402153405,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 120.0,
+    "wall_s": 493.6497125229944
+   },
+   "rest_slow": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 1000,
+    "n_workers": 4,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102636Z_colocboost_screen_v2_edf5ae",
+    "run_id": "20261027T102636Z_colocboost_screen_v2_edf5ae",
+    "runtime_median_s": 8.298041489499155,
+    "runtime_p95_s": 35.21098674881066,
+    "status": {
+     "ok": 1000
+    },
+    "timeout_s": 120.0,
+    "wall_s": 2860.175889445003
+   }
+  },
+  "colocboost_m1": {
+   "L0P1": {
+    "commit": "cc26fff58a4f3f1fbb33e8d6a47d85e776be89c4",
+    "n": 2000,
+    "n_workers": 4,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T101128Z_colocboost_m1_screen_v2_63c613",
+    "run_id": "20261027T101128Z_colocboost_m1_screen_v2_63c613",
+    "runtime_median_s": 0.3463261750075617,
+    "runtime_p95_s": 0.9802539453565259,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 224.02809695899487
+   },
+   "rest_slow": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 1000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T104527Z_colocboost_m1_screen_v2_02978f",
+    "run_id": "20261027T104527Z_colocboost_m1_screen_v2_02978f",
+    "runtime_median_s": 0.3447639864971279,
+    "runtime_p95_s": 0.8375177755442563,
+    "status": {
+     "ok": 1000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 205.7342323740013
+   }
+  },
+  "lead_snp": {
+   "L0P1": {
+    "commit": "cc26fff58a4f3f1fbb33e8d6a47d85e776be89c4",
+    "n": 2000,
+    "n_workers": 2,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T101622Z_lead_snp_screen_v2_a9ee55",
+    "run_id": "20261027T101622Z_lead_snp_screen_v2_a9ee55",
+    "runtime_median_s": 0.058239279002009425,
+    "runtime_p95_s": 0.17699066554778256,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 77.1842539729987
+   },
+   "rest_all": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 10000,
+    "n_workers": 4,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T104556Z_lead_snp_screen_v2_55ae87",
+    "run_id": "20261027T104556Z_lead_snp_screen_v2_55ae87",
+    "runtime_median_s": 0.011643619000096805,
+    "runtime_p95_s": 0.07103005205062798,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 56.13299438499962
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "mvsusie": {
+   "L0P1": {
+    "commit": "3e19da1d864a448ce5ecdd4fb997c71e5a632d3a",
+    "n": 2000,
+    "n_workers": 24,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T100249Z_mvsusie_screen_v2_eab506",
+    "run_id": "20261027T100249Z_mvsusie_screen_v2_eab506",
+    "runtime_median_s": 18.511003343497578,
+    "runtime_p95_s": 80.84974527364828,
+    "status": {
+     "failed": 1,
+     "nonconverged": 24,
+     "ok": 1975
+    },
+    "timeout_s": 1080.0,
+    "wall_s": 2415.624704582995
+   },
+   "rest_slow": {
+    "commit": "1710c67fc7af0a7d315082b8c362f1539907767d",
+    "n": 1000,
+    "n_workers": 20,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T112945Z_mvsusie_screen_v2_ce1173",
+    "run_id": "20261027T112945Z_mvsusie_screen_v2_ce1173",
+    "runtime_median_s": 75.57663397149736,
+    "runtime_p95_s": 336.63484080104604,
+    "status": {
+     "nonconverged": 340,
+     "ok": 660
+    },
+    "timeout_s": 1080.0,
+    "wall_s": 5791.210314288997
+   }
+  },
+  "prop_coloc": {
+   "L0P1": {
+    "commit": "3e19da1d864a448ce5ecdd4fb997c71e5a632d3a",
+    "n": 2000,
+    "n_workers": 4,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T100249Z_prop_coloc_screen_v2_9e3a40",
+    "run_id": "20261027T100249Z_prop_coloc_screen_v2_9e3a40",
+    "runtime_median_s": 0.8819940239991411,
+    "runtime_p95_s": 1.3780941417993744,
+    "status": {
+     "failed": 1,
+     "ok": 1999
+    },
+    "timeout_s": 60.0,
+    "wall_s": 376.7290330449905
+   },
+   "rest_all": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 10000,
+    "n_workers": 6,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T103121Z_prop_coloc_screen_v2_b5f935",
+    "run_id": "20261027T103121Z_prop_coloc_screen_v2_b5f935",
+    "runtime_median_s": 1.2404367749986704,
+    "runtime_p95_s": 2.9726789249405545,
+    "status": {
+     "failed": 512,
+     "ok": 9488
+    },
+    "timeout_s": 60.0,
+    "wall_s": 2227.595615561004
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "sharepro": {
+   "L0P1": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 2000,
+    "n_workers": 4,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102044Z_sharepro_screen_v2_75794a",
+    "run_id": "20261027T102044Z_sharepro_screen_v2_75794a",
+    "runtime_median_s": 0.35655415750079555,
+    "runtime_p95_s": 1.053470455747447,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 60.0,
+    "wall_s": 231.45090889401035
+   },
+   "rest_all": {
+    "commit": "e1ad8a9288b1f00b8e50d3b8cde5b97e96b20c2e",
+    "n": 10000,
+    "n_workers": 8,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs/20261027T102638Z_sharepro_screen_v2_616ce0",
+    "run_id": "20261027T102638Z_sharepro_screen_v2_616ce0",
+    "runtime_median_s": 0.8910492524955771,
+    "runtime_p95_s": 19.355748987598044,
+    "status": {
+     "ok": 9994,
+     "timeout": 6
+    },
+    "timeout_s": 60.0,
+    "wall_s": 5024.72655634
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  },
+  "strength_only": {
+   "L0P1": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 2000,
+    "n_workers": 8,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/bench/20261027T102959Z_strength_only_screen_v2_ce9cf8",
+    "run_id": "20261027T102959Z_strength_only_screen_v2_ce9cf8",
+    "runtime_median_s": 0.09455963949585566,
+    "runtime_p95_s": 0.1940806046462967,
+    "status": {
+     "ok": 2000
+    },
+    "timeout_s": 120.0,
+    "wall_s": 84.33768298699579
+   },
+   "rest_all": {
+    "commit": "93ecabb3da9a6426baf88deec6d7153b71ab8c2d",
+    "n": 10000,
+    "n_workers": 8,
+    "run_dir": "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/bench/20261027T102959Z_strength_only_screen_v2_ce9cf8",
+    "run_id": "20261027T102959Z_strength_only_screen_v2_ce9cf8",
+    "runtime_median_s": 0.028541613501147367,
+    "runtime_p95_s": 0.09352287899528162,
+    "status": {
+     "ok": 10000
+    },
+    "timeout_s": 120.0,
+    "wall_s": 84.33768298699579
+   },
+   "rest_all_half_a": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_half_b": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b1": {
+    "covered_by_earlier_group": true
+   },
+   "rest_all_quarter_b2": {
+    "covered_by_earlier_group": true
+   },
+   "rest_slow": {
+    "covered_by_earlier_group": true
+   }
+  }
+ },
+ "n_by_method": {
+  "coloc_abf_W0.15_p12_1e-05": 12000,
+  "coloc_abf_W0.15_p12_5e-06": 12000,
+  "coloc_abf_W0.1_p12_1e-05": 12000,
+  "coloc_abf_W0.1_p12_5e-06": 12000,
+  "coloc_abf_W0.2_p12_1e-05": 12000,
+  "coloc_abf_W0.2_p12_5e-06": 12000,
+  "coloc_prop_test": 12000,
+  "coloc_susie": 12000,
+  "coloc_susie_mm": 12000,
+  "colocboost": 3000,
+  "colocboost_m1": 3000,
+  "lead_snp": 12000,
+  "mvsusie": 3000,
+  "prop_coloc": 12000,
+  "sharepro": 12000,
+  "strength_only": 12000
+ },
+ "n_rows": 165000,
+ "predictions_sha256": "b0bba75f515e4e21815dfa80c640869049a4229e68e11d9254b69fe1c093b3bb",
+ "runs_dirs": [
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/runs",
+  "/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/baselines_screen_v2/bench"
+ ]
+}

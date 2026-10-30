@@ -1,0 +1,2 @@
+20:19:49 [harness] run dry_v4__coloc_susie_mm__real_R4b_reference: 24 loci (24 to run), mode=cpu, workers=6
+20:20:46 [harness] done dry_v4__coloc_susie_mm__real_R4b_reference: {'ok': 22, 'nonconverged': 2, 'failed': 0, 'timeout': 0, 'expected': 24} in 57.6s

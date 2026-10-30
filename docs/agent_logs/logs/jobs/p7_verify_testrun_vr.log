@@ -1,0 +1,21 @@
+[orch] job p7_verify_testrun_vr start 2026-10-28T04:54:59+01:00 host eu-g6-001 commit 4b9a51d405 pid 1924502
+[orch] cmd: bash -c 'python scripts/verify_run.py /cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/* ; echo EXIT=$?'
+Traceback (most recent call last):
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr/code/scripts/verify_run.py", line 126, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr/code/scripts/verify_run.py", line 114, in main
+    probs = verify(d, a.tol)
+            ^^^^^^^^^^^^^^^^
+  File "/cluster/scratch/mumarc/hackathon_eqtl_gwas/runs/p7_verify_testrun_vr/code/scripts/verify_run.py", line 57, in verify
+    man = json.loads((run_dir / "manifest.json").read_text())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/cluster/scratch/mumarc/hackathon_eqtl_gwas/results/eval_test/test_frozen-v1_ab94c5a1/runs/LEDGER.tsv/manifest.json'
+EXIT=1
+[orch] exit 0 at 2026-10-28T04:55:12+01:00
