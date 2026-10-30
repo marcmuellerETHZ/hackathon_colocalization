@@ -1,9 +1,7 @@
-(Human-written text starts)
 This is an exercise in assessing the bioinformatics capabilities of agentic AI. It is part of a hackathon run by the Beltrao lab at ETH Zurich, where we used Claude to run bioinformatics projects (https://github.com/evocellnet/ai-hackathon/). All results in this project were generated entirely by AI with minimal human intervention. This is not intended to be viewed as a traditional publication and bioinformatics tool.
 The goal of this project was to come up with a new analysis tool to infer colocalization of genomic variants identified by GWAS and QTL studies. It was executed by Claude Opus 5.5 with delegation to Opus 5.5/Sonnet 5.5 subagents, and finished in 50h of wall time on a computational cluster with 64 CPUs with 128 GB RAM and one RTX4090 GPU.
 Currently none of the results have been verified by a human. We plan to verify the agent's methodology and benchmarking, and we will update this section accordingly.
 The rest of this repository is entirely AI generated. It includes code for implementation of the predictive model and an AI-written report in the style of a journal article, detailing the final method, the path followed to reach it, and benchmarking against other methods.
-(Human-written text ends)
 
 # coloc-agentic-benchmark
 
